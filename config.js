@@ -10,40 +10,40 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['5219992095479', '👑 Mystic - Creador 👑', true],
-  ['50499698072', '💫 Mystic - Collaborator 1 💫', true],
-  ['51940617554', '💫 Mystic - Collaborator 2 💫', true],
-  ['51996089079', '💫 Mystic - Collaborator 3 💫', true],
-  ['5218442286089', '💫 Mystic - Collaborator 4 💫', true],
-  ['50246028932', '💫 Mystic - Collaborator 5 💫', true],
-  ['5212412377467', '💫 Mystic - Collaborator 6 💫', true],
-  ['5215533827255', '💫 Mystic - Collaborator 7 💫', false],
-  ['59895555511', '💫 Mystic - Collaborator 8 💫', true],
-  ['393518398856','💫 Mystic - Tester Fabri115💫', true],
-  ['593968585283'],
-  ['5219993404349'],
-  ['5219991402134'],
-  ['5492266466080'],
-  ['5219996125657'],
-  ['5218442114446'],
-  ['59894808483'],
-  ['593980586516'], 
-  ['595975740803'],  
-  ['5492266613038'],
-  ['50431953376'],
-  ['595992611272']
+  ['5491156673266', '👑   Creador 👑', true],
+  ['', '  Collaborator 1 💫', true],
+  ['', '  - Collaborator 2 ', true],
+  ['', '  - Collaborator 3 ', true],
+  ['', ' - Collaborator 4 ', true],
+  ['', '  - Collaborator 5 ', true],
+  ['', '  - Collaborator 6 ', true],
+  ['', '  - Collaborator 7 ', false],
+  ['', '  - Collaborator 8 ', true],
+  ['','  - Tester ', true],
+  [''],
+  [''],
+  [''],
+  [''],
+  [''],
+  [''],
+  [''],
+  [''], 
+  [''],  
+  [''],
+  [''],
+  ['']
 ];
 
-global.suittag = ['5219993404349'];
-global.prems = ['51995386439'];
+global.suittag = [''];
+global.prems = [''];
 
-global.packname = 'Sticker';
-global.author = 'The Mystic - Bot';
-global.wm = 'The Mystic - Bot';
-global.titulowm = 'The Mystic - Bot';
-global.titulowm2 = `The Mystic - Bot`
-global.igfg = 'The Mystic - Bot';
-global.wait = '*[ ⏳ ] Cargando...*';
+global.packname = 'Jotchua-Bot By ALS';
+global.author = '+1 (970) 812-4588';
+global.wm = 'Jotchua-Bot';
+global.titulowm = 'Jotchua-Bot';
+global.titulowm2 = `Jotchua-Bot`
+global.igfg = 'Jotchua-Bot By';
+global.wait = '*Cargando...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -63,14 +63,14 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
-global.gt = 'The Mystic - Bot';
-global.mysticbot = 'The Mystic - Bot';
-global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.waitt = '*[ ⏳ ] Cargando...*';
-global.waittt = '*[ ⏳ ] Cargando...*';
-global.waitttt = '*[ ⏳ ] Cargando...*';
+global.wm2 = `${dia} ${fecha}\nJotchua - Bot`;
+global.gt = 'Jotchua - Bot';
+global.mysticbot = 'Jotchua-Bot';
+global.md = 'https://github.com/AleXD0009/Jotchua';
+global.mysticbot = 'https://github.com/AleXD009/Jotchua';
+global.waitt = '*Cargando...*';
+global.waittt = '*Cargando...*';
+global.waitttt = '*Cargando...*';
 global.nomorown = '5219993404349';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +18 están desactivados en este grupo, si es admin y desea activarlos use ${usedPrefix}enable modohorny*`; 
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*_𝐋𝐨𝐬 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 +𝟏𝟖 𝐄𝐬𝐭𝐚𝐧 𝐃𝐞𝐬𝐚𝐜𝐭𝐢𝐯𝐚𝐝𝐨𝐬 𝐄𝐧 𝐄𝐬𝐭𝐞 𝐆𝐫𝐮𝐩𝐨, 𝐒𝐢 𝐄𝐬 𝐀𝐝𝐦𝐢𝐧 𝐲 𝐃𝐞𝐬𝐞𝐚 𝐀𝐜𝐭𝐢𝐯𝐚𝐫𝐥𝐨𝐬 𝐔𝐬𝐞 𝐄𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 ${usedPrefix}enable modohorny*`; 
   try {
     const pp = imagen5;
     const vn = './media/La biblia.mp3';
@@ -19,48 +19,46 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *𝗛ola, ${taguser}*
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
+    const str = `
+      — *_𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭-𝐌𝐃_* —
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< MENU+18 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔞 _${usedPrefix}pack_
-┣ ඬ⃟ 🔞 _${usedPrefix}pack2_
-┣ ඬ⃟ 🔞 _${usedPrefix}pack3_
-┣ ඬ⃟ 🔞 _${usedPrefix}videoxxx_
-┣ ඬ⃟ 🔞 _${usedPrefix}videolesbixxx_
-┣ ඬ⃟ 🔞 _${usedPrefix}tetas_
-┣ ඬ⃟ 🔞 _${usedPrefix}booty_
-┣ ඬ⃟ 🔞 _${usedPrefix}ecchi_
-┣ ඬ⃟ 🔞 _${usedPrefix}furro_
-┣ ඬ⃟ 🔞 _${usedPrefix}imagenlesbians_
-┣ ඬ⃟ 🔞 _${usedPrefix}panties_
-┣ ඬ⃟ 🔞 _${usedPrefix}pene_
-┣ ඬ⃟ 🔞 _${usedPrefix}porno_
-┣ ඬ⃟ 🔞 _${usedPrefix}randomxxx_
-┣ ඬ⃟ 🔞 _${usedPrefix}pechos_
-┣ ඬ⃟ 🔞 _${usedPrefix}yaoi_
-┣ ඬ⃟ 🔞 _${usedPrefix}yaoi2_
-┣ ඬ⃟ 🔞 _${usedPrefix}yuri_
-┣ ඬ⃟ 🔞 _${usedPrefix}yuri2_
-┣ ඬ⃟ 🔞 _${usedPrefix}trapito_
-┣ ඬ⃟ 🔞 _${usedPrefix}hentai_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwloli_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfworgy_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwfoot_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwass_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwbdsm_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwcum_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwero_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwfemdom_
-┣ ඬ⃟ 🔞 _${usedPrefix}nsfwglass_
-┣ ඬ⃟ 🔞 _${usedPrefix}hentaipdf *<texto>*_
-┣ ඬ⃟ 🔞 _${usedPrefix}hentaisearch *<texto>*_
-┗━━━━━━━━━━━━━━━━┛`.trim();
+𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
+
+
+      「 𝐌𝐄𝐍𝐔 +𝟏𝟖 」
+      
+⇾ _${usedPrefix}pack_
+⇾ _${usedPrefix}pack2
+⇾ _${usedPrefix}pack3_
+⇾ _${usedPrefix}videoxxx_
+⇾ _${usedPrefix}videolesbixxx_
+⇾ _${usedPrefix}tetas_
+⇾ _${usedPrefix}booty_
+⇾ _${usedPrefix}ecchi_
+⇾ _${usedPrefix}furro_
+⇾ _${usedPrefix}imagenlesbians_
+⇾ _${usedPrefix}panties_
+⇾ _${usedPrefix}pene_
+⇾ _${usedPrefix}porno_
+⇾ _${usedPrefix}randomxxx_
+⇾ _${usedPrefix}pechos_
+⇾ _${usedPrefix}yaoi_
+⇾ _${usedPrefix}yaoi2_
+⇾ _${usedPrefix}yuri_
+⇾ _${usedPrefix}yuri2_ 
+⇾ _${usedPrefix}trapito_
+⇾ _${usedPrefix}hentai_
+⇾ _${usedPrefix}nsfwloli_
+⇾ _${usedPrefix}nsfworgy_
+⇾ _${usedPrefix}nsfwfoot_
+⇾ _${usedPrefix}nsfwass_
+⇾ _${usedPrefix}nsfwbdsm_
+⇾ _${usedPrefix}nsfwcum_
+⇾ _${usedPrefix}nsfwero_
+⇾ _${usedPrefix}nsfwfemdom_
+⇾ _${usedPrefix}nsfwglass_
+⇾ _${usedPrefix}hentaipdf *<texto>*_
+⇾ _${usedPrefix}hentaisearch *<texto>*_`.trim();
     if (m.isGroup) {
       await conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
       await conn.sendFile(m.chat, vn, 'La biblia.mp3', null, m, true, {type: 'audioMessage', ptt: true});
@@ -70,10 +68,10 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
       await conn.sendFile(m.chat, vn, 'La biblia.mp3', null, m, true, {type: 'audioMessage', ptt: true});
     }
   } catch {
-    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
+    conn.reply(m.chat, '*_𝐄𝐋 𝐌𝐄𝐍𝐔 𝐓𝐈𝐄𝐍𝐄 𝐔𝐍 𝐄𝐑𝐑𝐎𝐑 𝐘 𝐍𝐎 𝐄𝐒 𝐏𝐎𝐒𝐈𝐁𝐋𝐄 𝐄𝐍𝐕𝐈𝐀𝐑𝐋𝐎, 𝐑𝐄𝐏𝐎𝐑𝐓𝐄𝐋𝐎 𝐀𝐋 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓_*', m);
   }
 };
-handler.command = /^(menulabiblia|labiblia|Labiblia)$/i;
+handler.command = /^(menuporn|porn|MenuPorn)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

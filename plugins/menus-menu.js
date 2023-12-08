@@ -141,49 +141,36 @@ ${readMore}
 
     「 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 」
     
-_${usedPrefix}enable *welcome*_
-_${usedPrefix}enable *modohorny*_
-_${usedPrefix}disable *modohorny*_
-_${usedPrefix}enable *antilink*_
-_${usedPrefix}disable *antilink*_
-_${usedPrefix}enable *antilink2*_
-_${usedPrefix}disable *antilink2*_
-_${usedPrefix}enable *detect*_
-_${usedPrefix}disable *detect*_
-_${usedPrefix}enable *audios*_
-_${usedPrefix}disable *audios*_
-_${usedPrefix}enable *autosticker*_
-_${usedPrefix}disable *autosticker*_
-_${usedPrefix}enable *antiviewonce*_
-_${usedPrefix}disable *antiviewonce*_
-_${usedPrefix}enable *antitoxic*_
-_${usedPrefix}disable *antitoxic*_
-_${usedPrefix}enable *antitraba*_
-_${usedPrefix}disable *antitraba*_
-_${usedPrefix}enable *antiarabes*_
-_${usedPrefix}disable *antiarabes*_
-_${usedPrefix}enable *modoadmin*_
-_${usedPrefix}disable *modoadmin*_
-_${usedPrefix}enable *antidelete*_
-_${usedPrefix}disable *antidelete*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *welcome*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *modohorny*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *modohorny*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antilink*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antilink*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antilink2*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antilink2*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *detect*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *detect*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *audios*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *audios*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *autosticker*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *autosticker*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antiviewonce*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antiviewonce*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antitoxic*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antitoxic*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antitraba*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antitraba*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antiarabes*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antiarabes*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *modoadmin*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *modoadmin*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antidelete*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antidelete*_
 
 ${readMore}
 
    「 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
 _${usedPrefix}reporte *<texto>*_
-
-
-      「 PAREJAS 」
-      
-*Declarate con alguien*
-*para que sean Parejas!!*
-➺ _${usedPrefix}listaparejas | listship_
-➺ _${usedPrefix}mipareja | mylove_
-➺ _${usedPrefix}pareja | couple *@tag*_
-➺ _${usedPrefix}aceptar | accept *@tag*_
-➺ _${usedPrefix}rechazar | decline *@tag*_
-➺ _${usedPrefix}terminar | finish *@tag*_
-
 
 ${readMore}
 

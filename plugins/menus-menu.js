@@ -58,17 +58,16 @@ ${readMore}
 
 ${readMore}
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}bot_
+
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simsimi_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter_
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
      
 ⟼ Mensajes en espera
 ⟼  _${usedPrefix}fixmsgespera_
- ⟼Mensajes en espera (owner)
-⟼  _${usedPrefix}dsowner_
+
 
 ${readMore}
 
@@ -175,47 +174,48 @@ ${readMore}
 ${readMore}
 
    「 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
+   
 _${usedPrefix}reporte *<texto>*_
 
 ${readMore}
 
      「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
      
-_${usedPrefix}instagram *<enlace / link / url>*_
-_${usedPrefix}mediafire *<enlace / link / url>*_
-_${usedPrefix}gitclone *<enlace / link / url>*_
-_${usedPrefix}gdrive *<enlace / link / url>*_
-_${usedPrefix}tiktok *<enlace / link / url>*_
-_${usedPrefix}tiktokimg *<enlace / link / url>*_
-_${usedPrefix}xnxxdl *<enlace / link / url>*_
-_${usedPrefix}xvideosdl *<enlace / link / url>*_
-_${usedPrefix}twitter *<enlace / link / url>*_
-_${usedPrefix}fb *<enlace / link / url>*_
-_${usedPrefix}ytshort *<enlace / link / url>*_
-_${usedPrefix}ytmp3 *<enlace / link / url>*_
-_${usedPrefix}ytmp4 *<enlace / link / url>*_
-_${usedPrefix}ytmp3doc *<enlace / link / url>*_
-_${usedPrefix}ytmp4doc *<enlace / link / url>*_
-_${usedPrefix}videodoc *<enlace / link / url>*_
-_${usedPrefix}dapk2 *<enlace / link / url>*_
-_${usedPrefix}stickerpack *<enlace / link / url>*_
-_${usedPrefix}play *<texto>*_
-_${usedPrefix}play2 *<texto>*_
-_${usedPrefix}play.1 *<texto>*_
-_${usedPrefix}play.2 *<texto>*_
-_${usedPrefix}playdoc *<texto>*_
-_${usedPrefix}playdoc2 *<texto>*_
-_${usedPrefix}playlist *<texto>*_
-_${usedPrefix}spotify *<texto>*_
-_${usedPrefix}ringtone *<texto>*_
-_${usedPrefix}soundcloud *<texto>*_
-_${usedPrefix}imagen *<texto>*_
-_${usedPrefix}pinterest *<texto>*_
-_${usedPrefix}wallpaper *<texto>*_
-_${usedPrefix}pptiktok *<nombre de usuario>*_
-_${usedPrefix}igstalk *<nombre de usuario>*_
-_${usedPrefix}igstory *<nombre de usuario>*_
-${usedPrefix}tiktokstalk *<username>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fb *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.1 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playlist *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}spotify *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ringtone *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}soundcloud *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}imagen *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pinterest *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}wallpaper *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstory *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  ${usedPrefix}tiktokstalk *<username>*_
 
 ${readMore}
 
@@ -525,7 +525,8 @@ _${usedPrefix}setppbot *<responder a imagen>*_
 _${usedPrefix}addcmd *<texto> <responder a sticker/imagen>*_
 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
 _${usedPrefix}saveimage
-_${usedPrefix}viewimage`.trim();
+_${usedPrefix}viewimage
+_${usedPrefix}dsowner_`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};

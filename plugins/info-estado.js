@@ -22,11 +22,11 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const rtime = (neww - old).toFixed(7);
-  const wm = 'The Mystic Bot';
-  const info = ` _*INFO - ESTADO*_
+  const wm = 'Jotchua - Bot';
+  const info = ` 「 𝐈𝐍𝐅𝐎 - 𝐄𝐒𝐓𝐀𝐃𝐎 」
 
- ▢ *Prop.:*  𝘈𝘓𝘚
- ▢ *WA:* +5491156673266
+ *Prop.:*  𝘈𝘓𝘚
+  *WA:* +5491156673266
  
 
  *Ping:* ${rtime}
@@ -57,7 +57,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD` },
+    document: { url: `https://github.com/AleXD0009/Jotchua` },
     mimetype: `application/${document}`,
     fileName: `Documento`,
     fileLength: 99999999999999,
@@ -66,13 +66,13 @@ const handler = async (m, { conn, usedPrefix }) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        mediaUrl: "https://github.com/AleXD0009/Jotchua",
         mediaType: 2,
         previewType: "pdf",
-        title: "The Mystic - Bot",
+        title: "Jotchua - Bot",
         body: "Repositorio - GitHub",
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        sourceUrl: "https://github.com/AleXD0009/Jotchua",
       },
     },
     caption: info,

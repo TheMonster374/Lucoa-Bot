@@ -23,6 +23,6 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   }
 };
 
-handler.command = /^bard$/i;
+handler.command = /^Jotchua$/i;
 
 export default handler;

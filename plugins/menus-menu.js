@@ -57,6 +57,11 @@ ${readMore}
 ⟼ _${usedPrefix}menuaudios/audios_
 
 ${readMore}
+      「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}bot_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simsimi_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
      

@@ -1,26 +1,26 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, command, usedPrefix}) => {
-  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*';
+  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*𝐋𝐎𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 +𝟏𝟖 𝐄𝐒𝐓𝐀𝐍 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐃𝐎𝐒 𝐄𝐍 𝐄𝐒𝐓𝐄 𝐆𝐑𝐔𝐏𝐎, 𝐒𝐈 𝐄𝐒 𝐀𝐃𝐌𝐈𝐍 𝐘 𝐃𝐄𝐒𝐄𝐀 𝐔𝐒𝐀𝐑𝐋𝐎𝐒 𝐔𝐒𝐄 𝐄𝐋 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 #enable modohorny*';
   switch (command) {
     case 'pack':
       const url = await pack[Math.floor(Math.random() * pack.length)];
-      conn.sendMessage(m.chat, {image: {url: url}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url}, caption: `_Pack_`}, {quoted: m});
       break;
     case 'pack2':
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
-      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_Pack_`}, {quoted: m});
       break;
     case 'pack3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
-      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 Pack 3 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_Pack 3_`}, {quoted: m});
       break;
     case 'videoxxx': case 'vídeoxxx':
       const url4 = await videosxxxc[Math.floor(Math.random() * videosxxxc.length)];
-      await conn.sendMessage(m.chat, {video: {url: url4}, caption: `*ᴅɪsғʀᴜᴛᴀ ᴅᴇʟ ᴠɪᴅᴇᴏ 🥵*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {video: {url: url4}, caption: `*_aqui tienes el video_*`}, {quoted: m});
       break;
     case 'videoxxxlesbi': case 'videolesbixxx': case 'pornolesbivid': case 'pornolesbianavid': case 'pornolesbiv': case 'pornolesbianav': case 'pornolesv':
       const url5 = await videosxxxc2[Math.floor(Math.random() * videosxxxc2.length)];
-      await conn.sendMessage(m.chat, {video: {url: url5}, caption: `*ᴅɪsғʀᴜᴛᴀ ᴅᴇʟ ᴠɪᴅᴇᴏ 🥵*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {video: {url: url5}, caption: `*_aqui tienes el video_*`}, {quoted: m});
       break;
   }
 };

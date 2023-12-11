@@ -14,7 +14,7 @@ const handler = async (m, {conn, isPrems}) => { // lastmiming
     '♻️ Tu Mision se ha cumplido, lograste minar',
     '⛏️ La Mineria te ha beneficiado con',
     '🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
-    '👾 Gracias a que has minado tus ingresos suman',
+    'Gracias a que has minado tus ingresos suman',
     'Felicidades!! Ahora tienes', '⛏️⛏️⛏️ Obtienes'])}`;
   const pp = 'https://png.pngtree.com/thumb_back/fw800/background/20220428/pngtree-cartoon-mining-game-design-composition-with-different-mining-equipment-inside-the-image_1108471.jpg';
   const aqua = `${pickRandom([0, 2, 3, 1, 5])}` * 1;
@@ -41,7 +41,7 @@ const handler = async (m, {conn, isPrems}) => { // lastmiming
 };
 handler.help = ['minar2'];
 handler.tags = ['gata'];
-handler.command = ['minar2', 'miming2', 'mine2', 'minarmysticcoins', 'minarcoins', 'minarmystic'];
+handler.command = ['minar2', 'miming2', 'mine2', 'minarcoins', 'minarcoins', 'minarcoin'];
 handler.fail = null;
 handler.exp = 0;
 export default handler;

@@ -7,7 +7,7 @@ let previousCommitUser = '';
 const owner = 'BrunoSobrino';
 const repo = 'TheMystic-Bot-MD';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
- conn.sendMessage(m.chat, {text: `*[❗] Comando activado con éxito, te notificaremos cuando haya algun cambio en el repositorio oficial.*`}, {quoted: m});  
+ conn.sendMessage(m.chat, {text: `*Comando activado con éxito, te notificaremos cuando haya algun cambio en el repositorio oficial.*`}, {quoted: m});  
 try {
   async function checkRepoUpdates() {
     try {
@@ -18,11 +18,11 @@ try {
         previousCommitSHA = sha;
         previousUpdatedAt = message;
         previousCommitUser = login
-        conn.sendMessage(m.chat, {text: `*[❗] ¡El repositorio ha sido actualizado!*\n*- Repositorio:* ${html_url}\n*- Mensaje de commit:* ${message}\n*- Commit por:* ${login}`}, {quoted: m});
+        conn.sendMessage(m.chat, {text: `*¡El repositorio ha sido actualizado!*\n*- Repositorio:* ${html_url}\n*- Mensaje de commit:* ${message}\n*- Commit por:* ${login}`}, {quoted: m});
       }
     } catch (error) {
       console.error(error)
-      m.reply('*[❗] Error al verificar el repositorio*');
+      m.reply('*Error al verificar el repositorio*');
     }
   }
   setInterval(checkRepoUpdates, 6000);

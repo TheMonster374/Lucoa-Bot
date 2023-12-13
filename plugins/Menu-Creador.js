@@ -100,7 +100,7 @@ _${usedPrefix}dsowner_`.trim();
     conn.reply(m.chat, '*el menu tiene un error y no fue posible enviarlo*', m);
   }
 };
-handler.command = /^(menucreador|MenuCreador)$/i;
+handler.command = /^(menucreador|MenuCreador|Creador|creador)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

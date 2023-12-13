@@ -221,24 +221,24 @@ ${readMore}
 
      「 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 」
      
-│⛀┣ ⛄  _${usedPrefix}githubsearch *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}pelisplus *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}modapk *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}stickersearch *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}stickersearch2 *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}xnxxsearch *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}animeinfo *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}google *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}letra *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}wikipedia *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}ytsearch *<texto>*_
-│⛀┣ ⛄  _${usedPrefix}playstore *<texto>*_
+_${usedPrefix}githubsearch *<texto>*_
+_${usedPrefix}pelisplus *<texto>*_
+_${usedPrefix}modapk *<texto>*_
+_${usedPrefix}stickersearch *<texto>*_
+_${usedPrefix}stickersearch2 *<texto>*_
+_${usedPrefix}xnxxsearch *<texto>*_
+_${usedPrefix}animeinfo *<texto>*_
+_${usedPrefix}google *<texto>*_
+_${usedPrefix}letra *<texto>*_
+_${usedPrefix}wikipedia *<texto>*_
+_${usedPrefix}ytsearch *<texto>*_
+_${usedPrefix}playstore *<texto>*_
 
 
      「 𝐆𝐑𝐔𝐏𝐎𝐒 」
      
-│⛁┣ ⛄  _${usedPrefix}add *<numero>*_
-│⛁┣ ⛄  _${usedPrefix}kick *<@tag>*_
+ _${usedPrefix}add *<numero>*_
+ _${usedPrefix}kick *<@tag>*_
 │⛁┣ ⛄  _${usedPrefix}kick2 *<@tag>*_
 │⛁┣ ⛄  _${usedPrefix}listanum *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}kicknum *<texto>*_

@@ -1,70 +1,32 @@
-import fetch from 'node-fetch';
-import axios from 'axios';
-import instagramGetUrl from 'instagram-url-direct';
-import {instagram} from '@xct007/frieren-scraper';
-import {instagramdl} from '@bochilteam/scraper';
-import instagramDl from '@sasmeee/igdl';
-import {fileTypeFromBuffer} from 'file-type';
-const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `_*< DESCARGAS - INSTAGRAM />*_\n\n*[ ℹ️ ] Ingrese un enlace de Instagram.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link_`;
-  m.reply(global.wait);
-  try {
-const img = await instagramDl(args[0]);
-for (let i = 0; i < img.length; i++) {
-    const bufferInfo = await getBuffer(img[i].download_link);
-        if (bufferInfo.detectedType.mime.startsWith('image/')) {
-            await conn.sendMessage(m.chat, {image: {url: img[i].download_link}}, {quoted: m});
-        } else if (bufferInfo.detectedType.mime.startsWith('video/')) {
-            await conn.sendMessage(m.chat, {video: {url: img[i].download_link }}, {quoted: m});
-        }
-}
-  } catch {   
-  try {
-    const datTa = await instagram.download(args[0]);
-    for (const urRRl of datTa) {
-      const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-      const tXXxt = `_*< DESCARGAS - INSTAGRAM />*_\n\n▢ *URL:* _${shortUrRRl}_`.trim();
-      conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m);
-      await new Promise((resolve) => setTimeout(resolve, 10000));
-    }
-  } catch {
-      try {
-        const resultss = await instagramGetUrl(args[0]).url_list[0];
-        const shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-        const txt2 = `_*< DESCARGAS - INSTAGRAM />*_\n\n▢ *URL:* _${shortUrl2}_`.trim();
-        await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, m);
-      } catch {
-        try {
-          const resultssss = await instagramdl(args[0]);
-          const shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-          const txt4 = `_*< DESCARGAS - INSTAGRAM />*_\n\n▢ *URL:* _${shortUrl3}_`.trim();
-          for (const {url} of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m);
-        } catch {
-          try {
-            const human = await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=${lolkeysapi}&url=${args[0]}`);
-            const json = await human.json();
-            const videoig = json.result;
-            const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-            const txt1 = `_*< DESCARGAS - INSTAGRAM />*_\n\n▢ *URL:* _${shortUrl1}_`.trim();
-            await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
-          } catch {
-            throw `_*< DESCARGAS - INSTAGRAM />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
-          }
-        }
-      }
-    }
-  }
-};
-handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i;
-export default handler;
+import axios from 'axios'
+let handler = async (m, {conn, args}) => {
 
-const getBuffer = async (url, options) => {
-    options = options || {};
-    const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1}, ...options, responseType: 'arraybuffer'});
-    const buffer = Buffer.from(res.data, 'binary');
-    const detectedType = await fileTypeFromBuffer(buffer);
-    if (!detectedType || (detectedType.mime !== 'image/jpeg' && detectedType.mime !== 'image/png' && detectedType.mime !== 'video/mp4')) {
-        return null;
-    }
-    return { buffer, detectedType };
-};
+if (!args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de un video de Instagram que deseas descargar.*`, m, adReply)
+await m.react('🕓')
+let url = `https://vihangayt.me/download/instagram?url=${encodeURIComponent(args[0])}`
+  
+try {
+const response = await axios.get(url)
+if (!response.data.status) {
+throw new Error(`Error al obtener datos`)
+}
+const data = response.data.data
+if (data && data.data && data.data.length > 0) {
+const videoURL = data.data[0].url
+
+await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4', '', estilo)
+await m.react('✅')
+} else {
+await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, adReply).then(_ => m.react('✖️'))
+}
+} catch (error) {
+console.error(error)
+conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, adReply).then(_ => m.react('✖️'))
+}
+}
+handler.help = ['instagram'].map(v => v + ' <url ig>')
+handler.tags = ['downloader'];
+handler.command = /^(instagramdl|instagram|igdl|ig)$/i;
+handler.star = 2
+handler.register = true 
+export default handler

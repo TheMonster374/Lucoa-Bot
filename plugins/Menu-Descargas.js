@@ -21,16 +21,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
            「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
      
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
+
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fb *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4 *<enlace / link / url>*_

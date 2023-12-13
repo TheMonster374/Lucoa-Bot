@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 const handler = async (m, {text, usedPrefix, command}) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +18 están desactivados en este grupo, si es admin y desea activarlos use ${usedPrefix}enable modohorny*`;   
-  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Con mi prima*`;
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*los comandos  +18 estan desactivados en este grupo, si es admin y desea activarlos use el comando ${usedPrefix}enable modohorny*`;   
+  if (!text) throw `*ejemplo de uso del comando ${usedPrefix + command} Con mi vecina*`;
   try {
     const vids_ = {
       from: m.sender,

@@ -56,6 +56,7 @@ ${readMore}
 ⟼ _${usedPrefix}menuanimes/animes_
 ⟼ _${usedPrefix}menuaudios/audios_
 ⟼ _${usedPrefix}menucreador/MenuCreador_
+⟼ _${usedPrefix}MenuDescargas/Descargas_
 
 ${readMore}
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」

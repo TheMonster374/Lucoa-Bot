@@ -80,5 +80,5 @@ _${usedPrefix}dsowner_`.trim();
 };
 handler.help = ['donasi'];
 handler.tags = ['info'];
-handler.command = /^dona(te|si)|?|menuCreador$/i;
+handler.command = /^(MenuCreador)$/i;
 export default handler;

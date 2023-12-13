@@ -19,6 +19,43 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
+         「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
+     
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fb *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.1 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playlist *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}spotify *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ringtone *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}soundcloud *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}imagen *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pinterest *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}wallpaper *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstory *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  ${usedPrefix}tiktokstalk *<username>*_
     `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

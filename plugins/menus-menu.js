@@ -65,7 +65,6 @@ ${readMore}
 ${readMore}
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simsimi_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter_
 

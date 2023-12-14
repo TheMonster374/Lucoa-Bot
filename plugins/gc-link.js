@@ -3,8 +3,8 @@ const handler = async (m, {conn, args}) => {
   const group = m.chat;
   conn.reply(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), m, {
     contextInfo: {externalAdReply: {mediaUrl: null, mediaType: 1, description: null,
-      title: '𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾',
-      body: '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝',
+      title: 'link del grupo',
+      body: '𝙹𝚘𝚝𝚌𝚑𝚞𝚊 - 𝚋𝚘𝚝',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
       sourceUrl: `https://github.com/AleXD0009/Jotchua`}}});
 };

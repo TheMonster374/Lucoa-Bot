@@ -5,7 +5,7 @@ const handler = async (m, {conn, participants, groupMetadata, args}) => {
   const owner = groupMetadata.owner || groupAdmins.find((p) => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net';
   const pesan = args.join` `;
   const oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`;
-  const text = `*━「* 𝐈𝐍𝐕𝐎𝐂𝐀𝐍𝐃𝐎 𝐀𝐃𝐌𝐈𝐍𝐒 *」━*
+  const text = `*━「*𝐄𝐓𝐈𝐐𝐔𝐄𝐓𝐀𝐍𝐃𝐎 𝐀𝐃𝐌𝐈𝐍𝐒*」━*
 
 ${oi}
 

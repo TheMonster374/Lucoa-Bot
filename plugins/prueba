@@ -33,7 +33,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '*el menu tiene un error y no fue posible enviarlo*', m);
   }
 };
-handler.command = /^(XX|X|x|xxx)$/i;
+handler.command = /^(|prueba||prueba)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

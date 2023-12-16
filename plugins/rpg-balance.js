@@ -8,7 +8,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 ┌───⊷ *BALANCE* ⊶
 ▢ *📌Nombre* : _@${who.split('@')[0]}_
 ▢ *💎Diamantes* : _${user.diamond}_
-▢ *coins* : ${money}
+▢ *coins* : _total ${user.money}
 ▢ *⬆️XP* : _Total ${user.exp}_
 └──────────────
 

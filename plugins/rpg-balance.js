@@ -13,7 +13,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 ▢  *tokens*: ${user.joincount}
 ▢ *📍rango* : ${user.role}
 ▢ *📍nivel* : ${user.level}
-▢ *⚜️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+▢ *🎟️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 └──────────────
 
 *NOTA :* 

@@ -1,8 +1,8 @@
 const handler = async (m, {conn, isPrems}) => { // lastmiming
   const user = global.db.data.users[m.sender];
   const premium = user.premium;
-  const minar = `${pickRandom(['Que pro 😎 has minado',
-    '🌟✨ Genial!! Obtienes',
+  const minar = `${pickRandom(['has minado',
+    'Genial!! Obtienes',
     'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
     'Has Minado!!',
     '😲 Lograste Minar la cantidad de',

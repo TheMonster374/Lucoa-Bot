@@ -7,7 +7,7 @@ let handler = async (m, {conn, usedPrefix}) => {
     conn.reply(m.chat, `
 ┌───⊷ *BALANCE* ⊶
 ▢ *📌Nombre* : _@${who.split('@')[0]}_
-▢ *💎Diamantes* : _${user.diamond}_
+▢ *💎Diamantes* : _${diamond}_
 ▢ *🪙coins* : _total ${user.money}_
 ▢ *⬆️XP* : _Total ${user.exp}_
 ▢  *tokens*: ${user.joincount}

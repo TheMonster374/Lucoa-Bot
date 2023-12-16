@@ -2,7 +2,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   let who;
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
   else who = m.chat;
-  const textpremERROR = `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙴𝙻 @𝚝𝚊𝚐 𝙳𝙴 𝙻𝙰 𝙿𝙴𝚁𝚂𝙾𝙽𝙰 𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰 𝙰𝙻𝙶𝚄𝙽 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙳𝙴 𝙻𝙰 𝙿𝙴𝚁𝚂𝙾𝙽𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝙰 𝙻𝙾𝚂 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙿𝚁𝙴𝙼𝙸𝚄𝙼*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*◉ ${usedPrefix + command} @${m.sender.split`@`[0]} 1*\n*◉ ${usedPrefix + command} 1 <responder a mensaje>*`;
+  const textpremERROR = `*ingresa el @𝚝𝚊𝚐 de la persona o responda a algun mensaje de la persona que desee agregar a los usuarios los usuarios premium*\n\n*ejemplo:*\n*${usedPrefix + command} @${m.sender.split`@`[0]} 1*\n*◉ ${usedPrefix + command} 1 <responder a mensaje>*`;
   if (!who) return m.reply(textpremERROR, null, {mentions: conn.parseMention(textpremERROR)});
 
   const user = global.db.data.users[who];
@@ -10,7 +10,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   // let name = await conn.getName(who)
   const name = await '@' + who.split`@`[0];
 
-  const ERROR = `*[❗] 𝙴𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 ${'@' + who.split`@`[0]} 𝙽𝙾 𝚂𝙴 𝙴𝙽𝙲𝙾𝙽𝚃𝚁𝙰 𝙴𝙽 𝙼𝙸 𝙱𝙰𝚂𝙴 𝙳𝙴 𝙳𝙰𝚃𝙾𝚂*`;
+  const ERROR = `*el usuario ${'@' + who.split`@`[0]} no se encuentra en mi base de datos*`;
   if (!user) return m.reply(ERROR, null, {mentions: conn.parseMention(ERROR)});
 
   const segundos10 = 10 * 1000; // 10 segundos en milisegundos
@@ -25,7 +25,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     else user.premiumTime = now + hora1;
     user.premium = true;
     const timeLeft = (user.premiumTime - now) / 1000; // tiempo restante en segundos
-    const textprem1 = `*🎟️ 𝙽𝚄𝙴𝚅𝙾 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙿𝚁𝙴𝙼𝙸𝚄𝙼!!!*\n\n*✨ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾: ${name}*\n*🕐 𝚃𝙸𝙴𝙼𝙿𝙾: ${txt} hora(s)*\n*📉 𝚁𝙴𝚂𝚃𝙰𝙽𝚃𝙴: ${timeLeft} segundos*`;
+    const textprem1 = `*🎟️ Nuevo usuario premium!!!*\n\n*Usuario: ${name}*\n*Tiempo: ${txt} hora(s)*\n*Restante: ${timeLeft} segundos*`;
     m.reply(textprem1, null, {mentions: conn.parseMention(textprem1)});
   }
 
@@ -34,7 +34,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     else user.premiumTime = now + dia1;
     user.premium = true;
     const timeLeft = (user.premiumTime - now) / 1000 / 60 / 60; // tiempo restante en horas
-    const textprem2 = `*🎟️ 𝙽𝚄𝙴𝚅𝙾 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙿𝚁𝙴𝙼𝙸𝚄𝙼!!!*\n\n*✨ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾: ${name}*\n*🕐 𝚃𝙸𝙴𝙼𝙿𝙾: ${txt} día(s)*\n*📉 𝚁𝙴𝚂𝚃𝙰𝙽𝚃𝙴: ${timeLeft} horas*`;
+    const textprem2 = `*🎟️ Nuevo usuario premium!!!*\n\n*Usuario: ${name}*\n*Tiempo: ${txt} día(s)*\n*Restante: ${timeLeft} horas*`;
     m.reply(textprem2, null, {mentions: conn.parseMention(textprem2)});
   }
 
@@ -43,7 +43,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     else user.premiumTime = now + semana1;
     user.premium = true;
     formatTime(user.premiumTime - now).then((timeleft) => {
-      const textprem3 = `*🎟️ 𝙽𝚄𝙴𝚅𝙾 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙿𝚁𝙴𝙼𝙸𝚄𝙼!!!*\n\n*✨ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾: ${name}*\n*🕐 𝚃𝙸𝙴𝙼𝙿𝙾: ${txt} semana(s)*\n*📉 𝚁𝙴𝚂𝚃𝙰𝙽𝚃𝙴: ${timeleft}*`;
+      const textprem3 = `*🎟️ Nuevo usuario premium!!!*\n\n*Usuario: ${name}*\n*Tiempo: ${txt} semana(s)*\n*Restante: ${timeleft}*`;
       m.reply(textprem3, null, {mentions: conn.parseMention(textprem3)});
     });
   }
@@ -53,7 +53,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     else user.premiumTime = now + mes1;
     user.premium = true;
     formatTime(user.premiumTime - now).then((timeleft) => {
-      const textprem4 = `*🎟️ 𝙽𝚄𝙴𝚅𝙾 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙿𝚁𝙴𝙼𝙸𝚄𝙼!!!*\n\n*✨ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾: ${name}*\n*🕐 𝚃𝙸𝙴𝙼𝙿𝙾: ${txt} mes(es)*\n*📉 𝚁𝙴𝚂𝚃𝙰𝙽𝚃𝙴: ${timeleft}*`;
+      const textprem4 = `*🎟️ Nuevo usuario premium!!!*\n\n*Usuario: ${name}*\n*Tiempo: ${txt} mes(es)*\n*📉 𝚁𝙴𝚂𝚃𝙰𝙽𝚃𝙴: ${timeleft}*`;
       m.reply(textprem4, null, {mentions: conn.parseMention(textprem4)});
     });
   }

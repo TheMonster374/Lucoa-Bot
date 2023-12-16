@@ -9,7 +9,6 @@ let handler = async (m, {conn, usedPrefix}) => {
 ▢ *📌Nombre* : _@${who.split('@')[0]}_
 ▢ *💎Diamantes* : _${user.diamond}_
 ▢ *⬆️XP* : _Total ${user.exp}_
-▢ *tokens* :${joincount}
 └──────────────
 
 *NOTA :* 

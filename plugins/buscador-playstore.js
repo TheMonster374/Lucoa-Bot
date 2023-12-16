@@ -1,9 +1,9 @@
 import gplay from "google-play-scraper";
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw "*[❗] 𝙸𝙽𝙶𝚁𝙴𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙰𝙿𝙺 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰 𝙱𝚄𝚂𝙲𝙰𝚁*";
+  if (!text) throw "*ingrese el nombre de la apk que quiera buscar*";
   let res = await gplay.search({ term: text });
-  if (!res.length) throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙰𝙿𝙺 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰 𝙱𝚄𝚂𝙲𝙰𝚁*`;
+  if (!res.length) throw `*ingrese el nombre de la apk que quiera buscar*`;
   let opt = {
     contextInfo: {
       externalAdReply: {

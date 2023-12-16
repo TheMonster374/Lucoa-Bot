@@ -27,17 +27,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
-            「 𝐈𝐍𝐅𝐎 𝐔𝐒𝐄𝐑 」  
-     
-⟼ 𝙽𝚘𝚖𝚋𝚛𝚎: ${taguser}
-⟼ 𝙽𝚒𝚟𝚎𝚕: ${level}
-⟼ 𝚇𝙿: ${exp}
-⟼ 𝚁𝚊𝚗𝚐𝚘: ${role}
-⟼ 𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎𝚜: ${limit}
-⟼ 𝙲𝚘𝚒𝚗𝚜: ${money}
-⟼ 𝚃𝚘𝚔𝚎𝚗𝚜: ${joincount}
-⟼ 𝙿𝚛𝚎𝚖𝚒𝚞𝚖:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
-
            「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
      
  ⟼ _${usedPrefix}owner_
@@ -63,6 +52,13 @@ ${readMore}
 ⟼ _${usedPrefix}MenuDescargas/Descargas_
 
 ${readMore}
+
+       「 𝐀𝐂𝐂𝐈𝐎𝐍𝐄𝐒」
+       
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat_
+       
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_

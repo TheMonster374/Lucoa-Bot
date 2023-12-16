@@ -60,6 +60,7 @@ ${readMore}
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap_
 ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dado_
        
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
@@ -216,7 +217,7 @@ _${usedPrefix}playstore *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}link_
 │⛁┣ ⛄  _${usedPrefix}setname *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}setdesc *<texto>*_
-│⛁┣ ⛄  _${usedPrefix}invocar *<texto>*_
+│⛁┣ ⛄  _${usedPrefix}tagall *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}setwelcome *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}setbye *<texto>*_
 │⛁┣ ⛄  _${usedPrefix}hidetag *<texto>*_

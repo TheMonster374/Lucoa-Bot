@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
-    const pp = imagen4;
+    const pp = imagen1;
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
@@ -19,52 +19,42 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-     *_𝐣𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭-𝐌𝐃_* 
+           「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
+     
 
- 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
-
- 「𝐑𝐏𝐆 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒 - 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀」
-
-_${usedPrefix}lolivid_
-_${usedPrefix}loli_
-_${usedPrefix}ppcouple_
-_${usedPrefix}neko_
-_${usedPrefix}waifu_
-_${usedPrefix}akira_
-_${usedPrefix}akiyama_
-_${usedPrefix}anna_
-_${usedPrefix}asuna_
-_${usedPrefix}ayuzawa_
-_${usedPrefix}boruto_
-_${usedPrefix}chiho_
-_${usedPrefix}chitoge_
-_${usedPrefix}deidara_
-_${usedPrefix}erza_
- _${usedPrefix}elaina_
-_${usedPrefix}eba_
-_${usedPrefix}emilia_
-_${usedPrefix}hestia_
-_${usedPrefix}hinata_
-_${usedPrefix}inori_
-_${usedPrefix}isuzu_
-_${usedPrefix}itachi_
-_${usedPrefix}itori_
-_${usedPrefix}kaga_
-_${usedPrefix}kagura_
-_${usedPrefix}kaori_
-_${usedPrefix}keneki_
-_${usedPrefix}kotori_
-_${usedPrefix}kurumi_
-_${usedPrefix}madara_
-_${usedPrefix}mikasa_
-_${usedPrefix}miku_
-_${usedPrefix}minato_
-_${usedPrefix}naruto_
-_${usedPrefix}nezuko_
-_${usedPrefix}sagiri_
-_${usedPrefix}sasuke_
-_${usedPrefix}sakura_
-_${usedPrefix}cosplay_`.trim();
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytmp4doc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.1 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}play.2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playdoc2 *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}playlist *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}spotify *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ringtone *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}soundcloud *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}imagen *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pinterest *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}wallpaper *<texto>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}igstory *<nombre de usuario>*_
+❥꫶ꪆꦿꦼ͜͡⛄͘͜  ${usedPrefix}tiktokstalk *<username>*_
+    `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
@@ -75,10 +65,10 @@ _${usedPrefix}cosplay_`.trim();
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*_𝐄𝐋 𝐌𝐄𝐍𝐔 𝐓𝐈𝐄𝐍𝐄 𝐔𝐍 𝐄𝐑𝐑𝐎𝐑 𝐘 𝐍𝐎 𝐄𝐒 𝐏𝐎𝐒𝐈𝐁𝐋𝐄 𝐄𝐍𝐕𝐈𝐀𝐑𝐋𝐎, 𝐑𝐄𝐏𝐎𝐑𝐓𝐄𝐋𝐎 𝐀𝐋 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓_*', m);
+    conn.reply(m.chat, '*el menu no fue posible enviarse*', m);
   }
 };
-handler.command = /^(menuRPG|MenuRPG)$/i;
+handler.command = /^(Menurpg|mEnu)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

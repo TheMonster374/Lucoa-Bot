@@ -51,6 +51,8 @@ ${readMore}
 
 ⟼ _${usedPrefix}MenuDescargas/Descargas_
 
+⟼ _${usedPrefix}MenuRPG/RPG_
+
 ${readMore}
 
        「 𝐀𝐂𝐂𝐈𝐎𝐍𝐄𝐒」
@@ -363,29 +365,6 @@ ${readMore}
 │✲┣ ⛄  _${usedPrefix}horario_
 │✲┣ ⛄  _${usedPrefix}dropmail_
 
-${readMore}
-
-    「 𝐑𝐏𝐆 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒 - 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀 」
-    
-│✾┣ ⛄  _${usedPrefix}adventure_
-│✾┣ ⛄  _${usedPrefix}cazar_
-│✾┣ ⛄  _${usedPrefix}cofre_
-│✾┣ ⛄  _${usedPrefix}balance_
-│✾┣ ⛄  _${usedPrefix}claim_
-│✾┣ ⛄  _${usedPrefix}heal_
-│✾┣ ⛄  _${usedPrefix}lb_
-│✾┣ ⛄  _${usedPrefix}levelup_
-│✾┣ ⛄  _${usedPrefix}myns_
-│✾┣ ⛄  _${usedPrefix}perfil_
-│✾┣ ⛄  _${usedPrefix}work_
-│✾┣ ⛄  _${usedPrefix}minar_
-│✾┣ ⛄  _${usedPrefix}minar2_
-│✾┣ ⛄  _${usedPrefix}buy_
-│✾┣ ⛄  _${usedPrefix}buyall_
-│✾┣ ⛄  _${usedPrefix}verificar_
-│✾┣ ⛄  _${usedPrefix}robar *<cantidad> <@tag>*_
-│✾┣ ⛄  _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
-│✾┣ ⛄  _${usedPrefix}unreg *<numero de serie>*_
 
 ${readMore}
 

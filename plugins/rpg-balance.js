@@ -10,7 +10,8 @@ let handler = async (m, {conn, usedPrefix}) => {
 ▢ *💎Diamantes* : _${user.diamond}_
 ▢ *🪙coins* : _total ${user.money}_
 ▢ *⬆️XP* : _Total ${user.exp}_
-▢ *premium* : ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+▢ *rango* :
+▢ *nivel* : ${user.level}
 └──────────────
 
 *NOTA :* 

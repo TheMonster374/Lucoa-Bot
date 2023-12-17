@@ -23,7 +23,7 @@ const handler = async (m, {conn, text, participants, args}) => {
       const invite_code_exp = content.attrs.expiration;
       const teks = `*no fue posible añadir a @${jid.split('@')[0]}, esto puede ocurrir porque el numero este incorrecto, la persona se haya salido recientemente del grupo o la persona haya configurado su privacidad de grupos, se le envio la invitacion al grupo en su privado al usuario *`;
       m.reply(teks, null, {mentions: conn.parseMention(teks)});
-      const captionn = `Hey!! Hola, me presento, soy The Mystic - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!`;
+      const captionn = `Hey!! Hola, me presento, soy Jotchua - bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!`;
       const messaa = await prepareWAMessageMedia({image: jpegThumbnail}, {upload: conn.waUploadToServer});
       const groupInvite = generateWAMessageFromContent(m.chat, proto.Message.fromObject({groupInviteMessage: {groupJid: m.chat, inviteCode: invite_code, inviteExpiration: invite_code_exp, groupName: await conn.getName(m.chat), caption: captionn, jpegThumbnail: jpegThumbnail}}), {userJid: jid});
       await conn.relayMessage(jid, groupInvite.message, {messageId: groupInvite.key.id});

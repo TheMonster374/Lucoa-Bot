@@ -1,45 +1,64 @@
- 
-import fetch from 'node-fetch'
-import fg from 'api-dylux'
-let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-
- let chat = global.db.data.chats[m.chat]
-  if (!chat.nsfw) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
-  let user = global.db.data.users[m.sender].age
-  if (user < 17) throw `❎ ${mssg.nsfwAge}`
-  if (!text) throw `✳️ ${mssg.searchTo('xnxx.com', usedPrefix, command)}`
-    
-    m.react(rwait)
-    if (text.includes('http://') || text.includes('https://')) {
-        if (!text.includes('xnxx.com')) return m.reply(`❎ ${mssg.noLink('xnxx.com')}`)
-        try {
-            let xn = await fg.xnxxdl(text)
-            conn.sendFile(m.chat, xn.url_dl, xn.title + '.mp4', `
-≡  *XNXX DL*
-            
-*📌${mssg.title}*: ${xn.title}
-*⌚${mssg.duration}:* ${xn.duration}
-*🎞️${mssg.quality}:* ${xn.quality}
-`.trim(), m, false, { asDocument: chat.useDocument })
- m.react(done)
- } catch (e) {
-    m.reply(`🔴 ${mssg.error}`)
- }
+import fetch from 'node-fetch';
+import cheerio from 'cheerio';
+const handler = async (m, {conn, args, command, usedPrefix}) => {
+  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*los comandos  +18 estan desactivados en este grupo, si es admin y desea activarlos use el comando #enable modohorny*';
+  if (!args[0]) throw `*ingrese un enlace valido de xnxx, ejemplo: ${usedPrefix + command} https://www.xnxx.com/video-14lcwbe8/rubia_novia_follada_en_cuarto_de_bano*`;
+  try {
+    await conn.reply(m.chat, 'el video esta siendo procesado, espere en lo que es enviado\n\n﹣ el tiempo depende del peso y duracion del video', m);
+    let xnxxLink = '';
+    if (args[0].includes('xnxx')) {
+      xnxxLink = args[0];
     } else {
-        try {
-            let res = await fg.xnxxSearch(text)
-             let fgg = res.result.map((v, i) => `*📌${mssg.title}* : ${v.title}\n*🔗${mssg.link}:* ${v.link}\n`).join('─────────────────\n\n') 
-              if (res.status) m.reply(fgg)       
-              } catch (e) {
-              m.reply(`🔴 ${mssg.error}`)
-               }
+      const index = parseInt(args[0]) - 1;
+      if (index >= 0) {
+        if (Array.isArray(global.videoListXXX) && global.videoListXXX.length > 0) {
+          const matchingItem = global.videoListXXX.find((item) => item.from === m.sender);
+          if (matchingItem) {
+            if (index < matchingItem.urls.length) {
+              xnxxLink = matchingItem.urls[index];
+            } else {
+              throw `*no se encontro un enlace para este numero, porfavor ingrese un numero entre el 1 al ${matchingItem.urls.length}*`;
+            }
+          } else {
+            throw `*para usar este comando de esta forma (${usedPrefix + command} <numero>), porfavor realiza la busqueda de videos con el comando ${usedPrefix}xnxxsearch <texto>*`;
+          }
+        } else {
+          throw `*para usar este comando de esta forma (${usedPrefix + command} <numero>), porfavor realiza la busqueda de videos con el comando ${usedPrefix}xnxxsearch <texto>*`;
+        }
+      }
     }
-}
-handler.help = ['xnxx'] 
-handler.tags = ['nsfw', 'prem']
-handler.command = ['xnxxsearch', 'xnxxdl', 'xnxx'] 
-handler.limit = 2
-handler.premium = false
-handler.register = true
+    const res = await xnxxdl(xnxxLink);
+    const json = await res.result.files;
+    conn.sendMessage(m.chat, {document: {url: json.high}, mimetype: 'video/mp4', fileName: res.result.title}, {quoted: m});
+  } catch {
+    throw '*porfavor vuelva a intentarlo*\n\n*- corrobore que el enlace sea similar a:*\n*https://www.xnxx.com/video-14lcwbe8/rubia_novia_follada_en_cuarto_de_bano*';
+  }
+};
+handler.command = /^(xnxxdl)$/i;
+handler.diamond = 2
+export default handler;
 
-export default handler
+async function xnxxdl(URL) {
+  return new Promise((resolve, reject) => {
+    fetch(`${URL}`, {method: 'get'}).then((res) => res.text()).then((res) => {
+      const $ = cheerio.load(res, {xmlMode: false});
+      const title = $('meta[property="og:title"]').attr('content');
+      const duration = $('meta[property="og:duration"]').attr('content');
+      const image = $('meta[property="og:image"]').attr('content');
+      const videoType = $('meta[property="og:video:type"]').attr('content');
+      const videoWidth = $('meta[property="og:video:width"]').attr('content');
+      const videoHeight = $('meta[property="og:video:height"]').attr('content');
+      const info = $('span.metadata').text();
+      const videoScript = $('#video-player-bg > script:nth-child(6)').html();
+      const files = {
+        low: (videoScript.match('html5player.setVideoUrlLow\\(\'(.*?)\'\\);') || [])[1],
+        high: videoScript.match('html5player.setVideoUrlHigh\\(\'(.*?)\'\\);' || [])[1],
+        HLS: videoScript.match('html5player.setVideoHLS\\(\'(.*?)\'\\);' || [])[1],
+        thumb: videoScript.match('html5player.setThumbUrl\\(\'(.*?)\'\\);' || [])[1],
+        thumb69: videoScript.match('html5player.setThumbUrl169\\(\'(.*?)\'\\);' || [])[1],
+        thumbSlide: videoScript.match('html5player.setThumbSlide\\(\'(.*?)\'\\);' || [])[1],
+        thumbSlideBig: videoScript.match('html5player.setThumbSlideBig\\(\'(.*?)\'\\);' || [])[1]};
+      resolve({status: 200, result: {title, URL, duration, image, videoType, videoWidth, videoHeight, info, files}});
+    }).catch((err) => reject({code: 503, status: false, result: err}));
+  });
+}

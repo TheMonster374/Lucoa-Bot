@@ -4,7 +4,7 @@ import fs from 'fs';
 import axios from 'axios';
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `*[❗] Ingrese el nombre de alguna canción de spotify.*`;
+ if (!text) throw `*Ingrese el nombre de alguna canción de spotify.*`;
   try {
     const res = await fetch(global.API('ApiEmpire', '/api/spotifysearch?text=' + text))
     const data = await res.json()
@@ -25,7 +25,7 @@ const handler = async (m, { conn, text }) => {
     await conn.sendMessage(m.chat, {audio: music.data, fileName: `${spty.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*[❗] Error, no se encontraron resultados.*';
+    throw '*Error, no se encontraron resultados.*';
   }
 };
 handler.command = /^(spotify|music)$/i;
@@ -47,7 +47,7 @@ const credentials = {
 const spotify = new Spotify.default(credentials);
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `*[❗] Ingrese el nombre de alguna canción de spotify.*`;
+ if (!text) throw `*Ingrese el nombre de alguna canción de spotify.*`;
   try {
     const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`);
     const jsonDL = await resDL.json();
@@ -62,7 +62,7 @@ const handler = async (m, { conn, text }) => {
     const img = await (await fetch(`${spty.data.cover_url}`)).buffer()  
     const letra_s = await find_lyrics(spty.data.name ? spty.data.name : '');
     let letra;
-    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖' : '🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖'}`  
+    letra = `${letra_s ? letra_s + '\n\n Descarga por ALS & Jotchua - Bot ' : ' Descarga por ALS & Jotchua - Bot '}`  
     const tags = {
       title: spty.data.name || '-',
       artist: artist,
@@ -101,7 +101,7 @@ const handler = async (m, { conn, text }) => {
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*[❗] Error, no se encontraron resultados.*';
+    throw '*Error, no se encontraron resultados.*';
   }
 };
 handler.command = /^(spotify|music)$/i;

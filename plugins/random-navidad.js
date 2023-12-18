@@ -5,7 +5,7 @@ const handler = async (m, {
   usedPrefix,
   command,
 }) => {
-  const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/navidad.json`)).data;
+  const res = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/JSON/navidad.json`)).data;
   const mystic = await res[Math.floor(res.length * Math.random())];
   conn.sendMessage(m.chat, {
     image: {

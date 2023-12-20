@@ -31,10 +31,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ╭────────────────
 │ 
-│ User : ${user.pushName}
-│
-│
-│ Date : ${date.toLocaleDateString('hi')}
 │
 │ Plugins : ${PLUGINS.count}
 │ Ram : ${getRam()}

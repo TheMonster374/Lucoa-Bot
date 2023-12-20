@@ -32,8 +32,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ╭────────────────
 │ 
 │
-│ Ram : ${getRam()}
-│ Uptime : ${getUptime('t')}
 ╰────────────────         
      
  ⟼ _${usedPrefix}owner_

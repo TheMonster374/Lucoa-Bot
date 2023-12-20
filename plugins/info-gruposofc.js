@@ -36,5 +36,5 @@ const handler = async (m, {conn, usedPrefix}) => {
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };
-handler.command = ['linkgc', 'grupos'];
+handler.command = ['linkgc', 'grupos', 'gruposjt'];
 export default handler;

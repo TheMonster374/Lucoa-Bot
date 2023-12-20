@@ -32,7 +32,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ╭────────────────
 │ 
 │
-│ Plugins : ${PLUGINS.count}
 │ Ram : ${getRam()}
 │ Uptime : ${getUptime('t')}
 ╰────────────────         

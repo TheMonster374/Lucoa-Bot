@@ -30,7 +30,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
            「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
 
 ╭────────────────
-│ 
+│ Bot activo: ${uptime}
 │
 ╰────────────────         
      

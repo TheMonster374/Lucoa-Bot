@@ -31,7 +31,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ╭────────────────
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
-│𝙎𝙥𝙚𝙚𝙙: ${latensi.toFixed(4)} ms
+│*RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
 ╰────────────────         
      
  ⟼ _${usedPrefix}owner_

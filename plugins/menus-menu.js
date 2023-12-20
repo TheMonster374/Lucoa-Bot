@@ -33,8 +33,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
 ╰────────────────         
      
- ⟼ _${usedPrefix}owner_
- ⟼ _${usedPrefix}repo_
+ ⟼ _${usedPrefix}owner/creador_
+ ⟼ _${usedPrefix}repo/repositorio_
  ⟼ _${usedPrefix}estado_
  ⟼ _${usedPrefix}grupos_
  ⟼ _${usedPrefix}speedtest
@@ -50,7 +50,7 @@ ${readMore}
 
 ⟼ _${usedPrefix}menuaudios/audios_
 
-⟼ _${usedPrefix}Creador/MenuCreador_
+⟼ _${usedPrefix}MenuCreador_
 
 ⟼ _${usedPrefix}MenuDescargas/Descargas_
 

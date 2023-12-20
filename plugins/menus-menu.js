@@ -31,11 +31,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ╭────────────────
 │ 
-│ User : ${message.pushName}
-│ Time : ${date.toLocaleTimeString()}
-│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+│ User : ${user.pushName}
+│
+│
 │ Date : ${date.toLocaleDateString('hi')}
-│ Version : ${VERSION}
+│
 │ Plugins : ${PLUGINS.count}
 │ Ram : ${getRam()}
 │ Uptime : ${getUptime('t')}

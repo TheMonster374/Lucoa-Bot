@@ -28,6 +28,18 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
            「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
+
+╭────────────────
+│ Prefix : ${PREFIX}
+│ User : ${message.pushName}
+│ Time : ${date.toLocaleTimeString()}
+│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+│ Date : ${date.toLocaleDateString('hi')}
+│ Version : ${VERSION}
+│ Plugins : ${PLUGINS.count}
+│ Ram : ${getRam()}
+│ Uptime : ${getUptime('t')}
+╰────────────────         
      
  ⟼ _${usedPrefix}owner_
  ⟼ _${usedPrefix}repo_

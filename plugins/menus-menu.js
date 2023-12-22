@@ -32,14 +32,15 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ╭────────────────
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
 ╰────────────────         
-     
- ⟼ _${usedPrefix}owner/creador_
- ⟼ _${usedPrefix}repo/repositorio_
- ⟼ _${usedPrefix}estado_
- ⟼ _${usedPrefix}grupos/gruposjt_
- ⟼ _${usedPrefix}speedtest
- ⟼ _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
- ⟼ *𝘣𝘰𝘵/𝘴𝘶𝘣 𝘣𝘰𝘵:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+╭────────────────     
+│ ⟼ _${usedPrefix}owner/creador_
+│ ⟼ _${usedPrefix}repo/repositorio_
+│ ⟼ _${usedPrefix}estado_
+│ ⟼ _${usedPrefix}grupos/gruposjt_
+│ ⟼ _${usedPrefix}speedtest
+│ ⟼ _Bot_ (uso sin prefijo)
+│ ⟼ *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+ ╰────────────────  
  
 ${readMore}
             「 𝐌𝐄𝐍𝐔𝐒 」

@@ -44,74 +44,84 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  
 ${readMore}
             「 𝐌𝐄𝐍𝐔𝐒 」
-           
-⟼ _${usedPrefix}MenuPorn/porn_
-
-⟼ _${usedPrefix}menuanimes/animes_
-
-⟼ _${usedPrefix}menuaudios/audios_
-
-⟼ _${usedPrefix}MenuCreador_
-
-⟼ _${usedPrefix}MenuDescargas/Descargas_
-
-⟼ _${usedPrefix}MenuRPG/RPG_
-
+            
+╭────────────────            
+│⟼ _${usedPrefix}MenuPorn/porn_
+│
+│⟼ _${usedPrefix}menuanimes/animes_
+│
+│⟼ _${usedPrefix}menuaudios/audios_
+│
+│⟼ _${usedPrefix}MenuCreador_
+│
+│⟼ _${usedPrefix}MenuDescargas/Descargas_
+│
+│⟼ _${usedPrefix}MenuRPG/RPG_
+╰────────────────
+ 
 ${readMore}
 
        「 𝐀𝐂𝐂𝐈𝐎𝐍𝐄𝐒」
        
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dado_
-       
+╭────────────────        
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dado_
+╰────────────────
+ 
       「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter_
+╭──────────────── 
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter_
+╰────────────────
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
-     
-⟼ Mensajes en espera
-⟼  _${usedPrefix}fixmsgespera_
 
+╭──────────────── 
+│⟼ Mensajes en espera
+│⟼  _${usedPrefix}fixmsgespera_
+╰────────────────
 
 ${readMore}
 
-${readMore}
     「 𝐔𝐍𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐀 𝐓𝐔 𝐆𝐑𝐔𝐏𝐎 」
- 
-⟼ _${usedPrefix}join *<enlace / link / url>*_
 
+╭──────────────── 
+│⟼ _${usedPrefix}join *<enlace / link / url>*_
+╰────────────────
 ${readMore}
 
     「 𝐒𝐄𝐑𝐁𝐎𝐓 - 𝐉𝐀𝐃𝐈𝐁𝐎𝐓 」
-
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot --code_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}deletebot_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}token
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stop_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}bots_
+    
+╭──────────────── 
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot --code_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}deletebot_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}token
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stop_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}bots_
+╰────────────────
 
    「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」
-
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable restrict_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable restrict_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable autoread_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable autoread_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable antispam_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable antispam_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable anticall_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable anticall_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable modoia_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable modoia_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable audios_bot_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable audios_bot_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable antiprivado_
-❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable antiprivado_
-
+   
+╭──────────────── 
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable restrict_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable restrict_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable autoread_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable autoread_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable antispam_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable antispam_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable anticall_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable anticall_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable modoia_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable modoia_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable audios_bot_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable audios_bot_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable antiprivado_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable antiprivado_
+╰────────────────
 ${readMore}
 
        「 𝐉𝐔𝐄𝐆𝐎𝐒 」

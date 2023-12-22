@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 var handler = async (m, {conn, args, text, command, usedPrefix}) => {
-    const r = await axios.get(`https://api.xyroinee.xyz/api/downloader/pornhub?url=${text}&apikey=uwgflzFEh6`)
+    const r = await axios.get(`https://api.xyroinee.xyz/api/downloader/instagram?url=${text}&apikey=uwgflzFEh6`)
   const ress = r.data.result
   /*const a = `Titulo :* ${ress.title}
 *Duracion :* ${ress.duration}
@@ -14,5 +14,5 @@ var handler = async (m, {conn, args, text, command, usedPrefix}) => {
    if (quality.quality == 480) {
   };
 };
-handler.command = /^(porndl)$/i;
+handler.command = /^(InstagramXD)$/i;
 export default handler

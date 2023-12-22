@@ -13,7 +13,7 @@ const handler = async (m, {conn, isPrems}) => { // lastmiming
   const money = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640, 680, 704, 760, 800, 840, 880, 900, 1000, 1059, 1080, 1100, 1190, 1230, 1380, 1399, 1290, 1300, 1340, 1350, 1590, 1400, 1450, 1700, 1800, 1900, 2000, 0, 0, 10, 1, 99, 999, 1789, 1430])}` * 1;
   const moneypremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1;
   const time = user.lastcoins + 600000; // 10 min
-  if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*vuelve en ${msToTime(time - new Date())} para volver a robar ${global.rpgshopp.emoticon('money')}⛏*`, m);
+  if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*vuelve en ${msToTime(time - new Date())} para volver a robar ${global.rpgshopp.emoticon('money')}*`, m);
   user.money += premium ? moneypremium : money;
   let texto = '';
   for (const reward of Object.keys(recompensas)) {
@@ -21,7 +21,7 @@ const handler = async (m, {conn, isPrems}) => { // lastmiming
     user[reward] += recompensas[reward];
     texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`;
   }
-  const text = `*${premium ? '' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n\n\n${texto}\n\n
+  const text = `*${premium ? '' : 'Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n\n\n${texto}\n\n
   await conn.sendFile(m.chat, pp, 'Menu2.jpg', text, m);
   user.lastcoins = new Date * 1;
 };

@@ -5,7 +5,7 @@ let handler = async (m, { conn, command, args }) => {
     count = Math.max(1, count)
     if (global.db.data.users[m.sender].bank >= xppercredit * count) {
       global.db.data.users[m.sender].bank -= xppercredit * count
-      global.db.data.users[m.sender].credit += count
+      global.db.data.users[m.sender].limit += count
       conn.reply(m.chat, `transferiste 💎 ${count} diamantes a tu biletera`, m)
     } else conn.reply(m.chat, `*No tienes suficiente cantidad de diamantes💎 en tu banco para realizar esta transacción*`, m)
   }

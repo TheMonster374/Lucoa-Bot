@@ -25,7 +25,7 @@ let handler = async (m, {conn, usedPrefix}) => {
     
     conn.reply(m.chat, `🏦 *Banco | ${username}*
 
-*diamantes💎* : ${user.bank}
+*coins🪙* : ${user.bank}
 
 *poder :* ${wealth}
 

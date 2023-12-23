@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, args }) => {
       global.db.data.users[m.sender].bank -= xppercredit * count
       global.db.data.users[m.sender].money += count
       conn.reply(m.chat, `transferiste 🪙 ${count} coins a tu billetera`, m)
-    } else conn.reply(m.chat, `*No tienes suficiente cantidad de coins 🪙 en tu banco para realizar esta transacción.*`, m)
+    } else conn.reply(m.chat, ` *No tienes suficiente cantidad de coins 🪙 en tu banco para realizar esta transacción.*`, m)
   }
   handler.help = ['withdraw']
   handler.tags = ['economy']

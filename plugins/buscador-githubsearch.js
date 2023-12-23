@@ -22,7 +22,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 ${repo.description ? ` *Descripción:*\n${repo.description}` : ''}
 `.trim()}).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
   conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})
-//conn.sendMessage(m.chat, {text: str.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [m.sender], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen, "mediaUrl": `https://www.atom.bio/theshadowbrokers-team`, "sourceUrl": `https://www.atom.bio/theshadowbrokers-team`}}}, {quoted: m});  
+//conn.sendMessage(m.chat, {text: str.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [m.sender], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen, "mediaUrl": `https://chat.whatsapp.com/Cd90JzMCZ5o0ZX6gXBDwd4`, "sourceUrl": `https://chat.whatsapp.com/Cd90JzMCZ5o0ZX6gXBDwd4`}}}, {quoted: m});  
 };
 handler.help = ['githubs'];
 handler.tags = ['buscadores'];

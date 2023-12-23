@@ -6,8 +6,8 @@ let handler = async (m, { conn, command, args }) => {
     if (global.db.data.users[m.sender].limit >= xpperbank * count) {
       global.db.data.users[m.sender].limit -= xpperbank * count
       global.db.data.users[m.sender].bank += count
-      conn.reply(m.chat, `You have transferred 🪙 ${count} gold to your bank`, m)
-    } else conn.reply(m.chat, `🟥 *You don't have sufficient amount of gold in your wallet to make this transaction*`, m)
+      conn.reply(m.chat, `has transferido 🪙 ${count} diamante(s)💎 a tu banco`, m)
+    } else conn.reply(m.chat, `*No tienes suficiente cantidad de diamante(s) 💎 en tu billetera para realizar esta transacción*`, m)
   }
   handler.help = ['deposit']
   handler.tags = ['economy']

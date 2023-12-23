@@ -33,6 +33,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _${usedPrefix}work_
   ▢ _${usedPrefix}minar_
   ▢ _${usedPrefix}minar2_
+  ▢ _${usedPrefix}bank/banco (guardar tus coins para que no te las roben)_
+  ▢ _${usedPrefix}dep (depositar coins a tu banco)_
+  ▢ _${usedPrefix}withdraw (retirar las coins de tu banco)_
   ▢ _${usedPrefix}buy_
   ▢ _${usedPrefix}buyall_
   ▢ _${usedPrefix}verificar_

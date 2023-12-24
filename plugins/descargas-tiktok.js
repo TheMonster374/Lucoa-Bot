@@ -1,1 +1,72 @@
-import _0x4d4cef from'api-dylux';import _0x257445 from'axios';import _0x41da52 from'cheerio';import{generateWAMessageFromContent}from'@whiskeysockets/baileys';import{tiktokdl}from'@bochilteam/scraper';let handler=async(_0x3b549c,{conn:_0x5c0afc,text:_0x2843f6,args:_0x33eb36,usedPrefix:_0x398632,command:_0x5d6466})=>{if(!_0x2843f6)throw'*[❗𝐈𝐍𝐅𝐎❗]*MISSING\x20TIK\x20TOK\x20LINK\x20LINK\x20OF\x20SOME\x20TIKTOK\x20VIDEO*\x0a\x0a\x20*EXAMPLE*\x0a*'+(_0x398632+_0x5d6466)+'*\x20https://vm.tiktok.com/ZM2M1cAGR/*';if(!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi['test'](_0x2843f6))throw'*[❗]\x20*INCORRECT\x20TIKTOK\x20LINK\x20PLEASE\x20ENTER\x20LINK\x20OF\x20SOME\x20TIKTOK\x20VIDEO*\x0a\x0a*EXAMPLE*\x0a*'+(_0x398632+_0x5d6466)+'*\x20https://vm.tiktok.com/ZM2M1cAGR/';let _0x4dd2d4='*[❗]\x20@'+_0x3b549c['sender']['split']`@`[0x0]+'\x20𝙰𝙶𝚄𝙰𝚁𝙳𝙴\x20𝚄𝙽\x20𝙼𝙾𝙼𝙴𝙽𝚃𝙾\x20𝙴𝙽\x20𝙻𝙾\x20𝚀𝚄𝙴\x20𝙴𝙽𝚅𝙸𝙾\x20𝚂𝚄\x20𝚅𝙸𝙳𝙴𝙾\x20𝙳𝙴\x20𝚃𝙸𝙺𝚃𝙾𝙺*';try{let _0x342f65={'quoted':_0x3b549c,'userJid':_0x5c0afc['user']['jid']},_0x417254=generateWAMessageFromContent(_0x3b549c['chat'],{'extendedTextMessage':{'text':_0x4dd2d4,'contextInfo':{'externalAdReply':{'title':'Jotchua-bot','body':null,'thumbnail':imagen1,'sourceUrl':'https://AleXD0009/Jotchua'},'mentionedJid':[_0x3b549c['sender']]}}},_0x342f65);await _0x5c0afc['relayMessage'](_0x3b549c['chat'],_0x417254['message'],{'messageId':_0x417254['key']['id'],'mentions':[_0x3b549c['sender']]});const _0xae7ef8=await tiktok['v1'](_0x33eb36[0x0]);let _0x299fca='*¡Hola!\x20📽️\x20Here\x27s\x20your\x20TikTok\x20video.*\x0a\x0a*Remember\x20that\x20if\x20you\x20want\x20to\x20convert\x20the\x20video\x20to\x20audio,\x20you\x20can\x20easily\x20do\x20so\x20by\x20replying\x20to\x20the\x20video\x20with\x20the\x20#tomp3\x20command\x20🎧.*';await _0x5c0afc['sendMessage'](_0x3b549c['chat'],{'video':{'url':_0xae7ef8['play']},'caption':_0x299fca},{'quoted':_0x3b549c});}catch(_0x9e80dd){try{const _0x2965a8=await tiktokdlF(_0x33eb36[0x0]);let _0x3c9ac3='*¡Hola!\x20📽️\x20Here\x27s\x20your\x20TikTok\x20video.*\x0a\x0a*Remember\x20that\x20if\x20you\x20want\x20to\x20convert\x20the\x20video\x20to\x20audio,\x20you\x20can\x20easily\x20do\x20so\x20by\x20replying\x20to\x20the\x20video\x20with\x20the\x20#tomp3\x20command\x20🎧.*';await _0x5c0afc['sendMessage'](_0x3b549c['chat'],{'video':{'url':_0x2965a8['video']},'caption':_0x3c9ac3},{'quoted':_0x3b549c});}catch(_0x13e9cc){try{let _0x3d8dc9=await _0x4d4cef['tiktok'](_0x33eb36[0x0]),_0xc5cad9='*¡Hola!\x20📽️\x20Here\x27s\x20your\x20TikTok\x20video.*\x0a\x0a*Remember\x20that\x20if\x20you\x20want\x20to\x20convert\x20the\x20video\x20to\x20audio,\x20you\x20can\x20easily\x20do\x20so\x20by\x20replying\x20to\x20the\x20video\x20with\x20the\x20#tomp3\x20command\x20🎧.*';await _0x5c0afc['sendMessage'](_0x3b549c['chat'],{'video':{'url':_0x3d8dc9['nowm']},'caption':_0xc5cad9},{'quoted':_0x3b549c});}catch(_0x2b9830){try{const {author:{nickname:_0x1daec3},video:_0x309779,description:_0x1b9f3c}=await tiktokdl(_0x33eb36[0x0])['catch'](async _0x5479aa=>await tiktokdlv2(_0x33eb36[0x0]))['catch'](async _0x5a697d=>await tiktokdlv3(_0x33eb36[0x0])),_0x5b4a89=_0x309779['no_watermark2']||_0x309779['no_watermark']||'https://tikcdn.net'+_0x309779['no_watermark_raw']||_0x309779['no_watermark_hd'];let _0x5509d9='*¡Hola!\x20📽️\x20Here\x27s\x20your\x20TikTok\x20video.*\x0a\x0a*Remember\x20that\x20if\x20you\x20want\x20to\x20convert\x20the\x20video\x20to\x20audio,\x20you\x20can\x20easily\x20do\x20so\x20by\x20replying\x20to\x20the\x20video\x20with\x20the\x20#tomp3\x20command\x20🎧.*';await _0x5c0afc['sendMessage'](_0x3b549c['chat'],{'video':{'url':_0x5b4a89},'caption':_0x5509d9},{'quoted':_0x3b549c});}catch{throw''+_0x4d4cef;}}}}};handler['command']=/^(tiktok|ttdl|tiktokdl|tiktoknowm|tt|ttnowm|tiktokaudio)$/i,handler['premium']=!![],handler['register']=!![];export default handler;async function tiktokdlF(_0x3258be){if(!/tiktok/['test'](_0x3258be))return'Enlace\x20incorrecto';const _0x33311a=await _0x257445['get']('https://tikdown.org/id'),_0x1a9ac1=_0x41da52['load'](_0x33311a['data']),_0x6b92a5=_0x1a9ac1('#download-form\x20>\x20input[type=hidden]:nth-child(2)')['attr']('value'),_0x447df1={'url':_0x3258be,'_token':_0x6b92a5},{data:_0x24c8bc}=await _0x257445['request']('https://tikdown.org/getAjax?',{'method':'post','data':new URLSearchParams(Object['entries'](_0x447df1)),'headers':{'content-type':'application/x-www-form-urlencoded;\x20charset=UTF-8','user-agent':'Mozilla/5.0\x20(Windows\x20NT\x206.3;\x20Win64;\x20x64)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/100.0.4896.88\x20Safari/537.36'}});var _0x1d4c9e=_0x41da52['load'](_0x24c8bc['html']);if(_0x24c8bc['status'])return{'status':!![],'thumbnail':_0x1d4c9e('img')['attr']('src'),'video':_0x1d4c9e('div.download-links\x20>\x20div:nth-child(1)\x20>\x20a')['attr']('href'),'audio':_0x1d4c9e('div.download-links\x20>\x20div:nth-child(2)\x20>\x20a')['attr']('href')};else return{'status':![]};}
+import fg from 'api-dylux';
+import axios from 'axios';
+import cheerio from 'cheerio';
+import {tiktok} from '@xct007/frieren-scraper';
+import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
+import {tiktokdl} from '@bochilteam/scraper';
+const CFROSAPI = global.APIs.CFROSAPI;
+const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+  if (!text) throw `_*< DESCARGAS - TIKTOK />*_\n\n*[ ℹ️ ] Ingrese un enlace de TikTok.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://vm.tiktok.com/ZM686Q4ER/_`;
+  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `_*< DESCARGAS - TIKTOK />*_\n\n*[ ℹ️ ] Ingrese un enlace de TikTok.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://vm.tiktok.com/ZM686Q4ER/_`;
+  const texto = `_*< DESCARGAS - TIKTOK />*_\n\n*[ ℹ️ ] Se está enviando el video. espere...*`;
+  // let buttons = [{ buttonText: { displayText: '♫ 𝙰𝚄𝙳𝙸𝙾 ♫' }, buttonId: `${usedPrefix}tomp3` }]
+  try {
+    const aa = {quoted: m, userJid: conn.user.jid};
+    const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: 'ᴛʜᴇ ᴍʏsᴛɪᴄ - ʙᴏᴛ', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'}, mentionedJid: [m.sender]}}}, aa);
+    await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
+    const dataFn = await conn.getFile(`${CFROSAPI}/api/tiktokv2?url=${args[0]}`);
+    const desc1n = `_*< DESCARGAS - TIKTOK />*_\n\n*[ 💡 ] Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+    await conn.sendMessage(m.chat, {video: dataFn.data, caption: desc1n}, {quoted: m});
+  } catch (ee1) {
+  try {
+    //const aa = {quoted: m, userJid: conn.user.jid};
+    //const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: 'ᴛʜᴇ ᴍʏsᴛɪᴄ - ʙᴏᴛ', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'}, mentionedJid: [m.sender]}}}, aa);
+    //await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
+    const dataF = await tiktok.v1(args[0]);
+    // let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
+    const desc1 = `_*< DESCARGAS - TIKTOK />*_\n\n*[ 💡 ] Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+    await conn.sendMessage(m.chat, {video: {url: dataF.play}, caption: desc1}, {quoted: m});
+  } catch (e1) {
+    try {
+      const tTiktok = await tiktokdlF(args[0]);
+      // let desc2 = `🔗 *Url:* ${tTiktok.video}`
+      const desc2 = `_*< DESCARGAS - TIKTOK />*_\n\n*[ 💡 ] Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+      await conn.sendMessage(m.chat, {video: {url: tTiktok.video}, caption: desc2}, {quoted: m});
+    } catch (e2) {
+      try {
+        const p = await fg.tiktok(args[0]);
+        // let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
+        const te = `_*< DESCARGAS - TIKTOK />*_\n\n*[ 💡 ] Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+        await conn.sendMessage(m.chat, {video: {url: p.nowm}, caption: te}, {quoted: m});
+      } catch (e3) {
+        try {
+          const {author: {nickname}, video, description} = await tiktokdl(args[0]);
+          const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd;
+          // let cap = `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${nickname || 'Indefinido'}`
+          const cap = `_*< DESCARGAS - TIKTOK />*_\n\n*[ 💡 ] Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+          await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: m});
+        } catch {
+          throw `_*< DESCARGAS - TIKTOK />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+          }
+        }
+      }
+    }
+  }
+};
+handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm|tt|ttnowm|tiktokaudio)$/i;
+export default handler;
+
+async function tiktokdlF(url) {
+  if (!/tiktok/.test(url)) return `_*< DESCARGAS - TIKTOK />*_\n\n*[ ℹ️ ] Ingrese un enlace de TikTok.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://vm.tiktok.com/ZM686Q4ER/_`;
+  const gettoken = await axios.get('https://tikdown.org/id');
+  const $ = cheerio.load(gettoken.data);
+  const token = $('#download-form > input[type=hidden]:nth-child(2)').attr( 'value' );
+  const param = {url: url, _token: token};
+  const {data} = await axios.request('https://tikdown.org/getAjax?', {method: 'post', data: new URLSearchParams(Object.entries(param)), headers: {'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36'}});
+  const getdata = cheerio.load(data.html);
+  if (data.status) {
+    return {status: true, thumbnail: getdata('img').attr('src'), video: getdata('div.download-links > div:nth-child(1) > a').attr('href'), audio: getdata('div.download-links > div:nth-child(2) > a').attr('href')};
+  } else {
+    return {status: false};
+  }
+}

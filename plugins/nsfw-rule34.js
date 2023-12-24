@@ -6,7 +6,7 @@ if (!text) return conn.reply(m.chat, `*🚩 Ingresa un texto junto al comando.*`
 await conn.reply(m.chat, `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`, estilo, adNsfw)
 await m.react('🕓')
 const res = await (await googleImage('rule34 ' + text)).getRandom()
-await conn.sendFile(m.chat, res, 'error.jpg', `*––––––『 NSFW RULE34 』––––––*\n\n*Resultado de ∙* ${text ? text.capitalize() : false}\n\n${namebot}`, estilo)
+await conn.sendFile(m.chat, res, 'error.jpg', `*––––––『 NSFW RULE34 』––––––*\n\n*Resultado de ∙* ${text ? text.capitalize() : false})
 await m.react('✅')
 }
 handler.help = ['rule34 <texto>']

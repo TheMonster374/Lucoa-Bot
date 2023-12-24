@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api';
 const handler = (m) => m;
-
+ 
 handler.before = async (m) => {
   let Prefijo = false;
   const prefixRegex = global.prefix;

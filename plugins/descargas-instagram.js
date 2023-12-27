@@ -6,7 +6,7 @@ import {instagramdl} from '@bochilteam/scraper';
 import instagramDl from '@sasmeee/igdl';
 import {fileTypeFromBuffer} from 'file-type';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `_*DESCARGAS - INSTAGRAM*_\n\n*Ingrese un enlace de Instagram.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.instagram.com/p/C1Q36A7A9FY//?utm_source=ig_web_copy_link_`;
+  if (!args[0]) throw `_*DESCARGAS - INSTAGRAM*_\n\n*Ingrese un enlace de Instagram.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.instagram.com/p/C1Q36A7A9FY //?utm_source=ig_web_copy_link_`;
   m.reply(global.wait);
   try {
 const img = await instagramDl(args[0]);

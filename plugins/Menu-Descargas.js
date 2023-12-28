@@ -23,6 +23,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
      
 
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
+❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_

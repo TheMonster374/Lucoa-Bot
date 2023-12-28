@@ -22,7 +22,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-         *_⛄𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭-𝐌𝐃♔わ⛄_*
+         *_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭♔わ🐶_*
     
     
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
@@ -37,30 +37,30 @@ _${usedPrefix}Nuevo_
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
 ╰────────────────         
 ╭────────────────     
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}owner/creador_
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}repo/repositorio_
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}estado_
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}grupos/gruposjt_
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}speedtest
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  _Bot_ (uso sin prefijo)
-│ ❥꫶ꪆꦿꦼ͜͡⛄͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
- ╰────────────────  
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}owner/creador_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}repo/repositorio_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}estado_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}grupos/gruposjt_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}speedtest
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _Bot_ (uso sin prefijo)
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+╰────────────────  
  
 ${readMore}
             「 𝐌𝐄𝐍𝐔𝐒 」
             
 ╭────────────────            
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}MenuPorn/porn_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuPorn/porn_
 │
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}menuanimes/animes_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuanimes/animes_
 │
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}menuaudios/audios_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuaudios/audios_
 │
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}MenuCreador_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuCreador_
 │
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}MenuDescargas/Descargas_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuDescargas/Descargas_
 │
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}MenuRPG/RPG_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuRPG/RPG_
 ╰────────────────
  
 ${readMore}
@@ -68,24 +68,24 @@ ${readMore}
        「 𝐀𝐂𝐂𝐈𝐎𝐍𝐄𝐒」
        
 ╭────────────────        
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dado_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kiss_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}slap_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pat_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dado_
 ╰────────────────
  
-      「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
+  「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}Jotchua_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}aicharacter_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}Jotchua_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}aicharacter_
 ╰────────────────
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
 
 ╭──────────────── 
 │⟼ Mensajes en espera
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fixmsgespera_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fixmsgespera_
 ╰────────────────
 
 ${readMore}
@@ -93,19 +93,19 @@ ${readMore}
     「 𝐔𝐍𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐀 𝐓𝐔 𝐆𝐑𝐔𝐏𝐎 」
 
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}join *<enlace / link / url>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}join *<enlace / link / url>*_
 ╰────────────────
 ${readMore}
 
     「 𝐒𝐄𝐑𝐁𝐎𝐓 - 𝐉𝐀𝐃𝐈𝐁𝐎𝐓 」
     
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot --code_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}serbot_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}deletebot_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}token
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stop_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}bots_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot --code_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}deletebot_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}token
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stop_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bots_
 ╰────────────────
 
    「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」
@@ -200,8 +200,8 @@ ${readMore}
    「 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
 
 ╭────────────────    
-│_${usedPrefix}reporte *<texto>*_
-
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}reporte *<texto>*_
+╰────────────────
 ${readMore}
 
      「 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 」
@@ -222,6 +222,7 @@ ${readMore}
 ╰────────────────
 
      「 𝐆𝐑𝐔𝐏𝐎𝐒 」
+     
 ╭────────────────      
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}add *<numero>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kick *<@tag>*_
@@ -274,27 +275,27 @@ ${readMore}
       「 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 」 
       
 ╭────────────────       
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}logos *<efecto> <texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}logochristmas *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}logocorazon *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ytcomment *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}hornycard *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simpcard *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}lolice *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}itssostupid_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pixelar_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}blur_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}toanime_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logos *<efecto> <texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logochristmas *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logocorazon *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytcomment *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hornycard *<@tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}simpcard *<@tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lolice *<@tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}itssostupid_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pixelar_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}blur_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}toanime_
 ╰────────────────
 ${readMore}
 
      「 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 」
 
- ╭────────────────     
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}piropo_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}consejo_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fraseromantica_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}historiaromantica_
+╭────────────────     
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}piropo_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}consejo_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fraseromantica_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}historiaromantica_
 ╰────────────────
 ${readMore}
 
@@ -351,15 +352,15 @@ ${readMore}
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slow_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}smooth_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}tupai_
-
+╰────────────────
 ${readMore}
 
   「 𝐂𝐇𝐀𝐓 𝐀𝐍𝐎𝐍𝐈𝐌𝐎 」
 
 ╭────────────────   
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}start_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}next_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}leave_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}start_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}next_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}leave_
 ╰────────────────
 ${readMore}
 
@@ -368,13 +369,13 @@ ${readMore}
       「 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 」
 
 ╭──────────────── 
-││✲┣ ⛄  _${usedPrefix}inspect *<link wa_gc>*_
-││✲┣ ⛄  _${usedPrefix}chatgpt *<texto>*_
-││✲┣ ⛄  _${usedPrefix}delchatgpt
-││✲┣ ⛄  _${usedPrefix}gptvoz *<texto>*_
-││✲┣ ⛄  _${usedPrefix}dall-e *<texto>*_
-││✲┣ ⛄  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-││✲┣ ⛄  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}inspect *<link wa_gc>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}chatgpt *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}delchatgpt
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gptvoz *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dall-e *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
 ││✲┣ ⛄  _${usedPrefix}readviewonce *<imagen / video>*_
 ││✲┣ ⛄  _${usedPrefix}clima *<país> <ciudad>*_
 ││✲┣ ⛄  _${usedPrefix}encuesta *<texto1|texto2...>*_
@@ -401,32 +402,28 @@ ${readMore}
             「 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 」
 
 ╭────────────────             
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sticker *<responder a imagen o video>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sticker *<enlace / link / url>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sticker2 *<enlace / link / url>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}s *<responder a imagen o video>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}s *<enlace / link / url>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}scircle *<imagen>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sremovebg *<imagen>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}semoji *<tipo> <emoji>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}qc *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}attp *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}attp2 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}attp3 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttp *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttp2 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttp3 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttp4 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttp5 *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pat *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slap *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}kiss *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}dado_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}wm *<packname> <author>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stickermarker *<efecto> <imagen>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}stickerfilter *<efecto> <imagen>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sticker *<responder a imagen o video>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sticker *<enlace / link / url>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sticker2 *<enlace / link / url>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}s *<responder a imagen o video>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}s *<enlace / link / url>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}scircle *<imagen>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sremovebg *<imagen>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}semoji *<tipo> <emoji>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}qc *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}attp *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}attp2 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}attp3 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttp *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttp2 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttp3 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttp4 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttp5 *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}wm *<packname> <author>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stickermarker *<efecto> <imagen>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 ╰────────────────
 `.trim();
     if (m.isGroup) {

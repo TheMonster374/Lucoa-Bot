@@ -5,6 +5,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const pp = imagen3;
     // let vn = './media/menu.mp3'
     const img = './Menu2.jpg';
+    try {
+{await m.reply('⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱')}
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});

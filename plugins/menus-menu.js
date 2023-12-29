@@ -5,8 +5,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const pp = imagen3;
     // let vn = './media/menu.mp3'
     const img = './Menu2.jpg';
-    try {
-{await m.reply('⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱')}
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -22,7 +20,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const readMore = more.repeat(850);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const document = doc[Math.floor(Math.random() * doc.length)];
+    const document = doc[Math.floor(Math.random() * doc.length
+try {
+{await m.reply('⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱')}                                   
     const str = `
          *_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭♔わ🐶_*
     

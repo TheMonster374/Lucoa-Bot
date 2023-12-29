@@ -4,7 +4,7 @@ _*FUNCIONES DEL BOT*_\n👑:solo creadores\n🐶:solo admins\n
  *Opción:* WELCOME
  *Comando:* ${usedPrefix + command} welcome
  *Descripción:* Activa o desactiva la bienvenida en el grupo.
-
+ 
 --------------------------------
 
 ▢ *Opción:* MODO PUBLICO 👑

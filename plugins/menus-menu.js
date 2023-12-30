@@ -37,10 +37,11 @@ _${usedPrefix}Nuevo_
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
 ╰────────────────         
 ╭────────────────     
-│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}owner/creador_
-│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}repo/repositorio_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}owner | creador_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}repo | repositorio_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}estado_
-│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}grupos/gruposjt_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}grupos | gruposjt_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dash | dashboard_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}speedtest
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _Bot_ (uso sin prefijo)
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
@@ -50,17 +51,17 @@ ${readMore}
             「 𝐌𝐄𝐍𝐔𝐒 」
             
 ╭────────────────            
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuPorn/porn_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuPorn | porn_
 │
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuanimes/animes_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuanimes | animes_
 │
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuaudios/audios_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}menuaudios | audios_
 │
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuCreador_
 │
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuDescargas/Descargas_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuDescargas | Descargas_
 │
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuRPG/RPG_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuRPG | RPG_
 ╰────────────────
  
 ${readMore}

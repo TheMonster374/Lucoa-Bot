@@ -154,6 +154,7 @@ ${readMore}
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttt *<nombre sala>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}delttt_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}acertijo_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sorteo (nombre de lo que va a sortear)_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simi *<texto>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}top *<texto>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topgays_

@@ -56,6 +56,7 @@ _${usedPrefix}disable *audios_bot*_
 _${usedPrefix}enable *antispam*_
 _${usedPrefix}disable *antispam*_
 _${usedPrefix}msg *<texto>*_
+_${usedPrefix}backup | copia | respaldo_
 _${usedPrefix}banchat_
 _${usedPrefix}unbanchat_
 _${usedPrefix}resetuser *<@tag>*_

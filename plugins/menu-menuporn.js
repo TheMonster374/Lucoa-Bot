@@ -31,6 +31,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*_𝐋𝐨𝐬 𝐂�
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pack2
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pack3_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videoxxx_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}xxxvideo_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videolesbixxx_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tetas_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}booty_

@@ -1,33 +1,31 @@
-import fetch from 'node-fetch'
-let handler = m => m
-
-handler.before = async (m) => {
-let chat = global.db.data.chats[m.chat]
-if (chat.simi) {
-if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
-if (!m.text) return
-let textodem = m.text  
+import translate from '@vitalets/google-translate-api';
+import fetch from 'node-fetch';
+const handler = async (m, {text, command, args, usedPrefix}) => {
+if (!text) throw `${lenguaje['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙐𝙉 𝙏𝙀𝙓𝙏𝙊 𝙋𝘼𝙍𝘼 𝙃𝘼𝘽𝙇𝘼𝙍 𝘾𝙊𝙉𝙈𝙄𝙂𝙊\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Hola Gata Bot*\n\n𝙒𝙍𝙄𝙏𝙀 𝘼 𝙏𝙀𝙓𝙏 𝙏𝙊 𝙏𝘼𝙇𝙆 𝙏𝙊 𝙈𝙀\n\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Hello Gata Bot*`
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
-let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=` + lenguajeGB.lenguaje())
-let data = await ressimi.json();
-if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') return m.reply(`${lol}`) /* EL TEXTO "lol" NO ESTA DEFINIDO PARA DAR ERROR Y USAR LA OTRA API */
-await m.reply(data.success)
+const api = await fetch('https://api.simsimi.net/v2/?text=' + text + '&lc=es');
+const resSimi = await api.json();
+m.reply(resSimi.success);
 } catch {
-/* SI DA ERROR USARA ESTA OTRA OPCION DE API DE IA QUE RECUERDA EL NOMBRE DE LA PERSONA */
-if (textodem.includes('Hola')) textodem = textodem.replace('Hola', 'Hello')
-if (textodem.includes('hola')) textodem = textodem.replace('hola', 'hello')
-if (textodem.includes('HOLA')) textodem = textodem.replace('HOLA', 'HELLO')    
-let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + textodem)
-let resu = await reis.json()  
-let nama = m.pushName || '1'
-let api = await fetch("http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=" + nama + "&msg=" + resu[0][0][0])
-let res = await api.json()
-let reis2 = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + res.cnt)
-let resu2 = await reis2.json()
-await m.reply(resu2[0][0][0])}
-return !0
-}
-return true
-}
+try {
+if (text.includes('Hola')) text = text.replace('Hola', 'Hello');
+if (text.includes('hola')) text = text.replace('hola', 'Hello');
+if (text.includes('HOLA')) text = text.replace('HOLA', 'HELLO');
+const reis = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=' + text);
+const resu = await reis.json();
+const nama = m.pushName || '1';
+const api = await fetch('http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=' + nama + '&msg=' + resu[0][0][0]);
+const res = await api.json();
+const reis2 = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=' + res.cnt);
+const resu2 = await reis2.json();
+m.reply(resu2[0][0][0]);
+} catch (e) {
+await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguaje.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguaje.smsMensError2()} ` + usedPrefix + command)
+console.log(`❗❗ ${lenguaje['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)
+}}}
+handler.help = ['simsimi']
+handler.tags = ['General']
+handler.command = ['bot', 'simi', 'simsimi'] 
 export default handler

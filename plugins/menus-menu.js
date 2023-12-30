@@ -101,12 +101,7 @@ ${readMore}
     「 𝐒𝐄𝐑𝐁𝐎𝐓 - 𝐉𝐀𝐃𝐈𝐁𝐎𝐓 」
     
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot --code_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}deletebot_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}token
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stop_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bots_
+│
 ╰────────────────
 
    「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」

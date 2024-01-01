@@ -11,7 +11,7 @@ filename: __filename,
 category: "help",
 },
 async(conn, m ) => {
-const { commands } = require('../lib/commands.js') 
+const { commands } = require('../lib/plugins.js') 
 
     const cmds = {}
     commands.map(async(command, index) => {

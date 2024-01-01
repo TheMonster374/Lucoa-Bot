@@ -1,37 +1,38 @@
-/* Creditos de los tags a @darlyn1234 y diseño a @ALBERTO9883 */
+// TheMystic-Bot-MD@BrunoSobrino - descargas-spotify.js
+// Creditos de los tags a @darlyn1234 y diseño a @ALBERTO9883
 import fetch from 'node-fetch';
 import fs from 'fs';
 import axios from 'axios';
 
-const handler = async (m, { conn, text }) => {
- if (!text) throw `*Ingrese el nombre de alguna canción de spotify.*`;
+const handler = async (m, { conn, text, usedPrefix, command }) => {
+ if (!text) throw `_*< DESCARGAS - SPOTIFY />*_\n\n*[ ℹ️ ] Hace falta el título de la canción de Spotify.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
   try {
-    const res = await fetch(global.API('ApiEmpire', '/api/spotifysearch?text=' + text))
+    const res = await fetch(global.API('CFROSAPI', '/api/spotifysearch?text=' + text))
     const data = await res.json()
     const linkDL = data.spty.resultado[0].link;
-    const musics = await fetch(global.API('ApiEmpire', '/api/spotifydl?text=' + linkDL))
+    const musics = await fetch(global.API('CFROSAPI', '/api/spotifydl?text=' + linkDL))
     const music = await conn.getFile(musics.url)
-    const infos = await fetch(global.API('ApiEmpire', '/api/spotifyinfo?text=' + linkDL))
+    const infos = await fetch(global.API('CFROSAPI', '/api/spotifyinfo?text=' + linkDL))
     const info = await infos.json()
     const spty = info.spty.resultado
     const img = await (await fetch(`${spty.thumbnail}`)).buffer()  
-    let spotifyi = `*• 💽 Spotify Download •*\n\n`
-         spotifyi += `	◦  *Título:* ${spty.title}\n`
-         spotifyi += `	◦  *Artista:* ${spty.artist}\n`
-         spotifyi += `	◦  *Album:* ${spty.album}\n`                 
-         spotifyi += `	◦  *Publicado:* ${spty.year}\n\n`   
-         spotifyi += `El audio se esta enviando, espere un momento..`
+    let spotifyi = ` _*< DESCARGAS - SPOTIFY />*_\n\n`
+        spotifyi += ` ▢ *Título:* ${spty.title}\n\n`
+        spotifyi += ` ▢ *Artista:* ${spty.artist}\n\n`
+        spotifyi += ` ▢ *Álbum:* ${spty.album}\n\n`                 
+        spotifyi += ` ▢ *Publicado:* ${spty.year}\n\n`   
+        spotifyi += `*[ ℹ️ ] Se está enviando el audio. espere...*`
     await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": linkDL, "sourceUrl": linkDL}}}, {quoted: m});
     await conn.sendMessage(m.chat, {audio: music.data, fileName: `${spty.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*Error, no se encontraron resultados.*';
+    throw '_*< DESCARGAS - SPOTIFY />*_\n\n[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';
   }
 };
 handler.command = /^(spotify|music)$/i;
 export default handler;
 
-
+//***Código antiguo/obsoleto.
 
 /*import fetch from 'node-fetch';
 import Spotify from 'spotifydl-x';
@@ -47,7 +48,7 @@ const credentials = {
 const spotify = new Spotify.default(credentials);
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `*Ingrese el nombre de alguna canción de spotify.*`;
+ if (!text) throw `*[❗] Ingrese el nombre de alguna canción de spotify.*`;
   try {
     const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`);
     const jsonDL = await resDL.json();
@@ -62,7 +63,7 @@ const handler = async (m, { conn, text }) => {
     const img = await (await fetch(`${spty.data.cover_url}`)).buffer()  
     const letra_s = await find_lyrics(spty.data.name ? spty.data.name : '');
     let letra;
-    letra = `${letra_s ? letra_s + '\n\n Descarga por ALS & Jotchua - Bot ' : ' Descarga por ALS & Jotchua - Bot '}`  
+    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖' : '🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖'}`  
     const tags = {
       title: spty.data.name || '-',
       artist: artist,
@@ -101,7 +102,7 @@ const handler = async (m, { conn, text }) => {
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*Error, no se encontraron resultados.*';
+    throw '*[❗] Error, no se encontraron resultados.*';
   }
 };
 handler.command = /^(spotify|music)$/i;

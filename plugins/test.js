@@ -167,3 +167,5 @@ let file = require.resolve(__filename)
   delete require.cache[file]  
   require(file)  
   })
+
+handler.command = /^(menucreador|MenuTEST||)$/i;

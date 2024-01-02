@@ -437,7 +437,7 @@ ${readMore}
   }
 };
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i;
-handler.exp = 50;
+handler.exp = 1000000000;
 handler.fail = null;
 export default handler;
 function clockString(ms) {

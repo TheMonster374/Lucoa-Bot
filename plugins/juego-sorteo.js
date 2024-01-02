@@ -25,7 +25,7 @@ await conn.sendMessage(m.chat, { text: txt.trim(), mentions: conn.parseMention(t
 
 }
 handler.help = ['sorteo']
-handler.command = ['sorteo']
+handler.command = ['sorteo|kickaleatorio|aleatoriokick|sorteokick|Xkick']
 handler.tags = ['juegos']
 handler.group = true
 handler.admin = true

@@ -1,44 +1,85 @@
-
 import fetch from 'node-fetch'
-import { savefrom, facebookdl, facebookdlv2 } from '@bochilteam/scraper'
-import fbDownloader from 'fb-downloader-scrapper'
-let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/` 
-if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`
-try {
-{await m.reply('⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱')}
-await m.reply(`*[❗] ᴅᴇsᴄᴀʀɢᴀɴᴅᴏ sᴜ ᴠɪᴅᴇᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ ᴘᴏʀ ғᴀᴠᴏʀ, ᴇsᴛᴇ ᴘʀᴏᴄᴇsᴏ ᴘᴜᴇᴅᴇ ᴅᴜʀᴀʀ ᴇɴᴛʀᴇ 2 ʏ 10 ᴍɪɴᴜᴛᴏs ᴅᴇᴘᴇɴᴅɪᴇɴᴅᴏ ᴅᴇ ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ...*`)
-switch (command) {   
-case "facebook": case "fb": case "facebookdl": case "fbdl":                                  
-let res = await fbDownloader(args[0])
-for (let result of res.download) {
-let ur = result.url    
-await conn.sendFile(m.chat, ur, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)}
-break           
-case "facebook2": case "fb2": case "facebookdl2": case "fbdl2":           
-let ress = await fg.fbdl(args[0])
-let urll = await ress.data[0].url    
-await conn.sendFile(m.chat, urll, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m) 
+import { facebook } from '@xct007/frieren-scraper'
+
+var handler = async (m, { conn, args, command, usedPrefix, text }) => {
+
+let vid
+const isCommand7 = /^(facebook|fb|facebookdl|fbdl)$/i.test(command)
+
+async function reportError(e) {
+await conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fake, )
+console.log(`🚩 ERROR EN: ${usedPrefix + command} ⚠️\n`)
+console.log(e)
+}
+  
+switch (true) {   
+case isCommand7:
+if (!text) return conn.reply(m.chat, `🎌 *Ingrese un enlace de facebook*\n\nEjemplo, !fb https://fb.watch/kAOXy3wf2L/?mibextid=Nif5oz`, m, fake, )
+if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) return conn.reply(m.chat, '🎌 *No es un enlace válido*', m, fake, )
+await conn.reply(m.chat, '⏰ Espere un momento', m, fake, )
+m.react(done)
+let messageType = checkMessageType(args[0])
+let message = ''
+switch (messageType) {
+case 'groups':
+message = 'Vídeo de grupo de facebook 🚀'
 break
-case "facebook3": case "fb3": case "facebookdl3": case "fbdl3":        
-let vio = await fetch(`https://api.violetics.pw/api/downloader/facebook?apikey=beta&url=${args[0]}`)  
-let vioo = await vio.json()
-let videovio = `${vioo.result.hd.url || vioo.result.sd.url}`
-await conn.sendFile(m.chat, videovio, `error.mp4`, '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)
-break   
-case "facebook4": case "fb4": case "facebookdl4": case "fbdl4":           
-const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
-for (const { url, isVideo } of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)
-break          
-case "facebook5": case "fb5": case "facebookdl5": case "fbdl5":        
-let res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=brunosobrino&q=${args[0]}`)  
-let json = await res3.json()
-let url3 = await json.video
-await conn.sendFile(m.chat, url3, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)     
-break    
-}} catch {
-await await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾, 𝚂𝙸 𝙴𝙻 𝙴𝚁𝚁𝙾𝚁 𝚂𝙸𝙶𝚄𝙴, 𝙿𝚁𝚄𝙴𝙱𝙴 𝙲𝙾𝙽 𝙾𝚃𝚁𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 (${usedPrefix}fb, ${usedPrefix}fb2, ${usedPrefix}fb3, ${usedPrefix}fb4, ${usedPrefix}fb5)*`)
-}}
-handler.command = /^(facebook|fb|facebookdl|fbdl|facebook2|fb2|facebookdl2|fbdl2|facebook3|fb3|facebookdl3|fbdl3|facebook4|fb4|facebookdl4|fbdl4|facebook5|fb5|facebookdl5|fbdl5)$/i
-handler.limit = 1
+case 'reel':
+message = 'Vídeo de reels de facebook 🚀'
+break
+case 'stories':
+message = 'Vídeo de historias de facebook 🚀'
+break
+case 'posts':
+message = 'Vídeo de publicaciones de facebook 🚀'
+break
+default:
+message = 'Vídeo de facebook 🚀'
+break
+}
+try {
+let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=BrunoSobrino&url=${args[0]}`)
+let _json = await res.json()
+vid = _json.result[0]
+if (vid == '' || !vid || vid == null) vid = _json.result[1]
+await conn.sendFile(m.chat, vid, 'error.mp4', `*${message}*`, m)
+} catch (error1) {
+try {
+const d2ata = await facebook.v1(args[0])
+let r2es = ''
+if (d2ata.urls && d2ata.urls.length > 0) {
+r2es = `${d2ata.urls[0]?.hd || d2ata.urls[1]?.sd || ''}`
+}
+await conn.sendFile(m.chat, r2es, 'error.mp4', `*${message}*`, m)
+} catch (error2) {
+try {
+var get = await fetch(`https://api.botcahx.live/api/dowloader/fbdown?url=${args[0]}&apikey=QaepQXxR`)
+var js = await get.json()
+await conn.sendFile(m.chat, js.result.HD, 'error.mp4', `*${message}*`, m)
+} catch (e) {
+reportError(e)}
+}}}
+
+}
+handler.help = ['fb']
+handler.tags = ['descargas']
+handler.command = /^(facebook|fb|facebookdl|fbdl)$/i
+
+handler.register = true
+handler.diamond = true
+
 export default handler
+  
+function checkMessageType(url) {
+if (url.includes('www.facebook.com')) {
+if (url.includes('/groups/')) {
+return 'groups'
+} else if (url.includes('/reel/')) {
+return 'reel'
+} else if (url.includes('/stories/')) {
+return 'stories'
+} else if (url.includes('/posts/')) {
+return 'posts'
+}}
+return 'default'
+}

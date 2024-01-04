@@ -106,6 +106,8 @@ ${readMore}
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stop_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}token_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bots_
+│_*(si quiere sacar el subbot vaya a dispositivos
+│a dispositivos vinculados y cierre la sesion)*_
 ╰────────────────
 
    「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」

@@ -12,6 +12,6 @@ conn.sendFile(m.chat, json.result, null, `🥵`, null, null, { viewOnce: true },
 handler.tags = ['nsfw']
 handler.command = ['vporno', 'xxxvideo']
 handler.help = ['vporno', 'xxxvideo']
-handler.register = true
+
 
 export default handler

@@ -6,7 +6,7 @@ const handler = async (m, {conn, args}) => {
       title: 'link del grupo',
       body: '𝙹𝚘𝚝𝚌𝚑𝚞𝚊 - 𝚋𝚘𝚝',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
-      sourceUrl: `https://github.com/AleXD0009/Jotchua`}}});
+      sourceUrl: `https://github.com/AleXD0009/Jotchua-Bot`}}});
 };
 handler.help = ['linkgroup'];
 handler.tags = ['group'];

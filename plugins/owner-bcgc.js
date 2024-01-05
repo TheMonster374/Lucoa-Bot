@@ -39,7 +39,7 @@ conn.sendButton(id, `*╔══❰ 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐃𝐎 ❱�
 contextInfo: { externalAdReply: {
 title: 'ᴄᴏᴍᴜɴɪᴄᴀᴅᴏ ᴏғɪᴄɪᴀʟ ᴀ ɢʀᴜᴘᴏs',
 body: '𝚋𝚢 𝙹𝚘𝚝𝚌𝚑𝚞𝚊-𝚋𝚘𝚝',
-sourceUrl: `https://github.com/AleXD0009/Jotchua`,
+sourceUrl: `https://github.com/AleXD0009/Jotchua-Bot`,
 thumbnail: fs.readFileSync('./Menu2.jpg') }}})}
 m.reply(`*𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙴𝙽𝚅𝙸𝙰𝙳𝙾 𝙰 ${groups.length} 𝙶𝚁𝚄𝙿𝙾/𝚂*\n\n*𝐍𝐎𝐓𝐀: es posible que este comando tenga fallas y no se envie a todos los chats, disculpe por el momento*`)
 }

@@ -2,9 +2,9 @@
   "name": "Jotchua-bot",
   "website": "https://github.com/AleXD0009",
   "description": "BY ALS",
-  "repository": "https://github.com/AleXD0009/Jotchua",
+  "repository": "https://github.com/AleXD0009/Jotchua-Bot",
   "logo": "https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/AleXD0009/Jotchua",
+  "success_url": "https://github.com/AleXD0009/Jotchua-Bot",
   "keywords": [
     "nodejs",
     "heroku",

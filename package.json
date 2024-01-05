@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/AleXD0009/Jotchua",
+  "homepage": "https://github.com/AleXD0009/Jotchua-Bot",
   "author": {
     "name": "ALS"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleXD0009/Jotchua.git"
+    "url": "git+https://github.com/AleXD0009/Jotchua-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/AleXD0009/Jotchua/issues"
+    "url": "https://github.com/AleXD0009/Jotchua-Bot/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

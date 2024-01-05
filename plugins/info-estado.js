@@ -57,7 +57,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/AleXD0009/Jotchua` },
+    document: { url: `https://github.com/AleXD0009/Jotchua-Bot` },
     mimetype: `application/${document}`,
     fileName: `Documento`,
     fileLength: 99999999999999,
@@ -66,13 +66,13 @@ const handler = async (m, { conn, usedPrefix }) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/AleXD0009/Jotchua",
+        mediaUrl: "https://github.com/AleXD0009/Jotchua-Bot",
         mediaType: 2,
         previewType: "pdf",
         title: "Jotchua - Bot",
         body: "Repositorio - GitHub",
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/AleXD0009/Jotchua",
+        sourceUrl: "https://github.com/AleXD0009/Jotchua-Bot",
       },
     },
     caption: info,

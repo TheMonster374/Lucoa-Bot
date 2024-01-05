@@ -6,7 +6,7 @@ const handler = async (m, {conn, usedPrefix}) => {
      
   *𝘦𝘭 𝘯𝘶𝘮𝘦𝘳𝘰 𝘥𝘦 𝘮𝘪 𝘤𝘦𝘢𝘥𝘰𝘳 𝘦𝘴* wa.me/5491156673266`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/AleXD0009/Jotchua`},
+    'document': {url: `https://github.com/AleXD0009/Jotchua-Bot`},
     'mimetype': `application/${document}`,
     'fileName': `「  𝘉𝘺 𝘈𝘓𝘚 」`,
     'fileLength': 99999999999999,
@@ -15,7 +15,7 @@ const handler = async (m, {conn, usedPrefix}) => {
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/AleXD0009/Jotchua',
+        'mediaUrl': 'https://github.com/AleXD0009/Jotchua-Bot',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': 'Bot Modificado por ALS⁩',

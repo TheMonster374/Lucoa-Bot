@@ -42,7 +42,8 @@ _${usedPrefix}Nuevo_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}estado_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}grupos | gruposjt_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dash | dashboard_
-│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}speedtest
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}speedtest_
+│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _Bot_ (uso sin prefijo)
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
 ╰────────────────  

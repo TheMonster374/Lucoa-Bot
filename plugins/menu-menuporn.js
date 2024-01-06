@@ -1,25 +1,31 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*_𝐋𝐨𝐬 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 +𝟏𝟖 𝐄𝐬𝐭𝐚𝐧 𝐃𝐞𝐬𝐚𝐜𝐭𝐢𝐯𝐚𝐝𝐨𝐬 𝐄𝐧 𝐄𝐬𝐭𝐞 𝐆𝐫𝐮𝐩𝐨, 𝐒𝐢 𝐄𝐬 𝐀𝐝𝐦𝐢𝐧 𝐲 𝐃𝐞𝐬𝐞𝐚 𝐀𝐜𝐭𝐢𝐯𝐚𝐫𝐥𝐨𝐬 𝐔𝐬𝐞 𝐄𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 ${usedPrefix}enable modohorny*`; 
-  try {
-    const pp = imagen1;
-    const vn = './media/La biblia.mp3';
+let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: wm,
+           hydratedButtons: [{
     const d = new Date(new Date + 3600000);
-    const locale = 'es';
+    const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
+    const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const user = global.db.data.users[m.sender];
     const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
+const {exp, limit, level, role} = global.db.data.users[m.sender];
+const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+const rtotal = Object.entries(global.db.data.users).length || '0'
+const more = String.fromCharCode(8206);
+const readMore = more.repeat(850);             
+const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
+const document = doc[Math.floor(Math.random() * doc.length)];
+const str = `             
       — *_𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭_* —
 
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕

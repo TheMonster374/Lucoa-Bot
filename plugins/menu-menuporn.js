@@ -1,8 +1,4 @@
-import fetch from 'node-fetch';
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  try {
-  let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -10,23 +6,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
            hydratedButtons: [{
-    const d = new Date(new Date + 3600000);
-    const locale = 'es-ES';
-    const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
-    const _uptime = process.uptime() * 1000;
-    const uptime = clockString(_uptime);
-    const user = global.db.data.users[m.sender];
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const rtotal = Object.entries(global.db.data.users).length || '0'
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
       — *_𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭_* —
 
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕

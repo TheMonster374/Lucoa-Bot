@@ -28,6 +28,17 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
            「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
+           
+𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
+https://github.com/AleXD0009/Jotchua-Bot
+
+𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐓𝐞𝐬𝐭  𝐃𝐞𝐥 𝐛𝐨𝐭:
+https://github.com/AleXD0009/Jotchua-Test
+*(en este repositorio se realizaran primero las actualizaciones del bot)*
+
+𝐀𝐯𝐢𝐬𝐨:
+el repositorio del bot (no test) talvez no tenga las mismas cosas que el repositorio test ya que puede ser que me olvide XDD
+
 
 ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
 _${usedPrefix}ComandosNuevos_
@@ -35,6 +46,7 @@ _${usedPrefix}Nuevo_
 
 ╭────────────────
 │𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
+│𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
 ╰────────────────         
 ╭────────────────     
 │ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}owner | creador_
@@ -79,8 +91,8 @@ ${readMore}
   「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}Jotchua_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}aicharacter_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bot_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}simi_
 ╰────────────────
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
@@ -104,11 +116,10 @@ ${readMore}
 ╭──────────────── 
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}serbot --code_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stop_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}token_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bots_
-│_*(si quiere sacar el subbot vaya a dispositivos
-│a dispositivos vinculados y cierre la sesion)*_
+│(si quiere sacar el subbot vaya a dispositivos
+│a dispositivos vinculados y cierre la sesion)
 ╰────────────────
 
    「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」
@@ -157,47 +168,47 @@ ${readMore}
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}delttt_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}acertijo_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sorteo (nombre de lo que va a sortear)_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}simi *<texto>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}top *<texto>*_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topgays_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topparejas_
+│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}amistad_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topotakus_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}formarpareja_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}verdad_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}reto_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}cancion_
 │❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pista_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}wordfind_
 ╰────────────────
 ${readMore}
 
     「 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 」
 
 ╭────────────────     
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *welcome*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *modohorny*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *modohorny*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antilink*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antilink*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antilink2*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antilink2*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *detect*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *detect*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *audios*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *audios*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *autosticker*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *autosticker*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antiviewonce*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antiviewonce*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antitoxic*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antitoxic*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antitraba*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antitraba*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antiarabes*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antiarabes*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *modoadmin*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *modoadmin*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}enable *antidelete*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}disable *antidelete*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *welcome*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *modohorny*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *modohorny*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antilink*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antilink*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antilink2*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antilink2*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *detect*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *detect*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *audios*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *audios*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *autosticker*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *autosticker*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antiviewonce*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antiviewonce*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antitoxic*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antitoxic*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antitraba*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antitraba*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antiarabes*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antiarabes*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *modoadmin*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *modoadmin*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antidelete*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antidelete*_
 ╰────────────────
 ${readMore}
 
@@ -440,7 +451,7 @@ ${readMore}
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*[ ℹ️ ] Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
+    conn.reply(m.chat, '*Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
   }
 };
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i;

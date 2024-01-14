@@ -19,47 +19,52 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-      — *_𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭_* —
-
-𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
-
-
-      「 𝐌𝐄𝐍𝐔 +𝟏𝟖 」
-      
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pack_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pack2
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pack3_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videoxxx_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}xxxvideo_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videolesbixxx_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tetas_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}booty_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ecchi_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}furro_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}imagenlesbians_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}panties_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pene_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}porno_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}randomxxx_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pechos_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}yaoi_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}yaoi2_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}yuri_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}yuri2_ 
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}trapito_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hentai_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwloli_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfworgy_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwfoot_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwass_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwbdsm_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwcum_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwero_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwfemdom_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nsfwglass_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hentaipdf *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hentaisearch *<texto>*_`.trim();
-     if (m.isGroup) {
+╭─────────────┈⊷
+│  — *_𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭_* —
+╰┬────────────┈⊷
+┌┤
+┌┤𝗛ola, ${taguser}* Espero que 
+┌┤tengas un lindo dia o noche 🐕
+┌┤
+┌┤「 𝐌𝐄𝐍𝐔 +𝟏𝟖 」
+┌┤      
+┌┤_${usedPrefix}ᴘᴀᴄᴋ_
+┌┤_${usedPrefix}ᴘᴀᴄᴋ2
+┌┤_${usedPrefix}ᴘᴀᴄᴋ3_
+┌┤_${usedPrefix}ᴠɪᴅᴇᴏxxx_
+┌┤_${usedPrefix}xxxᴠɪᴅᴇᴏ_
+┌┤_${usedPrefix}ᴠɪᴅᴇᴏʟᴇꜱʙɪxxx_
+┌┤_${usedPrefix}ᴛᴇᴛᴀꜱ_
+┌┤_${usedPrefix}ʙᴏᴏᴛʏ_
+┌┤_${usedPrefix}ᴇᴄᴄʜɪ_
+┌┤_${usedPrefix}ꜰᴜʀʀᴏ_
+┌┤_${usedPrefix}ɪᴍᴀɢᴇɴʟᴇꜱʙɪᴀɴꜱ_
+┌┤_${usedPrefix}panties_
+┌┤_${usedPrefix}pene_
+┌┤_${usedPrefix}porno_
+┌┤_${usedPrefix}randomxxx_
+┌┤_${usedPrefix}pechos_
+┌┤_${usedPrefix}yaoi_
+┌┤_${usedPrefix}yaoi2_
+┌┤_${usedPrefix}yuri_
+┌┤_${usedPrefix}yuri2_ 
+┌┤_${usedPrefix}trapito_
+┌┤_${usedPrefix}rule34_
+┌┤_${usedPrefix}hentai_
+┌┤_${usedPrefix}hentai2_
+┌┤_${usedPrefix}nsfwloli_
+┌┤_${usedPrefix}nsfworgy_
+┌┤_${usedPrefix}nsfwfoot_
+┌┤_${usedPrefix}nsfwass_
+┌┤_${usedPrefix}nsfwbdsm_
+┌┤_${usedPrefix}nsfwcum_
+┌┤_${usedPrefix}nsfwfemdom_
+┌┤_${usedPrefix}nsfwero_
+┌┤_${usedPrefix}nsfwglass_
+┌┤_${usedPrefix}hentaipdf *<texto>*_
+┌┤_${usedPrefix}hentaisearch *<texto>*_
+╰┬────────────┈⊷`.trim();
+    if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});

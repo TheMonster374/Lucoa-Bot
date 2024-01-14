@@ -24,14 +24,12 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     
     Comandos nuevos:
 ╭────────────────
-│.dep
-│.bank/banco
-│.withdraw
-│.instagram
-│.tiktok
-│.dash
-│.xxxvideo
-│.sorteo
+│amistad
+│formarparejas
+│follar
+│gay2
+│rule34
+│hentai2
 ╰────────────────`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

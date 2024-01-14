@@ -20,53 +20,57 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-     *_𝐣𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭_* 
-
- 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
-
-
-   「 𝐌𝐄𝐍𝐔 𝐀𝐍𝐈𝐌𝐄 」
-
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lolivid_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}loli_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ppcouple_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}neko_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}waifu_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}akira_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}akiyama_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}anna_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}asuna_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ayuzawa_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}boruto_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}chiho_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}chitoge_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}deidara_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}erza_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}elaina_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}eba_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}emilia_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hestia_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hinata_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}inori_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}isuzu_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}itachi_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}itori_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kaga_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kagura_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kaori_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}keneki_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kotori_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}kurumi_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}madara_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mikasa_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}miku_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}minato_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}naruto_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nezuko_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sagiri_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sasuke_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sakura_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}cosplay_`.trim();
+╭━━━━━━━━━━━━━━━━━━⬣
+┃  *𝗛ola, ${taguser}* 🐶
+┃━━━━━━━━━━━━━━━━━━⬣
+┃ 〔𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎𝐒〕
+┃━━━━━━━━━━━━━━━━━━⬣
+┃*- escribe las siguientes palabras 
+┃ o frases sin ningun prefijo(#, /, *, .)*
+┃━━━━━━━━━━━━━━━━━━⬣
+┣ _Quien es tu sempai botsito 7w7_
+┣ _Te diagnostico con gay_
+┣ _No digas eso papu_
+┣ _A nadie le importa_
+┣ _Fiesta del admin_
+┣ _Fiesta del administrador_ 
+┣ _Vivan los novios_
+┣ _Feliz cumpleaños_
+┣ _Noche de paz_
+┣ _Buenos dias_
+┣ _Buenos tardes_
+┣ _Buenos noches_
+┣ _Audio hentai_
+┣ _Chica lgante_
+┣ _Feliz navidad_
+┣ _Vete a la vrg_
+┣ _Pasa pack Bot_
+┣ _Atencion grupo_
+┣ _Marica quien_
+┣ _Murio el grupo_
+┣ _Oh me vengo_
+┣ _tio que rico_
+┣ _Viernes_
+┣ _Baneado_
+┣ _Sexo_
+┣ _Hola_
+┣ _Un pato_
+┣ _Nyanpasu_
+┣ _Te amo_
+┣ _Yamete_
+┣ _Bañate_
+┣ _Es puto_
+┣ _La biblia_
+┣ _Onichan_
+┣ _Mierda de Bot_
+┣ _Siuuu_
+┣ _Epico_
+┣ _Shitpost_
+┣ _Rawr_
+┣ _UwU_
+┣ _:c_
+┣ _a_
+╰━━━━━━━━━━━━⬣`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};

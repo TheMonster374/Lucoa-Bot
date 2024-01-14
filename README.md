@@ -64,6 +64,16 @@ npm update
 ```bash
 npm start
 ```
+### `▢ INSTALAR AUTOMATICAMENTE EN TERMUX` 
+
+```bash
+termux-setup-storage
+```
+
+```bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/jotchua.sh | bash
+```
+
 
 ### `▢ ACTIVAR EN CASO DE DETENERSE EN TERMUX`
 ```bash

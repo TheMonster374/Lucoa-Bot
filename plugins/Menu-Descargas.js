@@ -21,6 +21,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
            「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
      
+     
 
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
@@ -33,18 +34,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp4 *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp4doc *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}play *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}play2 *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}play.1 *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶  _${usedPrefix}play.2 *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}playdoc *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}playdoc2 *<texto>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}playlist *<texto>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}spotify *<texto>*_
 ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ringtone *<texto>*_

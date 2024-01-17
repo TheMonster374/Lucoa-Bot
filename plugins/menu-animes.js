@@ -24,7 +24,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
 
-   「 𝐌𝐄𝐍𝐔 𝐀𝐍𝐈𝐌𝐄 」
+   「 ༯⃢༯⃢☬𝐌𝐄𝐍𝐔 𝐀𝐍𝐈𝐌𝐄༯⃢༯⃢☬ 」
 
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lolivid_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}loli_

@@ -24,8 +24,6 @@ await conn.reply(m.chat,`*Ocurrió un error inesperado*`, m, )
 handler.tags = ['downloader', 'nsfw']
 handler.help = ['nhentai'].map(v => v + ' <codigo>')
 handler.command = ['nhentai', 'nhentaidl']
-handler.limit = 5
-handler.register = true 
 export default handler 
 
 async function nhentaiScraper(id) {

@@ -82,11 +82,12 @@ ${readMore}
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dado_
 ╰────────────────
  
-  「𝐇𝐀𝐁𝐋𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
+  「𝐈𝐀 / 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 
 ╭──────────────── 
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bot_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}simi_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}iaimagen
 ╰────────────────
 
      「 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍 𝐀 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
@@ -181,31 +182,8 @@ ${readMore}
     「 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 」
 
 ╭────────────────     
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *welcome*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *modohorny*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *modohorny*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antilink*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antilink*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antilink2*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antilink2*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *detect*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *detect*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *audios*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *audios*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *autosticker*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *autosticker*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antiviewonce*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antiviewonce*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antitoxic*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antitoxic*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antitraba*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antitraba*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antiarabes*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antiarabes*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *modoadmin*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *modoadmin*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable *antidelete*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable *antidelete*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable
 ╰────────────────
 ${readMore}
 

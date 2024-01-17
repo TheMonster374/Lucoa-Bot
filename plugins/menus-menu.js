@@ -21,9 +21,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
+    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     const str = `
-         *_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭♔わ🐶_*
-    
+┏━━━━━━━━━━━━━━┓
+┣⟣*_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶_*┣
+┗━━━━━━━━━━━━━━┛
     
 𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
@@ -31,14 +33,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
            
 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
 https://github.com/AleXD0009/Jotchua-Bot
-
-𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐓𝐞𝐬𝐭  𝐃𝐞𝐥 𝐛𝐨𝐭:
-https://github.com/AleXD0009/Jotchua-Test
-*(en este repositorio se realizaran primero las actualizaciones del bot)*
-
-𝐀𝐯𝐢𝐬𝐨:
-el repositorio del bot (no test) talvez no tenga las mismas cosas que el repositorio test ya que puede ser que me olvide XDD
-
 
 ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
 _${usedPrefix}ComandosNuevos_
@@ -145,39 +139,42 @@ ${readMore}
        「 𝐉𝐔𝐄𝐆𝐎𝐒 」
 
 ╭──────────────── 
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ppt *<papel / tijera /piedra>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}prostituto *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}prostituta *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}gay2 *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}lesbiana *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pajero *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pajera *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}puto *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}puta *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}manco *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}manca *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}rata *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}love *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}doxear *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pregunta *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}suitpvp *<@tag>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}slot *<apuesta>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}ttt *<nombre sala>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}delttt_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}acertijo_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}sorteo (nombre de lo que va a sortear)_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}top *<texto>*_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topgays_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topparejas_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}amistad_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}topotakus_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}formarpareja_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}verdad_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}reto_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}cancion_
-│❥꫶ꪆꦿꦼ͜͡⛄͘͜  _${usedPrefix}pista_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ppt *<papel / tijera /piedra>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}prostituto *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}prostituta *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gay2 *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lesbiana *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pajero *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pajera *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}puto *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}puta *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}manco *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}manca *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}rata *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}love *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}doxear *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pregunta *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}suitpvp *<@tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}slot *<apuesta>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ttt *<nombre sala>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}delttt_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}acertijo_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}sorteo (nombre de lo que va a sortear)_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}top *<texto>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}topgays_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}topparejas_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}amistad_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}trivia_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}topotakus_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}formarpareja_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}verdad_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}reto_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}cancion_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pista_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}advpe_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}palabra_
 ╰────────────────
 ${readMore}
 

@@ -83,12 +83,6 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
-  if (command == 'furro') {
-    const res = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/JSON/furro.json`)).data;
-    const url = await res[Math.floor(res.length * Math.random())];
-    conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
-
   if (command == 'trapito') {
     const res = await fetch(`https://api.waifu.pics/nsfw/trap`);
     const json = await res.json();
@@ -109,13 +103,6 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
-  if (command == 'pene') {
-    const resError = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/JSON/pene.json`)).data;
-    let res = await conn.getFile(`https://api-fgmods.ddns.net/api/nsfw/penis?apikey=fg-dylux`).data;
-    if (res == '' || !res || res == null) res = await resError[Math.floor(resError.length * Math.random())];
-    conn.sendMessage(m.chat, {image: {url: res}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
-
   if (command == 'porno') {
     const res = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/porno.json`)).data;
     const url = await res[Math.floor(res.length * Math.random())];
@@ -123,7 +110,7 @@ const handler = async (m, {command, conn}) => {
   }
 
   if (command == 'randomxxx') {
-    const rawjsonn = ['https://raw.githubusercontent.com/AleXD0009/Jotchua.Bot/master/src/JSON/tetas.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/booty.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/imagenlesbians.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/panties.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/porno.json'];
+    const rawjsonn = ['https://raw.githubusercontent.com/AleXD0009/Jotchua-Test/master/src/JSON/tetas.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/booty.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/imagenlesbians.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/panties.json', 'https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/porno.json'];
     const rawjson = await rawjsonn[Math.floor(rawjsonn.length * Math.random())];
     const res = (await axios.get(rawjson)).data;
     const url = await res[Math.floor(res.length * Math.random())];
@@ -136,28 +123,14 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
-  if (command == 'yaoi') {
-    const res = await fetch(`https://nekobot.xyz/api/image?type=yaoi`);
-    const json = await res.json();
-    const url = json.message;
-    conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
-
-  if (command == 'yaoi2') {
-    const res = await fetch(`https://purrbot.site/api/img/nsfw/yaoi/gif`);
-    const json = await res.json();
-    const url = json.link;
-    conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
-
   if (command == 'yuri') {
-    const res = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/JSON/yuri.json`)).data;
+    const res = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/yuri.json`)).data;
     const url = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
   if (command == 'yuri2') {
-    const resError = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/JSON/yuri.json`)).data;
+    const resError = (await axios.get(`https://raw.githubusercontent.com/AleXD0009/Jotchua-Bot/master/src/JSON/yuri.json`)).data;
     const res = await fetch(`https://purrbot.site/api/img/nsfw/yuri/gif`);
     const json = await res.json();
     let url = json.link;
@@ -165,7 +138,7 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 };
-handler.help = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'yaoi', 'yaoi2', 'panties', 'tetas', 'booty', 'ecchi', 'furro', 'hentai', 'trapito', 'imagenlesbians', 'pene', 'porno', 'randomxxx', 'pechos'];
-handler.command = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'yaoi', 'yaoi2', 'panties', 'tetas', 'booty', 'ecchi', 'furro', 'hentai', 'trapito', 'imagenlesbians', 'pene', 'porno', 'randomxxx', 'pechos'];
+handler.help = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', '', '', 'panties', 'tetas', 'booty', 'ecchi', '', 'hentai', 'trapito', 'imagenlesbians', '', 'porno', 'randomxxx', 'pechos'];
+handler.command = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', '', '', 'panties', 'tetas', 'booty', 'ecchi', '', 'hentai', 'trapito', 'imagenlesbians', '', 'porno', 'randomxxx', 'pechos'];
 handler.tags = ['nsfw'];
 export default handler;

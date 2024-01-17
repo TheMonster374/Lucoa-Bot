@@ -37,15 +37,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┌┤_${usedPrefix}ᴛᴇᴛᴀꜱ_
 ┌┤_${usedPrefix}ʙᴏᴏᴛʏ_
 ┌┤_${usedPrefix}ᴇᴄᴄʜɪ_
-┌┤_${usedPrefix}ꜰᴜʀʀᴏ_
 ┌┤_${usedPrefix}ɪᴍᴀɢᴇɴʟᴇꜱʙɪᴀɴꜱ_
 ┌┤_${usedPrefix}panties_
-┌┤_${usedPrefix}pene_
 ┌┤_${usedPrefix}porno_
 ┌┤_${usedPrefix}randomxxx_
 ┌┤_${usedPrefix}pechos_
-┌┤_${usedPrefix}yaoi_
-┌┤_${usedPrefix}yaoi2_
 ┌┤_${usedPrefix}yuri_
 ┌┤_${usedPrefix}yuri2_ 
 ┌┤_${usedPrefix}trapito_

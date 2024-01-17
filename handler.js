@@ -1335,7 +1335,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             }
           }
           if (m.limit) {
-            m.reply('*Se utilizaron ' + +m.limit + ' diamante(s) 💎 (limites).*');
+            m.reply('*Se utilizaron ' + +m.limit + ' 💎.*');
           }
         }
         break;
@@ -1530,19 +1530,19 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*Este comando solo puede ser utilizado por el propietario del bot.*',
-    owner: '*Este comando solo puede ser utilizado por el propietario del bot.*',
-    mods: '*Este comando solo puede ser utilizado por moderadores y el propietario del bot.*',
-    premium: '*Este comando solo puede ser utilizado por usurios premium y el propietario del bot.*',
-    group: '*Este comando solo puede ser utilizado en grupos.*',
-    private: '*Este comando solo puede ser utilizado en el chat privado del bot.*',
-    admin: '*Este comando solo puede ser usado por administradores del grupo.*',
-    botAdmin: '*Para utilizar este comando es necesario que el bot sea administrador del grupo.*',
-    unreg: '*Para utilizar este comando debes estar registrado.*\n\n*Utiliza el comando:* _/verificar nombre.edad_ *para registrarte.*',
-    restrict: '*Este comando fue desactivado por el propietario del bot.*',
+    rowner: '*Este comando solo puede ser utilizado por el propietario del bot. 👑*',
+    owner: '*Este comando solo puede ser utilizado por el propietario del bot.👑*',
+    mods: '*Este comando solo puede ser utilizado por moderadores y el propietario del bot.👑*',
+    premium: '*Este comando solo puede ser utilizado por usurios premium y el propietario del bot.👑*',
+    group: '*Este comando solo puede ser utilizado en grupos.🐶*',
+    private: '*Este comando solo puede ser utilizado en el chat privado del bot.🐶*',
+    admin: '*Este comando solo puede ser usado por administradores del grupo.🐶*',
+    botAdmin: '*Para utilizar este comando es necesario que el bot sea administrador del grupo.🐶*',
+    unreg: '*Para utilizar este comando debes estar registrado.*\n\n*Utiliza el comando:* _/reg nombre.edad_ *para registrarte.*',
+    restrict: '*Este comando fue desactivado por el propietario del bot.👑*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*Advertencia*', body: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ', thumbnail: imagen1, sourceUrl: 'https://github.com/AleXD0009/Jotchua-Bot'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝐀𝐝𝐯𝐞𝐫𝐭𝐞𝐧𝐜𝐢𝐚 🐶', body: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ', thumbnail: imagen1, sourceUrl: 'https://github.com/AleXD0009/Jotchua-Bot'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 

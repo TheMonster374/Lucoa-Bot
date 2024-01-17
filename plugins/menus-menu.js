@@ -23,37 +23,37 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     const str = `
-┌────────────────────┐
-┊┏━━━━━━━━━━━━━━┓
-┊┣⟣*_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶_*┣
-┊┗━━━━━━━━━━━━━━┛
-┊    
-┊𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
-┊
-┊           「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
-┊           
-┊𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
-┊https://github.com/AleXD0009/Jotchua-Bot
-┊
-┊ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
-┊ _${usedPrefix}ComandosNuevos_
-┊ _${usedPrefix}Nuevo_
-┊
-┊╭────────────────
-┊│𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
-┊│𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
-┊╰────────────────         
-┊╭────────────────     
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}owner | creador_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}repo | repositorio_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}estado_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}grupos | gruposjt_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dash | dashboard_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}speedtest_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  _Bot_ (uso sin prefijo)
-┊│ ❥꫶ꪆꦿꦼ͜͡🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
-┊╰────────────────  
+╭─────────────┈⊷
+│┏━━━━━━━━━━━━━━┓
+│┣⟣*_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶_*┣
+│┗━━━━━━━━━━━━━━┛
+│    
+│𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
+│
+│           「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
+│           
+│𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
+│https://github.com/AleXD0009/Jotchua-Bot
+│
+│ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
+│ _${usedPrefix}ComandosNuevos_
+│ _${usedPrefix}Nuevo_
+│
+│╭────────────────
+││𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
+││𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
+│╰────────────────         
+│╭────────────────     
+││🐶͘͜  _${usedPrefix}owner | creador_
+││🐶͘͜  _${usedPrefix}repo | repositorio_
+││🐶͘͜  _${usedPrefix}estado_
+││🐶͘͜  _${usedPrefix}grupos | gruposjt_
+││🐶͘͜  _${usedPrefix}dash | dashboard_
+││🐶͘͜  _${usedPrefix}speedtest_
+││🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
+││🐶͘͜  _Bot_ (uso sin prefijo)
+││🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+│╰────────────────  
 ┊ 
 ┊ ${readMore}
 ┊            「 𝐌𝐄𝐍𝐔𝐒 」

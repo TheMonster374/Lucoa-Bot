@@ -4,18 +4,14 @@ const handler = async (m, {conn, usedPrefix}) => {
   const text = `*Hola Usuario, te invito a unirte a los grupos de jotchua - bot para convivir con la comunidad :D*
 
        「 𝐆𝐫𝐮𝐩𝐨𝐬 𝐃𝐞𝐥 𝐁𝐨𝐭 」
+       
+*1.-* https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM ⎯⎯  \\\ 𝕭𝖔𝖙𝖘 /// ⎯⎯
 
-*1.-* https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM
+*2.-* https://whatsapp.com/channel/0029VaKQx9B30LKRUgGoXS1X CANAL JOTCHUA-BOT (nuevo)
 
-*2.-* https://chat.whatsapp.com/JEqOiNgYvxJ1gc6jWdsxGv
-
-*3.-* https://chat.whatsapp.com/GinhdbPNrKmIxvDmC3vDDo
-
-*4.-* https://chat.whatsapp.com/B74KDvJ89YBKpDQnAUgkf9
-
-*5.-* https://chat.whatsapp.com/LMEC24LbU915zYfKMhI2w6`.trim();
+`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/AleXD0009/Jotchua`},
+    'document': {url: `https://github.com/AleXD0009/Jotchua-Bot`},
     'mimetype': `application/${document}`,
     'fileName': `「  By ALS 」`,
     'fileLength': 99999999999999,
@@ -24,7 +20,7 @@ const handler = async (m, {conn, usedPrefix}) => {
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/AleXD0009/Jotchua',
+        'mediaUrl': 'https://github.com/AleXD0009/Jotchua-Bot',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': '𝙹𝚘𝚝𝚌𝚑𝚞𝚊 - 𝙱𝚘𝚝⁩',

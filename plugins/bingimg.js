@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw 'ingresa un texto de la imagen que quieres'
+    if (!text) throw 'ingresa un texto de la imagen que quieres* 🐶'
     let msg = encodeURIComponent(text)
     let res = await fetch(`https://aemt.me/bingimg?text=${msg}`)
     let data = await res.json()
@@ -10,8 +10,8 @@ let handler = async (m, { conn, text }) => {
     conn.sendFile(m.chat, buffer, 'image.png', `${text}`, m)
 }
 
-handler.help = ['bingimg <query>']
+handler.help = ['iaimagen <query>']
 handler.tags = ['AI']
-handler.command = /^bingimg$/i
+handler.command = /^iaimagen$/i
 
 export default handler

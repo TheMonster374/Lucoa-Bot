@@ -1,8 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw 'What do you want to create?'
-    m.react(rwait)
+    if (!text) throw 'ingresa un texto de la imagen que quieres'
     let msg = encodeURIComponent(text)
     let res = await fetch(`https://aemt.me/bingimg?text=${msg}`)
     let data = await res.json()

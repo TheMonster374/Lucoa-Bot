@@ -123,7 +123,7 @@ git clone https://github.com/AleXD0009/Jotchua-Bot.git
 echo -e "\033[38;5;51m\033[01mLa clonación se ha descargado e instalado correctamente.\n\033[0m"
 
 echo -e "\033[38;5;188m\033[01mCambiando al directorio del repositorio!!\n\033[0m" 
-cd Jotchua-Test
+cd Jotchua-Bot
 
 echo -e "\e[38;5;117m
 █░█ █▀█ █▀▄ ▄▀█ ▀█▀ █▀▀   █▄█ ▄▀█ █▀█ █▄░█

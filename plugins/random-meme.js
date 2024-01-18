@@ -1,4 +1,6 @@
-
+/*
+     ig : https://www.instagram.com/fg98._/
+*/
 import hispamemes from 'hispamemes';
 const handler = async (m, {command, conn}) => {
   const url = await hispamemes.meme();

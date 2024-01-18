@@ -6,9 +6,9 @@ import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import {tiktokdl} from '@bochilteam/scraper';
 const CFROSAPI = global.APIs.CFROSAPI;
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  if (!text) throw `_*DESCARGA - TIKTOK*_\n\n*Ingrese un enlace de TikTok.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.tiktok.com/@abedonnn/video/7302306632011205890?is_from_webapp=1&sender_device=pc&web_id=7317593336507926021_`;
-  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `_*DESCARGA - TIKTOK*_\n\n*Ingrese un enlace de TikTok.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.tiktok.com/@abedonnn/video/7302306632011205890?is_from_webapp=1&sender_device=pc&web_id=7317593336507926021_`;
-  const texto = `_*DESCARGAS - TIKTOK*_\n\n*Se está enviando el video. espere...*`;
+  if (!text) throw `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Ingrese un enlace de TikTok.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.tiktok.com/@abedonnn/video/7302306632011205890?is_from_webapp=1&sender_device=pc&web_id=7317593336507926021_`;
+  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Ingrese un enlace de TikTok.*\n\n*Ejemplo:* _${usedPrefix + command} https://www.tiktok.com/@abedonnn/video/7302306632011205890?is_from_webapp=1&sender_device=pc&web_id=7317593336507926021_`;
+  const texto = `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Se está enviando el video. espere...*`;
   // let buttons = [{ buttonText: { displayText: '♫ 𝙰𝚄𝙳𝙸𝙾 ♫' }, buttonId: `${usedPrefix}tomp3` }]
   try {
     const aa = {quoted: m, userJid: conn.user.jid};
@@ -24,29 +24,29 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
     //await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
     const dataF = await tiktok.v1(args[0]);
     // let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
-    const desc1 = `_*DESCARGAS - TIKTOK*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+    const desc1 = `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
     await conn.sendMessage(m.chat, {video: {url: dataF.play}, caption: desc1}, {quoted: m});
   } catch (e1) {
     try {
       const tTiktok = await tiktokdlF(args[0]);
       // let desc2 = `*Url:* ${tTiktok.video}`
-      const desc2 = `_*DESCARGA- TIKTOK*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+      const desc2 = `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
       await conn.sendMessage(m.chat, {video: {url: tTiktok.video}, caption: desc2}, {quoted: m});
     } catch (e2) {
       try {
         const p = await fg.tiktok(args[0]);
         // let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
-        const te = `_*DESCARGA - TIKTOK*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+        const te = `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
         await conn.sendMessage(m.chat, {video: {url: p.nowm}, caption: te}, {quoted: m});
       } catch (e3) {
         try {
           const {author: {nickname}, video, description} = await tiktokdl(args[0]);
           const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd;
           // let cap = `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${nickname || 'Indefinido'}`
-          const cap = `_*DESCARGA - TIKTOK*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
+          const cap = `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Responde a este vídeo con el comando* _${usedPrefix}tomp3_ *para convertirlo en audio.*`;
           await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: m});
         } catch {
-          throw `_*DESCARGA - TIKTOK*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+          throw `_*𝐓𝐈𝐊𝐓𝐎𝐊*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
           }
         }
       }

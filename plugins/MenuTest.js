@@ -11,8 +11,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     await conn.reply(m.chat, '𝗘𝗻𝘃𝗶𝗮𝗻𝗱𝗼 𝗺𝗲𝗻𝘂📍. . .',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝗕𝘂𝗲𝗻𝗼𝘀 𝗱𝗶𝗮𝘀 𝗕𝗕☀️!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
 //m.react('🐺');
     await conn.sendMessage(m.chat, { react: { text: '💖', key: m.key } })
-  let txt =`Hola
-  soy Jotchua-Bot`;
+  let txt =`「 𝐂𝐨𝐬𝐚𝐬 𝐍𝐮𝐞𝐯𝐚𝐬 𝐃𝐞𝐥 𝐁𝐨𝐭 」
+    
+    Cosas nuevas sobre el bot:
+    
+    Comandos nuevos:
+╭────────────────
+│iaimagen
+╰────────────────`;
    await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '☆ 𝗟𝗢𝗕𝗢 - 𝗕𝗢𝗧 - 𝗠𝗗 ☆', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": global.gp1, "sourceUrl": global.gp1}}}, {quoted: fkon});
  // m.react('🐺');
   } catch {

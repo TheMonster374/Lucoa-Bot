@@ -22,22 +22,21 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │https://github.com/AleXD0009/Jotchua-Bot
 │
 │ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
-│ _${usedPrefix}ComandosNuevos_
-│ _${usedPrefix}Nuevo_
+│ _ComandosNuevos_
+│ _Nuevo_
 │
 │╭────────────────
 ││𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
 ││𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
 │╰────────────────         
 │╭────────────────     
-││🐶͘͜  _${usedPrefix}owner | creador_
-││🐶͘͜  _${usedPrefix}repo | repositorio_
-││🐶͘͜  _${usedPrefix}estado_
-││🐶͘͜  _${usedPrefix}grupos | gruposjt_
-││🐶͘͜  _${usedPrefix}dash | dashboard_
-││🐶͘͜  _${usedPrefix}speedtest_
-││🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
-││🐶͘͜  _Bot_ (uso sin prefijo)
+││🐶͘͜  _owner | creador_
+││🐶͘͜  _repo | repositorio_
+││🐶͘͜  _estado_
+││🐶͘͜  _grupos | gruposjt_
+││🐶͘͜  _dash | dashboard_
+││🐶͘͜  _speedtest_
+││🐶͘͜  _instalarbot | infoinstalar_
 ││🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
 │╰────────────────  
 │ 
@@ -45,17 +44,17 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││ 「 𝐌𝐄𝐍𝐔𝐒 」
 │╰────────────┈⊷            
 │╭────────────────            
-││🐶͘͜  _${usedPrefix}MenuPorn | porn_
+││🐶͘͜  _MenuPorn | porn_
 ││
-││🐶͘͜  _${usedPrefix}menuanimes | animes_
+││🐶͘͜  _menuanimes | animes_
 ││
-││🐶͘͜  _${usedPrefix}menuaudios | audios_
+││🐶͘͜  _menuaudios | audios_
 ││
-││🐶͘͜  _${usedPrefix}MenuCreador_
+││🐶͘͜  _MenuCreador_
 ││
-││🐶͘͜  _${usedPrefix}MenuDescargas | Descargas_
+││🐶͘͜  _MenuDescargas | Descargas_
 ││
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}MenuRPG | RPG_
+││🐶͘͜  _MenuRPG | RPG_
 │╰────────────────
 │ 
 │ 
@@ -63,19 +62,18 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││ 「 𝐀𝐂𝐂𝐈𝐎𝐍𝐄𝐒」
 │╰────────────┈⊷
 │╭────────────────        
-││🐶͘͜  _${usedPrefix}kiss_
-││🐶͘͜  _${usedPrefix}slap_
-││🐶͘͜  _${usedPrefix}pat_
-││🐶͘͜  _${usedPrefix}dado_
+││🐶͘͜  _kiss_
+││🐶͘͜  _slap_
+││🐶͘͜  _pat_
+││🐶͘͜  _dado_
 │╰────────────────
 │
 │╭─────────────┈⊷
 ││「𝐈𝐀 / 𝐁𝐎𝐓/ 𝐒𝐈𝐌𝐒𝐈𝐌𝐈」
 │╰────────────┈⊷
 │╭──────────────── 
-││🐶͘͜  _${usedPrefix}bot_
-││🐶͘͜  _${usedPrefix}simi_
-││🐶͘͜  _${usedPrefix}iaimagen
+││🐶͘͜  _bot_
+││🐶͘͜  _$iaimagen
 │╰────────────────
 │
 │╭─────────────┈⊷
@@ -83,7 +81,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │╰────────────┈⊷
 │╭──────────────── 
 ││⟼ Mensajes en espera
-││🐶͘͜  _${usedPrefix}fixmsgespera_
+││🐶͘͜  _fixmsgespera_
 │╰────────────────
 │
 │
@@ -91,7 +89,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││「 𝐔𝐍𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐀 𝐓𝐔 𝐆𝐑𝐔𝐏𝐎 」
 │╰────────────┈⊷
 │╭──────────────── 
-││🐶͘͜  _${usedPrefix}join *<enlace / link / url>*_
+││🐶͘͜  _join *<enlace / link / url>*_
 │╰────────────────
 │
 │
@@ -99,10 +97,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││「 𝐒𝐄𝐑𝐁𝐎𝐓 - 𝐉𝐀𝐃𝐈𝐁𝐎𝐓 」
 │╰────────────┈⊷    
 │╭──────────────── 
-││🐶͘͜  _${usedPrefix}serbot_
-││🐶͘͜  _${usedPrefix}serbot --code_
-││🐶͘͜  _${usedPrefix}token_
-││🐶͘͜  _${usedPrefix}bots_
+││🐶͘͜  _serbot_
+││🐶͘͜  _serbot --code_
+││🐶͘͜  _token_
+││🐶͘͜  _bots_
 ││(si quiere sacar el subbot vaya 
 ││a dispositivos vinculados y cierre la sesion)
 │╰────────────────
@@ -110,20 +108,20 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │   「 𝐄𝐍𝐀𝐁𝐋𝐄 / 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐒 𝐁𝐎𝐓 」
 │   
 │╭──────────────── 
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable restrict_
-│││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable restrict_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable autoread_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable autoread_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable antispam_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable antispam_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable anticall_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable anticall_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable modoia_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable modoia_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable audios_bot_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable audios_bot_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable antiprivado_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable antiprivado_
+││🐶͘͜  _${usedPrefix}enable restrict_
+││🐶͘͜  _${usedPrefix}disable restrict_
+││🐶͘͜  _${usedPrefix}enable autoread_
+││🐶͘͜  _${usedPrefix}disable autoread_
+││🐶͘͜  _${usedPrefix}enable antispam_
+││🐶͘͜  _${usedPrefix}disable antispam_
+││🐶͘͜  _${usedPrefix}enable anticall_
+││🐶͘͜  _${usedPrefix}disable anticall_
+││🐶͘͜  _${usedPrefix}enable modoia_
+││🐶͘͜  _${usedPrefix}disable modoia_
+││🐶͘͜  _${usedPrefix}enable audios_bot_
+││🐶͘͜  _${usedPrefix}disable audios_bot_
+││🐶͘͜  _${usedPrefix}enable antiprivado_
+││🐶͘͜  _${usedPrefix}disable antiprivado_
 │╰────────────────
 │
 │ 
@@ -131,18 +129,18 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │       「 𝐉𝐔𝐄𝐆𝐎𝐒 」
 │
 │╭──────────────── 
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ppt *<papel / tijera /piedra>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}prostituto *<nombre / @tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}prostituta *<nombre / @tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gay2 *<nombre / @tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lesbiana *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pajero *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pajera *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}puto *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}puta *<nombre / @tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}manco *<nombre / @tag>*_
+││🐶͘͜  _mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
+││🐶͘͜  _fake *<texto1> <@tag> <texto2>*_
+││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _ppt *<papel / tijera /piedra>*_
+││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _prostituto *<nombre / @tag>*_
+││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _prostituta *<nombre / @tag>*_
+││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _gay2 *<nombre / @tag>*_
+││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _lesbiana *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _pajero *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _pajera *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _puto *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _puta *<nombre / @tag>*_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _manco *<nombre / @tag>*_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}manca *<nombre / @tag>*_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}rata *<nombre / @tag>*_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}love *<nombre / @tag>*_
@@ -173,15 +171,15 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     「 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 」
 
 ╭────────────────     
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}enable
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}disable
+│🐶͘͜  _enable
+│🐶͘͜  _disable
 ╰────────────────
 
 
    「 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
 
 ╭────────────────    
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}reporte *<texto>*_
+│🐶͘͜  _reporte *<texto>*_
 ╰────────────────
 
 

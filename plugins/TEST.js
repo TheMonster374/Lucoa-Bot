@@ -20,7 +20,43 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
 │https://github.com/AleXD0009/Jotchua-Bot
 │
-│ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:`;
+│
+│ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
+│ _${usedPrefix}ComandosNuevos_
+│ _${usedPrefix}Nuevo_
+│
+│╭────────────────
+││𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
+││𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
+│╰────────────────         
+│╭────────────────     
+││🐶͘͜  _owner | creador_
+││🐶͘͜  _repo | repositorio_
+││🐶͘͜  _estado_
+││🐶͘͜  _grupos | gruposjt_
+││🐶͘͜  _dash | dashboard_
+││🐶͘͜  _speedtest_
+││🐶͘͜  _instalarbot | infoinstalar_
+│╰────────────────  
+│ 
+│
+│╭─────────────┈⊷
+││ 「 𝐌𝐄𝐍𝐔𝐒 」
+│╰────────────┈⊷            
+│╭────────────────            
+││🐶͘͜  _MenuPorn | porn_
+││
+││🐶͘͜  _menuanimes | animes_
+││
+││🐶͘͜  _menuaudios | audios_
+││
+││🐶͘͜  _MenuCreador_
+││
+││🐶͘͜  _MenuDescargas | Descargas_
+││
+││🐶͘͜  _MenuRPG | RPG_
+│╰────────────────
+│ `;
    await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭🐶', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": global.md, "sourceUrl": global.md}}}, {quoted: fkon});
  // m.react('🐶');
   } catch {

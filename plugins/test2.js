@@ -11,5 +11,4 @@ const handler = async (m, {command, conn}) => {
 };
 handler.help = ['miku'];
 handler.command = ['miku'];
-handler.tags = ['nsfw'];
 export default handler;

@@ -1,12 +1,24 @@
-var fetch = require('node-fetch')
-var handler = async (msg, { 
-client, command 
-}) => {
-var bufer = await fetch('https://raw.githubusercontent.com/Hyzerr/Database/master/Database/Nsfw/' + command + '.json')
-var buf = await bufer.json()
-var res = await Func.pickRandom(buf)
-var but = await Func.satuButton(`.${command}`, 'NEXT')
-client.sendImage(msg.from, res, '🚩 Random Nsfw ' + command + '.', msg, { isUrl: true, buttons: but, headerType: 5, footer: wm })
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!global.db.data.chats[m.chat].modohorny) throw `🚫 group doesnt supprt nsfw \n\n enable it by \n*${usedPrefix}enable* nsfw`
+  let user = global.db.data.users[m.sender].age
+  if (user < 17) throw m.reply(`❎ uneed to be atleast 18 years`)
+
+let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
+if (!res.ok) throw await res.text()
+let json = await res.json()
+if (!json.url) throw '❎ Error'
+conn.sendFile(m.chat, json.url, 'img.jpg', `✅ Random ${command}`, m)
 }
-handler.command = handler.help = ['ahegao','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','jahy','masturbation','nsfwloli','nsfwmanga','nsfwneko','orgy','panties','pussy','tentacles','thighs','zettai']
-handler.tags = ['nsfw']
+handler.help = ['genshin', 'swimsuit', 'schoolswimsuit', 'white', 'barefoot', 'touhou', 'gamecg', 'hololive', 'uncensored', 'sunglasses', 'glasses', 'weapon', 'shirtlift', 'chain', 'fingering', 'flatchest', 'torncloth', 'bondage', 'demon', 'wet', 'pantypull', 'headdress', 'headphone', 'tie', 'anusview', 'shorts','stokings', 'topless', 'beach', 'bunnygirl', 'bunnyear', 'idol', 'vampire', 'gun', 'maid', 'bra', 'nobra', 'bikini', 'whitehair', 'blonde', 'pinkhair', 'bed', 'ponytail', 'nude', 'dress', 'underwear', 'foxgirl', 'uniform', 'skirt', 'sex', 'sex2', 'sex3', 'breast', 'twintail', 'spreadpussy', 'tears', 'seethrough', 'breasthold', 'drunk', 'fateseries', 'spreadlegs', 'openshirt', 'headband', 'food', 'close', 'tree', 'nipples', 'erectnipples', 'horns', 'greenhair', 'wolfgirl', 'catgirl']
+handler.command = ['genshin', 'swimsuit', 'schoolswimsuit', 'white', 'barefoot', 'touhou', 'gamecg', 'hololive', 'uncensored', 'sunglasses', 'glasses', 'weapon', 'shirtlift', 'chain', 'fingering', 'flatchest', 'torncloth', 'bondage', 'demon', 'wet', 'pantypull', 'headdress', 'headphone', 'tie', 'anusview', 'shorts','stokings', 'topless', 'beach', 'bunnygirl', 'bunnyear', 'idol', 'vampire', 'gun', 'maid', 'bra', 'nobra', 'bikini', 'whitehair', 'blonde', 'pinkhair', 'bed', 'ponytail', 'nude', 'dress', 'underwear', 'foxgirl', 'uniform', 'skirt', 'sex', 'sex2', 'sex3', 'breast', 'twintail', 'spreadpussy', 'tears', 'seethrough', 'breasthold', 'drunk', 'fateseries', 'spreadlegs', 'openshirt', 'headband', 'food', 'close', 'tree', 'nipples', 'erectnipples', 'horns', 'greenhair', 'wolfgirl', 'catgirl']
+handler.tags = ['nsfw'] 
+
+
+
+export default handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}

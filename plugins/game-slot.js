@@ -16,7 +16,7 @@ const handler = async (m, {args, usedPrefix, command}) => {
   if (users.exp < apuesta) {
     throw `*no tienes suficiente XP para apostar esa cantidad, juega otros juegos o interactua con el bot para ganar mas XP*`;
   }
-  const emojis = ['🐋', '🐉', '🕊️'];
+  const emojis = ['💰', '🪙', '💵'];
   let a = Math.floor(Math.random() * emojis.length);
   let b = Math.floor(Math.random() * emojis.length);
   let c = Math.floor(Math.random() * emojis.length);
@@ -52,13 +52,14 @@ const handler = async (m, {args, usedPrefix, command}) => {
   users.lastslot = new Date * 1;
   return await m.reply(
       `
-🎰 | *SLOTS* 
-────────
+🎰  *_𝐒𝐋𝐎𝐓_* 🎰
+────────────────
 ${x[0]} : ${y[0]} : ${z[0]}
 ${x[1]} : ${y[1]} : ${z[1]}
 ${x[2]} : ${y[2]} : ${z[2]}
-────────
-🎰 | ${end}`);
+────────────────
+🎰   *_𝐒𝐋𝐎𝐓_* 🎰
+   ${end}`);
 };
 handler.help = ['slot <apuesta>'];
 handler.tags = ['game'];

@@ -10,6 +10,5 @@ client.sendImage(msg.from, res, '🚩 Random Nsfw ' + command + '.', msg, { isUr
 }
 handler.command = handler.help = ['ahegao','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','jahy','masturbation','nsfwloli','nsfwmanga','nsfwneko','orgy','panties','pussy','tentacles','thighs','zettai']
 handler.tags = ['nsfw']
-handler.nsfw = true
 
 module.exports = handler

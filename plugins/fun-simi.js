@@ -8,7 +8,7 @@ try {
 let api = await fetch("https://api.simsimi.net/v2/?text=" + text + "&lc=es")
 let resSimi = await api.json()
 //m.reply(resSimi.success)      
-conn.reply(m.chat, resSimi.success, m, fake, )
+conn.reply(m.chat, resSimi.success, m, )
 } catch {
 try {
 if (text.includes('Hola')) text = text.replace('Hola', 'Hello')
@@ -22,7 +22,7 @@ let res = await api.json()
 let reis2 = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + res.cnt)
 let resu2 = await reis2.json()
 //m.reply(resu2[0][0][0])      
-  conn.reply(m.chat, resu2[0][0][0], m, fake, )
+  conn.reply(m.chat, resu2[0][0][0], m, )
 } catch {  
 let reisss = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=" + text)
 let resuuu = await reisss.json()      
@@ -31,7 +31,7 @@ let json222 = await res222.json()
 let resulttt = json222.result
 let lolll = await translate(`${resulttt}`, { to: 'es', autoCorrect: true })
 //m.reply(lolll.text)      
-conn.reply(m.chat, lolll.text, m, fake, )
+conn.reply(m.chat, lolll.text, m,)
 }}
 
 }

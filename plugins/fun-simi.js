@@ -19,7 +19,6 @@ const res = await api.json();
 const reis2 = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=' + res.cnt);
 const resu2 = await reis2.json();
 m.reply(resu2[0][0][0].toString());
-} catch (e) {
  }} catch {
     throw '_*Ha habido un error*';    
 }}}

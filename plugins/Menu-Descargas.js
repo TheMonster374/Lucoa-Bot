@@ -23,33 +23,34 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
      
      
 
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}play *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}playlist *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}spotify *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ringtone *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}soundcloud *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}imagen *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pinterest *<texto>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}wallpaper *<texto>*_
-❥꫶ꪆꦿꦼ͘͜͜͡🐶͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
-❥꫶ꪆꦿꦼ͜͜͡🐶͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}igstory *<nombre de usuario>*_
-❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tiktokstalk *<username>*_
+🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}play *<texto>*_
+🐶͘͜  _${usedPrefix}play5 *<texto>*_
+🐶͘͜  _${usedPrefix}playlist *<texto>*_
+🐶͘͜  _${usedPrefix}spotify *<texto>*_
+🐶͘͜  _${usedPrefix}ringtone *<texto>*_
+🐶͘͜  _${usedPrefix}soundcloud *<texto>*_
+🐶͘͜  _${usedPrefix}imagen *<texto>*_
+🐶͘͜  _${usedPrefix}pinterest *<texto>*_
+🐶͘͜  _${usedPrefix}wallpaper *<texto>*_
+🐶͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
+🐶͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_
+🐶͘͜  _${usedPrefix}igstory *<nombre de usuario>*_
+🐶͘͜  _${usedPrefix}tiktokstalk *<username>*_
     `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

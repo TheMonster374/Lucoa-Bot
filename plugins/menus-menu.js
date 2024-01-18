@@ -413,7 +413,7 @@ ${readMore}
     conn.reply(m.chat, '*Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
   }
 };
-handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i;
+handler.command = /^(XDDD)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

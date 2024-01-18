@@ -254,52 +254,52 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││「 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒 」
 │╰────────────┈⊷
 │╭────────────────     
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}toanime *<imagen>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}togifaud *<video>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}toimg *<sticker>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tomp3 *<video>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tomp3 *<nota de voz>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}toptt *<video / audio>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tovideo *<sticker>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tourl *<video / imagen / audio>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tts *<idioma> <texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tts *<efecto> <texto>*_
+││🐶͘͜  _${usedPrefix}toanime *<imagen>*_
+││🐶͘͜  _${usedPrefix}togifaud *<video>*_
+││🐶͘͜  _${usedPrefix}toimg *<sticker>*_
+││🐶͘͜  _${usedPrefix}tomp3 *<video>*_
+││🐶͘͜  _${usedPrefix}tomp3 *<nota de voz>*_
+││🐶͘͜  _${usedPrefix}toptt *<video / audio>*_
+││🐶͘͜  _${usedPrefix}tovideo *<sticker>*_
+││🐶͘͜  _${usedPrefix}tourl *<video / imagen / audio>*_
+││🐶͘͜  _${usedPrefix}tts *<idioma> <texto>*_
+││🐶͘͜  _${usedPrefix}tts *<efecto> <texto>*_
 │╰────────────────
 │
 │╭─────────────┈⊷
 ││「 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 𝐘 𝐋𝐎𝐆𝐎𝐒 」 
 │╰────────────┈⊷      
 │╭────────────────       
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logos *<efecto> <texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logochristmas *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}logocorazon *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ytcomment *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hornycard *<@tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}simpcard *<@tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lolice *<@tag>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}itssostupid_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}pixelar_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}blur_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}toanime_
+││🐶͘͜  _${usedPrefix}logos *<efecto> <texto>*_
+││🐶͘͜  _${usedPrefix}logochristmas *<texto>*_
+││🐶͘͜  _${usedPrefix}logocorazon *<texto>*_
+││🐶͘͜  _${usedPrefix}ytcomment *<texto>*_
+││🐶͘͜  _${usedPrefix}hornycard *<@tag>*_
+││🐶͘͜  _${usedPrefix}simpcard *<@tag>*_
+││🐶͘͜  _${usedPrefix}lolice *<@tag>*_
+││🐶͘͜  _${usedPrefix}itssostupid_
+││🐶͘͜  _${usedPrefix}pixelar_
+││🐶͘͜  _${usedPrefix}blur_
+││🐶͘͜  _${usedPrefix}toanime_
 │╰────────────────
 │
 │╭─────────────┈⊷
 ││「 𝐅𝐑𝐀𝐒𝐄𝐒 𝐘 𝐓𝐄𝐗𝐓𝐎𝐒 」
 │╰────────────┈⊷
 │╭────────────────     
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}piropo_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}consejo_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fraseromantica_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}historiaromantica_
+││🐶͘͜  _${usedPrefix}piropo_
+││🐶͘͜  _${usedPrefix}consejo_
+││🐶͘͜  _${usedPrefix}fraseromantica_
+││🐶͘͜  _${usedPrefix}historiaromantica_
 │╰────────────────
 │ ${readMore}
 │╭─────────────┈⊷
 ││「 𝐑𝐀𝐍𝐃𝐎𝐌 」
 │╰────────────┈⊷
 │╭────────────────     
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}cat_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dog_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}meme_
+││🐶͘͜  _${usedPrefix}cat_
+││🐶͘͜  _${usedPrefix}dog_
+││🐶͘͜  _${usedPrefix}meme_
 │╰────────────────
 │
 │╭─────────────┈⊷
@@ -307,59 +307,59 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │╰────────────┈⊷
 │╭────────────────     
 ││*RESPONDE A AUDIO O NOTA DE VOZ*
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}bass_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}blown_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}deep_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}earrape_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fast_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}fat_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nightcore_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}reverse_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}robot_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}slow_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}smooth_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tupai_
+││🐶͘͜  _${usedPrefix}bass_
+││🐶͘͜  _${usedPrefix}blown_
+││🐶͘͜  _${usedPrefix}deep_
+││🐶͘͜  _${usedPrefix}earrape_
+││🐶͘͜  _${usedPrefix}fast_
+││🐶͘͜  _${usedPrefix}fat_
+││🐶͘͜  _${usedPrefix}nightcore_
+││🐶͘͜  _${usedPrefix}reverse_
+││🐶͘͜  _${usedPrefix}robot_
+││🐶͘͜  _${usedPrefix}slow_
+││🐶͘͜  _${usedPrefix}smooth_
+││🐶͘͜  _${usedPrefix}tupai_
 │╰────────────────
 │
 │╭─────────────┈⊷
 ││「 𝐂𝐇𝐀𝐓 𝐀𝐍𝐎𝐍𝐈𝐌𝐎 」
 │╰────────────┈⊷
 │╭────────────────   
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}start_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}next_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}leave_
+││🐶͘͜  _${usedPrefix}start_
+││🐶͘͜  _${usedPrefix}next_
+││🐶͘͜  _${usedPrefix}leave_
 │╰────────────────
 │ ${readMore}
 │╭─────────────┈⊷
 ││「 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 」
 │╰────────────┈⊷
 │╭──────────────── 
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}inspect *<link wa_gc>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}chatgpt *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}delchatgpt
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}gptvoz *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dall-e *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}readviewonce *<imagen / video>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}clima *<país> <ciudad>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}encuesta *<texto1|texto2...>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}afk *<motivo>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ocr *<responde a imagen>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}hd *<responde a imagen>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}acortar *<enlace / link / url>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}calc *<operacion math>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}del *<mensaje>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}whatmusic *<audio>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}readqr *<imagen (QR)>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}qrcode *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}readmore *<texto1| texto2>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}styletext *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}traducir *<texto>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}nowa *<numero>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}covid *<pais>*_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}horario_
-││❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}dropmail_
+││🐶͘͜  _${usedPrefix}inspect *<link wa_gc>*_
+││🐶͘͜  _${usedPrefix}chatgpt *<texto>*_
+││🐶͘͜  _${usedPrefix}delchatgpt
+││🐶͘͜  _${usedPrefix}gptvoz *<texto>*_
+││🐶͘͜  _${usedPrefix}dall-e *<texto>*_
+││🐶͘͜  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
+││🐶͘͜  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
+││🐶͘͜  _${usedPrefix}readviewonce *<imagen / video>*_
+││🐶͘͜  _${usedPrefix}clima *<país> <ciudad>*_
+││🐶͘͜  _${usedPrefix}encuesta *<texto1|texto2...>*_
+││🐶͘͜  _${usedPrefix}afk *<motivo>*_
+││🐶͘͜  _${usedPrefix}ocr *<responde a imagen>*_
+││🐶͘͜  _${usedPrefix}hd *<responde a imagen>*_
+││🐶͘͜  _${usedPrefix}acortar *<enlace / link / url>*_
+││🐶͘͜  _${usedPrefix}calc *<operacion math>*_
+││🐶͘͜  _${usedPrefix}del *<mensaje>*_
+││🐶͘͜  _${usedPrefix}whatmusic *<audio>*_
+││🐶͘͜  _${usedPrefix}readqr *<imagen (QR)>*_
+││🐶͘͜  _${usedPrefix}qrcode *<texto>*_
+││🐶͘͜  _${usedPrefix}readmore *<texto1| texto2>*_
+││🐶͘͜  _${usedPrefix}styletext *<texto>*_
+││🐶͘͜  _${usedPrefix}traducir *<texto>*_
+││🐶͘͜  _${usedPrefix}nowa *<numero>*_
+││🐶͘͜  _${usedPrefix}covid *<pais>*_
+││🐶͘͜  _${usedPrefix}horario_
+││🐶͘͜  _${usedPrefix}dropmail_
 │╰────────────────
 │
 │╭─────────────┈⊷

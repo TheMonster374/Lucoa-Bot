@@ -120,7 +120,52 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │
 │╭─────────────┈⊷
 ││「 𝐉𝐔𝐄𝐆𝐎𝐒 」
-│╰────────────┈⊷  `;
+│╰────────────┈⊷
+│╭──────────────── 
+││🐶͘͜  _mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
+││🐶͘͜  _fake *<texto1> <@tag> <texto2>*_
+││🐶͘͜  _ppt *<papel / tijera /piedra>*_
+││🐶͘͜  _prostituto *<nombre / @tag>*_
+││🐶͘͜  _slot *<apuesta>*_
+││🐶͘͜  _ttt *<nombre sala>*_
+││🐶͘͜  _delttt_
+││🐶͘͜  _acertijo_
+││🐶͘͜  _sorteo (nombre de lo que va a sortear)_
+││🐶͘͜  _top *<texto>*_
+│╰────────────────
+│ 
+│╭─────────────┈⊷
+││「 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐎 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐑 」
+│╰────────────┈⊷
+│╭────────────────     
+││🐶͘͜  _enable_
+││🐶͘͜  _disable_
+│╰────────────────
+│
+│╭─────────────┈⊷
+││「 𝐑𝐄𝐏𝐎𝐑𝐓𝐀𝐑 𝐄𝐑𝐑𝐎𝐑𝐄𝐒 」
+│╰────────────┈⊷
+│╭────────────────    
+││🐶͘͜  _reporte *<texto>*_
+│╰────────────────
+│ 
+│╭─────────────┈⊷
+││「 𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒 」
+│╰────────────┈⊷     
+│╭────────────────      
+││🐶͘͜  _githubsearch *<texto>*_
+││🐶͘͜  _pelisplus *<texto>*_
+││🐶͘͜  _modapk *<texto>*_
+││🐶͘͜  _stickersearch *<texto>*_
+││🐶͘͜  _stickersearch2 *<texto>*_
+││🐶͘͜  _xnxxsearch *<texto>*_
+││🐶͘͜  _animeinfo *<texto>*_
+││🐶͘͜  _google *<texto>*_
+││🐶͘͜  _letra *<texto>*_
+││🐶͘͜  _wikipedia *<texto>*_
+││🐶͘͜  _ytsearch *<texto>*_
+││🐶͘͜  _playstore *<texto>*_
+│╰────────────────`;
    await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭🐶', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": global.md, "sourceUrl": global.md}}}, {quoted: fkon});
  // m.react('🐶');
   } catch {

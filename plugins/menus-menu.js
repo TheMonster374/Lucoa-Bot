@@ -34,9 +34,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
 │╰────────────┈⊷  
 │           
-│𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
-│https://github.com/AleXD0009/Jotchua-Bot
-│
 │ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
 │ _${usedPrefix}ComandosNuevos_
 │ _${usedPrefix}Nuevo_
@@ -53,8 +50,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││🐶͘͜  _${usedPrefix}dash | dashboard_
 ││🐶͘͜  _${usedPrefix}speedtest_
 ││🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
-││🐶͘͜  _Bot_ (uso sin prefijo)
-││🐶͘͜  *bot/sub bot:*${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
+││🐶͘͜  *bot/sub bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
 │╰────────────────  
 │ ${readMore}
 │╭─────────────┈⊷

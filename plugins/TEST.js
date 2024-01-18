@@ -11,7 +11,16 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     await conn.reply(m.chat, '𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐌𝐞𝐧𝐮🐶.',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭', body: 'BY als', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
 //m.react('🐶');
     await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
-  let txt =`𝗛ola, %name * Espero que tengas un lindo dia o noche 🐕`;
+  let txt =`
+╭─────────────┈
+│╭─────────────┈⊷
+││「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
+│╰────────────┈⊷  
+│           
+│𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭:  
+│https://github.com/AleXD0009/Jotchua-Bot
+│
+│ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:`;
    await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭🐶', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": global.md, "sourceUrl": global.md}}}, {quoted: fkon});
  // m.react('🐶');
   } catch {

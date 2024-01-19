@@ -15,5 +15,6 @@ _©Jotchua - Bot_
 handler.help = ['cat'];
 handler.tags = ['random'];
 handler.command = /^cat$/i;
+handler.money = 1
 handler.fail = null;
 export default handler;

@@ -1,43 +1,25 @@
-import translate from '@vitalets/google-translate-api'
+
 import fetch from 'node-fetch'
+let handler = async (m, { conn, text, usedPrefix, command }) => {
 
-var handler = async (m, { text, command, args, usedPrefix }) => {
-
-if (!text) throw `*⚠️ INGRESE UN TEXTO PARA HABLAR CONMIGO*\n\n❕ EJEMPLO:\n*${usedPrefix + command}* Hola curiosity`
-try {
-let api = await fetch("https://api.simsimi.net/v2/?text=" + text + "&lc=es")
-let resSimi = await api.json()
-//m.reply(resSimi.success)      
-conn.reply(m.chat, resSimi.success, m, )
+ let lang = global.db.data.users[m.sender].language
+  if (!text) throw `✳️ ${mssg.notext}`
+  try { 
+  //let res = await fetch(`https://api.simsimi.vn/v2/?text=${text}&lc=${lang}`)
+  let res = await fetch('https://api.simsimi.vn/v1/simtalk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `text=${encodeURIComponent(text)}&lc=${lang}&key=`
+  })
+  let json = await res.json()
+  m.reply(json.message.replace('simsimi', `Jotchua-Bot``).replace('Simsimi', `Jotchua-Bot`).replace('sim simi', `Jotchua-Bot``))
 } catch {
-try {
-if (text.includes('Hola')) text = text.replace('Hola', 'Hello')
-if (text.includes('hola')) text = text.replace('hola', 'Hello')
-if (text.includes('HOLA')) text = text.replace('HOLA', 'HELLO')    
-let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + text)
-let resu = await reis.json()  
-let nama = m.pushName || '1'
-let api = await fetch("http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=" + nama + "&msg=" + resu[0][0][0])
-let res = await api.json()
-let reis2 = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + res.cnt)
-let resu2 = await reis2.json()
-//m.reply(resu2[0][0][0])      
-  conn.reply(m.chat, resu2[0][0][0], m, )
-} catch {  
-let reisss = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=" + text)
-let resuuu = await reisss.json()      
-let res222 = await fetch(`https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}`)  
-let json222 = await res222.json()
-let resulttt = json222.result
-let lolll = await translate(`${resulttt}`, { to: 'es', autoCorrect: true })
-//m.reply(lolll.text)      
-conn.reply(m.chat, lolll.text, m,)
-}}
+  m.reply(`❎ Intenta de nuevo mas tarde La api de SimSimi se cayo`)
+}
 
 }
-handler.help = ['simi']
-handler.tags = ['juegos']
-handler.command = /^((sim)?simi|jotchua|alexa|cortana|curio(sity)?)$/i
-handler.register = true
+handler.help = ['bot']
+handler.tags = ['fun']
+handler.command = ['simi'] 
 
 export default handler

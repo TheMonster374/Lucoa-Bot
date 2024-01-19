@@ -1333,8 +1333,6 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             } catch (e) {
               console.error(e);
             }
-           if (m.money) {
-            m.reply('*Se utilizaron ' + +m.money + ' xd.*');
           }
           if (m.limit) {
             m.reply('*Se utilizaron ' + +m.limit + ' 💎.*');
@@ -1357,7 +1355,6 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
       if (m.sender && (user = global.db.data.users[m.sender])) {
         user.exp += m.exp;
         user.limit -= m.limit * 1;
-        user.money -= m.money * 1;
       }
 
       let stat;

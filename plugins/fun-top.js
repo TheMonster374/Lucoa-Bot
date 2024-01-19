@@ -17,7 +17,6 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
   const k = Math.floor(Math.random() * 70);
   const x = `${pickRandom(['🤓', '😅', '😂', '😳', '😎', '🥵', '😱', '🤑', '🙄', '💩', '🍑', '🤨', '🥴', '🔥', '👇🏻', '😔', '👀', '🌚'])}`;
   const l = Math.floor(Math.random() * x.length);
-  const vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`;
   const top = `*${x} Top 10 ${text} ${x}*
     
 *1. ${user(a)}*
@@ -31,6 +30,8 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
 *9. ${user(i)}*
 *10. ${user(j)}*`;
   m.reply(top, null, {mentions: [a, b, c, d, e, f, g, h, i, j]});
+   conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
+    type: 'audioMessage',
     ptt: true});
 }
 handler.help = handler.command = ['top'];

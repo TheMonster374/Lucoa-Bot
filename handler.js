@@ -1333,6 +1333,8 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             } catch (e) {
               console.error(e);
             }
+          if (m.money) {
+            m.reply('*Se utilizaron ' + +m.money + ' 🪙.*');	  
           }
           if (m.limit) {
             m.reply('*Se utilizaron ' + +m.limit + ' 💎.*');

@@ -38,7 +38,7 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
 handler.help = handler.command = ['top'];
 handler.tags = ['fun'];
 handler.group = true;
-handler.limit = 2;
+handler.money = 1;
 export default handler;
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)];

@@ -21,19 +21,19 @@ const handler = async (m, {conn, args, participants}) => {
 ];
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
-*< TABLA DE LOS AVENTUREROS MÁS DESTACADOS />*
+*TABLE DE CLASIFICACION*
     
- *TOP ${len} EXP *
+ *TOP ${len} EXP 📌*
 *Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
 
 ${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n`}
 
-*TOP ${len} DIAMANTES*
+*TOP ${len} DIAMANTES 💎*
 *Tú posición:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}
 
 ${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} diamantes*`).join`\n`}
 
-*TOP ${len} NIVEL*
+*TOP ${len} NIVEL ⬆️*
 *Tú posición:* ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length}
 
 ${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *nivel ${level}*`).join`\n`}

@@ -1530,16 +1530,16 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*Este comando solo puede ser utilizado por el propietario del bot. 👑*',
-    owner: '*Este comando solo puede ser utilizado por el propietario del bot.👑*',
-    mods: '*Este comando solo puede ser utilizado por moderadores y el propietario del bot.👑*',
-    premium: '*Este comando solo puede ser utilizado por usurios premium y el propietario del bot.👑*',
-    group: '*Este comando solo puede ser utilizado en grupos.🐶*',
-    private: '*Este comando solo puede ser utilizado en el chat privado del bot.🐶*',
-    admin: '*Este comando solo puede ser usado por administradores del grupo.🐶*',
-    botAdmin: '*Para utilizar este comando es necesario que el bot sea administrador del grupo.🐶*',
-    unreg: '*Para utilizar este comando debes estar registrado.*\n\n*Utiliza el comando:* _/reg nombre.edad_ *para registrarte.*',
-    restrict: '*Este comando fue desactivado por el propietario del bot.👑*',
+    rowner: '_*𝘖𝘸𝘯𝘦𝘳 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado por el propietario del bot. 👑*',
+    owner: '_*𝘖𝘸𝘯𝘦𝘳 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado por el propietario del bot.👑*',
+    mods: '_*𝘖𝘸𝘯𝘦𝘳-𝘔𝘰𝘥𝘴 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado por moderadores y el propietario del bot.👑*',
+    premium: '_*𝘖𝘸𝘯𝘦𝘳-𝘗𝘳𝘦𝘮𝘪𝘶𝘮𝘴 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado por usurios premium y el propietario del bot.👑*',
+    group: '_*𝘎𝘳𝘶𝘱𝘰𝘴 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado en grupos.🐶*',
+    private: '_*𝘗𝘳𝘪𝘷𝘢𝘥𝘰| 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser utilizado en el chat privado del bot.🐶*',
+    admin: '_*𝘈𝘥𝘮𝘪𝘯𝘴 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando solo puede ser usado por administradores del grupo.🐶*',
+    botAdmin: '_*𝘉𝘰𝘵 𝘈𝘥𝘮𝘪𝘯 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Para utilizar este comando es necesario que el bot sea administrador del grupo.🐶*',
+    unreg: '_*𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘰 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Para utilizar este comando debes estar registrado.*\n\n*Utiliza el comando:* _/reg nombre.edad_ *para registrarte.*',
+    restrict: '_*𝘖𝘸𝘯𝘦𝘳 | 𝘑𝘰𝘵𝘤𝘩𝘶𝘢 - 𝘉𝘰𝘵 🐶*_\n\n*Este comando fue desactivado por el propietario del bot.👑*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝐀𝐝𝐯𝐞𝐫𝐭𝐞𝐧𝐜𝐢𝐚 🐶', body: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ', thumbnail: imagen1, sourceUrl: 'https://github.com/AleXD0009/Jotchua-Bot'}}}}, aa);

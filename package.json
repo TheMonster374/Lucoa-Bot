@@ -39,7 +39,7 @@
     "@whiskeysockets/baileys": "npm:@whiskeysockets/baileys",
     "@xct007/frieren-scraper": "github:xct007/frieren-scraper",
     "acrcloud": "^1.4.0",
-    "api-dylux": "^1.7.2",
+    "api-dylux": "^1.6.2",
     "aptoide-scraper": "^1.0.1",
     "awesome-phonenumber": "^2.68.0",
     "axios": "^1.1.3",

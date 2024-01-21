@@ -51,33 +51,32 @@ let buttonMessage= {
 'footer': '\nVideos de YouTube',
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
-    }} catch {
-    throw '_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
-    }}
-    if (command == 'play2') {
-    try {   
-    const video = global.API('CFROSAPI', `/api/v1/ytmp4?url=${yt_play[0].url}`)
-    const ttl2 = await yt_play[0].title
-    const buff_vid = await getBuffer(video);
-    const fileSizeInBytes2 = buff_vid.byteLength;
-    const fileSizeInKB2 = fileSizeInBytes2 / 1024;
-    const fileSizeInMB2 = fileSizeInKB2 / 1024;
-    const size2 = fileSizeInMB2.toFixed(2);       
-    if (size2 >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Descargue su vídeo en ${video}*`}, {quoted: m});
-    return;    
-    }     
-    if (size2 >= limit1 && size2 <= limit2) {  
-    await conn.sendMessage(m.chat, {document: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
-    return;
-    } else {
-    await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
-    return;    
-    }} catch {
-    throw '_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
-    }
-  }
-};
+       
+       try {
+       let yt = await fg.yta(vid.url, q)
+       let { title, dl_url, size } = yt
+       let limit = 100
+       
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
+       
+await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': true,
+externalAdReply:{
+showAdAttribution: false,
+title: `${vid.title}`,
+body: `${vid.author.name}`,
+mediaType: 2, 
+sourceUrl: `${vid.url}`,
+thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
+       } catch {
+       try {
+       let yt = await fg.ytmp3(vid.url, q)
+       let { title, dl_url, size } = yt
+       let limit = 100
+       
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
+       
 handler.command = /^(playtest|play2|musicaTest)$/i;
 export default handler;
 

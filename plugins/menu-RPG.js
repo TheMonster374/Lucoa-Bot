@@ -32,7 +32,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}perfil_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}work_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}minar_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}minar2_
+│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}semanal_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}buy_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}buyall_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}verificar_

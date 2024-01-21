@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     body: `text=${encodeURIComponent(text)}&lc=${lang}&key=`
   })
   let json = await res.json()
-  m.reply(json.message.replace('simsimi', `Jotchua-Bot``).replace('Simsimi', `Jotchua-Bot`).replace('sim simi', `Jotchua-Bot``))
+  m.reply(json.message.replace('simsimi', `jotchua`).replace('Simsimi', `jotchua`).replace('sim simi', `jotchua`))
 } catch {
   m.reply(`❎ Intenta de nuevo mas tarde La api de SimSimi se cayo`)
 }
@@ -20,6 +20,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['bot']
 handler.tags = ['fun']
-handler.command = ['simi'] 
+handler.command = ['bot', 'simi'] 
 
 export default handler

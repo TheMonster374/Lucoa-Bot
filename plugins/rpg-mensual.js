@@ -74,7 +74,6 @@ conn.sendMessage(m.chat, {image: {url: pp}, caption: text, mentions: conn.parseM
 user.lastmonthly = new Date * 1
 }
 handler.command = ['monthly', 'cadames', 'mes', 'mensual', 'entregadelmes'] 
-handler.level = 10
 export default handler
 
 function pickRandom(list) {

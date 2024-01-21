@@ -16,7 +16,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Título:* ${yt_play[0].title}\n\n*Publicado:* ${yt_play[0].ago}\n\n*Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n*Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n*Autor:* ${yt_play[0].author.name}\n\n*ID:* ${yt_play[0].videoId}\n\n*Tipo:* ${yt_play[0].type}\n\n*Enlace:* ${yt_play[0].url}\n\n*Canal:* ${yt_play[0].author.url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
+    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Título:* ${yt_play[0].title}\n\n*Publicado:* ${yt_play[0].ago}\n\n*Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n*Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n*Autor:* ${yt_play[0].author.name}\n\n*ID:* ${yt_play[0].videoId}\n\n*Tipo:* ${yt_play[0].type}\n\n*Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   

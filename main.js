@@ -512,7 +512,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `tiempo activo: ${uptime} | Jotchua by 🇲🇽 ALS 🇦🇷`;
+  const bio = `tiempo activo: ${uptime} | 𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭 𝐁𝐘 𝐀𝐋𝐒`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {

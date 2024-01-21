@@ -20,8 +20,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
            「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
-     
-     
 
 🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
@@ -39,6 +37,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}play *<texto>*_
+🐶͘͜  _${usedPrefix}play2 *<texto>*_
 🐶͘͜  _${usedPrefix}play5 *<texto>*_
 🐶͘͜  _${usedPrefix}playlist *<texto>*_
 🐶͘͜  _${usedPrefix}spotify *<texto>*_

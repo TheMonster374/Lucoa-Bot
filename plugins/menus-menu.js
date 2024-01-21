@@ -3,7 +3,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen4;
-    // let vn = './media/menu.mp3'
     const img = './Menu2.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
@@ -27,11 +26,16 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┏━━━━━━━━━━━━━━┓
 ┣⟣*_🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶_*┣
 ┗━━━━━━━━━━━━━━┛
-𝗛ola, ${taguser}* Espero que tengas un lindo dia o noche 🐕
 
+  _*ɪɴꜰᴏ ᴜꜱᴜᴀʀɪᴏ*_
+_*🇳​​🇴​​🇲​​🇧​​🇷​​🇪​*_ : ${taguser}
+_*🇩​​🇮​​🇦​​🇲​​🇦​​🇳​​🇹​​🇪​​🇸​*_ : ${user.limit}
+_*​🇳​​🇮​​🇻​​🇪​​🇱​*_ : ${user.level}
+_*​🇽​​🇵​*_ : ${user.exp}
+_*🇵​​🇷​​🇪​​🇲​​🇮​​🇺​​🇲​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 ╭─────────────┈
 │╭─────────────┈⊷
-││「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」  
+││「_*ɪɴꜰᴏ ʙᴏᴛ*_」  
 │╰────────────┈⊷  
 │           
 │ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ꜱᴀʙᴇʀ ᴛᴏᴅᴏ ʟᴏ ɴᴜᴇᴠᴏ ᴅᴇʟ ʙᴏᴛ:
@@ -50,11 +54,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ││🐶͘͜  _${usedPrefix}dash | dashboard_
 ││🐶͘͜  _${usedPrefix}speedtest_
 ││🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
-││🐶͘͜  *bot/sub bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
+││🐶͘͜  bot/sub bot: ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
 │╰────────────────  
 │ ${readMore}
 │╭─────────────┈⊷
-││ 「 𝐌𝐄𝐍𝐔𝐒 」
+││ 「_*ᴍᴇɴᴜꜱ*_」
 │╰────────────┈⊷            
 │╭────────────────            
 ││🐶͘͜  _${usedPrefix}MenuPorn | porn_
@@ -85,7 +89,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │╰────────────┈⊷
 │╭──────────────── 
 ││🐶͘͜  _${usedPrefix}bot_
-││🐶͘͜  _${usedPrefix}simi_
 ││🐶͘͜  _${usedPrefix}iaimagen
 │╰────────────────
 │

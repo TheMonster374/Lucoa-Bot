@@ -13,7 +13,7 @@ let handler = async (m) => {
 
 handler.help = ['semanal']
 handler.tags = ['rpg']
-handler.command = ['semanal', '.weekly']
+handler.command = ['semanal', 'mes', '.weekly']
 handler.cooldown = cooldown
 
 export default handler

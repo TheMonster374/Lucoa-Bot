@@ -10,9 +10,6 @@ const handler = async (m, {isPrems, conn}) => {
   const exp = `${pickRandom([500, 600, 700, 800, 900, 999, 1000, 1300, 1500, 1800])}` * 1;
   const exppremium = `${pickRandom([1000, 1500, 1800, 2100, 2500, 2900, 3300, 3600, 4000, 4500])}` * 1;
 
-  const money = `${pickRandom([300, 500, 700, 900, 500, 800, 900, 1100, 1350, 1500])}` * 1;
-  const moneypremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000, 3300, 3500])}` * 1;
-
   const potion = `${pickRandom([1, 2, 3, 4, 5])}` * 1;
   const potionpremium = `${pickRandom([2, 4, 6, 9, 12])}` * 1;
 
@@ -29,7 +26,6 @@ const handler = async (m, {isPrems, conn}) => {
 
   const recompensas = {
     exp: premium ? exppremium : exp,
-    money: premium ? moneypremium : money,
     potion: premium ? potionpremium : potion,
     tiketcoin: premium ? tiketcoinpremium : tiketcoin,
     eleksirb: premium ? eleksirbpremium : eleksirb,

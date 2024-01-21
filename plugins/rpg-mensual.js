@@ -5,7 +5,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img4, img3, img1, img2]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: https://www.youtube.com/watch?v=CcF3rfC43Fk,  thumbnail: https://www.youtube.com/watch?v=CcF3rfC43Fk
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: https://www.youtube.com/watch?v=CcF3rfC43Fk, sourceUrl: yt }}}
 let dos = https://www.youtube.com/watch?v=CcF3rfC43Fk    
 
 let user = global.db.data.users[m.sender]
@@ -13,44 +13,9 @@ let premium = user.premium
 
 let limit = `${pickRandom([15, 23, 29, 36, 42, 50, 59, 65, 70, 83])}` * 1
 let limitpremium = `${pickRandom([45, 59, 70, 88, 100, 120, 135, 143, 149, 150])}` * 1
-
-let emas = `${pickRandom([5, 8, 12, 16, 19, 22, 25, 27, 29, 30])}` * 1
-let emaspremium = `${pickRandom([14, 16, 18, 22, 27, 29, 33, 36, 38, 40])}` * 1
-
-let joincount = `${pickRandom([5, 9, 15, 16, 25, 28, 30])}` * 1
-let joincountpremium = `${pickRandom([12, 19, 25, 34, 44, 50])}` * 1
-
-let eleksirb = `${pickRandom([20, 30, 39, 50, 55, 59, 60])}` * 1
-let eleksirbpremium = `${pickRandom([35, 55, 80, 120, 150, 170])}` * 1
-
-let gold = `${pickRandom([4, 7, 9, 14, 18])}` * 1
-let goldpremium = `${pickRandom([9, 18, 26, 38, 45])}` * 1
-
-let berlian = `${pickRandom([5, 7, 9, 11, 15, 19, 26, 28, 29, 30])}` * 1
-let berlianpremium = `${pickRandom([16, 22, 31, 39, 42, 53, 65, 67, 69, 70])}` * 1
-
-let kardus = `${pickRandom([5, 8, 10, 17, 25, 39, 46, 48, 49, 50])}` * 1
-let karduspremium = `${pickRandom([17, 30, 49, 55, 58, 59, 73, 79, 81, 89])}` * 1
-
-let pet = `${pickRandom([4, 4, 4, 6, 6, 7, 7, 2, 2, 2])}` * 1
-let petpremium = `${pickRandom([7, 7, 7, 12, 12, 12, 18, 18, 18, 20])}` * 1
-
-let gardenboxs = `${pickRandom([3, 3, 3, 3, 4, 4, 2, 2, 2, 5])}` * 1
-let gardenboxspremium = `${pickRandom([6, 6, 8, 8, 10, 10, 12, 12, 12, 15])}` * 1
-
-let legendary = `${pickRandom([2, 2, 2, 2, 2, 3, 3, 4, 4, 4])}` * 1
-let legendarypremium = `${pickRandom([4, 4, 4, 6, 6, 6, 7, 7, 9, 10])}` * 1
  
 const recompensas = {
   limit: premium ? limitpremium : limit,
-  emas: premium ? emaspremium : emas,
-  joincount: premium ? joincountpremium : joincount,
-  eleksirb: premium ? eleksirbpremium : eleksirb,
-  gold: premium ? goldpremium : gold,
-  berlian: premium ? berlianpremium : berlian,
-  kardus: premium ? karduspremium : kardus,
-  pet: premium ? petpremium : pet,
-  gardenboxs: premium ? gardenboxspremium : gardenboxs,
   mythic: premium ? legendarypremium : legendary,
 }
 

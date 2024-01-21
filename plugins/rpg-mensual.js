@@ -3,8 +3,8 @@ let handler = async (m, { isPrems, conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let gata = [img5, img4, img3, img1, img2]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: https://www.youtube.com/watch?v=CcF3rfC43Fk,  thumbnail: https://www.youtube.com/watch?v=CcF3rfC43Fk
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: https://www.youtube.com/watch?v=CcF3rfC43Fk, sourceUrl: yt }}}
+let enlace = { contextInfo: { externalAdReply: {title: jotchua', body: 'jotchua' , sourceUrl: https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM,  thumbnail: https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'ola ', thumbnailUrl: https://www.youtube.com/watch?v=CcF3rfC43Fk, sourceUrl: yt }}}
 let dos = https://www.youtube.com/watch?v=CcF3rfC43Fk    
 
 let user = global.db.data.users[m.sender]

@@ -1,15 +1,9 @@
 const handler = async (m, {conn, usedPrefix}) => {
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const text = `  _*ɪɴꜰᴏ ᴜꜱᴜᴀʀɪᴏ*_
 _*ɴᴏᴍʙʀᴇ​*_ : ${taguser}
-_*ᴅɪᴀᴍᴀɴᴛᴇꜱ​*_ : ${user.limit}
-_*​ɴɪᴠᴇʟ​*_ : ${user.level}
-_*​xᴘ*_ : ${user.exp}
-_*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
  
 
 ╭─────────────┈⊷

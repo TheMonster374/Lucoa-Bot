@@ -37,8 +37,8 @@ global.owner = [
 global.suittag = [''];
 global.prems = [''];
 
-global.packname = 'Jotchua-Bot By ALS';
-global.author = '+1 (970) 812-4588';
+global.packname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
+global.author = '𝘽𝙮 𝘼𝙇𝙎';
 global.wm = 'Jotchua-Bot';
 global.titulowm = 'Jotchua-Bot';
 global.titulowm2 = `Jotchua-Bot`

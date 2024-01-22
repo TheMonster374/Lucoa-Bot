@@ -31,16 +31,27 @@ const handler = async (m, {conn, usedPrefix}) => {
 *┗ೋ━ೋ✧ೋ━ೋ┛*
 *■██■▰▱▰▱▰▱■██■`.trim();
   const buttonMessage= {
-    text: anu,
-    contextInfo: {
-      externalAdReply: {
-        showAdAttribution: true, 
-        title: `${pushname}`,
-        body: "Suscribete ami canal Papu",
-        thumbnailUrl: "https://i.ibb.co/S37DL7B/images-1-1.jpg",
-        sourceUrl: "http://youtube.com/@Kriz_Chaan",
-        mediaType: 1,
-        renderLargerThumbnail: true
+    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'mimetype': `application/${document}`,
+    'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+    'fileLength': 99999999999999,
+    'pageCount': 200,
+    'contextInfo': {
+      'forwardingScore': 200,
+      'isForwarded': true,
+      'externalAdReply': {
+        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaType': 2,
+        'previewType': 'pdf',
+        'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+        'body': wm,
+        'thumbnail': imagen1,
+        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+    'caption': text,
+    'footer': wm,
+    // 'buttons':[
+    // {buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1},
+    // {buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };

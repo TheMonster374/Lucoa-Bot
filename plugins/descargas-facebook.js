@@ -12,7 +12,6 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     throw '⚠️ PLEASE GIVE A VALID URL.'
   }
 
- await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '⌛'  }}, { messageId: m.key.id })
 
   try {
     const result = await fg.fbdl(args[0]);

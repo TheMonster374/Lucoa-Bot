@@ -1,59 +1,95 @@
-       const locale = 'es-ES';
-    const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
-    const _uptime = process.uptime() * 1000;
-    const uptime = clockString(_uptime);
-    const user = global.db.data.users[m.sender];
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const rtotal = Object.entries(global.db.data.users).length || '0'
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
-𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
+  const text = `  _*ɪɴꜰᴏ ᴜꜱᴜᴀʀɪᴏ*_
+_*ɴᴏᴍʙʀᴇ​*_ : ${taguser}
+_*ᴅɪᴀᴍᴀɴᴛᴇꜱ​*_ : ${user.limit}
+_*​ɴɪᴠᴇʟ​*_ : ${user.level}
+_*​xᴘ*_ : ${user.exp}
+_*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+ 
 
 ╭─────────────┈⊷
 │「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  
 ╰────────────┈⊷  
        
-🐶͘͜  _${usedPrefix}owner | creador_
-🐶͘͜  _${usedPrefix}repo | repositorio_
-🐶͘͜  _${usedPrefix}estado_
-🐶͘͜  _${usedPrefix}grupos | gruposjt_
-🐶͘͜  _${usedPrefix}dash | dashboard_
-🐶͘͜  _${usedPrefix}speedtest_
-🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
+
+🐶͘͜  _repo | repositorio_
+🐶͘͜  _estado_
+🐶͘͜  _grupos | gruposjt_
+🐶͘͜  _dash | dashboard_
+🐶͘͜  _speedtest_
+🐶͘͜  _instalarbot | infoinstalar_
 🐶͘͜  bot/sub bot: ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
 
  ${readMore}
 ╭─────────────┈⊷
 │ 「 _*ᴍᴇɴᴜꜱ*_ 」
 ╰────────────┈⊷            
-🐶͘͜  _${usedPrefix}MenuPorn | porn_
-🐶͘͜  _${usedPrefix}menuanimes | animes_
-🐶͘͜  _${usedPrefix}menuaudios | audios_
-🐶͘͜  _${usedPrefix}MenuCreador_
-🐶͘͜  _${usedPrefix}MenuDescargas | Descargas_
-🐶͘͜  _${usedPrefix}MenuRPG | RPG_
+🐶͘͜  _MenuPorn | porn_
+🐶͘͜  _menuanimes | animes_
+🐶͘͜  _menuaudios | audios_
+🐶͘͜  _MenuCreador_
+🐶͘͜  _MenuDescargas | Descargas_
+🐶͘͜  _MenuRPG | RPG_
 
 ${readMore}
 ╭─────────────┈⊷
 │ 「 _*ᴀᴄᴄɪᴏɴᴇꜱ*_ 」
 ╰────────────┈⊷
        
-🐶͘͜  _${usedPrefix}kiss_
-🐶͘͜  _${usedPrefix}slap_
-🐶͘͜  _${usedPrefix}pat_
-🐶͘͜  _${usedPrefix}dado_
+🐶͘͜  _kiss_
+🐶͘͜  _slap_
+🐶͘͜  _pat_
+🐶͘͜  _dado_
 
 ╭─────────────┈⊷
 │「 _*ɪᴀ/ʙᴏᴛ*_ 」
 ╰────────────┈⊷
+
+🐶͘͜  _bot_
+🐶͘͜  _iaimagen
+
+
+╭─────────────┈⊷
+│「 _*ᴍᴇɴꜱᴀᴊᴇꜱ ᴇɴ ᴇꜱᴘᴇʀᴀ*_ 」
+╰────────────┈⊷
+
+🐶͘͜  _reporte *<texto>*_
+🐶͘͜  _fixmsgespera_
+⟼ Mensajes en espera
+
+ ${readMore}
+╭─────────────┈⊷
+│「 _*ᴜɴᴇ ᴇʟ ʙᴏᴛ ᴀ ᴛᴜ ɢʀᴜᴘᴏ*_ 」
+╰────────────┈⊷
+╭──────────────── 
+│🐶͘͜  _join *<enlace / link / url>*_
+╰────────────────
+ ${readMore}
+╭─────────────┈⊷
+│「 _*ꜱᴇʀʙᴏᴛ - ᴊᴀᴅɪʙᴏᴛ*_ 」
+╰────────────┈⊷    
+
+🐶͘͜  _serbot_
+🐶͘͜  _serbot --code_
+🐶͘͜  _token_
+🐶͘͜  _bots_
+(si quiere sacar el subbot vaya 
+a dispositivos vinculados y cierre la sesion)
+
+
+╭─────────────┈⊷
+│「 _*ᴇɴᴀʙʟᴇ / ᴅɪꜱᴀʙʟᴇ*_ 」
+╰────────────┈⊷     
+
+🐶͘͜  _enable_
+🐶͘͜  _disable_
+
+╭─────────────┈⊷
+│「 _*ᴊᴜᴇɢᴏꜱ*_ 」
+╰────────────┈⊷  
+
 `.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/AleXD0009/Jotchua-Bot`},

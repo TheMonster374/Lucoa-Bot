@@ -155,24 +155,16 @@ const handler = async (m, {conn, usedPrefix}) => {
 ││🐶͘͜  _ytsearch *<texto>*_
 ││🐶͘͜  _playstore *<texto>*_`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
-    'mimetype': `application/${document}`,
-    'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
-    'fileLength': 99999999999999,
-    'pageCount': 200,
-    'contextInfo': {
-      'forwardingScore': 200,
-      'isForwarded': true,
-      'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
-        'mediaType': 2,
-        'previewType': 'pdf',
-        'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
-        'body': wm,
-        'thumbnail': imagen1,
-        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
-    'caption': text,
-    'footer': wm,
+    text: anu,
+    contextInfo: {
+      externalAdReply: {
+        showAdAttribution: true, 
+        title: `${pushname}`,
+        body: "Suscribete ami canal Papu",
+        thumbnailUrl: "https://i.ibb.co/S37DL7B/images-1-1.jpg",
+        sourceUrl: "http://youtube.com/@Kriz_Chaan",
+        mediaType: 1,
+        renderLargerThumbnail: true
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };

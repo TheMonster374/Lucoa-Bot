@@ -1,32 +1,39 @@
-import axios from 'axios'
-import cheerio from 'cheerio'
+import fetch from 'node-fetch'
+import fg from 'api-dylux'
 
-let handler = async (m, { conn, args, command }) => {
-	if (!args[0]) return conn.reply(m.chat, '*🚩 Escribe la URL de un video de Facebook que deseas descargar.*', m, )
-	try {
-	let config = {
-        'id': args[0],
-        'locale': 'id'
-      }
-    let { data, status } = await axios('https://getmyfb.com/process', {
-        method: 'POST',
-        data: new URLSearchParams(Object.entries(config)),
-        headers: {
-          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
-          "cookie": "PHPSESSID=914a5et39uur28e84t9env0378; popCookie=1; prefetchAd_4301805=true"
-        }
-      })
-      let $ = cheerio.load(data)
-      let HD = $('div.container > div.results-download > ul > li:nth-child(1) > a').attr('href')
-      let SD = $('div.container > div.results-download > ul > li:nth-child(2) > a').attr('href')
-	await conn.sendMessage(m.chat, { video: { url: HD || SD }, caption: null }, { quoted: estilo})
-	} catch (e) {
-		conn.reply(m.chat, '*Ocurrió un error inesperado*', m,)
-	}
+
+const handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!args[0]) {
+    throw `✳️ Please send the link of a Facebook video\n\n📌 EXAMPLE :\n*${usedPrefix + command}* https://www.facebook.com/Ankursajiyaan/videos/981948876160874/?mibextid=rS40aB7S9Ucbxw6v`;
+  }
+
+  const urlRegex = /^(?:https?:\/\/)?(?:www\.)?(?:facebook\.com|fb\.watch)\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
+  if (!urlRegex.test(args[0])) {
+    throw '⚠️ PLEASE GIVE A VALID URL.'
+  }
+
+ await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '⌛'  }}, { messageId: m.key.id })
+
+  try {
+    const result = await fg.fbdl(args[0]);
+    const tex = `
+⊱ ─── {* Facebook dwd *} ─── ⊰
+↳ *VIDEO TITLE:* ${result.title}
+⊱ ────── {⋆♬⋆} ────── ⊰`
+
+    const response = await fetch(result.videoUrl)
+    const arrayBuffer = await response.arrayBuffer()
+    const videoBuffer = Buffer.from(arrayBuffer)
+    
+    conn.sendFile(m.chat, videoBuffer, 'fb.mp4', tex, m)
+  } catch (error) {
+    console.log(error)
+    m.reply('⚠️ An error occurred while processing the request. Please try again later.')
+  }
 }
-handler.help = ['facebook'].map(v => v + ' <url fb>')
+
+handler.help = ['facebook <url>']
 handler.tags = ['downloader']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
-handler.star = 2
-handler.register = true 
+
 export default handler

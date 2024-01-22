@@ -57,6 +57,7 @@ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ?
 🐶͘͜  _${usedPrefix}MenuPorn | porn_
 🐶͘͜  _${usedPrefix}menuanimes | animes_
 🐶͘͜  _${usedPrefix}menuaudios | audios_
+🐶͘͜  _${usedPrefix}MenuJuegos | juegos_
 🐶͘͜  _${usedPrefix}MenuCreador_
 🐶͘͜  _${usedPrefix}MenuDescargas | Descargas_
 🐶͘͜  _${usedPrefix}MenuRPG | RPG_
@@ -113,48 +114,6 @@ a dispositivos vinculados y cierre la sesion)
 
 🐶͘͜  _${usedPrefix}enable_
 🐶͘͜  _${usedPrefix}disable_
-
- ${readMore}
-╭─────────────┈⊷
-│「 _*ᴊᴜᴇɢᴏꜱ*_ 」
-╰────────────┈⊷  
-
-🐶͘͜  _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-🐶͘͜  _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
-🐶͘͜  _${usedPrefix}ppt *<papel / tijera /piedra>*_
-🐶͘͜  _${usedPrefix}prostituto *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}prostituta *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}gay2 *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}lesbiana *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}pajero *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}pajera *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}puto *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}puta *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}manco *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}manca *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}rata *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}love *<nombre / @tag>*_
-🐶͜  _${usedPrefix}doxear *<nombre / @tag>*_
-🐶͘͜  _${usedPrefix}pregunta *<texto>*_
-🐶͘͜  _${usedPrefix}suitpvp *<@tag>*_
-🐶͘͜  _${usedPrefix}slot *<apuesta>*_
-🐶͘͜  _${usedPrefix}ttt *<nombre sala>*_
-🐶͘͜  _${usedPrefix}delttt_
-🐶͘͜  _${usedPrefix}acertijo_
-🐶͘͜  _${usedPrefix}sorteo (nombre de lo que va a sortear)_
-🐶͘͜  _${usedPrefix}top *<texto>*_
-🐶͘͜  _${usedPrefix}topgays_
-🐶͘͜  _${usedPrefix}topparejas_
-🐶͘͜  _${usedPrefix}amistad_
-🐶͘͜  _${usedPrefix}trivia_
-🐶͘͜  _${usedPrefix}topotakus_
-🐶͘͜  _${usedPrefix}formarpareja_
-🐶͘͜  _${usedPrefix}verdad_
-🐶͘͜  _${usedPrefix}reto_
-🐶͘͜  _${usedPrefix}cancion_
-🐶͘͜  _${usedPrefix}pista_
-🐶͘͜  _${usedPrefix}advpe_
-🐶͘͜  _${usedPrefix}palabra_
 
 
  ${readMore}

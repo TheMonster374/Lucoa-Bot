@@ -1,4 +1,4 @@
-   case 'TEST':
+   case 'prueba':
           let owner = `「 *Creador* 」\n Hola ${pushname} 👋🏻 mi numero es : wa.me/5492616532494`
 conn.sendMessage(m.chat, {
     text: owner,

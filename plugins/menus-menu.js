@@ -30,10 +30,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ _*ɴᴏᴍʙʀᴇ​*_ : ${taguser}
 ┣ _*ɴᴜᴍᴇʀᴏ*_ : ${m.sender.split('@')[0]}
 *┗━━━━┛*
-_*ᴅɪᴀᴍᴀɴᴛᴇꜱ​*_ : ${user.limit}
-_*​ɴɪᴠᴇʟ​*_ : ${user.level}
-_*​xᴘ*_ : ${user.exp}
-_*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+┣ _*ᴅɪᴀᴍᴀɴᴛᴇꜱ​*_ : ${user.limit}
+┣ _*​ɴɪᴠᴇʟ​*_ : ${user.level}
+┣ _*​xᴘ*_ : ${user.exp}
+┣ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+┗━━━━┛
 
 ╭─────────────┈⊷
 │「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  

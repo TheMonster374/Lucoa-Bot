@@ -10,8 +10,8 @@ const handler = async (m, { conn }) => {
     const message = `
 ┌─「 *LEVEL* 」─
 ┊─•✧ *Nombre* : _${name}_
-┊─•✧*Nivel:* ${user.level}
-┊─•✧*XP*: ${max - user.exp}
+┊─•✧ *Nivel*: ${user.level}
+┊─•✧ *XP*: ${max - user.exp}
 └──────────────
 
 *Para ascender de nivel necesitas obtener ${max - user.exp} puntos de experiencia más. Sigue interactuando con el Bot!.*`.trim();
@@ -24,8 +24,8 @@ const handler = async (m, { conn }) => {
     const levelUpDetails = `
 **
 ┌─「 *LEVEL* 」─
-┊─•✧*Nivel anterior:* ${before}
-┊─•✧*Nuevo actual:* ${user.level}
+┊─•✧ *Nivel anterior:* ${before}
+┊─•✧ *Nuevo actual:* ${user.level}
 └──────────────
 
 `.trim();

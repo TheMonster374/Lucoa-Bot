@@ -1,57 +1,78 @@
+    const d = new Date(new Date + 3600000);
+    const locale = 'es-ES';
+    const week = d.toLocaleDateString(locale, {weekday: 'long'});
+    const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
+    const _uptime = process.uptime() * 1000;
+    const uptime = clockString(_uptime);
+    const user = global.db.data.users[m.sender];
+    const {money, joincount} = global.db.data.users[m.sender];
+    const {exp, limit, level, role} = global.db.data.users[m.sender];
+    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const rtotal = Object.entries(global.db.data.users).length || '0'
+    const more = String.fromCharCode(8206);
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `*Hola 👋🏻 u Mi Nombre es jotchuabot Bienvenid@ a mi menu
-  
-╭──────────────────╮
-*➼✰︙ 𝑻𝑼 𝑰𝑵𝑭𝑶* 
-╰──────────────────╯
-┋✧⃝👤͙ *Nombre:* 
-┋✧⃝👤͙ *Numero:* ${m.sender.split('@')[0]}
+  const text = `𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤: ${uptime}
+𝙥𝙧𝙚𝙛𝙞𝙟𝙤:| . | / | # |
 
-╭──────────────────╮
-*➼✰︙𝑪𝑹𝑬𝑨𝑫𝑶𝑹 - 𝑶𝑾𝑵𝑬𝑹*
-╰──────────────────╯
-┋ ⋆⃟⋆⃟🍒 listachat
-┋ ⋆⃟⋆⃟🍒 listagrupo
-┋ ⋆⃟⋆⃟🍒 public
-┋ ⋆⃟⋆⃟🍒 self
-┋ ⋆⃟⋆⃟🍒 myip
-┋ ⋆⃟⋆⃟🍒 chat
-┋ ⋆⃟⋆⃟🍒 reac
-┋ ⋆⃟⋆⃟🍒 join
-┋ ⋆⃟⋆⃟🍒 salir
-┋ ⋆⃟⋆⃟🍒 wm
-┋ ⋆⃟⋆⃟🍒 block
-┋ ⋆⃟⋆⃟🍒 unblock
+╭─────────────┈⊷
+│「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  
+╰────────────┈⊷  
+       
+🐶͘͜  _${usedPrefix}owner | creador_
+🐶͘͜  _${usedPrefix}repo | repositorio_
+🐶͘͜  _${usedPrefix}estado_
+🐶͘͜  _${usedPrefix}grupos | gruposjt_
+🐶͘͜  _${usedPrefix}dash | dashboard_
+🐶͘͜  _${usedPrefix}speedtest_
+🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
+🐶͘͜  bot/sub bot: ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
 
-■██■▰▱▰▱▰▱■██■
-*┏ೋ━ೋ✧ೋ━ೋ┓*
-     *🌠 𝑲𝑹𝑰𝒁𝑪𝑯𝑨𝑨𝑵 🌠*
-*┗ೋ━ೋ✧ೋ━ೋ┛*
-*■██■▰▱▰▱▰▱■██■`.trim();
+ ${readMore}
+╭─────────────┈⊷
+│ 「 _*ᴍᴇɴᴜꜱ*_ 」
+╰────────────┈⊷            
+🐶͘͜  _${usedPrefix}MenuPorn | porn_
+🐶͘͜  _${usedPrefix}menuanimes | animes_
+🐶͘͜  _${usedPrefix}menuaudios | audios_
+🐶͘͜  _${usedPrefix}MenuCreador_
+🐶͘͜  _${usedPrefix}MenuDescargas | Descargas_
+🐶͘͜  _${usedPrefix}MenuRPG | RPG_
+
+${readMore}
+╭─────────────┈⊷
+│ 「 _*ᴀᴄᴄɪᴏɴᴇꜱ*_ 」
+╰────────────┈⊷
+       
+🐶͘͜  _${usedPrefix}kiss_
+🐶͘͜  _${usedPrefix}slap_
+🐶͘͜  _${usedPrefix}pat_
+🐶͘͜  _${usedPrefix}dado_
+
+╭─────────────┈⊷
+│「 _*ɪᴀ/ʙᴏᴛ*_ 」
+╰────────────┈⊷
+`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'document': {url: `https://github.com/AleXD0009/Jotchua-Bot`},
     'mimetype': `application/${document}`,
-    'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+    'fileName': `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭`,
     'fileLength': 99999999999999,
     'pageCount': 200,
     'contextInfo': {
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaUrl': 'https://github.com/AleXD0009/Jotchua-Bot',
         'mediaType': 2,
         'previewType': 'pdf',
-        'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+        'title': '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭',
         'body': wm,
         'thumbnail': imagen1,
-        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+        'sourceUrl': 'https://github.com/AleXD0009/Jotchua-Bot.git'}},
     'caption': text,
     'footer': wm,
-    // 'buttons':[
-    // {buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1},
-    // {buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };

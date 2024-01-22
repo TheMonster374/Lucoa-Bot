@@ -16,3 +16,5 @@ conn.sendMessage(m.chat, {
    })
 }
 break
+
+handler.command = /^(prueba|N|Comandos|comandos|cmds|cmd|MENU|help|ayuda)$/i;

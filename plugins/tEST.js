@@ -26,24 +26,29 @@ const handler = async (m, {conn, usedPrefix}) => {
 *—◉ 𝙴𝙻 𝙲𝙾𝙽𝚃𝙰𝙲𝚃𝙾 𝙳𝙴 𝙻𝙰 𝙲𝙾𝙻𝙰𝙱𝙾𝚁𝙰𝙳𝙾𝚁𝙰 11 𝙴𝚂 https://instagram.com/gata_dios*
 
 *—◉ 𝙴𝙻 𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴𝙻 𝙲𝙾𝙻𝙰𝙱𝙾𝚁𝙰𝙳𝙾𝚁 12 𝙴𝚂 wa.me/5212412377467*`.trim();
-conn.sendMessage(m.chat, {
-    text: anu,
-    contextInfo: {
-      externalAdReply: {
-        showAdAttribution: true, 
-        title: `${pushname}`,
-        body: "Suscribete ami canal Papu",
-        thumbnailUrl: "https://i.ibb.co/S37DL7B/images-1-1.jpg",
-        sourceUrl: "http://youtube.com/@Kriz_Chaan",
-        mediaType: 1,
-        renderLargerThumbnail: true
-      }
-    }
-   })
-}
-break
-
+  const buttonMessage= {
+    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'mimetype': `application/${document}`,
+    'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+    'fileLength': 99999999999999,
+    'pageCount': 200,
+    'contextInfo': {
+      'forwardingScore': 200,
+      'isForwarded': true,
+      'externalAdReply': {
+        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaType': 2,
+        'previewType': 'pdf',
+        'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+        'body': wm,
+        'thumbnail': imagen1,
+        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+    'caption': text,
+    'footer': wm,
+    'headerType': 6};
+  conn.sendMessage(m.chat, buttonMessage, {quoted: m});
+};
 handler.help = ['owner', 'creator'];
 handler.tags = ['info'];
-handler.command = /^(N|creator|creador|propietario)$/i;
+handler.command = /^(prueba|creator|creador|propietario)$/i;
 export default handler;

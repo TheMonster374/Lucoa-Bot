@@ -1,11 +1,11 @@
 import {createHash} from 'crypto';
-const user = global.db.data.users[m.sender];
-const {money, joincount} = global.db.data.users[m.sender];
-const {exp, limit, level, role} = global.db.data.users[m.sender];
 import PhoneNumber from 'awesome-phonenumber';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
   let pp = 'https://telegra.ph/file/06cc652844ea19e8aed1c.jpg';
+  const user = global.db.data.users[m.sender];
+const {money, joincount} = global.db.data.users[m.sender];
+const {exp, limit, level, role} = global.db.data.users[m.sender];
   const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   if (!(who in global.db.data.users)) throw `El usuario que está mencionando no está registrado en mi base de datos`;
   try {

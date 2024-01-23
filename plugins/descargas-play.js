@@ -15,9 +15,6 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
       additionalText = 'audio';
     } else if (command === 'play2') {
       additionalText = 'vídeo';
-      
-      let ytmsg = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "17608914335-1625305606@g.us" } : {}) }, message: { "extendedTextMessage": { "text":'Downloader YouTube', "title": 'Jotchua-Bot', 'jpegThumbnail': global.ytlogo}}}
-
     }
     const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Título:* ${yt_play[0].title}\n\n*Publicado:* ${yt_play[0].ago}\n\n*Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n*Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n*Autor:* ${yt_play[0].author.name}\n\n*ID:* ${yt_play[0].videoId}\n\n*Tipo:* ${yt_play[0].type}\n\n*Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
    let buttonMessage= {
@@ -36,7 +33,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 'previewType': 'VIDEO',
 'title': `${vid.title}`,
 'body': null,
-'thumbnail': await (await fetch(vid.thumbnail)).buffer(),
+'thumbnail': await (await fetch(yt_play[0].vid.thumnail)).buffer(),
 'sourceUrl': 'https://youtube.com/' }},
 'caption': txt,
 'footer': '\nVideos de YouTube',

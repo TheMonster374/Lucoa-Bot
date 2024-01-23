@@ -7,48 +7,15 @@ import { xpRange } from '../lib/levelling.js'
 let tags = {
   'main': 'info Bot',
   'jadibot': 'SerBot - JadiBot',
-  'game': 'JUEGOS',
-  'econ': 'NIVEL & ECONOMIA',
-  'xp': 'REGISTRO',
-  'sticker': 'STICKER',
-  'img': 'IMAGEN',
-  'maker': 'MAKER',
-  'prem': 'PREMIUM',
-  'group': 'GRUPO',
-  'nable': 'EN/DISABLE OPCIONES', 
-  'nime': 'ANIME',
-  'rnime': 'ANIME REACCION',
-  'downloader': 'DESCARGAS',
-  'tools': 'TOOLS',
-  'fun': 'FUN',
-  'cmd': 'DATABASE',
-  'nsfw': 'NSFW +18',
-  'ansfw': 'NSFW ANIME', 
-  'owner': 'OWNER', 
-  'advanced': 'AVANZADO',
 }
 const defaultMenu = {
   before: `
-◈ ━━━━━ _*Jotchua -Bot*_ ━━━━━ ◈
-╭───────────
-┊  𝐌𝐞𝐧𝐮 𝟐.𝟎🐶
-╰───────────
-*AVISO:* este menu es nuevo por lo que sus comandos no estan al 100% ordenados
-
-
-Hola *%name*
-Usuarios : %totalreg
-Tiempo activo : %muptime
-%sbot
-────────────
-%readmore
-  ≡ *LISTA DE COMANDOS*
-
+MEME
 
 `.trimStart(),
-header: '┌─•✧〔 %category 〕✧•──┐\n┊╭───────────',
-body: '┊┃  %cmd',
-footer: '┊╰───────────\n└─── •✧🐶🐶🐶🐶✧• ────┘ \n',
+header: '%category,
+body: '%cmd',
+footer: '',
 after: `
 `,
 }

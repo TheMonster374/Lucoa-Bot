@@ -17,28 +17,6 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
       additionalText = 'vídeo';
     }
     const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Título:* ${yt_play[0].title}\n\n*Publicado:* ${yt_play[0].ago}\n\n*Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n*Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n*Autor:* ${yt_play[0].author.name}\n\n*ID:* ${yt_play[0].videoId}\n\n*Tipo:* ${yt_play[0].type}\n\n*Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
-   let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009/Jotchua-Bot` },
-'mimetype': `application/pdf`,
-'fileName': `🐶 | 𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢`,
-'fileLength': 99999999999999,
-'pageCount': 200,
-'contextInfo': {
-'mentionedJid': [m.sender],
-'forwardingScore': 200,
-'isForwarded': true,
-'externalAdReply': {
-'mediaUrl': `${yt_play[0].url}`,
-'mediaType': 2,
-'previewType': 'VIDEO',
-'title': `${vid.title}`,
-'body': null,
-'thumbnail': await (await fetch(yt_play[0].vid.thumnail)).buffer(),
-'sourceUrl': 'https://youtube.com/' }},
-'caption': txt,
-'footer': '\nVideos de YouTube',
-'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
     if (command == 'play') {
     try {   
     const audio = global.API('CFROSAPI', `/api/v1/ytmp3?url=${yt_play[0].url}`)

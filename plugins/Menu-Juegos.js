@@ -33,6 +33,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 🐶͘͜  _top *<texto>*_
 🐶͘͜  _topparejas_
 🐶͘͜  _amistad_
+🐶͘͜  _ruleta_
 🐶͘͜  _trivia_
 🐶͘͜  _topotakus_
 🐶͘͜  _formarpareja_

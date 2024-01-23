@@ -20,25 +20,24 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 ╭─═[𝐑𝐏𝐆 - 𝐋𝐈𝐌𝐈𝐓𝐄𝐒 - 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀]═──⋆
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}adventure_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}cazar_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}cofre_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}balance_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}claim_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}heal_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lb_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}levelup_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}myns_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}perfil_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}work_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}minar_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}semanal_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}buy_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}buyall_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}verificar_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}robar *<cant> <@tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}transfer *<tipo> <cant> <@tag>*_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}unreg *<sn>*_
+│🐶͘͜  _${usedPrefix}adventure_
+│🐶͘͜  _${usedPrefix}cazar_
+│🐶͘͜  _${usedPrefix}cofre_
+│🐶͘͜  _${usedPrefix}claim_
+│🐶͘͜  _${usedPrefix}heal_
+│🐶͘͜  _${usedPrefix}lb_
+│🐶͘͜  _${usedPrefix}levelup_
+│🐶͘͜  _${usedPrefix}myns_
+│🐶͘͜  _${usedPrefix}perfil_
+│🐶͘͜  _${usedPrefix}work_
+│🐶͘͜  _${usedPrefix}minar_
+│🐶͘͜  _${usedPrefix}semanal_
+│🐶͘͜  _${usedPrefix}buy_
+│🐶͘͜  _${usedPrefix}buyall_
+│🐶͘͜  _${usedPrefix}verificar_
+│🐶͘͜  _${usedPrefix}robar *<cant> <@tag>*_
+│🐶͘͜  _${usedPrefix}transfer *<tipo> <cant> <@tag>*_
+│🐶͘͜  _${usedPrefix}unreg *<sn>*_
 ╰───────────═┅═──────────`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

@@ -30,7 +30,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `╰──────────\n\n`
        txt += `*Espera @${m.sender.split`@`[0]},en lo que envio el audio*`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009/Jotchua-Test` },
+'document': { url: `https://github.com/AleXD0009/Jotchua-Bot` },
 'mimetype': `application/pdf`,
 'fileName': `🐶 | 𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢`,
 'fileLength': 99999999999999,
@@ -107,7 +107,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `╰──────────\n\n`
        txt += `*Espera @${m.sender.split`@`[0]},en lo que envio el video*`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009/Jotchua-Test` },
+'document': { url: `https://github.com/AleXD0009/Jotchua-Bot` },
 'mimetype': `application/pdf`,
 'fileName': `🐶 |𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢`,
 'fileLength': 99999999999999,
@@ -245,7 +245,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `╰──────────✰\n\n`
        txt += `*Espera @${m.sender.split`@`[0]},en lo que envio el documento*`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009/Jotchua-Test` },
+'document': { url: `https://github.com/AleXD0009/Jotchua-Bot` },
 'mimetype': `application/pdf`,
 'fileName': `🐶 |𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢`,
 'fileLength': 99999999999999,

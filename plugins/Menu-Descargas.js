@@ -21,23 +21,23 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
            「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
 
-🐶͘͜  _${usedPrefix}mediafire *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}tiktok *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}gitclone *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}gdrive *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}mediafire *<enlace>*_
+🐶͘͜  _${usedPrefix}tiktok *<enlace>*_ 『💎』
+🐶͘͜  _${usedPrefix}gitclone *<enlace>*_
+🐶͘͜  _${usedPrefix}gdrive *<enlace>*_
 🐶͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}instagram *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}instagram *<enlace>*_ 『💎』
 🐶͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
 🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}play *<texto>*_
-🐶͘͜  _${usedPrefix}play2 *<texto>*_
+🐶͘͜  _${usedPrefix}play *<texto>*_ 『💎』
+🐶͘͜  _${usedPrefix}play2 *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}play.1 *<texto>*_
 🐶͘͜  _${usedPrefix}play.2 *<texto>*_
 🐶͘͜  _${usedPrefix}play5 *<texto>*_

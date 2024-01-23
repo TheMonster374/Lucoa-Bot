@@ -1,4 +1,7 @@
 import {createHash} from 'crypto';
+const user = global.db.data.users[m.sender];
+const {money, joincount} = global.db.data.users[m.sender];
+const {exp, limit, level, role} = global.db.data.users[m.sender];
 import PhoneNumber from 'awesome-phonenumber';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {

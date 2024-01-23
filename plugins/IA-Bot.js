@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   try {
     conn.sendPresenceUpdate('composing', m.chat);
 
-    const API_URL = `https://vihangayt.me/tools/bard?q=${encodeURIComponent(text)}`;
+    const API_URL = `https://api.yanzbotz.my.id/api/ai/openai?query=${encodeURIComponent(text)}`;
     const response = await fetch(API_URL);
     const data = await response.json();
 

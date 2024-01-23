@@ -24,6 +24,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 │🐶͘͜  _${usedPrefix}cazar_
 │🐶͘͜  _${usedPrefix}cofre_
 │🐶͘͜  _${usedPrefix}claim_
+│🐶͘͜  _${usedPrefix}bal_
 │🐶͘͜  _${usedPrefix}heal_
 │🐶͘͜  _${usedPrefix}lb_
 │🐶͘͜  _${usedPrefix}levelup_

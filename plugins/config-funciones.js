@@ -416,13 +416,14 @@ _*FUNCIONES DEL BOT*_\n👑:solo creadores\n🐶:solo admins\n
       }
       chat.antiToxic = isEnable;
       break;
-    case 'antitraba':
-      if (m.isGroup) {
-        if (!(isAdmin || isROwner || isOwner)) {
-          global.dfail('admin', m, conn);
-          throw false;
-        }
-      }
+      case 'game': case 'juegos': case 'fun': case 'ruleta':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.game = isEnable          
+break;
       chat.antiTraba = isEnable;
       break;
     case 'antiarabes':

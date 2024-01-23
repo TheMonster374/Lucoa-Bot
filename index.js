@@ -1,42 +1,4 @@
 
-sock.ev.on('messages.upsert', async chatUpdate => {
-//console.log(JSON.stringify(chatUpdate, undefined, 2))
-try {
-chatUpdate.messages.forEach(async (mek) => {
-try {
-mek = chatUpdate.messages[0]
-if (!mek.message) return
-mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-if (mek.key && mek.key.remoteJid === 'status@broadcast') return
-if (!sock.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
-if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
-if (mek.key.id.startsWith('FatihArridho_')) return
-global.numBot = sock.user.id.split(":")[0] + "@s.whatsapp.net"
-global.numBot2 = sock.user.id
-m = smsg(sock, mek)
-require("./main")(sock, m, chatUpdate, mek, store)
-} catch (e) {
-console.log(e)
-}})
-} catch (err) {
-console.log(err)
-}})
-
-sock.ev.on('messages.update', async chatUpdate => {
-for(const { key, update } of chatUpdate) {
-if(update.pollUpdates && key.fromMe) {
-const pollCreation = await getMessage(key)
-if(pollCreation) {
-const pollUpdate = await getAggregateVotesInPollMessage({
-message: pollCreation,
-pollUpdates: update.pollUpdates,
-})
-var toCmd = pollUpdate.filter(v => v.voters.length !== 0)[0]?.name
-if (toCmd == undefined) return
-var prefCmd = prefix+toCmd
-sock.appenTextMessage(prefCmd, chatUpdate)
-}}}})
-///TEST
 console.log('Iniciando...');
 import {join, dirname} from 'path';
 import {createRequire} from 'module';

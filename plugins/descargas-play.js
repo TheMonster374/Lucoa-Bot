@@ -28,7 +28,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': `${vid.url}`,
+'mediaUrl': `${yt_play[0].url}`,
 'mediaType': 2,
 'previewType': 'VIDEO',
 'title': `${vid.title}`,

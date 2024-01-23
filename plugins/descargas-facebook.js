@@ -1,38 +1,16 @@
-import fetch from 'node-fetch'
-import fg from 'api-dylux'
-
-
-const handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) {
-    throw `✳️ Please send the link of a Facebook video\n\n📌 EXAMPLE :\n*${usedPrefix + command}* https://www.facebook.com/Ankursajiyaan/videos/981948876160874/?mibextid=rS40aB7S9Ucbxw6v`;
-  }
-
-  const urlRegex = /^(?:https?:\/\/)?(?:www\.)?(?:facebook\.com|fb\.watch)\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
-  if (!urlRegex.test(args[0])) {
-    throw '⚠️ PLEASE GIVE A VALID URL.'
-  }
-
-
-  try {
-    const result = await fg.fbdl(args[0]);
-    const tex = `
-⊱ ─── {* Facebook dwd *} ─── ⊰
-↳ *VIDEO TITLE:* ${result.title}
-⊱ ────── {⋆♬⋆} ────── ⊰`
-
-    const response = await fetch(result.videoUrl)
-    const arrayBuffer = await response.arrayBuffer()
-    const videoBuffer = Buffer.from(arrayBuffer)
-    
-    conn.sendFile(m.chat, videoBuffer, 'fb.mp4', tex, m)
-  } catch (error) {
-    console.log(error)
-    m.reply('⚠️ An error occurred while processing the request. Please try again later.')
-  }
-}
-
-handler.help = ['facebook <url>']
-handler.tags = ['downloader']
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i
-
-export default handler
+async function descarga2(m, command, text, args, conn, lolkeysapi) {
+if (global.db.data.users[m.sender].registered < true) return m.reply(info.registra)
+if (global.db.data.users[m.sender].limit < 1) return m.reply(info.endLimit)
+if (command == 'facebook' || command == 'fb') { 
+if (!text) return m.reply(`${lenguaje.lengua.ejem}\n${prefix + command} https://fb.watch/ncowLHMp-x/?mibextid=rS40aB7S9Ucbxw6v`)
+if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) return m.reply(`Error`) 
+conn.fakeReply(m.chat, `${lenguaje.lengua.espere}`, '0@s.whatsapp.net', 'No haga spam')
+try {
+let res = await fetch(`https://api.lolhuman.xyz/api/facebook?apikey=${lolkeysapi}&url=${args[0]}`)
+let _json = await res.json()
+vid = _json.result[0]
+if (vid == '' || !vid || vid == null) vid = _json.result[1]
+await conn.sendMessage(m.chat, {video: {url: vid}, caption: `${lenguaje.descargar.text16}`}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+} catch (e) {
+m.reply(info.error)
+console.log(e)}}

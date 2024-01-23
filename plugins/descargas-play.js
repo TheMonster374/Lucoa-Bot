@@ -9,6 +9,27 @@ let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Hace falta el título o enlace del video de YouTube.*\n\n*Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
+  'document': { url: `https://github.com/AleXD0009/Jotchua-Bot` },
+'mimetype': `application/pdf`,
+'fileName': `🐶 | 𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'mentionedJid': [m.sender],
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': `${vid.url}`,
+'mediaType': 2,
+'previewType': 'VIDEO',
+'title': `${vid.title}`,
+'body': null,
+'thumbnail': await (await fetch(vid.thumbnail)).buffer(),
+'sourceUrl': 'https://youtube.com/' }},
+'caption': txt,
+'footer': '\nVideos de YouTube',
+'headerType': 6 }
+conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {

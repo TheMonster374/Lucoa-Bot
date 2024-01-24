@@ -62,7 +62,7 @@ let handler = async (m, { conn, args }) => {
         .on('error', e => m.reply(format(e)))
         .on('close', () => {
         m.reply('*⏳Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ... ฅ^•ﻌ•^ฅ⏳*')
-            conn.sendFile(m.chat, Buffer.concat(bufs), 'txt.jpg', '✅ Es mejor de lo que escribes tú ✍🏻', fakemsg)
+            conn.sendFile(m.chat, Buffer.concat(bufs), 'txt.jpg', '✅ Es mejor de lo que escribes tú ✍🏻', )
         })
         .stdout.on('data', chunk => bufs.push(chunk))
 }

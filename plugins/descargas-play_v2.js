@@ -77,6 +77,7 @@ if (enviando) return;
   }
 };
 handler.command = ['play.1', 'play.2'];
+handler.limit = 2
 export default handler;
 
 

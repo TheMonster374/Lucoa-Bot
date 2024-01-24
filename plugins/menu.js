@@ -47,7 +47,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 🐶͘͜  _${usedPrefix}dash | dashboard_
 🐕͘͜  _${usedPrefix}speedtest_
 🐶͘͜  _${usedPrefix}instalarbot | infoinstalar_
-🐕�͘͜  bot/sub bot: ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
+🐕͘͜  bot/sub bot: ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || 'Este es el Bot oficial'}
 
  ${readMore}
 ╭─────────────┈⊷

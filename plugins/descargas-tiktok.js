@@ -3,8 +3,8 @@ import { tiktokdl } from '@bochilteam/scraper'
 
 var handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
-if (!args[0]) return conn.reply(m.chat, `🎌 *Ingrese un enlace de tiktok*\n\nEjemplo, !${command} https://vm.tiktok.com/ZMYG92bUh/`, m, fake, )
-if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `🚩 *Verifica que el enlace sea correcto*`, m, fake, )
+if (!args[0]) return conn.reply(m.chat, `🎌 *Ingrese un enlace de tiktok*\n\nEjemplo, !${command} https://vm.tiktok.com/ZMYG92bUh/`, m, fakeReply, )
+if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `🚩 *Verifica que el enlace sea correcto*`, m, fakeReply, )
 
 m.react(rwait)
 

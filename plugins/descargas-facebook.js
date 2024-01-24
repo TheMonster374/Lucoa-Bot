@@ -6,13 +6,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         usedPrefix + command
       } https://fb.watch/hPoaWhs8af/`
     );
-  await conn.sendNyanCat(
+  await conn.reply(
     m.chat,
-    global.wait,
+    global.waitt,
     adnyancat,
     addescargas,
     null,
-    script,
+    md,
     m
   );
   try {

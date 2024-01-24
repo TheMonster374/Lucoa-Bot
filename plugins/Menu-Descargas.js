@@ -21,19 +21,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
            「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
 
-🐶͘͜  _${usedPrefix}mediafire *<enlace>*_
-🐶͘͜  _${usedPrefix}gitclone *<enlace>*_
-🐶͘͜  _${usedPrefix}gdrive *<enlace>*_
-🐶͘͜  _${usedPrefix}tiktokimg *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}xnxxdl *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}xvideosdl *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}twitter *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}ytshort *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}ytmp3 *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}ytmp3doc *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}videodoc *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}dapk2 *<enlace / link / url>*_
-🐶͘͜  _${usedPrefix}stickerpack *<enlace / link / url>*_
+🐶͘͜  _${usedPrefix}mediafire *<enlace>*_ 『💎』
+🐶͘͜  _${usedPrefix}gitclone *<enlace>*_ 『💎』
+🐶͘͜  _${usedPrefix}gdrive *<enlace>*_ 『💎』
+🐶͘͜  _${usedPrefix}tiktokimg *<enlace>*_
+🐶͘͜  _${usedPrefix}xnxxdl *<enlace>*_
+🐶͘͜  _${usedPrefix}xvideosdl *<enlace>*_
+🐶͘͜  _${usedPrefix}twitter *<enlace>*_ 
+🐶͘͜  _${usedPrefix}ytshort *<enlace>*_ 『💎』
+🐶͘͜  _${usedPrefix}ytmp3 *<enlace>*_
+🐶͘͜  _${usedPrefix}ytmp3doc *<enlace>*_
+🐶͘͜  _${usedPrefix}videodoc *<enlace>*_
+🐶͘͜  _${usedPrefix}dapk2 *<enlace>*_
+🐶͘͜  _${usedPrefix}stickerpack *<enlace>*_
 🐶͘͜  _${usedPrefix}play *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}play2 *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}play.1 *<texto>*_ 『💎』
@@ -44,7 +44,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 🐶͘͜  _${usedPrefix}ringtone *<texto>*_
 🐶͘͜  _${usedPrefix}soundcloud *<texto>*_
 🐶͘͜  _${usedPrefix}imagen *<texto>*_
-🐶͘͜  _${usedPrefix}pinterest *<texto>*_
+🐶͘͜  _${usedPrefix}pinterest *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}wallpaper *<texto>*_
 🐶͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_
 🐶͘͜  _${usedPrefix}igstalk *<nombre de usuario>*_

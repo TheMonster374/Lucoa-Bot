@@ -1,7 +1,7 @@
 import fg from "api-dylux";
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0])
-    return m.ftext(
+    return m.reply(
       `*◦Ingresa un enlace de un video de Facebook.*\n*◦Ejemplo:* ${
         usedPrefix + command
       } https://fb.watch/hPoaWhs8af/`

@@ -46,5 +46,6 @@ const handler = async (m, {conn, args, isPrems, isOwner, command}) => {
 handler.help = ['ytd'];
 handler.tags = ['downloader'];
 handler.command = ['videodoc', 'documentvid', 'videodocumento', 'ytshort'];
+handler.limit = 1
 handler.exp = 3;
 export default handler;

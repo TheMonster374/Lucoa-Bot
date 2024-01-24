@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_*_\n\n*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
+  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_*_\n\n*Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {

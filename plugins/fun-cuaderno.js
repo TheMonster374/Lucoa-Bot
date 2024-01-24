@@ -61,14 +61,14 @@ let handler = async (m, { conn, args }) => {
     spawn(_spawnprocess, _spawnargs)
         .on('error', e => m.reply(format(e)))
         .on('close', () => {
-        m.reply('*⏳Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ... ฅ^•ﻌ•^ฅ⏳*')
-            conn.sendFile(m.chat, Buffer.concat(bufs), 'txt.jpg', '✅ Es mejor de lo que escribes tú ✍🏻', )
+        m.reply('*espera un momento*')
+            conn.sendFile(m.chat, Buffer.concat(bufs), 'txt.jpg', '*Cuaderno*', )
         })
         .stdout.on('data', chunk => bufs.push(chunk))
 }
 handler.help = ['txt *<texto>*']
 handler.tags = ['fun']
-handler.command = ['escribe', 'txt'] 
+handler.command = ['cuarderno', 'txt', 'escibir'] 
 
 export default handler
 

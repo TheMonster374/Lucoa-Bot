@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Hace falta el título o enlace del video de YouTube.*\n\n*Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
+  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_*_\n\n*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
@@ -16,7 +16,8 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Título:* ${yt_play[0].title}\n\n*Publicado:* ${yt_play[0].ago}\n\n*Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n*Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n*Autor:* ${yt_play[0].author.name}\n\n*ID:* ${yt_play[0].videoId}\n\n*Tipo:* ${yt_play[0].type}\n\n*Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
+    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_*_\n\n▢ *Título:* ${yt_play[0].title}\n\n▢ *Publicado:* ${yt_play[0].ago}\n\n▢ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n▢ *Autor:* ${yt_play[0].author.name}\n\n▢ *ID:* ${yt_play[0].videoId}\n\n▢ *Tipo:* ${yt_play[0].type}\n\n▢ *Enlace:* ${yt_play[0].url}\n\n▢ *Canal:* ${yt_play[0].author.url}\n\n*[ ℹ️ ] Se está enviando el ${additionalText}. espere...*`.trim();
+    conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
     const audio = global.API('CFROSAPI', `/api/v1/ytmp3?url=${yt_play[0].url}`)
@@ -63,7 +64,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.command = /^(play|play2|musica)$/i;
+handler.command = /^(play|play2)$/i;
 handler.limit = 2
 export default handler;
 

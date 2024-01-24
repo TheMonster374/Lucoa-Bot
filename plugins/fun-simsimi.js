@@ -1,15 +1,18 @@
-import fetch from 'node-fetch'
-let handler = async (m, { text, usedPrefix, command }) => {
-let name = await conn.getName(m.sender)
-if (!text) {
- conn.reply(m.chat, `Hola *@${m.sender.split`@`[0]}* Quieres charlar un rato? \nResponde con *${usedPrefix + command}* (tu mensaje) \n\n*_📌 Ejemplo :_* *${usedPrefix + command}* Hola bot`, m, { mentions: [m.sender] })
- throw false
- }
-    const API_URL = 'https://api.simsimi.net', '/v2/', ${encodeURIComponent(text)}`;
+import fetch from 'node-fetch';
+
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+  if (!text) {
+    throw `_*𝐁𝐨𝐭 - 𝐈𝐀*_\n\n*Proporciona un texto.*\n\n*Ejemplo:* _${usedPrefix + command} Hola Bot, ¿cómo estás?_`;
+  }
+
+  try {
+    conn.sendPresenceUpdate('composing', m.chat);
+
+    const API_URL = `https://api.simsimi.net', '/v2/',?q=${encodeURIComponent(text)}`;
     const response = await fetch(API_URL);
-    const data = await response.json();
-    
-if (data.status && data.data) {
+    const data = await response.json();      https://api.simsimi.net', '/v2/',
+
+    if (data.status && data.data) {
       const respuestaAPI = data.data;
       conn.reply(m.chat, respuestaAPI, m);
     } else {
@@ -19,8 +22,7 @@ if (data.status && data.data) {
     throw `_*𝐁𝐨𝐭 - 𝐈𝐀*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
   }
 };
-handler.help = ['simi', 'bot'].map(v => v + ' <teks>')
-handler.tags = ['fun']
-handler.command = /^((sim)?simi|alexa|cortana)$/i
 
-export default handler
+handler.command = /^simi$/i;
+
+export default handler;

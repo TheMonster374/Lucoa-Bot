@@ -4,19 +4,20 @@ const formatSize = sizeFormatter({
   std: 'JEDEC', decimalPlaces: 2, keepTrailingZeroes: false, render: (literal, symbol) => `${literal} ${symbol}B`});
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `_*< DESCARGAS - GDRIVE />*_\n\n*[ ℹ️ ] Ingrese un enlace de Google Drive.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view_`;
+  if (!args[0]) throw `_*𝐆𝐃𝐑𝐈𝐕𝐄*_\n\n*Ingrese un enlace de Google Drive.*\n\n*Ejemplo:* _${usedPrefix + command} https://drive.google.com/file/d/1dmHlx1WTbH5yZoNa_ln325q5dxLn1QHU/view_`;
   try {
     GDriveDl(args[0]).then(async (res) => {
-      conn.reply(m.chat, '_*< DESCARGAS - GDRIVE />*_\n\n*[ ℹ️ ] Se está enviando el archivo. espere...*\n\n*[ ℹ️ ] Si no se envía, podría ser porque supera el límite de tamaño.*', m);
+      conn.reply(m.chat, '_*𝐆𝐃𝐑𝐈𝐕𝐄*_\n\n*Se está enviando el archivo. espere...*\n\n*Si no se envía, podría ser porque supera el límite de tamaño.*', m);
       if (!res) throw res;
       conn.sendFile(m.chat, res.downloadUrl, res.fileName, '', m, null, {mimetype: res.mimetype, asDocument: true});
     });
   } catch (e) {
-    m.reply('_*< DESCARGAS - GDRIVE />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*');
+    m.reply('_*𝐆𝐃𝐑𝐈𝐕𝐄*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*');
     console.log(e);
   }
 };
 handler.command = /^(gdrive)$/i;
+handler.limit = 1
 export default handler;
 async function GDriveDl(url) {
   let id;

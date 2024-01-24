@@ -23,7 +23,6 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 └───────────
 `
             conn.sendFile(m.chat, data.result.video.noWatermark, 'tiktok.mp4', tex, m);
-    await conn.sendMessage(m.chat, { react: { text: '⌛', key: m.key } })
         } else {
             let cap = `
 ▢ *Likes:* ${data.result.stats.likeCount}
@@ -33,7 +32,6 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
                 conn.sendMessage(m.chat, { image: { url: tt.url }, caption: cap }, { quoted: m })
             }
             conn.sendFile(m.chat, data.result.music.play_url, 'tiktok.mp3', '', m, null, { mimetype: 'audio/mp4' })
-    await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
         }
     } catch (error) {
         m.reply(`❎ ha habido un error`)

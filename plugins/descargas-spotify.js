@@ -1,18 +1,34 @@
-import fetch from 'node-fetch'
-let handler = async(m, { conn, text }) => {
-if (!text) throw `*[❗INFO❗] INGRESE EL NOMBRE DE ALGUNA CANCIÓN A BUSCAR*`
-try {
-let res = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`)
-let json = await res.json()
-let { link } = json.result[0]
-let res2 = await fetch(`https://api.lolhuman.xyz/api/spotify?apikey=${lolkeysapi}&url=${link}`)
-let json2 = await res2.json()
-let { thumbnail, title, artists, preview_url } = json2.result
-let spotifyi = `❒═════❬ SPOTIFY❭═════╾❒\n┬\n├‣✨ *TÍTULO:* ${title}\n┴\n┬\n├‣🗣️ *ARTISTA:* ${artists}\n┴\n┬\n├‣🌐 *URL*: ${link}\n┴\n┬\n├‣💚 *URL DE DESCARGA:* ${preview_url}\n┴`
-conn.sendFile(m.chat, thumbnail, 'error.jpg', spotifyi, m)
-await conn.sendFile(m.chat, preview_url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' }) 
-} catch (e) {
-throw '*[❗INFO❗] ERROR, NO SE LOGRÓ BUSCAR LA CANCIÓN O LA PÁGINA DE AYUDA PARA BUSCAR LA CANCIÓN ESTÁ CAÍDA, POR FAVOR VUELVE A INTENTARLO MÁS TARDE*'
-}}
-handler.command = /^(spotify|music)$/i
-export default handler
+// TheMystic-Bot-MD@BrunoSobrino - descargas-spotify.js
+// Creditos de los tags a @darlyn1234 y diseño a @ALBERTO9883
+import fetch from 'node-fetch';
+import fs from 'fs';
+import axios from 'axios';
+
+const handler = async (m, { conn, text, usedPrefix, command }) => {
+ if (!text) throw `_*< DESCARGAS - SPOTIFY />*_\n\n*[ ℹ️ ] Hace falta el título de la canción de Spotify.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
+  try {
+    const res = await fetch(global.API('CFROSAPI', '/api/spotifysearch?text=' + text))
+    const data = await res.json()
+    const linkDL = data.spty.resultado[0].link;
+    const musics = await fetch(global.API('CFROSAPI', '/api/spotifydl?text=' + linkDL))
+    const music = await conn.getFile(musics.url)
+    const infos = await fetch(global.API('CFROSAPI', '/api/spotifyinfo?text=' + linkDL))
+    const info = await infos.json()
+    const spty = info.spty.resultado
+    const img = await (await fetch(`${spty.thumbnail}`)).buffer()  
+    let spotifyi = ` _*< DESCARGAS - SPOTIFY />*_\n\n`
+        spotifyi += ` ▢ *Título:* ${spty.title}\n\n`
+        spotifyi += ` ▢ *Artista:* ${spty.artist}\n\n`
+        spotifyi += ` ▢ *Álbum:* ${spty.album}\n\n`                 
+        spotifyi += ` ▢ *Publicado:* ${spty.year}\n\n`   
+        spotifyi += `*[ ℹ️ ] Se está enviando el audio. espere...*`
+    await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": linkDL, "sourceUrl": linkDL}}}, {quoted: m});
+    await conn.sendMessage(m.chat, {audio: music.data, fileName: `${spty.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
+  } catch (error) {
+    console.error(error);
+    throw '_*< DESCARGAS - SPOTIFY />*_\n\n[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';
+  }
+};
+handler.command = /^(spotify|music)$/i;
+handler.limit = 1
+export default handler;

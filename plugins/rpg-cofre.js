@@ -12,13 +12,12 @@ const handler = async (m, {isPrems, conn}) => {
   global.db.data.users[m.sender].exp += expp;
 
   const texto = `
-╔══════════⬣
-║OBTIENES UN COFRE🎉
-║┈┈┈┈┈┈┈┈┈┈┈┈┈
-║ *${dia} Diamantes* 💎
-║ *${tok} Tokens* 
-║ *${expp} Exp* ⚡
-╚═════════════════⬣`;
+OBTIENES UN COFRE🎉
+┈┈┈┈┈┈┈┈┈┈┈┈┈
+ *${dia} Diamantes* 💎
+ *${tok} Tokens* 
+ *${expp} Exp* ⚡
+`;
 
   const fkontak = {
     'key': {
@@ -42,7 +41,6 @@ const handler = async (m, {isPrems, conn}) => {
 handler.help = ['daily'];
 handler.tags = ['xp'];
 handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'];
-handler.level = 5;
 export default handler;
 
 function pickRandom(list) {

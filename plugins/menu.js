@@ -273,7 +273,8 @@ ${readMore}
 ╭─────────────┈⊷
 │「 _*ᴏᴛʀᴏꜱ*_」
 ╰────────────┈⊷
-           
+
+🐕͘͜  _${usedPrefix}cuaderno *<texto>*_          
 🐕͘͜  _${usedPrefix}s *<responder a imagen o video>*_
 🐶͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
 🐕͘͜  _${usedPrefix}s *<responder a imagen o video>*_

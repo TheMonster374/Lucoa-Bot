@@ -6,4 +6,5 @@ handler.help = ['banchat'];
 handler.tags = ['owner'];
 handler.command = /^banchat$/i;
 handler.rowner = true;
+handler.admin = true;
 export default handler;

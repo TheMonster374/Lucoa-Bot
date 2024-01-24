@@ -58,8 +58,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┊─•✧ _${usedPrefix}disable *antispam*_
 ┊─•✧ _${usedPrefix}msg *<texto>*_
 ┊─•✧ _${usedPrefix}backup | copia | respaldo_
-┊─•✧ _${usedPrefix}banchat_
-┊─•✧ _${usedPrefix}unbanchat_
 ┊─•✧ _${usedPrefix}resetuser *<@tag>*_
 ┊─•✧ _${usedPrefix}banuser *<@tag>*_
 ┊─•✧ _${usedPrefix}unbanuser *<@tag>*_

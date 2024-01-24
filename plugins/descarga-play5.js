@@ -309,4 +309,5 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
 handler.help = ["play5"].map(v => v + " <formato> <búsqueda>")
 handler.tags = ["downloader"]
 handler.command = ['play5']
+handler.limit = 2
 export default handler

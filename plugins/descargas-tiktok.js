@@ -5,14 +5,8 @@ const chalk = require("chalk");
 const axios = require('axios')
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
-const yts = require('yt-search') 
-const ytdl = require('ytdl-core') 
-const {youtubedl, youtubedlv2} = require('@bochilteam/scraper') 
-const { smsg, fetchBuffer, getBuffer, buffergif, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getFile, getRandom, msToTime, downloadMediaMessage} = require('../libs/fuctions')
-const { ytmp4, ytmp3, ytplay, ytplayvid } = require('../libs/youtube') 
 const {sizeFormatter} = require('human-readable') 
 const formatSize = sizeFormatter({
-  std: 'JEDEC', decimalPlaces: 2, keepTrailingZeroes: false, render: (literal, symbol) => `${literal} ${symbol}B`});
 
 async function descarga(m, command, conn, text, command, args, fkontak, from, buffer, getFile, q, includes, lolkeysapi) {
 if (global.db.data.users[m.sender].registered < true) return m.reply(info.registra)

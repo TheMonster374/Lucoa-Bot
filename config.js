@@ -39,9 +39,9 @@ global.prems = [''];
 
 global.packname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
 global.author = '𝘽𝙮 𝘼𝙇𝙎';
-global.wm = 'Jotchua-Bot';
-global.titulowm = 'Jotchua-Bot';
-global.titulowm2 = `Jotchua-Bot`
+global.wm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
+global.titulowm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
+global.titulowm2 = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ`
 global.igfg = 'Jotchua-Bot By';
 global.wait = '*Cargando...*';
 
@@ -53,6 +53,99 @@ global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
 
 global.mods = [];
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 🍁
+global.ignyc = '\nᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎\n' 
+global.botname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ'
+global.me = '𝘽𝙮 𝘼𝙇𝙎'
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑺𝑻𝑰𝑪𝑲𝑬𝑹 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.faketick = { "key": { "participant": `0@s.whatsapp.net`, "remoteJid": "6287834993722-1621306547@g.us", "fromMe": false, "id": "3B64558B07848BD81108C1D14712018E" }, "message": { "stickerMessage": { "fileSha256": "uZiOJzqOvrOo2WGjnMKgX2MMQMyasT+ZDgqUczpIBmY=", "pngThumbnail": catalogo, "mimetype": "image/webp", "height": 64, "width": 64, "directPath": "/v/t62.15575-24/56110107_763365384384977_5720135628188301198_n.enc?oh=450f8f684b06f0ba2dbc9779e5f06774&oe=605B81EE", "fileLength": "60206", "firstFrameLength": 3626, "isAnimated": false } }, "messageTimestamp": "1614070775", "status": "PENDING" }
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑪𝑶𝑵𝑻𝑨𝑪𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.ownerfk = { "key": {"participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo"}, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=19362556628:global.nyanregis\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑪𝑨𝑻𝑨́𝑳𝑶𝑮𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${botname}\n${me}`, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑮𝑰𝑭 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fgif = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${me}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${botname}\n      ${me}`, 'jpegThumbnail': imgfgif }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑨𝑼𝑫𝑰𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "50499698072-1625305606@g.us" } : {}) }, message: { "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   }}}  
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑫𝑶𝑪𝑼𝑴𝑬𝑵𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fdocument = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${botname}\n   ${me}`,jpegThumbnail: catalogo}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑰𝑴𝑨𝑮𝑬𝑵 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑨◞ • 🌺
+global.fakeimg = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"imageMessage": { "title":`${me}`, "h": `Hmm`,'seconds': '99999', 'imagePlayback': 'true', 'caption': `${botname}\n    ${me}`, 'jpegThumbnail': catalogo }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑴𝑬𝑵𝑺𝑨𝑱𝑬 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fakemsg = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "17608914335-1625305606@g.us" } : {}) }, message: { "extendedTextMessage": { "text":`${botname}\n${me}`, "title": `${botname}`, 'jpegThumbnail': catalogo}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑳𝑶𝑪𝑨𝑳𝑰𝒁𝑨𝑪𝑰𝑶́𝑵 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑨◞ • 🌺
+global.flocation = {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${botname}\n   ${me}`,jpegThumbnail: catalogo}} }
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑽𝑰́𝑫𝑬𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`${botname}`, "h": `Hmm`,'seconds': '2022', 'caption': `${botname}`, 'jpegThumbnail': catalogo}} }
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑳𝑰𝑵𝑲𝑮𝑷 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "Alberto", "caption": `${botname}\n      ${me}`, 'jpegThumbnail': catalogo}} }
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑷𝑹𝑶𝑫𝑼𝑪𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fproducto = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "17608914335@s.whatsapp.net" } : {}) }, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": catalogo }, "title": `${botname}`, "description": "NyanCatBot-MD", "currencyCode": "USD", "priceAmount1000": "200000000", "retailerId": "Ghost", "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑳𝑰𝑽𝑬 𝑳𝑶𝑪𝑨𝑳𝑰𝒁𝑨𝑪𝑰𝑶́𝑵◞ • 🌺
+global.liveloc = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false  ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "caption":`${botname}`,"h": `${botname}`, 'jpegThumbnail': catalogo}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑷𝑹𝑶𝑫𝑼𝑪𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶 2◞ • 🌺
+global.fproducto2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "status@broadcast" } : {})}, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": catalogo }, "title": `${botname}`, "retailerId": "🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰", "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑽𝑰𝑬𝑾𝑶𝑵𝑪𝑬 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fakevoimg = { key: { fromMe: false, participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' }, message: { imageMessage: { mimetype: 'image/jpeg', caption: botname, jpegThumbnail: catalogo, viewOnce: true }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑽𝑰𝑬𝑾𝑶𝑵𝑪𝑬 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶 #2◞ • 🌺
+global.fakevovid = { key: { fromMe: false, participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' }, message: {
+  extendedTextMessage: {
+    text: '=> m.message',
+    previewType: 0,
+    contextInfo: {
+      mentionedJid: [],
+      groupMentions: [],
+      stanzaId: '1B0791BAB5D10FE6E78F69E64F013B02',
+      participant: '50499698072@s.whatsapp.net',
+      expiration: 7776000,
+      ephemeralSettingTimestamp: true,
+      disappearingMode: true
+    }}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+//• ↳ ◜𝑷𝑨𝒀𝑴𝑬𝑵𝑻 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
+global.fpay = { "key": { "participant": `0@s.whatsapp.net`, "remoteJid": "6287834993722-1621306547@g.us", "fromMe": false, "id": "3B64558B07848BD81108C1D14712018E" }, "message": { "requestPaymentMessage": { "currencyCodeIso4217": "USD", "amount1000": "100000", "requestFrom": "50499698072@s.whatsapp.net", "noteMessage": { "extendedTextMessage": { "text": botname }}, "expiryTimestamp": "0", "amount": { "value": "100000", "offset": 1000, "currencyCode": "USD" }, "background": { "id": "BBB9307B17C17F928E57A7435E45033E", "fileLength": "94896", "width": 64, "height": 64, "mimetype": "image/webp", "placeholderArgb": 4288282521, "textArgb": 4278190080, "subtextArgb": 4288282521}}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑬𝑵𝑪𝑼𝑬𝑺𝑻𝑨 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑨◞ • 🌺
+global.fpoll = {"key": {"fromMe": false,"participant": "0@s.whatsapp.net","remoteJid": "status@broadcast" }, "message": {"pollCreationMessage": {"name": wm, "selectableOptionsCount": 1}}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑨𝑫 𝑫𝑬 𝑮𝑹𝑼𝑷𝑶◞ • 🌄
+global.adgp = { contextInfo: { externalAdReply: { showAdAttribution: true, title: '🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰', body: global.botname, sourceUrl: global.linkgc, thumbnail: miniurl }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑨𝑫 𝑫𝑬 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴◞ • 🌄
+global.adig = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: "https://Instagram.com/rlxfly.uw", mediaType: "VIDEO", description: "https://Instagram.com/rlxfly.uw",  title: 'Test', body: `hola`, thumbnail: miniurl, sourceUrl: 'http://s.id/0x404' }}}
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑨𝑫 𝑫𝑬 𝒀𝑶𝑼𝑻𝑼𝑩𝑬◞ • 🌄
+global.adyt = { contextInfo: { externalAdReply: { showAdAttribution: true, title: botname, mediaType: 2, previewType: "VIDEO", thumbnail: imgmenu, mediaUrl: 'https://youtu.be/FKVuVneuwtg', sourceUrl: linkgc }}} 
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);

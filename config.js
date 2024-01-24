@@ -55,6 +55,18 @@ global.imagen6 = fs.readFileSync('./Menu3.png');
 global.mods = [];
 
 //▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+//• ↳ ◜𝑻𝑬𝑿𝑻𝑶𝑺◞ • 🥗
+global.adimagen = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎` 
+global.adanime = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎` 
+global.adyoutube = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎` 
+global.adsticker = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎` 
+global.addescargas = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎`
+global.adnsfw = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎`
+ //▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+ 
+
+//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 🍁
 global.ignyc = '\nᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛㅤ𝘽𝙮 𝘼𝙇𝙎\n' 
 global.botname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ'

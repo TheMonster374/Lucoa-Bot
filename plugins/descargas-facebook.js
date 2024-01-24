@@ -1,23 +1,37 @@
-
-import fg from 'api-dylux';
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-  
-if (!args[0]) throw `✳️ ha habido un error corrobore que haya puesto todo bien\n\n📌 ejemplo :\n*${usedPrefix + command}* https://fb.watch/d7nB8-L-gR/`
-
+import fg from "api-dylux";
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+  if (!args[0])
+    return m.ftext(
+      `*◦Ingresa un enlace de un video de Facebook.*\n*◦Ejemplo:* ${
+        usedPrefix + command
+      } https://fb.watch/hPoaWhs8af/`
+    );
+  await conn.sendNyanCat(
+    m.chat,
+    global.wait,
+    adnyancat,
+    addescargas,
+    null,
+    script,
+    m
+  );
   try {
     let result = await fg.fbdl(args[0]);
-    let tex = `
-┌─⊷ *FBDL*
-▢ *${mssg.title}:* ${result.title}
-└───────────`;
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
-  } catch (error) {
-    m.reply(ha habido un error)
+    conn.sendFile(
+      m.chat,
+      result.videoUrl,
+      "fb.mp4",
+      `🐢 ⤿ Título: ${result.title}`,
+      m
+    );
+  } catch {
+    m.reply(
+      "*_🐢 Lo siento, hubo un problema al intentar descargar el archivo._*"
+    );
   }
 };
-handler.help = ['facebook'].map(v => v + ' <url>');
-handler.tags = ['dl'];
+handler.help = ["facebook"].map((v) => v + " *<enlace>*");
+handler.tags = ["downloader"];
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
-handler.diamond = true;
 
 export default handler;

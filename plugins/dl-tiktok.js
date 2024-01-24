@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     
         if (!args[0]) throw `✳️ corraborre que el enlace sea similar a\n\n 📌 ejemplo: ${usedPrefix + command} https://vm.tiktok.com/ZMYG92bUh/`
         if (!args[0].match(/tiktok/gi)) throw `❎ este link no es de tiktok`
-        m.react(waitt)
+    await conn.sendMessage(m.chat, { react: { text: '⏳', key: m.key } })
       try {
         let res = await fetch(global.API('fgmods', '/api/downloader/tiktok2', { url: args[0] }, 'apikey'))
         let data = await res.json()
@@ -23,7 +23,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 └───────────
 `
             conn.sendFile(m.chat, data.result.video.noWatermark, 'tiktok.mp4', tex, m);
-            m.react(waitttt)
+    await conn.sendMessage(m.chat, { react: { text: '⌛', key: m.key } })
         } else {
             let cap = `
 ▢ *Likes:* ${data.result.stats.likeCount}
@@ -33,7 +33,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
                 conn.sendMessage(m.chat, { image: { url: tt.url }, caption: cap }, { quoted: m })
             }
             conn.sendFile(m.chat, data.result.music.play_url, 'tiktok.mp3', '', m, null, { mimetype: 'audio/mp4' })
-            m.react(md)
+    await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
         }
     } catch (error) {
         m.reply(`❎ ha habido un error`)

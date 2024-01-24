@@ -81,9 +81,6 @@ global.faketick = { "key": { "participant": `0@s.whatsapp.net`, "remoteJid": "62
 //• ↳ ◜𝑪𝑶𝑵𝑻𝑨𝑪𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
 global.ownerfk = { "key": {"participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo"}, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=19362556628:global.nyanregis\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}
 //▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-//• ↳ ◜𝑪𝑨𝑻𝑨́𝑳𝑶𝑮𝑶 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${botname}\n${me}`, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
-//▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 //• ↳ ◜𝑮𝑰𝑭 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶◞ • 🌺
 global.fgif = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${me}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${botname}\n      ${me}`, 'jpegThumbnail': imgfgif }}}
 //▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰

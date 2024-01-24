@@ -135,7 +135,9 @@ a dispositivos vinculados y cierre la sesion)
 ╭─────────────┈⊷
 │「 _*ɢʀᴜᴘᴏꜱ*_ 」
 ╰────────────┈⊷     
-   
+
+🐶͘͜  _${usedPrefix}banchat_
+🐕͘͜  _${usedPrefix}unbanchat_
 🐶͘͜  _${usedPrefix}add *<numero>*_
 🐕͘͜  _${usedPrefix}kick *<@tag>*_
 🐶͘͜  _${usedPrefix}kick2 *<@tag>*_

@@ -32,12 +32,12 @@ const { author: { nickname }, video, description } = await tiktokdl(args[0])
 const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
 
 m.react(error)
-if (!url) return conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fake, )
+if (!url) return conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fakeReply, )
 conn.sendFile(m.chat, url, 'fb.mp4', `*Nombre:* ${nickname}\n*Descripción:* ${description}`, m)
 m.react(done)
 } catch {
 m.react(error)
-conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fake, )
+conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fakeReply, )
 }}
     
 }

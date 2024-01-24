@@ -69,7 +69,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = ['txt *<texto>*']
 handler.tags = ['fun']
 handler.command = ['escribe', 'txt'] 
-handler.register = true
 
 export default handler
 

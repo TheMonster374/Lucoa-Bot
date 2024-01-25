@@ -33,7 +33,7 @@ if (!text) return conn.reply(m.chat, `*Ingrese su petición.*\n*🪼 Ejemplo de 
 }}}}}
 handler.help = ['ai <petición>']
 handler.tags = ['tools']
-handler.command = /^(ai3|ia3|chatgpt3)$/i
+handler.command = /^(IATest|IA|iatest)$/i
 export default handler
 
 function generateRandomUserAgent() {

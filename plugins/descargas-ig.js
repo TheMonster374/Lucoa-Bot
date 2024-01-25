@@ -1,7 +1,7 @@
 import axios from 'axios'
 let handler = async (m, {conn, args}) => {
 
-if (!args[0]) return conn.reply(m.chat, `*Escribe la URL de un video de Instagram que deseas descargar.*`, m, )
+if (!args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de un video de Instagram que deseas descargar.*`, m, addescarga)
 let url = `https://vihangayt.me/download/instagram?url=${encodeURIComponent(args[0])}`
   
 try {
@@ -13,14 +13,13 @@ const data = response.data.data
 if (data && data.data && data.data.length > 0) {
 const videoURL = data.data[0].url
 
-await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4' ., '', )
+await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4', '', estilo)
 } else {
-await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, )
+await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, addescarga)
 }
 } catch (error) {
 console.error(error)
-conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, )
-}
+conn.reply(m.chat, '*Ocurrió un error inesperado*', m, addescarga)
 }
 handler.help = ['instagram'].map(v => v + ' <url ig>')
 handler.tags = ['downloader'];

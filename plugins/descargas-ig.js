@@ -19,7 +19,7 @@ const data = response.data.data
 if (data && data.data && data.data.length > 0) {
 const videoURL = data.data[0].url
 
-await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4' ${additionalText} ., '', )
+await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4 ${additionalText}' ., '', )
 } else {
 await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, )
 }

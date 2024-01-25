@@ -275,7 +275,7 @@ ${readMore}
 ╰────────────┈⊷
 
 🐕͘͜  _${usedPrefix}cuaderno *<texto>*_          
-🐕͘͜  _${usedPrefix}s *<responder a imagen o video>*_
+🐕͘͜  _${usedPrefix}s2 *<responder a imagen o video>*_
 🐶͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
 🐕͘͜  _${usedPrefix}s *<responder a imagen o video>*_
 🐶͘͜  _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_

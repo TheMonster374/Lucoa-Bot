@@ -60,13 +60,8 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Jotchua-Bot', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 //━━━━━━━━━━━━━━━━━━━━━━ 
 
-global.adanime = `JOTCHUA-BOT BY ALS` 
 global.addescargas = `JOTCHUA-BOT BY ALS`
 global.adimagen = `JOTCHUA-BOT BY ALS` 
-global.adyoutube = `JOTCHUA-BOT BY ALS` 
-global.adsticker = `JOTCHUA-BOT BY ALS` 
-global.adsearch  = `JOTCHUA-BOT BY ALS` 
-global.adnsfw = `JOTCHUA-BOT BY ALS`
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 

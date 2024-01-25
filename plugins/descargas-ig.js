@@ -15,16 +15,14 @@ const videoURL = data.data[0].url
 
 await conn.sendFile(m.chat, videoURL, 'instagram_reel.mp4', '', estilo)
 } else {
-await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, ).then(_ => m.react('✖️'))
+await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, )
 }
 } catch (error) {
 console.error(error)
-conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, ).then(_ => m.react('✖️'))
+conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, )
 }
 }
 handler.help = ['instagram'].map(v => v + ' <url ig>')
 handler.tags = ['downloader'];
 handler.command = /^(instagramdl|instagram|igdl|ig)$/i;
-handler.star = 2
-handler.register = true 
 export default handler

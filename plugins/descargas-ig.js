@@ -1,7 +1,7 @@
 import axios from 'axios'
 let handler = async (m, {conn, args}) => {
 
-if (!args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de un video de Instagram que deseas descargar.*`, m, )
+if (!args[0]) return conn.reply(m.chat, `*Escribe la URL de un video de Instagram que deseas descargar.*`, m, estilo)
 let url = `https://vihangayt.me/download/instagram?url=${encodeURIComponent(args[0])}`
   
 try {
@@ -19,7 +19,7 @@ await conn.reply(m.chat, 'No puedo encontrar el vídeo de Instagram.', m, )
 }
 } catch (error) {
 console.error(error)
-conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, )
+conn.reply(m.chat, '*Ocurrió un error inesperado*', m, estilo)
 }
 }
 handler.help = ['instagram'].map(v => v + ' <url ig>')

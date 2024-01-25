@@ -36,15 +36,17 @@ global.owner = [
 
 global.suittag = [''];
 global.prems = [''];
-
+//━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
 global.author = '𝘽𝙮 𝘼𝙇𝙎';
+//━━━━━━━━━━━━━━━━━━━━━━ 
+
 global.wm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
 global.titulowm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
 global.titulowm2 = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ`
 global.igfg = 'Jotchua-Bot By';
 global.wait = '*Cargando...*';
-
+//━━━━━━━IMAGENES━━━━━━━━━━━━ 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
@@ -52,13 +54,25 @@ global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
 global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
+//━━━━━━━━━━━━━━━━━━━━━━ 
 
+//━━━━━━━MARCA━━━━━━━━ 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Jotchua-Bot', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+//━━━━━━━━━━━━━━━━━━━━━━ 
 
-global.adsticker = `Jotchua-Bot` 
+global.adanime = `JOTCHUA-BOT BY ALS` 
+global.addescargas = `JOTCHUA-BOT BY ALS`
+global.adimagen = `JOTCHUA-BOT BY ALS` 
+global.adyoutube = `JOTCHUA-BOT BY ALS` 
+global.adsticker = `JOTCHUA-BOT BY ALS` 
+global.adsearch  = `JOTCHUA-BOT BY ALS` 
+global.adnsfw = `JOTCHUA-BOT BY ALS`
+
+//━━━━━━━━━━━━━━━━━━━━━━ 
 
 global.mods = [];
 
+//━━━━━━━━━━━━━━━━━━━━━━ 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
 global.locale = 'es';

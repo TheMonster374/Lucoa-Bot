@@ -76,6 +76,7 @@ ${readMore}
 │「 _*ɪᴀ/ʙᴏᴛ*_ 」
 ╰────────────┈⊷
 
+🐶͘͜  _${usedPrefix}bardimg_
 🐕͘͜  _${usedPrefix}bard_
 🐶͘͜  _${usedPrefix}iaimagen
 

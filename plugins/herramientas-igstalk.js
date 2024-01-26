@@ -22,8 +22,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     externalAdReply: {
       mediaType: 1,
       renderLargerThumbnail: true,
-      thumbnail: imagen1,
-      thumbnailUrl: imagen1,
+      thumbnail: img,
+      thumbnailUrl: img,
       title: IGSTALK,
     },
   });

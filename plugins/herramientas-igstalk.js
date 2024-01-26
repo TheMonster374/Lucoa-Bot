@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
       renderLargerThumbnail: true,
       thumbnail: img,
       thumbnailUrl: img,
-      title: IGSTALK,
+      title: packname,
     },
   });
 };

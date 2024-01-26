@@ -25,12 +25,13 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 
    「 ༯⃢༯⃢☬𝐌𝐄𝐍𝐔 𝐀𝐍𝐈𝐌𝐄༯⃢༯⃢☬ 」
-
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}lolivid_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}loli_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}ppcouple_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}neko_
-│❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}waifu_
+   
+🐶_${usedPrefix}animelink_
+│🐶͘͜  _${usedPrefix}lolivid_
+│🐶͘͜  _${usedPrefix}loli_
+│🐶͘͜  _${usedPrefix}ppcouple_
+│🐶͘͜  _${usedPrefix}neko_
+│🐶͘͜  _${usedPrefix}waifu_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}akira_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}akiyama_
 │❥꫶ꪆꦿꦼ͜͡🐶͘͜  _${usedPrefix}anna_

@@ -1,5 +1,3 @@
-//▪CÓDIGO BY ALBERTO9883 PRROS XD▪
-//▪NyanCatBot - MD▪
 
 import MessageType from '@whiskeysockets/baileys'
 import util from 'util'

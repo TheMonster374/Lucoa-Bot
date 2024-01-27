@@ -16,7 +16,6 @@ if (media === 'text4') return m.reply(`《🚓》${pickRandom(global.robmal)}\n\
 handler.help = ['robar'];
 handler.tags = ['xp'];
 handler.command = /^(crime|Crime)$/i
-handler.register = true
 export default handler;
 
 function msToTime(duration) {
@@ -34,4 +33,4 @@ function pickRandom(list) {
 }
 
 global.robar = ['Robaste un Banco 🏦 y obtuviste', 'Negociarte con el jefe de la mafia y obtuvist𝐞 recompensa de :', 'Casi te atrapa la policía pero lograste robar una cantidad valiosa de 💰. !Te cuidado la próxima vez! obtuviste:', 'Los mafiosos te han pagado :', 'Le has robado al Administrador del Grupo', 'Le robarte a tu presidente una sumar de :', 'le robarte a un famoso un valor de :'];
-global.robmal = ['LA POLICIA TE VIO 🙀👮‍♂️ PERDISTE', 'Fuiste a robar un banco 🏦 y tu ayudarte que vendio a la policía, perdiste', 'No pudiste escapar de la Policía 🚔🤡, perdiste :']
+global.robmal = ['LA POLICIA TE VIO 🙀👮‍♂️ PERDISTE', 'Fuiste a robar un banco 🏦 y tu ayudante te vendio a la policía, perdiste', 'No pudiste escapar de la Policía 🚔🤡, perdiste :']

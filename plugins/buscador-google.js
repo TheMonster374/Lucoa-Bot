@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
   if (!text) return conn.reply(m.chat, '*ingrese el texto que desee buscar*', m);
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
-let teks = `*RESULTADOS DE : _${text}_*\n\n${url}\n\n`
+let teks = `*RESULTADOS DE :_${text}_*`
 for (let g of res) {
 teks += `_*${g.title}*_\n_${g.link}_\n_${g.snippet}_\n\n`
 } 

@@ -16,8 +16,6 @@ handler.tags = ["asupan"];
 handler.help = ["bokep"];
 handler.command = /^(bokep)$/i
 
-handler.limit = true
-
 export default handler
 
 global.vbokep = [

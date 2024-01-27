@@ -29,7 +29,6 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const size = fileSizeInMB.toFixed(2);       
     if (size >= limit_a2) {  
     await conn.sendMessage(m.chat, {text: `*Descargue su audio en ${audio}*`}, {quoted: m});
-    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  

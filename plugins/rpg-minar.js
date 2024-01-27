@@ -2,7 +2,7 @@ const handler = async (m, {conn, isPrems}) => {
   const hasil = Math.floor(Math.random() * 1000);
   const time = global.db.data.users[m.sender].lastmiming + 600000;
   if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*espera ${msToTime(time - new Date())} para volver a minar*`;
-  m.reply(`*minaste ${hasil} XP*`);
+  m.reply(`*minaste ${hasil} pesos 🪙*`);
   global.db.data.users[m.sender].lastmiming = new Date * 1;
 };
 handler.help = ['minar'];

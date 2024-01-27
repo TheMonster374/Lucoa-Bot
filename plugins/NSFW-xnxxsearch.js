@@ -15,13 +15,13 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*los comandos  +18 est
     }
     const res = await xnxxsearch(text);
     const json = res.result;
-    let cap = `*🔍 RESULTADOS DE LA BUSQUEDA:* ${text.toUpperCase()}\n\n`;
+    let cap = `*RESULTADOS DE LA BUSQUEDA:* ${text.toUpperCase()}\n\n`;
     let count = 1;
     for (const v of json) {
       const linkXXX = v.link;
       vids_.urls.push(linkXXX);
-      cap += `*[${count}]*\n• *🎬 Titulo:* ${v.title}\n• *🔗 Link:* ${v.link}\n• *❗ Info:* ${v.info}`;
-      cap += '\n\n' + '••••••••••••••••••••••••••••••••' + '\n\n';
+      cap += `*[${count}]*\n• *🐶 Titulo:* ${v.title}\n• *🔗 Link:* ${v.link}\n• *🐕 Info:* ${v.info}`;
+      cap += '\n\n' + '────────────────────────────────' + '\n\n';
       count++;
     }
     m.reply(cap);

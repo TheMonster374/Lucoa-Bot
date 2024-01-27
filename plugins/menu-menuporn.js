@@ -49,6 +49,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┌┤_${usedPrefix}trapito_
 ┌┤_${usedPrefix}rule34_
 ┌┤_${usedPrefix}hentai_
+┌┤_${usedPrefix}xwaifu_
 ┌┤_${usedPrefix}hentai2_
 ┌┤_${usedPrefix}nsfwloli_
 ┌┤_${usedPrefix}nsfworgy_

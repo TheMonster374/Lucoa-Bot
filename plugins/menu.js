@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const pp = imagen4;
+    const pp = catalogo;
     const img = './Menu2.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
@@ -32,7 +32,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ╰━─━─━─≪🐶≫─━─━─━╯                                                  
 ︙🐕︙ _*ᴅɪᴀᴍᴀɴᴛᴇꜱ​*_ : ${user.limit}                                    
 ︙🐕︙ _*​ɴɪᴠᴇʟ​*_ : ${user.level}
-︙🐕︙ _*​xᴘ*_ : ${user.exp}
+︙🐕︙ _*​ᴘᴇꜱᴏꜱ*_ : ${user.exp}
 ︙🐕︙ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 
 

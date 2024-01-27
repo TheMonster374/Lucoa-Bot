@@ -33,6 +33,6 @@ let handler = async (m, {
     m.reply(Func.jsonFormat(e))
   }
 }
-handler.help = handler.command = ['capcut', 'capcutwm']
+handler.command = ['capcut', 'capcutwm']
 handler.tags = ['downloader']
 module.exports = handler

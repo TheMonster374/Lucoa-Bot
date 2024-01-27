@@ -14,6 +14,6 @@ const handler = async (m, {conn, text}) => {
     conn.sendFile(m.chat, stiker, null, null, m, false, {asSticker: true});
   } catch { }
 };
-handler.command = /^(kiss|skiss|kis|besos|beso)$/i;
+handler.command = /^(kiss|skiss|kis|besar|beso)$/i;
 handler.group = true;
 export default handler;

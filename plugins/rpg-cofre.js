@@ -16,7 +16,7 @@ OBTIENES UN COFRE🎉
 ┈┈┈┈┈┈┈┈┈┈┈┈┈
  *${dia} Diamantes* 💎
  *${tok} Tokens* 
- *${expp} Exp* ⚡
+ *${expp} pesos* 🪙
 `;
 
   const fkontak = {

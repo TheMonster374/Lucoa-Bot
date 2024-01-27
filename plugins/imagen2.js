@@ -6,7 +6,6 @@ const prohibited = ['caca', 'polla', 'porno', 'porn', 'puta', 'puto', 'culo', 'p
 if (prohibited.some(word => m.text.toLowerCase().includes(word))) return conn.reply(m.chat, '🚩 *No dare resultado a tu solicitud*', m, , )
 
 if (!text) return conn.reply(m.chat, ` *debera ingresar un texto*\n\nEjemplo, !${command} WhatsApp Bot`, m, , )
-m.react(done)
 
 const res = await googleImage(text)
 let image = res.getRandom()

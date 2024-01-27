@@ -81,7 +81,9 @@ ${readMore}
 🐶͘͜  _${usedPrefix}bardimg_
 🐕͘͜  _${usedPrefix}bard_
 🐶͘͜  _${usedPrefix}iaimagen
-
+🐶͘͜  _${usedPrefix}chatgpt *<texto>*_
+🐕͘͜  _${usedPrefix}delchatgpt
+🐶͘͜  _${usedPrefix}gptvoz *<texto>*_
 
 ╭─────────────┈⊷
 │「 _*ᴍᴇɴꜱᴀᴊᴇꜱ ᴇɴ ᴇꜱᴘᴇʀᴀ*_ 」
@@ -113,8 +115,8 @@ a dispositivos vinculados y cierre la sesion)
 │「 _*ᴇɴᴀʙʟᴇ / ᴅɪꜱᴀʙʟᴇ*_ 」
 ╰────────────┈⊷     
 
-🐶͘͜  _${usedPrefix}enable_
-🐕͘͜  _${usedPrefix}disable_
+🐶͘͜  _${usedPrefix}enable <opcion>_
+🐕͘͜  _${usedPrefix}disable <opcion>_
 
  ${readMore}
 ╭─────────────┈⊷
@@ -139,6 +141,7 @@ a dispositivos vinculados y cierre la sesion)
 │「 _*ɢʀᴜᴘᴏꜱ*_ 」
 ╰────────────┈⊷     
 
+🐕͘͜  _${usedPrefix}del *<mensaje>*_
 🐶͘͜  _${usedPrefix}banchat_
 🐕͘͜  _${usedPrefix}unbanchat_
 🐶͘͜  _${usedPrefix}add *<numero>*_
@@ -219,8 +222,6 @@ ${readMore}
   
 🐶͘͜  _${usedPrefix}cat_
 🐕͘͜  _${usedPrefix}dog_
-🐶͘͜  _${usedPrefix}meme_
-
 
 ╭─────────────┈⊷
 │「 _*ᴇꜰᴇᴄᴛᴏꜱ ᴀᴜᴅɪᴏ*_ 」
@@ -240,50 +241,25 @@ ${readMore}
 🐕͘͜  _${usedPrefix}smooth_
 🐶͘͜  _${usedPrefix}tupai_
 
-
- ${readMore}
 ╭─────────────┈⊷
-│「 _*ʜᴇʀʀᴀᴍɪᴇɴᴛᴀꜱ*_ 」
+│「 _*Qʀ*_」
 ╰────────────┈⊷
 
-🐕͘͜  _${usedPrefix}inspect *<link wa_gc>*_
-🐶͘͜  _${usedPrefix}chatgpt *<texto>*_
-🐕͘͜  _${usedPrefix}delchatgpt
-🐶͘͜  _${usedPrefix}gptvoz *<texto>*_
-🐕͘͜  _${usedPrefix}dall-e *<texto>*_
-🐶͘͜  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
-🐕͘͜  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
-🐶͘͜  _${usedPrefix}readviewonce *<imagen / video>*_
-🐕͘͜  _${usedPrefix}clima *<país> <ciudad>*_
-🐶͘͜  _${usedPrefix}encuesta *<texto1|texto2...>*_
-🐕͘͜  _${usedPrefix}afk *<motivo>*_
-🐶͘͜  _${usedPrefix}ocr *<responde a imagen>*_
-🐕͘͜  _${usedPrefix}hd *<responde a imagen>*_
-🐶͘͜  _${usedPrefix}acortar *<enlace / link / url>*_
-🐕͘͜  _${usedPrefix}calc *<operacion math>*_
-🐶͘͜  _${usedPrefix}del *<mensaje>*_
-🐕͘͜  _${usedPrefix}whatmusic *<audio>*_
 🐶͘͜  _${usedPrefix}readqr *<imagen (QR)>*_
 🐕͘͜  _${usedPrefix}qrcode *<texto>*_
-🐶͘͜  _${usedPrefix}readmore *<texto1| texto2>*_
-🐕͘͜  _${usedPrefix}styletext *<texto>*_
-🐶͜  _${usedPrefix}traducir *<texto>*_
-🐕͘͜  _${usedPrefix}nowa *<numero>*_
-🐶͘͜  _${usedPrefix}covid *<pais>*_
-🐕͘͜  _${usedPrefix}horario_
-🐶͘͜  _${usedPrefix}dropmail_
 
 ╭─────────────┈⊷
-│「 _*ᴏᴛʀᴏꜱ*_」
+│「 _*ꜱᴛɪᴄᴋᴇʀꜱ*_」
 ╰────────────┈⊷
 
-🐕͘͜  _${usedPrefix}cuaderno *<texto>*_          
-🐕͘͜  _${usedPrefix}s2 *<responder a imagen o video>*_
-🐶͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
-🐕͘͜  _${usedPrefix}s *<responder a imagen o video>*_
+🐶͘͜  _${usedPrefix}sticker *<responder a imagen o video>*_
+🐕͘͜  _${usedPrefix}sticker2 *<responder a imagen o video>*_
 🐶͘͜  _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
 🐕͘͜  _${usedPrefix}scircle *<imagen>*_
 🐶͘͜  _${usedPrefix}sremovebg *<imagen>*_
+🐕͘͜  _${usedPrefix}wm *<packname> <author>*_
+🐶͘͜  _${usedPrefix}stickermarker *<efecto> <imagen>*_
+🐕͘͜  _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 🐕͘͜  _${usedPrefix}semoji *<tipo> <emoji>*_
 🐶͘͜  _${usedPrefix}qc *<texto>*_
 🐕͘͜  _${usedPrefix}attp *<texto>*_
@@ -294,9 +270,32 @@ ${readMore}
 🐶͘͜  _${usedPrefix}ttp3 *<texto>*_
 🐕͘͜  _${usedPrefix}ttp4 *<texto>*_
 🐶͘͜  _${usedPrefix}ttp5 *<texto>*_
-🐕͘͜  _${usedPrefix}wm *<packname> <author>*_
-🐶͘͜  _${usedPrefix}stickermarker *<efecto> <imagen>*_
-🐕͘͜  _${usedPrefix}stickerfilter *<efecto> <imagen>*_
+
+ ${readMore}
+╭─────────────┈⊷
+│「 _*ʜᴇʀʀᴀᴍɪᴇɴᴛᴀꜱ*_ 」
+╰────────────┈⊷
+
+🐕͘͜  _${usedPrefix}inspect *<link whatsapp grupo>*_
+🐶͘͜  _${usedPrefix}spamwa *<numero|texto|cantidad>*_
+🐕͘͜  _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
+🐶͘͜  _${usedPrefix}readviewonce *<imagen / video>*_
+🐕͘͜  _${usedPrefix}clima *<país> <ciudad>*_
+🐶͘͜  _${usedPrefix}encuesta *<texto1|texto2...>*_
+🐕͘͜  _${usedPrefix}afk *<motivo>*_
+🐶͘͜  _${usedPrefix}ocr *<responde a imagen>*_
+🐕͘͜  _${usedPrefix}hd *<responde a imagen>*_
+🐶͘͜  _${usedPrefix}acortar *<enlace / link / url>*_
+🐕͘͜  _${usedPrefix}calc *<operacion math>*_
+🐕͘͜  _${usedPrefix}whatmusic *<audio>*_
+🐶͘͜  _${usedPrefix}readmore *<texto1| texto2>*_
+🐕͘͜  _${usedPrefix}styletext *<texto>*_
+🐶͜  _${usedPrefix}traducir *<texto>*_
+🐕͘͜  _${usedPrefix}nowa *<numero>*_
+🐕͘͜  _${usedPrefix}horario_
+🐶͘͜  _${usedPrefix}dropmail_
+
+
 
 `.trim();
     if (m.isGroup) {

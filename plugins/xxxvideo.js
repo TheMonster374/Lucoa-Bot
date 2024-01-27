@@ -5,8 +5,8 @@ var handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '🎌 *Los comandos nsfw no estan permitidos*\n\nUtilice .enable modohorny para activar'
   
 let res = await fetch('https://api.zahwazein.xyz/randomasupan/discord18?apikey=zenzkey_048b3b850d51')
-let json = await res.json()
-conn.sendFile(m.chat, json.result, null, `xd`, null, null, { viewOnce: false }, m)
+let json = await res.json.parse()
+conn.sendFile(m.chat, json.result, null, `         `, null, null, m)
 
 }
 handler.tags = ['nsfw']

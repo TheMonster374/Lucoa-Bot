@@ -1,4 +1,6 @@
-let handler = async (m, {conn, args}) => {
+const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+  const q = m.quoted ? m.quoted : m;
+  const mime = (q.msg || q).mimetype || q.mediaType || '';
   try {
     if (!args[0]) return m.reply(Func.example(usedPrefix, command, 'https://www.capcut.com/template-detail/7261093127484722433?template_id=7261093127484722433&share_token=37433a9d-37b0-407e-a0b8-a92d70b41631&enter_from=template_detail&region=ID&language=in&platform=copy_link&is_copy_link=1'))
     if (!args[0].match('capcut.com')) return m.reply(status.invalid)

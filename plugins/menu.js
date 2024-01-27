@@ -67,10 +67,12 @@ ${readMore}
 │ 「 _*ᴀᴄᴄɪᴏɴᴇꜱ*_ 」
 ╰────────────┈⊷
        
-🐕͘͜  _${usedPrefix}ʙᴇꜱᴀʀ @tag_
-🐶͘͜  _${usedPrefix}ᴘᴇɢᴀʀ @tag_
-🐕͘͜  _${usedPrefix}ᴘᴀʟᴍᴀᴅɪᴛᴀꜱ @tag_
-🐶͘͜  _${usedPrefix}ᴅᴀᴅᴏ_
+🐕͘͜  _${usedPrefix}besar @tag_
+🐶͘͜  _${usedPrefix}pegar @tag_
+🐕͘͜  _${usedPrefix}palmaditas @tag_
+🐶͘͜  _${usedPrefix}patear @tag_
+🐕͘͜  _${usedPrefix}abrazar @tag_
+🐕͘͜  _${usedPrefix}dado @tag_
 
 ╭─────────────┈⊷
 │「 _*ɪᴀ/ʙᴏᴛ*_ 」

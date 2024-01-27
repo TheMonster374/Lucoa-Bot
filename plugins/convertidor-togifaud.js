@@ -9,5 +9,5 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   const media = await q.download();
   conn.sendMessage(m.chat, {video: media, gifPlayback: true, caption: '*ᴀϙᴜɪ ᴇsᴛᴀ sᴜ ɢɪғ ᴄᴏɴ ᴀᴜᴅɪᴏ, ᴀʟ ᴀʙʀɪʀʟᴏ sᴇ ʀᴇᴘʀᴏᴅᴜᴄᴇ ᴄᴏɴ ᴀᴜᴅɪᴏ*'}, {quoted: m});
 };
-handler.command = ['togifaud'];
+handler.command = ['togifaud|gifaud'];
 export default handler;

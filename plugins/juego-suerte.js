@@ -15,12 +15,12 @@ if (ruleta === 'text') return m.reply(`que buena suerte\n*obtienes* :* ${exp} XP
 if (ruleta === 'text2') return m.reply(`mala suerte, \n*pierdes* : ${exp} XP`).catch(global.db.data.users[m.sender].exp -= exp) 
 if (ruleta === 'text3') return conn.groupParticipantsUpdate(m.chat, [m.sender], 'demote').catch(m.reply(`Mala suerte ya no eres admin😹`)) 
 if (ruleta === 'text4') return conn.groupParticipantsUpdate(m.chat, [m.sender], 'promote').catch(m.reply(`ufff tuviste mucha suerte, ahora eres admin`)) 
-if (ruleta === 'text5') return m.reply(`fuiste al casino 🎰\n*ganaste*:* ${diamond} 💎`).catch(global.db.data.users[m.sender].diamond += diamond) 
+if (ruleta === 'text5') return m.reply(`fuiste al casino 🎰\n*ganaste*: ${diamond} 💎`).catch(global.db.data.users[m.sender].diamond += diamond) 
 if (ruleta === 'text6') return m.reply(`tienes mucha suerte, obtienes premium por: 1 𝙃𝙤𝙧𝙖 ⏰ 🤑`).catch(global.db.data.users[m.sender].premium += prem) 
 }
 handler.help = ['game'];
 handler.tags = ['xp'];
-handler.command = /^(ruletas|ruleta|suerte)$/i
+handler.command = /^(ruletas|ruleta)$/i
 handler.fail = null;
 handler.group = true
 export default handler;

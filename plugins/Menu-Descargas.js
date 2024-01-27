@@ -46,7 +46,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 🐶͘͜  _${usedPrefix}spotify *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}ringtone *<texto>*_
 🐶͘͜  _${usedPrefix}soundcloud *<texto>*_
-🐶͘͜  _${usedPrefix}imagen *<texto>*_
 🐶͘͜  _${usedPrefix}pinterest *<texto>*_ 『💎』
 🐶͘͜  _${usedPrefix}wallpaper *<texto>*_
 🐶͘͜  _${usedPrefix}pptiktok *<nombre de usuario>*_

@@ -7,7 +7,7 @@ conn.reply(m.chat, `
 ┌───⊷ *BALANCE* ⊶
 *📌Nombre* : _@${who.split('@')[0]}_
 *💎Diamantes* : _${user.limit}_
-*⬆️XP* : _${user.exp}_
+*🪙 pesos* : _${user.exp}_
 └──────────────
 
 *NOTA :* 

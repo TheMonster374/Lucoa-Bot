@@ -9,7 +9,6 @@ let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
-    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
@@ -30,6 +29,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const size = fileSizeInMB.toFixed(2);       
     if (size >= limit_a2) {  
     await conn.sendMessage(m.chat, {text: `*Descargue su audio en ${audio}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  

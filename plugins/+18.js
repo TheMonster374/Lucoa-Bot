@@ -10,6 +10,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.help = ['xwaifu']
 handler.tags = ['nsfw']
-handler.command = ['xwaifu']
+handler.command = ['xwaifu2']
 
 export default handler

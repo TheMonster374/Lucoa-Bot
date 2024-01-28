@@ -1,30 +1,65 @@
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
-import fetch from 'node-fetch';
-const handler = async (m, {conn, args}) => {
-  if (!args[0]) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 / 𝙻𝙸𝙽𝙺 𝙳𝙴 𝚄𝙽 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴*';
-  await m.reply(`*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴀᴜᴅɪᴏ...⏳_*\n\n*◉ Sɪ Sᴜ ᴀᴜᴅɪᴏ ɴᴏ ᴇs ᴇɴᴠɪᴀᴅᴏ, ᴘʀᴜᴇʙᴇ ᴄᴏɴ ᴇʟ ᴄᴏᴍᴀɴᴅᴏ #playdoc ᴏ #play.2 ᴏ #ytmp4doc ◉*`);
-  try {
-    const q = '128kbps';
-    const v = args[0];
-    const yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v));
-    const dl_url = await yt.audio[q].download();
-    const ttl = await yt.title;
-    const size = await yt.audio[q].fileSizeH;
-    const cap = `*◉—⌈📥 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐃𝐋 📥⌋—◉*\n❏ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${ttl}\n❏ *𝙿𝙴𝚂𝙾:* ${size}`.trim();
-    await conn.sendMessage(m.chat, {document: {url: dl_url}, caption: cap, mimetype: 'audio/mpeg', fileName: `${ttl}.mp3`}, {quoted: m});
-  } catch {
-    try {
-      const lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${args[0]}`);
-      const lolh = await lolhuman.json();
-      const n = lolh.result.title || 'error';
-      const n2 = lolh.result.link;
-      const n3 = lolh.result.size;
-      const cap2 = `*◉—⌈📥 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐃𝐋 📥⌋—◉*\n❏ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${n}\n❏ *𝙿𝙴𝚂𝙾:* ${n3}`.trim();
-      await conn.sendMessage(m.chat, {document: {url: n2}, caption: cap2, mimetype: 'audio/mpeg', fileName: `${n}.mp3`}, {quoted: m});
-    } catch {
-      await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*', m);
-    }
-  }
-};
-handler.command = /^ytmp3doc|ytadoc|ytmp3.2|yta.2$/i;
-export default handler;
+import fg from 'api-dylux'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+import yts from 'yt-search'
+import fetch from 'node-fetch' 
+let limit = 100
+
+let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
+if (!args || !args[0]) conn.reply(m.chat, `*🚩 Escribe la URL de un video de YouTube que deseas descargar.*`, m, )
+if (!args[0].match(/youtu/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de YouTube`, m, )
+let q = '128kbps'
+
+ try {
+const yt = await fg.yta(args[0])
+let { title, dl_url, size } = yt
+let vid = (await yts(text)).all[0]
+let { thumbnail, url } = vid
+
+let ytestilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${title}`, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
+
+await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*Espera @${m.sender.split`@`[0]},*`, estilo, )
+		
+await conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fileName: title + '.mp3', quoted: m, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': true,
+externalAdReply:{
+showAdAttribution: false,
+title: `${title}`,
+body: `${vid.author.name}`,
+mediaType: 2, 
+sourceUrl: `${url}`,
+thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
+} catch {
+try {
+let yt = await fg.ytmp3(args[0])
+let { title, size, dl_url } = yt
+let vid = (await yts(text)).all[0]
+let { thumbnail, url } = vid
+
+let ytestilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${title}`, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+       	
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
+
+await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*Espera @${m.sender.split`@`[0]},*`, estilo,)
+		
+await conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fileName: title + '.mp3', quoted: m, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': true,
+externalAdReply:{
+showAdAttribution: false,
+title: `${title}`,
+body: `${vid.author.name}`,
+mediaType: 2, 
+sourceUrl: `${url}`,
+thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
+} catch {
+await conn.reply(m.chat, `*☓ Ocurrió un error inesperado*`, m, )
+console.error(error)
+}}}
+handler.help = ['ytmp3doc <url yt>']
+handler.tags = ['downloader']
+handler.command = /^ytmp3doc|ytadoc|ytmp3.2|yta.2$/i
+handler.limit = 2
+export default handler

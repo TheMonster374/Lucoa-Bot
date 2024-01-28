@@ -19,7 +19,7 @@ let ytestilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(fal
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
 
-await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`, estilo, )
+await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*Espera @${m.sender.split`@`[0]},*`, estilo, )
      
 await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━●────── ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -42,7 +42,7 @@ let ytestilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(fal
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, )
 
-await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*↻ Espera @${m.sender.split`@`[0]}, en lo que envio el documento*`, estilo, )
+await conn.reply(m.chat, `🍭 *Título ∙* ${title}\n⚖️ *Tamaño ∙* ${size}\n\n*Espera @${m.sender.split`@`[0]},*`, estilo,)
 
 await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━●────── ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -62,5 +62,4 @@ handler.help = ['ytmp4doc <url yt>']
 handler.tags = ['downloader']
 handler.command = /^ytmp4doc|ytvdoc|ytmp4.2|ytv.2$/i
 handler.limit = 2
-
 export default handler

@@ -50,7 +50,7 @@ fakeData.name_tag = text //`@${m.mentionedJid[0].split('@')[0]}` //conn.getName(
 fakeData.name_tag = text    
 }
     
-const doxeo = `*[ ✔ ] Persona doxxeada con éxito.*\n\n*—◉ Doxxeo realizado en:*\n*◉ ${executionTime} segundos.*\n*—◉ Resultados obtenidos del doxxeo:*
+const doxeo = `*Persona doxxeada con éxito.*\n\n*Doxxeo realizado en:*\n*${executionTime} segundos.*\n*Resultados obtenidos del doxxeo:*
 
 *Nombre:* ${fakeData.name_tag}
 *Ip:* ${fakeData.ip}
@@ -88,11 +88,11 @@ const doxeo = `*[ ✔ ] Persona doxxeada con éxito.*\n\n*—◉ Doxxeo realizad
     
 async function loading() {
 var hawemod = [
-"《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
-"《 ████▒▒▒▒▒▒▒▒》30%",
-"《 ███████▒▒▒▒▒》50%",
-"《 ██████████▒▒》80%",
-"《 ████████████》100%"
+"▬▭▭▭▭▭▭ 10%",
+"▬▬▭▭▭ 30%",
+"▬▬▬▬▭▭ 50%",
+"▬▬▬▬▬▬▭ 80%",
+"▬▬▬▬▬▬▬ 100%"
 ]
       let { key } = await conn.sendMessage(m.chat, {text: `*☠ ¡¡INICIANDO DOXXEO!! ☠*`}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {

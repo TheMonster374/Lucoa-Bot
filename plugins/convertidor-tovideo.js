@@ -1,13 +1,13 @@
-import {webp2mp4} from '../lib/webp2mp4.js';
-import {ffmpeg} from '../lib/converter.js';
+import {webp2mp4} from '../lib/webp2mp4.js'
+import {ffmpeg} from '../lib/converter.js'
 const handler = async (m, {conn, usedPrefix, command}) => {
-  if (!m.quoted) throw `*responde al sticker que deseas convertir a video con el comando ${usedPrefix + command}*`;
-  const mime = m.quoted.mimetype || '';
-  if (!/webp/.test(mime)) throw `*responde al sticker que deseas convertir a video con el comando ${usedPrefix + command}*`;
-  const media = await m.quoted.download();
-  let out = Buffer.alloc(0);
+  if (!m.quoted) return conn.reply(m.chat, `Responde a un *Sticker*`, m, )
+  const mime = m.quoted.mimetype || ''
+  if (!/webp/.test(mime)) return conn.reply(m.chat, `Responde a un *Sticker*`, m, )
+  const media = await m.quoted.download()
+  let out = Buffer.alloc(0)
   if (/webp/.test(mime)) {
-    out = await webp2mp4(media);
+    out = await webp2mp4(media)
   } else if (/audio/.test(mime)) {
     out = await ffmpeg(media, [
       '-filter_complex', 'color',
@@ -15,11 +15,13 @@ const handler = async (m, {conn, usedPrefix, command}) => {
       '-crf', '51',
       '-c:a', 'copy',
       '-shortest',
-    ], 'mp3', 'mp4');
+    ], 'mp3', 'mp4')
   }
-  await conn.sendFile(m.chat, out, 'error.mp4', '*DONE*', m, 0, {thumbnail: out});
-};
-handler.help = ['tovideo'];
-handler.tags = ['sticker'];
-handler.command = ['tovideo', 'tomp4', 'mp4', 'togif'];
-export default handler;
+  await conn.sendFile(m.chat, out, 'out.mp4', null, estilo))
+}
+handler.help = ['tomp4']
+handler.tags = ['sticker', 'tools']
+handler.command = ['tovideo', 'tomp4', 'mp4', 'togif']
+handler.star = 1
+handler.register = true 
+export default handler

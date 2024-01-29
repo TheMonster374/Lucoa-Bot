@@ -48,7 +48,7 @@ for (let i = 0; i < img.length; i++) {
             const txt1 = `🔗 *Url:* ${shortUrl1}`.trim();
             await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
           } catch {
-            throw `*❌ʟᴏ sᴇɴᴛɪᴍᴏs sᴇ ʜᴀ ɢᴇɴᴇʀᴀᴅᴏ ᴜɴ ᴇʀʀᴏʀ ᴠᴜᴇʟᴠᴇ ɪɴᴛᴇɴᴛᴀʀ❌*`;
+            throw `*ha habido un error y no se envio el video*`;
           }
         }
       }

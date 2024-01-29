@@ -6,7 +6,7 @@ const handler = async (m, { conn, args }) => {
     }
 if (!args[0].match(/instagram/gi))
     throw `❎ Asegurese que el enlace sea de Instagram`;
-    await conn.sendNyanCat(m.chat, global.wait, adimagen, addescargas, null, md, m);
+    await conn.sendNyanCat(m.chat, global.wait, adimagen, addescargas m);
 
     try {
         const apiUrl = `https://visionaryapi.boxmine.xyz/api/v1/igdl?url=${args[0]}`;

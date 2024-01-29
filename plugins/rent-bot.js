@@ -1,4 +1,4 @@
-const xpperlimit = 100;
+const xpperlimit = 150;
 const handler = async (m, {conn, command, args}) => {
   let count = command.replace(/^rentar/i, '');
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].limit / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1;
@@ -9,10 +9,10 @@ const handler = async (m, {conn, command, args}) => {
     global.db.data.users[m.sender].premium += count;
     conn.reply(m.chat, `
 ┌─「 *NOTA DE PAGO* 」
-‣ *Compra nominal* : + ${count} hora de bot en tu grupo 
+‣ *Compra nominal* : + ${count} hora de bot en tu grupo (pasar link) 
 ‣ *Gastado* : -${xpperlimit * count} 💎
 └──────────────`, m);
-  } else conn.reply(m.chat, `❎ Lo siento, no tienes suficiente *diamantes* para comprar *${count}* hora premium`, m);
+  } else conn.reply(m.chat, `❎ Lo siento, no tienes suficiente *diamantes💎* para comprar *${count}* hora bot en tu grupo`, m);
 };
 handler.help = ['rentar', 'Buyall'];
 handler.tags = ['xp'];

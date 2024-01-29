@@ -24,7 +24,9 @@ HOLA
 
 
 `.trim();
-        let pp = 'https://telegra.ph/file/4c3e4b782c82511b3874d.mp4'
+  text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    
+    let pp = 'https://telegra.ph/file/4c3e4b782c82511b3874d.mp4'
     let pp2 = 'https://telegra.ph/file/d8c5e18ab0cfc10511f63.mp4'
     let pp3 = 'https://telegra.ph/file/96e471a87971e2fb4955f.mp4'
     let pp4 = 'https://telegra.ph/file/09b920486c3c291f5a9e6.mp4'

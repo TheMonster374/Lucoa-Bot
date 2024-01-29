@@ -5,7 +5,7 @@ const handler = async (m, {conn, command, args}) => {
   count = Math.max(1, count);
   if (global.db.data.users[m.sender].limit >= xpperlimit * count) {
     global.db.data.users[m.sender].limit -= xpperlimit * count;
-    global.db.data.users[m.sender].limit += count;
+    global.db.data.users[m.sender].exp += count;
     conn.reply(m.chat, `
 ┌─「 *NOTA DE PAGO* 」
 ‣ *Compra nominal* : + ${count} hora el bot en tu grupo (mandar enlace al bot) 
@@ -15,7 +15,7 @@ const handler = async (m, {conn, command, args}) => {
 };
 handler.help = ['Buy', 'Buyall'];
 handler.tags = ['xp'];
-handler.command = ['rentbot', 'RentarBot'];
+handler.command = ['rentbot', 'rentarbot'];
 
 handler.disabled = false;
 

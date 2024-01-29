@@ -8,7 +8,7 @@ const handler = async (m, {conn, command, args}) => {
     global.db.data.users[m.sender].limit -= xpperlimit * count;
     global.db.data.users[m.sender].premium += count;
     conn.reply(m.chat, `
-┌─「 *NOTA DE PAGO* 」
+┌─「 *𝐑𝐄𝐍𝐓𝐀𝐑 𝐁𝐎𝐓* 」
 ‣ *Compra nominal* : + ${count} hora de bot en tu grupo (pasar link) 
 ‣ *Gastado* : -${xpperlimit * count} 💎
 └──────────────`, m);

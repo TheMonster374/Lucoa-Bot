@@ -1,6 +1,6 @@
 const xpperlimit = 100;
 const handler = async (m, {conn, command, args}) => {
-  let count = command.replace(/^buyprem/i, '');
+  let count = command.replace(/^rentar/i, '');
   count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].limit / xpperlimit) : parseInt(count) : args[0] ? parseInt(args[0]) : 1;
   const prem = Math.floor(Math.random() * 3600000)
   count = Math.max(1, count);

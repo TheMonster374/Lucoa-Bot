@@ -11,7 +11,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let user = global.db.data.users[who]
     let name = conn.getName(who) 
    let name2 = conn.getName(m.sender) 
-   m.react(rwait)
 
   let rki = await fetch(`https://api.waifu.pics/sfw/kill`)
     if (!rki.ok) throw await rki.text()
@@ -19,7 +18,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
    let { url } = jkis
    let stiker = await sticker(null, url, `(${name2}) mató a`, `${name}`)
    conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
-   m.react('🗡️') 
    
 }
 

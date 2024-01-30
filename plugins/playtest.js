@@ -15,12 +15,9 @@ const formatSize = sizeFormatter({
   std: 'JEDEC', decimalPlaces: 2, keepTrailingZeroes: false, render: (literal, symbol) => `${literal} ${symbol}B`});
 
 async function descarga(m, command, conn, text, command, args, fkontak, from, buffer, getFile, q, includes, lolkeysapi) {
-if (global.db.data.users[m.sender].registered < true) return m.reply(info.registra)
-if (global.db.data.users[m.sender].limit < 1) return m.reply(info.endLimit)
-if (command == 'playtest') {
+if (command == 'play') 
 if (!text) return m.reply(lenguaje.descargar.text + ` *${prefix + command}* ozuna`) 
 try { 
-m.react(rwait) 
 let vid = (await yts(text)).all[0]
 const yt_play = await search(args.join(" "))
 let { title, description, url, thumbnail, videoId, timestamp, views, published } = vid
@@ -52,3 +49,7 @@ m.reply('1 ' + info.limit)
 } catch (e) {
 return m.reply(info.error) 
 console.log(e)}}}}
+
+handler.command = /^(playtest|play2)$/i;
+export default handler;
+

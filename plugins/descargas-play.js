@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘\n\n*Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
+  if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_ \n\n*Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
@@ -16,7 +16,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_*_\n\n🐶 *Título:* ${yt_play[0].title}\n🐕 *Publicado:* ${yt_play[0].ago}\n\n⌛ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n👤 *Autor:* ${yt_play[0].author.name}\n🕳 *Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
+    const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_ \n\n🐶 *Título:* ${yt_play[0].title}\n🐕 *Publicado:* ${yt_play[0].ago}\n\n⌛ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n👤 *Autor:* ${yt_play[0].author.name}\n🕳 *Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
@@ -50,7 +50,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB2 = fileSizeInKB2 / 1024;
     const size2 = fileSizeInMB2.toFixed(2);       
     if (size2 >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_\n\n*Descargue su vídeo en ${video}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_ \n\n*Descargue su vídeo en ${video}*`}, {quoted: m});
     return;    
     }     
     if (size2 >= limit1 && size2 <= limit2) {  

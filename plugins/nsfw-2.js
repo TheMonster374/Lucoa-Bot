@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
 
 
-  let rki = await fetch(`/HostMedia/nsfw/pussy.json`)
+  let rki = await fetch(`https://github.com/Kai9971/A17/HostMedia/nsfw/pussy.json`)
     if (!rki.ok) throw await rki.text()
    let jkis = await rki.json()
    let { url } = jkis

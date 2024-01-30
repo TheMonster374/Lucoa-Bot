@@ -12,7 +12,7 @@ const handler = async (m, {conn, command, args}) => {
 ‣ *Compra nominal* : + ${count} hora de bot en tu grupo (pasar link) 
 ‣ *Gastado* : -${xpperlimit * count} 💎
 └──────────────`, m);
-  } else conn.reply(m.chat, `❎ Lo siento, no tienes suficiente *diamantes💎* para comprar *${count}* hora bot en tu grupo`, m);
+  } else conn.reply(m.chat, `❎ Lo siento, no tienes suficiente *diamantes💎* para comprar *${count}* hora de bot en tu grupo`, m);
 };
 handler.help = ['rentar', 'Buyall'];
 handler.tags = ['xp'];

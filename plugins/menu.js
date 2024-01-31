@@ -20,6 +20,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
+    function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
     await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     const str = `
 ayuda cabrones se busca  ayuda para cosas del bot :,v

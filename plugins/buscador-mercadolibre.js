@@ -3,7 +3,7 @@ import cheerio from 'cheerio';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
-    if (!text) throw m.reply(`*Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command} Consolador Con forma del temach`);
+    if (!text) throw m.reply(`*Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command} chamba para ale`);
     let res = await mercado(text);
     let cap = `「 *M E R C A D O - L I B R E* 」\n\n`;
     const limit = 15;

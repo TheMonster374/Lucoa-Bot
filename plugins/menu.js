@@ -22,7 +22,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
     const str = `
-
+ayuda cabrones se busca  ayuda para cosas del bot :,v
 ╭──────────────────╮
 ︙⟣_*🐶𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶*_
 ╰──────────────────╯          
@@ -34,7 +34,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ︙🐕︙ _*​ɴɪᴠᴇʟ​*_ : ${user.level}
 ︙🐕︙ _*​ᴘᴇꜱᴏꜱ*_ : ${user.exp}
 ︙🐕︙ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
-
+︙🐕︙_*ʀօʟ*_ : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'bot xdxd', 'maricon', 'negro', 'masoquista', 'secuestrador de nenas', 'don pajas', 'violador'])}
 
 ╭─────────────┈⊷
 │「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  

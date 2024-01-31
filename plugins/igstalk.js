@@ -47,9 +47,9 @@ async function igstalk(Username) {
       return result;
     } catch (e) {
       if (e.response?.status === 404) {
-        throw new Error('Error: Akun tidak ditemukan');
+        throw new Error('Error: Account not found');
       } else if (e.response?.status === 403) {
-        throw new Error('Error: Akunnya Di Private');
+        throw new Error('Error: Account is Private');
       } else {
         throw new Error('Error: Failed to fetch Instagram profile');
       }
@@ -58,7 +58,7 @@ async function igstalk(Username) {
 }
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Example use ${usedPrefix}${command} username`;
+  if (!args[0]) throw `Example use ${usedPrefix}${command} username\n\n.igstalk sla.sher_`;
 
   try {
     let res = await igstalk(args[0]);
@@ -87,10 +87,10 @@ if (pepe) {
   let pp = await (await fetch(pepe)).buffer();
   conn.sendFile(m.chat, pp, 'profile.jpg', data, m);
 } else {
-  conn.reply(m.chat,descargando);
+  conn.reply(m.chat, data, m);
 }
 } catch (error) {
-conn.reply(m.chat,ha habido un error);
+conn.reply(m.chat, error, m);
 }
 };
 

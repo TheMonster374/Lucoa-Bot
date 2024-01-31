@@ -37,7 +37,7 @@ ayuda cabrones se busca  ayuda para cosas del bot :,v
 ︙🐕︙ _*​ɴɪᴠᴇʟ​*_ : ${user.level}
 ︙🐕︙ _*​ᴘᴇꜱᴏꜱ*_ : ${user.exp}
 ︙🐕︙ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
-︙🐕︙_*ʀօʟ*_ : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'bot xdxd', 'maricon', 'negro', 'masoquista', 'secuestrador de nenas', 'don pajas', 'violador'])}
+︙🐕︙ _*ʀᴏʟ*_ : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'bot xdxd', 'maricon', 'negro', 'masoquista', 'secuestrador de nenas', 'don pajas', 'violador'])}
 
 ╭─────────────┈⊷
 │「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  

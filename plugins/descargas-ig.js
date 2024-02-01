@@ -23,7 +23,7 @@ for (let i = 0; i < img.length; i++) {
     const datTa = await instagram.download(args[0]);
     for (const urRRl of datTa) {
       const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-      const tXXxt = `🔗 *Url:* ${shortUrRRl}`.trim();
+      const tXXxt = `aqui tienes🐶`.trim();
       conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m);
       await new Promise((resolve) => setTimeout(resolve, 10000));
     }
@@ -31,13 +31,13 @@ for (let i = 0; i < img.length; i++) {
       try {
         const resultss = await instagramGetUrl(args[0]).url_list[0];
         const shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-        const txt2 = `🔗 *Url:* ${shortUrl2}`.trim();
+        const txt2 = `aqui tienes🐶`.trim();
         await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, m);
       } catch {
         try {
           const resultssss = await instagramdl(args[0]);
           const shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-          const txt4 = `🔗 *Url:* ${shortUrl3}`.trim();
+          const txt4 = `aqui tienes🐶`.trim();
           for (const {url} of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m);
         } catch {
           try {
@@ -45,7 +45,7 @@ for (let i = 0; i < img.length; i++) {
             const json = await human.json();
             const videoig = json.result;
             const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-            const txt1 = `🔗 *Url:* ${shortUrl1}`.trim();
+            const txt1 = `aqui tienes🐶`.trim();
             await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
           } catch {
             throw `*ha habido un error y no se envio el video*`;

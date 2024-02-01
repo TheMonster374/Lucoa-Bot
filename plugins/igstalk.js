@@ -14,7 +14,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🏝️Posts:* ${res.postsH}
 └────────────`
 
-     await conn.sendFile(m.chat, res.profilePic, 'tt.png', te, m)
+     await conn.sendFile(m.chat, res.profilePic, 'tt.png',  m)
      
 }
 handler.help = ['igstalk']

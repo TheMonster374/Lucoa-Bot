@@ -5,9 +5,8 @@ const handler = async (m, {conn, usedPrefix}) => {
 
        「 𝐆𝐫𝐮𝐩𝐨𝐬 𝐃𝐞𝐥 𝐁𝐨𝐭 」
        
-*1.-* https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM ⎯⎯  \\\ 𝕭𝖔𝖙𝖘 /// ⎯⎯
+*1.-* https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ ⎯⎯  \\\ 𝕭𝖔𝖙𝖘 /// ⎯⎯
 
-*2.-* https://whatsapp.com/channel/0029VaKQx9B30LKRUgGoXS1X CANAL JOTCHUA-BOT (nuevo)
 
 `.trim();
   const buttonMessage= {
@@ -26,7 +25,7 @@ const handler = async (m, {conn, usedPrefix}) => {
         'title': '𝙹𝚘𝚝𝚌𝚑𝚞𝚊 - 𝙱𝚘𝚝⁩',
         'body': wm,
         'thumbnail': imagen1,
-        'sourceUrl': 'https://chat.whatsapp.com/HNKEbPvDwhz2OpMA6Ui7jM'}},
+        'sourceUrl': 'https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ'}},
     'caption': text,
     'footer': wm,
     'headerType': 6};

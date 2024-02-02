@@ -1,6 +1,4 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
   let name = await conn.getName(m.sender);
   if (name == 'undefined') name = 'Indefinido';
   const b = text.split('|');

@@ -8,9 +8,9 @@
 <a href="https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs" target="blank"><img src="https://img.shields.io/badge/grupo bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
- ### `BOT OFICIAL`
+ ### `BOT OFICIAL🐶`
 
-<a href="https://api.whatsapp.com/send/?phone=5219991402134&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1_(INACTIVO)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://api.whatsapp.com/send/?phone=+1 (970) 812-4588text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1_(ACTIVO)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### `AJUSTES`
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/AleXD0009/Jotchua-Bot/fork)

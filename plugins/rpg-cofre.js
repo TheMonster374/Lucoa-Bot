@@ -4,9 +4,11 @@ const handler = async (m, {isPrems, conn}) => {
 
   const img = 'https://img.freepik.com/vector-gratis/cofre-monedas-oro-piedras-preciosas-cristales-trofeo_107791-7769.jpg?w=2000';
   const dia = Math.floor(Math.random() * 30);
+  let dolares = Math.floor(Math.random() * 4000)
   const tok = Math.floor(Math.random() * 10);
   const expp = Math.floor(Math.random() * 5000);
 
+  global.db.data.users[m.sender].money += dolares;
   global.db.data.users[m.sender].limit += dia;
   global.db.data.users[m.sender].joincount += tok;
   global.db.data.users[m.sender].exp += expp;
@@ -16,6 +18,7 @@ OBTIENES UN COFRE🎉
 ┈┈┈┈┈┈┈┈┈┈┈┈┈
  *${dia} Diamantes* 💎
  *${tok} Tokens* 
+*${dolares} dolares* 
  *${expp} pesos* 🪙
 `;
 

@@ -200,6 +200,10 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.ganja)) user.ganja = 0;
         if (!isNumber(user.gardenboxs)) user.gardenboxs = 0;
         if (!isNumber(user.gems)) user.gems = 0;
+	if (!isNumber(user.fantasy)) user.fantasy = []
+if (!isNumber(user.fantasy_character)) user.fantasy_character = 0
+if (!isNumber(user.fantasy_character2)) user.fantasy_character2 = 0
+if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
         if (!isNumber(user.glass)) user.glass = 0;
         if (!isNumber(user.glimit)) user.glimit = 20;
         if (!isNumber(user.glory)) user.glory = 0;

@@ -44,5 +44,5 @@ const zodiak = [
 
 function getZodiac(month, day) {
     let d = new Date(1970, month - 1, day)
-    return zodiak.find(([_,_d]) => d >= _d)[0]
+    return zodiak.find(([_,_d]) => d <= _d)[0]
 }

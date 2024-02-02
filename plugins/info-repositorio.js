@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 const handler = async (m, { conn, args, usedPrefix }) => {
    const res = await fetch('https://api.github.com/repos/AleXD0009/Jotchua-Bot');
    const json = await res.json();
-   let txt = `_*< INFO - REPOSITORIO />*_\n\n`;
+   let txt = `_*𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨 𝐛𝐨𝐭*_\n\n`;
       txt += ` *Nombre:* ${json?.name || 'Jotchua'}\n\n`;
       txt += ` *Visitantes:* ${json?.watchers_count || '-'}\n\n`;
       txt += ` *Tamaño:* ${(json?.size / 1024).toFixed(2) || '-'} MB\n\n`;

@@ -105,6 +105,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 <div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
 <a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 <a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="250" height="250" alt="BrunoSobrino"/></a>
+<a href="https://github.com/BrunoSobrino"><img src="https://github.com/Argus628.png" width="250" height="250" alt="Ale"/></a>
 
 ## `▢ EDITOR & PROPIETARIO DEL BOT` 
 <a href="https://github.com/AleXD0009"><img src="https://github.com/AleXD0009.png" width="250" height="250" alt="AleXD0009"/></a>

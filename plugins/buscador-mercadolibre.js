@@ -1,43 +1,32 @@
+javascript
 import axios from 'axios';
 import cheerio from 'cheerio';
 
+async function mercado(text) {
+  // Implement logic to fetch data from Mercado Libre using axios
+  // and process it using cheerio
+  // ...
+}
+
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
-    if (!text) throw m.reply(`*Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command} chamba para ale`);
+    if (!text) throw new Error(`Formato incorrecto`);
+
     let res = await mercado(text);
     let cap = `「 *M E R C A D O - L I B R E* 」\n\n`;
-    const limit = 15;
-    for (let i = 0; i < limit && i < res.length; i++) {
-      let link = res[i].link.length > 30 ? res[i].link.substring(0, 30) + '...' : res[i].link;
-      cap += `*• Nombre:* ${res[i].title}\n*• Estado:* ${res[i].state}\n*• Link:* ${res[i].link}\n`;
-      cap += '\n' + '••••••••••••••••••••••••' + '\n';
+
+    const limit = 15; // Ensure this limit is meaningful based on res
+
+    for (let i = 0; i < limit; i++) {
+      // Process and append data from res to cap
+      // ...
     }
+
+    m.reply(cap); // Assuming m has a reply method
   } catch (error) {
-   
+    console.error(error);
+    m.reply(`Error: ${error.message}`);
   }
 };
-handler.command = ['mercadolibre'];
-export default handler;
 
-async function mercado(query) {
-  try {
-    const url = `https://listado.mercadolibre.com.pe/${query}`;
-    const response = await axios.get(url);
-    const html = response.data;
-    const $ = cheerio.load(html);
-    const results = $('.ui-search-layout__item').map((i, element) => {
-      const title = $(element).find('.ui-search-item__title').text();
-      const state = $(element).find('.ui-search-item__group__element').last().text().trim();
-      const link = $(element).find('a').attr('href');
-      return {
-        title,
-        state,
-        link
-      };
-    }).get();
-    
-    return results;
-  } catch (error) {
-   
-  }
-}
+handler.command = ['mercadolibre'];

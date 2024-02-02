@@ -8,6 +8,7 @@ conn.reply(m.chat, `
 *📌Nombre* : _@${who.split('@')[0]}_
 *💎Diamantes* : _${user.limit}_
 *🪙 pesos* : _${user.exp}_
+*💵 dolares* : _${user.money}_
 └──────────────
 
 *NOTA :* 

@@ -7,6 +7,8 @@ let handler = async (m) => {
    if (new Date - user.lastsemanal < cooldown) return conn.reply(m.chat, `🧭 Espera *${((user.lastsemanal + cooldown) - new Date()).toTimeString()}* para volver a Reclamar.`, m, )
    let txt = `Felicidades 🎉, reclamaste *3000 Pesos 🪙*.`
    user.exp += 3000
+    let txt = `Felicidades 🎉, reclamaste *300 dolares 🪙*.`
+   user.exp += 300
    user.lastsemanal = new Date * 1
    await conn.reply(m.chat, txt, m, )
 }

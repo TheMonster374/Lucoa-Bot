@@ -70,6 +70,12 @@ global.adimagen = `JOTCHUA-BOT BY ALS`
 
 global.mods = [];
 
+//Reacciones
+global.rwait = '⏰'
+global.done = '✅'
+global.error = '❌'
+
+
 //━━━━━━━━━━━━━━━━━━━━━━ 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);

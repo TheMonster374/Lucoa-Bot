@@ -13,9 +13,9 @@ try {
 
 const yt_play = await search(args.join(' '))
 let additionalText = ''
-if (command === 'play6') {
+if (command === 'play') {
 additionalText = 'audio'
-} else if (command === 'play7') {
+} else if (command === 'play2') {
 additionalText = 'video'}
 
 let texto1 = `*∘ Título*
@@ -123,7 +123,7 @@ return conn.reply(m.chat, '🚩 *Inténtelo de nuevo*', m, fake, )}
 }
 handler.help = ['play', 'play2']
 handler.tags = ['descargas']
-handler.command = /^play2?$/i
+handler.command = /^play6?$/i
 
 handler.register = true
 handler.limit = true

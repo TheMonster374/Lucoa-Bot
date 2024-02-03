@@ -1,7 +1,7 @@
 import axios from 'axios'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     let wr = `Masukan Url Capcut!\n\nContoh:\n${usedPrefix + command} https://www.capcut.net/sharevideo?template_id=7239111787965205762&language=in&region=ID`
-    if (!args[0]) return m.reply(wm)
+    if (!args[0]) return m.reply(wr)
     if (!/www.capcut/i.test(args[0])) return m.reply('Invalid Url!')
     m.reply(wait)
     let { usage, title, description, originalVideoUrl } = await capcut(args[0])

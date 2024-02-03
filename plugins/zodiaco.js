@@ -1,17 +1,17 @@
 const zodiak = [
-    ["Capricorn", new Date(1970, 0, 1)],
+    ["capricornio", new Date(1970, 0, 1)],
     ["Aquarius", new Date(1970, 0, 20)],
-    ["Pisces", new Date(1970, 1, 19)],
-    ["Aries", new Date(1970, 2, 21)],
-    ["Taurus", new Date(1970, 3, 21)],
-    ["Gemini", new Date(1970, 4, 21)],
+    ["piscis", new Date(1970, 1, 19)],
+    ["aries", new Date(1970, 2, 21)],
+    ["tauro", new Date(1970, 3, 21)],
+    ["geminis", new Date(1970, 4, 21)],
     ["Cancer", new Date(1970, 5, 22)],
     ["Leo", new Date(1970, 6, 23)],
     ["Virgo", new Date(1970, 7, 23)],
     ["Libra", new Date(1970, 8, 23)],
     ["Scorpio", new Date(1970, 9, 23)],
-    ["Sagittarius", new Date(1970, 10, 22)],
-    ["Capricorn", new Date(1970, 11, 22)]
+    ["sagitario", new Date(1970, 10, 22)],
+    ["capricornio", new Date(1970, 11, 22)]
 ].reverse();
 
 function getZodiac(month, day) {
@@ -20,7 +20,7 @@ function getZodiac(month, day) {
 }
 
 const handler = (m, { usedPrefix, command, text }) => {
-    if (!text) throw `contoh:\n${usedPrefix + command} Tahun Bulan Tanggal\n\n${usedPrefix + command} 2002 02 25`;
+    if (!text) throw `uso incorrecto del comando,n\n\ejemplo: ${usedPrefix + command} 2002 02 25`;
 
     const date = new Date(text);
     if (date == 'Invalid Date') throw date;
@@ -33,7 +33,7 @@ const handler = (m, { usedPrefix, command, text }) => {
     const age = ageD.getFullYear() - new Date(1970, 0, 1).getFullYear();
 
     const birthday = [tahun + (+ new Date(1970, bulan - 1, tanggal) > + new Date(1970, birth[1] - 1, birth[2])), ...birth.slice(1)];
-    const cekusia = bulan === birth[1] && tanggal === birth[2] ? `Selamat ulang tahun yang ke-${age} 🥳` : age;
+    const cekusia = bulan === birth[1] && tanggal === birth[2] ? `feliz cumpleaños ${age} 🥳` : age;
 
     const nextBirthday = new Date(tahun, birth[1] - 1, birth[2]);
     nextBirthday.setFullYear(tahun + (nextBirthday < d));
@@ -64,14 +64,14 @@ const handler = (m, { usedPrefix, command, text }) => {
     // const WaktuSekarang = `${currentHours}:${currentMinutes}:${currentSeconds}`
 
     const teks = `
-Lahir : ${birth.join('-')}
+nacimiento : ${birth.join('-')}
 Ultah Mendatang : ${birthday.join('-')}
-Usia sekarang : ${cekusia}
-Usia Ultah nanti : ${cekusia + 1}
-Zodiak : ${zodiac}
-Waktu Sekarang : ${WaktuSekarangReplit}
-${monthsUntilNextBirthday} bulan ${daysUntilNextBirthday % 30} hari lagi anda ulang tahun 🎂
-${hoursUntilNextBirthday} jam ${minutesUntilNextBirthday} menit ${secondsUntilNextBirthday} detik menuju ulang tahun 🎉
+proximo cumpleaños : ${cekusia}
+Se acerca el cumpleaños : ${cekusia + 1}
+signo zodiacal : ${zodiac}
+ahora : ${WaktuSekarangReplit}
+${monthsUntilNextBirthday} bulan ${daysUntilNextBirthday % 30} hoy es tu cumpleaños 🎂
+${hoursUntilNextBirthday} jam ${minutesUntilNextBirthday} menit ${secondsUntilNextBirthday} segundos para elcumpleaños 🎉
 `.trim();
     m.reply(teks);
 };

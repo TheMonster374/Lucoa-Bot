@@ -1,44 +1,44 @@
-import { instagramStalk } from '@bochilteam/scraper'
+import axios from 'axios';
+import cheerio from 'cheerio';
+import fetch from 'node-fetch';
+const handler = async (m, {conn, args, usedPrefix, command}) => {
+  if (!args[0]) throw `*🎯 Enter The Instagram Username\n\n📌Example: ${usedPrefix + command} abhishek_ser*`;
+  const res = await igstalk(args[0].replace(/^@/, ''));
+  const res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${args[0].replace(/^@/, '')}?apikey=${lolkeysapi}`);
+  const res3 = await res2.json();
+  const json = JSON.parse(JSON.stringify(res));
+  const iggs = `
+╭─────────────❮
+▢ *UserName:* ${json.username}
+▢ *NickName:* ${json.fullname}
+▢ *Followers:* ${json.followers}
+▢ *Following:* ${json.following}
+▢ *Post:* ${json.post}
+▢ *Link:* https://instagram.com/${json.username.replace(/^@/, '')}
+▢ *Bio:* ${json.bio}
+╰─────────────⦁`.trim();
+  const aa = `${res3.result.photo_profile || res.profile}`;
+  await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m);
+};
+handler.help = ['igstalk <username>'];
+handler.tags = ['internet'];
+handler.command = /^(igstalk)$/i;
+export default handler;
 
-let handler= async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `Example use ${usedPrefix}${command} <username>`
-    const {
-        username,
-      avatar,
-        name,
-        description,
-        followersH,
-        followingH,
-        postsH,
-    } = await instagramStalk(args[0])
-
-  let data = `
-${username} » 「 ${name} 」
-
-${followersH}  Fᴏʟʟᴏᴡᴇʀꜱ
-${followingH}  Fᴏʟʟᴏᴡɪɴɢ
-${postsH} Pᴏꜱᴛ
-Bɪᴏ: ${description}
-`.trim()
-
-  let pp = await( await conn.getFile(avatar)).data
-  
-  conn.sendHydrated(m.chat, '「  𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 𝙎𝙩𝙖𝙡𝙠 」' , data, pp, `https://instagram.com/${username.replace(/^@/, '')}`, 'Link Profile', '0', 'Nothing', [
-
-      [null],
-
-      [null],
-
-      [null, null]
-
-    ], null,  { asLocation: true })
+async function igstalk(Username) {
+  return new Promise((resolve, reject) => {
+    axios.get('https://dumpor.com/v/'+Username, {
+      headers: {'cookie': '_inst_key=SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYWGhnNS1uWVNLUU81V1lzQ01MTVY2R0h1.fI2xB2dYYxmWqn7kyCKIn1baWw3b-f7QvGDfDK2WXr8', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}}).then((res) => {
+      const $ = cheerio.load(res.data);
+      const result = {
+        profile: $('#user-page > div.user > div.row > div > div.user__img').attr('style').replace(/(background-image: url\(\'|\'\);)/gi, ''),
+        fullname: $('#user-page > div.user > div > div.col-md-4.col-8.my-3 > div > a > h1').text(),
+        username: $('#user-page > div.user > div > div.col-md-4.col-8.my-3 > div > h4').text(),
+        post: $('#user-page > div.user > div > div.col-md-4.col-8.my-3 > ul > li:nth-child(1)').text().replace(' Posts', ''),
+        followers: $('#user-page > div.user > div > div.col-md-4.col-8.my-3 > ul > li:nth-child(2)').text().replace(' Followers', ''),
+        following: $('#user-page > div.user > div > div.col-md-4.col-8.my-3 > ul > li:nth-child(3)').text().replace(' Following', ''),
+        bio: $('#user-page > div.user > div > div.col-md-5.my-3 > div').text()};
+      resolve(result);
+    });
+  });
 }
-
-handler.help = ['igstalk'].map(v => v + ' <username>')
-handler.tags = ['tools']
-
-handler.command = /^(igstalk)$/i
-
-export default handler
-
-//Kalo mau ambil start/follow dlu :v

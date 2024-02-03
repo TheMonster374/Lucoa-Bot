@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let wibm = moment.tz('Asia/Jakarta').format('mm')
     let wibs = moment.tz('Asia/Jakarta').format('ss')
     let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
-if (db.data.chats[m.chat].modohorny == false && m.isGroup) return conn.sendButton(m.chat, '❗ ᴏᴘᴛɪᴏɴs ɴsғᴡ ᴅɪᴄʜᴀᴛ ɪɴɪ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴘ',`⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`, null, [['ᴇɴᴀʙʟᴇ', '.on nsfw']], m)
+if (db.data.chats[m.chat].modohorny == false && m.isGroup) return conn.sendButton(m.chat, '❗ comandso nfw estan desactivados dile a un admin que lo active',`⻝ informacion: ${week} ${date}\n⻝ tiempo: ${wktuwib}`, null, [['ᴇɴᴀʙʟᴇ', '.on modohorny']], m)
 	
     if (!text) throw `Use example ${usedPrefix}${command} Sagiri`
     const res = await (await googleImage('rule34 ' + text)).getRandom()
@@ -26,5 +26,5 @@ if (db.data.chats[m.chat].modohorny == false && m.isGroup) return conn.sendButto
 }
 handler.help = ['rule34 <character>']
 handler.tags = ['nsfw']
-handler.command = ['rule342']
+handler.command = ['rule34-2']
 export default handler

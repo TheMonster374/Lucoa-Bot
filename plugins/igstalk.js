@@ -42,10 +42,6 @@ sourceUrl: md}}})}
 handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['downloader']
 handler.command = /^(igstalk|verig|igver)$/i
-handler.exp = 80
-handler.money = 150
-handler.level = 3
-handler.register = true
 export default handler
 
 async function igstalk(Username) {

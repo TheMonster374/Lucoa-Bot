@@ -1,8 +1,8 @@
-/*⬤── 「 BY ALS」 ──⬤
+/*⬤── 「 Jotchua-Bot 」 ──⬤
 
 gay el que lo lee
 
-⬤── 「 BY ALS 」 ──⬤*/
+⬤── 「 Jotchua-Bot 」 ──⬤*/
 import fetch from 'node-fetch';
 import {sticker, addExif} from '../lib/sticker.js';
 import {Sticker} from 'wa-sticker-formatter';

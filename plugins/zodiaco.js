@@ -65,9 +65,9 @@ const handler = (m, { usedPrefix, command, text }) => {
 
     const teks = `
 nacimiento : ${birth.join('-')}
-Ultah Mendatang : ${birthday.join('-')}
-proximo cumpleaños : ${cekusia}
-Se acerca el cumpleaños : ${cekusia + 1}
+proximo cumpleaños : ${birthday.join('-')}
+edad : ${cekusia}
+proxima edad : ${cekusia + 1}
 signo zodiacal : ${zodiac}
 ahora : ${WaktuSekarangReplit}
 ${monthsUntilNextBirthday} mes ${daysUntilNextBirthday % 30} para tu cumpleaños 🎂

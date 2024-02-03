@@ -2,49 +2,50 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} gatadios*\n\n𝙀𝙉𝙏𝙀𝙍 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} gata_dios*`
-const {key} = await conn.sendMessage(m, {text: wait})
-await conn.sendMessage(m, {text: waitt, edit: key})
-await conn.sendMessage(m, {text: waittt, edit: key})
-await conn.sendMessage(m, {text: waitttt, edit: key})
+if (!args[0]) throw `𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} gatadios*`
+await m.reply(global.wait)    
 let res = await igstalk(args[0].replace(/^@/, ''))
 let res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${args[0].replace(/^@/, '')}?apikey=${lolkeysapi}`)
 let res3 = await res2.json()
 let json = JSON.parse(JSON.stringify(res))
-let iggs = `
-┃ 𓃠 *${gt} ${vs}*
+let iggs = `╭╼╾╼⪻ *xd* ⪼╼╾╼╮
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙉𝙊𝙈𝘽𝙍𝙀 | 𝙉𝘼𝙈𝙀
+┃ 𝙉𝙊𝙈𝘽𝙍𝙀
 ┃ *${json.username}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) | 𝙐𝙎𝙀𝙍
+┃ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼)
 ┃ *${json.fullname}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙀𝙉𝙇𝘼𝘾𝙀 | 𝙇𝙄𝙉𝙆
+┃ 𝙇𝙄𝙉𝙆
 ┃ *https://instagram.com/${json.username.replace(/^@/, '')}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙍𝙀𝙎 | 𝙁𝙊𝙇𝙇𝙊𝙒𝙀𝙍𝙎 
+┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙍𝙀𝙎
 ┃ *${json.followers}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙎 | 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂
+┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙎
 ┃ *${json.following}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘾𝙄𝙊𝙉𝙀𝙎 | 𝙋𝙊𝙎𝙏𝙎
+┃ 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘾𝙄𝙊𝙉𝙀𝙎
 ┃ *${json.post}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝘽𝙄𝙊𝙂𝙍𝘼𝙁Í𝘼 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
-┃ *${json.bio}*`.trim() 
+┃ 𝘽𝙄𝙊𝙂𝙍𝘼𝙁Í𝘼
+┃ *${json.bio}*
+╰╼╾╼⪻ *xd* ⪼╾╼╼╯`.trim() 
 let aa = `${res3.result.photo_profile || res.profile}`
 await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m)
-conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*`, m, {
+conn.reply(m.chat, `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
+title: 'LoliBot-MD',
 body: 'Super Bot WhatsApp',         
-previewType: 0, thumbnail: fs.readFileSync("./media/Menu2.jpg"),
-sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})}
+previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu1.jpg"),
+sourceUrl: md}}})}
 handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['downloader']
 handler.command = /^(igstalk|verig|igver)$/i
+handler.exp = 80
+handler.money = 150
+handler.level = 3
+handler.register = true
 export default handler
 
 async function igstalk(Username) {

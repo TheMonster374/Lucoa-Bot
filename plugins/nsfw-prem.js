@@ -38,7 +38,7 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
 Cara Penggunaan:
 ${usedPrefix + command} cum
 `.trim()
-    if (!args[0]) return m.reply(wm)
+    if (!args[0]) return m.reply(list)
     let type = args[0].toLowerCase()
     if (/nsfw|hentai/i.test(command)) {
         switch (type) {

@@ -70,8 +70,8 @@ proximo cumpleaños : ${cekusia}
 Se acerca el cumpleaños : ${cekusia + 1}
 signo zodiacal : ${zodiac}
 ahora : ${WaktuSekarangReplit}
-${monthsUntilNextBirthday} bulan ${daysUntilNextBirthday % 30} hoy es tu cumpleaños 🎂
-${hoursUntilNextBirthday} jam ${minutesUntilNextBirthday} menit ${secondsUntilNextBirthday} segundos para elcumpleaños 🎉
+${monthsUntilNextBirthday} mes ${daysUntilNextBirthday % 30} hoy es tu cumpleaños 🎂
+${hoursUntilNextBirthday} en punto ${minutesUntilNextBirthday} minutos ${secondsUntilNextBirthday} segundos para elcumpleaños 🎉
 `.trim();
     m.reply(teks);
 };

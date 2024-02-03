@@ -1,8 +1,13 @@
+/*⬤── 「 BY ALS」 ──⬤
+
+gay el que lo lee
+
+⬤── 「 BY ALS 」 ──⬤*/
 import fetch from 'node-fetch';
 import {sticker, addExif} from '../lib/sticker.js';
 import {Sticker} from 'wa-sticker-formatter';
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  if (!text) throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*◉ ${usedPrefix + command} Mystic-Bot*`;
+  if (!text) throw `*Ingresa un texto*\n\n*Ejemplo:*\n* ${usedPrefix + command} Jotchua-Bot*`;
   const teks = encodeURI(text);
 
   if (command == 'attp') {

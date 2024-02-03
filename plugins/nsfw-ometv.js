@@ -1,6 +1,6 @@
-//buatan vynaa-md, jgn hapus atuh 😊
+
 let handler = async (m, { conn, usedPrefix, command }) => {
-  await m.reply(`*_ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ_*`)
+  await m.reply(`*_ᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀᴛ_*`)
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = conn.getName(who)
   //conn.sendButton(m.chat, `Nih *${name}*`, botdate, pickRandom(ometv), [['Next', `/ometv`]],m)

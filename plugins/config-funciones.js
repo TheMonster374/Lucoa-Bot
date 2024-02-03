@@ -1,159 +1,57 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
 const optionsFull = `
-_*FUNCIONES DEL BOT*_\n👑:solo creadores\n🐶:solo admins\n
- *Opción:* WELCOME
  *Comando:* ${usedPrefix + command} welcome
- *Descripción:* Activa o desactiva la bienvenida en el grupo.
- 
 --------------------------------
-
-▢ *Opción:* MODO PUBLICO 👑
 ▢ *Comando:* ${usedPrefix + command} public
-
 --------------------------------
-
-▢ *Opción:* MODO HORNY 🐶
 ▢ *Comando:* ${usedPrefix + command} modohorny
-
 --------------------------------
-
-▢ *Opción:* ANTILINK 🐶
 ▢ *Comando:* ${usedPrefix + command} antilink
-▢ *Nota:* Se necesita tener activa la función restrict.
-
 --------------------------------
-
-▢ *Opción:* ANTILINK 2 🐶
 ▢ *Comando:* ${usedPrefix + command} antilink2
-▢ *Nota:* Se necesita tener activa la función restrict.
-
 --------------------------------
-
-▢ *Opción:* DETECT 🐶
 ▢ *Comando:* ${usedPrefix + command} detect
-▢ *Descripción:* Activa o desacriva las notificaciones de cambios en el grupo.
-
 --------------------------------
-
-▢ *Opción:* DETECT 2 🐶
 ▢ *Comando:* ${usedPrefix + command} detect2
-▢ *Descripción:* Detecta modificaciones en el grupo y mantiene una mejor gestion.
-
 --------------------------------
-
-▢ *Opción:* RESTRICT 👑
 ▢ *Comando:* ${usedPrefix + command} restrict
-▢ *Descripción:* Activa o desactiva las restricciones del Bot, como la de sacar o agregar personas a un grupo.
-
 --------------------------------
-
-▢ *Opción:* AUTOREAD 👑
 ▢ *Comando:* ${usedPrefix + command} autoread
-▢ *Descripción:* Marca como leido los mensajes y los estados automáticamente.
-
 --------------------------------
-
-▢ *Opción:* AUDIOS 🐶
 ▢ *Comando:* ${usedPrefix + command} audios
-▢ *Descripción:* Activa o desactiva los comandos de audios sin prefijos, en el grupo.
-
 --------------------------------
-
-▢ *Opción:*  AUTOSTICKER 🐶
 ▢ *Comando:* ${usedPrefix + command} autosticker 
-▢ *Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
-
 --------------------------------
-
-▢ *Opción:* PCONLY 👑
 ▢ *Comando:* ${usedPrefix + command} pconly
-▢ *Descripción:* El Bot solo responderá a los comandos si es un chat privado.
-
 --------------------------------
-
-▢ *Opción:* GCONLY 👑
 ▢ *Comando:* ${usedPrefix + command} gconly
-▢ *Descripción:* El Bot solo respondera a los comandos si es un grupo. 
-
 --------------------------------
-
-▢ *Opción:* ANTIVIEWONCE 🐶
 ▢ *Comando:* ${usedPrefix + command} antiviewonce
-▢ *Descripción:* Las imagenes enviadas para ver solo una vez, son reenviadas normal por el Bot. 
-
 --------------------------------
-
-▢ *Opción:* ANTILLAMADAS 👑
 ▢ *Comando:* ${usedPrefix + command} anticall
-▢ *Descripción:* El Bot bloquerá a las personas que llamen al Bot. 
-
 --------------------------------
-
-▢ *Opción:* ANTITOXIC 🐶
 ▢ *Comando:* ${usedPrefix + command} antitoxic
-▢ *Nota:* Se necesita tener activa la función restrict.
-
 --------------------------------
-
-▢ *Opción:* ANTITRABAS 🐶
 ▢ *Comando:* ${usedPrefix + command} antitraba
-▢ *Nota:* Se necesita tener activa la función restrict.
-
 --------------------------------
-
-▢ *Opción:* ANTIARABES 🐶
 ▢ *Comando:* ${usedPrefix + command} antiarabes
-▢ *Nota:* Se necesita tener activo el welcome y el restrict.
-
 --------------------------------
-
-▢ *Opción:* ANTIARABES 2 🐶
 ▢ *Comando:* ${usedPrefix + command} antiarabes2
-▢ *Nota:* Se necesita tener activa la función restrict.
-
 --------------------------------
-
-▢ *Opción:* MODOADMIN 🐶
 ▢ *Comando:* ${usedPrefix + command} modoadmin
-
 --------------------------------
-
-▢ *Opción:* SIMSIMI 🐶
 ▢ *Comando:* ${usedPrefix + command} simsimi
-▢ *Descripción:* El bot empezará a responder a los mensajes usando la IA de SimSimi.
-
 --------------------------------
-
-▢ *Opción:* ANTIDELETE 🐶
 ▢ *Comando:* ${usedPrefix + command} antidelete
-
 --------------------------------
-
-▢ *Opción:* AUDIOS_BOT 👑
 ▢ *Comando:* ${usedPrefix + command} audios_bot
-▢ *Descripción:* Se desactivan los audios del Bot del menuaudios para todos los chats privados.
-
 --------------------------------
-
-▢ *Opción:* MODOIA 👑
 ▢ *Comando:* ${usedPrefix + command} modoia
-▢ *Descripción:* Se activa el modo "Inteligencia Artificial" con ChatGPT en todos los chats privados..
-
 --------------------------------
-
-▢ *Opción:* ANTISPAM 👑
 ▢ *Comando:* ${usedPrefix + command} antispam
-▢ *Descripción:* El Bot detecta cuando un usuario hace spam de comando y lo banea por 5 segundos y lo advierte.
-
 --------------------------------
-
-▢ *Opción:* MODEJADIBOT 👑
 ▢ *Comando:* ${usedPrefix + command} modejadibot
-▢ *Descripción:* Activa o desactiva el uso del comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
-
 --------------------------------
-
-▢ *Opción:* 💬 | ANTIPRIVADO 👑
 ▢ *Comando:* ${usedPrefix + command} antiprivado
 `.trim();
 

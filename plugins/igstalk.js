@@ -2,26 +2,22 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `*🎯 Enter The Instagram Username\n\n📌Example: ${usedPrefix + command} abhishek_ser*`;
+  if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} luisitocomunica*`;
   const res = await igstalk(args[0].replace(/^@/, ''));
   const res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${args[0].replace(/^@/, '')}?apikey=${lolkeysapi}`);
   const res3 = await res2.json();
   const json = JSON.parse(JSON.stringify(res));
-  const iggs = `
-╭─────────────❮
-▢ *UserName:* ${json.username}
-▢ *NickName:* ${json.fullname}
-▢ *Followers:* ${json.followers}
-▢ *Following:* ${json.following}
-▢ *Post:* ${json.post}
-▢ *Link:* https://instagram.com/${json.username.replace(/^@/, '')}
-▢ *Bio:* ${json.bio}
-╰─────────────⦁`.trim();
+  const iggs = `_*< HERRAMENTAS - IGSTALK />*_\n
+ ▢ *Nombre:* ${json.fullname}
+ ▢ *Usuario:* ${json.username}
+ ▢ *Seguidores:* ${json.followers}
+ ▢ *Seguidos:* ${json.following}
+ ▢ *Publicaciones:* ${json.post}
+ ▢ *Enlace:* https://instagram.com/${json.username.replace(/^@/, '')}
+ ▢ *Biografía:*\n${json.bio}`.trim();
   const aa = `${res3.result.photo_profile || res.profile}`;
   await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m);
 };
-handler.help = ['igstalk <username>'];
-handler.tags = ['internet'];
 handler.command = /^(igstalk)$/i;
 export default handler;
 

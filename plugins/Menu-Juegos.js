@@ -31,6 +31,8 @@ const handler = async (m, {conn, usedPrefix}) => {
 🐶͘͜  _delttt_
 🐶͘͜  _acertijo_
 🐶͘͜  _sorteo (nombre de lo que va a sortear)_
+🐶͘͜  _adivinaelnumero_         
+🐶͘͜  _apocalypto_ 
 🐶͘͜  _top *<texto>*_
 🐶͘͜  _topparejas_
 🐶͘͜  _amistad_

@@ -1,25 +1,33 @@
-import fetch from 'node-fetch';
+const handler = {
+    command: "ludo",
+    // Función para manejar las acciones del juego
+    handle: function(command) {
+        switch (command) {
+            case "tirarDados":
+                // Simular tirada de dados
+                break;
+            case "moverFicha":
+                // Mover ficha según la tirada de dados
+                break;
+            case "comerFicha":
+                // Comer ficha de otro jugador
+                break;
+            case "ganar":
+                // Anunciar ganador
+                break;
+        }
+    }
+};
+// Inicializar el juego
+const juego = new Juego(handler);
 
-var handler = async (m, { text,  usedPrefix, command }) => {
-if (!text) return conn.reply(m.chat, `*Ingrese una petición*\n\nEjemplo, !blackbox ?`, m, estilo, )
+while (true) {
+    // Leer comando del jugador
+    const comando = leerComando();
 
-  try {
-    conn.sendPresenceUpdate('composing', m.chat);
-    var apii = await fetch`https://vihangayt.me/tools/blackboxv4?q=${encodeURIComponent(text)}`;
-    const response = await fetch(apiUrl);
-    const data = await response.json();
+    // Procesar comando
+    juego.handle(comando);
 
-    if (data.status && data.data) {
-var res = await apii.json()
-await m.reply(res.result)
-
-} catch (error) {
-console.error(error)
-return conn.reply(m.chat, `*Ocurrió un fallo*`, m, estilo, )
+    // Actualizar la interfaz del juego
+    actualizarInterfaz();
 }
-
-handler.help = ['blackbox'];
-handler.tags = ['ai'];
-handler.command = /^blackbox$/i;
-
-export default handler;

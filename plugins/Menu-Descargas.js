@@ -21,6 +21,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const str = `
 ╭──────╯「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」╰────────╮
 ┆
+┆🐶͘͜  _${usedPrefix}mega *<enlace>*_ 
 ┆🐶͘͜  _${usedPrefix}mediafire *<enlace>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}gitclone *<enlace>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}gdrive *<enlace>*_ 『💎』

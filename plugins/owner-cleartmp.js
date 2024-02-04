@@ -15,7 +15,7 @@ let handler = async (m, { conn, __dirname, args }) => {
   tmpFiles.forEach((file) => unlinkSync(file));
 
   // -- eliminar sesiones del bot ---
-  const Sessions = "./sessions";
+  const Sessions = "./MysticSessopm";
   readdirSync(Sessions).forEach((file) => {
     if (file !== 'creds.json') {
       unlinkSync(`${Sessions}/${file}`, { recursive: true, force: true });

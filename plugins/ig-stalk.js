@@ -1,27 +1,46 @@
+import fetch from 'node-fetch';
 
-import fg from 'api-dylux'
-let handler= async (m, { conn, args, text, usedPrefix, command }) => {
-	
-    if (!args[0]) throw `✳️ Masukkan Nama Pengguna Instagram\n\n📌Contoh: ${usedPrefix + command} nanzone` 
+const handler = async (m, { conn, args }) => {
+    if (!args[0]) {
+        throw `Ingrese el Username de Instagram`;
+    }
+
     try {
-    let res = await fg.igStalk(args[0])
-    let te = `
-┌──「 *STALKING* 
-▢ *🔖Nama:* ${res.name} 
-▢ *🔖Username:* ${res.username}
-▢ *👥Pengikut:* ${res.followersH}
-▢ *🫂Mengikuti:* ${res.followingH}
-▢ *📌Bio:* ${res.description}
-▢ *🏝️Posts:* ${res.postsH}
-▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
-└────────────`
-     await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', te, m)
-      } catch {
-        m.reply(`✳️ Pastikan nama pengguna berasal dari *Instagram*`)
-      }
-}
-handler.help = ['igstalk']
-handler.tags = ['dl']
-handler.command = ['igstalk'] 
+        const apiUrl = `https://api.betabotz.eu.org/api/stalk/ig?username=${args[0]}&apikey=B29wmghC`;
 
-export default handler
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (data.status && data.result) {
+            const userInfo = data.result.user_info;
+
+            const infoMessage = `
+                *${userInfo.full_name}/@${userInfo.username}*
+
+*Biografía:* ${userInfo.biography}
+*Enlace externo:* ${userInfo.external_url}
+*Cuenta privada:* ${userInfo.is_private ? 'Sí' : 'No'}
+*Verificado:* ${userInfo.is_verified ? 'Sí' : 'No'}
+
+*Estadísticas:*
+Posts: ${userInfo.posts}
+Seguidores: ${userInfo.followers}
+Siguiendo: ${userInfo.following}
+${userInfo.external_url}
+            `;
+
+            await conn.sendFile(m.chat, userInfo.profile_pic_url, 'profile_pic.jpg', infoMessage, m);
+        } else {
+            throw 'No se pudo obtener la información de Instagram.';
+        }
+    } catch (error) {
+        console.error(error);
+        throw 'Ocurrió un error al procesar la solicitud';
+    }
+};
+
+handler.help = ['igstalk'];
+handler.tags = ['dl'];
+handler.command = ['igstalk'];
+
+export default handler;

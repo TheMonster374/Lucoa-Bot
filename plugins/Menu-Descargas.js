@@ -37,6 +37,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┆🐶͘͜  _${usedPrefix}facebook *<enlace>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}tiktok *<enlace>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}instagram *<enlace>*_ 『💎』
+┆🐶͘͜  _${usedPrefix}igstalk *<enlace>*_ 
 ┆🐶͘͜  _${usedPrefix}play *<texto>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}play2 *<texto>*_ 『💎』
 ┆🐶͘͜  _${usedPrefix}play.1 *<texto>*_ 『💎』

@@ -23,6 +23,8 @@ const handler = async (m, {conn, usedPrefix}) => {
 🐶͘͜  _rata *<nombre / @tag>*_
 🐶͘͜  _love *<nombre / @tag>*_
 🐶͜  _doxear *<nombre / @tag>*_
+🐶͜  _caso_
+🐶͜  _capitales_
 🐶͘͜  _pregunta *<texto>*_
 🐶͘͜  suitpvp *<@tag>*_
 🐶͘͜  _slot *<apuesta>*_

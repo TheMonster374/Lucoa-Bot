@@ -3,10 +3,7 @@ let db = {};
 
 command(
   {
-    pattern: "ludo",
-    fromMe: false,
-    desc: "play ludo",
-    type: "user",
+handler.command = /^ludo$/i
   },
   async (message, match) => {
     var points = Math.floor(Math.random() * 5) + 1;

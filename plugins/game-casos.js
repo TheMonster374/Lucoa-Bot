@@ -1,7 +1,7 @@
 import fs from 'fs'
 
 let timeout = 180000
-let point = 10000
+let poin = 10000
 
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tekateki = conn.tekateki ? conn.tekateki : {}
@@ -27,7 +27,7 @@ Recuerda responder con el nombre completo del presunto culpable!
 `.trim()
     conn.tekateki[id] = [
        await conn.reply(m.chat, caption, m),
-        json, point,
+        json, poin,
         setTimeout(async () => {
             if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo!, intenta resolver de nuevo un caso policiaco.`, conn.tekateki[id][0])
             delete conn.tekateki[id]

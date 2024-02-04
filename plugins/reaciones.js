@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
           }})
   
   }
-handler.customPrefix = /(kick|bot de mierda)/i
+handler.customPrefix = /(que|rra|bot de mierda)/i
 handler.command = new RegExp
   
 handler.mods = false

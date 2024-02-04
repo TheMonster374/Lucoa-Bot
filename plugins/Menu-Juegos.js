@@ -26,7 +26,8 @@ const handler = async (m, {conn, usedPrefix}) => {
 🐶͘͜  _pregunta *<texto>*_
 🐶͘͜  suitpvp *<@tag>*_
 🐶͘͜  _slot *<apuesta>*_
-🐶͘͜  _ttt *<nombre sala>*_
+🐶͘͜  _buscaminas*_
+🐶͘͜  _ttt *<nombre sala_
 🐶͘͜  _delttt_
 🐶͘͜  _acertijo_
 🐶͘͜  _sorteo (nombre de lo que va a sortear)_

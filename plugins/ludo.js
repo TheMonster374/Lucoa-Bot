@@ -1,27 +1,22 @@
 import fetch from 'node-fetch';
 
-const handler = async (m, { conn, text }) => {
-  if (!text) {
-    throw 'Por favor, proporciona un texto';
-  }
+var handler = async (m, { text,  usedPrefix, command }) => {
+if (!text) return conn.reply(m.chat, `*Ingrese una petición*\n\nEjemplo, !blackbox ?`, m, estilo, )
 
   try {
     conn.sendPresenceUpdate('composing', m.chat);
-
-    const apiUrl = `https://vihangayt.me/tools/blackboxv4?q=${encodeURIComponent(text)}`;
+    var apii = await fetch`https://vihangayt.me/tools/blackboxv4?q=${encodeURIComponent(text)}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
 
     if (data.status && data.data) {
-      const respuestaApi = data.data;
-      conn.reply(m.chat, respuestaApi, m);
-    } else {
-      throw 'No se pudo obtener una respuesta válida';
-    }
-  } catch (error) {
-    throw `Ocurrió un error: ${error}`;
-  }
-};
+var res = await apii.json()
+await m.reply(res.result)
+
+} catch (error) {
+console.error(error)
+return conn.reply(m.chat, `*Ocurrió un fallo*`, m, estilo, )
+}
 
 handler.help = ['blackbox'];
 handler.tags = ['ai'];

@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import axios from "axios";
 import { translate } from "@vitalets/google-translate-api";
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text }) => {
   if (!text)
     throw `⚠️️ *Ingrese el nombre de su personaje.*\n*Ejemplo* : ${
       usedPrefix + command

@@ -34,7 +34,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
             m.reply(`𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙞𝙣𝙨𝙩𝙖𝙡𝙡𝙚𝙙 𝙩𝙝𝙚 𝙥𝙡𝙪𝙜𝙞𝙣 𝙩𝙤 𝙅𝙤𝙩𝙘𝙝𝙪𝙖-𝘽𝙤𝙩`);
         }
     } catch (error) {
-        throw `Error fetching or saving the plugin: ${error.message}`;
+        throw `Error fetching or saving the plugin`;
     }
 };
 

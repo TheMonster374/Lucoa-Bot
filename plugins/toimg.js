@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     await conn.sendNyanCat(m.chat, global.wait, catalogo, estilo, null, md, m)
     let media = await q.download()
     let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
-    await conn.sendFile(m.chat, out, 'out.png', '*✅ Aquí tienes⚘*', m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: `h`, mediaType: 2, sourceUrl: linkgc, thumbnail: miniurl}}}, { quoted: m })
+    await conn.sendFile(m.chat, out, 'out.png', '*✅ Aquí tienes⚘*', m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: `h`, mediaType: 2, sourceUrl: md, thumbnail: miniurl}}}, { quoted: m })
 }
 handler.help = ['toimg *<sticker>*']
 handler.tags = ['sticker']

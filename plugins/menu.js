@@ -38,6 +38,10 @@ ayuda cabrones se busca  ayuda para cosas del bot :,v
 ︙🐕︙ _*​ᴘᴇꜱᴏꜱ*_ : ${user.exp}
 ︙🐕︙ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 ︙🐕︙ _*ʀᴏʟ*_ : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'bot xdxd', 'maricon', 'negro', 'masoquista', 'secuestrador de nenas', 'don pajas', 'violador'])}
+${date}
+${uptime}
+${week}
+
 
 ╭─────────────┈⊷
 │「 _*ɪɴꜰᴏ ʙᴏᴛ*_ 」  

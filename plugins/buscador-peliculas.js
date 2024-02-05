@@ -16,7 +16,7 @@ const handler = async (m, {text, usedPrefix, command, conn}) => {
   }
   if (aaaa == '') throw '*no se encontro ninguna pelicula*';
   const res = await aaaa.map((v) => `*🎬 • Nombre:* ${v.title}\n*🍿 • Url:* ${v.link}`).join`\n\n───────────────\n\n`;
-  const ads = '*💫 • Bloqueador de anuncios recomendado:* Block This\n*⛨ • Link:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n';
+  const ads = '*💫 • Bloqueador de anuncios recomendado:* Block This\n*⛨ • Link:* https://block-this.com/block-this-latest.apk\n\n-----------------------------------------\n\n';
   conn.sendMessage(m.chat, {image: {url: img}, caption: ads + res}, {quoted: m});
 };
 handler.command = ['cuevana', 'pelisplus'];

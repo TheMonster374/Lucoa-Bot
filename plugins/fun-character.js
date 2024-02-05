@@ -1,35 +1,32 @@
-let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
-    if (!text) throw "Menciona de quién quieres comprobar el carácter"
-    const mentionedUser = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
- const userChar = [
-      "Sigma",
-      "Generous",
-      "Grumpy",
-      "Overconfident",
-      "Obedient",
-      "Good",
-      "Simp",
-      "Kind",
-      "Patient",
-      "Pervert",
-      "Cool",
-      "Helpful",
-      "Brilliant",
-      "Sexy",
-      "Hot",
-      "Gorgeous",
-      "Cute",
-    ]
-    const userCharacterSeletion =
-      userChar[Math.floor(Math.random() * userChar.length)]
+import fetch from "node-fetch";
+import axios from "axios";
+import { translate } from "@vitalets/google-translate-api";
 
-    let message = `Character of @${mentionedUser.split("@")[0]}  is *${userCharacterSeletion}* 🔥⚡`
-    
-    conn.sendMessage(m.chat, { text: message, mentions: [mentionedUser] }, { quoted: m })
-    
-}
-handler.help = ["character @tag"]
-handler.tags = ['fun']
-handler.command = /^(character)/i
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text)
+    throw `⚠️️ *Ingrese el nombre de su personaje.*\n*Ejemplo* : ${
+      usedPrefix + command
+    } Goku`;
+  try {
+    const res = await axios.get(
+      `https://weeb-api.vercel.app/character?search=${text}`
+    );
+    const { id, name, gender, imageUrl, siteUrl, description } = res.data[0];
+    let desc = await translate(`${description}`, {
+      to: "es",
+      autoCorrect: true,
+    });
+    let gen = await translate(`${gender}`, { to: "es", autoCorrect: true });
+    const result = `↳  *Nombre:* ${name.full}\n↳  *Nombre Nativo:* ${name.native}\n↳  *Genero:* ${gen.text}\n↳  *Link:* ${siteUrl}\n↳  *Descripcion:* ${desc.text}`;
 
-export default handler 
+    conn.sendFile(m.chat, imageUrl, "out.png", result, m);
+  } catch {
+    m.reply("*_Lo siento, al parecer no se encontro este personaje._*");
+  }
+};
+
+handler.help = ["character *<nombre>*"];
+handler.tags = ["search"];
+handler.command = ["character"];
+
+export default handler;

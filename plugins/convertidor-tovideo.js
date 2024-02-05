@@ -1,1 +1,28 @@
-import{webp2mp4}from'../lib/webp2mp4.js';import{ffmpeg}from'../lib/converter.js';const handler=async(_0x4810d7,{conn:_0x2a0e61,usedPrefix:_0x186f90,command:_0x4e3591})=>{if(!_0x4810d7['quoted'])throw'[❗]\x20respond\x20to\x20a\x20sticker\x20I\x20give\x20you\x20an\x20example\x20'+(_0x186f90+_0x4e3591);const _0x997046=_0x4810d7['quoted']['mimetype']||'';if(!/webp/['test'](_0x997046))throw'.\x20.\x20a\x20.\x20to\x20.\x20.\x20.r\x20.\x20.\x20'+(_0x186f90+_0x4e3591);const _0x4837ae=await _0x4810d7['quoted']['download']();let _0x5b8c86=Buffer['alloc'](0x0);if(/webp/['test'](_0x997046))_0x5b8c86=await webp2mp4(_0x4837ae);else/audio/['test'](_0x997046)&&(_0x5b8c86=await ffmpeg(_0x4837ae,['-filter_complex','color','-pix_fmt','yuv420p','-crf','51','-c:a','copy','-shortest'],'mp3','mp4'));await _0x2a0e61['sendFile'](_0x4810d7['chat'],_0x5b8c86,'error.mp4','*DONE*',_0x4810d7,0x0,{'thumbnail':_0x5b8c86});};handler['help']=['tovideo'],handler['tags']=['sticker'],handler['command']=['tovideo','tomp4','mp4','togif'];export default handler;
+import { webp2mp4 } from '../lib/webp2mp4.js'
+import { ffmpeg } from '../lib/converter.js'
+
+let handler = async (m, { conn }) => {
+    if (!m.quoted) throw '⚠️️ *_Responde a un sticker animado._*'
+    let mime = m.quoted.mimetype || ''
+    if (!/webp|audio/.test(mime)) throw '⚠️ *_Responde a un sticker animado._*'
+    let media = await m.quoted.download()
+    let out = Buffer.alloc(0)
+    await conn.sendNyanCat(m.chat, global.wait, catalogo, estilo, null, md, m)
+    if (/webp/.test(mime)) {
+        out = await webp2mp4(media)
+    } else if (/audio/.test(mime)) {
+        out = await ffmpeg(media, [
+            '-filter_complex', 'color',
+            '-pix_fmt', 'yuv420p',
+            '-crf', '51',
+            '-c:a', 'copy',
+            '-shortest'
+        ], 'mp3', 'mp4')
+    }
+    await conn.sendFile(m.chat, out, 'tovid.mp4', '*✅ Sticker a video*' , m)
+}
+handler.help = ['tovid']
+handler.tags = ['sticker']
+handler.command = ['tovideo', 'tovid']
+
+export default handler

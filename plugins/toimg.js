@@ -1,21 +1,17 @@
 import { webp2png } from '../lib/webp2mp4.js'
-
-var handler = async (m, { conn, usedPrefix, command }) => {
-
-const notStickerMessage = `*⚠️ RESPONDA CON ${usedPrefix + command} AL STICKER QUE DESEE CONVERTIR EN IMAGEN*`
-if (!m.quoted) throw notStickerMessage 
-const q = m.quoted || m
-let mime = q.mediaType || ''
-if (!/sticker/.test(mime)) throw notStickerMessage
-let media = await q.download()
-let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
-await conn.sendFile(m.chat, out, 'error.png', null, fkontak, m)
-
+let handler = async (m, { conn, usedPrefix, command }) => {
+    const notStickerMessage = `⚠️️ *_Responde a un sticker con :_*\n\n *${usedPrefix + command}*`
+    if (!m.quoted) throw notStickerMessage
+    const q = m.quoted || m
+    let mime = q.mediaType || ''
+    if (!/sticker/.test(mime)) throw notStickerMessage
+    await conn.sendNyanCat(m.chat, global.wait, adnyancat, adsticker, null, script, m)
+    let media = await q.download()
+    let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
+    await conn.sendFile(m.chat, out, 'out.png', '*✅ Aquí tienes⚘*', m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: `h`, mediaType: 2, sourceUrl: linkgc, thumbnail: miniurl}}}, { quoted: m })
 }
-handler.help = ['toimg']
-handler.tags = ['transformador']
-handler.command = ['toimg', 'jpg', 'jpge', 'png']
-
-handler.limit = true
+handler.help = ['toimg *<sticker>*']
+handler.tags = ['sticker']
+handler.command = ['toimg', 'jpg', 'aimg'] 
 
 export default handler

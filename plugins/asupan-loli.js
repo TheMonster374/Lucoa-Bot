@@ -11,6 +11,4 @@ let handler = async (m, { conn, text }) => {
 handler.command = /^(asupanloli)$/i
 handler.tags = ['internet']
 handler.help = ['asupanloli']
-handler.premium = false
-handler.limit = true
 export default handler

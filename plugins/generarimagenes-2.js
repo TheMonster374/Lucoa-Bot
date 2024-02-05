@@ -1,39 +1,21 @@
-import axios from "axios"
-import fetch from "node-fetch"
+import { sticker } from '../lib/sticker.js'
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  let wm = global.wm;
-
-  if (!text) throw `This command generates image from texts\n\n Example usage\n${usedPrefix + command} girl big oppai, hair cut collor red, full body, bokeh`;
-  await m.reply(wait);
-
-  await conn.relayMessage(m.chat, { reactionMessage: { key: m.key, text: '👌' } }, { messageId: m.key.id });
-  try {
-      let url = `https://api.neoxr.eu/api/waifudiff?q=${text}`;
-
-      // Mengambil respon dari API
-      let response = await fetch(url);
-      let json = await response.json();
-
-      // Mengambil nilai "url" dari properti "data" dalam respon JSON
-      let imageUrl = json.data.url;
-
-      // Mengirim file gambar ke obrolan
-      await conn.sendFile(m.chat, await (await fetch(imageUrl)).buffer(), 'fubuki.jpg', wm, m);
-      m.react(done);
-
-  } catch (e) {
-      console.log(e);
-      conn.reply(pickname);
-  }
+let handler = async (m, { conn }) => {
+	
+  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  let marah = global.API('https://some-random-api.ml', '/canvas/triggered', {
+    avatar: await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png'), 
+  })
+  await conn.sendNyanCat(m.chat, global.wait,  null, m)
+let stiker = await sticker(false, marah, global.packname, global.author)
+  if (stiker) return await conn.sendFile(m.chat, stiker, null, { asSticker: true }, m, true, { contextInfo:  { quoted: m }})
+  
+  throw stiker.toString()
 }
 
-handler.help = ['waifudiff <prompt>']
-handler.tags = ['ai']
-handler.command = /^(imagenIA)$/i
 
-handler.premium = false
-handler.limit = 2
-handler.register = true
+handler.help = ['trigger *<@user>*']
+handler.tags = ['sticker']
+handler.command = ['trigger', 'triggered', 'ger'] 
 
 export default handler

@@ -12,7 +12,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     const mime = (q.msg || q).mimetype || q.mediaType || '';
     if (/webp|image|video/g.test(mime)) {
       const img = await q.download?.();
-      if (!img) throw `*y la imagen?*`;
+      if (!img) throw `𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞 𝐚 𝐮𝐧 𝐯𝐢𝐝𝐞𝐨 𝐨 𝐢𝐦𝐚𝐠𝐞𝐧 𝐩𝐚𝐫𝐚 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐞𝐧 𝐢𝐦𝐚𝐠𝐞𝐧 🐶`;
       let out;
       try {
         stiker = await sticker(img, false, global.packname, global.author);
@@ -29,14 +29,14 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author);
-      else return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 / 𝚄𝚁𝙻 / 𝙻𝙸𝙽𝙺 𝙽𝙾 𝙴𝚂 𝚅𝙰𝙻𝙸𝙳𝙰, 𝙻𝙰 𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 / 𝚄𝚁𝙻 / 𝙻𝙸𝙽𝙺 𝙳𝙴𝙱𝙴 𝚂𝙴𝚁 .𝚓𝚙𝚐, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix}s https://telegra.ph/file/0dc687c61410765e98de2.jpg*');
+      else return m.reply('🐶 𝐎𝐜𝐮𝐫𝐫𝐢𝐨 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫 🐶 \n\n 𝐞𝐥 𝐞𝐧𝐥𝐚𝐜𝐞 / 𝐮𝐫𝐥 / 𝐥𝐢𝐧𝐤 𝐧𝐨 𝐞𝐬 𝐯𝐚𝐥𝐢𝐝𝐨, 𝐞𝐥 𝐥𝐢𝐧𝐤 𝐭𝐢𝐞𝐧𝐞 𝐪𝐮𝐞 𝐬𝐞𝐫 .𝐣𝐩𝐠  \n\n 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: ${usedPrefix}s https://telegra.ph/file/0dc687c61410765e98de2.jpg');
     }
   } catch (e) {
     console.error(e);
     if (!stiker) stiker = e;
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m);
-    else throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙾𝙲𝚄𝚁𝚁𝙸𝙾 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾. 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝚅𝙸𝙳𝙴𝙾, 𝙸𝙼𝙰𝙶𝙴𝙽 𝙾 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝚄𝙽𝙰 𝙸𝙼𝙰𝙶𝙴𝙽 𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝙲𝙸𝙾́𝙽 .𝚓𝚙𝚐 𝙴𝙻 𝙲𝚄𝙰𝙻 𝚂𝙴𝚁𝙰 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁*';
+    else throw '🐶 𝐎𝐜𝐮𝐫𝐫𝐢𝐨 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫 🐶 \n\n 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞 𝐚 𝐮𝐧 𝐯𝐢𝐝𝐞𝐨 𝐨 𝐢𝐦𝐚𝐠𝐞𝐧 𝐩𝐚𝐫𝐚 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐞𝐧 𝐢𝐦𝐚𝐠𝐞𝐧';
   }
 };
 handler.help = ['sfull'];

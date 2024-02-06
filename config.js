@@ -35,6 +35,14 @@ global.owner = [
   ['']
 ];
 
+// [ES] > Agregué uno de los idiomas disponibles para el Bot en "mid".
+// [EN] > I added one of the languages available for the Bot in "mid".
+
+// ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
+// Español 👉 es           
+// English 👉 en
+global.lenguajeJZ = es
+
 global.suittag = [''];
 global.prems = [''];
 //━━━━━━━STICKERS━━━━━━━━━━━━ 

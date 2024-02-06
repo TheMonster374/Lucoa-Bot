@@ -36,7 +36,7 @@ HOLA
     conn.reply(m.chat, '*Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
   }
 };
-handler.command = /^(gift|Gift|Comandos|comandos|cmds|cmd|MENU|help|ayuda)$/i;
+handler.command = /^(meme|Meme|MEME|Momazo|momazo)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

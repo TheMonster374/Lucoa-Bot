@@ -1,4 +1,5 @@
 import {createHash} from 'crypto';
+const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js'); 
 const Reg = /\|?(.*)([.|] *?)([0-9]*)$/i;
 const handler = async function(m, {conn, text, usedPrefix, command}) {
   const user = global.db.data.users[m.sender];
@@ -13,6 +14,10 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   age = parseInt(age);
   if (age > 100) throw '*como sigues vivo con esa edad? 👴🏻*';
   if (age < 5) throw '*un bebé que sabe usar WhatsApp? 😲*';
+  let user = global.db.data.users[m.sender]
+let codigosIdiomas = ['es', 'en']
+let nombresIdiomas = {'es': 'Español', 'en': 'English' }
+if (user.registered === true) return m.reply(lenguaje.smsReg()) 
   user.name = name.trim();
   user.age = age;
   user.regTime = + new Date;

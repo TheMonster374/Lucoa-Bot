@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-const { menu }
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
@@ -39,7 +38,7 @@ ayuda cabrones se busca  ayuda para cosas del bot :,v
 ︙🐕︙ _*​ᴘᴇꜱᴏꜱ*_ : ${user.exp}
 ︙🐕︙ _*​ᴘʀᴇᴍɪᴜᴍ​*_ : ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 ︙🐕︙ _*ʀᴏʟ*_ : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'bot xdxd', 'maricon', 'negro', 'masoquista', 'secuestrador de nenas', 'don pajas', 'violador'])}
-║${lenguaje.menu.text}
+${lenguajeJT['menu.text']()
 
 
 

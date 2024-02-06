@@ -25,6 +25,4 @@ conn.reply(m.chat, '*☓ Ocurrió un error inesperado*', m, )
 handler.help = ['instagram'].map(v => v + ' <url ig>')
 handler.tags = ['downloader'];
 handler.command = /^(instagramdl|instagram|igdl|ig)$/i;
-handler.star = 2
-handler.register = true 
 export default handler

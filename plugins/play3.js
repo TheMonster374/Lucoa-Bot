@@ -123,7 +123,7 @@ await conn.sendMessage(m.chat, {document: {url: n2}, fileName: `${n}.mp4`, mimet
 } catch {
 }}}}
 } catch {
-  await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}𝙀𝙍𝙍𝙊𝙍 𝙉𝙊 𝙁𝙐𝙀 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊/𝘼𝙐𝘿𝙄𝙊 𝙑𝙐𝙀𝙇𝙑𝙀 𝘼𝙇 𝙄𝙉𝙏𝙀𝙉𝙏𝘼`, fkontak, m) 
+  await conn.reply(m.chat, `𝙀𝙍𝙍𝙊𝙍 𝙉𝙊 𝙁𝙐𝙀 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊/𝘼𝙐𝘿𝙄𝙊 𝙑𝙐𝙀𝙇𝙑𝙀 𝘼𝙇 𝙄𝙉𝙏𝙀𝙉𝙏𝘼`, fkontak, m) 
 handler.limit = 0
 }}
 handler.help = ['play3', 'play4'].map((v) => v + ' < busqueda >');

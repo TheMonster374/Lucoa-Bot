@@ -6,6 +6,7 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
+const { en, es, ar, id, pt, rs} = require('./libs/idiomas/total-idiomas.js') 
 
 
 global.botnumber = "" //Ejemplo: +59309090909

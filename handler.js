@@ -8,6 +8,7 @@ import fs from 'fs';
 import chalk from 'chalk';
 import mddd5 from 'md5';
 import ws from 'ws';
+const { en, es, id, ar } = require('./idiomas/total-idiomas.js') 
 
 /**
  * @type {import('@whiskeysockets/baileys')}

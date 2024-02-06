@@ -1,5 +1,4 @@
 import {createHash} from 'crypto';
-const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js'); 
 const Reg = /\|?(.*)([.|] *?)([0-9]*)$/i;
 const handler = async function(m, {conn, text, usedPrefix, command}) {
   const user = global.db.data.users[m.sender];

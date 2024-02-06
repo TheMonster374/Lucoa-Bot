@@ -11,9 +11,9 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   if (!text) throw `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_ \n\n*Hace falta el título o enlace del video de YouTube.*\n\n**Ejemplo:* _${usedPrefix + command} turn it up (feat. 6arelyhuman)_`;
     const yt_play = await search(args.join(' '));
     let additionalText = '';
-    if (command === 'play') {
+    if (command === 'playX') {
       additionalText = 'audio';
-    } else if (command === 'play2') {
+    } else if (command === 'playX2') {
       additionalText = 'vídeo';
     }
     const texto1 = `_*𝐘𝐓 𝐏𝐋𝐀𝐘*_ \n\n🐶 *Título:* ${yt_play[0].title}\n🐕 *Publicado:* ${yt_play[0].ago}\n\n⌛ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n👤 *Autor:* ${yt_play[0].author.name}\n🕳 *Enlace:* ${yt_play[0].url}\n\n*Se está enviando el ${additionalText}. espere...*`.trim();
@@ -64,7 +64,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 };
-handler.command = /^(play|play2)$/i;
+handler.command = /^(playX|playX2)$/i;
 handler.limit = 2
 export default handler;
 

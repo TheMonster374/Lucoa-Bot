@@ -34,9 +34,6 @@ global.owner = [
   ['']
 ];
 
-// [ES] > Agregué uno de los idiomas disponibles para el Bot en "mid".
-// [EN] > I added one of the languages available for the Bot in "mid".
-
 
 global.suittag = [''];
 global.prems = [''];
@@ -80,8 +77,6 @@ global.mods = [];
 global.rwait = '⏰'
 global.done = '✅'
 global.error = '❌'
-
-global.lenguaje = es //Predeterminado en idioma Español 
 
 global.nn = 'https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ' //Grupo ofc
 //━━━━━━━━━━━━━━━━━━━━━━ 

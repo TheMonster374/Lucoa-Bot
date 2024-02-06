@@ -1,65 +1,20 @@
-const fetch = require('node-fetch');
+ const fetch = require('node-fetch')
 
-let handler = async (m, {
-  conn,
-  text,
-  usedPrefix,
-  command
-}) => {
-  if (command == 'bing') {
-    if (!text) throw `Example : ${usedPrefix + command} siapa presiden Indonesia?`;
-    try {
-      m.reply(wait)
-      let response = await fetch('https://api.betabotz.eu.org/api/search/bing-chat', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            text: text,
-            apikey: lann
-          })
-        })
-        .then(res => res.json());
-
-      await conn.reply(m.chat, response.message, m);
-    } catch (e) {
-      console.log(e);
-      throw `*Error:* ${eror}`;
-    }
-  }
-  if (command == 'bingimg') {
-    if (!text) throw `Contoh: ${usedPrefix + command} anak berlari menggunakan pakaian merah 3d animation`;
-    try {
-      m.reply(wait)
-      let response = await fetch('https://api.betabotz.eu.org/api/search/bing-img', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            text: text,
-            apikey: lann
-          })
-        })
-        .then(res => res.json());
-
-      for (let i = 0; i < 4; i++) {
-        let img = response.result[i]
-        await sleep(3000)
-        await conn.sendFile(m.chat, img, 'bing_img.png', `*PROMPT:* ${text}`, m)
-      }
-    } catch (error) {
-      throw `Error: ${eror}`
-    }
+let handler = async (m, { text, usedPrefix, command }) => {
+  if (!text) throw(`escribe algo!\n ejemplo: ${usedPrefix + command} que es la omnipotencia`)    
+  try {
+    let [ prompt, logic ] = text.split('|')
+    m.reply(`cargando espere`)
+    let res = await fetch(`https://api.betabotz.eu.org/api/search/c-ai?prompt=${prompt}?&char=${logic}&apikey=${lann}`)
+    let json = await res.json()
+    m.reply(json.message)
+  } catch (error) {
+    console.error(error)
+    m.reply('ocurrio un error en la api.')
   }
 }
 
-handler.command = ['bing']
+handler.command = ['c-ai','character-ai']
 handler.tags = ['tools']
 
 module.exports = handler
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}

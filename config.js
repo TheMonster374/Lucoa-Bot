@@ -34,6 +34,7 @@ global.owner = [
   ['']
 ];
 
+global.lenguajeJT = es //idioma de Jotchua-Bot
 
 global.suittag = [''];
 global.prems = [''];

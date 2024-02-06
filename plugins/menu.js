@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+const { menu }
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {

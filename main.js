@@ -351,13 +351,6 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  //---------------------[ MULTILENGUAJE ]------------------------
-const { es,} = require('./libs/idiomas/total-idiomas.js')
-let user = global.db.data.users[m.sender]
-if (user.Language == 'es') {
-global.lenguaje = es
-}    
-
   conn.welcome = '*「 Bienvenido 」\n 「 @user 」\n    Bienvenido a\n    @subject';
   conn.bye = '*「 ADIOS 👋 」\n「 @user 」\n Se fue\n adios';
   conn.spromote = '*@user Fue promovido a administrador.*';

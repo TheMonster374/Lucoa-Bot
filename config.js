@@ -81,6 +81,7 @@ global.rwait = '⏰'
 global.done = '✅'
 global.error = '❌'
 
+global.lenguaje = es //Predeterminado en idioma Español 
 
 global.nn = 'https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ' //Grupo ofc
 //━━━━━━━━━━━━━━━━━━━━━━ 

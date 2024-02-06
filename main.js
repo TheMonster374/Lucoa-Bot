@@ -351,8 +351,15 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*𝘑𝘰𝘵𝘤𝘩𝘶𝘢🐶* \n「 Bienvenido 」\n 「 @user 」\n    Bienvenido a\n    @subject\n   ⳹';
-  conn.bye = '*𝘑𝘰𝘵𝘤𝘩𝘶𝘢 🐶* \n│「 ADIOS 👋 」\n「 @user 」\n Se fue\n  nunca te quisimos aqui🐶\n   ⳹';
+  //---------------------[ MULTILENGUAJE ]------------------------
+const { es,} = require('./libs/idiomas/total-idiomas.js')
+let user = global.db.data.users[m.sender]
+if (user.Language == 'es') {
+global.lenguaje = es
+}    
+
+  conn.welcome = '*「 Bienvenido 」\n 「 @user 」\n    Bienvenido a\n    @subject';
+  conn.bye = '*「 ADIOS 👋 」\n「 @user 」\n Se fue\n adios';
   conn.spromote = '*@user Fue promovido a administrador.*';
   conn.sdemote = '*@user Fue degradado de administrador.*';
   conn.sDesc = '*La descripción del grupo ha sido modificada.*';

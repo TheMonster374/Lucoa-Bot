@@ -46,7 +46,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
             const txt1 = `🔗 *𝚄𝚁𝙻:* ${shortUrl1}`.trim();
             await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
           } catch {
-            throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*`;
+            throw `*${lenguaje.avisos.text}*`;
           }
         }
       }

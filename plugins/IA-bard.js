@@ -2,7 +2,8 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { text,  usedPrefix, command }) => {
 
-if (!text) return conn.reply(m.chat, `*Ingrese una petición*\n\nEjemplo, !bard Conoces Jotchua-Bot?`, m, estilo, )
+if (!text) return conn.reply(m.chat, `*Ingrese una petición*\n\nEjemplo, !bard Conoces Jotchua-Bot?   
+`*${lenguaje.avisos.text}*`;`, m, estilo, )
 
 try {
 

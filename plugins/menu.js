@@ -4,24 +4,24 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'INFO',
-  'game': 'JUEGOS',
-  'serbot': 'SUB BOTS',
-  'rpg': 'ECONOMÍA',
-  'rg': 'REGISTRO',
-  'downloader': 'DESCARGAS',
+  'main': '📄ɪɴꜰᴏ📄',
+  'game': 'ᴊᴜᴇɢᴏꜱ🎮',
+  'serbot': 'ꜱᴜʙ ʙᴏᴛꜱ🤖',
+  'rpg': 'ᴇᴄᴏɴᴏᴍɪᴀ💸',
+  'rg': 'ʀᴇɢɪꜱᴛʀᴏ📊',
+  'downloader': 'ᴅᴇꜱᴄᴀʀɢᴀꜱ📤',
 //  'marker': 'LOGO - MAKER',
-  'nable': 'ACTIVADORES',
-  'group': 'GRUPOS',
-  'search': 'BUSCADOR',
-  'img': 'IMÁGENES',
-  'tools': 'HERRAMIENTAS',
-  'fun': 'DIVERCIÓN',
-  'audio': 'EFECTO DE AUDIOS', 
-  'sticker': 'STICKERS',
-  'nsfw': 'NSFW',
-  'owner': 'CREADOR',
-  'advanced': 'AVANZADO',
+  'nable': 'ᴀᴄᴛɪᴠᴀᴅᴏʀᴇꜱ📋',
+  'group': 'ɢʀᴜᴘᴏꜱ🌱',
+  'search': 'ʙᴜꜱᴄᴀᴅᴏʀ🔍',
+  'img': 'ɪᴍᴀɢᴇɴᴇꜱ🖼',
+  'tools': 'ʜᴇʀʀᴀᴍɪᴇɴᴛᴀꜱ🔧',
+  'fun': 'ᴅɪᴠᴇʀᴄɪᴏɴ🎉',
+  'audio': 'ᴇꜰᴇᴄᴛᴏꜱ ᴅᴇ ᴀᴜᴅɪᴏꜱ🔊', 
+  'sticker': 'ꜱᴛɪᴄᴋᴇʀꜱ🧸',
+  'nsfw': '🔞ɴꜱꜰᴡ🔞',
+  'owner': 'ᴄʀᴇᴀᴅᴏʀ🌼',
+  'advanced': 'ᴀᴠᴀɴᴢᴀᴅᴏ',
 }
 
 const defaultMenu = {
@@ -33,18 +33,18 @@ Hola *%taguser*,
 ╭━─━─━─≪🐶≫─━─━─━╮
 ┆ *Nombre* : %name
 ┆ *diamantes* : %limit
-┆ *📈 Nivel* : %level
-┆ *💫 XP* : %totalexp
+┆ *Nivel* : %level
+┆ *XP* : %totalexp
 ╰━─━─━─≪🐶≫─━─━─━╯
 %readmore
 ─────────────────────────────
 
 \t\t\t*L I S T A  -  M E N Ú S*
 `.trimStart(),
-  header: '╭───*%category*─────╮',
+  header: '╭───%category─────╮',
   body: '│ *%cmd*\n',
   footer: '╰──────────────────╯ ',
-  after: '\n*Simple WhatsApp Bot Multi Device*',
+  after: '\n*Jotchua - Bot - Mini*',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {

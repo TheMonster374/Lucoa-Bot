@@ -53,9 +53,15 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
-//━━━━━━━━━━━━━━━━━━━━━━ 
+//━━━━━━IMAGENES 2━━━━━━━━━━ 
 
+global.imgmenu = fs.readFileSync('./Menu3.png') 
+global.ytlogo = fs.readFileSync('./Menu3.png') 
+global.miniurl = fs.readFileSync('./Menu.png') 
+global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
+global.thumbnail = fs.readFileSync('./Menu.png')
+
+//━━━━━━━━━━━━━━━
 global.desc = 'Simple WhatsApp Bot Multi Device'
 
 //━━━━━━━MARCA━━━━━━━━ 

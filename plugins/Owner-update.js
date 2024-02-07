@@ -4,8 +4,8 @@ const handler = async (m, { conn, text }) => {
   try {
           const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
           let messager = stdout.toString()
-          if (messager.includes('Already up to date.')) messager = '_*𝐀𝐜𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐢𝐨𝐧*_\n\n*[ ✅ ] No hay actualizaciones pendientes.*'
-          if (messager.includes('Updating')) messager = '_*𝐀𝐜𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐢𝐨𝐧*_\n\n*Actualización finalizada exitosamente.*\n\n' + stdout.toString()
+          if (messager.includes('Already up to date.')) messager = '_*[🐶] ᴀᴄᴛᴜʟɪᴢᴀʀ [🐶]*_\n\n*[ ✅ ] No hay actualizaciones pendientes.*'
+          if (messager.includes('Updating')) messager = '_*[🐶] ᴀᴄᴛᴜʟɪᴢᴀʀ [🐶]*_\n\n*Actualización finalizada exitosamente.*\n\n' + stdout.toString()
           conn.reply(m.chat, messager, m);
   } catch {      
  try {    
@@ -23,13 +23,13 @@ const handler = async (m, { conn, text }) => {
           })
           .filter(Boolean);
         if (conflictedFiles.length > 0) {
-          const errorMessage = `_*𝐀𝐜𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐢𝐨𝐧*_\n\n*Se han hecho cambios locales en archivos del bot que entran en conflicto con las actualizaciones del repositorio. Para actualizar, reinstala el bot o realiza las actualizaciones manualmente.*\n\n*Archivos en conflicto:*\n\n${conflictedFiles.join('\n')}.*`;
+          const errorMessage = `_*[🐶] ᴀᴄᴛᴜʟɪᴢᴀʀ [🐶]*_\n\n*ꜱᴇ ʜᴀɴ ʜᴇᴄʜᴏ ᴄᴀᴍʙɪᴏꜱ ʟᴏᴄᴀʟᴇꜱ ᴇɴ ᴀʀᴄʜɪᴠᴏꜱ ᴅᴇʟ ʙᴏᴛ Qᴜᴇ ᴇɴᴛʀᴀɴ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ ᴄᴏɴ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴅᴇʟ ʀᴇᴘᴏꜱɪᴛᴏʀɪᴏ. ᴘᴀʀᴀ ᴀᴄᴛᴜᴀʟɪᴢᴀʀ, ʀᴇɪɴꜱᴛᴀʟᴀ ᴇʟ ʙᴏᴛ o ʀᴇᴀʟɪᴢᴀ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴍᴀɴᴜᴀʟᴍᴇɴᴛᴇ*\n\n*ᴀʀᴄʜɪᴠᴏꜱ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ:*\n\n${conflictedFiles.join('\n')}.*`;
           await conn.reply(m.chat, errorMessage, m);  
         }
       }
   } catch (error) {
     console.error(error);
-    let errorMessage2 = '_*𝐀𝐜𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐜𝐢𝐨𝐧*_\n\n*Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';
+    let errorMessage2 = '_*[❗] ᴇʀʀᴏʀ [❗]*_\n\n*ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ɪɴᴇꜱᴘᴇʀᴀᴅᴏ.*';
     if (error.message) {
       errorMessage2 += '\n*- Mensaje de error:* ' + error.message;
     }

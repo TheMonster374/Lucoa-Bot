@@ -33,7 +33,7 @@ const handler = async (m, {conn, usedPrefix}) => {
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };
-handler.help = ['xwaifu']
+handler.help = ['grupos']
 handler.tags = ['main'];
 handler.command = ['linkgc', 'grupos', 'gruposjt'];
 export default handler;

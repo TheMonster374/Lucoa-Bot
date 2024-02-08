@@ -31,7 +31,7 @@ const defaultMenu = {
 Hola *%taguser*,
 
 ╭━─━─━─≪ɪɴꜰᴏ ᴛɪᴇᴍᴘᴏ≫─━─━─━╮
-┆ %uptime
+┆ %muptime
 ┆ %week
 ┆  %date
 ╰━─━─━─≪ɪɴꜰᴏ ᴜꜱᴇʀ≫─━─━─━╯

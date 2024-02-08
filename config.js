@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = "" //Ejemplo: +59309090909
 
 global.owner = [
-  ['5491156673266', '👑   Creador 👑', true],
+  ['18192011470', '👑   Creador 👑', true],
   ['18199751245', '  Collaborator 1 💫', true],
-  ['5493804158262', '  - Collaborator 2 ', true],
+  ['18192011470', '  - Collaborator 2 ', true],
   ['', '  - Collaborator 3 ', true],
   ['', ' - Collaborator 4 ', true],
   ['', '  - Collaborator 5 ', true],

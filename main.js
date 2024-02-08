@@ -351,14 +351,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*「 Bienvenido 」\n 「 @user 」\n    Bienvenido a\n    @subject';
-  conn.bye = '*「 ADIOS 👋 」\n「 @user 」\n Se fue\n adios';
-  conn.spromote = '*@user Fue promovido a administrador.*';
-  conn.sdemote = '*@user Fue degradado de administrador.*';
-  conn.sDesc = '*La descripción del grupo ha sido modificada.*';
-  conn.sSubject = '*El nombre del grupo ha sido modificado.*';
-  conn.sIcon = '*Se ha cambiado la foto de perfil del grupo.*';
-  conn.sRevoke = '*El enlace de invitación al grupo ha sido restablecido.*';
+  conn.welcome = '*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ @subject';
+  conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ';
+  conn.spromote = '*@user ᴀʜᴏʀᴀ ᴇꜱ ᴀᴅᴍɪɴ*';
+  conn.sdemote = '*@user ʏᴀ ɴᴏ ᴇꜱ ᴀᴅᴍɪɴ😥*';
+  conn.sDesc = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ʟᴀ ᴅᴇꜱᴄʀɪᴘᴄɪᴏɴ*';
+  conn.sSubject = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇʟ ɢʀᴜᴘᴏ*';
+  conn.sIcon = '*ꜱᴇ ᴄᴀᴍʙɪᴏ ʟᴀ ꜰᴏᴛᴏ ᴅᴇʟ ɢʀᴜᴘᴏ.*';
+  conn.sRevoke = '*ᴇʟ ᴇɴʟᴀᴄᴇ ᴅᴇʟ ɢʀᴜᴘᴏ ꜰᴜᴇ ʀᴇꜱᴛᴀʙʟᴇᴄɪᴅᴏ*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -512,7 +512,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `tiempo activo: ${uptime} | 𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭 𝐁𝐘 𝐀𝐋𝐒`;
+  const bio = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ | ᴀᴄᴛɪᴠᴏ ᴅᴇꜱᴅᴇ ʜᴀᴄᴇ: ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {

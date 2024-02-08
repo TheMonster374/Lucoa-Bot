@@ -37,14 +37,14 @@ global.owner = [
 global.suittag = [''];
 global.prems = [''];
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
-global.packname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
-global.author = '𝘽𝙮 𝘼𝙇𝙎';
+global.packname = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ';
+global.author = 'ʙʏ ᴀʟꜱ';
 //━━━━━━━━━━━━━━━━━━━━━━ 
 
-global.wm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
-global.titulowm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ';
-global.titulowm2 = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ`
-global.igfg = 'Jotchua-Bot By';
+global.wm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ';
+global.titulowm = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ';
+global.titulowm2 = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ`
+global.igfg = 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ';
 global.wait = '*Cargando...*';
 //━━━━━━━IMAGENES━━━━━━━━━━━━ 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -65,14 +65,14 @@ global.thumbnail = fs.readFileSync('./Menu.png')
 global.desc = 'Simple WhatsApp Bot Multi Device'
 
 //━━━━━━━MARCA━━━━━━━━ 
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Jotchua-Bot', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 global.fgif = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${wm}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${packname}\n      ${wm}`, 'jpegThumbnail': catalogo }}}
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 
-global.addescargas = `JOTCHUA-BOT BY ALS`
-global.adimagen = `JOTCHUA-BOT BY ALS` 
+global.addescargas = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ ʙʏ ᴀʟꜱ`
+global.adimagen = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ ʙʏ ᴀʟꜱ` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 
@@ -95,10 +95,10 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `${dia} ${fecha}\nJotchua - Bot`;
-global.gt = 'Jotchua - Bot';
-global.mysticbot = 'Jotchua-Bot';
-global.md = 'https://github.com/AleXD0009/Jotchua-Bot';
-global.mysticbot = 'https://github.com/AleXD009/Jotchua-Bot';
+global.gt = 'Jotchua - Bot - mini';
+global.mysticbot = 'Jotchua-Bot-mini';
+global.md = 'https://github.com/AleXD0009/jotchua-mini';
+global.mysticbot = 'https://github.com/AleXD009/jotchua-mini';
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 global.waitt = '*▬▭▭▭*';

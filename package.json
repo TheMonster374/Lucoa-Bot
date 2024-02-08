@@ -1,5 +1,5 @@
 {
-  "name": "Jotchua-Bot",
+  "name": "Jotchua-mini",
   "version": "1.0.0",
   "description": "Bot Whatsapp",
   "main": "index.js",
@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/AleXD0009/Jotchua-Bot",
+  "homepage": "https://github.com/AleXD0009/jotchua-mini",
   "author": {
     "name": "ALS"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleXD0009/Jotchua-Bot.git"
+    "url": "git+https://github.com/AleXD0009/jotchua-mini.git"
   },
   "bugs": {
-    "url": "https://github.com/AleXD0009/Jotchua-Bot/issues"
+    "url": "https://github.com/AleXD0009/jotchua-mini/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

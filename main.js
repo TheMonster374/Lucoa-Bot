@@ -351,8 +351,8 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ @subject';
-  conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ';
+/*  conn.welcome = '*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ @subject';
+  conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ'; */
   conn.spromote = '*@user ᴀʜᴏʀᴀ ᴇꜱ ᴀᴅᴍɪɴ*';
   conn.sdemote = '*@user ʏᴀ ɴᴏ ᴇꜱ ᴀᴅᴍɪɴ😥*';
   conn.sDesc = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ʟᴀ ᴅᴇꜱᴄʀɪᴘᴄɪᴏɴ*';

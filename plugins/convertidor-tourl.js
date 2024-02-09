@@ -10,6 +10,6 @@ const handler = async (m) => {
   m.reply(`*Enlace a su archivo:* ${link}`);
 };
 handler.help = ['tourl <reply image>'];
-handler.tags = ['sticker'];
+handler.tags = ['tools'];
 handler.command = /^(upload|tourl)$/i;
 export default handler;

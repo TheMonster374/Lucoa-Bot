@@ -120,7 +120,7 @@ const MethodMobile = process.argv.includes("mobile")
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const question = (texto) => new Promise((resolver) => rl.question(texto, resolver))
 
-//Código adaptado para la compatibilidad de ser bot con el código de 8 digitos. Hecho por: https://github.com/GataNina-Li
+//Código adaptado para la compatibilidad de ser bot con el código de 8 digitos.
 let opcion
 if (methodCodeQR) {
 opcion = '1'

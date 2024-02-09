@@ -67,16 +67,13 @@ let handler = async (m, { conn, usedPrefix }) => {
 └    *Registrados* : ${totalreg} Usuarios
 
 
- –  *I N F O  C H A T*
+ –  *I N F O  C H A T S*
 
 ┌    *${groupsIn.length}* Chats en Grupos
 │    *${groupsIn.length}* Grupos Unidos
 │    *${groupsIn.length - groupsIn.length}* Grupos Salidos
 │    *${chats.length - groupsIn.length}* Chats Privados
-└    *${chats.length}* Chats Totales
-
-*≡  _NodeJS Uso de memoria_*
-${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}`
+└    *${chats.length}* Chats Totales`
 await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎ ⸙',body: false, previewType: 0, thumbnail: catalogo, sourceUrl: ''}}})
 }
 

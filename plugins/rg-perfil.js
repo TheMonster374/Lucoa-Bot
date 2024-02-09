@@ -24,7 +24,7 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
 ✧ *Premium:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ✧ *Numero de serie:* 
 ${sn}`;
-conn.sendMessage(m.chat, { image: { url: pp }, caption: null, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen1 }}}, { quoted: m })
+conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen1 }}}, { quoted: m })
   }
 };
 handler.help = ['profile [@user]'];

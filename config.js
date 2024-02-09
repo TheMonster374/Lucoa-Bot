@@ -64,6 +64,7 @@ global.thumbnail = fs.readFileSync('./Menu.png')
 //━━━━━━━━━━━━━━━
 global.desc = 'Simple WhatsApp Bot Multi Device'
 
+global.group = 'https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB'
 //━━━━━━━MARCA━━━━━━━━ 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 

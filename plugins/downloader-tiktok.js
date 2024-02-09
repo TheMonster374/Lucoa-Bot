@@ -2,7 +2,7 @@ import fg from 'api-dylux'
 import { tiktokdl } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
-if (!args[0]) return conn.reply(m.chat, `*🐶 ᴇꜱᴄʀɪʙᴇ ʟᴀ ᴜʀʟ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴅᴇ ᴛɪᴋᴛᴏᴋ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: https://www.tiktok.com/@catsparadise.1/video/7246312711640894746?is_from_webapp=1&sender_device=pc&web_id=7333552077824722438 .*`, m, estilo)
+if (!args[0]) return conn.reply(m.chat, `*ᴇꜱᴄʀɪʙᴇ ʟᴀ ᴜʀʟ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴅᴇ ᴛɪᴋᴛᴏᴋ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: https://www.tiktok.com/@catsparadise.1/video/7246312711640894746?is_from_webapp=1&sender_device=pc&web_id=7333552077824722438 .*`, m, estilo)
 if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de TikTok`, m, estilo)
 try {
 let p = await fg.tiktok(args[0]) 

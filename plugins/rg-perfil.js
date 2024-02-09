@@ -2,14 +2,14 @@ import {createHash} from 'crypto';
 import PhoneNumber from 'awesome-phonenumber';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+  let pp = 'https://telegra.ph/file/06cc652844ea19e8aed1c.jpg';
   const user = global.db.data.users[m.sender];
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, limit, level, role} = global.db.data.users[m.sender];
   const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   if (!(who in global.db.data.users)) throw `El usuario que está mencionando no está registrado en mi base de datos`;
   try {
- let username = conn.getName(who)
+    pp = await conn.profilePictureUrl(who);
   } catch (e) {
   } finally {
     const {name, limit, lastclaim, registered, regTime, age, premiumTime} = global.db.data.users[who];
@@ -24,7 +24,7 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
 ✧ *Premium:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ✧ *Numero de serie:* 
 ${sn}`;
-conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen1 }}}, { quoted: m })
+conn.sendMessage(m.chat, { image: { url: pp }, caption: null, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen1 }}}, { quoted: m })
   }
 };
 handler.help = ['profile [@user]'];

@@ -9,7 +9,7 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
   const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   if (!(who in global.db.data.users)) throw `El usuario que está mencionando no está registrado en mi base de datos`;
   try {
-    pp = await conn.profilePictureUrl(who);
+ let username = conn.getName(who)
   } catch (e) {
   } finally {
     const {name, limit, lastclaim, registered, regTime, age, premiumTime} = global.db.data.users[who];

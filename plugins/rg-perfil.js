@@ -10,8 +10,10 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let user = global.db.data.users[who]
   let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
-  let { name, exp, star, lastdaily, registered, regTime, age, level } = global.db.data.users[who]
-  let { min, xp, max } = xpRange(user.level, global.multiplier)
+   const user = global.db.data.users[m.sender];
+const {money, joincount} = global.db.data.users[m.sender];
+const {exp, limit, level, role} = global.db.data.users[m.sender];
+  const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   let username = conn.getName(who)
   let prem = global.prems.includes(who.split`@`[0])
   let sn = createHash('md5').update(who).digest('hex')
@@ -21,11 +23,11 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 ┌   *Nombre* : ${username}
 │   *Numero* : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 │   *Link:* wa.me/${who.split`@`[0]}
-│   *Estrellas:* ${star}
-│   *Nivel:* ${level}
-│   *Exp:* ${exp}
+│   *Estrellas:* ${user.limit}
+│   *Nivel:* ${user.level}
+│   *Exp:* ${user.exp}
 │   *Exp nivel:* ${user.exp - min}/${xp}
-│   *Premium:* ${prem ? 'Si' : 'No'}
+│   *Premium:*  ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 │   *Ultimo claim:* ${lastdaily > 0 ? `${formatDate(lastdaily)}` : '×'}
 │   *Registrado:* ${registered ? 'Si': 'No'}
 └   *Edad:* ${registered ? `${age} años` : '×'}

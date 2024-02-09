@@ -7,7 +7,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
-    let welcome = `*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ* @subject`
+    let welcome = `*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ* ${groupMetadata.subject}`
     
     await conn.sendMessage(
     m.chat,
@@ -36,7 +36,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   }
   
 if (chat.welcome && m.messageStubType == 28) {
-    let bye = `*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ* @subject`
+    let bye = `*@user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ* ${groupMetadata.subject}`
 
     await conn.sendMessage(
     m.chat,

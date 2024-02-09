@@ -8,6 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.botnumber = "" //Ejemplo: +59309090909
+global.confirmCode = ""
 
 global.owner = [
   ['18192011470', '👑   Creador 👑', true],

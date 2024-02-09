@@ -11,7 +11,7 @@ https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB
 ɢʀᴜᴘᴏꜱ ᴄᴏʟᴀʙ ᴊᴏᴛᴄʜᴜᴀ-ʙᴏᴛ-ᴍɪɴɪ:
 𝐙𝐚𝐦𝐚𝐬𝐮 - 𝐛𝐨𝐭 | 𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐁𝐨𝐭: https://chat.whatsapp.com/F9y0tUxJWaLC7KpmGiLiS8
 
-𝐒𝐧𝐢𝐩𝐞𝐁𝐨𝐭 𝐲 𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶:
+𝐓𝐫𝐲𝐳𝐞𝐫-𝐁𝐨𝐭 𝐲 𝐉𝐨𝐭𝐜𝐡𝐮𝐚-𝐛𝐨𝐭🐶:
 sin link pq no me pasan el link 😥
 
  si quieres que tu grupo aparezca o colaborar con el bot contacta con mi creador

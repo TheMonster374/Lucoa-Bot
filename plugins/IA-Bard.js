@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { text,  usedPrefix, command }) => {
 
-if (!text) return conn.reply(m.chat, `ɪɴɢʀᴇꜱᴀ ᴜɴᴀ ᴘᴇᴛɪᴄɪᴏɴ*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ, !bard como hacer una pagina porno`, m, desc, )
+if (!text) return conn.reply(m.chat, `ɪɴɢʀᴇꜱᴀ ᴜɴᴀ ᴘᴇᴛɪᴄɪᴏɴ*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ, !bard ᴄᴏᴍᴏ ʜᴀᴄᴇʀ ᴜɴᴀ ᴘᴀɢɪɴᴀ ᴘᴏʀɴᴏ`, m, desc, )
 
 try {
 

@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────\n\n`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
 'mimetype': `application/pdf`,
 'fileName': ` YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -105,7 +105,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────\n\n`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
 'mimetype': `application/pdf`,
 'fileName': `YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -165,7 +165,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────\n\n``
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
 'mimetype': `application/pdf`,
 'fileName': `YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -241,7 +241,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────\n\n`
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
 'mimetype': `application/pdf`,
 'fileName': ` YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,

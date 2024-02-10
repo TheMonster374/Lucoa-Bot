@@ -25,8 +25,7 @@ let handler = async (m, { conn, text }) => {
   conn.sendMessage(m.chat, { text: message }, 'extendedTextMessage', { quoted: m });
 };
 
-handler.help = ['pokedex <pokemon>'];
-handler.tags = ['anime'];
+
 handler.command = /^pokedex/i;
 
 export default handler;

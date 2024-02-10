@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (!lister.includes(feature)) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ꜰᴏʀᴍᴀᴛᴏ ᴇɴ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ ᴍᴀꜱ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
     if (lister.includes(feature)) {
         if (feature == "mp3") {
-            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3 `, m)
+            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3 SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -90,7 +90,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     }}}
         
         if (feature == "mp4") {
-            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp4`, m)
+            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp4 SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
@@ -132,7 +132,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪᴠᴏ ᴘᴇꜱᴀ ᴍᴀꜱ ᴅᴇ ${limit} ᴍʙ, ꜱᴇ ᴄᴀɴᴄᴇʟᴏ ʟᴀ ᴅᴇꜱᴄᴀʀɢᴀ.`, m)
        
-       await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 ${vid.timestamp}`, m)
+       await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\\nnᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 `, m)
        } catch {
        try {
        let yt = await fg.ytmp4(vid.url, q)
@@ -141,14 +141,14 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪ�
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪᴠᴏ ᴘᴇꜱᴀ ᴍᴀꜱ ᴅᴇ ${limit} ᴍʙ, ꜱᴇ ᴄᴀɴᴄᴇʟᴏ ʟᴀ ᴅᴇꜱᴄᴀʀɢᴀ.`, m)
        
-       await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 ${vid.timestamp}`, m)
+       await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 `, m)
        } catch (error) {
         await conn.reply(m.chat,`*[❗] ᴇʀʀᴏʀ [❗]*_\n\n*ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ɪɴᴇꜱᴘᴇʀᴀᴅᴏ.*`, m)
         console.error(error)
     }}}
     
     if (feature == "mp3doc") {
-            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3doc`, m)
+            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3doc SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -224,7 +224,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     }}}
     
     if (feature == "mp4doc") {
-            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp4doc`, m)
+            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp4doc SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
@@ -266,7 +266,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪᴠᴏ ᴘᴇꜱᴀ ᴍᴀꜱ ᴅᴇ ${limit} ᴍʙ, ꜱᴇ ᴄᴀɴᴄᴇʟᴏ ʟᴀ ᴅᴇꜱᴄᴀʀɢᴀ.`, m)
        
-       await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
+       await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 `, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
 externalAdReply:{
@@ -284,7 +284,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪᴠᴏ ᴘᴇꜱᴀ ᴍᴀꜱ ᴅᴇ ${limit} ᴍʙ, ꜱᴇ ᴄᴀɴᴄᴇʟᴏ ʟᴀ ᴅᴇꜱᴄᴀʀɢᴀ.`, m)
        
-       await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
+       await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\nᴀᴄᴀ ᴛɪᴇɴᴇꜱ ᴛᴜ ᴠɪᴅᴇᴏ 🐶 `, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
 externalAdReply:{

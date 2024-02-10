@@ -26,7 +26,6 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `│📅 *Publicado ∙* ${vid.ago}\n`
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
 'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
@@ -92,7 +91,6 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         
         if (feature == "mp4") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
-    await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
@@ -104,7 +102,6 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `│📅 *Publicado ∙* ${vid.ago}\n`
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
 'document': { url: `https://github.com/DanielDiod/DokiBot` },
 'mimetype': `application/pdf`,
@@ -152,7 +149,6 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
     
     if (feature == "mp3doc") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
-    await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'

@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 
 handler.help = ['bard']
-handler.tags = ['AI']
+handler.tags = ['ia']
 handler.command = /^bard$/i;
 
 export default handler;

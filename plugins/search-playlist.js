@@ -20,12 +20,11 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 *Como descargarla*
 
 ${usedPrefix}audio <numero>
-${usedPrefix}video <numero> 
 
 *Ejemplo*
 
 ${usedPrefix}audio 5
-${usedPrefix}video 8`.trim();
+`.trim();
     const teks = results.all.map((v, i) => {
       const link = v.url;
       vids_.urls.push(link);

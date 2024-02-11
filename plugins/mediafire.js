@@ -11,7 +11,7 @@ const result4 = `╭━─━─━─≪💎≫─━─━─━╮
 ┆🔸️ tamaño ${baby1[0].size} 
 ┆——————«•»——————
 ┆🔸️ extension ${baby1[0].mime}
-╰━─━─━─≪💎≫─━─━─━╯\n\nB` 
+╰━─━─━─≪💎≫─━─━─━╯\n\n${wm}` 
 m.reply(`error`) 
  conn.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime ,  quoted : m, contextInfo: { externalAdReply:{ 
    title: wm, 
@@ -23,3 +23,7 @@ m.reply(`error`)
  sourceUrl: md }}}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
  db.data.users[m.sender].limit -= 2
 m.reply('2 ' + info.limit)}}
+
+handler.help = ['mediafire'];
+handler.tags = ['downloads'];
+handler.command = /^(mediafire)$/i;

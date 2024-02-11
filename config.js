@@ -86,7 +86,7 @@ global.rwait = '⏰'
 global.done = '✅'
 global.error = '❌'
 
-global.nn = 'https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ' //Grupo ofc
+global.nn = 'https://atom.bio/als'
 //━━━━━━━━━━━━━━━━━━━━━━ 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
@@ -100,8 +100,8 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\nJotchua - Bot`;
 global.gt = 'Jotchua - Bot - mini';
 global.mysticbot = 'Jotchua-Bot-mini';
-global.md = 'https://github.com/AleXD0009/jotchua-mini';
-global.mysticbot = 'https://github.com/AleXD009/jotchua-mini';
+global.md = 'https://atom.bio/als';
+global.mysticbot = 'https://atom.bio/als';
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 global.waitt = '*▬▭▭▭*';

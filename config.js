@@ -78,6 +78,11 @@ global.addescargas = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ ʙʏ ᴀʟꜱ`
 global.adimagen = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ ʙʏ ᴀʟꜱ` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
+global.apikasu = "https://apikasu.onrender.com"
+global.apikeykasu = "SebastianDevelop"
+
+
+
 
 global.mods = [];
 

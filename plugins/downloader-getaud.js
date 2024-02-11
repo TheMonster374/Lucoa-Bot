@@ -27,10 +27,10 @@ const handler = async (m, {text, conn, args, usedPrefix, command}) => {
 No se encontro enlace para ese numero, intente del 1 al ${matchingItem.urls.length}`;
           }
         } else {
-          throw `Use el comando de la siguiente manera ${usedPrefix + command} <numero>, y para buscar una playlist con ${usedPrefix}playlist <texto>`;
+          throw `ᴜꜱᴇ ᴇʟ ᴄᴏᴍᴀɴᴅᴏ ᴅᴇ ʟᴀ ꜱɪɢᴜɪᴇɴᴛᴇ ᴍᴀɴᴇʀᴀ ${usedPrefix + command} <numero>, ʏ ᴘᴀʀᴀ ʙᴜꜱᴄᴀʀ ᴜɴᴀ ᴘʟᴀʏʟɪꜱᴛ ᴄᴏɴ ${usedPrefix}playlist <texto>`;
         }
       } else {
-        throw `Use el comando de la siguiente manera ${usedPrefix + command} <numero>, y para buscar una playlist con ${usedPrefix}playlist <texto>`;
+        throw `ᴜꜱᴇ ᴇʟ ᴄᴏᴍᴀɴᴅᴏ ᴅᴇ ʟᴀ ꜱɪɢᴜɪᴇɴᴛᴇ ᴍᴀɴᴇʀᴀ ${usedPrefix + command} <numero>, ʏ ᴘᴀʀᴀ ʙᴜꜱᴄᴀʀ ᴜɴᴀ ᴘʟᴀʏʟɪꜱᴛ ᴄᴏɴ ${usedPrefix}playlist <texto>`;
       }
     }
   }
@@ -55,7 +55,7 @@ No se encontro enlace para ese numero, intente del 1 al ${matchingItem.urls.leng
     await conn.sendMessage(m.chat, {text: `
 > Informacion
 
-Si se envio en formato de documento es porque el audio supera el limite establecido por WhatsApp
+ꜱɪ ꜱᴇ ᴇɴᴠɪᴏ ᴇɴ ꜰᴏʀᴍᴀᴛᴏ ᴅᴇ ᴅᴏᴄᴜᴍᴇɴᴛᴏ ᴇꜱ ᴘᴏʀ Qᴜᴇ ᴇʟ ᴀᴜᴅɪᴏ ꜱᴜᴘᴇʀᴀ ᴇʟ ʟɪᴍɪᴛᴇ ᴇꜱᴛᴀʙʟᴇᴄɪᴅᴏ ᴘᴏʀ ᴡʜᴀᴛꜱᴀᴘᴘ
 *Titulo:* ${ttl_1}`, edit: key}, {quoted: m});
     enviando = false
    } else {
@@ -104,8 +104,8 @@ Error`, edit: key}, {quoted: m});
     }
   }
 }};
-handler.help = ['audio <url>']
-handler.tags = ['dl']
+handler.help = ['audio <yt url>']
+handler.tags = ['downloader']
 handler.command = /^(audio|txmp3|dlmp3|getaud|yt(a|mp3))$/i;
 export default handler
 

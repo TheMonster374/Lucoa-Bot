@@ -25,7 +25,8 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `
+  before
+  const str =  `
 ──────────────────────
 
 Hola *%taguser*,

@@ -1,7 +1,7 @@
 import axios from 'axios'
 let handler = async (m, {conn, args}) => {
 
-if (!args[0]) return conn.reply(m.chat, `*ᴇꜱᴄʀɪʙᴇ ʟᴀ ᴜʀʟ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴅᴇ ɪɴꜱᴛᴀɢʀᴀᴍ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ.\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: .ig https://www.instagram.com/reel/C1tIP73A_U3/?utm_source=ig_web_copy_link*`, m, desc)
+if (!args[0]) return conn.reply(m.chat, `*ᴇꜱᴄʀɪʙᴇ ʟᴀ ᴜʀʟ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴅᴇ ɪɴꜱᴛᴀɢʀᴀᴍ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ*.\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: .ig https://www.instagram.com/reel/C1tIP73A_U3/?utm_source=ig_web_copy_link*`, m, desc)
 let url = `https://vihangayt.me/download/instagram?url=${encodeURIComponent(args[0])}`
   
 try {

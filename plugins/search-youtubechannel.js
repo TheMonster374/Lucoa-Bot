@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw 'Por favor, proporciona el nombre del canal de YouTube.';
+    throw 'ᴘᴏʀ ꜰᴀᴠᴏʀ, ᴘʀᴏᴘᴏʀᴄɪᴏɴᴀ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇʟ ᴄᴀɴᴀʟ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: youtubechannel Lusito Comunica';
   }
 
   try {
@@ -16,7 +16,7 @@ const handler = async (m, { conn, text }) => {
       const channel = data.result[0];
 
       let msg = `
-> Informacion
+> Y O U T U B E | C H A N N E L
 
 *Nombre del Canal:* ${channel.channel_name}\n
 *ID del Canal:* ${channel.channel_id}\n

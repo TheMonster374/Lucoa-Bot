@@ -5,14 +5,14 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `[ ❗𝗘𝗥𝗥𝗢𝗥❗]\n\n𝙀𝙡 𝙪𝙨𝙤 𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙤 𝙙𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙚𝙨 🧸👇🏻\n\n» .𝗽𝗹𝗮𝘆 𝗠𝗮𝗿𝗴𝗮𝗿𝗲𝘁 - 𝗟𝗮𝗻𝗮 𝗗𝗲𝗹 𝗥𝗲𝘆`
+if (!text) throw `*[❗] ᴇʀʀᴏʀ [❗]*\n\nᴜꜱᴏ ᴄᴏʀʀᴇᴄᴛᴏ \n\n» .ᴘʟᴀʏ2.2  ʟɪʟɪᴛʜᴢᴘʟᴜɢ - ᴄʟᴇᴀʀᴇᴅ - ʀᴇᴍɪx`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓') {
-additionalText = '*Shana-Bot*'
+if (command === 'ᴊᴏᴛᴄʜᴜᴀ-ᴍɪɴɪ') {
+additionalText = '*Jotchua-Mini*'
 } else if (command === 'play2.2') {
-additionalText = '𝐒𝐇𝐀𝐍𝐀 𝐁𝐎𝐓'}
+additionalText = 'ᴊᴏᴛᴄʜᴜᴀ-ᴍɪɴɪ'}
 await conn.sendMessage(m.chat, {
 text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
@@ -72,7 +72,6 @@ renderLargerThumbnail: true
 }  
 if (command == 'play2.2') {
 try {
-await m.react('✅')
 let qu = '360'
 let q = qu + 'p'
 let v = yt_play[0].url
@@ -97,8 +96,9 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimet
 } catch {
 }}}}} catch {
 }}
+handler.help = ['play2.2']
+handler.tags = ['downloader']
 handler.command = ['play.1', 'play2.2']
-handler.exp = 0
 export default handler
 
 async function search(query, options = {}) {

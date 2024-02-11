@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     ]
 }
 
-handler.help = ['capitalde']
+handler.help = ['capital']
 handler.tags = ['game']
 handler.command = /^(capitalde|capitales|capital|adivinalacapital)$/i
 

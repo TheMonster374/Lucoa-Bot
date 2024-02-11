@@ -1,28 +1,28 @@
-/creditos @AzamiJs
+import fetch from 'node-fetch';
 
-import fetch from 'node-fetch'
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+  if (!text) {
+    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Proporciona un texto.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
+  }
 
-var handler = async (m, { text,  usedPrefix, command }) => {
+  try {
+    conn.sendPresenceUpdate('composing', m.chat);
 
-if (!text) return conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗] *𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉𝘼 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉*\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊, !bard Conoces MonkiBot?`, m)
+    const API_URL = `https://vihangayt.me/tools/bard?q=${encodeURIComponent(text)}`;
+    const response = await fetch(API_URL);
+    const data = await response.json();
 
-try {
+    if (data.status && data.data) {
+      const respuestaAPI = data.data;
+      conn.reply(m.chat, respuestaAPI, m);
+    } else {
+      throw '_*< IA - BARD />*_\n\n*[ ℹ️ ] No se pudo obtener una respuesta válida.*';
+    }
+  } catch (error) {
+    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+  }
+};
 
-conn.sendPresenceUpdate('composing', m.chat)
-var apii = await fetch(`https://aemt.me/bard?text=${text}`)
-var res = await apii.json()
-await m.reply(res.result)
+handler.command = /^bard$/i;
 
-} catch (error) {
-console.error(error)
-return conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗] 𝙊𝘾𝙐𝙍𝙍𝙄𝙊́ 𝙐𝙉 𝙁𝘼𝙇𝙇𝙊*`, m)
-}
-
-}
-handler.command = ['bard']
-handler.help = ['bard']
-handler.tags = ['ia']
-
-handler.premium = false
-
-export default handler
+export default handler;

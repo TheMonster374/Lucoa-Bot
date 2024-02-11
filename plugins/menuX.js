@@ -24,7 +24,6 @@ let tags = {
   'owner': '🐕 ᴄʀᴇᴀᴅᴏʀ 🐕',
   'advanced': 'ᴀᴠᴀɴᴢᴀᴅᴏ',
 }
-
 const defaultMenu = {
   before: `
 ──────────────────────
@@ -48,12 +47,12 @@ Hola *%taguser*,
 
 \t\t\t*C O M A N D O S*
 `.trimStart(),
-  header: '╭───%category─────╮',
-  body: '│ *%cmd*\n',
-  footer: '╰──────────────────╯ ',
-  after: '\n*Jotchua - Bot - Mini*',
+  header: '┌─⊷ *%category*',
+  body: '▢ %cmd %isdiamond %isPremium',
+  footer: '└───────────\n',
+  after: `
+`,
 }
-
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -152,11 +151,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let pp = './src/avatar_contact.jpg'
+    let pp = './src/sinfoto.jpg'
 
- 
-    conn.sendFile(m.chat, pp, 'imagen1', text.trim(), m, null, md)
-
+    /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
+      ['ꨄ︎ Apoyar', `${_p}donate`],
+      ['⏍ Info', `${_p}botinfo`],
+      ['⌬ Grupos', `${_p}gpdylux`]
+    ], m, rpl)*/
+    conn.sendFile(m.chat, pp, 'menu.png', text.trim(), m, null, md)
+  
+    
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
     throw e
@@ -164,7 +168,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 }
 //handler.help = ['help']
 //handler.tags = ['main']
-handler.command = ['menuX', 'helpX', 'menúX'] 
+handler.command = ['menu', 'help', 'menú'] 
+
 
 export default handler
 

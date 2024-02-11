@@ -2,6 +2,8 @@ import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
+  const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
+    await conn.reply(m.chat, '*enviando menu.*',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '¡𝐇𝐨𝐥𝐚!', body: 'Qᴜᴇ ᴛᴇɴɢᴀꜱ ʟɪɴᴅᴏ ᴅɪᴀ', sourceUrl: null, thumbnail: await (await fetch(pp)).buffer() }}})
 
 let tags = {
   'main': '📄 ɪɴꜰᴏ 📄',

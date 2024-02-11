@@ -11,11 +11,9 @@ const handler = async (m, { conn, args }) => {
         const response = await fetch(apiUrl);
         const responseData = await response.json();
 
-        m.react(rwait);
 
         if (responseData.status && responseData.result.length > 0) {
             for (const media of responseData.result) {
-                m.react(done);
                 await conn.sendFile(m.chat, media.link, media.ext === 'mp4' ? 'video.mp4' : 'imagen.jpg', '', m);
             }
         } else {

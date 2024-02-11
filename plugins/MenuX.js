@@ -65,7 +65,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '⚠️ 𝐞𝐥 𝐦𝐞𝐧𝐮 𝐭𝐢𝐞𝐧𝐞 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫.', m);
   }
 };
-handler.help = ['menu'];
-handler.tags = ['menu'];
+handler.help = ['menuX'];
+handler.tags = ['main'];
 handler.command = /^(menuX)$/i;
 export default handler;

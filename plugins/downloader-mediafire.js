@@ -1,23 +1,22 @@
-import { mediafiredl } from '@bochilteam/scraper'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-let limit = 200
-if (!args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de un archivo de Mediafire que deseas descargar.*`, m,)
-if (!args[0].match(/mediafire/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de Mediafire.`, m).then(_ => m.react('✖️'))
- await conn.sendMessage(m.chat, { react: { text: '⏱', key: m.key } })
-let res = await mediafiredl(args[0])
-let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
-let caption = `
-*📓 Nombre ∙* ${filename}
-*📁 Peso ∙* ${filesizeH}
-*📄 Tipo ∙* ${ext}
-*🕐 Subido ∙* ${aploud}
-`.trim()
-if (filesizeH.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
-await conn.reply(m.chat, caption, m)
-await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
- await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
+import yts from 'music.apple-search'
+
+let handler = async (m, {conn, usedPrefix, text }) => {
+   if (!text) return conn.reply(m.chat, '*🚩 Ingresa lo que deseas buscar en YouTube.*', m)
+   let results = await yts(text)
+   let res = results.all.map(v => v).filter(v => v.type == "audio")
+   if (!res.length) return conn.reply(m.chat, 'No se encontraron resultados, intente con un nombre más Corto.', m)
+   let txt = `*Apple - Search*`
+   for (let i = 0; i < (30 <= res.length ? 30 : res.length); i++) {
+      txt += `\n\n`
+	  txt += `	◦  *Titulo* : ${res[i].title}\n`
+	  txt += `	◦  *Duración* : ${res[i].timestamp || '×'}\n`
+	  txt += `	◦  *Publicado* : ${res[i].ago}\n`
+	  txt += `	◦  *Autor* : ${res[i].author.name || '×'}\n`
+	  txt += `	◦  *Url* : ${'https://music.apple.com/us'\n`
+	  }
+   await conn.sendFile(m.chat, res[0].image, '', txt, m)
 }
-handler.help = ['mediafire'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-handler.command = /^(mediafire|mf)$/i
+handler.help = ['ytsearch']
+handler.tags = ['search']
+handler.command = ['applesearch', 'applemusicsearch'] 
 export default handler

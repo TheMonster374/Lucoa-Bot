@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw 'Ingrese el nombre de la canción';
+    throw 'ɪɴɢʀᴇꜱᴇ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇ ʟᴀ ᴄᴀɴᴄɪᴏɴ';
   }
 
   try {
@@ -10,14 +10,14 @@ const handler = async (m, { conn, text }) => {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-      throw new Error(`Error al buscar la canción en Apple Music`);
+      throw new Error(`ᴇʀʀᴏʀ ᴀʟ ʙᴜꜱᴄᴀʀ ʟᴀ ᴄᴀɴᴄɪᴏɴ ᴇɴ ᴀᴘᴘʟᴇ ᴍᴜꜱɪᴄ`);
     }
 
     const json = await response.json();
 
 
     const songInfo =`
-> Informacion
+*A P P L E M U S I C*
 *Nombre:* ${json.result.name}\n
 *Artista:* ${json.result.artist}\n
 *Álbum:* ${json.result.album}\n
@@ -36,13 +36,13 @@ const handler = async (m, { conn, text }) => {
   } catch (error) {
     console.error(error);
     throw `
-> Sin respuesta
-Ocurrió un error al procesar la solicitud: ${error.message}`;
+> ꜱɪɴ ʀᴇꜱᴘᴜᴇꜱᴛᴀ
+ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ᴀʟ ᴘʀᴏᴄᴇꜱᴀʀ ʟᴀ ꜱᴏʟɪᴄɪᴛᴜᴅ: ${error.message}`;
   }
 };
 
 handler.help = ['applemusicsearch'];
-handler.tags = ['dl'];
+handler.tags = ['search'];
 handler.command = /^(applemusicsearch)$/i;
 
 export default handler;

@@ -157,7 +157,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
     let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, }=> conn.relayMessage(m.chat, { ptvMessage: m.quoted }, { quoted: m })
+    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: false, }=> conn.relayMessage(m.chat, { ptvMessage: m.quoted }, { quoted: m })
  
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)

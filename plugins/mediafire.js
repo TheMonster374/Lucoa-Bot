@@ -1,4 +1,11 @@
-if (command == 'mediafire') {
+const fs = require("fs")
+const path = require("path")
+const chalk = require("chalk");
+const axios = require('axios')
+const fetch = require('node-fetch')
+const cheerio = require('cheerio')
+
+{
 const { mediafireDl } = require('../lib/mediafire.js') 
 if (!text) return m.reply(`uso incorrecto, ejemplo\n${prefix + command} https://www.mediafire.com/file/admrdma1ff3cq10/Siete-Ocho.zip/file`) 
 const baby1 = await mediafireDl(text)

@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw 'ɪɴɢʀᴇꜱᴇ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇ ʟᴀ ᴄᴀɴᴄɪᴏɴ';
+    throw 'ɪɴɢʀᴇꜱᴇ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇ ʟᴀ ᴄᴀɴᴄɪᴏɴ\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: .applemusicsearch 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA)';
   }
 
   try {

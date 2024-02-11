@@ -11,9 +11,55 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     await conn.reply(m.chat, '*enviando menu.*',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '¡𝐇𝐨𝐥𝐚!', body: 'Qᴜᴇ ᴛᴇɴɢᴀꜱ ʟɪɴᴅᴏ ᴅɪᴀ', sourceUrl: null, thumbnail: await (await fetch(pp)).buffer() }}})
     await conn.sendMessage(m.chat, { react: { text: '🐕', key: m.key } })
   let txt =`
-╭◈
+╭◈ I N F O
+┃.grupos
+┃.owner
+┃.info
+╰◈
+╭◈J U E G O S
 ┃
-╰◈`;
+╰◈
+╭◈S U B B O T S
+┃
+╰◈
+╭◈E C O N O M I A
+┃
+╰◈
+╭◈R E G I S T R O
+┃
+╰◈
+╭◈D E S C A R G A S
+┃
+╰◈
+╭◈I A
+┃
+╰◈
+╭◈A C T I V A R
+┃
+┃
+╰◈
+╭◈ G R U P O S
+┃
+╰◈
+╭◈B U S C A D O R
+┃
+╰◈
+╭◈I M A G E N E S
+┃
+╰◈
+╭◈H E R R A M I E N T A S
+┃
+╰◈
+╭◈S T I C K E R S
+┃
+╰◈
+╭◈N S F W
+┃
+╰◈
+╭◈C R E A D O R
+┃
+╰◈
+*J O T C H U A - B O T - M I N I*`;
    await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": null, "renderLargerThumbnail": null, "title": 'jotchua-bot', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": null, "sourceUrl": null}}}, {quoted: m});
   } catch {
     conn.reply(m.chat, '⚠️ 𝐞𝐥 𝐦𝐞𝐧𝐮 𝐭𝐢𝐞𝐧𝐞 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫.', m);

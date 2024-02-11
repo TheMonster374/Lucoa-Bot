@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async(m, { conn, text }) => {
-  if (!text) throw `Nyari Apa?`
+  if (!text) throw `especifica el nombre de lo que buscas`
   let res = await fetch(`https://api.xyroinee.xyz/api/anime/doujin-search?q=${text}&apikey=${global.xyro}`)
   try {
   let json = await res.json()

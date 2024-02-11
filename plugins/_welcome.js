@@ -18,11 +18,11 @@ export async function before(m, {conn, participants, groupMetadata}) {
       caption: welcome,
       contextInfo: {
       mentionedJid: [m.messageStubParameters[0]],
-      forwardingScore: 9999, 
+      forwardingScore: null, 
        isForwarded: true, 
         externalAdReply: {
           title: packname,
-          sourceUrl: group,
+          sourceUrl: null,
           mediaType: 1,
           renderLargerThumbnail: true, 
           thumbnail: catalogo,
@@ -36,7 +36,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   }
   
 if (chat.welcome && m.messageStubType == 28) {
-    let bye = `*@user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ* ${groupMetadata.subject}`
+    let bye = `*ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ* ${groupMetadata.subject}`
 
     await conn.sendMessage(
     m.chat,
@@ -47,11 +47,11 @@ if (chat.welcome && m.messageStubType == 28) {
       caption: bye,
       contextInfo: {
       mentionedJid: [m.messageStubParameters[0]],
-      forwardingScore: 9999, 
+      forwardingScore: null, 
        isForwarded: true, 
         externalAdReply: {
           title: packname,
-          sourceUrl: group,
+          sourceUrl: null,
           mediaType: 1,
           renderLargerThumbnail: true, 
           thumbnail: catalogo,
@@ -76,11 +76,11 @@ if (chat.welcome && m.messageStubType == 28) {
       caption: kick,
       contextInfo: {
       mentionedJid: [m.messageStubParameters[0]],
-      forwardingScore: 9999, 
+      forwardingScore: null, 
        isForwarded: true, 
         externalAdReply: {
           title: packname,
-          sourceUrl: group,
+          sourceUrl: null,
           mediaType: 1,
           renderLargerThumbnail: true, 
           thumbnail: catalogo,

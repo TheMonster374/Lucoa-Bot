@@ -32,8 +32,8 @@ Ocurrió un error: ${error}`;
   }
 };
 
-handler.help = ['bard'];
-handler.tags = ['ai'];
+handler.help = ['bard2'];
+handler.tags = ['ia'];
 handler.command = /^bard2$/i;
 
 export default handler;

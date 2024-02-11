@@ -20,5 +20,7 @@ const tiores4 = await conn.getFile(`https://api.lolhuman.xyz/api/dall-e?apikey=$
 await conn.sendMessage(m.chat, {image: {url: tiores4.data}}, {quoted: m});
 } catch {
 }}}}};
+handler.help = ['iaimagen']
+handler.tags = ['ia']
 handler.command = ['iaimagen']
 export default handler

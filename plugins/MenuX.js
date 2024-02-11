@@ -11,40 +11,40 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     await conn.reply(m.chat, '*enviando menu.*',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '¡𝐇𝐨𝐥𝐚!', body: 'Qᴜᴇ ᴛᴇɴɢᴀꜱ ʟɪɴᴅᴏ ᴅɪᴀ', sourceUrl: null, thumbnail: await (await fetch(pp)).buffer() }}})
     await conn.sendMessage(m.chat, { react: { text: '🐕', key: m.key } })
   let txt =`
-╭◈ I N F O
+╭◈*I N F O*
 ┃.grupos
 ┃.owner
 ┃.info
 ╰◈
-╭◈J U E G O S
+╭◈*J U E G O S*
 ┃
 ╰◈
-╭◈S U B B O T S
+╭◈*S U B B O T S*
 ┃
 ╰◈
-╭◈E C O N O M I A
+╭◈*E C O N O M I A*
 ┃
 ╰◈
-╭◈R E G I S T R O
+╭◈*R E G I S T R O*
 ┃
 ╰◈
-╭◈D E S C A R G A S
+╭◈*D E S C A R G A S*
 ┃
 ╰◈
-╭◈I A
+╭◈*I A*
 ┃
 ╰◈
-╭◈A C T I V A R
+╭◈*A C T I V A R*
 ┃
 ┃
 ╰◈
-╭◈ G R U P O S
+╭◈*G R U P O S*
 ┃
 ╰◈
-╭◈B U S C A D O R
+╭◈*B U S C A D O R*
 ┃
 ╰◈
-╭◈I M A G E N E S
+╭◈*I M A G E N E S
 ┃
 ╰◈
 ╭◈H E R R A M I E N T A S

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*Formato incorrecto*\nEjemplo*\n* ${usedPrefix + command} Mono*`
+if (!text) throw `*Formato incorrecto*\n\n[🐶] Ejemplo*\n* ${usedPrefix + command} Mono*`
 try {
 const tiores1 = await fetch(`https://vihangayt.me/tools/imagine?q=${text}`);
 const json1 = await tiores1.json();

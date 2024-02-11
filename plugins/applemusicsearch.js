@@ -15,7 +15,6 @@ const handler = async (m, { conn, text }) => {
 
     const json = await response.json();
 
-    m.react(rwait);
 
     const songInfo =`
 > Informacion
@@ -29,7 +28,6 @@ const handler = async (m, { conn, text }) => {
 *Enlace:* ${json.result.url}`
 
     if (json.result.thumbnail) {
-      m.react(done);
       await conn.sendFile(m.chat, json.result.thumbnail, 'thumbnail.jpg', songInfo, m);
     } else {
       m.reply(songInfo);

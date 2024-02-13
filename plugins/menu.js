@@ -4,14 +4,14 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': '📄 ɪɴꜰᴏ 📄',
+  'main': '📄 ɪɴꜰᴏ 📄━',
   'game': '🎮 ᴊᴜᴇɢᴏꜱ 🎮',
   'serbot': '🤖 ꜱᴜʙ ʙᴏᴛꜱ 🤖',
   'rpg': '💸ᴇᴄᴏɴᴏᴍɪᴀ💸',
   'rg': '📊ʀᴇɢɪꜱᴛʀᴏ📊',
   'downloader': '📥ᴅᴇꜱᴄᴀʀɢᴀꜱ📤',
   'stalkear': '👤ꜱᴛᴀʟᴋᴇʀ👤',
-  'ia': '🤖 ɪᴀ 🤖',
+  'ia': '🤖 ɪᴀ 🤖━━━━',
   'nable': 'ᴀᴄᴛɪᴠᴀᴅᴏʀᴇꜱ📋',
   'group': '🌱 ɢʀᴜᴘᴏꜱ 🌱',
   'search': '🔎ʙᴜꜱᴄᴀᴅᴏʀ🔍',

@@ -51,7 +51,7 @@ Hola *%taguser*,
 `.trimStart(),
   header: '╭━━━%category━━━━━━╮',
   body: '┃ *%cmd*\n',
-  footer: '╰━━━━━━━━━━━━━━━━━━╯ ',
+  footer: '╰━━━━━━━━━━━━━━━━━━━╯ ',
   after: '\n*Jotchua - Bot - Mini*',
 }
 

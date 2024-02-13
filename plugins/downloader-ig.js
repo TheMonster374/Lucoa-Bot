@@ -1,27 +1,26 @@
-import fetch from 'node-fetch';
-
-let handler = async (m, { conn, usedPrefix, args, command, text }) => {
-  if (!text) throw `LINK?`;
-
-  let res;
-  try {
-    res = await fetch(`https://inrl-web.onrender.com/api/insta?url=${text}`);
-  } catch (error) {
-    throw `An error occurred: ${error.message}`;
-  }
-
-  let api_response = await res.json();
-  if (!api_response || !api_response.result || api_response.result.length === 0) {
-    throw `No video found or Invalid response from API.`;
-  }
-
-  let cap = `HERE IS THE VIDEO >,<`;
-
-  conn.sendFile(m.chat, api_response.result[0], 'instagram.mp4', cap, m);
+let handler = async (m, {
+    usedPrefix,
+    command,
+    args
+}) => {
+    if (!args[0]) return m.reply(Func.example(usedPrefix, command, 'https://www.instagram.com/p/CvhKFLaLWXJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='))
+    if (!args[0].match(/(https:\/\/www.instagram.com)/gi)) return m.reply(status.invalid)
+    let old = new Date()
+    try {
+        const json = await Func.fetchJson(API('alya', '/api/ig', { url: args[0] }, 'apikey'))
+        if (!json.status) return m.reply(Func.jsonFormat(json))
+        for (let v of json.data) {
+            conn.sendMedia(m.chat, v.url, m, {
+                caption: `• *Fetching* : ${((new Date - old) * 1)} ms`,
+                mentions: [m.sender]
+            })
+        }
+    } catch (e) {
+        console.log(e)
+        return m.reply(status.error)
+    }
 }
-
 handler.help = ['instagram']
 handler.tags = ['downloader']
-handler.command = /^(instagram|igdl|ig|instagramdl)$/i
-
-export default handler
+handler.command = ['ig', 'instagram']
+module.exports = handler

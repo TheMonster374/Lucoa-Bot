@@ -13,7 +13,6 @@ const handler = async (m, { conn, args }) => {
 
         if (responseData.status && responseData.result.length > 0) {
             for (const media of responseData.result) {
-''    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
                 await conn.sendFile(m.chat, media.link, media.ext === 'mp4' ? 'video.mp4' : 'imagen.jpg', '', m);
             }
         } else {

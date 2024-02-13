@@ -31,7 +31,7 @@ Ocurrió un error al procesar la solicitud: ${error.message};`
 };
 
 handler.help = ['instagram'];
-handler.tags = ['dl'];
+handler.tags = ['downloader'];
 handler.command = /^(instagramdl|instagram|igdl|ig)$/i;
 
 export default handler;

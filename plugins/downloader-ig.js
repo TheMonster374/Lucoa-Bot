@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
 
   let cap = `HERE IS THE VIDEO >,<`;
 
-  conn.sendFile(m.chat, api_response.result[0], 'instagram.mp4',  m);
+  conn.sendFile(m.chat, api_response.result[0], 'instagram.mp4', cap, m);
 }
 
 handler.help = ['instagram']

@@ -10,6 +10,7 @@ let tags = {
   'rpg': '💸ᴇᴄᴏɴᴏᴍɪᴀ💸',
   'rg': '📊ʀᴇɢɪꜱᴛʀᴏ📊',
   'downloader': '📥ᴅᴇꜱᴄᴀʀɢᴀꜱ📤',
+  'stalkear': '👤ꜱᴛᴀʟᴋᴇʀ👤',
   'ia': '🤖 ɪᴀ 🤖',
   'nable': 'ᴀᴄᴛɪᴠᴀᴅᴏʀᴇꜱ📋',
   'group': '🌱 ɢʀᴜᴘᴏꜱ 🌱',
@@ -166,7 +167,6 @@ conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: t
   }
 }
 
-handler.help = ['menu']
 handler.command = ['menu', 'help', 'menú'] 
 export default handler
 

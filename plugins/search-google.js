@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
   if (!text) return conn.reply(m.chat, '*ɪɴɢʀᴇꜱᴇ ᴇʟ ᴛᴇxᴛᴏ Qᴜᴇ ᴅᴇꜱᴇᴇ ʙᴜꜱᴄᴀʀ* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: imagen perro', m);
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
-let teks = `*ʀᴇꜱᴜʟᴛᴀᴅᴏ ᴅᴇ :_${text}_*`
+let teks = `*[🐶] ʀᴇꜱᴜʟᴛᴀᴅᴏ ᴅᴇ :_${text}_*`
 for (let g of res) {
 teks += `_*${g.title}*_\n_${g.link}_\n_${g.snippet}_\n\n`
 } 
@@ -16,7 +16,7 @@ conn.sendFile(m.chat, ss, 'error.png', teks, m)
 //m.reply(teks)
 })
 } 
-handler.help = ['google', 'googlef'].map((v) => v + ' <pencarian>');
+handler.help = ['google'].map((v) => v + ' <pencarian>');
 handler.tags = ['search'];
 handler.command = /^googlef?$/i;
 export default handler;

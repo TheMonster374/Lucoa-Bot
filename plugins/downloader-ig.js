@@ -17,7 +17,7 @@ let resultl = responsel.data
 for (const item of resultl.message) {
 let shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${item.thumbnail}`)).text()
 let tXXxt = `🍧 *Url:* ${shortUrRRl}`.trim()
-conn.sendFile(m.chat, item._url, null, tXXxt, fkontak, m)
+conn.sendFile(m.chat, item._url, null, tXXxt, m)
 await new Promise((resolve) => setTimeout(resolve, 10000))
 } 
 } catch { 
@@ -26,7 +26,7 @@ let datTa = await instagram.v1(args[0])
 for (const urRRl of datTa) {
 let shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
 let tXXxt = `🍧 *Url:* ${shortUrRRl}`.trim()
-conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, fkontak, m)
+conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m)
 await new Promise((resolve) => setTimeout(resolve, 10000))
 }
 } catch {

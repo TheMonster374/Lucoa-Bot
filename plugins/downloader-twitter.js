@@ -17,7 +17,7 @@ const tweetTitle = tweetData.title
 const tweetVideoUrl = tweetData.media[0].url
 const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${text}`)).text()
 const tweetTitleWithoutUrl = tweetTitle.replace(/https?:\/\/t\.co\/\w+/i, '').trim()
-const txt1 = `😁 ${tweetTitleWithoutUrl}\n\n🔗 *link acortado:*\n• _${shortUrl1}_\n\ninstagram.com/noureddine_ouafy`.trim()
+const txt1 = `titulo: ${tweetTitleWithoutUrl}\n\n🔗 *link acortado:*\n• _${shortUrl1}`.trim()
 await conn.sendFile(m.chat, tweetVideoUrl, 'error.mp4', txt1, fkontak)
 } catch (e) {
 console.log(e)

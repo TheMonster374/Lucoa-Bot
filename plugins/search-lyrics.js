@@ -27,7 +27,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     throw `*[❗] ᴇʀʀᴏʀ [❗]*_\n\n*ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ɪɴᴇꜱᴘᴇʀᴀᴅᴏ.*`;
   }
 };
-handler.help = ['lirik', 'letra'].map((v) => v + ' <Apa>');
+handler.help = ['letra'].map((v) => v + ' <nombre de la cancion>');
 handler.tags = ['search'];
 handler.command = /^(lirik|lyrics|lyric|letra)$/i;
 export default handler;

@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, args }) => {
     if (!args[0]) {
-        throw `*ɪɴɢʀᴇꜱᴇ ᴇʟ ᴜꜱᴇʀɴᴀᴍᴇ ᴅᴇ ɪɴꜱᴛᴀɢʀᴀᴍ* [🐶] ᴇᴊᴇᴍᴘʟᴏ: igstalk ale2_0_2`;
+        throw `*ɪɴɢʀᴇꜱᴇ ᴇʟ ᴜꜱᴇʀɴᴀᴍᴇ ᴅᴇ ɪɴꜱᴛᴀɢʀᴀᴍ* \n\n [🐶] ᴇᴊᴇᴍᴘʟᴏ: igstalk ale2_0_2`;
     }
 
     try {

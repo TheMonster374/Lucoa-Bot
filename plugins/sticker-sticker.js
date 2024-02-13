@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return conn.reply(m.chat, 'ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ ᴅᴇʙᴇ ꜱᴇʀ ᴍᴇɴᴏʀ ᴀ *10 ꜱᴇɢᴜɴᴅᴏꜱ*', m, estilo)
       let img = await q.download?.()
-      if (!img) return conn.reply(m.chat, `ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ`, m,)
+      if (!img) return conn.reply(m.chat, `[❗] ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ`, m,)
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!stiker) stiker = e
   } finally {
     if (stiker) await conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: true, title: packname, body: `Simple whatsapp bot`, mediaType: 2, sourceUrl: group, thumbnail: catalogo}}}, { quoted: m })
-    else return conn.reply(m.chat, '[❗] ᴇʀʀᴏʀ [❗] \n\n ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ', m, estilo)
+    else return conn.reply(m.chat, '[❗] ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ', m, estilo)
   }
 }
 handler.help = ['sticker']

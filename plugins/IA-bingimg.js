@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
     conn.sendFile(m.chat, buffer, 'image.png', `${text}`, m)
 }
 
-handler.help = ['bingimg <query>']
+handler.help = ['bingimg <texto>']
 handler.tags = ['ia']
 handler.command = /^bingimg$/i
 

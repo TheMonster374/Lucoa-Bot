@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*ꜰᴏʀᴍᴀᴛᴏ ɪɴᴄᴏʀʀᴇᴄᴛᴏ*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ:${usedPrefix + command}`
+  if (!text) throw `*𝑭𝒐𝒓𝒎𝒂𝒕𝒐 𝒊𝒏𝒄𝒐𝒓𝒓𝒆𝒄𝒕𝒐*\n\n[🐶] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 :${usedPrefix + command}`
   try {
     let resultados = await spotifyxv(text)
     let res = resultados.map((v, i) => {

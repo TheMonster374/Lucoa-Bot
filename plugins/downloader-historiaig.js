@@ -4,18 +4,18 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   const res = await fetch(`https://api.lolhuman.xyz/api/igstory/${args[0]}?apikey=${lolkeysapi}`);
   const anu = await res.json();
   const anuku = anu.result;
-  if (anuku == '') return m.reply('*[❗] 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙸𝙽𝚅𝙰𝙻𝙸𝙳𝙾 𝙾 𝚂𝙸𝙽 𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰𝚂*');
+  if (anuku == '') return m.reply('*[❗] 𝑼𝒔𝒖𝒂𝒓𝒊𝒐 𝑰𝒏𝒗𝒂𝒍𝒊𝒅𝒐 𝒐 𝑺𝒊𝒏 𝑯𝒊𝒔𝒕𝒐𝒓𝒊𝒂𝒔*');
   for (const i of anuku) {
     const res = await axios.head(i);
     const mime = res.headers['content-type'];
     if (/image/.test(mime)) {
       await conn.sendFile(m.chat, i, 'error.jpg', null, m).catch(() => {
-        return m.reply('*[❗] 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙸𝙽𝚅𝙰𝙻𝙸𝙳𝙾 𝙾 𝚂𝙸𝙽 𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰𝚂*');
+        return m.reply('*[❗] 𝑼𝒔𝒖𝒂𝒓𝒊𝒐 𝑰𝒏𝒗𝒂𝒍𝒊𝒅𝒐 𝒐 𝑺𝒊𝒏 𝑯𝒊𝒔𝒕𝒐𝒓𝒊𝒂𝒔*');
       });
     }
     if (/video/.test(mime)) {
       await conn.sendFile(m.chat, i, 'error.mp4', null, m).catch(() => {
-        return m.reply('*[❗] 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙸𝙽𝚅𝙰𝙻𝙸𝙳𝙾 𝙾 𝚂𝙸𝙽 𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰𝚂*');
+        return m.reply('*[❗] 𝑼𝒔𝒖𝒂𝒓𝒊𝒐 𝑰𝒏𝒗𝒂𝒍𝒊𝒅𝒐 𝒐 𝑺𝒊𝒏 𝑯𝒊𝒔𝒕𝒐𝒓𝒊𝒂𝒔*');
       });
     }
   }

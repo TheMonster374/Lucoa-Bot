@@ -56,6 +56,7 @@ let handler = async (m, { conn, usedPrefix }) => {
    let teks = ` –  *I N F O  B O T*
 
 ┌    *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
+│    *link grupos* : https://atom.bio/als
 │    *Prefijo* : [  ${usedPrefix}  ]
 │    *Plataforma* : ${platform()}
 │    *Servidor* : ${hostname()}

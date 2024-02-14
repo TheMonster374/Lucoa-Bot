@@ -11,28 +11,8 @@ global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""
 
 global.owner = [
-  ['18192011470', '👑   Creador 👑', true],
+  ['54911 4477-5561', '👑   Creador 👑', true],
   ['', '  Collaborator 1 💫', true],
-  ['', '  - Collaborator 2 ', true],
-  ['', '  - Collaborator 3 ', true],
-  ['', ' - Collaborator 4 ', true],
-  ['', '  - Collaborator 5 ', true],
-  ['', '  - Collaborator 6 ', true],
-  ['', '  - Collaborator 7 ', false],
-  ['', '  - Collaborator 8 ', true],
-  ['','  - Tester ', true],
-  [''],
-  [''],
-  [''],
-  [''],
-  [''],
-  [''],
-  [''],
-  [''], 
-  [''],  
-  [''],
-  [''],
-  ['']
 ];
 
 global.suittag = [''];

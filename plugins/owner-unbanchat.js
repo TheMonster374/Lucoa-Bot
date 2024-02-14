@@ -3,7 +3,7 @@ const handler = async (m) => {
   m.reply('*[✅] 𝑪𝒉𝒂𝒕 𝑫𝒆𝒔𝒃𝒂𝒏𝒆𝒂𝒅𝒐*');
 };
 handler.help = ['unbanchat'];
-handler.tags = ['owner'];
+handler.tags = ['grupo'];
 handler.command = /^(unbanchat|desbanearchat)$/i;
 handler.rowner = true;
 export default handler;

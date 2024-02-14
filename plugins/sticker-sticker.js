@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return conn.reply(m.chat, 'ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ ᴅᴇʙᴇ ꜱᴇʀ ᴍᴇɴᴏʀ ᴀ *10 ꜱᴇɢᴜɴᴅᴏꜱ*', m, estilo)
       let img = await q.download?.()
-      if (!img) return conn.reply(m.chat, `[❗] ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ`, m,)
+      if (!img) return conn.reply(m.chat, ` `[❗] 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒊𝒎𝒂𝒈𝒆𝒏 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒕𝒊𝒓 𝒆𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓` `, m,)
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
@@ -29,14 +29,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-      else return conn.reply(m.chat, '[❗] ᴇʀʀᴏʀ [❗]\n\n ᴇʟ ᴇɴʟᴀᴄᴇ ɴᴏ ᴇꜱ ᴠᴀʟɪᴅᴏ, ᴛɪᴇɴᴇ Qᴜᴇ ꜱᴇʀ .ᴊᴘɢ  \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: ${usedPrefix}s https://telegra.ph/file/0dc687c61410765e98de2.jpg', m, estilo)
+      else return conn.reply(m.chat, '[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]\n\n 𝑬𝒍 𝒆𝒏𝒍𝒂𝒄𝒆 𝒏𝒐 𝒆𝒔 𝒗𝒂𝒍𝒊𝒅𝒐, 𝒕𝒊𝒆𝒏𝒆 𝒒𝒖𝒆 𝒔𝒆𝒓 .𝒋𝒑𝒈  \n\n[🐶] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: ${usedPrefix}s https://telegra.ph/file/0dc687c61410765e98de2.jpg', m, estilo)
     }
   } catch (e) {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
     if (stiker) await conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: true, title: packname, body: `Simple whatsapp bot`, mediaType: 2, sourceUrl: group, thumbnail: catalogo}}}, { quoted: m })
-    else return conn.reply(m.chat, '[❗] ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ɪᴍᴀɢᴇɴ ᴘᴀʀᴀ ᴄᴏɴᴠᴇʀᴛɪʀ ᴇɴ ꜱᴛɪᴄᴋᴇʀ', m, estilo)
+    else return conn.reply(m.chat, '[❗] 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒊𝒎𝒂𝒈𝒆𝒏 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒕𝒊𝒓 𝒆𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓', m, estilo)
   }
 }
 handler.help = ['sticker']

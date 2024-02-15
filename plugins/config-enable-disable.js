@@ -1,58 +1,58 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
 const optionsFull = `
- *Comando:* ${usedPrefix + command} welcome
+ *Comando:* ${usedPrefix + command} ❖⊱⊰𝑾𝒆𝒍𝒄𝒐𝒎𝒆⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} public
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝑷𝒖𝒃𝒍𝒊𝒄𝒐⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} nsfw
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒏𝒔𝒇𝒘⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antilink
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antilink2
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌2⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} detect
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒅𝒆𝒕𝒆𝒄𝒕⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} detect2
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒅𝒆𝒕𝒆𝒄𝒕2⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} restrict
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒓𝒆𝒔𝒕𝒓𝒊𝒄𝒕⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} autoread
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒕𝒐𝒓𝒆𝒂𝒅⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} audios
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒅𝒊𝒐𝒔⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} autosticker 
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒕𝒐𝒔𝒕𝒊𝒄𝒌𝒆𝒓⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} pconly
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒑𝒄𝒐𝒏𝒍𝒚⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} gconly
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒈𝒄𝒐𝒏𝒍𝒚⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antiviewonce
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒗𝒊𝒆𝒘𝒐𝒏𝒄𝒆⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} anticall
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒄𝒂𝒍𝒍⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antitoxic
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒕𝒐𝒙𝒊𝒄⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antitraba
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒕𝒓𝒂𝒃𝒂⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antiarabes
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒂𝒓𝒂𝒃𝒆𝒔⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antiarabes2
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒂𝒓𝒂𝒃𝒆𝒔2⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} modoadmin
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒐𝒂𝒅𝒎𝒊𝒏⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} simsimi
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒔𝒊𝒎𝒔𝒊𝒎𝒊⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antidelete
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒅𝒆𝒍𝒆𝒕𝒆⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} audios_bot
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒅𝒊𝒐𝒔_𝒃𝒐𝒕⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} modoia
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒐𝒊𝒂⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antispam
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒔𝒑𝒂𝒎⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} modejadibot
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒆𝒋𝒂𝒅𝒊𝒃𝒐𝒕⊱⊰❖
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} antiprivado
+▢ *Comando:* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒑𝒓𝒊𝒗𝒂𝒅𝒐⊱⊰❖
 `.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);
@@ -134,7 +134,7 @@ const optionsFull = `
       }
       chat.antidelete = isEnable;
       break;
-    case 'public':
+    case 'publico':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import fetch from 'node-fetch';
 const handler = async (m, {command, conn}) => {
-  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*𝐋𝐎𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 +𝟏𝟖 𝐄𝐒𝐓𝐀𝐍 𝐃𝐄𝐒𝐀𝐂𝐓𝐈𝐕𝐀𝐃𝐎𝐒 𝐄𝐍 𝐄𝐒𝐓𝐄 𝐆𝐑𝐔𝐏𝐎, 𝐒𝐈 𝐄𝐒 𝐀𝐃𝐌𝐈𝐍 𝐘 𝐃𝐄𝐒𝐄𝐀 𝐔𝐒𝐀𝐑𝐋𝐎𝐒 𝐔𝐒𝐄 𝐄𝐋 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 #enable modohorny*';
+  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw '*𝑬𝒍 𝒏𝒔𝒇𝒘 𝒆𝒔𝒕𝒂 𝒅𝒆𝒔𝒉𝒂𝒃𝒊𝒍𝒊𝒕𝒂𝒅𝒐, 𝒖𝒔𝒆 #𝒆𝒏𝒂𝒃𝒍𝒆 𝒏𝒔𝒇𝒘 𝒑𝒂𝒓𝒂 𝒂𝒄𝒕𝒊𝒗𝒂𝒓𝒍𝒐*';
 
   if (command == 'ahegao') {
     const res = (await axios.get(`https://raw.githubusercontent.com/KazukoGans/database/main/nsfw/ahegao.json`)).data;

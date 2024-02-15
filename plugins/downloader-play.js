@@ -4,17 +4,12 @@ import yts from 'yt-search'
 import fetch from 'node-fetch' 
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
-    let lister = [
-        "mp3",
-        "mp4", 
-        "mp3doc",
-        "mp4doc"
-    ]
+let lister = ["mp3", "yta", "audio", "ytv", "video", "vídeo", "mp4", "mp3doc", "ytadoc", "audiodoc", "mp4doc", "ytvdoc", "videodoc", "vídeodoc"]
     let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
     if (!lister.includes(feature)) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ꜰᴏʀᴍᴀᴛᴏ ᴇɴ Qᴜᴇ ᴅᴇꜱᴇᴀꜱ ᴅᴇꜱᴄᴀʀɢᴀʀ ᴍᴀꜱ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.*\n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
     if (lister.includes(feature)) {
-        if (feature == "mp3") {
-            if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3 SUICIDAL-IDOL - ecstacy`, m)
+       if (feature == "mp3" || feature == "yta" || feature == "audio") {
+            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -89,7 +84,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         console.error(error)
     }}}
         
-        if (feature == "mp4") {
+        if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
             if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp4 SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]
@@ -147,7 +142,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`ᴇʟ ᴀʀᴄʜɪ�
         console.error(error)
     }}}
     
-    if (feature == "mp3doc") {
+    if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
             if (!inputs) return conn.reply(m.chat, `*ɪɴɢʀᴇꜱᴀ ᴇʟ ᴛɪᴛᴜʟᴏ ᴅᴇ ᴜɴ ᴠɪᴅᴇᴏ ᴏ ᴍᴜꜱɪᴄᴀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ.* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: play mp3doc SUICIDAL-IDOL - ecstacy`, m)
     let res = await yts(text)
     let vid = res.videos[0]

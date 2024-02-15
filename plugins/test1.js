@@ -8,8 +8,15 @@ const handler = async (m, {command, conn}) => {
     const haha = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
   }
+
+  
+  if (command == 'manga') {
+    const res = (await axios.get(`https://raw.githubusercontent.com/KazukoGans/database/main/nsfw/manga.json`)).data;
+    const haha = await res[Math.floor(res.length * Math.random())];
+    conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
+  }
 };
-handler.help = ['ahegao'];
-handler.command = ['ahegao'];
+handler.help = ['ahegao', 'manga'];
+handler.command = ['ahegao', 'manga'];
 handler.tags = ['nsfw'];
 export default handler;

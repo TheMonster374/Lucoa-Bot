@@ -252,7 +252,7 @@ return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.star
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./JTSession/${files}`)
+unlinkSync(`./MysticSession/${files}`)
 })
 } 
 
@@ -273,7 +273,7 @@ unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
 })
 if (SBprekey.length === 0) return; //console.log(chalk.cyanBright(`=> No hay archivos por eliminar.`))
 } catch (err) {
-console.log(chalk.bold.red(`[ ℹ️ ] Algo salio mal durante la eliminación, archivos no eliminados`))
+console.log(chalk.bold.red(`[ ❌ ] Algo salio mal durante la eliminación, archivos no eliminados`))
 }}
 
 function purgeOldFiles() {
@@ -311,9 +311,11 @@ if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
 if (opcion == '1' || methodCodeQR) {
     console.log(chalk.yellow('Escanea el código QR.'));
  }}
-  if (connection == 'open') {
-    console.log(chalk.yellow('Conectado correctamente.'));
-  }
+   if (connection == 'open') {
+console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🐶 ≫─━─━━─━━─━╮\n│\n│Jotchua-Mini Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
+conn.fakeReply('5491144775561@s.whatsapp.net', '𝑯𝒐𝒍𝒂 𝒄𝒓𝒆𝒂𝒅𝒐𝒓, 𝒔𝒐𝒚 𝒋𝒐𝒕𝒄𝒉𝒖𝒂-𝑴𝒊𝒏𝒊\n𝑹𝒆𝒄𝒊𝒆𝒏𝒕𝒆𝒎𝒆𝒏𝒕𝒆 𝑴𝒆 𝑯𝒆 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒐 𝑪𝒐𝒎𝒐 𝑼𝒏 𝑵𝒖𝒆𝒗𝒐 𝑩𝒐𝒕 𝑶𝒇𝒊𝒄𝒊𝒂𝒍', '0@s.whatsapp.net', '𝚀𝚞𝚎 𝚝𝚎𝚗𝚐𝚊𝚜 𝚕𝚒𝚗𝚍𝚘 𝚍𝚒𝚊 𝚌𝚛𝚎𝚊𝚍𝚘𝚛 ❤', '0@s.whatsapp.net')
+ await conn.groupAcceptInvite('GR9pMnqYI8DB9HoJnl2HkB');
+   }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) {
 await fs.unlinkSync("./JTSession/" + "creds.json")

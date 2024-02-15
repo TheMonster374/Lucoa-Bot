@@ -35,7 +35,7 @@ Hola *%taguser*,
 ┆📅 *𝑫𝒊𝒂*: %week
 ┆📅 *𝑭𝒆𝒄𝒉𝒂*: %date
 ┆🐢 *𝑪𝒓𝒆𝒂𝒅𝒐𝒓*: +54 9 11 4477-5561
-${totalusr}
+%totalreg
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 
 
@@ -62,7 +62,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let { exp, limit, level } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
-    let  totalusr = Object.keys(global.db.data.users).length;
     let d = new Date(new Date + 3600000)
     let locale = 'es'
     // d.getTimeZoneOffset()

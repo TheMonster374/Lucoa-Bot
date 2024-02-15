@@ -62,6 +62,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let { exp, limit, level } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
+    let  totalusr = Object.keys(global.db.data.users).length;
     let d = new Date(new Date + 3600000)
     let locale = 'es'
     // d.getTimeZoneOffset()

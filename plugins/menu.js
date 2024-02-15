@@ -2,9 +2,8 @@ import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
-
 let tags = {
-  'main': '📄 𝑰𝑵𝑭𝑶 📄━',
+  'main': '📄 ɪɴꜰᴏ 📄━',
   'game': '🎮 ᴊᴜᴇɢᴏꜱ 🎮',
   'serbot': '🤖 ꜱᴜʙ ʙᴏᴛꜱ 🤖',
   'rpg': '💸ᴇᴄᴏɴᴏᴍɪᴀ💸',
@@ -24,25 +23,16 @@ let tags = {
   'owner': '🐕 ᴄʀᴇᴀᴅᴏʀ 🐕',
   'advanced': 'ᴀᴠᴀɴᴢᴀᴅᴏ',
 }
-
 const defaultMenu = {
   before: `
 ──────────────────────
-
 Hola *%taguser*,
-
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ┆📅 *𝑫𝒊𝒂*: %week
 ┆📅 *𝑭𝒆𝒄𝒉𝒂*: %date
 ┆🐢 *𝑪𝒓𝒆𝒂𝒅𝒐𝒓*: +54 9 11 4477-5561
-┆👤 *𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔* : %totalreg
-┆📑 𝑨𝑽𝑰𝑺𝑶: 𝑺𝒆 𝒂𝒈𝒓𝒂𝒅𝒆𝒄𝒆 𝒔𝒊 
-┆𝒍𝒆 𝒉𝒂𝒃𝒍𝒂𝒏 𝒅𝒆 𝒋𝒐𝒕𝒄𝒉𝒖𝒂 𝒂 𝒐𝒕𝒓𝒂𝒔 
-┆𝒑𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝒑𝒂𝒓𝒂 𝒒𝒖𝒆 𝒆𝒍 
-┆𝒃𝒐𝒕 𝒔𝒆𝒂 𝒎𝒂𝒔 𝒄𝒐𝒏𝒐𝒄𝒊𝒅𝒐 🐶
+%totalusr
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-
-
 ✗━━━━━━━━━━━━━━━━━━━━✗
 ┃🌼 *𝑵𝒐𝒎𝒃𝒓𝒆* : %name
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : %limit
@@ -51,7 +41,6 @@ Hola *%taguser*,
 ✗━━━━━━━━━━━━━━━━━━━━✗  
 %readmore
 ──────────────────────
-
 \t\t\t*𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺 *
 `.trimStart(),
   header: '╭━━━%category━━━━━━╮',
@@ -59,7 +48,6 @@ Hola *%taguser*,
   footer: '╰━━━━━━━━━━━━━━━━━━━╯ ',
   after: '\n*Jotchua - Bot - Mini*',
 }
-
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
  try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -161,7 +149,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-
     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
     let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
 conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
@@ -171,17 +158,11 @@ conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: t
     throw e
   }
 }
-
 handler.command = ['menu', 'help', 'menú'] 
 export default handler
-
-
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}

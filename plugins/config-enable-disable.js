@@ -4,7 +4,7 @@ const optionsFull = `
 --------------------------------
 ▢ *Comando:* ${usedPrefix + command} public
 --------------------------------
-▢ *Comando:* ${usedPrefix + command} modohorny
+▢ *Comando:* ${usedPrefix + command} nsfw
 --------------------------------
 ▢ *Comando:* ${usedPrefix + command} antilink
 --------------------------------
@@ -169,14 +169,14 @@ const optionsFull = `
       }
       chat.antiviewonce = isEnable;
       break;
-    case 'modohorny':
+    case 'nsfw':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
           throw false;
         }
       }
-      chat.modohorny = isEnable;
+      chat.nsfw = isEnable;
       break;
     case 'modoadmin':
       if (m.isGroup) {

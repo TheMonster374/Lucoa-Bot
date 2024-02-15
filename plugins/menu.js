@@ -10,7 +10,6 @@ let tags = {
   'rpg': '💸ᴇᴄᴏɴᴏᴍɪᴀ💸',
   'rg': '📊ʀᴇɢɪꜱᴛʀᴏ📊',
   'downloader': '📥ᴅᴇꜱᴄᴀʀɢᴀꜱ📤',
-  'marker': 'LOGO - MAKER',
   'stalkear': '👤ꜱᴛᴀʟᴋᴇʀ👤',
   'ia': '🤖 ɪᴀ 🤖━━━━',
   'nable': 'ᴀᴄᴛɪᴠᴀᴅᴏʀᴇꜱ📋',

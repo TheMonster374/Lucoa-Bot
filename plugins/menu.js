@@ -1,9 +1,9 @@
-importar  {  promesas  }  desde  'fs'
-importar  {  unirse  }  desde  'ruta'
-importar  buscar  desde  'node-fetch'
-importar  {  xpRange  }  desde  '../lib/levelling.js'
+import { promises } from 'fs'
+import { join } from 'path'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
 
-dejar  etiquetas  =  {
+let tags = {
   'main' : '📄 𝑰𝑵𝑭𝑶 📄━' ,
   'game' : '🎮 ᴊᴜᴇɢᴏꜱ 🎮' ,
   'serbot' : '🤖 ꜱᴜʙ ʙᴏᴛꜱ 🤖' ,
@@ -160,18 +160,23 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
      let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
 conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
    
-  }  atrapar  ( e )  {
-    conexión . responder ( m . chat ,  '❎ Lo sentimos, el menú tiene un error.' ,  m )
-    tirar  e
+  } catch (e) {
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
+    throw e
   }
 }
-manipulador . comando  =  [ 'menú' ,  'ayuda' ,  'menú' ] 
-exportar  controlador predeterminado 
-const  más  =  Cadena . deCharCode ( 8206 )
-const  leerMás  =  más . repetir ( 4001 )
-función  cadena de reloj ( ms )  {
-  sea  h  =  isNaN ( ms ) ? '--' : Matemáticas . piso ( ms  /  3600000 )
-  sea  m  =  isNaN ( ms ) ? '--' : Matemáticas . piso ( ms  /  60000 )  %  60
-  sea  s  =  isNaN ( ms ) ? '--' : Matemáticas . piso ( ms  /  1000 )  %  60
-  devolver  [ h ,  m ,  s ] . mapa ( v  =>  v . toString ( ) . padStart ( 2 ,  0 ) ) . unirse ( ':' )
-  }
+
+handler.help = ['menu']
+handler.command = ['menu', 'help', 'menú'] 
+export default handler
+
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}

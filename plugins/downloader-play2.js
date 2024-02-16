@@ -147,8 +147,6 @@ handler.help = ['play1.1', 'play2.2'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
 handler.command = /^(play1.1|play2.2)$/i;
 
-handler.register = true
-
 
 export default handler;
 

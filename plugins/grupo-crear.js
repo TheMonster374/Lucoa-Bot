@@ -1,4 +1,4 @@
-case 'creategc': case 'creategroup': {
+ {
 if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
 try {
 let cret = await sms.groupCreate(args.join(" "), [])
@@ -12,7 +12,6 @@ sms.sendMessage(m.chat, { text:teksop, mentions: await sms.parseMention(teksop)}
 } catch {
 m.reply(Error)
 }}
-break
 
 handler.help = ['creargc']
 handler.tags = ['owner'];

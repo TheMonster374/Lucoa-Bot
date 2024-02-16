@@ -13,5 +13,13 @@ let zoomA = `[ 𝐆𝐄𝐍𝐄𝐑𝐀𝐃𝐎𝐑 𝐃𝐄 𝐒𝐀𝐋𝐀�
 𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽 𝙳𝙴 𝙻𝙰 𝚃𝚁𝙰𝙽𝚂𝙼𝙸𝚂𝙸𝙾𝙽: ${json.Duration} minutos`
 await conn.reply(m.chat, zoomA, m)
 }}
+
+ } catch (error) {
+    console.error(error);
+    throw `
+> ꜱɪɴ ʀᴇꜱᴘᴜᴇꜱᴛᴀ
+ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ᴀʟ ᴘʀᴏᴄᴇꜱᴀʀ ʟᴀ ꜱᴏʟɪᴄɪᴛᴜᴅ: ${error.message}`;
+  }
+};
 handler.command = /^(zoom|zoomgen|videollamada)$/i
-export default handler
+export default handler;

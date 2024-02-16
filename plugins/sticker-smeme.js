@@ -6,9 +6,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let mime = (q.msg || q).mimetype || ''
     if (!mime) throw `𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏\n\n[ 🐶 ]𝑬𝒋𝒆𝒎𝒑𝒍𝒐: .smeme bot|uwu`
     if (!/image\/(jpe?g|png)/.test(mime)) throw `Error`
-    m.reply(global.wait)
-    m.reply(global.waitt)
-    m.reply(global.waittt)
     let img = await q.download()
     let url = await uploadImage(img)
     let meme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas ? atas : '')}/${encodeURIComponent(bawah ? bawah : '')}.png?background=${url}`

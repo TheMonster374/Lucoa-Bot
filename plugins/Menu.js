@@ -51,7 +51,7 @@ Hola *%taguser*,
   header: '╭━━━%category━━━━━━╮',
   body: '┃ *%cmd*\n',
   footer: '╰━━━━━━━━━━━━━━━━━━━╯',
-  after: '\n*Trzer-Bot*',
+  after: '\n*J O T C H U A - M I N I*',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {

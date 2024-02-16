@@ -1,5 +1,5 @@
 let handler = async (m, { text, args }) => {
-  if (!args[0]) throw `[🐶] pon un nombre perra`
+  if (!args.join(" ")) throw `[🐶] pon un nombre perra`
 try {
 let cret = await sms.groupCreate(args.join(" "), [])
 let response = await sms.groupInviteCode(cret.id)

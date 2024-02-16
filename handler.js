@@ -1532,8 +1532,8 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
  ▢ *Fecha:* ${date}\n
  ▢ *Enviando el mensaje eliminado...*\n
  *Para desactivar la función* _antidelete_*, envia el siguiente comando:* _/disable antidelete_`.trim();
-        await this.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
-        this.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+        await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
+        mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
     }

@@ -1,16 +1,17 @@
 import fetch from 'node-fetch'
 
 let handler = async(m, { conn, text }) => {
-  if (!text) throw `especifica el nombre de lo que buscas`
-  let res = await fetch(`https://api.xyroinee.xyz/api/anime/doujin-search?q=${text}&apikey=${global.xyro}`)
   try {
+  if (!text) throw `Nyari Apa?`
+  let res = await fetch(`https://api.clayzaaubert.my.id/api/anime/doujin-search?q=${text}&apikey=${global.clayza}`)
   let json = await res.json()
-  let foto = json.data[0].thumbnail
   json = json.data.map((v) => `*Title:* ${v.title}\n*Type:* ${v.type}\n*Score:* ${v.score}\n*Status:* ${v.status}\n*Link:* ${v.url}`).join`\n\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n\n`
-  conn.sendFile(m.chat, foto, '', json, m)
-  } catch (e) {
-m.reply(`Terjadi Kesalahan, Doujin Yang Kamu Cari Tidak Di Temukan`)
-}
+  conn.sendFile(m.chat, json.data[0].thumbnail, '', json, m)
+  } catch (error) {
+    // Jika terjadi kesalahan lainnya
+    conn.reply(m.chat, 'Limit Harian Sudah tercapai', m);
+    console.log(error);
+  }
 }
 handler.help = ['doujinsearch']
 handler.tags = ['search']

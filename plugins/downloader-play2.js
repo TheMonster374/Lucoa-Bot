@@ -1,78 +1,4 @@
 import yts from 'yt-search';
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
-import axios from 'axios';
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*Formato incorrecto*\nEjemplo:\n${usedPrefix + command} Mi corazón encantado`;
-try {
-let ytse = await yts(text);
-let vid = ytse.all.find(v => v.type === "video"); 
-const q = '128kbps';
-const v = vid.url;
-const yt = await (async () => {
-try {
-return await youtubedl(v);
-} catch {
-return await youtubedlv2(v);
-}
-})();
-const dl_url = await yt.audio[q].download(); 
-const [ttl, size, getlinkxyz] = await Promise.all([
-yt.title,
-yt.audio[q].fileSizeH,
-getlink(dl_url), 
-]);
-
-let play = `❒═════❬ 𝐏𝐋𝐀𝐘 ❭═════╾❒
-├‣ Nombre :
-┴
-${vid.title}
-┬
-├‣ Fuente :
-┴
-${vid.url}
-┬
-├‣ Tamaño :
-┴
-${size}
-┬
-├‣ Link :
-┴
-${getlinkxyz} 
-┬
-❒═══════════════╾❒`.trim();
-conn.sendFile(m.chat, vid.thumbnail, '', play, m);
-conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m });
-} catch (error) {
-}};
-handler.help = ["play"].map(v => v + " <búsqueda>");
-handler.tags = ["descargador"];
-handler.command = /^play2?$/i;
-export default handler;
-
-async function getlink(dl_url) {
-try {
-const baseURL = "https://drive.google.com/uc?export=download&id=";
-const match = /\/d\/(.+?)\//.exec(dl_url);
-const fileId = match[1];
-const googleDriveLink = ${baseURL}${fileId};
-return googleDriveLink;
-} catch (error) {
-return dl_url;
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*import yts from 'yt-search';
 import ytdl from 'ytdl-core';
 import fetch from 'node-fetch';
 
@@ -122,7 +48,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 };
 handler.help = ["play"].map(v => v + " <búsqueda>");
 handler.tags = ["descargador"];
-handler.command = /^play?$/i;
+handler.command = /^play2?$/i;
 export default handler;
 
 function convertDuration(duration) {

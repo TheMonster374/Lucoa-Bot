@@ -16,7 +16,7 @@ break
 
 handler.help = ['creargc']
 handler.tags = ['owner'];
-handler.command = /^(creargcX|grupocrear)$/i;
+handler.command = /^(gc|creategc)$/i;
 
 handler.rowner = true;
 

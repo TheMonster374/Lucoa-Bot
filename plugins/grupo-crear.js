@@ -10,9 +10,9 @@ const teksop = `     「 Grupo - Creado 」
 ▸ Creacion : ${moment(cret.creation * 1000).tz("America/Lima'").format("DD/MM/YYYY HH:mm:ss")}
 
 https://chat.whatsapp.com/${response}`
-sms.sendMessage(m.chat, { text:teksop, mentions: await sms.parseMention(teksop)}, {quoted:m})
+sms.sendMessage(m.chat, { text:null, mentions: await sms.parseMention(teksop)}, {quoted:m})
 } catch {
-m.reply(Error)
+m.reply(`${error.message}`)
 }}
 
 

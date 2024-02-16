@@ -55,7 +55,7 @@ conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fi
 }}
 handler.help = ["play"].map(v => v + " <búsqueda>")
 handler.tags = ["descargador"]
-handler.command = /^play?$/i
+handler.command = /^play2?$/i
 export default handler
 
 async function getTinyURL(text) {

@@ -1,4 +1,4 @@
-case 'creategc': case 'creategroup': {
+let handler = async (m, { conn, usedPrefix, isOwner }) => {
 if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
 try {
 let cret = await sms.groupCreate(args.join(" "), [])

@@ -6,7 +6,7 @@ const handler = async (m, {conn, args, text}) => {
   const done = `*𝑳𝑰𝑵𝑲 𝑨𝑪𝑶𝑹𝑻𝑨𝑫𝑶 𝑪𝑶𝑹𝑹𝑬𝑪𝑻𝑨𝑴𝑬𝑵𝑻𝑬 🐶*\n\n*𝑳𝑰𝑵𝑲 𝑨𝑵𝑻𝑬𝑹𝑰𝑶𝑹:*\n${text}\n*𝑳𝑰𝑵𝑲 𝑨𝑪𝑶𝑹𝑻𝑨𝑫𝑶:*\n${shortUrl1}`.trim();
   m.reply(done);
 };
-handler.help = ['tinyurl', 'acortar'].map((v) => v + ' <link>');
+handler.help = ['acortar'].map((v) => v + ' <link>');
 handler.tags = ['tools'];
 handler.command = /^(tinyurl|short|acortar|corto)$/i;
 handler.fail = null;

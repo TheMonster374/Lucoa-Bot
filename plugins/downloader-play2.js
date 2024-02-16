@@ -3,7 +3,7 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 import axios from 'axios';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw *• Uso correcto*\n*Ejemplo:*\n${usedPrefix + command} Die For You;
+if (!text) throw `*Uso correcto*\n*Ejemplo:*\n${usedPrefix + command} Die For You`;
 try {
 let limit = 70;
 let ytse = await yts(text);

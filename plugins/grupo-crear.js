@@ -13,4 +13,11 @@ sms.sendMessage(m.chat, { text:teksop, mentions: await sms.parseMention(teksop)}
 m.reply(Error)
 }}
 break
+
+handler.help = ['creargc']
+handler.tags = ['owner'];
+handler.command = /^(creargcX|grupocrear)$/i;
+
+handler.rowner = true;
+
 export default handler;

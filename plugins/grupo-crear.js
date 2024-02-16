@@ -19,3 +19,5 @@ handler.help = ['creargc']
 handler.tags = ['owner'];
 handler.command = /^(creargc|grupocrear)$/i;
 handler.rowner = true;
+
+export default handler;

@@ -4,7 +4,7 @@ import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   const fetch = (await import('node-fetch')).default;
   const text = args.join` `;
-  if (!text) return conn.reply(m.chat, '*ɪɴɢʀᴇꜱᴇ ᴇʟ ᴛᴇxᴛᴏ Qᴜᴇ ᴅᴇꜱᴇᴇ ʙᴜꜱᴄᴀʀ* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ: imagen perro', m);
+  if (!text) return conn.reply(m.chat, '*ɪɴɢʀᴇꜱᴇ ᴇʟ ᴛᴇxᴛᴏ Qᴜᴇ ᴅᴇꜱᴇᴇ ʙᴜꜱᴄᴀʀ* \n\n[🐶] ᴇᴊᴇᴍᴘʟᴏ:  jotchua', m);
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
 let teks = `*[🐶] ʀᴇꜱᴜʟᴛᴀᴅᴏ ᴅᴇ :_${text}_*`
@@ -16,7 +16,7 @@ conn.sendFile(m.chat, ss, 'error.png', teks, m)
 //m.reply(teks)
 })
 } 
-handler.help = ['google'].map((v) => v + ' <pencarian>');
+handler.help = ['google'].map((v) => v + ' <texto>');
 handler.tags = ['search'];
 handler.command = /^googlef?$/i;
 export default handler;

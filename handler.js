@@ -1273,11 +1273,11 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
           m.exp += xp;
         }
         if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-          mconn.conn.reply(m.chat, `*Sus diamantes se han agotado, puede adquirir más con el comando:* _${usedPrefix}buyall_`, m);
+          mconn.conn.reply(m.chat, `*𝒕𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐, 𝒑𝒖𝒆𝒅𝒆 𝒂𝒅𝒒𝒖𝒊𝒓𝒊𝒓 𝒎á𝒔 𝒄𝒐𝒏 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:* _${usedPrefix}buyall_`, m);
           continue; 
         }
         if (plugin.level > _user.level) {
-          mconn.conn.reply(m.chat, `*Se require tener el nivel ${plugin.level} para poder utilizar el comando. Tú nivel actual es ${_user.level}, usa el comando ${usedPrefix}lvl para subir tu nivel con XP.*`, m);
+          mconn.conn.reply(m.chat, `*𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒓𝒆 𝒕𝒆𝒏𝒆𝒓 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍 ${plugin.level} 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐. 𝑻ú 𝒏𝒊𝒗𝒆𝒍 𝒂𝒄𝒕𝒖𝒂𝒍 𝒆𝒔 ${_user.level}, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 ${usedPrefix} 𝒍𝒗𝒍 𝒑𝒂𝒓𝒂 𝒔𝒖𝒃𝒊𝒓 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒄𝒐𝒏 𝑿𝑷.*`, m);
           continue; 
         }
         const extra = {
@@ -1346,7 +1346,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             }
           }
           if (m.limit) {
-            m.reply('*ᴜᴛɪʟɪᴢᴀꜱᴛᴇ ' + +m.limit + ' 💎.*');
+            m.reply('*𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒔𝒕𝒆 ' + +m.limit + ' [ 💎 ].*');
           }
         }
         break;
@@ -1447,7 +1447,7 @@ export async function participantsUpdate({id, participants, action}) {
               const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
               if (responseb[0].status === '404') return;
               const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-              await m.conn.sendMessage(id, {text: `*@${user.split('@')[0]} en este grupo no se permiten numeros arabes o raros, por lo que se te sacara del grupo*`, mentions: [user]}, {quoted: fkontak2});
+              await m.conn.sendMessage(id, {text: `*@${user.split('@')[0]} 𝒆𝒏 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐 𝒏𝒐 𝒔𝒆 𝒑𝒆𝒓𝒎𝒊𝒕𝒆𝒏 𝒏𝒖𝒎𝒆𝒓𝒐𝒔 𝒂𝒓𝒂𝒃𝒆𝒔 𝒐 𝒓𝒂𝒓𝒐𝒔, 𝒑𝒐𝒓 𝒍𝒐 𝒒𝒖𝒆 𝒔𝒆 𝒕𝒆 𝒔𝒂𝒄𝒂𝒓𝒂 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*`, mentions: [user]}, {quoted: fkontak2});
               return;
             }
             await m.conn.sendFile(id, apii.data, 'pp.jpg', text, null, false, {mentions: [user]});
@@ -1541,19 +1541,19 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '_*[❗] 𝘖𝘸𝘯𝘦𝘳 [❗]*_\n\n*Este comando solo puede ser utilizado por el propietario del bot. 👑*',
-    owner: '_*[❗] 𝘖𝘸𝘯𝘦𝘳 [❗]*_\n\n*Este comando solo puede ser utilizado por el propietario del bot.👑*',
-    mods: '_*[❗] 𝘖𝘸𝘯𝘦𝘳-𝘔𝘰𝘥𝘴 [❗]*_\n\n*Este comando solo puede ser utilizado por moderadores y el propietario del bot.👑*',
-    premium: '_*[❗] 𝘖𝘸𝘯𝘦𝘳-𝘗𝘳𝘦𝘮𝘪𝘶𝘮𝘴*_\n\n*Este comando solo puede ser utilizado por usurios premium y el propietario del bot.👑*',
-    group: '_*[❗] 𝘎𝘳𝘶𝘱𝘰𝘴 [❗]*_\n\n*Este comando solo puede ser utilizado en grupos.🐶*',
-    private: '_*[❗] 𝘗𝘳𝘪𝘷𝘢𝘥𝘰 [❗]*_\n\n*Este comando solo puede ser utilizado en el chat privado del bot.🐶*',
-    admin: '_*[❗] 𝘈𝘥𝘮𝘪𝘯𝘴 [❗]*_\n\n*Este comando solo puede ser usado por administradores del grupo.🐶*',
-    botAdmin: '_*[❗] 𝘉𝘰𝘵 𝘈𝘥𝘮𝘪𝘯 [❗]*_\n\n*Para utilizar este comando es necesario que el bot sea administrador del grupo.🐶*',
-    unreg: '_*[❗] 𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘰 [❗]*_\n\n*Para utilizar este comando debes estar registrado.*\n\n*Utiliza el comando:* _/reg nombre.edad_ *para registrarte.*',
-    restrict: '_*[❗] 𝘖𝘸𝘯𝘦𝘳 [❗]*_\n\n*Este comando fue desactivado por el propietario del bot.👑*',
+    rowner: '_*[❗] 𝑶𝒘𝒏𝒆𝒓 [❗]*_\n\n𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕. 👑',
+    owner: '_*[❗] 𝑶𝒘𝒏𝒆𝒓 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕..👑*',
+    mods: '_*[❗] 𝑶𝒘𝒏𝒆𝒓-𝑴𝒐𝒅𝒔 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕.👑',
+    premium: '_*[❗] 𝑶𝒘𝒏𝒆𝒓-𝑷𝒓𝒆𝒎𝒊𝒖𝒎𝒔*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒓𝒊𝒐𝒔 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕👑*',
+    group: '_*[❗] 𝑮𝒓𝒖𝒑𝒐𝒔 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒏 𝒈𝒓𝒖𝒑𝒐𝒔.🐶*',
+    private: '_*[❗] 𝑷𝒓𝒊𝒗𝒂𝒅𝒐 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒏 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕.🐶*',
+    admin: '_*[❗] 𝑨𝒅𝒎𝒊𝒏𝒔 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐.🐶*',
+    botAdmin: '_*[❗] 𝑩𝒐𝒕 𝒂𝒅𝒎𝒊𝒏 [❗]*_\n\n*𝑷𝒂𝒓𝒂 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔 𝒏𝒆𝒄𝒆𝒔𝒂𝒓𝒊𝒐 𝒒𝒖𝒆 𝒆𝒍 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐.🐶*',
+    unreg: '_*[❗] 𝑹𝒆𝒈𝒊𝒔𝒕𝒓𝒐 [❗]*_\n\n*𝑷𝒂𝒓𝒂 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆𝒃𝒆𝒔 𝒆𝒔𝒕𝒂𝒓 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐.*\n\n*𝑼𝒕𝒊𝒍𝒊𝒛𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:* _/reg nombre.edad_ *𝒑𝒂𝒓𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆.*',
+    restrict: '_*[❗] 𝑶𝒘𝒏𝒆𝒓 [❗]*_\n\n*𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒖𝒆 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕.👑*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝐀𝐝𝐯𝐞𝐫𝐭𝐞𝐧𝐜𝐢𝐚', body: 'ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ', thumbnail: imagen1, sourceUrl: 'https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝐀𝐝𝐯𝐞𝐫𝐭𝐞𝐧𝐜𝐢𝐚', body: '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊', thumbnail: catalogo, sourceUrl: 'https://atom.bio/als'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 

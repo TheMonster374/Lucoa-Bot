@@ -1,4 +1,4 @@
-case 'creategc': case 'creategroup': {
+let handler = async (m, { text, args }) => {
 if (!Owner) return ('> Este comando solo puede ser utilizado por mi creador >')
 if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
 try {
@@ -15,4 +15,10 @@ sms.sendMessage(m.chat, { text:teksop, mentions: await sms.parseMention(teksop)}
 } catch {
 m.reply(Error)
 }}
-break
+
+
+handler.help = ['creargc']
+handler.tags = ['owner'];
+handler.command = /^(creargc|grupocrear)$/i;
+
+export default handler;

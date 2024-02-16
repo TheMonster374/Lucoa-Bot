@@ -1,6 +1,6 @@
 let handler = async (m, { text, args }) => {
-if (!Owner) return ('> Este comando solo puede ser utilizado por mi creador >')
-if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
+  if (!args[0]) throw `[🐶] pon un nombre perra`
+  try {
 try {
 let cret = await sms.groupCreate(args.join(" "), [])
 let response = await sms.groupInviteCode(cret.id)
@@ -20,5 +20,5 @@ m.reply(Error)
 handler.help = ['creargc']
 handler.tags = ['owner'];
 handler.command = /^(creargc|grupocrear)$/i;
-
+handler.rowner = true;
 export default handler;

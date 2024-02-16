@@ -1,37 +1,49 @@
-let handler = async (m, {
-  usedPrefix,
-  command,
-  args
-}) => {
-  if (!args[0]) return m.reply(Func.example(usedPrefix, command, 'https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file'))
-  if (!args[0].match('mediafire.com')) return m.reply(status.invalid)
+import axios from 'axios';
+import fetch from 'node-fetch';
+import cheerio from 'cheerio';
+import {mediafiredl} from '@bochilteam/scraper';
+
+const handler = async (m, {conn, args, usedPrefix, command}) => {
+  if (!args[0]) throw `𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝑴𝒆𝒅𝒊𝒂𝑭𝒊𝒓𝒆.*\n\n*[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐:* _${usedPrefix + command} https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file_`;
   try {
-    const json = await Func.fetchJson(API('alya', '/api/mediafire', { url: args[0] }, 'apikey'))
-    if (!json.status) return m.reply(Func.jsonFormat(json))
-    let ca = `乂  *M E D I A F I R E*\n\n`
-    ca += `  ∘  *Name* : ` + json.data.filename + '\n'
-    ca += `  ∘  *Size* : ` + json.data.filesize + '\n'
-    ca += `  ∘  *Type* : ` + json.data.filetype + '\n'
-    ca += `  ∘  *Mime* : ` + json.data.mimetype + '\n'
-    ca += `  ∘  *Upload* : ` + json.data.uploadAt + '\n\n'
-    ca += global.set.footer
-    let xSize = Func.sizeLimit(json.data.filesize, global.max_upload)
-    if (xSize.oversize) return m.reply(`The file size (${json.data.filesize}) is too large, please download it yourself via this link : ${await (await Func.shortlink(json.data.link))}`)
-    conn.sendMessageModify(m.chat, ca, m, {
-      largeThumb: true,
-      thumbnail: 'https://telegra.ph/file/98417f85e45f3cae84bee.jpg'
-    }).then(async () => {
-      conn.sendMedia(m.chat, json.data.link, m, {
-        fileName: json.data.filename,
-        mentions: [m.sender]
-      })
-    })
-  } catch (e) {
-    console.log(e)
-    return m.reply(status.error)
+    const resEX = await mediafiredl(args[0]);
+    const captionES = `_*𝑴 𝑬 𝑫 𝑰 𝑨 𝑭 𝑰 𝑹 𝑬*_\n
+🐢 *Nombre:* ${resEX.filename}
+🌿 *Tamaño:* ${resEX.filesizeH}
+🖇 *Extensión:* ${resEX.ext}\n\n
+*[ ⏳ ] Se está enviando el archivo. espere...*`.trim();
+    m.reply(captionES);
+    await conn.sendFile(m.chat, resEX.url, resEX.filename, '', m, null, {mimetype: resEX.ext, asDocument: true});
+  } catch {
+    try {
+      const res = await mediafireDl(args[0]);
+      const {name, size, date, mime, link} = res;
+      const caption = `_*𝑴 𝑬 𝑫 𝑰 𝑨 𝑭 𝑰 𝑹 𝑬*_\n
+🐢 *Nombre:* ${name}
+🌿 *Tamaño:* ${size}
+🖇 *Extensión:* ${mime}\n\n
+*[ ⏳ ] Se está enviando el archivo. espere...*`.trim();
+      await m.reply(caption);
+      await conn.sendFile(m.chat, link, name, '', m, null, {mimetype: mime, asDocument: true});
+    } catch {
+      await m.reply('_*𝑴 𝑬 𝑫 𝑰 𝑨 𝑭 𝑰 𝑹 𝑬*_\n\n*[ ❌ ] 𝑬𝑹𝑹𝑶𝑹 [ ❌ ]*');
+    }
   }
+};
+handler.help = ['mediafire']
+handler.tags = ['downloader']
+handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i;
+export default handler;
+
+async function mediafireDl(url) {
+  const res = await axios.get(`https://www-mediafire-com.translate.goog/${url.replace('https://www.mediafire.com/', '')}?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp`);
+  const $ = cheerio.load(res.data);
+  const link = $('#downloadButton').attr('href');
+  const name = $('body > main > div.content > div.center > div > div.dl-btn-cont > div.dl-btn-labelWrap > div.promoDownloadName.notranslate > div').attr('title').replaceAll(' ', '').replaceAll('\n', '');
+  const date = $('body > main > div.content > div.center > div > div.dl-info > ul > li:nth-child(2) > span').text();
+  const size = $('#downloadButton').text().replace('Download', '').replace('(', '').replace(')', '').replace('\n', '').replace('\n', '').replace('                         ', '').replaceAll(' ', '');
+  let mime = '';
+  const rese = await axios.head(link);
+  mime = rese.headers['content-type'];
+  return {name, size, date, mime, link};
 }
-handler.help = ['mediafire']; 
-handler.command = ['mediafire'];
-handler.tags = ['downloader'];
-module.exports = handler

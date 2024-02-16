@@ -167,7 +167,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 }
 
 handler.help = ['menu']
-handler.command = ['menu2', 'help2', 'menú2'] 
+handler.command = ['menu', 'help', 'menú'] 
 export default handler
 
 

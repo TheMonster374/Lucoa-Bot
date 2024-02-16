@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓, 𝒑𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒆𝒏𝒗𝒊𝒂𝒓 𝒂 𝑪𝒉𝒂𝒕𝑮𝑷𝑻4./n/n[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: ${usedPrefix + command} haz una historia donde jotchua sea millonario ';
+    throw '𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓, 𝒑𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒆𝒏𝒗𝒊𝒂𝒓 𝒂 𝑪𝒉𝒂𝒕𝑮𝑷𝑻4./n/n[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: ${command} haz una historia donde jotchua sea millonario ';
   }
 
   try {

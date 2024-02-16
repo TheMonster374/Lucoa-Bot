@@ -2,7 +2,7 @@ import yts from 'yt-search';
 import ytdl from 'ytdl-core';
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+let handler = async (m.reply, { conn, text, args, usedPrefix, command }) => {
   if (!text) throw `*Formato incorrecto*\ningresa el nombre de la canción\nEjemplo:\n${usedPrefix + command} Mi corazón encantado`;
 
   let ytse = await yts(args.join(" "));

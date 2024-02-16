@@ -14,7 +14,7 @@ const handler = async (m, { conn, text }) => {
 
     if (data.result) {
       m.reply(`
-> Bard AI
+> 𝑩 𝑨 𝑹 𝑫  𝑨𝑰
 
 ${data.result}`);
     } else {

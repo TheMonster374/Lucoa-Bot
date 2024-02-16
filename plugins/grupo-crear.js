@@ -1,4 +1,6 @@
- {
+
+
+let handler = async (m, { text, args }) => {
 if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
 try {
 let cret = await sms.groupCreate(args.join(" "), [])

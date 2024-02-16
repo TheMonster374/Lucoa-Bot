@@ -31,6 +31,7 @@ let handler = async (m, {
     return m.reply(status.error)
   }
 }
-handler.help = handler.command = ['mediafire']
-handler.tags = ['downloader']
+handler.help = ['mediafire']; 
+handler.command = ['mediafire'];
+handler.tags = ['downloader'];
 module.exports = handler

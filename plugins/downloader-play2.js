@@ -53,9 +53,9 @@ return m.reply(`El archivo supera el límite de tamaño de descarga (150 MB) y e
 conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fileName: vid.title + '.mp3', contextInfo, quoted: m })
 }} catch (error) {
 }}
-handler.help = ["play"].map(v => v + " <búsqueda>")
-handler.tags = ["descargador"]
-handler.command = /^play?$/i
+handler.help = ["play2"].map(v => v + " <búsqueda>")
+handler.tags = ["downloader"]
+handler.command = /^play2?$/i
 export default handler
 
 async function getTinyURL(text) {

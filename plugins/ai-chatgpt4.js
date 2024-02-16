@@ -14,7 +14,7 @@ const handler = async (m, { conn, text }) => {
 
     if (data.result) {
       m.reply(`
-> 'ChatGPT 4'
+> 𝑪 𝑯 𝑨 𝑻 𝑮𝑷𝑻 4
 
 ${data.result}`);
     } else {

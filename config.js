@@ -63,7 +63,8 @@ global.adimagen = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵�
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"
 global.apikeykasu = "SebastianDevelop"
-
+global.xyro = '' //xyroine api key
+global.clayza = '' //clayzaaubert api key
 
 //Reacciones
 global.rwait = '⏰'

@@ -4,9 +4,9 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'INFO',
-  'game': 'JUEGOS',
-  'serbot': 'SUB BOTS',
+  'main': '📄 𝑰𝑵𝑭𝑶 📄━',
+  'game': '🎮 ᴊᴜᴇɢᴏꜱ 🎮',
+  'serbot': '🤖 ꜱᴜʙ ʙᴏᴛꜱ 🤖',
   'rpg': 'ECONOMÍA',
   'rg': 'REGISTRO',
   'downloader': 'DESCARGAS',
@@ -26,30 +26,38 @@ let tags = {
 
 const defaultMenu = {
   before: `
-────────────────────────
-
-Hola *%taguser*, 
-
-╭━─━─━─≪ɪɴꜰᴏ ᴜꜱᴇʀ≫─━─━─━╮
-┆
-┆
-┆
-╰━─━─━─≪ɪɴꜰᴏ ᴜꜱᴇʀ≫─━─━─━
+──────────────────────
+Hola *%taguser*,
+◈ ━━━━━━━━━━━━━━━━━━━━ ◈
+┆📅 *𝑫𝒊𝒂*: %week
+┆📅 *𝑭𝒆𝒄𝒉𝒂*: %date
+┆🐢 *𝑪𝒓𝒆𝒂𝒅𝒐𝒓*: +54 9 11 4477-5561
+┆👤 *𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔* : %totalreg
+┆📑 𝑨𝑽𝑰𝑺𝑶: 𝑺𝒆 𝒂𝒈𝒓𝒂𝒅𝒆𝒄𝒆 𝒔𝒊
+┆𝒍𝒆 𝒉𝒂𝒃𝒍𝒂𝒏 𝒅𝒆 𝒋𝒐𝒕𝒄𝒉𝒖𝒂 𝒂 𝒐𝒕𝒓𝒂𝒔
+┆𝒑𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝒑𝒂𝒓𝒂 𝒒𝒖𝒆 𝒆𝒍
+┆𝒃𝒐𝒕 𝒔𝒆𝒂 𝒎𝒂𝒔 𝒄𝒐𝒏𝒐𝒄𝒊𝒅𝒐 🐶
+◈ ━━━━━━━━━━━━━━━━━━━━ ◈
+✗━━━━━━━━━━━━━━━━━━━━✗
+┃🌼 *𝑵𝒐𝒎𝒃𝒓𝒆* : %name
+┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : %limit
+┃🔰 *𝑵𝒊𝒗𝒆𝒍* : %level
+┃✨ *𝑿𝑷* : %exp
+✗━━━━━━━━━━━━━━━━━━━━✗  
 %readmore
-────────────────────────────────
-
-\t\t\t*C O M A N D O S*
+──────────────────────
+\t\t\t*𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺 *
 `.trimStart(),
-  header: '╭────%category────╮',
-  body: '│ *%cmd*\n',
-  footer: '╰──────────────────╯ ',
+  header: '╭━━━% categoría━━━━━━╮',
+  body: '┃ *%cmd*\n',
+  footer: '╰━━━━━━━━━━━━━━━━━━━╯',
   after: '\n*Trzer-Bot*',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
  try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-    let { exp, star, level } = global.db.data.users[m.sender]
+    let { exp, limit, level } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
@@ -93,7 +101,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
         tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
         prefix: 'customPrefix' in plugin,
-        star: plugin.star,
+        limit: plugin.limit,
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
@@ -148,10 +156,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let pp = ' https://telegra.ph/file/256c3cda14573d5cf1506.mp4'
-    let pp2 = 'https://telegra.ph/file/256c3cda14573d5cf1506.mp4'
-    let pp3 = 'https://telegra.ph/file/256c3cda14573d5cf1506.mp4'
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
+     let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
+    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
     
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)

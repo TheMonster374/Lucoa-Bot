@@ -1,25 +1,21 @@
-let handler = async (m, { text, args }) => {
-if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
-try {
-let cret = await sms.groupCreate(args.join(" "), [])
-let response = await sms.groupInviteCode(cret.id)
-const teksop = `     「 Grupo - Creado 」
-
-▸ Nombre : ${cret.subject}
-▸ Dueño : @${cret.owner.split("@")[0]}
-▸ Creacion : ${moment(cret.creation * 1000).tz("America/Lima'").format("DD/MM/YYYY HH:mm:ss")}
-
-https://chat.whatsapp.com/${response}`
-sms.sendMessage(m.chat, { text:teksop, mentions: await sms.parseMention(teksop)}, {quoted:m})
-} catch {
-m.reply(Error)
-}}
-
-
-handler.help = ['creargc']
-handler.tags = ['owner'];
-handler.command = /^(gc|grupocrear)$/i;
-
-handler.rowner = true;
-
-export default handler;
+//import { bold } from "chalk"
+let handler = async (m, { conn, text }) => {
+   
+   if (!text) return m.reply('⚠️ _Escribe el nombre del grupo!_')
+   try{
+    m.reply(wait)
+    let group = await conn.groupCreate(text, [m.sender])
+    let link = await conn.groupInviteCode(group.gid)
+    let url = 'https://chat.whatsapp.com/' + link;
+ /// console.log(chalk.bold.red('Membuat Grup: ' + group.gid + '\nNama Grup: ' + text + '\n\nViolet'))
+    m.reply('_Grupo creado correctamente *' + text + '*_\n\n*Nama:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url)
+       } catch (e) {
+    m.reply(`❌ *Error.*`)
+  }
+}
+handler.help = ['creategroup']
+handler.tags = ['owner']
+handler.command = /^((create|buat)(gc|grup|group))$/
+handler.owner = true
+handler.premium = false
+export default handler

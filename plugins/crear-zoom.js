@@ -1,6 +1,7 @@
 import fetch from 'node-fetch'
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw * 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙻𝙰 𝙲𝙾𝙽𝚃𝚁𝙰𝚂𝙴𝙽̃𝙰 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰𝚂 𝚀𝚄𝙴 𝚃𝙴𝙽𝙶𝙰 𝚃𝚄 𝚂𝙰𝙻𝙰, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 ${usedPrefix + command} 12345678*
+const handler = async (m, { conn, text }) => {
+  if (!text) {
+throw * 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙻𝙰 𝙲𝙾𝙽𝚃𝚁𝙰𝚂𝙴𝙽̃𝙰 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰𝚂 𝚀𝚄𝙴 𝚃𝙴𝙽𝙶𝙰 𝚃𝚄 𝚂𝙰𝙻𝙰, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 ${usedPrefix + command} 12345678*
 let textfilter = text.toLowerCase()
 let res = await fetch(global.API('https://anonyzoom.herokuapp.com', '/index.php', { pass: textfilter }))
 let json = await res.json()

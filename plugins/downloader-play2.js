@@ -62,7 +62,7 @@ export default handler;
 
 async function getlink(dl_url) {
 try {
-const baseURL = "https://drive.google.com/uc?export=download&id=";
+const baseURL = "`https://drive.google.com/uc?export=download&id=`";
 const match = /\/d\/(.+?)\//.exec(dl_url);
 const fileId = match[1];
 const googleDriveLink = `${baseURL}${fileId}`;

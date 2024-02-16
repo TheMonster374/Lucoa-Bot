@@ -36,7 +36,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     m.reply('*[❗️] 𝑬𝑹𝑹𝑶𝑹 [❗️] \n\n𝑵𝒐 𝒔𝒆 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒐 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏*');
   });
 };
-handler.help = ['wikipedia'].map((v) => v + ' <apa>');
+handler.help = ['wikipedia'].map((v) => v + ' <texto>');
 handler.tags = ['search'];
 handler.command = /^(wiki|wikipedia)$/i;
 export default handler;

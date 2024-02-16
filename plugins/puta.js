@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, isOwner }) => {
 if (!args.join(" ")) return m.reply(`Uso: ${prefix+command} grupo nopor`)
 try {
-let cret = await sms.groupCreate(args.join(" "), [])
+let cret = await sms.groupCreate(join(" "), [])
 let response = await sms.groupInviteCode(cret.id)
 const teksop = `     「 Grupo - Creado 」
 ▸ Nombre : ${cret.subject}

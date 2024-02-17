@@ -41,7 +41,7 @@ showAdAttribution: true,
 title: vid.title,
 body: null,
 mediaType: 2,
-sourceUrl: 'https://www.instagram.com/auropollo._?igsh=MXVoYnZybTFvYzhuZw==',
+sourceUrl: 'https://atom.bio/als',
 thumbnail: Buffer.from(thumbnailBuffer.data),
 }}    
 if (bufferSize <= limit * 1024 * 1024) { 

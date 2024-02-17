@@ -9,6 +9,5 @@ let handler = async(m, { conn }) => {
 handler.help = ['ahegao2']
 handler.tags = ['nsfw']
 handler.command = /^(ahegao2)$/i
-handler.limit = true
 //MADE IN ERPAN 1140 BERKOLABORASI DENGAN BTS
 module.exports = handler

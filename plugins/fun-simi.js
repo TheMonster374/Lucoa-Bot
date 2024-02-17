@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
-if (!text) throw '*Formato incorrecto*\n*Ejemplo:*\n${usedPrefix + command} Hola bot'
+if (!text) throw '*Formato incorrecto*\n*Ejemplo:*\n ${usedPrefix + command} Hola bot'
 try {
 let url = 'https://simsimi.fun/api/v2/?mode=talk&lang=es&message=${text}&filter=1'
 let res = await axios.get(url)
@@ -14,7 +14,7 @@ m.reply('Apoco si tilin')
 }} catch (error) {
 //console.error(error)
 }}
-handler.help = ['simi', 'bot'].map((v) => v + ' <teks>')
+handler.help = ['simi', 'bot'].map((v) => v + ' <texto>')
 handler.tags = ['fun']
 handler.command = /^((sim)?simi|bot|alexa)$/i;
 export default handler

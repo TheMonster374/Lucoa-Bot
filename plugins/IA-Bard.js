@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (!text) {
-    throw `_*𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐.*_\n\n*${JT.smsEjemplo}* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
+    throw `_*𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐.*_\n\n*${JT.smsEjemplo}* _${usedPrefix + command} Hola Bard, ¿cómo estás?_, `;
   }
 
   try {
@@ -14,7 +14,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 
     if (data.status && data.data) {
       const respuestaAPI = data.data;
-      conn.reply(m.chat, respuestaAPI, m);
+      conn.reply(m.chat, respuestaAPI, bottime);
     } else {
       throw '_*${JT.smsError} *_\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*_';
     }

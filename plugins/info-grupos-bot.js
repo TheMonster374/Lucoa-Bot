@@ -2,22 +2,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const text = `*Hola Usuario, te invito a unirte a los grupos de jotchua - bot - mini para convivir con la comunidad :D*
-┏━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┓
-𝑮𝒓𝒖𝒑𝒐𝒔 𝒅𝒆 𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊:
-
-𝑱𝒐𝒕𝒄𝒉𝒖𝒂 - 𝑩𝒐𝒕 | 𝑶𝑭𝑪
-https://chat.whatsapp.com/FIAEDXea0ipBbgu89CsMfl
-
-
- ⎯⎯  \\\ 𝕭𝖔𝖙𝖘 /// ⎯⎯                 
-https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB 
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-𝑮𝒓𝒖𝒑𝒐𝒔 𝑪𝒐𝒍𝒂𝒃 𝒅𝒆 𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊:
-
- 𝒔𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒒𝒖𝒆 𝒕𝒖 𝒈𝒓𝒖𝒑𝒐 𝒂𝒑𝒂𝒓𝒆𝒛𝒄𝒂 𝒐 𝒄 𝒐𝒍𝒂𝒃𝒐𝒓𝒂𝒓 𝒄𝒐𝒏 𝒆𝒍 𝒃𝒐𝒕 𝒄𝒐𝒏𝒕𝒂𝒄𝒕𝒂 𝒄𝒐𝒏 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓
-┗━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┛
+${JT.smsGruposBot}
 
 `.trim();
   const buttonMessage= {

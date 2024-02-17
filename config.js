@@ -6,7 +6,7 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-import { es } from "./lib/idiomas/total-idiomas.js"
+import { es as Lenguaje } from "./lib/idiomas/_default.js"
 
 global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""
@@ -22,7 +22,7 @@ global.mods = [];
 
 // ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
 // Español 👉 es           
-global.JT = es
+global.JT = Lenguaje
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';

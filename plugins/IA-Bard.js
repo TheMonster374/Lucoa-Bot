@@ -14,12 +14,12 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 
     if (data.status && data.data) {
       const respuestaAPI = data.data;
-      conn.reply(m.chat, respuestaAPI, m, bottime);
+      conn.reply(m.chat, respuestaAPI, m);
     } else {
-      throw '_*${JT.smsError} *_\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*_';
+      throw '${JT.smsError}\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*_';
     }
   } catch (error) {
-    throw `_*${JT.smsError}*_\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*_`;
+    throw `${JT.smsError}\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*_`;
   }
 };
 

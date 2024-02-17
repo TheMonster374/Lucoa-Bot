@@ -5,9 +5,6 @@
 El codigo de este archivo esta totalmente hecho por:
 - Aiden_NotLogic (https://github.com/ferhacks)
 
-El codigo de este archivo fue creado para:
-- SakuraBotLite-MD (https://github.com/diegojadibot/SakuraBotLite-MD)
-
 El codigo de este archivo fue parchado por:
 - ReyEndymion (https://github.com/ReyEndymion)
 - BrunoSobrino (https://github.com/diegojadibot)

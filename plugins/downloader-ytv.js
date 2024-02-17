@@ -92,7 +92,7 @@ ${n3}`, thumbnail: await fetch(n4)}, {quoted: m});
     }
   }
 }};
-handler.help = ['video <yt url>'];
+handler.help = ['ytv <yt url>'];
 handler.tags = ['downloader'];
 handler.command = /^(video|fgmp4|dlmp4|getvid|yt(v|mp4)?)$/i;
 export default handler;

@@ -48,4 +48,5 @@ const moment = require('moment-timezone')
 ┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┉┛`}, {quoted: m})
 }}
 
-handler.command = ['horario']
+handler.command = ['horario'];
+export default handler;

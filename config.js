@@ -53,17 +53,6 @@ global.miniurl = fs.readFileSync('./Menu.png')
 global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
-//━━━━━━━━━━━━━━━
-
-global.fg = '_*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]*_\n\n'
-global.fallo = fg
-
-global.mg = '╰d╮\n\n'
-global.mal = mg
-
-global.eg = '[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:'
-global.ejemplo = eg
-
 //━━━━━━━MARCA━━━━━━━━ 
 
 global.desc = 'WhatsApp Bot Multi Device'

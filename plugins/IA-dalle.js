@@ -1,26 +1,52 @@
 import fetch from 'node-fetch';
+import { translate } from '@vitalets/google-translate-api';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*Este comando genera imágenes a partir de mensajes de texto.*\n\n*𝙴jemplo de uso*\n*◉ ${usedPrefix + command} Hermosa chica anime*\n*◉ ${usedPrefix + command} Elon Musk en salida rosa*`;
+const BASE_URL = 'https://bible-api.com';
 
+let bibleChapterHandler = async (m, { conn }) => {
   try {
-    m.reply('*Por favor espera, generando imágenes....*');
+    // Extract the chapter number or name from the command text.
+    let chapterInput = m.text.split(' ').slice(1).join('').trim();
 
-    const endpoint = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(text)}`;
-    const response = await fetch(endpoint);
-    
-    if (response.ok) {
-      const imageBuffer = await response.buffer();
-      await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
-    } else {
-      throw '*Please wait, generating images*';
+    if (!chapterInput) {
+      throw new Error(`Please specify the chapter number or name. Example: -bible john 3:16`);
     }
-  } catch {
-    throw '*¡Ups! Algo salió mal al generar imágenes. Por favor, inténtelo de nuevo más tarde.*';
+
+    // Encode the chapterInput to handle special characters
+    chapterInput = encodeURIComponent(chapterInput);
+
+    // Make an API request to fetch the chapter information.
+    let chapterRes = await fetch(`${BASE_URL}/${chapterInput}`);
+    
+    if (!chapterRes.ok) {
+      throw new Error(`Please specify the chapter number or name. Example: -bible john 3:16`);
+    }
+
+    let chapterData = await chapterRes.json();
+
+    let translatedChapterHindi = await translate(chapterData.text, { to: 'hi', autoCorrect: true });
+
+    let translatedChapterEnglish = await translate(chapterData.text, { to: 'en', autoCorrect: true });
+
+    let bibleChapter = `
+📖 *The Holy Bible*\n
+📜 *Chapter ${chapterData.reference}*\n
+Type: ${chapterData.translation_name}\n
+Number of verses: ${chapterData.verses.length}\n
+🔮 *Chapter Content (English):*\n
+${translatedChapterEnglish.text}\n
+🔮 *Chapter Content (Hindi):*\n
+${translatedChapterHindi.text}`;
+
+    m.reply(bibleChapter);
+  } catch (error) {
+    console.error(error);
+    m.reply(`Error: ${error.message}`);
   }
 };
 
-handler.help = ['dalle'];
-handler.tags = ['AI'];
-handler.command = ['dalle', 'gen', 'gimg', 'openai2'];
-export default handler;
+bibleChapterHandler.help = ['bible [chapter_number|chapter_name]'];
+bibleChapterHandler.tags = ['religion'];
+bibleChapterHandler.command = ['bible', 'chapter'];
+
+export default bibleChapterHandler;

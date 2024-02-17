@@ -54,26 +54,16 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
 //━━━━━━━━━━━━━━━
-global.rg = '╰resultado╮\n\n'
-global.resultado = rg
 
-global.ag = '╰⊱advertencia╮\n\n'
-global.advertencia = ag
-
-global.iig = '╰onformacion╮\n\n'
-global.informacion = iig
-
-global.fg = '╰⊱error╮\n\n'
-global.fallo = fg
+global.fl = '_*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]*_\n\n'
+global.fallo = fl
 
 global.mg = '╰d╮\n\n'
 global.mal = mg
 
-global.eeg = '╰xd⊱╮\n\n'
-global.envio = eeg
+global.ej = '[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:'
+global.ejemplo = ej
 
-global.eg = 'exito\n\n'
-global.exito = eg
 //━━━━━━━MARCA━━━━━━━━ 
 
 global.desc = 'WhatsApp Bot Multi Device'

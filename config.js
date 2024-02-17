@@ -55,14 +55,14 @@ global.thumbnail = fs.readFileSync('./Menu.png')
 
 //━━━━━━━━━━━━━━━
 
-global.fl = '_*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]*_\n\n'
-global.fallo = fl
+global.fg = '_*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]*_\n\n'
+global.fallo = fg
 
 global.mg = '╰d╮\n\n'
 global.mal = mg
 
-global.ej = '[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:'
-global.ejemplo = ej
+global.eg = '[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:'
+global.ejemplo = eg
 
 //━━━━━━━MARCA━━━━━━━━ 
 

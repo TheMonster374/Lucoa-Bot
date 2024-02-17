@@ -1,14 +1,5 @@
 const maker = require('mumaker')
 
-module.exports = {
-    name: "pornhub",
-    alias: ["ph"],
-    desc: "Make text logo.",
-    react: "👹",
-    category: "Logo Maker",
-    handler: {
-        command: ['ph']
-    },
     start: async(Yaka, m, { pushName, prefix, text }) => {
         if (!text.includes("|")) return m.reply(`Example: *${prefix}pornhub Yaka MD | Yakashi*`);
         const teks1 = text.split("|")[0];
@@ -18,4 +9,9 @@ module.exports = {
             .then((data) => Yaka.sendMessage(m.from, { image: { url: data }, caption: `Made by ${botName}` }, { quoted: m }))
             .catch((err) => m.reply('An Error occued!'));
     }
-}
+handler.command = ["ph"]
+module.exports = {
+    category: "Logo Maker",
+    handler: {
+        command: ['ph']
+    }},

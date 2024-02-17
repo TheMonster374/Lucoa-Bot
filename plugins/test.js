@@ -1,6 +1,6 @@
 const maker = require('mumaker')
 
-    start: async(Yaka, m, { pushName, prefix, text }) => {
+const handler = async (m, { conn, text }) => {
         if (!text.includes("|")) return m.reply(`Example: *${prefix}pornhub Yaka MD | Yakashi*`);
         const teks1 = text.split("|")[0];
         const teks2 = text.split("|")[1];
@@ -10,8 +10,4 @@ const maker = require('mumaker')
             .catch((err) => m.reply('An Error occued!'));
     }
 handler.command = ["ph"]
-module.exports = {
-    category: "Logo Maker",
-    handler: {
-        command: ['ph']
-    }},
+export default handler;

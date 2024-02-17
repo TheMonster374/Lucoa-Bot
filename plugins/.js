@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-if (!text) throw '*𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒅𝒆 𝒍𝒂 𝒊𝒎𝒂𝒈𝒆𝒏 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒆𝒔* \n\n[🐶] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: TEST mono en el espacio'
+ try {'*𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒅𝒆 𝒍𝒂 𝒊𝒎𝒂𝒈𝒆𝒏 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒆𝒔* \n\n[🐶] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: TEST mono en el espacio'
          if (m.quoted ? m.quoted.message : m.msg.viewOnce) {
             let type = m.quoted ? Object.keys(m.quoted.message)[0] : m.mtype
             let q = m.quoted ? m.quoted.message[type] : m.msg

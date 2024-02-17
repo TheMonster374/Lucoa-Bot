@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, args }) => {
     if (!args[0]) {
-        throw `Por favor, ingresa un enlace de Instagram. ${`ej`}`;
+        throw `Por favor, ingresa un enlace de Instagram. ${`eg`} `;
     }
 
     try {

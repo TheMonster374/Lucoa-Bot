@@ -313,7 +313,6 @@ if (opcion == '1' || methodCodeQR) {
  }}
    if (connection == 'open') {
 console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🐶 ≫─━─━━─━━─━╮\n│\n│Jotchua-Mini Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
-conn.fakeReply('5491144775561@s.whatsapp.net', '𝑯𝒐𝒍𝒂 𝒄𝒓𝒆𝒂𝒅𝒐𝒓, 𝒔𝒐𝒚 𝒋𝒐𝒕𝒄𝒉𝒖𝒂-𝑴𝒊𝒏𝒊\n𝑹𝒆𝒄𝒊𝒆𝒏𝒕𝒆𝒎𝒆𝒏𝒕𝒆 𝑴𝒆 𝑯𝒆 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒐 𝑪𝒐𝒎𝒐 𝑼𝒏 𝑵𝒖𝒆𝒗𝒐 𝑩𝒐𝒕 𝑶𝒇𝒊𝒄𝒊𝒂𝒍', '0@s.whatsapp.net', '𝚀𝚞𝚎 𝚝𝚎𝚗𝚐𝚊𝚜 𝚕𝚒𝚗𝚍𝚘 𝚍𝚒𝚊 𝚌𝚛𝚎𝚊𝚍𝚘𝚛 ❤', '0@s.whatsapp.net')
  await conn.groupAcceptInvite('GR9pMnqYI8DB9HoJnl2HkB');
    }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
@@ -384,7 +383,7 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*ʜᴏʟᴀ @user ʙɪᴇɴᴠᴇɴɪᴅᴏ ᴀ @subject';
+  conn.welcome = '𝑯𝒐𝒍𝒂 @user 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 𝒂   @subject';
   conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ'; 
   conn.spromote = '*@user ᴀʜᴏʀᴀ ᴇꜱ ᴀᴅᴍɪɴ*';
   conn.sdemote = '*@user ʏᴀ ɴᴏ ᴇꜱ ᴀᴅᴍɪɴ😥*';
@@ -545,7 +544,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `ᴊᴏᴛᴄʜᴜᴀ - ʙᴏᴛ - ᴍɪɴɪ | ᴀᴄᴛɪᴠᴏ ᴅᴇꜱᴅᴇ ʜᴀᴄᴇ: ${uptime}`;
+  const bio = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊 | 𝑻𝒊𝒆𝒎𝒑𝒐 𝑨𝒄𝒕𝒊𝒗𝒐: ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {

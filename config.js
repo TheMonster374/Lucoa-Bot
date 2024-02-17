@@ -19,6 +19,11 @@ global.owner = [
 global.suittag = [''];
 global.prems = [''];
 global.mods = [];
+
+// ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
+// Español 👉 es           
+global.lenguajeJT = es
+
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
 global.author = '𝑩𝒚 𝑨𝑳𝑺';

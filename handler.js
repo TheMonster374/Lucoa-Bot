@@ -73,6 +73,7 @@ export async function handler(chatUpdate) {
         if (!user.registered) {
           if (!('name' in user)) user.name = m.name;
           if (!isNumber(user.age)) user.age = -1;
+	  if (!('Language' in user)) user.Language = 0
           if (!isNumber(user.anggur)) user.anggur = 0;
           if (!isNumber(user.apel)) user.apel = 0;
           if (!isNumber(user.bibitanggur)) user.bibitanggur = 0;

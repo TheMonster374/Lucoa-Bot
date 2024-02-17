@@ -1,31 +1,28 @@
 let fetch = require('node-fetch')
-let timeout = 120000
-let handler = async (m, { conn, usedPrefix, command }) => {
-    conn.siapakahaku = conn.siapakahaku ? conn.siapakahaku : {}
-    let id = m.chat
-    if (id in conn.siapakahaku) {
-        conn.reply(m.chat, 'Aún quedan preguntas sin respuesta en este chat.', conn.siapakahaku[id][0])
+async function handler(m) {
+    this.game = this.game ? this.game : {}
+    let id = 'family100_' + m.chat
+    if (id in this.game) {
+        this.reply(m.chat, 'Masih ada kuis yang belum terjawab di chat ini', this.game[id].msg)
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/siapakahaku.json')).json()
-    let res = src[Math.floor(Math.random() * src.length)]
-    console.log(res);
-    let caption = `${res.soal}
+    let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')).json()
+    let json = src[Math.floor(Math.random() * src.length)]
+    let caption = `
+*Soal:* ${json.soal}
 
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Escribe  ${usedPrefix}who  para obtener ayuda
-`.trim()
-    conn.siapakahaku[id] = [
-        await m.reply(caption),
-        res, 
-        setTimeout(async () => {
-            if (conn.siapakahaku[id]) conn.sendButton(m.chat, `¡Se acabó el tiempo!\nLa respuesta es*${res.data.jawaban}*`, ``, `Next`, `${usedPrefix+command}`, conn.siapakahaku[id][0])
-            delete conn.siapakahaku[id]
-        }, timeout)
-    ]
+Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' ')) ? `
+(beberapa jawaban terdapat spasi)
+`: ''}`.trim()
+    this.game[id] = {
+        id,
+        msg: await this.reply(m.chat, caption, m),
+        ...json,
+        terjawab: Array.from(json.jawaban, () => false)
+    }
 }
-handler.help = ['quiensoy']
+handler.help = ['family100']
 handler.tags = ['game']
-handler.command = /^(quiensoy)/i
+handler.command = /^(family100)$/i
 
 module.exports = handler

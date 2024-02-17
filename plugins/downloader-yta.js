@@ -104,7 +104,7 @@ Error`, edit: key}, {quoted: m});
     }
   }
 }};
-handler.help = ['audio <yt url>']
+handler.help = ['yta <yt url>']
 handler.tags = ['downloader']
 handler.command = /^(audio|txmp3|dlmp3|getaud|yt(a|mp3))$/i;
 export default handler

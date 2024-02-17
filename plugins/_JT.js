@@ -7,7 +7,7 @@ let JT
 if (idioma == "es") {
 JT = es
 }  {
-JT = mid || es
+JT = JT || es
 }
 global.JT = JT
 

@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, args }) => {
     if (!args[0]) {
-        throw `${JT.smsIG}. ${JT.smsEjemplo} `;
+        throw `${JT.smsIG}.\n\n ${JT.smsEjemplo} *.ig* `;
     }
 
     try {

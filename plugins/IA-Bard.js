@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (!text) {
-    throw `_*${lenguajeJT['smsAvisoRG']()}𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐.*_\n\n*[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
+    throw `_*${`mg`}𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐.*_\n\n*[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
   }
 
   try {

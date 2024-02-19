@@ -6,7 +6,7 @@ await delay(1000 * 1);
 await conn.sendMessage(m.chat, {text: `🕳🕳🕳🕳`, edit: key});
 await delay(1000 * 1);
 await conn.sendMessage(m.chat, {text: `🕳🕳🕳🕳🕳🕳🕳`, edit: key});
-await conn.sendMessage(m.chat, {text: `mi creador se retira de los bots motivo? whatsapp esta baneando todos los numeros de bots que el usa y se canso de esto`, edit: key});
+await conn.sendMessage(m.chat, {text: `mi creador ALS se retira de los bots, talvez temporal o permanentemente`, edit: key});
   } else throw 'eh'
 }
 handler.help = ['owner']

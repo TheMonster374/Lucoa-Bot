@@ -20,7 +20,7 @@ ${JT.smsGruposBot}
         'previewType': 'pdf',
         'title': '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊⁩',
         'body': wm,
-        'thumbnail': "https://telegra.ph/file/e67bf7d4ef5d36b3e3b63.jpg",
+        'thumbnail': https://telegra.ph/file/e67bf7d4ef5d36b3e3b63.jpg,
         'sourceUrl': 'nn'}},
     'caption': text,
     'footer': wm,

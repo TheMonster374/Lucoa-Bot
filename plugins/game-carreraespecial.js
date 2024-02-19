@@ -25,7 +25,7 @@ const handler = async (m, { conn, text }) => {
     global.db.data.users[playerId].dolares += earnedMoney;
 
     // URL de la imagen de ganador
-    imageURL = 'https://telegra.ph/file/0fb59fe57449a262c400a.jpg';
+    imageURL = 'https://telegra.ph/file/e67bf7d4ef5d36b3e3b63.jpg';
   } else {
     const defeatMessages = [
       `Lamentablemente, ${playerName}, no lograste ganar la Carrera Espacial. 🚀💔 ¡Inténtalo de nuevo!`,
@@ -38,7 +38,7 @@ const handler = async (m, { conn, text }) => {
     resultMessage = defeatMessages[Math.floor(Math.random() * defeatMessages.length)];
 
     // URL de la imagen de perdedor
-    imageURL = 'https://telegra.ph/file/f0d55ded2ae968c6a9635.jpg';
+    imageURL = 'https://telegra.ph/file/e67bf7d4ef5d36b3e3b63.jpg';
   }
 
   const additionalInfo = `\n\n\nGracias por participar en la Carrera Espacial. 🚀 Si deseas más emocionantes desafíos, simplemente solicítalos. ${earnedMoney > 0 ? `\n\nHas ganado ${earnedMoney} dólares. 💰` : ''}`;

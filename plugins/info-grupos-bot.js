@@ -20,8 +20,8 @@ ${JT.smsGruposBot}
         'previewType': 'pdf',
         'title': '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊⁩',
         'body': wm,
-        'thumbnail': imagen1,
-        'sourceUrl': 'nn'}},
+        'thumbnail': catalogo,
+        'sourceUrl': 'md'}},
     'caption': text,
     'footer': wm,
     'headerType': 6};

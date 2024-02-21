@@ -30,6 +30,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '*Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
   }
 };
+handler.help = ['runtime']
+handler.tags = ['main']
 handler.command = /^(runtime)$/i;
 handler.exp = 50;
 handler.fail = null;

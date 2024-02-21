@@ -37,17 +37,17 @@ const handler = async (m, {conn, text}) => {
          externalAdReply: {
             mediaType: 1,
             renderLargerThumbnail: true,
-            thumbnail: imagen1,
-            thumbnailUrl: md,
+            thumbnail: img,
+            thumbnailUrl: img,
             title: packname,
          }
       });
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
     } catch {
-    throw `⚠️ Error, no se encontro una música que coincida con: *${text}*\n_Asegúrese que escribio correctamente el nombre de su canción_`;
+    throw `⚠️ _Error, no se encontro una música que coincida con:_ *${text}*\n_Asegúrese que escribio correctamente el nombre de su canción_`;
     };
 };
-handler.command = /^(musica|music)$/i;
+handler.command = /^(spotify|music)$/i;
 handler.help = ['music *nombre*']
 handler.tags = ['downloader']
 export default handler;

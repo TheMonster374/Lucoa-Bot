@@ -85,8 +85,8 @@ let sticker21B = sticker21A.exec(m.text)
 
 //▪AQUI AGREGA LOS DIRECTORIOS DEL STICKER A MANDAR▪
 if (sticker1B) {
-	let vn = './storage/stickers/xd.webp'
-	conn.sendFile(m.chat, vn, 'xd.webp', null, m, true, { type: 'webpMessage', ptt: true, contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: `${username}`, body: ``, mediaType: 2, sourceUrl: ``, thumbnailUrl: pp}}}, { quoted: m })
+	let vn = './src/welgc.webp'
+	conn.sendFile(m.chat, vn, 'welgc.webp', null, m, true, { type: 'webpMessage', ptt: true, contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: `${username}`, body: ``, mediaType: 2, sourceUrl: ``, thumbnailUrl: pp}}}, { quoted: m })
 	} else
 
 if (sticker2B) {
@@ -95,8 +95,8 @@ conn.sendMessage(m.chat, { react: { text: emot, key: m.key }})
 	} else
 
 if (sticker3B) {
-	let vn = './storage/stickers/gracias.webp'
-	conn.sendFile(m.chat, vn, 'gracias.webp', null, m, true, { type: 'webpMessage', ptt: true })
+	let vn = './src/welgc.webp'
+	conn.sendFile(m.chat, vn, 'welgc.webp', null, m, true, { type: 'webpMessage', ptt: true })
 	} else
 
 if (sticker4B) {

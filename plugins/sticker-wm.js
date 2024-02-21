@@ -1,21 +1,21 @@
 mport { addExif } from '../lib/sticker.js'
 let handler = async (m, { conn, text }) => {
-if (!m.quoted) throw '⚠️ 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗔 𝗨𝗡 𝗦𝗧𝗜𝗖𝗞𝗘𝗥 𝗔𝗟 𝗤𝗨𝗘 𝗤𝗨𝗜𝗘𝗥𝗘 𝗣𝗢𝗡𝗘𝗥 𝗨𝗡 𝗡𝗢𝗠𝗕𝗥𝗘'
+if (!m.quoted) throw '⚠️  𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒂𝒍 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒑𝒐𝒏𝒆𝒓𝒍𝒆 𝒖𝒏 𝒏𝒐𝒎𝒃𝒓𝒆'
 let stiker = false
 try {
 let [packname, ...author] = text.split('|')
 author = (author || []).join('|')
 let mime = m.quoted.mimetype || ''
-if (!/webp/.test(mime)) throw '*⚠️ 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗔 𝗨𝗡 𝗦𝗧𝗜𝗖𝗞𝗘𝗥 𝗔𝗟 𝗤𝗨𝗘 𝗤𝗨𝗜𝗘𝗥𝗘 𝗣𝗢𝗡𝗘𝗥 𝗨𝗡 𝗡𝗢𝗠𝗕𝗥𝗘*'
+if (!/webp/.test(mime)) throw '⚠️  𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒂𝒍 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒑𝒐𝒏𝒆𝒓𝒍𝒆 𝒖𝒏 𝒏𝒐𝒎𝒃𝒓𝒆'
 let img = await m.quoted.download()
-if (!img) throw '*⚠️ 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗔 𝗨𝗡 𝗦𝗧𝗜𝗖𝗞𝗘𝗥 𝗔𝗟 𝗤𝗨𝗘 𝗤𝗨𝗜𝗘𝗥𝗘 𝗣𝗢𝗡𝗘𝗥 𝗨𝗡 𝗡𝗢𝗠𝗕𝗥𝗘*'
+if (!img) throw '⚠️  𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒂𝒍 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒑𝒐𝒏𝒆𝒓𝒍𝒆 𝒖𝒏 𝒏𝒐𝒎𝒃𝒓𝒆'
 stiker = await addExif(img, packname || wm, author || wm)
 } catch (e) {
 console.error(e)
 if (Buffer.isBuffer(e)) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
-else throw '⚠️ 𝐈𝐍𝐓𝐄𝐍𝐓𝐄 𝐃𝐄 𝐍𝐔𝐄𝐕𝐎'
+else throw '⚠️ 𝑰𝒏𝒕𝒆𝒏𝒕𝒂 𝒅𝒆𝒏𝒖𝒆𝒗𝒐'
 }}
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']

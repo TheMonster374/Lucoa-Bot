@@ -1,67 +1,75 @@
-import cheerio from 'cheerio';
 import fetch from 'node-fetch';
-import { lookup } from 'mime-types';
-import { URL_REGEX } from '@whiskeysockets/baileys';
-import { apivisit } from './kanghit.js';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  text = text.endsWith('SMH') ? text.replace('SMH', '') : text;
-  if (!text) throw 'Formato: *.palabra clave yandere o URL yandere*';
-  
-  let [query, page] = text.split(' ');
-  let res = await getYandeImage(query, page);
-
-  if (res === 'in_progress') {
-    await conn.sendMessage(m.chat, '*Procesando solicitud..*', 'conversación', { quoted: m });
-    return;
-  }
-
-  let mime = await lookup(res);
-  text.match(URL_REGEX)
-    ? await conn.sendMessage(
-        m.chat,
-        { [mime.split('/')[0]]: { url: res }, caption: `Sukses Mengunduh: *${await shortUrl(res)}*` },
-        { quoted: m }
-      )
-    : await conn.sendMessage(m.chat, { image: { url: res }, caption: `Consecuencia de: *${text.capitalize()}*` }, { quoted: m });
-
-  await apivisit;
-};
-
-handler.help = handler.alias = ['yandere', 'yande'].map((v) => v + ' <query> [page]');
-handler.tags = ['downloader'];
-handler.command = /^(yandere|yande)$/i;
-export default handler;
-
-async function getYandeImage(query, page = '') {
-  if (query.match(URL_REGEX)) {
-    let res = await fetch(query);
-    let html = await res.text();
-    let $ = cheerio.load(html);
-    let image = $('img').attr('src');
-    if (!image) throw 'Can\'t fetch image :/';
-    return image;
-  } else {
-    let apiUrl = `https://yande.re/post.json?tags=${query}`;
-    if (page) {
-      const pageNumber = parseInt(page);
-      if (!isNaN(pageNumber) && pageNumber > 0) {
-        apiUrl += `&page=${pageNumber}`;
-      }
+export async function before(m) {
+    if (m.isBaileys) return false;
+    let text = extractTextAfterKeyword(m.text)
+    if (text) {
+        try {
+            let result = await gptGo(text)
+            if (result) {
+                await this.reply(m.chat, result, m);
+            }
+        } catch {
+            await this.reply(m.chat, eror, m);
+        }
     }
-
-    // Simulating in-progress fetching
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    let res = await fetch(apiUrl);
-    let json = await res.json();
-    if (json.length === 0) throw `Query "${query}" not found :/`;
-    let data = json[~~(Math.random() * json.length)];
-    if (!data) throw `Query "${query}" not found :/`;
-    return data.file_url;
-  }
 }
 
-async function shortUrl(url) {
-  return await (await fetch(`https://tinyurl.com/api-create.php?url=${url}`)).text();
+function extractTextAfterKeyword(input) {
+    const regex = /^(Bg|Gpt|chatgpt|Chatgpt|.ai|bg|hai|Hai|Hallo|hallo|halo)\s(.+)/;
+    const match = input.match(regex);
+    return match ? match[2] : null;
+};
+
+/* New Line */
+async function gptGo(query) {
+    const encodeQuery = encodeURIComponent(query)
+    const tokenResponse = await fetch(`https://gptgo.ai/action_get_token.php?q=${encodeQuery}&hlgpt=id`, {
+        method: "GET",
+        headers: {
+            "Referer": "https://gptgo.ai/?hl=id",
+            "origin": "https://gptgo.ai/"
+        }
+    });
+
+    const {
+        token
+    } = await tokenResponse.json();
+
+    const response = await fetch(`https://gptgo.ai/action_ai_gpt.php?token=${token}`, {
+        method: "GET",
+        headers: {
+            "Referer": "https://gptgo.ai/?hl=id",
+            "origin": "https://gptgo.ai/",
+            "accept": "text/event-stream"
+        }
+    });
+
+    const inputString = await response.text();
+    const chunks = inputString.split("data:");
+    let result = "";
+    const doneKeyword = "[DONE]";
+
+    for (let i = 1; i < chunks.length; i++) {
+        const chunk = chunks[i].trim();
+        const doneIndex = chunk.indexOf(doneKeyword);
+
+        if (doneIndex !== -1) {
+            // Exclude the part after [DONE]
+            result += chunk.slice(0, doneIndex);
+            break; // Stop processing further chunks
+        }
+
+        const contentIndex = chunk.indexOf('"content":"');
+        if (contentIndex !== -1) {
+            const startIndex = contentIndex + '"content":"'.length;
+            const endIndex = chunk.indexOf('"', startIndex);
+            if (endIndex !== -1) {
+                const content = chunk.slice(startIndex, endIndex);
+                result += content;
+            }
+        }
+    }
+
+    return result.replace(/\\n/g, '\n');
 }

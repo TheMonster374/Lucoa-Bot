@@ -17,16 +17,16 @@ const handler = async (m, { conn, args }) => {
             }
         } else {
             throw `
-> Sin respuesta
+> ⚠️ 𝑬𝒓𝒓𝒐𝒓 ⚠️ 
 
-No se pudo obtener el contenido de Instagram.`;
+[❌] 𝑵𝒐 𝒔𝒆 𝒑𝒖𝒅𝒐 𝒐𝒃𝒕𝒆𝒏𝒆𝒓 𝒆𝒍 𝒄𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒅𝒆 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎.`;
         }
     } catch (error) {
         console.error(error);
         throw `
-> Sin respuesta
+> ⚠️ 𝑬𝒓𝒓𝒐𝒓 ⚠️
 
-Ocurrió un error al procesar la solicitud: ${error.message};`
+[❌] 𝑶𝒄𝒖𝒓𝒓𝒊ó 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒂𝒍 𝒑𝒓𝒐𝒄𝒆𝒔𝒂𝒓 𝒍𝒂 𝒔𝒐𝒍𝒊𝒄𝒊𝒕𝒖𝒅: ${error.message};`
     }
 };
 

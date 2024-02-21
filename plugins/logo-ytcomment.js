@@ -7,6 +7,6 @@ const handler = async (m, {conn, text}) => {
   }), 'error.png', '𝑨𝒒𝒖𝒊 𝒆𝒔𝒕𝒂  𝒕𝒖 𝒄𝒐𝒎𝒆𝒏𝒕𝒂𝒓𝒊𝒐 [💬]', m);
 };
 handler.help = ['ytcomment <texto>'];
-handler.tags = ['logos'];
+handler.tags = ['efectos'];
 handler.command = /^(ytcomment|comentario)$/i;
 export default handler;

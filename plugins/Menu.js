@@ -32,7 +32,7 @@ Hola *%taguser*,
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ┆📅 *𝑫𝒊𝒂*: %week
 ┆📅 *𝑭𝒆𝒄𝒉𝒂*: %date
-┆🐢 *𝑪𝒓𝒆𝒂𝒅𝒐𝒓*: ?????????
+┆🐢 *𝑪𝒓𝒆𝒂𝒅𝒐𝒓*: +5491141493818
 ┆👤 *𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔* : %totalreg
 ┆📑 𝑨𝑽𝑰𝑺𝑶: 𝑺𝒆 𝒂𝒈𝒓𝒂𝒅𝒆𝒄𝒆 𝒔𝒊
 ┆𝒍𝒆 𝒉𝒂𝒃𝒍𝒂𝒏 𝒅𝒆 𝒋𝒐𝒕𝒄𝒉𝒖𝒂 𝒂 𝒐𝒕𝒓𝒂𝒔
@@ -161,7 +161,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
      let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
      let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: pdoc })
     
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)

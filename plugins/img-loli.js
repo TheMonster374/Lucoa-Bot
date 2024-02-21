@@ -11,7 +11,7 @@ let handler = async(m, {
 		image: {
 			url: url
 		},
-		caption: "*Éxito*"
+		caption: "*loli*"
 	}, {
 		quoted: m
 	});

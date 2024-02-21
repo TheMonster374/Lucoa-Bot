@@ -17,7 +17,7 @@ let handler = async(m, {
 	});
 }
 handler.command = /^(loli)$/i
-handler.tags = ['anime']
+handler.tags = ['img']
 handler.help = ['loli']
 export default handler
 

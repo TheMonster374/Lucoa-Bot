@@ -64,8 +64,6 @@ let handler = async (m, { conn, text, groupMetadata }) => {
 handler.tags = ["fun"];
 handler.command = handler.help = ["msg"];
 handler.owner = false;
-handler.group = true;
-handler.register = true;
 export default handler;
 function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),

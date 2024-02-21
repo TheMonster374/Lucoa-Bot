@@ -1,137 +1,139 @@
-import puppeteer from "puppeteer"
-import fetch from "node-fetch"
-let handler = async (m, {
-    conn,
-    isOwner,
-    usedPrefix,
-    command,
-    args
-}) => {
-    let query = "Format: *.carbon Kode*"
-    let text
-    if (args.length >= 1) {
-        text = args.slice(0).join(" ")
-    } else if (m.quoted && m.quoted.text) {
-        text = m.quoted.text
-    } else throw query
-    await m.reply(wait)
-    try {
-        let result = await Carbonify(text)
-        await conn.sendFile(m.chat, result, "", "*From:* " + m.name, m)
-    } catch (e) {
-        try {
-            let result = await CarbonifyV2(text)
-            await conn.sendFile(m.chat, result, "", "*From:* " + m.name, m)
-        } catch (e) {
-            try {
-                let result = await CarbonifyV3(text)
-                await conn.sendFile(m.chat, result, "", "*From:* " + m.name, m)
-            } catch (e) {
-                throw eror
-            }
-        }
-    }
-}
-handler.help = ["carbon"]
-handler.tags = ["ai"]
-handler.command = /^carbon(ify)?$/i
-handler.limit = 1
-export default handler
+import FormData from "form-data";
+import Jimp from "jimp";
 
-const config = {
-    bg: "rgba(0, 0, 0, 1)",
-    t: "3024-night",
-    wt: "sharp",
-    l: "auto",
-    // width: 680,
-    ds: true,
-    dsyoff: "20px",
-    dsblur: "68px",
-    wc: true,
-    wa: true,
-    pv: "0px",
-    ph: "0px",
-    //ln: false,
-    // fl: 1,
-    fm: "Droid Sans Mono",
-    fs: "14px",
-    // lh: "133%",
-    si: false,
-    es: "2x",
-    wm: false
+async function processing(urlPath, method) {
+	return new Promise(async (resolve, reject) => {
+		let Methods = ["enhance", "recolor", "dehaze"];
+		Methods.includes(method) ? (method = method) : (method = Methods[0]);
+		let buffer,
+			Form = new FormData(),
+			scheme = "https" + "://" + "inferenceengine" + ".vyro" + ".ai/" + method;
+		Form.append("model_version", 1, {
+			"Content-Transfer-Encoding": "binary",
+			contentType: "multipart/form-data; charset=uttf-8",
+		});
+		Form.append("image", Buffer.from(urlPath), {
+			filename: "enhance_image_body.jpg",
+			contentType: "image/jpeg",
+		});
+		Form.submit(
+			{
+				url: scheme,
+				host: "inferenceengine" + ".vyro" + ".ai",
+				path: "/" + method,
+				protocol: "https:",
+				headers: {
+					"User-Agent": "okhttp/4.9.3",
+					Connection: "Keep-Alive",
+					"Accept-Encoding": "gzip",
+				},
+			},
+			function (err, res) {
+				if (err) reject();
+				let data = [];
+				res
+					.on("data", function (chunk, resp) {
+						data.push(chunk);
+					})
+					.on("end", () => {
+						resolve(Buffer.concat(data));
+					});
+				res.on("error", (e) => {
+					reject();
+				});
+			}
+		);
+	});
+}
+let handler = async (m, { conn, usedPrefix, command }) => {
+	switch (command) {
+		case "remini":
+			{
+				conn.enhancer = conn.enhancer ? conn.enhancer : {};
+				if (m.sender in conn.enhancer)
+					throw "*Fitur Sedang Digunakan Pengguna Lain, Mohon Tunggu Sebentar*";
+				let q = m.quoted ? m.quoted : m;
+				let mime = (q.msg || q).mimetype || q.mediaType || "";
+				if (!mime)
+					throw `Balas Media Dengan Perintah *.remini*`;
+				if (!/image\/(jpe?g|png)/.test(mime))
+					throw `Mime ${mime} tidak support`;
+				else conn.enhancer[m.sender] = true;
+				m.reply("*Memproses Permintaan...*");
+				let img = await q.download?.();
+				let error;
+				try {
+					const This = await processing(img, "enhance");
+					conn.sendFile(m.chat, This, "", "*Sukses*", m);
+				} catch (er) {
+					error = true;
+				} finally {
+					if (error) {
+						m.reply("*Gagal Memproses*");
+					}
+					delete conn.enhancer[m.sender];
+				}
+			}
+			break;
+		case "color":
+			{
+				conn.recolor = conn.recolor ? conn.recolor : {};
+				if (m.sender in conn.recolor)
+					throw "*Fitur Sedang Digunakan Pengguna Lain, Mohon Tunggu Sebentar*";
+				let q = m.quoted ? m.quoted : m;
+				let mime = (q.msg || q).mimetype || q.mediaType || "";
+				if (!mime)
+					throw `Balas Media Dengan Perintah *.color*`;
+				if (!/image\/(jpe?g|png)/.test(mime))
+					throw `Mime ${mime} tidak support`;
+				else conn.recolor[m.sender] = true;
+				m.reply("*Memproses Permintaan...*");
+				let img = await q.download?.();
+				let error;
+				try {
+					const This = await processing(img, "enhance");
+					conn.sendFile(m.chat, This, "", "*Sukses*", m);
+				} catch (er) {
+					error = true;
+				} finally {
+					if (error) {
+						m.reply("*Gagal Memproses*");
+					}
+					delete conn.recolor[m.chat];
+				}
+			}
+			break;
+		case "tohd":
+			{
+				conn.hdr = conn.hdr ? conn.hdr : {};
+				if (m.sender in conn.hdr)
+					throw "*Fitur Sedang Digunakan Pengguna Lain, Mohon Tunggu Sebentar*";
+				let q = m.quoted ? m.quoted : m;
+				let mime = (q.msg || q).mimetype || q.mediaType || "";
+				if (!mime)
+					throw `Balas Media Dengan Perintah *.hd*`;
+				if (!/image\/(jpe?g|png)/.test(mime))
+					throw `Mime ${mime} tidak support`;
+				else conn.hdr[m.sender] = true;
+				m.reply("*Memproses Permintaan...*");
+				let img = await q.download?.();
+				let error;
+				try {
+					const This = await processing(img, "enhance");
+					conn.sendFile(m.chat, This, "", "*Sukses*", m);
+				} catch (er) {
+					error = true;
+				} finally {
+					if (error) {
+						m.reply("*Gagal Memproses*");
+					}
+					delete conn.hdr[m.sender];
+				}
+			}
+			break;
+	}
 };
-
-function convertToParams(myData) {
-    var out = [];
-    for (var key in myData) {
-        if (myData.hasOwnProperty(key)) {
-            out.push(key + "=" + encodeURIComponent(myData[key]));
-        }
-    }
-    return out.join("&");
-};
-
-async function Carbonify(teks) {
-    const snippets = [{
-        name: "Carbonify",
-        code: teks
-    }]
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.setViewport({
-        width: 800,
-        height: 800,
-        deviceScaleFactor: 2
-    });
-    let index = 1;
-    for (const snippet of snippets) {
-        console.log(`Carbonifying snippet ${index} of ${snippets.length}`);
-        await page.goto(
-            `https://carbon.now.sh?${convertToParams(config)}&code=${encodeURI(
-        snippet.code
-      )}`
-        );
-
-        const codeContainer = await page.$("#export-container");
-        await page.addStyleTag({
-            content: ".CodeMirror-sizer{min-height: 0!important}"
-        });
-        return await codeContainer.screenshot({
-            path: `./sticker/${snippet.name.split(".")[0]}.png`,
-        });
-        index++;
-    }
-    await browser.close();
-}
-
-async function CarbonifyV3(input) {
-    let Blobs = await fetch("https://carbon-api.vercel.app/api", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "code": input
-            })
-        })
-        .then(response => response.blob())
-    let arrayBuffer = await Blobs.arrayBuffer();
-    let buffer = Buffer.from(arrayBuffer);
-    return buffer
-}
-
-async function CarbonifyV2(input) {
-    let Blobs = await fetch("https://carbonara.solopov.dev/api/cook", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "code": input
-            })
-        })
-        .then(response => response.blob())
-    let arrayBuffer = await Blobs.arrayBuffer();
-    let buffer = Buffer.from(arrayBuffer);
-    return buffer
-}
+handler.help = ["remini"];
+handler.tags = ["ai"];
+handler.command = ["remini"];
+export default handler;

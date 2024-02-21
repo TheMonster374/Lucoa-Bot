@@ -30,5 +30,5 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 handler.help = ['spotify <texto>']
 handler.tags = ['downloader']
-handler.command = /^(spotify|music)$/i;
+handler.command = /^(spotify)$/i;
 export default handler;

@@ -3,8 +3,7 @@ export default function handler(m) {
 let teks = `\n\t\t*「🕒 \t ${clockString(process.uptime())} \t🕒」*\n`
 conn.sendMessage(m.chat, {text: teks, jpegThumbnail:  global.thumb}, { quoted: m} )
 }
-
-handler.tags = ['info']
+handler.tags = ['main']
 handler.command = handler.help = ['runtime2']
 
 function clockString(ms) {

@@ -7,8 +7,8 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   if (user.registered === true) throw `Ya estas registrado\n\n¿Quieres volver a registrate??\n\n 📌Usa este comando para eliminar tu registro del bot\n*${usedPrefix}unreg* <Número de serie>`;
   if (!Reg.test(text)) throw `uso incorrecto\n\n*ejemplo de uso de comando: ${usedPrefix + command} nombre.edad*\n*Ejemplo: ${usedPrefix + command} Ale.18*`;
   let [_, name, splitter, age] = text.match(Reg);
-  if (!name) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙳𝙴𝙱𝙴𝚂 𝙿𝙾𝙽𝙴𝚁 𝚄𝙽 𝙽𝙾𝙼𝙱𝚁𝙴*';
-  if (!age) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙰 𝙴𝙳𝙰𝙳 𝙽𝙾 𝙿𝚄𝙴𝙳𝙴 𝙴𝚂𝚃𝙰𝚁 𝚅𝙰𝙲𝙸𝙰*';
+  if (!name) throw 'Debes poner un nombre';
+  if (!age) throw 'La edad no puede estar vacia';
   if (name.length >= 30) throw 'El nombre es demasiado largo';
   age = parseInt(age);
   if (age > 100) throw '*[❗] estas muy viejo para usar el bot*';

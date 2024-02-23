@@ -44,7 +44,9 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.imagen7 = fs.readFileSync('./storage/img/perfil.png')
+//━━━━━━━IMAGENES1.2━━━━━━━━━━━━ 
+global.imgPerfil = fs.readFileSync('./storage/img/perfil.png')
+global.imgRegistro = fs.readFileSync('./storage/img/registro.png')
 //━━━━━━IMAGENES 2━━━━━━━━━━ 
 
 global.imgmenu = fs.readFileSync('./Menu3.png') 

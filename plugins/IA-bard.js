@@ -6,7 +6,6 @@ const handler = async (m, { conn, text }) => {
   }
 
   try {
-      m.react(wait);
     conn.sendPresenceUpdate('composing', m.chat);
 
     const apiUrl = `${apikasu}/api/tools/bard?text=${encodeURIComponent(text)}&apikey=${apikeykasu}`;

@@ -6,7 +6,7 @@ if (!text) return conn.reply(m.chat, `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒖�
 const res = await (await googleImage('rule34 ' + text)).getRandom()
 await conn.sendFile(m.chat, res, 'error.jpg', `*Resultado de ∙* ${text ? text.capitalize() : false}`, )
 }
-handler.help = ['rule34 <texto>']
+handler.help = ['rule34']
 handler.tags = ['search']
 handler.command = ['rule34', 'r34']
 export default handler

@@ -21,12 +21,12 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   const str = `┏┅ ━━━━━━━━━━━━ ┅ ━
 ┇「 INFORMACION 」
 ┣┅ ━━━━━━━━━━━━ ┅ ━
-┃ *Nombre:* ${name}
-┃ *Edad:* ${age} años
-┃ *Numero de serie:* 
-┃ ${sn}
+ *Nombre:* ${name}
+ *Edad:* ${age} años
+ *Numero de serie:* 
+ ${sn}
 ┣┅ ━━━━━━━━━━━━ ┅ ━
-┃tu numero de serie 
+tu numero de serie 
 servira por si quieres
 borrar tu registro
 ┗┅ ━━━━━━━━━━━━ ┅ ━`;

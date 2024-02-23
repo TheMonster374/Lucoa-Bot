@@ -34,7 +34,6 @@ global.titulowm2 = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰
 global.igfg = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
 //━━━━━ESPERAS━━━━━━━━ 
 global.wait = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐. ⏳*'; 
-global.wait2 = (m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: 'Cargando', body: '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊', thumbnail: catalogo, sourceUrl: 'https://atom.bio/als'}}}}, aa);
 global.waitt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.. ⏳*';
 global.waittt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐... ⏳*';
 global.waitttt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.... ⏳*';

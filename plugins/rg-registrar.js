@@ -32,7 +32,7 @@ borrar tu registro
 ┗┅ ━━━━━━━━━━━━ ┅ ━`;
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen7 }}}, { quoted: m })
   global.db.data.users[m.sender].money += 10000;
-  global.db.data.users[m.sender].exp += 10000;
+  global.db.data.users[m.sender].exp += 5000;
 };
 handler.help = ['registrar'];
 handler.tags = ['rg'];

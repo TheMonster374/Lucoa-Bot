@@ -57,7 +57,7 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
 //━━━━━━━MARCA━━━━━━━━ 
-global.test = conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })
+global.test = conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}
 
 
 global.desc = 'WhatsApp Bot Multi Device'

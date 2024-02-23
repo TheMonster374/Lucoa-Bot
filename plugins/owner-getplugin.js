@@ -24,7 +24,7 @@ const handler = async (m, {conn, isROwner, usedPrefix, command, text}) => {
     }
   }
 };
-handler.help = ['getplugin'].map((v) => v + ' *<nombre>*');
+handler.help = ['getplugin'].map((v) => v + '');
 handler.tags = ['owner'];
 handler.command = /^(getplugin|gp)$/i;
 handler.rowner = true;

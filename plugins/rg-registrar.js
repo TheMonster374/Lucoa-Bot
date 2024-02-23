@@ -18,7 +18,7 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   user.regTime = + new Date;
   user.registered = true;
   const sn = createHash('md5').update(m.sender).digest('hex');
-  const caption = `┏┅ ━━━━━━━━━━━━ ┅ ━
+  const str = `┏┅ ━━━━━━━━━━━━ ┅ ━
 ┇「 INFORMACION 」
 ┣┅ ━━━━━━━━━━━━ ┅ ━
 ┃ *Nombre:* ${name}
@@ -30,8 +30,8 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
 servira por si quieres
 borrar tu registro
 ┗┅ ━━━━━━━━━━━━ ┅ ━`;
-conn.sendMessage(m.chat, { image: { url: pp }, caption: caption, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen7 }}}, { quoted: m })
-  await conn.sendFile(m.chat, pp, 'mystic.jpg', caption);
+conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imagen7 }}}, { quoted: m })
+  await conn.sendFile(m.chat, pp, 'mystic.jpg', str);
   global.db.data.users[m.sender].money += 10000;
   global.db.data.users[m.sender].exp += 10000;
 };

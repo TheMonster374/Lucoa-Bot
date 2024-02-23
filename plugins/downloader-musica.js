@@ -47,7 +47,7 @@ const handler = async (m, {conn, text}) => {
     throw `⚠️ _Error, no se encontro una música que coincida con:_ *${text}*\n_Asegúrese que escribio correctamente el nombre de su canción_`;
     };
 };
-handler.command = /^(spotify|music)$/i;
+handler.command = /^(spotify|hola)$/i;
 handler.help = ['music *nombre*']
 handler.tags = ['downloader']
 export default handler;

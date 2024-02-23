@@ -27,7 +27,7 @@ ${sn}`;
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })
   }
 };
-handler.help = ['profile [@user]'];
+handler.help = ['perfil'];
 handler.tags = ['rg'];
 handler.command = /^perfil|profile?$/i;
 export default handler;

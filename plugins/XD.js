@@ -8,15 +8,15 @@ import pkg2 from 'fluid-spotify.js';
 const { Spotify } = pkg2;
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `*[❗] Ingrese el link de algún track, playlist o álbum de Spotify o simplemente el nombre de una canción para buscar.*`; 
+ if (!text) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆 𝒂𝒍𝒈ú𝒏 𝒕𝒓𝒂𝒄𝒌, 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒐 á𝒍𝒃𝒖𝒎 𝒅𝒆 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝒐 𝒔𝒊𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒆 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒖𝒏𝒂 𝒄𝒂𝒏𝒄𝒊ó𝒏 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓.`; 
  const isSpotifyUrl = text.match(/^(https:\/\/open\.spotify\.com\/(album|track|playlist)\/[a-zA-Z0-9]+)/i);
- if (!isSpotifyUrl && !text) throw `*[❗] Ingrese el link de algún track, playlist o álbum de spotify.*`;
+ if (!isSpotifyUrl && !text) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆 𝒂𝒍𝒈ú𝒏 𝒕𝒓𝒂𝒄𝒌, 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒐 á𝒍𝒃𝒖𝒎 𝒅𝒆 𝒔𝒑𝒐𝒕𝒊𝒇𝒚.`;
   try {
      if (isSpotifyUrl) {
       if (isSpotifyUrl[2] === 'album') {
         const album = await downloadAlbum(isSpotifyUrl[0]);
         const img = await (await fetch(`${album.metadata.cover}`)).buffer()  
-        let spotifyi = `*• 💽 Spotify Download •*\n\n`
+        let spotifyi = `*• 💽 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝑷𝒓𝒐 •*\n\n`
           spotifyi += `	◦  *Album:* ${album.metadata.title}\n`
           spotifyi += `	◦  *Artista:* ${album.metadata.artists}\n`
           spotifyi += `	◦  *Publicado:* ${album.metadata.releaseDate}\n`   
@@ -31,7 +31,7 @@ const handler = async (m, { conn, text }) => {
         const track = await downloadTrack(isSpotifyUrl[0]);
         const dlspoty = track.audioBuffer;
         const img = await (await fetch(`${track.imageUrl}`)).buffer()  
-        let spotifyi = `*• 💽 Spotify Download •*\n\n`
+        let spotifyi = `*• 💽 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝑷𝒓𝒐 •*\n\n`
           spotifyi += `	◦  *Título:* ${track.title}\n`
           spotifyi += `	◦  *Artista:* ${track.artists}\n`
           spotifyi += `	◦  *Duración:* ${track.duration}\n`
@@ -50,7 +50,7 @@ const handler = async (m, { conn, text }) => {
           const playlistInfoByID = await infos.getPlaylist(playlistId);
           const tracks = playlistInfoByID.tracks.items;
           const img = await (await fetch(`${playlistInfoByID.images[0].url}`)).buffer()  
-        let spotifyi = `*• 💽 Spotify Download •*\n\n`
+        let spotifyi = `*• 💽 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝑷𝒓𝒐 •*\n\n`
           spotifyi += `	◦  *Playlist:* ${playlistInfoByID.name}\n`
           spotifyi += `	◦  *Tracks totales:* ${tracks.length}\n\n`
           spotifyi += `Los audios de la playlist se están enviando, espere un momento..`
@@ -68,7 +68,7 @@ for (let i = 0; i < tracks.length; i++) {
         const searchTrack = await downloadTrack(text);
         const dlspoty = searchTrack.audioBuffer;
         const img = await (await fetch(`${searchTrack.imageUrl}`)).buffer()  
-        let spotifyi = `*• 💽 Spotify Download •*\n\n`
+        let spotifyi = `*• 💽 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝑷𝒓𝒐 •*\n\n`
           spotifyi += `	◦  *Título:* ${searchTrack.title}\n`
           spotifyi += `	◦  *Artista:* ${searchTrack.artists}\n`
           spotifyi += `	◦  *Duración:* ${searchTrack.duration}\n`
@@ -83,5 +83,7 @@ for (let i = 0; i < tracks.length; i++) {
     throw '*[❗] Error, no se encontraron resultados.*';
   }
 };
+handler.help = ['spotifydl *<texto>*'];
+handler.tags = ['downloader'];
 handler.command = /^(spotifydl|spotifypro)$/i;
 export default handler;

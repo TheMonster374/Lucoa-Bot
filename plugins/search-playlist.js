@@ -36,7 +36,7 @@ ${usedPrefix}video <numero>
     await m.reply('*${JT.smsError}, 𝒊𝒏𝒕𝒆𝒏𝒕𝒂 𝒄𝒐𝒏 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒐𝒕𝒓𝒂 𝒄𝒂𝒏𝒄𝒊𝒐𝒏*');
   }
 };
-handler.help = ['playlist *<texto>*'];
+handler.help = ['playlist'];
 handler.tags = ['search'];
 handler.command = /^playlist|playlist2$/i;
 export default handler;

@@ -19,7 +19,7 @@ unlinkSync(file)
 conn.reply(m.chat, `*_El plugin "plugins/${args[0]}.js" se ha eliminado con éxito._* [ ✅ ]`, m)
     
 }
-handler.help = ['deleteplugin *<nombre>*']
+handler.help = ['deleteplugin']
 handler.tags = ['owner']
 handler.command = /^(deleteplugin|dp|deleteplu)$/i
 

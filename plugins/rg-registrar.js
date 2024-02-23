@@ -34,7 +34,7 @@ conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forw
   global.db.data.users[m.sender].money += 10000;
   global.db.data.users[m.sender].exp += 5000;
 };
-handler.help = ['registrar'];
+handler.help = ['reg <nombre.edad>'];
 handler.tags = ['rg'];
 handler.command = /^(verify|register|verificar|reg|registrar)$/i;
 export default handler;

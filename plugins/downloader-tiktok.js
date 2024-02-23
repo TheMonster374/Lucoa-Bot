@@ -16,7 +16,7 @@ await conn.sendFile(m.chat, url, 'fb.mp4', '', m)
 } catch {
 conn.reply(m.chat, ' ${JT.smsError2}', m)
 }}}
-handler.help = ['tiktok'].map(v => v + ' <url tt>')
+handler.help = ['tiktok'].map(v => v + '')
 handler.tags = ['downloader']
 handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
 export default handler

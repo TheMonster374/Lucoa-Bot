@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, text }) => {
       }
     } : {})
   }
-  handler.help = ['cuando'].map(v => v + ' pregunta')
+  handler.help = ['cuando'].map(v => v + ' <pregunta>')
   handler.tags = ['fun']
   handler.command = /^cuando?$/i
   

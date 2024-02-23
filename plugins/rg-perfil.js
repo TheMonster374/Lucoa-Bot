@@ -19,7 +19,7 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
     const str = `✧ *Nombre:* ${username} ${registered ? '(' + name + ') ': ''}
 ✧ *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ✧ *diamantes*:  ${user.limit}
-✧ *PESOS*: ${user.exp}
+✧ *Pesos*: ${user.exp}
 ✧ *​Nivel​*: ${user.level}
 ✧ *Premium:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ✧ *Numero de serie:* 

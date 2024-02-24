@@ -1,14 +1,14 @@
 import fetch from "node-fetch"
 
 let handler = async (m, { text, args }) => {
-  if (!args[0]) throw `[🐶] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓 𝒆𝒏 𝑻𝒊𝒌𝑻𝒐𝒌`
+  if (!args[0]) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓 𝒆𝒏 𝑻𝒊𝒌𝑻𝒐𝒌`
   try {
     const res = await fetch(`${apikasu}/api/search/tiktoksearch?text=${encodeURIComponent(text)}&apikey=${apikeykasu}`);
     const api = await res.json();
     const randomIndex = Math.floor(Math.random() * api.result.length);
     let video = api.result[randomIndex];
     let capt = `
-> I N F O R M A C I O N
+> 𝑰 𝑵 𝑭 𝑶 |   𝑻 𝑰 𝑲 𝑻 𝑶 𝑲 
 
 *Video ${randomIndex + 1}*\n
 *Usuario:* ${video.author.nickname}\n

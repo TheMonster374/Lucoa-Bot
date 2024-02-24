@@ -4,8 +4,8 @@ const handler = async (m, { conn, text }) => {
   try {
           const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
           let messager = stdout.toString()
-          if (messager.includes('Already up to date.')) messager = '𝑼 𝒑 𝒅 𝒂 𝒕 𝒆\n\n*[ ✅ ] 𝒏𝒐 𝒉𝒂𝒚 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏𝒆𝒔 𝒑𝒆𝒏𝒅𝒊𝒆𝒏𝒕𝒆𝒔*'
-          if (messager.includes('Updating')) messager = '𝑼 𝒑 𝒅 𝒂 𝒕 𝒆\n\n*𝑨𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏 𝒆𝒙𝒊𝒕𝒐𝒔𝒂*\n\n' + stdout.toString()
+          if (messager.includes('Already up to date.')) messager = '𝗨𝗣𝗗𝗔𝗧𝗘\n\n*[ ✅ ] 𝒏𝒐 𝒉𝒂𝒚 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏𝒆𝒔 𝒑𝒆𝒏𝒅𝒊𝒆𝒏𝒕𝒆𝒔*'
+          if (messager.includes('Updating')) messager = '𝗨𝗣𝗗𝗔𝗧𝗘\n\n*𝑨𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏 𝒆𝒙𝒊𝒕𝒐𝒔𝒂*\n\n' + stdout.toString()
           conn.reply(m.chat, messager, m);
   } catch {      
  try {    
@@ -23,7 +23,7 @@ const handler = async (m, { conn, text }) => {
           })
           .filter(Boolean);
         if (conflictedFiles.length > 0) {
-          const errorMessage = `𝑼 𝒑 𝒅 𝒂 𝒕 𝒆\n\n*ꜱᴇ ʜᴀɴ ʜᴇᴄʜᴏ ᴄᴀᴍʙɪᴏꜱ ʟᴏᴄᴀʟᴇꜱ ᴇɴ ᴀʀᴄʜɪᴠᴏꜱ ᴅᴇʟ ʙᴏᴛ Qᴜᴇ ᴇɴᴛʀᴀɴ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ ᴄᴏɴ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴅᴇʟ ʀᴇᴘᴏꜱɪᴛᴏʀɪᴏ. ᴘᴀʀᴀ ᴀᴄᴛᴜᴀʟɪᴢᴀʀ, ʀᴇɪɴꜱᴛᴀʟᴀ ᴇʟ ʙᴏᴛ o ʀᴇᴀʟɪᴢᴀ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴍᴀɴᴜᴀʟᴍᴇɴᴛᴇ*\n\n*ᴀʀᴄʜɪᴠᴏꜱ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ:*\n\n${conflictedFiles.join('\n')}.*`;
+          const errorMessage = `𝗨𝗣𝗗𝗔𝗧𝗘\n\n*ꜱᴇ ʜᴀɴ ʜᴇᴄʜᴏ ᴄᴀᴍʙɪᴏꜱ ʟᴏᴄᴀʟᴇꜱ ᴇɴ ᴀʀᴄʜɪᴠᴏꜱ ᴅᴇʟ ʙᴏᴛ Qᴜᴇ ᴇɴᴛʀᴀɴ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ ᴄᴏɴ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴅᴇʟ ʀᴇᴘᴏꜱɪᴛᴏʀɪᴏ. ᴘᴀʀᴀ ᴀᴄᴛᴜᴀʟɪᴢᴀʀ, ʀᴇɪɴꜱᴛᴀʟᴀ ᴇʟ ʙᴏᴛ o ʀᴇᴀʟɪᴢᴀ ʟᴀꜱ ᴀᴄᴛᴜᴀʟɪᴢᴀᴄɪᴏɴᴇꜱ ᴍᴀɴᴜᴀʟᴍᴇɴᴛᴇ*\n\n*ᴀʀᴄʜɪᴠᴏꜱ ᴇɴ ᴄᴏɴꜰʟɪᴄᴛᴏ:*\n\n${conflictedFiles.join('\n')}.*`;
           await conn.reply(m.chat, errorMessage, m);  
         }
       }

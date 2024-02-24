@@ -1,12 +1,12 @@
 import axios from 'axios'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*𝑭𝒐𝒓𝒎𝒂𝒕𝒐 𝒊𝒏𝒄𝒐𝒓𝒓𝒆𝒄𝒕𝒐*\n\n[🐶] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 :${usedPrefix + command}`
+  if (!text) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒂𝒍𝒈𝒖𝒏𝒂 𝒄𝒂𝒏𝒄𝒊𝒐𝒏\n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 :${usedPrefix + command}`
   try {
     let resultados = await spotifyxv(text)
     let res = resultados.map((v, i) => {
       let duracion = timestamp(v.duracion)
-      return `${i + 1} • *ᴛɪᴛᴜʟᴏ*: ${v.nombre}\n• *ᴀʀᴛɪꜱᴛᴀꜱ*: ${v.artistas.join(', ')}\n• *Álbum*: ${v.album}\n• *ᴅᴜʀᴀᴄɪᴏɴ*: ${duracion}\n• *Link*: ${v.url}\n\n•──────────────────•`
+      return `${i + 1} • 𝑻𝒊𝒕𝒖𝒍𝒐: ${v.nombre}\n• 𝑨𝒓𝒕𝒊𝒔𝒕𝒂𝒔: ${v.artistas.join(', ')}\n• 𝑨𝒍𝒃𝒖𝒎: ${v.album}\n• 𝑫𝒖𝒓𝒂𝒄𝒊𝒐𝒏: ${duracion}\n• 𝑳𝒊𝒏𝒌: ${v.url}\n\n•──────────────────•`
     }).join('\n')
     
     if (res) {

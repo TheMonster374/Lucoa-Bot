@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '[💡] 𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 \n\n*[📚] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: .bard Hola Bard, ¿cómo estás?';
+    throw '[📚] 𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 \n\n*[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: .bard Hola Bard, ¿cómo estás?';
   }
 
   try {

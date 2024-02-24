@@ -19,7 +19,7 @@ const handler = async (m, {isPrems, conn}) => {
 ║➢ *${expp} Pesos* ⚡
 ╚═════════════════⬣`;
 
-  const fkontak = {
+ /* const fkontak = {
     'key': {
       'participants': '0@s.whatsapp.net',
       'remoteJid': 'status@broadcast',
@@ -32,9 +32,9 @@ const handler = async (m, {isPrems, conn}) => {
       },
     },
     'participant': '0@s.whatsapp.net',
-  };
+  };*/
 
-conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: fkontak })
+conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })
   global.db.data.users[m.sender].lastcofre = new Date * 1;
 };
 handler.help = ['daily'];

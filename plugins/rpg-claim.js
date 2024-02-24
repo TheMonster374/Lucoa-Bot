@@ -1,60 +1,20 @@
-const handler = async (m, {isPrems, conn}) => {
-  const time = global.db.data.users[m.sender].lastcofre + 86400000; // 36000000 10 Horas //86400000 24 Horas
-  if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `Ya reclamaste tu cofre\nVuelve en *${msToTime(time - new Date())}* Para volver a abrir`;
+import db from '../lib/database.js'
 
-  const img = 'https://img.freepik.com/vector-gratis/cofre-monedas-oro-piedras-preciosas-cristales-trofeo_107791-7769.jpg?w=2000';
-  const dia = Math.floor(Math.random() * 30);
-  const tok = Math.floor(Math.random() * 10);
-  const mystic = Math.floor(Math.random() * 4000);
-  const expp = Math.floor(Math.random() * 5000);
+const cooldown = 86400000 // 24 Horas
 
-  global.db.data.users[m.sender].limit += dia;
-  global.db.data.users[m.sender].exp += expp;
-
-  const texto = `
-╔═════════════════⬣
-║🛒 Aqui tienes tu cofre
-║┈┈┈┈┈┈┈┈┈┈┈┈┈
-║➢ *${dia} Diamantes* 💎
-║➢ *${expp} Pesos* ⚡
-╚═════════════════⬣`;
-
- /* const fkontak = {
-    'key': {
-      'participants': '0@s.whatsapp.net',
-      'remoteJid': 'status@broadcast',
-      'fromMe': false,
-      'id': 'Halo',
-    },
-    'message': {
-      'contactMessage': {
-        'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-      },
-    },
-    'participant': '0@s.whatsapp.net',
-  };*/
-
-conn.sendMessage(m.chat, { image: { url: md }, caption: texto, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })
-  global.db.data.users[m.sender].lastcofre = new Date * 1;
-};
-handler.help = ['daily'];
-handler.tags = ['rpg'];
-handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'];
-export default handler;
-
-function pickRandom(list) {
-  return list[Math.floor(Math.random() * list.length)];
+let handler = async (m) => {
+   let user = global.db.data.users[m.sender]
+   if (new Date - user.lastclaim < cooldown) return conn.reply(m.chat, `🧭 Espera *${((user.lastclaim + cooldown) - new Date()).toTimeString()}* para volver a Reclamar.`, m, adimagen)
+   let txt = `Felicidades 🎉, reclamaste 500 🪙 Monedas*.`
+   user.exp += 500
+   user.lastclaim = new Date * 1
+   await conn.reply(m.chat, txt, m adimagen)
 }
 
-function msToTime(duration) {
-  const milliseconds = parseInt((duration % 1000) / 100);
-  let seconds = Math.floor((duration / 1000) % 60);
-  let minutes = Math.floor((duration / (1000 * 60)) % 60);
-  let hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+handler.help = ['claim']
+handler.tags = ['rpg']
+handler.command = ['daily', 'claim']
+handler.register = true 
+handler.cooldown = cooldown
 
-  hours = (hours < 10) ? '0' + hours : hours;
-  minutes = (minutes < 10) ? '0' + minutes : minutes;
-  seconds = (seconds < 10) ? '0' + seconds : seconds;
-
-  return hours + ' Horas ' + minutes + ' Minutos';
-}
+export default handler

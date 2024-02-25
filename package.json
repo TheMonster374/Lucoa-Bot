@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/AleXD0009/jotchua-mini",
+  "homepage": "https://github.com/diegojadibot/SakuraBotLite-MD",
   "author": {
-    "name": "AleXD0009"
+    "name": "diegojadibot"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleXD0009/jotchua-mini.git"
+    "url": "git+https://github.com/diegojadibot/SakuraBotLite-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/AleXD0009/jotchua-mini/issues"
+    "url": "https://github.com/diegojadibot/SakuraBotLite-MD/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
@@ -53,7 +53,6 @@
     "express": "^4.17.3",
     "fb-downloader-scrapper": "^1.0.1",
     "file-type": "^17.1.1",
-    "fluid-spotify.js": "1.0.2",
     "fluent-ffmpeg": "^2.1.2",
     "formdata-node": "^4.3.2",
     "fs": "^0.0.1-security",

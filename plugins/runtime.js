@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4*/
+     let pp = 'https://telegra.ph/file/c2ed1c3a0895900836aca.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4*/
      let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4*/
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';

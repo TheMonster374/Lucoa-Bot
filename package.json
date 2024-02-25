@@ -8,12 +8,12 @@
     "src": "src",
     "plugins": "plugins"
   },
-  "scripts": {
+    "scripts": {
     "start": "node index.js",
     "qr": "node index.js qr",
     "code": "node index.js code",
     "test": "node test.js",
-    "test2": "nodemon index.js",
+    "test2": "nodemon index.js", 
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/AleXD0009/jotchua-mini/issues"
   },
- "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.2.4",

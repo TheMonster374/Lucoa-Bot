@@ -53,7 +53,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
     }
   }
 };
-handler.help = ['ig']
+handler.help = ['instagram']
 handler.tags = ['downloader']
 handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i;
 export default handler;

@@ -1,8 +1,8 @@
 const handler = async (m, {conn, isPrems}) => {
   const hasil = Math.floor(Math.random() * 1000);
   const time = global.db.data.users[m.sender].lastmiming + 600000;
-  if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*[ ⏲️ ] espera ${msToTime(time - new Date())} para volver a conseguir pesos`;
-  m.reply(`*[ 🎉 ] Conseguiste ${hasil} Pesos*` , m adReply);
+  if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `[ ⏲️ ] 𝒆𝒔𝒑𝒆𝒓𝒂 ${msToTime(time - new Date())} 𝒑𝒂𝒓𝒂 𝒗𝒐𝒍𝒗𝒆𝒓 𝒂 𝒄𝒐𝒏𝒔𝒆𝒈𝒖𝒊𝒓 𝒑𝒆𝒔𝒐𝒔`;
+  m.reply(`[ 🎉 ] 𝑪𝒐𝒏𝒔𝒆𝒈𝒖𝒊𝒔𝒕𝒆 ${hasil} 𝑷𝒆𝒔𝒐𝒔` , m adReply);
   global.db.data.users[m.sender].lastmiming = new Date * 1;
 };
 handler.help = ['work2'];

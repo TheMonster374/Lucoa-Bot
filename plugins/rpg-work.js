@@ -6,11 +6,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let user = global.db.data.users[m.sender]
    let amount = Math.floor(Math.random() * (5 - 10) + 10) + 1
    let time = user.lastwork + cooldown
-   if (new Date - user.lastwork < cooldown) return conn.reply(m.chat, `Espera *${(time - new Date()).toTimeString()}* para volver a Trabajar.`, m, adReply)
+   if (new Date - user.lastwork < cooldown) return conn.reply(m.chat, `𝑬𝒔𝒑𝒆𝒓𝒂 *${(time - new Date()).toTimeString()}* 𝒑𝒂𝒓𝒂 𝒗𝒐𝒍𝒗𝒆𝒓 𝒂 𝑻𝒓𝒂𝒃𝒂𝒋𝒂𝒓.`, m, adReply)
    let work = works.getRandom()
    user.exp += amount
    user.lastwork = new Date * 1
-   await conn.reply(m.chat, `🚩 ${work} *${amount} de ⭐ Pesos.*`, m, adReply)
+   await conn.reply(m.chat, `🚩 ${work} *${amount} de 🪙 Pesos.*`, m, adReply)
 }
 
 handler.help = ['work']

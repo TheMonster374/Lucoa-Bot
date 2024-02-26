@@ -17,7 +17,7 @@
 - CAMBIAR NÚMERO DEL PROPIETARIO(A) [Aqui](https://github.com/AleXD0009/Jotchua-Bot/blob/master/config.js)
 
 
-### `🐶 ACTIVAR EN TERMUX` 
+## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> ACTIVAR EN TERMUX
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 cd && termux-setup-storage

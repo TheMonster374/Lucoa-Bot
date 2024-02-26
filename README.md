@@ -1,7 +1,7 @@
 # `Jotchua-Bot` 
 
 
-## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> grupo del Bot`
+## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> grupo del Bot
 
 <a href="https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ" target="blank"><img src="https://img.shields.io/badge/grupo Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 

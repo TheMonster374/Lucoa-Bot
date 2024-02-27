@@ -278,8 +278,8 @@ let str = `──────────────────────
  contextInfo: { mentionedJid: [m.sender], externalAdReply: { title: `J O T C H U A - M I N I`,  
  sourceUrl: "https://atom.bio/als", mediaType: 1, showAdAttribution: true, thumbnailUrl: "https://telegra.ph/file/d675b0f7778b8284067d5.jpg",  
  }, }, }, { quoted: m,});}};
-handler.help = ['menu2', 'help2', '?2', 'menuaudios']
-handler.tags = ['main']
+handler.help = ['']
+handler.tags = ['']
 handler.command = /^(XD)$/i
 handler.fail = null
 export default  handler

@@ -11,4 +11,4 @@ handler.tags = ['internet']
 handler.command = /^(pornhubsearch)$/i
 handler.premium = true
 
-module.exports = handler
+export default handler

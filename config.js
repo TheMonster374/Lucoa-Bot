@@ -7,6 +7,7 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 import { es as Lenguaje } from "./lib/idiomas/_default.js"
+/* © 2024 ALS | All rights reserved */
 
 global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""

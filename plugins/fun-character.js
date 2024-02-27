@@ -1,32 +1,15 @@
-import fetch from "node-fetch";
-import axios from "axios";
-import { translate } from "@vitalets/google-translate-api";
+import { character } from "../lib/anime.js";
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text)
-    throw `⚠️️ *Ingrese el nombre de su personaje.*\n*Ejemplo* : ${
-      usedPrefix + command
-    } Goku`;
-  try {
-    const res = await axios.get(
-      `https://weeb-api.vercel.app/character?search=${text}`
-    );
-    const { id, name, gender, imageUrl, siteUrl, description } = res.data[0];
-    let desc = await translate(`${description}`, {
-      to: "es",
-      autoCorrect: true,
-    });
-    let gen = await translate(`${gender}`, { to: "es", autoCorrect: true });
-    const result = `↳  *Nombre:* ${name.full}\n↳  *Nombre Nativo:* ${name.native}\n↳  *Genero:* ${gen.text}\n↳  *Link:* ${siteUrl}\n↳  *Descripcion:* ${desc.text}`;
+let handler = async (m, { conn, text }) => {
+  if (!text) throw "[!] Masukan Query Anime";
+  let res = await character(text);
+  let results = `${res.name}
 
-    conn.sendFile(m.chat, imageUrl, "out.png", result, m);
-  } catch {
-    m.reply("*_🐢 Lo siento, al parecer no se encontro este personaje._*");
-  }
+${res.detail}`;
+  conn.sendFile(m.chat, res.image, "err.jpg", res.detail, m);
 };
-
-handler.help = ["character *<nombre>*"];
-handler.tags = ["search"];
-handler.command = ["character"];
+handler.help = ["chara", "character"];
+handler.tags = ["anime"];
+handler.command = /^chara|character$/i;
 
 export default handler;

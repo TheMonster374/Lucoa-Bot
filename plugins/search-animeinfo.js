@@ -13,28 +13,28 @@ let judul = json.data[0].titles.map(jud => `${jud.title} [${jud.type}]`).join('\
 let xnuvers007 = json.data[0].authors.map(Xnuvers007 => `${Xnuvers007.name} (${Xnuvers007.url})`).join('\n');
 let genrenya = json.data[0].genres.map(xnvrs007 => `${xnvrs007.name}`).join('\n');
   
-let animeingfo = `📚 Title: ${judul}
-📑 Chapter: ${chapters}
-✉️ Transmisi: ${type}
-🗂 Status: ${status}
-😎 Genre: ${genrenya}
-🗃 Volumes: ${volumes}
-🌟 Favorite: ${favorites}
-🧮 Score: ${score}
-🧮 Scored: ${scored}
-🧮 Scored BY: ${scored_by}
+let animeingfo = `📚 titulo: ${judul}
+📑 capitulo: ${chapters}
+✉️ transmisión: ${type}
+🗂 Estado: ${status}
+😎 Género: ${genrenya}
+🗃 volúmen: ${volumes}
+🌟 favoritos: ${favorites}
+🧮 puntaje: ${score}
+🧮 Anotado: ${scored}
+🧮 Anotado por: ${scored_by}
 🌟 Rank: ${rank}
-🤩 Popularitas: ${popularity}
-👥 Members: ${members}
+🤩 popularidad: ${popularity}
+👥 Miembros: ${members}
 ⛓️ Url: ${url}
-👨‍🔬 Author: ${xnuvers007}
-📝 Background: ${background}
+👨‍🔬 Autor: ${xnuvers007}
+📝 Fondo: ${background}
 💬 Sinopsis: ${synopsis}
 `
 conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'manga.jpg', `*MANGA INFO*\n` + animeingfo, m)
 }
 handler.help = ['mangainfo <manga>']
-handler.tags = ['anime']
+handler.tags = ['search']
 handler.command = /^(mangainfo)$/i
 
 export default handler

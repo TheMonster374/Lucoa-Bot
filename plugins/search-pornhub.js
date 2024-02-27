@@ -16,7 +16,7 @@ let handler = async (m, {
     ]
 
     let [feature, inputs, inputs_, inputs__, inputs___] = text.split("|")
-    if (!lister.includes(feature)) return m.reply("*Example:*\n.pornhub search|vpn\n\n*Pilih type yg ada*\n" + lister.map((v, index) => "  ○ " + v).join("\n"))
+    if (!lister.includes(feature)) return m.reply("*ejemplo:*\n.pornhub search|vpn\n\n*elije cual quieres*\n" + lister.map((v, index) => "  ○ " + v).join("\n"))
     
     if (lister.includes(feature)) {
     
@@ -57,9 +57,9 @@ let handler = async (m, {
         
     }
 }
-handler.help = ["pornhub"]
-handler.tags = ["internet"]
-handler.command = /^(pornhub)$/i
+handler.help = ["pornhubsearch"]
+handler.tags = ["search"]
+handler.command = /^(pornhubsearch)$/i
 export default handler
 
 /* New Line */

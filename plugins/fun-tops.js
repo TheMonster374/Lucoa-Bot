@@ -18,7 +18,7 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
   const x = `${pickRandom(['🤓', '😅', '😂', '😳', '😎', '🥵', '😱', '🤑', '🙄', '💩', '🍑', '🤨', '🥴', '🔥', '👇🏻', '😔', '👀', '🌚'])}`;
   const l = Math.floor(Math.random() * x.length);
   const vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`;
-  const top = `*${x} Rank de los: ${text} ${x}*
+  const top = `*${x} Top ${text} ${x}*
     
 *1. ${user(a)}*
 *2. ${user(b)}*
@@ -35,8 +35,8 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
     type: 'audioMessage',
     ptt: true});
 }
-handler.help = ['rank'];
-handler.command = ['rank'];
+handler.help = ['top'];
+handler.command = ['top'];
 handler.tags = ['fun'];
 handler.group = true;
 export default handler;

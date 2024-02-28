@@ -1,45 +1,55 @@
-import fetch from 'node-fetch';
-const handler = async (m, {text}) => {
-  if (!text) throw '[📚] 𝒊𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒍𝒐 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒃𝒖𝒔𝒄𝒂𝒓\n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: !githubsearch AleXD0009 ';
-  const res = await fetch(global.API('https://api.github.com', '/search/repositories', {
-    q: text,
-  }));
-  const json = await res.json();
-  if (res.status !== 200) throw json;
-  const str = json.items.map((repo, index) => {
-    return `
------------------------------------------------------------
-${1 + index}. *${repo.full_name}*${repo.fork ? ' (fork)' : ''}
-_${repo.html_url}_
-_Creado *${formatDate(repo.created_at)}*_
+import MessageType from '@whiskeysockets/baileys'
+import fetch from 'node-fetch'
+import fs from 'fs'
 
-_Últimas actualizaciones*${formatDate(repo.updated_at)}*_
+var handler = async (m, { conn, text, usedPrefix, command }) => {
 
-👁  ${repo.watchers}   🍴  ${repo.forks}   ⭐  ${repo.stargazers_count}
-${repo.open_issues} Issue${repo.description ? `
+if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} CuriosityBot-MD`, m, fake, )
 
-*descripción:*\n${repo.description}` : ''}
+try {
 
-*Clone:* \`\`\`$ git clone ${repo.clone_url}\`\`\`
-`.trim();
-  }).join('\n\n');
-  m.reply(str);
-};
-handler.help = ['githubsearch'];
-handler.tags = ['search'];
-handler.command = /^(ghs|githubs|githubsearch)?$/i;
+let res = await fetch(global.API('https://api.github.com', '/search/repositories', { q: text }))
+let json = await res.json()
+if (res.status !== 200) throw json
+let str = json.items.map((repo, index) => {
+return `
+⬡ *Resultado:* ${1 + index}
+⬡ *Enlace:* ${repo.html_url}
+⬡ *Creador:* ${repo.owner.login}
+⬡ *Nombre:* ${repo.name}
+⬡ *Creado:* ${formatDate(repo.created_at)}
+⬡ *Actualizado:* ${formatDate(repo.updated_at)}
+⬡ *Visitas:* ${repo.watchers}
+⬡ *Bifurcado:* ${repo.forks}
+⬡ *Estrellas:* ${repo.stargazers_count}
+⬡ *Issues:* ${repo.open_issues}
+⬡ *Descripción:* ${repo.description ? `${repo.description}` : 'Sin Descripción'}
+⬡ *Clone:* ${repo.clone_url}
+`.trim()}).join('\n\n─────────────────\n\n')
 
-export default handler;
+let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
+await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: img, thumbnailUrl: img, title: 'Resultados Encontrados 🔎',
+}
+})
+
+} catch {
+conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake, )
+}
+
+}
+handler.help = ['githubsearch']
+handler.tags = ['internet']
+handler.command = /^(githubsearch)$/i
+
+handler.register = true
+
+export default handler 
 
 function formatDate(n, locale = 'es') {
-  const d = new Date(n);
-  return d.toLocaleDateString(locale, {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-  });
-}
+let d = new Date(n)
+return d.toLocaleDateString(locale, {
+weekday: 'long',
+day: 'numeric',
+month: 'long',
+year: 'numeric'
+}) }

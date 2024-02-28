@@ -1,13 +1,47 @@
 import fetch from 'node-fetch'
-let handler = async (m, { conn, args }) => {
-let response = args.join(' ').split('|')
-  if (!args[0]) throw 'Enter Name'
-  m.reply('proses..')
-  let res = `https://ziy.herokuapp.com/api/maker/rem?nama=${response[0]}&apikey=xZiyy`
-  conn.sendFile(m.chat, res, 'rem.jpg', `Nih kak`, m, false)
+import axios from 'axios'
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+await conn.reply(m.chat, global.wait, m)
+
+let type = (command).toLowerCase()
+
+switch (type) {
+case 'waifu':
+  let res = await fetch('https://api.waifu.pics/sfw/waifu')
+    if (!res.ok) throw await res.text()
+    let json = await res.json()
+    if (!json.url) throw 'Error!'
+  conn.sendButton(m.chat, '🐧', author, json.url, [['waifu', `${usedPrefix}waifu`]], m)
+break
+
+case 'neko':
+  let _neko = await fetch('https://api.waifu.pics/sfw/neko')
+  if (!_neko.ok) throw await _neko.text()
+  let neko = await _neko.json()
+  if (!neko.url) throw global.error
+  conn.sendButton(m.chat,  'You Furries', wm, neko.url, [['Next','.neko']],m)
+break 
+
+case 'megumin':
+  let _megumin = await fetch('https://api.waifu.pics/sfw/megumin')
+  if (!_megumin.ok) throw await _megumin.text()
+  let megumin = await _megumin.json()
+  if (!megumin.url) throw global.error
+  conn.sendButton(m.chat, '', wm, megumin.url, [['Next','.megumin']],m)
+break
+
+default:
+ }
 }
-handler.help = ['logorem'].map(v => v + ' <text|text>')
-handler.tags = ['logos']
-handler.command = /^(logorem)$/i
+
+handler.help = ['waifu', 'neko', 'megumin']
+handler.tags = ['img']
+handler.command = /^(waifu|neko|megumin)$/i
 
 export default handler
+
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}

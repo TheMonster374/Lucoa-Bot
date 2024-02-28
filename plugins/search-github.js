@@ -33,7 +33,7 @@ await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLarg
 })
 
 } catch {
-conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake, )
+conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m)
 }
 
 }

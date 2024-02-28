@@ -8,6 +8,7 @@ const handler = async (m, {text}) => {
   if (res.status !== 200) throw json;
   const str = json.items.map((repo, index) => {
     return `
+-----------------------------------------------------------
 ${1 + index}. *${repo.full_name}*${repo.fork ? ' (fork)' : ''}
 _${repo.html_url}_
 _Creado *${formatDate(repo.created_at)}*_

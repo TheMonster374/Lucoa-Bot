@@ -11,7 +11,7 @@ const handler = async (m, {conn, text, args}) => {
     conn.sendFile(m.chat, stiker, null, {asSticker: true});
   }
 };
-handler.help = ['emojimix'].map((v) => v + ' emot1|emot2>');
+handler.help = ['emojimix'].map((v) => v + ' <🐶+🐢>');
 handler.tags = ['sticker'];
 handler.command = /^(emojimix)$/i;
 export default handler;

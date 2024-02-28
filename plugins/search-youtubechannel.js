@@ -20,6 +20,7 @@ const handler = async (m, { conn, text }) => {
 
 *Nombre del Canal:* ${channel.channel_name}\n
 *ID del Canal:* ${channel.channel_id}\n
+*ID del Canal:* ${channel.channel_subscribers}\n
 *Descripción:* ${channel.channel_about}\n
 *Fecha de Creación:* ${channel.channel_created}\n`
 

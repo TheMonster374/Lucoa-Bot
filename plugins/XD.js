@@ -12,4 +12,5 @@ handler.help = ['pornhubsearch2 <judul>']
 handler.tags = ['18+']
 handler.command = /^(pornhubsearch2)$/i
 
-module.exports = handler
+
+export default handler

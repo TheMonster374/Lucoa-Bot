@@ -4,7 +4,7 @@ import fs from 'fs'
 
 var handler = async (m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} CuriosityBot-MD`, m, fake, )
+if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} CuriosityBot-MD`, m)
 
 try {
 
@@ -28,7 +28,7 @@ return `
 `.trim()}).join('\n\n─────────────────\n\n')
 
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: img, thumbnailUrl: img, title: 'Resultados Encontrados 🔎',
+await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: md, thumbnailUrl: md, title: 'Resultados Encontrados 🔎',
 }
 })
 

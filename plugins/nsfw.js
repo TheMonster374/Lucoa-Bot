@@ -15,5 +15,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 };
 
 handler.command = /^(nsfw)$/i
+handler.tags = ['nsfw']
+handler.help = ['nsfw']
 
 export default handler

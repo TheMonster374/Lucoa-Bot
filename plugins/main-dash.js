@@ -28,7 +28,7 @@ conn.reply(m.chat, `
 }
 
 }
-handler.help = ['dash', 'dashboard', 'views', 'database', 'usuarios', 'user']
+handler.help = ['dash', 'usuarios']
 handler.tags = ['main']
 handler.command = ['dashboard', 'dash', 'views', 'database', 'usuarios', 'user']
 

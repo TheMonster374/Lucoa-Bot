@@ -53,7 +53,7 @@ let handler = async (m, { conn, command, text }) => {
 
 
 handler.help = ['top', 'cuando'];
-handler.command = ['top', 'cuando'];
+handler.command = /^top|cuando/i
 handler.tags = ['fun'];
 handler.group = true;
 export default handler;

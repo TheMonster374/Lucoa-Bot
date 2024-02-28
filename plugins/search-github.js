@@ -8,9 +8,11 @@ if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de un repositorio 
 
 try {
 
-let res = await fetch(global.API('https://api.github.com', '/search/repositories', { q: text }))
-let json = await res.json()
-if (res.status !== 200) throw json
+  const res = await fetch(global.API('https://api.github.com', '/search/repositories', {
+    q: text,
+  }));   
+const json = await res.json();
+if (res.status !== 200) throw json;
 let str = json.items.map((repo, index) => {
 return `
 ⬡ *Resultado:* ${1 + index}

@@ -1,7 +1,7 @@
 import {webp2png} from '../lib/webp2mp4.js';
 const handler = async (m, {conn, usedPrefix, command}) => {
 const notStickerMessage = `[ ⚠️ ] 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐚 𝐚𝐥 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐞𝐧 𝐢𝐦𝐚𝐠𝐞𝐧 𝐜𝐨𝐧 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 : ${usedPrefix + command}`;
-if (!m.quoted) return conn.reply(m.chat, notStickerMessage, m, m)
+if (!m.quoted) return conn.reply(m.chat, notStickerMessage, `ERROR`, m)
 try {
 const q = m.quoted || m;
 const mime = q.mediaType || '';

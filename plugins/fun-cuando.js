@@ -1,4 +1,4 @@
-let handler = async (m, { conn, command, text }) => {
+/*let handler = async (m, { conn, command, text }) => {
   if (!text) {
     return conn.reply(m.chat, `Por favor, proporciona un texto`, m)
 }

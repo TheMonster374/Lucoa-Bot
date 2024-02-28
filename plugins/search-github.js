@@ -26,16 +26,8 @@ if (res.status !== 200) throw json;
 ⬡ *Clone:* ${repo.clone_url}
 `.trim()}).join('\n\n─────────────────\n\n')
 
-let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendUrl(m.chat, str, m',
-}
-})
-
-} catch {
-conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m)
-}
-
-}
+  m.reply(str);
+};
 handler.help = ['githubsearch']
 handler.tags = ['internet']
 handler.command = /^(githubsearch)$/i

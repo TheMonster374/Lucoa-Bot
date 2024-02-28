@@ -1,20 +1,27 @@
-const { MessageType } = require('@adiwajshing/baileys')
-const { sticker } = require('../lib/sticker')
-let fetch = require('node-fetch')
-let fs = require("fs")
-
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-if (!args[0]) throw `*Ingrese dos emojis y en medio el signo +*\n\n *Ejemplo:* ${usedPrefix + command} 🐱+👻`
-let [emoji1, emoji2] = text.split`+`
-let anu = await (await fetch(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)).json()
-let emix = anu.results[0].media_formats.png_transparent.url
-let stiker = await sticker(null, emix, global.packname, global.author)
-conn.sendMessage(m.chat, stiker, MessageType.sticker, { quoted: m })
-
-}
-
-handler.help = ['emojimix']
-handler.tags = ['sticker']
-handler.command = /^(emojimix|emix)$/i
-
-export default handler
+import {sticker} from '../lib/sticker.js';
+import MessageType from '@whiskeysockets/baileys';
+import fetch from 'node-fetch';
+import fs from 'fs';
+const handler = async (m, {conn, text, args}) => {
+  if (!args[0]) return;
+  const [emoji1, emoji2] = text.split`+`;
+  const anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`);
+  for (const res of anu.results) {
+    const stiker = await sticker(false, res.url, global.packname, global.author);
+    conn.sendFile(m.chat, stiker, null, {asSticker: true});
+  }
+};
+handler.help = ['emojimix'].map((v) => v + ' emot1|emot2>');
+handler.tags = ['sticker'];
+handler.command = /^(emojimix)$/i;
+export default handler;
+const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
+  fetch(url, options)
+      .then((response) => response.json())
+      .then((json) => {
+        resolve(json);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+});

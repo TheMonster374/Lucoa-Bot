@@ -10,8 +10,8 @@ try {
   }));   
 const json = await res.json();
 if (res.status !== 200) throw json;
-let str = json.items.map((repo, index) => {
-return `
+  const str = json.items.map((repo, index) => {
+    return `
 ⬡ *Resultado:* ${1 + index}
 ⬡ *Enlace:* ${repo.html_url}
 ⬡ *Creador:* ${repo.owner.login}
@@ -27,7 +27,7 @@ return `
 `.trim()}).join('\n\n─────────────────\n\n')
 
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: md, thumbnailUrl: md, title: 'Resultados Encontrados 🔎',
+await conn.sendUrl(m.chat, str, m',
 }
 })
 

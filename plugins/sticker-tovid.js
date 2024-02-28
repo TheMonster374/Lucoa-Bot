@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
     if (!/webp|audio/.test(mime)) throw '⚠️ *_Responde a un sticker animado._*'
     let media = await m.quoted.download()
     let out = Buffer.alloc(0)
-    await conn.reply(m.chat, global.wait, adReply, null, script, m)
+    await conn.reply(m.chat, global.wait, adReply, null, md, m)
     if (/webp/.test(mime)) {
         out = await webp2mp4(media)
     } else if (/audio/.test(mime)) {

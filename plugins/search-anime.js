@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 let handler = async (m, {conn, text}) => {
   if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙰𝙻𝙶𝚄𝙽 𝙰𝙽𝙸𝙼𝙴 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝙱𝚄𝚂𝙲𝙰𝚁*`;
   try {
-    let res = await fetch(global.API("https://api.jikan.moe", "/v4/search/anime", {q: text}));
+    let res = await fetch(global.API("https://docs.api.jikan.moe", "/v4/search/anime", {q: text}));
     if (!res.ok) throw await res.text();
     let json = await res.json();
     let {title, members, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date, mal_id} = json.results[0];

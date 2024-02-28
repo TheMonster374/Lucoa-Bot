@@ -17,4 +17,4 @@ handler.help = ['emojimix']
 handler.tags = ['sticker']
 handler.command = /^(emojimix|emix)$/i
 
-module.exports = handler
+export default handler

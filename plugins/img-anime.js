@@ -4,6 +4,6 @@ const handler = async (m, {command, conn, usedPrefix}) => {
   const haha = await res[Math.floor(res.length * Math.random())];
   conn.sendFile(m.chat, haha, 'error.jpg', `_${command}_`, m);
 };
-handler.command = handler.help = ['akira', 'akiyama', 'anna', 'asuna', 'ayuzawa', 'chiho', 'chitoge', 'deidara', 'erza', 'elaina', 'eba', 'emilia', 'hestia', 'hinata', 'inori', 'isuzu', 'itori', 'kaga', 'kagura', 'kaori', 'keneki', 'kotori', 'kurumi', 'madara', 'mikasa', 'miku', 'minato', 'naruto', 'sagiri',];
-handler.tags = ['anime'];
+handler.command = handler.help = ['akiyama', 'asuna', 'chiho', 'chitoge', 'erza', 'elaina', 'emilia', 'hestia', 'inori', 'isuzu', 'kagura', 'kotori', 'kurumi', 'miku', 'sagiri',];
+handler.tags = ['img'];
 export default handler;

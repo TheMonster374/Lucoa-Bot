@@ -29,7 +29,7 @@ let str = `──────────────────────
 `
  await  conn.sendMessage(m.chat,{ image:{ url: "https://telegra.ph/file/5d9c66a4a6a935e98c5db.jpg", }, caption: str,  
  contextInfo: { mentionedJid: [m.sender], externalAdReply: { title: `J O T C H U A - M I N I`,  
- sourceUrl: "https://atom.bio/als", mediaType: 1, showAdAttribution: true, thumbnailUrl: "https://telegra.ph/file/5d9c66a4a6a935e98c5db.jpg",  
+ sourceUrl: "https://atom.bio/als", mediaType: 1, showAdAttribution: true, thumbnailUrl: "https://telegra.ph/file/fa1ce6ef6576fd349acf6.jpg",  
  }, }, }, { quoted: m,});}};
 handler.help = ['']
 handler.tags = ['']

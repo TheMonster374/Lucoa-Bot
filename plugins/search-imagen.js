@@ -4,7 +4,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     const res = await googleImage(text);
   const image = await res.getRandom();
   const link = image;
-  conn.sendFile(m.chat, link, 'error.jpg', `𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐 𝒅𝒆: ${text}`, m, adReply);
+  conn.sendFile(m.chat, link, 'error.jpg', `𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐 𝒅𝒆: ${text}`, adReply);
 };
 handler.help = ['imagen <texto>'];
 handler.tags = ['search'];

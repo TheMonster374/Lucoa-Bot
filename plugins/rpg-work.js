@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let work = works.getRandom()
    user.exp += amount
    user.lastwork = new Date * 1
-   await conn.reply(m.chat, `🚩 ${work} *${amount} de 🪙 Pesos.*`, m, adReply)
+   await conn.reply(m.chat, `🚩 ${work} *${amount} de 🪙 Pesos.*`, m,)
 }
 
 handler.help = ['work']

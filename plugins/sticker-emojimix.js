@@ -3,7 +3,7 @@ import MessageType from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 import fs from 'fs';
 const handler = async (m, {conn, text, args}) => {
-  if (!args[0]) return;
+  if (!args[0]) return conn.reply(m.chat, `[💡] 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒊𝒎𝒂𝒈𝒆𝒏 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒕𝒊𝒓 𝒆𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓`, m,)
   const [emoji1, emoji2] = text.split`+`;
   const anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`);
   for (const res of anu.results) {

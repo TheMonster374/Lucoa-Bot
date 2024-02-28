@@ -10,20 +10,13 @@ const handler = async (m, {conn, args, participants}) => {
   const usersLevel = sortedLevel.map(enumGetKey);
   const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
   const adventurePhrases = [
-  "Lidera la aventura y forja tu camino hacia la cima.",
-  "¡Desafía lo desconocido y alcanza nuevas alturas!",
-  "Tu valentía te guiará a la cima de la tabla de clasificación.",
-  "En cada paso, esculpe tu leyenda en esta gran aventura.",
-  "Explora, compite y demuestra tu grandeza en esta tabla.",
-  "Cada paso cuenta en tu viaje hacia la cima del ranking.",
-  "La emoción de la competencia te impulsa hacia adelante.",
-  "Aventúrate y conquista los primeros lugares con determinación.",
+  "",
 ];
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
 *< TABLA DE LOS AVENTUREROS MÁS DESTACADOS />*
     
-—◉ *TOP ${len} EXP 🌟*
+—◉ *TOP ${len} PESSO*
 *👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
 
 ${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n`}

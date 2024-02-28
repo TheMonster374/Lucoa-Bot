@@ -27,7 +27,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
-*──◈`J O T C H U A - M I N I`◈───*
+*──◈J O T C H U A - M I N I◈───*
 Hola *%taguser*,
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ┆📅 *𝑫𝒊𝒂*: %week

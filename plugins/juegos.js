@@ -1,7 +1,7 @@
-if (command == 'top') {
 import util from 'util';
 import path from 'path';
 const user = (a) => '@' + a.split('@')[0];
+if (command == 'top') {
 function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
   if (!text) throw `Ejemplo de uso:\n.top *texto*`;
   const ps = groupMetadata.participants.map((v) => v.id);

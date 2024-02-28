@@ -1,10 +1,6 @@
 import fetch from 'node-fetch';
-var handler = async (m, { conn, text, usedPrefix, command }) => {
-
-if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} CuriosityBot-MD`, m)
-
-try {
-
+const handler = async (m, {text}) => {
+  if (!text) throw  `🎌 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} CuriosityBot-MD`, m)
   const res = await fetch(global.API('https://api.github.com', '/search/repositories', {
     q: text,
   }));   

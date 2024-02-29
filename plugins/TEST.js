@@ -78,32 +78,11 @@ const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3�
 let lvl = level
 let emoji = Array.from(lvl.toString()).map((digit) => numberToEmoji[digit] || "❓").join("")
 
-let fechaMoment, formatDate, nombreLugar, ciudad = null
-const phoneNumber = '+' + m.sender
-const parsedPhoneNumber = parsePhoneNumber(phoneNumber)
-const countryCode = parsedPhoneNumber.country
-const timezones = countryData.timezones
-const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'
-moment.locale(mid.idioma_code)
-let lugarMoment = moment().tz(zonaHoraria)
-if (lugarMoment) {
-fechaMoment = lugarMoment.format('llll [(]a[)]')
-formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1) 
-nombreLugar = countryData.name
-const partes = zonaHoraria.split('/')
-ciudad = partes[partes.length - 1].replace(/_/g, ' ')
-}else{
-lugarMoment = moment().tz('America/Lima')
-fechaMoment = lugarMoment.format('llll [(]a[)]')
-formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1) 
-nombreLugar = 'America'
-ciudad = 'Lima'
-}	
+
 let margen = '*··················································*'
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n*SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 > *_${formatDate}_*
-> \`${nombreLugar} - ${ciudad}\`
 
 ${margen}
 

@@ -25,7 +25,7 @@ const handler = async (m) => {
 *Album:* ${album.name || 'No encontrado'}
 *Genero:* ${genres !== undefined ? genres.map((v) => v.name).join(', ') : 'No encontrado'}
 *Fecha de lanzamiento:* ${release_date || 'No encontrado'}
-`.trim();
+`.trim(adReply);
     fs.unlinkSync(`./tmp/${m.sender}.${ext}`);
     m.reply(txt);
   } else throw 'error';

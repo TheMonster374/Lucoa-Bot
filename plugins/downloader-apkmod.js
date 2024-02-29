@@ -1,4 +1,4 @@
-import {search, download} from 'aptoide-scraper';
+mport {search, download} from 'aptoide-scraper';
 const handler = async (m, {conn, usedPrefix: prefix, command, text}) => {
  if (!text) throw `${lenguajeGB['smsAvisoMG']()} *ESCRIBA EL NOMBRE DEL APK*`;
   try {    

@@ -27,11 +27,11 @@ const handler = async (m) => {
 *Fecha de lanzamiento:* ${release_date || 'No encontrado'}
 `.trim(adReply);
     fs.unlinkSync(`./tmp/${m.sender}.${ext}`);
-    m.reply(txt);
+    m.reply(txt, m, adReply);
   } else throw 'error';
 };
 
-handler.help = ['shazam (audio)']
+handler.help = ['whatmusic (audio)']
 handler.tags = ['tools']
 handler.command = /^shazam|quemusicaes|whatmusic$/i;
 export default handler;

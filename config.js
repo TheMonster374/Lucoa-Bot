@@ -98,10 +98,7 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
 
-// ❰ RANDOMS ❱
-global.welgata = [tk, ig, yt2, yt2, ig, md, ig, yt, paypal, yt2, yt2, ig, fb, tk, ths, asistencia]
-global.redesMenu = [nna, nn, nn2, nnn, nnnt, nnntt, nnnttt, nnnttt1, nnnttt2, nnnttt3, nnnttt4, nnnttt5, md, ig, paypal, yt, asistencia, fb, tk]
-global.accountsgb = [channel1, channel2, channel3, tk, ig, yt, paypal, fb, ths, md, nna, asistencia]
+
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18]
 global.gataVidMenu = ['https://qu.ax/AAvg.mp4', 'https://qu.ax/SeFS.mp4', 'https://qu.ax/NqZN.mp4']
 global.gataImg = [imagen1, imagen2, imagen3, imagen4]
@@ -124,31 +121,14 @@ global.yt = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
 global.yt2 = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
 global.ig = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
 global.fb = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
-global.tk = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
+
 global.ths = "https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np"
 global.paypal = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
 global.asistencia = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Contacto
 global.bot = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 𝙊𝙛𝙞𝙘𝙞𝙖𝙡 💖🐈
 
 
-global.nna = 'https://atom.bio/als' // Cuentas
-global.nn2 = 'https://atom.bio/als' // Grupo tg GataBot
-global.nna2 = 'https://atom.bio/als' // Help
-global.nn = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 1
-global.nnn = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 2
-global.nnnt = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 3
-global.nnntt = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 4
-global.nnnttt = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 5
-global.nnnttt1 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 6 COL
-global.nnnttt2 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 7 COL
-global.nnnttt3 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 8 COL
-global.nnnttt4 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // Grupo 9 COL
-global.nnnttt5 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // MULTI - BOTS
-global.nnnttt6 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' // A.T.M.M
-global.channel1 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.channel2 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.channel3 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+
 
 
 global.addescargas = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺`
@@ -167,8 +147,6 @@ global.error = '❌'
 
 
 
-
-global.nn = 'https://atom.bio/als'
 //━━━━━━━━━━━━━━━━━━━━━━ 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);

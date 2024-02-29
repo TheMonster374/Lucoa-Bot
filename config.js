@@ -6,7 +6,8 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-import { es as Lenguaje } from "./lib/idiomas/_default.js"
+import { es as esDefault, en as enDefault } from "./lib/multi-language/_default.js"
+import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 /* © 2024 ALS | All rights reserved */
 
 global.botnumber = "" //Ejemplo: +59309090909
@@ -21,8 +22,21 @@ global.suittag = [''];
 global.prems = [''];
 global.mods = [];
 
+// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+// ❰❰ Multi Idioma Dinámico : Dynamic Multi Language (MID-GB) ❱❱
+// [ES] > Agregué uno de los idiomas disponibles para el Bot en "mid".
+// [EN] > I added one of the languages available for the Bot in "mid".
+
+// ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
 // Español 👉 es           
-global.JT = Lenguaje
+// English 👉 en
+global.lenguajeGB = es
+global.mid = esDefault
+global.version_language = '1.0 (MID-GB)'
+
+// [ES] > Si "default_language" esta vacío, su idioma predeterminado será Español o se usará el idioma que cada usuario haya seleccionado al momento de registrarse. 
+// [EN] > If "default_language" is empty, your default language will be Spanish or the language that each user has selected at the time of registration will be used.
+// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';

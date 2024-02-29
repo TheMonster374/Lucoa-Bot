@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+
 let handler = async(m, { conn, text, command, usedPrefix }) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsTikTok6}\n*${usedPrefix + command} Gata_Dios*`
 try {

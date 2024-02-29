@@ -10,5 +10,7 @@ return await conn.sendMessage(m.chat, { text: '*El archivo es demasiado pesado p
 await conn.sendMessage(m.chat, { document: { url: data.dllink }, mimetype: 'application/vnd.android.package-archive', fileName: data.name + '.apk', caption: null }, { quoted: m })
 } catch {
 }}
+handler.help = ['apk'];
+handler.tags = ['downloader'];
 handler.command = /^(apkmod|modapk|dapk2|aptoide|apk)$/i
 export default handler

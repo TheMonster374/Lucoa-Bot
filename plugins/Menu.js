@@ -47,9 +47,9 @@ Hola *%taguser*,
 ──────────────────────
 \t\t\t𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺
 `.trimStart(),
-  header: '╔════`%category`╗\n ║╭───────────────···`',
-  body: '> ║│ %cmd\n',
-  footer: '> ║╰────────────────···\n> ╚══════════════════╝',
+  header: '╔════`%category`╗\n║╭───────────────···',
+  body: '║│ %cmd\n',
+  footer: '║╰────────────────···\n╚══════════════════╝',
   after: '> 𝑱 𝑶 𝑻 𝑪 𝑯 𝑼 𝑨 - 𝑴 𝑰 𝑵 𝑰\n> 𝑩𝒚 𝑨𝑳𝑺 \n © 2024 ALS | All rights reserved',
 }
 

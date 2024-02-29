@@ -1,7 +1,5 @@
 import fs from 'fs'
 import translate from '@vitalets/google-translate-api'
-import moment from 'moment-timezone'
-import ct from 'countries-and-timezones'
 import { parsePhoneNumber } from 'libphonenumber-js'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'

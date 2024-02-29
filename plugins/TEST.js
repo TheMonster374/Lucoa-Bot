@@ -82,7 +82,6 @@ let fechaMoment, formatDate, nombreLugar, ciudad = null
 const phoneNumber = '+' + m.sender
 const parsedPhoneNumber = parsePhoneNumber(phoneNumber)
 const countryCode = parsedPhoneNumber.country
-const countryData = ct.getCountry(countryCode)
 const timezones = countryData.timezones
 const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'
 moment.locale(mid.idioma_code)

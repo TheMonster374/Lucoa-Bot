@@ -2,8 +2,6 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
- m.react(rwait)
-
 let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
 if (!res.ok) throw await res.text()
 let json = await res.json()

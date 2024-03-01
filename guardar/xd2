@@ -24,3 +24,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 };
 handler.command = /^(TEST)$/i;
 export default handler;
+
+
+  if (!global.db.data.chats[m.chat].nsfw) throw `🚫 en este grupo no esta permtido contenido nsfw \n\n si eres admin y quieres activarlo usa el siguiente comando: \n*${usedPrefix}enable* nsfw`
+
+ m.react(rwait)

@@ -10,6 +10,7 @@ handler.all = async function(m, {conn}) {
 
 
   if (!chat.isBanned && m.text.match(/(XD|xd)/gi)) {
+    const chat = global.db.data.chats[m.chat];
     const vn = './Menu2.jpg';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.jpg', mimetype: 'image/jpeg', ptt: true}, {quoted: m});

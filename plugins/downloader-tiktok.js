@@ -12,7 +12,7 @@ try {
 const { author: { nickname }, video, description } = await tiktokdl(args[0])
 const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
 if (!url) throw global.error
-await conn.sendFile(m.chat, url, 'fb.mp4', '', m)
+await conn.sendFile(m.chat, url, 'fb.mp4', 'Aqui tienes tu video', m)
 } catch {
 conn.reply(m.chat, '[⚠️] 𝑬𝑹𝑹𝑶𝑹 [⚠️]\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐.', m)
 }}}

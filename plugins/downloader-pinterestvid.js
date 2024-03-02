@@ -18,11 +18,6 @@ handler.command = /^(vpinterest|vidpin|pintvid)$/i
 export default handler
 
 async function pinterest(query) {
-	if (query.match(URL_REGEX)) {
-		let res = await fetch('https://www.expertsphp.com/facebook-video-downloader.php', {
-			method: 'post',
-			body: new URLSearchParams(Object.entries({ url: query }))
-		})
 		let $ = cheerio.load(await res.text())
 		let data = $('table[class="table table-condensed table-striped table-bordered"]').find('a').attr('href')
 		if (!data) throw 'Can\'t download post :/'

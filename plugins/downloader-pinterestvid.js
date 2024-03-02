@@ -1,23 +1,21 @@
-import {spin} from "../lib/scrape.js";
+const { spin } = require('../lib/scrape')
 
-let handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0])
-    throw `**Este comando para descargar videos de pinterest con enlace*\n\nejemplo:\n${
-      usedPrefix + command
-    } https://id.pinterest.com/pin/27162403992537372/*`;
-  if (!args[0].match(/https:\/\/.*pinterest.com\/pin|pin.it/gi))
-    throw `*¡Enlace incorrecto! Este comando para descargar videos de pinterest con enlace*\n\nejemplo:\n${usedPrefix + command} https://id.pinterest.com/pin/27162403992537372/`;
-  await spin(args[0]).then(async (res) => {
-    let pin = JSON.stringify(res);
-    let json = JSON.parse(pin);
-    if (!json.status) throw `No se puede descargar`;
-    await conn.sendButton(m.chat, json.data.url, `*Mythia Batford*`, m);
-  });
-};
-handler.help = ["pinterestvideo"].map((v) => v + " <url>");
-handler.tags = ["downloader"];
-handler.command = /^pinterestvideo$/i;
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-handler.limit = true;
+    if (!args[0]) throw `*Perintah ini untuk mengunduh video dari pinterest dengan link*\n\ncontoh:\n${usedPrefix + command} https://id.pinterest.com/pin/27162403992537372/`
+    if (!args[0].match(/https:\/\/.*pinterest.com\/pin|pin.it/gi)) throw `*Link salah! Perintah ini untuk mengunduh video dari pinterest dengan link*\n\ncontoh:\n${usedPrefix + command} https://id.pinterest.com/pin/27162403992537372/`
 
-export default handler;
+    pin(args[0]).then(async res => {
+        let pin = JSON.stringify(res)
+        let json = JSON.parse(pin)
+        if (!json.status) throw `Tidak dapat diunduh`
+        await conn.sendVideo(m.chat, json.data.url, `*Mythia Batford*`, m)
+    })
+
+}
+handler.help = ['pinterestvideo'].map(v => v + ' <url>')
+handler.tags = ['downloader']
+handler.command = /^pinterestvideo$/i
+
+
+module.exports = handler

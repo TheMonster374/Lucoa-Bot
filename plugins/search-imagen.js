@@ -5,6 +5,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   const image = await res.getRandom();
   const link = image;
   conn.sendFile(m.chat, link, 'error.jpg', `𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐 𝒅𝒆: ${text}`, m);
+if (image) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Whatsapp Bot Multi Device`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 };
 handler.help = ['imagen <texto>'];
 handler.tags = ['search'];

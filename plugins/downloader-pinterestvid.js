@@ -1,4 +1,4 @@
-import {spin} from "../lib/scrape.js";
+import {pin} from "../lib/scrape.js";
 
 let handler = async (m, {conn, args, usedPrefix, command}) => {
   if (!args[0])
@@ -6,9 +6,7 @@ let handler = async (m, {conn, args, usedPrefix, command}) => {
       usedPrefix + command
     } https://id.pinterest.com/pin/27162403992537372/*`;
   if (!args[0].match(/https:\/\/.*pinterest.com\/pin|pin.it/gi))
-    throw `*¡Enlace incorrecto! Este comando para descargar videos de pinterest con enlace*\n\nejemplo:\n${
-      usedPrefix + command
-    } https://id.pinterest.com/pin/27162403992537372/*`;
+    throw `*¡Enlace incorrecto! Este comando para descargar videos de pinterest con enlace*\n\nejemplo:\n${usedPrefix + command} https://id.pinterest.com/pin/27162403992537372/`;
   await spin(args[0]).then(async (res) => {
     let pin = JSON.stringify(res);
     let json = JSON.parse(pin);

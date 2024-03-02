@@ -31,7 +31,6 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-     "@adiwajshing/baileys": "^1.0.1",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.2.4",
     "@brandond/findthelyrics": "^2.0.5",

@@ -26,8 +26,4 @@ async function pinterest(query) {
 		if (!data.length) throw `Query "${query}" not found :/`
 		return data[~~(Math.random() * (data.length))].images.orig.url
 	}
-}
 
-async function shortUrl(url) {
-	return await (await fetch(`https://tinyurl.com/api-create.php?url=${url}`)).text()
-}

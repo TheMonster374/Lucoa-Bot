@@ -3,14 +3,11 @@ import fetch from 'node-fetch'
 import { lookup } from 'mime-types'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-	text = text.endsWith('SMH') ? text.replace('SMH', '') : text 
 	if (!text) throw 'Input Pinterest Url'
 	let res = await pinterest(text)
-	// if (!res) throw res
 	let mime = await lookup(res)
-		await conn.sendMessage(m.chat, { [mime.split('/')[0]]: { url: res }, caption: `Succes Download: ${await shortUrl(res)}` }, { quoted: m }) :
-	await conn.sendButton(m.chat, `Result From: `, await shortUrl(res), res, [['Next', `${usedPrefix + command} ${text}`]], m)
-}
+	await conn.sendMessage(m.chat, 'aqui tienes tu video', m);
+
 handler.help = ['pinterest']
 handler.tags = ['downloader']
 handler.command = /^(vpinterest|vidpin|pintvid)$/i

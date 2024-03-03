@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] Formato incorrecto*\nEjemplo:\n\n${usedPrefix + command} con mi prima`;
 try {
 let searchResults = await searchPornhub(args[0]);
-let teks = searchResults.result.map((v, i) => 
+let teks =
 `*P O R N H U B  - S E A R C H*
 • *Título:* ${v.title}
 • *Duración:* ${v.duration}

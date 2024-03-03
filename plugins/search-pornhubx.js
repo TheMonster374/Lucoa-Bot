@@ -21,6 +21,8 @@ teks = '*Sin resultados*';
 m.reply(teks);
 } catch (e) {
 }};
+handler.help = ['phsearch'];
+handler.tags = ['search'];
 handler.command = /^(phsearch|pornhubsearch)$/i;
 export default handler;
 async function searchPornhub(search) {

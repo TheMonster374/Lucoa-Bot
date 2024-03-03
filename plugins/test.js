@@ -1,6 +1,46 @@
-import e from"node-fetch";import*as a from"fs";
+//Créditos del código Starlight team 
 
-let handler=async($,{conn:t,command:r})=>{
-  let i=$.mentionedJid&&$.mentionedJid[0]?$.mentionedJid[0]:$.fromMe?t.user.jid:$.sender,n=await t.getName($.sender),o=
-    ["737000000000000","69000000000","707000000000000000"],s=$.reply(MultiNK.Proces(n));await s;try{let d=await (await e("https://latam-api.vercel.app/api/"+r+"?apikey="+MyApiKey)).json();t.sendMessage($.chat,{image:{url:d.imagen},caption:`*🖼️ Imagen:* ${r}
-*👤 Solicitada por:* @${i.replace(/@.+/,"")}`,fileLength:o[Math.floor(Math.random()*o.length)],mentions:[$.sender]},{ephemeralExpiration:86400,quoted:{key:{fromMe:!1,participant:"0@s.whatsapp.net",remoteJid:"51957041866-1604595598@g.us"},message:{orderMessage:{itemCount:737,status:200,thumbnail:a.readFileSync("imagen1"),surface:200,message:`${n} [ 🔰 ] ${r}`,orderTitle:"NeKoTinaBot-MD",sellerJid:"0@s.whatsapp.net"}}}})}catch(m){$.reply(error)}}};handler.help=["waifu_hd","rostro_4k"],handler.tags=["animeuwu"],handler.command=/^(waifu_hd|rostro_4k)$/i;export default handler;
+import cheerio from 'cheerio';
+import axios from 'axios';
+import fetch from 'node-fetch';
+
+let handler = async (m, { conn, args, command, usedPrefix }) => {
+if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] Formato incorrecto*\nEjemplo:\n\n${usedPrefix + command} con mi prima`;
+try {
+let searchResults = await searchPornhub(args[0]);
+let teks = searchResults.result.map((v, i) => 
+`*P O R N H U B  - S E A R C H*
+• *Título:* ${v.title}
+• *Duración:* ${v.duration}
+• *Vistas:* ${v.views}
+• *Link:* ${v.url}
+---------------------------------------------------\n`).join('\n\n');
+if (searchResults.result.length === 0) {
+teks = '*Sin resultados*';
+}
+m.reply(teks);
+} catch (e) {
+}};
+handler.command = /^(phsearch|pornhubsearch)$/i;
+export default handler;
+async function searchPornhub(search) {
+  try {
+    const response = await axios.get(`https://www.pornhub.com/video/search?search=${search}`);
+    const html = response.data;
+    const $ = cheerio.load(html);
+    const result = [];
+    $('ul#videoSearchResult > li.pcVideoListItem').each(function(a, b) {
+      const _title = $(b).find('a').attr('title');
+      const _duration = $(b).find('var.duration').text().trim();
+      const _views = $(b).find('var.views').text().trim();
+      const _url = 'https://www.pornhub.com' + $(b).find('a').attr('href');
+      const hasil = { title: _title, duration: _duration, views: _views, url: _url };
+      result.push(hasil);
+    });
+
+    return { result };
+  } catch (error) {
+    console.error('[❗𝐈𝐍𝐅𝐎❗] *Ocurrió un error al buscar en Pornhub:*', error);
+    return { result: [] };
+  }
+}

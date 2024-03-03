@@ -4,7 +4,7 @@ import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch } fr
 
 var handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => { 
 
-conn.reply(m.chat, `✅ *Archivos de la carpeta tmp fueron eliminados*`, m, fake, )
+conn.reply(m.chat, `✅ *Archivos de la carpeta tmp fueron eliminados*`, m, adReply, )
 
 const tmp = [tmpdir(), join(__dirname, '../tmp')]
 const filename = []

@@ -7,7 +7,6 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 
 let Reglas = ` 
 `.trim()
-await m.react('❌')  
 await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i

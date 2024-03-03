@@ -57,9 +57,9 @@ let handler = async (m, {
         
     }
 }
-handler.help = ["pornhubsearch"]
+handler.help = ["phsearch2"]
 handler.tags = ["search"]
-handler.command = /^(pornhubsearch)$/i
+handler.command = /^(phsearch2)$/i
 export default handler
 
 /* New Line */

@@ -5,7 +5,7 @@ import { join } from 'path'*/
 let handler = async (m, { conn, usedPrefix, command}) => {
   
 
-let Reglas = `⚜ AVISO ⚜\n\nEl comando menu cambio ahora es .Comandos
+let Reglas = `       ⚜ *𝐴𝑉𝐼𝑆𝑂* ⚜\n\nEl comando menu cambio ahora es .Comandos
 `.trim()
 await conn.sendFile(m.chat, catalogo, 'gata.mp4', Reglas)
 }

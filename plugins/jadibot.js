@@ -40,12 +40,8 @@ const path = require('path')
    if (global.listJadibot instanceof Array) console.log()    
    else global.listJadibot = []    
   
-   cmd({
-   pattern: "serbot",
-   desc: "Usa esto para convertirte en un subbot!!",
-   category: "jadibots",
-   use: "usa serbot --code para convertirte en subbot con un codigo!!\nusa serbot para escanear un qr y convertirte en subbot!!",
-   },
+ 
+handler.command = /^(jadibot --code)$/i
    async(conn, m, { args }) => {
    const skmod = conn
    if (!global.db.data.settings[skmod.user.jid].jadibot) return m.reply(`*[❗] este comando fue desabilitado por el creador*`) 

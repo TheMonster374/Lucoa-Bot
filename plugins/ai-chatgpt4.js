@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓, 𝒑𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒆𝒏𝒗𝒊𝒂𝒓 𝒂 𝑪𝒉𝒂𝒕𝑮𝑷𝑻4.\n\n[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: chatgpt4 haz una historia donde jotchua sea millonario ';
+    throw '[📚] 𝑃𝑟𝑜𝑝𝑜𝑟𝑐𝑖𝑜𝑛𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜 𝑝𝑎𝑟𝑎 ℎ𝑎𝑏𝑙𝑎𝑟 𝑐𝑜𝑛 𝑐ℎ𝑎𝑡𝑔𝑝𝑡.\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* \n.chatgpt haz una historia donde jotchua sea millonario ';
   }
 
   try {
@@ -14,7 +14,7 @@ const handler = async (m, { conn, text }) => {
 
     if (data.result) {
       m.reply(`
-> 𝑪 𝑯 𝑨 𝑻 𝑮𝑷𝑻 4
+> 𝑪 𝑯 𝑨 𝑻 𝑮𝑷𝑻 
 
 ${data.result}`);
     } else {
@@ -31,8 +31,8 @@ Ocurrió un error: ${error}`;
   }
 };
 
-handler.help = ['chatgpt4'];
+handler.help = ['chatgpt'];
 handler.tags = ['ia'];
-handler.command = /^chatgpt4$/i;
+handler.command = /^chatgpt$/i;
 
 export default handler;

@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒍𝒂 𝒄𝒂𝒏𝒄𝒊𝒐𝒏\n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 : .applemusicsearch 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA)';
+    throw '[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝐸𝑙 𝑁𝑜𝑚𝑏𝑟𝑒 𝐷𝑒 𝐿𝑎 𝐶𝑎𝑛𝑐𝑖𝑜𝑛\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* \n.applemusicsearch 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA)';
   }
 
   try {
@@ -17,7 +17,7 @@ const handler = async (m, { conn, text }) => {
 
 
     const songInfo =`
-*𝑨 𝑷 𝑷 𝑳 𝑬 𝑴 𝑼 𝑺 𝑰 𝑪*
+*𝐴 𝑃 𝑃 𝐿 𝐸 𝑆𝐸𝐴𝑅𝐶𝐻*
 *Nombre:* ${json.result.name}\n
 *Artista:* ${json.result.artist}\n
 *Álbum:* ${json.result.album}\n
@@ -36,7 +36,7 @@ const handler = async (m, { conn, text }) => {
   } catch (error) {
     console.error(error);
     throw `
-> ꜱɪɴ ʀᴇꜱᴘᴜᴇꜱᴛᴀ
+> 𝐸𝑟𝑟𝑜𝑟
 ᴏᴄᴜʀʀɪᴏ ᴜɴ ᴇʀʀᴏʀ ᴀʟ ᴘʀᴏᴄᴇꜱᴀʀ ʟᴀ ꜱᴏʟɪᴄɪᴛᴜᴅ: ${error.message}`;
   }
 };

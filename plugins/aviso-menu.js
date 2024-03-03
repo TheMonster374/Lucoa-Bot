@@ -5,9 +5,9 @@ import { join } from 'path'*/
 let handler = async (m, { conn, usedPrefix, command}) => {
   
 
-let Reglas = ` 
+let Reglas = `⚜ AVISO ⚜\n\nEl comando menu cambio ahora es .Comandos
 `.trim()
-await conn.sendFile(m.chat, imagen1, 'gata.mp4', Reglas)
+await conn.sendFile(m.chat, catalogo, 'gata.mp4', Reglas)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp

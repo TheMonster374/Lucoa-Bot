@@ -3,33 +3,28 @@ const optionsFull = `
 .enable (opcion)
 .disable (opcion)
  
-*[🐶]* ${usedPrefix + command} ❖⊱⊰𝑾𝒆𝒍𝒄𝒐𝒎𝒆⊱⊰❖
-*[🐶]*  ${usedPrefix + command} ❖⊱⊰𝑷𝒖𝒃𝒍𝒊𝒄𝒐⊱⊰❖
-*[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒏𝒔𝒇𝒘⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌2⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒅𝒆𝒕𝒆𝒄𝒕⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒅𝒆𝒕𝒆𝒄𝒕2⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒓𝒆𝒔𝒕𝒓𝒊𝒄𝒕⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒕𝒐𝒓𝒆𝒂𝒅⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒅𝒊𝒐𝒔⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒕𝒐𝒔𝒕𝒊𝒄𝒌𝒆𝒓⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒑𝒄𝒐𝒏𝒍𝒚⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒈𝒄𝒐𝒏𝒍𝒚⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒗𝒊𝒆𝒘𝒐𝒏𝒄𝒆⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒄𝒂𝒍𝒍⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒕𝒐𝒙𝒊𝒄⊱⊰❖
- *[🐶]*    ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒕𝒓𝒂𝒃𝒂⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒂𝒓𝒂𝒃𝒆𝒔⊱⊰❖
- *[🐶]* ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒂𝒓𝒂𝒃𝒆𝒔2⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒐𝒂𝒅𝒎𝒊𝒏⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒔𝒊𝒎𝒔𝒊𝒎𝒊⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒅𝒆𝒍𝒆𝒕𝒆⊱⊰❖
- *[🐶]* ${usedPrefix + command} ❖⊱⊰𝒂𝒖𝒅𝒊𝒐𝒔_𝒃𝒐𝒕⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒐𝒊𝒂⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒔𝒑𝒂𝒎⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒎𝒐𝒅𝒆𝒋𝒂𝒅𝒊𝒃𝒐𝒕⊱⊰❖
- *[🐶]*  ${usedPrefix + command} ❖⊱⊰𝒂𝒏𝒕𝒊𝒑𝒓𝒊𝒗𝒂𝒅𝒐⊱⊰❖
+    • welcome
+    • publico
+    • nsfw
+    • antilink
+    • detect
+    • restric
+    • autoread
+    • audios
+    • autosticker
+    • pconly
+    • gconly
+    • antiviewonce 
+    • anticall
+    • antitoxic 
+    • antitraba
+    • antiarabes
+    • modoadmin
+    • antidelete
+    • modoia
+    • antispam
+    • modejadibot
+    • antiprivado
 `.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);

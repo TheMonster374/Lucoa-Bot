@@ -13,37 +13,31 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""
 
+/*NUMERS OWNERS*/
 global.owner = [
-  ['5491141493818', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
-  ['5491156673266', '?', true],
+ ['5491141493818', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
+ ['5491156673266', '?', true],
 ];
+/*└────ׂ─ׂ─ׂ─ׂ───*/
 
 global.suittag = [''];
 global.prems = [''];
 global.mods = [];
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ Multi Idioma Dinámico : Dynamic Multi Language (MID-GB) ❱❱
-// [ES] > Agregué uno de los idiomas disponibles para el Bot en "mid".
-// [EN] > I added one of the languages available for the Bot in "mid".
-
 // ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
 // Español 👉 es           
 // English 👉 en
 global.lenguajeGB = es
 global.mid = esDefault
 global.version_language = '1.0 (MID-GB)'
-
-// [ES] > Si "default_language" esta vacío, su idioma predeterminado será Español o se usará el idioma que cada usuario haya seleccionado al momento de registrarse. 
-// [EN] > If "default_language" is empty, your default language will be Spanish or the language that each user has selected at the time of registration will be used.
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
 global.author = '𝑩𝒚 𝑨𝑳𝑺';
-//━━━━━━━━━━━━━━━━━━━━━━ 
-
 global.wm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
+global.wm2 = `${dia} ${fecha}\n𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊`;
 global.titulowm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
 global.titulowm2 = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰`
 global.igfg = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
@@ -81,15 +75,34 @@ global.fpagedoc = '9999'
 
   
 //━━━━━━━MARCA━━━━━━━━ 
-/*global.test = conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}*/
+global.desc = 'WhatsApp Bot Multi Device By ALS'
 
+//Enlaces
+global.yt = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.ig = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.paypal = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.md = 'https://atom.bio/als';
+global.git = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.linkwabot = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.email = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.group = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Grupo ofc
+global.group2 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //enlace curiosity
+global.group3 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Curiosity global
+global.group4 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //colaboración multi bots
+global.group5 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - NovaBot
+global.group6 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración GataBot - CuriosityBot
+global.group7 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - Criwilop
+global.group8 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - SakuraBot
+global.group9 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración OnyxBot - CuriosityBot
+global.channel = 'https://whatsapp.com/channel/F4L8yH7CipS5RWp5LXT0np'
+global.channel2 = 'https://whatsapp.com/channel/F4L8yH7CipS5RWp5LXT0np'
+global.linkSity = [yt, ig, md, paypal, git, channel, channel2]
 
-global.desc = 'WhatsApp Bot Multi Device'
-
-global.group = 'https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB'
 //━━━━━━━MARCA━━━━━━━━ 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${wm}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${packname}\n      ${wm}`, 'jpegThumbnail': catalogo }}}
+global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': packname, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
+global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.addescargas = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺`
@@ -118,30 +131,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊`;
 global.gt = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
-global.mysticbot = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
-global.md = 'https://atom.bio/als';
-global.mysticbot = 'https://atom.bio/als';
+
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
+
 global.nomorown = '5491144775561';
-global.cmenut = '❖––––––『';
-global.cmenub = '┊✦ ';
-global.cmenuf = '╰━═┅═━––––––๑\n';
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ';
-global.dmenut = '*❖─┅──┅〈*';
-global.dmenub = '*┊»*';
-global.dmenub2 = '*┊*';
-global.dmenuf = '*╰┅────────┅✦*';
-global.htjava = '⫹⫺';
-global.htki = '*⭑•̩̩͙⊱•••• ☪*';
-global.htka = '*☪ ••••̩̩͙⊰•⭑*';
-global.comienzo = '• • ◕◕════';
-global.fin = '════◕◕ • •';
-global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': packname, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
-global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
+
 global.multiplier = 99;
+/* RPG */
 global.flaaa = [
   'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
   'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
@@ -149,7 +147,29 @@ global.flaaa = [
   'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
   'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=',
 ];
+
+global.cmenut = "❖––––––『"
+global.cmenub = "┊✦ "
+global.cmenuf = "╰━═┅═━––––––๑\n"
+global.cmenua = "\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     "
+ 
+global.dmenut = "*❖─┅──┅〈*"
+global.dmenub = "*┊»*"
+global.dmenub2 = "*┊*"
+global.dmenuf = "*╰┅────────┅✦*"
+global.htjava = "⫹⫺"
+
+global.htki = "*⭑•̩̩͙⊱•••• ☪*"
+global.htka = "*☪ ••••̩̩͙⊰•⭑*"
+
+global.comienzo = "• • ◕◕════"
+global.fin = " • •"
+
 //* ************************
+/*global.mysticbot = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
+global.mysticbot = 'https://atom.bio/als';*/
+
+
 
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {

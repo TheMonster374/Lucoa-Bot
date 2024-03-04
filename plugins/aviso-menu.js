@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   
 let Reglas = `⚜ 𝐼𝑁𝐹𝑂 𝐷𝐸𝐿 𝑀𝐸𝑁𝑈 ⚜\n\n𝐸𝑙 𝑐𝑜𝑚𝑎𝑛𝑑𝑜 𝑚𝑒𝑛𝑢 𝑐𝑎𝑚𝑏𝑖𝑜 𝑎ℎ𝑜𝑟𝑎 𝑒𝑠\n --> .comandos 
 `.trim()
-await conn.sendFile(m.chat, catalogo, 'gata.mp4', Reglas, fake)
+await conn.sendFile(m.chat, catalogo, 'gata.mp4', Reglas)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp

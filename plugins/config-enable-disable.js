@@ -2,6 +2,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 const optionsFull = `
 .enable (opcion)
 .disable (opcion)
+
  
     • welcome
     • publico

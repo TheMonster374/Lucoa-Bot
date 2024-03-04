@@ -1,6 +1,9 @@
 import { execSync } from 'child_process';
 
 const handler = async (m, { conn, text }) => {
+
+    await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
+  
   try {
           const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
           let messager = stdout.toString()

@@ -19,7 +19,7 @@ return conn.reply(m.chat, `Ha Habido un error`, m, fake, )
 }
 handler.command = ['bard']
 handler.help = ['bard']
-handler.tags = ['ai']
+handler.tags = ['ia']
 
 
 export default handler

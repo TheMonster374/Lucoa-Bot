@@ -15,18 +15,18 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
-    let txt = `╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
+    let txt = ``
+       txt += `📑 *Título ∙* ${vid.title}\n\n`
+       txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
+       txt += `👁 *Visitas ∙* ${vid.views}\n\n`
+       txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
+       txt += `📅 *Publicado ∙* ${vid.ago}\n\n`
+       txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
+       txt += ``
 let buttonMessage= {
 'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
-'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
+'fileName': `Youtube play mp3`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
@@ -51,7 +51,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
        let { title, dl_url, size } = yt
        let limit = 100
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -69,7 +69,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        let { title, dl_url, size } = yt
        let limit = 100
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -82,7 +82,7 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
         console.error(error)
     }}}
         
@@ -91,18 +91,18 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
-	let txt = `╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
+	let txt = ``
+       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
+       txt += `👁 *Visitas ∙* ${vid.views}\n\n`
+       txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
+       txt += `📅 *Publicado ∙* ${vid.ago}\n\n`
+       txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
+       txt += ``
 let buttonMessage= {
 'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
-'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
+'fileName': `Youtube Play mp4`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
@@ -129,7 +129,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
        let { title, dl_url, size } = yt
        let limit = 100
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, ytestilo)
        } catch {
@@ -138,11 +138,11 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        let { title, dl_url, size } = yt
        let limit = 100
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, ytestilo)
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
         console.error(error)
     }}}
     
@@ -151,19 +151,18 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
-	let txt = `╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
+	let txt = ``
+       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
+       txt += `👁 *Visitas ∙* ${vid.views}\n\n`
+       txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
+       txt += `📅 *Publicado ∙* ${vid.ago}\n\n`
+       txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
+       txt += ``
 let buttonMessage= {
 'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
-'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
+'fileName': `Youtube Play mp3doc`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
@@ -188,7 +187,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
        let { title, dl_url, size } = yt
        let limit = 100
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fileName: vid.title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -219,7 +218,7 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
         console.error(error)
     }}}
     
@@ -228,18 +227,18 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
-	let txt = `╭──────────✰\n`
-	   txt += `│🍭 *Título ∙* ${vid.title}\n`
-       txt += `│🕜 *Duración ∙* ${vid.timestamp}\n`
-       txt += `│👁 *Visitas ∙* ${vid.views}\n`
-       txt += `│📚 *Autor ∙* ${vid.author.name}\n`
-       txt += `│📅 *Publicado ∙* ${vid.ago}\n`
-       txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
-       txt += `╰──────────✰\n\n`
+	let txt = ``
+       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
+       txt += `👁 *Visitas ∙* ${vid.views}\n\n`
+       txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
+       txt += `📅 *Publicado ∙* ${vid.ago}\n\n`
+       txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
+       txt += ``
 let buttonMessage= {
 'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
-'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
+'fileName': `Youtube Play mp4doc`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
@@ -264,7 +263,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
        let { title, dl_url, size } = yt
        let limit = 300
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━●────── ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -282,7 +281,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        let { title, dl_url, size } = yt
        let limit = 300
        
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply)
        
        await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━●────── ${vid.timestamp}`, mimetype: 'video/mp4', fileName: `${vid.title}` + `.mp4`, quoted: m, contextInfo: {
 'forwardingScore': 200,
@@ -295,7 +294,7 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
+        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
         console.error(error)
 }}}}}
 handler.help = ["play"].map(v => v + " <formato> <búsqueda>")

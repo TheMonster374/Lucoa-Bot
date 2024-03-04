@@ -13,7 +13,7 @@ await m.reply(res.result)
 
 } catch (error) {
 console.error(error)
-return conn.reply(m.chat, `Ha Habido un error`, m, fake, )
+return conn.reply(m.chat, `𝐻𝑎 𝐻𝑎𝑏𝑖𝑑𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟`, m, fake, )
 }
 
 }

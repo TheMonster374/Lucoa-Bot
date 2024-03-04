@@ -4,7 +4,7 @@ import cheerio from 'cheerio';
 import {mediafiredl} from '@bochilteam/scraper';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝑴𝒆𝒅𝒊𝒂𝑭𝒊𝒓𝒆.*\n\n*[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐:* _${usedPrefix + command} https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file_`;
+  if (!args[0]) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑚𝑒𝑑𝑖𝑎𝑓𝑖𝑟𝑒\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* _${usedPrefix + command} https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file_`;
   try {
     const resEX = await mediafiredl(args[0]);
     const captionES = `_*𝑴 𝑬 𝑫 𝑰 𝑨 𝑭 𝑰 𝑹 𝑬*_\n
@@ -26,7 +26,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
       await m.reply(caption);
       await conn.sendFile(m.chat, link, name, '', m, null, {mimetype: mime, asDocument: true});
     } catch {
-      await m.reply('_*𝑴 𝑬 𝑫 𝑰 𝑨 𝑭 𝑰 𝑹 𝑬*_\n\n*[ ❌ ] 𝑬𝑹𝑹𝑶𝑹 [ ❌ ]*');
+      await m.reply('*[ ❌ ] 𝑬𝑹𝑹𝑶𝑹 [ ❌ ]*');
     }
   }
 };

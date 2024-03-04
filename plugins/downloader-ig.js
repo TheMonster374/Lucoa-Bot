@@ -4,8 +4,8 @@ import instagramGetUrl from 'instagram-url-direct';
 import {instagram} from '@xct007/frieren-scraper';
 import {instagramdl} from '@bochilteam/scraper';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒊𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎\n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: ${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link`;
-  m.reply(`*⚡️ ᴅᴇsᴄᴀʀɢᴀɴᴅᴏ sᴜ ᴠɪᴅᴇᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ ᴘᴏʀ ғᴀᴠᴏʀ, ᴇsᴛᴇ ᴘʀᴏᴄᴇsᴏ ᴘᴜᴇᴅᴇ ᴅᴜʀᴀʀ ᴇɴᴛʀᴇ 2 ʏ 10 ᴍɪɴᴜᴛᴏs ᴅᴇᴘᴇɴᴅɪᴇɴᴅᴏ ᴅᴇ ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ...*`);
+  if (!args[0]) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑖𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* ${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link`;
+  m.reply(`⌛ 𝑑𝑒𝑠𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 𝑣𝑖𝑑𝑒𝑜, 𝑒𝑠𝑡𝑜 𝑝𝑢𝑒𝑑𝑒 𝑡𝑎𝑟𝑑𝑎𝑟 𝑑𝑒𝑝𝑒𝑛𝑑𝑖𝑒𝑛𝑑𝑜 𝑙𝑎 𝑑𝑢𝑟𝑎𝑐𝑖𝑜𝑛 𝑑𝑒𝑙 𝑣𝑖𝑑𝑒𝑜`);
   try {
     const apiUrll = `https://api.betabotz.org/api/download/igdowloader?url=${encodeURIComponent(args[0])}&apikey=bot-secx3`;
     const responsel = await axios.get(apiUrll);

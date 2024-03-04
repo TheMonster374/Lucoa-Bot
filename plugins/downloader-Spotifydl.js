@@ -8,9 +8,9 @@ import pkg2 from 'fluid-spotify.js';
 const { Spotify } = pkg2;
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆 𝒂𝒍𝒈ú𝒏 𝒕𝒓𝒂𝒄𝒌, 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒐 á𝒍𝒃𝒖𝒎 𝒅𝒆 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝒐 𝒔𝒊𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒆 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒖𝒏𝒂 𝒄𝒂𝒏𝒄𝒊ó𝒏 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓.`; 
+ if (!text) throw `[📚] 𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑙𝑖𝑛𝑘 𝑑𝑒 𝑎𝑙𝑔𝑢𝑛 𝑡𝑟𝑎𝑐𝑘, 𝑝𝑙𝑎𝑦𝑙𝑖𝑠𝑡 𝑜 𝑎𝑏𝑢𝑚 𝑑𝑒 𝑠𝑝𝑜𝑡𝑖𝑓𝑦 𝑜 𝑠𝑖𝑚𝑝𝑙𝑒𝑚𝑒𝑛𝑡𝑒 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑢𝑛𝑎 𝑐𝑎𝑛𝑐𝑖𝑜𝑛 𝑝𝑎𝑟𝑎 𝑏𝑢𝑠𝑐𝑎𝑟 `; 
  const isSpotifyUrl = text.match(/^(https:\/\/open\.spotify\.com\/(album|track|playlist)\/[a-zA-Z0-9]+)/i);
- if (!isSpotifyUrl && !text) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆 𝒂𝒍𝒈ú𝒏 𝒕𝒓𝒂𝒄𝒌, 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒐 á𝒍𝒃𝒖𝒎 𝒅𝒆 𝒔𝒑𝒐𝒕𝒊𝒇𝒚.`;
+ if (!isSpotifyUrl && !text) throw `[📚] 𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑙𝑖𝑛𝑘 𝑑𝑒 𝑎𝑙𝑔𝑢𝑛 𝑡𝑟𝑎𝑐𝑘, 𝑝𝑙𝑎𝑦𝑙𝑖𝑠𝑡 𝑜 𝑎𝑏𝑢𝑚 𝑑𝑒 𝑠𝑝𝑜𝑡𝑖𝑓𝑦`;
   try {
      if (isSpotifyUrl) {
       if (isSpotifyUrl[2] === 'album') {

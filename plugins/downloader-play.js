@@ -12,7 +12,6 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (lister.includes(feature)) {
         if (feature == "mp3" || feature == "yta" || feature == "audio") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
-    await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -24,9 +23,8 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `│📅 *Publicado ∙* ${vid.ago}\n`
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -65,7 +63,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-       await m.react('✅')
        } catch {
        try {
        let yt = await fg.ytmp3(vid.url, q)
@@ -84,7 +81,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-       await m.react('✅')
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
         console.error(error)
@@ -92,7 +88,6 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
         
         if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, adReply)
-    await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
@@ -104,9 +99,8 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `│📅 *Publicado ∙* ${vid.ago}\n`
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -138,7 +132,6 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: ytmsg })
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
        
        await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, ytestilo)
-       await m.react('✅')
        } catch {
        try {
        let yt = await fg.ytmp4(vid.url, q)
@@ -148,7 +141,6 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, adReply).then(_ => m.react('✖️'))
        
        await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, ytestilo)
-       await m.react('✅')
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
         console.error(error)
@@ -156,7 +148,6 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
     
     if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
             if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, adReply)
-    await m.react('🕓')
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -170,7 +161,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        txt += `╰──────────✰\n\n`
        txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -209,7 +200,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-       await m.react('✅')
        } catch {
        try {
        let yt = await fg.ytmp3(vid.url, q)
@@ -228,7 +218,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-       await m.react('✅')
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply).then(_ => m.react('✖️'))
         console.error(error)
@@ -248,9 +237,8 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `│📅 *Publicado ∙* ${vid.ago}\n`
        txt += `│⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += `╰──────────✰\n\n`
-       txt += `*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .*`
 let buttonMessage= {
-'document': { url: `https://github.com/NakanoTeam/Ai-Hoshino` },
+'document': { url: `https://github.com/AleXD0009` },
 'mimetype': `application/pdf`,
 'fileName': `✰ | YᴏᴜTᴜʙᴇ Pʟᴀʏ 📥`,
 'fileLength': 99999999999999,
@@ -289,7 +277,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-       await m.react('✅')
        } catch {
        try {
        let yt = await fg.ytmp4(vid.url, q)

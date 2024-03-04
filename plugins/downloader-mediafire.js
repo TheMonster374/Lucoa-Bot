@@ -26,7 +26,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
       await m.reply(caption);
       await conn.sendFile(m.chat, link, name, '', m, null, {mimetype: mime, asDocument: true});
     } catch {
-      await m.reply('*[ ❌ ] 𝑬𝑹𝑹𝑶𝑹 [ ❌ ]*');
+      await m.reply('*[ ❌ ] 𝑬𝑹𝑹𝑶𝑹. [ ❌ ]*');
     }
   }
 };

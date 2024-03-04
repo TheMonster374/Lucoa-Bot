@@ -13,7 +13,7 @@ await conn.sendFile(m.chat, catalogo, 'gata.mp4', menu)
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp
 handler.register = true
-handler.exp = 70
+handler.exp = 15
 export default handler
 
 const more = String.fromCharCode(8206)

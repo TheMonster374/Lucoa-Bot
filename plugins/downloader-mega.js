@@ -3,17 +3,17 @@ import path from "path";
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     try {
-        if (!text) return m.reply(`uso correcto del comando :${usedPrefix + command} https://mega.nz/file/ovJTHaQZ#yAbkrvQgykcH_NDKQ8eIc0zvsN7jonBbHZ_HTQL6lZ8`);
+        if (!text) return m.reply(`[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑚𝑒𝑔𝑎 \n\n *[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜*:${usedPrefix + command} https://mega.nz/file/ovJTHaQZ#yAbkrvQgykcH_NDKQ8eIc0zvsN7jonBbHZ_HTQL6lZ8`);
 
         const file = File.fromURL(text);
         await file.loadAttributes();
 
         if (file.size >= 300000000) return m.reply('Error: el archivo es demasiado grande (maximo peso: 300MB)');
 
-        const downloadingMessage = `🌩️ descargando archivo... espera`;
+        const downloadingMessage = `🌩️ 𝑑𝑒𝑠𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 𝑎𝑟𝑐ℎ𝑖𝑣𝑜... 𝑒𝑠𝑝𝑒𝑟𝑎`;
         m.reply(downloadingMessage);
 
-        const caption = `*_Descarga  Exitosa..._*\nFile: ${file.name}\nSize: ${formatBytes(file.size)}`;
+        const caption = `*_𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑎  𝐸𝑥𝑖𝑡𝑜𝑠𝑎..._*\nFile: ${file.name}\nSize: ${formatBytes(file.size)}`;
 
         const data = await file.downloadBuffer();
 

@@ -11,7 +11,7 @@ let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.cha
   
 let menu = `⚜ 𝐼𝑁𝐹𝑂 𝐷𝐸𝐿 𝑀𝐸𝑁𝑈 ⚜\n\n𝐸𝑙 𝑐𝑜𝑚𝑎𝑛𝑑𝑜 𝑚𝑒𝑛𝑢 𝑐𝑎𝑚𝑏𝑖𝑜 𝑎ℎ𝑜𝑟𝑎 𝑒𝑠\n --> .comandos 
 `.trim()
-await conn.sendFile(m.chat, menu, fkontak, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: group, thumbnail: await (await fetch(pp)).buffer() }}})
+await conn.sendFile(m.chat, menu, fkontak)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp

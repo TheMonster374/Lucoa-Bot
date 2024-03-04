@@ -136,7 +136,7 @@ global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 
 global.nomorown = '5491144775561';
-
+global.wm2 = `${dia} ${fecha}\n𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊`
 global.multiplier = 99;
 /* RPG */
 global.flaaa = [

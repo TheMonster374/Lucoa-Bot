@@ -1,3 +1,5 @@
+/* Creditos a StarlightsTeam */
+
 import fg from 'api-dylux'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
@@ -11,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (!lister.includes(feature)) return conn.reply(m.chat, `*🚩 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.*\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
     if (lister.includes(feature)) {
         if (feature == "mp3" || feature == "yta" || feature == "audio") {
-            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m)
+            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -82,17 +84,17 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
+        await conn.reply(m.chat,`[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜`, m, adReply)
         console.error(error)
     }}}
         
         if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
-            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
 	let txt = ``
-       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `📑 *Título ∙* ${vid.title}\n\n`
        txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
        txt += `👁 *Visitas ∙* ${vid.views}\n\n`
        txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
@@ -142,17 +144,17 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        
        await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, ytestilo)
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
+        await conn.reply(m.chat,`[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜`, m, adReply)
         console.error(error)
     }}}
     
     if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
-            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
 	let txt = ``
-       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `📑 *Título ∙* ${vid.title}\n\n`
        txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
        txt += `👁 *Visitas ∙* ${vid.views}\n\n`
        txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
@@ -218,17 +220,17 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
+        await conn.reply(m.chat,`[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜`, m, adReply)
         console.error(error)
     }}}
     
     if (feature == "mp4doc" || feature == "ytvdoc" || feature == "videodoc" || feature == "videodoc") {
-            if (!inputs) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
 	let txt = ``
-       txt += `🍭 *Título ∙* ${vid.title}\n\n`
+       txt += `📑 *Título ∙* ${vid.title}\n\n`
        txt += `🕜 *Duración ∙* ${vid.timestamp}\n\n`
        txt += `👁 *Visitas ∙* ${vid.views}\n\n`
        txt += `📚 *Autor ∙* ${vid.author.name}\n\n`
@@ -294,7 +296,7 @@ mediaType: 2,
 sourceUrl: `${vid.url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        } catch (error) {
-        await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m, adReply)
+        await conn.reply(m.chat,`[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜`, m, adReply)
         console.error(error)
 }}}}}
 handler.help = ["play"].map(v => v + " <formato> <búsqueda>")

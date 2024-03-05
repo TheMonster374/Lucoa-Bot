@@ -18,8 +18,8 @@ Respuesta: ${conn.advnro[m.chat].number}`, m, { quoted: idmsg })
     }, conn.advnro[m.chat].time)
 }
 
-handler.help = ['adivinaelnumero']
+handler.help = ['advn']
 handler.tags = ['game']
-handler.command = /^(adivinaelnumero)$/i
+handler.command = /^(adivinaelnumero|advn)$/i
 
 export default handler

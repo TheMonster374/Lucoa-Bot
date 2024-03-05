@@ -4,9 +4,7 @@ import { translate } from "@vitalets/google-translate-api";
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text)
-    throw `⚠️️ *Ingrese el nombre de su personaje.*\n*Ejemplo* : ${
-      usedPrefix + command
-    } Goku`;
+    throw `⚠️️ *Ingrese el nombre de su personaje.*\n*Ejemplo* : ${usedPrefix + command} Goku`;
   try {
     const res = await axios.get(
       `https://weeb-api.vercel.app/character?search=${text}`

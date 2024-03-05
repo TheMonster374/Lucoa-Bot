@@ -17,4 +17,4 @@ let handler = async (m, { text, usedPrefix, command }) => {
 handler.command = handler.help = ['c-ai','character-ai']
 handler.tags = ['tools']
 
-module.exports = handler
+export default handler;

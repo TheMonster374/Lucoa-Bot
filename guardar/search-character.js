@@ -1,20 +1,44 @@
- const fetch = require('node-fetch')
+const axios = require('axios');
 
-let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw(`Input Text Dan Karakter!\nExample: ${usedPrefix + command} hai Kirito|Kirito`)    
-  try {
-    let [ prompt, logic ] = text.split('|')
-    m.reply(`Tunggu sebentar...`)
-    let res = await fetch(`https://api.betabotz.eu.org/api/search/c-ai?prompt=${prompt}?&char=${logic}&apikey=${lann}`)
-    let json = await res.json()
-    m.reply(json.message)
-  } catch (error) {
-    console.error(error)
-    m.reply('Terjadi kesalahan saat menjalankan perintah.')
+let handler = async (m, { conn, text }) => {
+  if (!text) {
+    conn.reply(m.chat, '• *Example :* .character tohru', m);
+    return;
   }
-}
 
-handler.command = handler.help = ['c-ai','character-ai']
-handler.tags = ['tools']
+	conn.sendMessage(m.chat, {
+		react: {
+			text: '🕒',
+			key: m.key,
+		}
+	})
 
-export default handler;
+  try {
+    let query = encodeURIComponent(text);
+    let url = `https://api.lolhuman.xyz/api/character?apikey=${global.lolkey}&query=${query}`;
+    let response = await axios.get(url);
+    let data = response.data.result;
+
+    if (data) {
+      let { name, image, description, favourites, media } = data;
+      description = description.replace(/~/g, '');
+      let caption = `*${name.full} (${name.native})*
+Favorit: ${favourites} orang
+Deskripsi: ${description}
+Media: ${media.nodes.length} media`;
+
+      conn.sendFile(m.chat, image.large, '', caption, m);
+    } else {
+      conn.reply(m.chat, '🚩 Character not found.', m);
+    }
+  } catch (e) {
+    console.log(e);
+    conn.reply(m.chat, '🚩 An error occurred processing the request.', m);
+  }
+};
+
+handler.help = ['character *<name>*'];
+handler.tags = ['info'];
+handler.command = /^character|char$/i;
+
+module.exports = handler;

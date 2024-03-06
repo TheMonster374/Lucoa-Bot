@@ -2,8 +2,8 @@ import fetch from 'node-fetch';
 import PDFDocument from 'pdfkit';
 import {extractImageThumb} from '@whiskeysockets/baileys';
 const handler = async (m, {conn, text, usedPrefix, command, args}) => {
-  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw '*❗ 𝖫𝗈𝗌 𝖢𝗈𝗆𝖺𝗇𝖽𝗈𝗌 +𝟷𝟾 𝖤𝗌𝗍𝖺́𝗇 𝖣𝖾𝗌𝖺𝖼𝗍𝗂𝗏𝖺𝖽𝗈 𝖤𝗇 𝖤𝗌𝗍𝖾 𝖦𝗋𝗎𝗉𝗈, si quieres activarlo usa !enablensfw*';
-  if (!text) throw `*[❗] 𝘐𝘯𝘨𝘳𝘦𝘴𝘦 𝘌𝘭 𝘕𝘰𝘮𝘣𝘳𝘦 𝘋𝘦 𝘈𝘭𝘨𝘶𝘯𝘢 𝘊𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘢 𝘋𝘦 𝘏𝘦𝘯𝘵𝘢𝘪, 𝘌𝘫𝘦𝘮𝘱𝘭𝘰: ${usedPrefix + command} miku*`;
+  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw '*❗ 𝑙𝑜𝑠 𝑐𝑜𝑚𝑎𝑛𝑑𝑜𝑠 +18 𝑒𝑠𝑡𝑎𝑛 𝑑𝑒𝑠𝑎𝑐𝑡𝑖𝑣𝑎𝑑𝑜𝑠, 𝑠𝑖 𝑞𝑢𝑖𝑒𝑟𝑒𝑠 𝑎𝑐𝑡𝑖𝑣𝑎𝑟𝑙𝑜𝑠 𝑢𝑠𝑎 !enable nsfw*';
+  if (!text) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑎𝑙𝑔𝑢𝑛𝑎 𝑐𝑎𝑡𝑒𝑔𝑜𝑟𝑖𝑎 𝑑𝑒 ℎ𝑒𝑛𝑡𝑎𝑖 \n\n *[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*: ${usedPrefix + command} miku*`;
   try {
     m.reply(global.wait);
     const res = await fetch(`https://api.lolhuman.xyz/api/nhentaisearch?apikey=${lolkeysapi}&query=${text}`);

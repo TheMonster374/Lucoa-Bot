@@ -24,7 +24,7 @@ import translate from '@vitalets/google-translate-api';
 import fetch from 'node-fetch';
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
-  if (!text) throw '*Formato incorrecto*\n*Ejemplo:\n${usedPrefix + command} Hola bot*';
+  if (!text) throw '[📚] 𝐸𝑛𝑣𝑖𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜 𝑝𝑎𝑟𝑎 ℎ𝑎𝑏𝑙𝑎𝑟 𝑐𝑜𝑛 𝑒𝑙 𝑏𝑜𝑡\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* ${usedPrefix + command} Hola bot*';
 
   try {
     let api = await fetch('https://api.simsimi.net/v2/?text=' + text + '&lc=es');

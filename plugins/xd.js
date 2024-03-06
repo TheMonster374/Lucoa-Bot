@@ -20,14 +20,14 @@ await conn.sendMessage(m.chat, {text: boost5, edit: key});
   
   
 //DATOS FALSOS | FALSE DATA
-let kill = `*${pickRandom(['le cortaste el cuello a snipe con un cuchillo','245.168.75.53','59.49.9.213','203.23.8.207','110.189.95.186','17.151.187.183','30.209.37.141','67.52.216.173','161.107.62.117','89.168.137.231','48.247.249.251','135.158.198.206','170.57.189.55','252.0.180.120','254.180.198.115','85.188.238.220','196.88.207.113','57.84.238.99','50.132.72.227','92.28.211.234','33.211.234.00','122.238.1.2434','873.282.11.89','123.009.011.774','333.228.201.236'])}%*`  
+let kill = `*${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras hiba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras hiba directo a la escuela','lo tiraste de un edificio'])}%*`  
 
 
 
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let doxeo = `*✅ Mataste a snipe con Exito*\n\n*𝑻𝒊𝒆𝒎𝒑𝒐: ${speed} 𝑺𝒆𝒈𝒖𝒏𝒅𝒐𝒔!*
+let doxeo = `*✅ Mataste a snipe con Exito*\n\n*tiempo: ${speed} segundos!*
 
 *mataste a snipe de la siguiente manera:* ${kill}`
 

@@ -14,7 +14,7 @@ stiker = await addExif(img, packname || '', author || '')
 console.error(e)
 if (Buffer.isBuffer(e)) stiker = e
 } finally {
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: md, thumbnail: imagen1}}}, { quoted: m })
 else throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n𝙀𝙍𝙍𝙊𝙍 𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄𝙊́ 𝙈𝘼𝙇, 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼𝙇 𝙄𝙉𝙏𝙀𝙉𝙏𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊'
 }}
 handler.help = ['wm <packname>|<author>']

@@ -62,14 +62,14 @@ ${yt_play[0].url}
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: adReply});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
-    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: desc});   
+    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: adReply});   
     return;
     } else {
-    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: desc});   
+    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: adReply});   
     return    
     }} catch {
     try {      
@@ -80,10 +80,10 @@ ${yt_play[0].url}
         buff.on('data', chunk => { bufs.push(chunk) })
         buff.on('end', async () => {
     let buff = Buffer.concat(bufs)
-    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: desc});
+    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: adReply});
     })} catch {
     await YTDL.mp3(yt_play[0].url).then(async (s) => {
-    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: desc});
+    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: adReply});
     await fs.unlinkSync(s.path)});
     }
   }

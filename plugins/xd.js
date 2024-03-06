@@ -1,8 +1,8 @@
 import { performance } from 'perf_hooks'
 let handler = async (m, { conn, text }) => {
 let user = global.db.data.users[m.sender]
-let time = user.prue + 600000 //10 min
-if (new Date - user.prue < 600000) return await conn.reply(m.chat, `🙌 HEY ALTO ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO NO HAGA SPAM`, m)
+//let time = user.prue + 600000 //10 min
+//if (new Date - user.prue < 600000) return await conn.reply(m.chat, `🙌 HEY ALTO ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO NO HAGA SPAM`, m)
 let start = `𝑃𝑟𝑒𝑝𝑎𝑟𝑎𝑛𝑑𝑜 𝑎𝑟𝑚𝑎𝑠 𝑝𝑎𝑟𝑎 𝑚𝑎𝑡𝑎𝑟 𝑎 𝑠𝑛𝑖𝑝𝑒`
 let boost = `*${pickRandom(['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}%*`
 let boost2 = `*${pickRandom(['21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40'])}%*`

@@ -20,14 +20,14 @@ await conn.sendMessage(m.chat, {text: boost5, edit: key});
   
   
 //DATOS FALSOS | FALSE DATA
-let kill = `*${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras iba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras iba directo a la escuela','Le disparaste con un arma'])}*`  
+let kill = `_${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras iba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras iba directo a la escuela','Le disparaste con un arma'])}_`  
 
 
 
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let doxeo = `*✅ Mataste a snipe con Exito*\n\n*tiempo: ${speed} segundos!*
+let doxeo = `*✅ Mataste a snipe con Exito*\n\n
 
 *mataste a snipe de la siguiente manera:* ${kill}`
 
@@ -35,7 +35,7 @@ await conn.sendMessage(m.chat, {text: doxeo, edit: key});
 //conn.reply(m.chat, doxeo, m)
 user.prue = new Date * 1  
 }
-handler.help = ['doxear <nombre> | <@tag>']
+handler.help = ['matarsnipe']
 handler.tags = ['fun']
 handler.command = /^matarsnipe/i
 handler.fail = null

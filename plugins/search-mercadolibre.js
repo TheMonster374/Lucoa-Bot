@@ -1,16 +1,18 @@
+//creditos a starlights Team y a Daniel
+
 import axios from 'axios';
 import cheerio from 'cheerio';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
-    if (!text) throw m.reply(`*Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command} Consolador Con forma del temach`);
+    if (!text) throw m.reply(`[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜 𝑑𝑒 𝑙𝑜 𝑞𝑢𝑒 𝑞𝑢𝑖𝑒𝑟𝑒𝑠 𝑏𝑢𝑠𝑐𝑎𝑟\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*\n\n${usedPrefix + command} Sniper`);
     let res = await mercado(text);
     let cap = `「 *M E R C A D O - L I B R E* 」\n\n`;
     const limit = 15;
     for (let i = 0; i < limit && i < res.length; i++) {
       let link = res[i].link.length > 30 ? res[i].link.substring(0, 30) + '...' : res[i].link;
       cap += `*• Nombre:* ${res[i].title}\n*• Estado:* ${res[i].state}\n*• Link:* ${res[i].link}\n`;
-      cap += '\n' + '••••••••••••••••••••••••' + '\n';
+      cap += '\n' + '-------------------------' + '\n';
     }
     m.reply(cap)
   } catch (error) {

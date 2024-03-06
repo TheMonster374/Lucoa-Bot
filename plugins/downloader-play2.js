@@ -69,7 +69,7 @@ ${yt_play[0].url}
     await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: desc});   
     return;
     } else {
-    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: estilo});   
+    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: desc});   
     return    
     }} catch {
     try {      
@@ -80,7 +80,7 @@ ${yt_play[0].url}
         buff.on('data', chunk => { bufs.push(chunk) })
         buff.on('end', async () => {
     let buff = Buffer.concat(bufs)
-    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: estilo});
+    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: desc});
     })} catch {
     await YTDL.mp3(yt_play[0].url).then(async (s) => {
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: desc});

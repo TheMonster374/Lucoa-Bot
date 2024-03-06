@@ -113,11 +113,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 global.nombre = conn.getName(m.sender)
 global.taguser = '@' + m.sender.split("@s.whatsapp.net")
-/*global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: saludo + ` ${m.name}`, body: wm, sourceUrl: group, thumbnailUrl: catalogo }}}
-
-*/
-global.fake = { key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: "status@broadcast" }, message: { imageMessage: { mimetype: 'image/jpeg', caption: saludo + ` ${m.name}`, jpegThumbnail: imagen1, viewOnce: true }}}
-	
+global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: saludo + ` ${m.name}`, body: wm, sourceUrl: group, thumbnailUrl: catalogo }}}	
 }
 
 export default handler

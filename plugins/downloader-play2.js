@@ -11,7 +11,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒖𝒏𝒂 𝒄𝒂𝒏𝒄𝒊𝒐𝒏,\n\n[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
+  if (!text) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑢𝑛𝑎 𝑐𝑎𝑛𝑐𝑖𝑜𝑛\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* ${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -21,32 +21,27 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
       additionalText = 'video 🎥';
     }
     const texto1 = `
-┏─━─━─━∞◆∞━─━─━─┓
-│ *𝒀𝒐𝒖𝒕𝒖𝒃𝒆 𝑷𝒍𝒂𝒚*│
-┗─━─━─━∞◆∞━─━─━─┛
+📌 *Titulo:* 
+${yt_play[0].title}
 
-┏─━─━─━∞◆∞━─━─━─┓
-│➻ 📌 *Titulo:* 
-│➻ ${yt_play[0].title}
-│
-│➻ 📆 *Publicado:* 
-│➻ ${yt_play[0].ago}
-│
-│➻ ⌚ *Duracion:*
-│➻ ${secondString(yt_play[0].duration.seconds)}
-│
-│➻ 👀 *Vistas:* 
-│➻ ${`${MilesNumber(yt_play[0].views)}`}
-│➻
-│➻ 🏝 *Autor:* 
-│➻ ${yt_play[0].author.name}
-│
-│➻ 🌤 *Tipo:*
-│➻ ${yt_play[0].type}
-│
-│➻ 🔗 *Link:* 
-│➻ ${yt_play[0].url}
-┗─━─━─━∞◆∞━─━─━─┛
+📆 *Publicado:* 
+${yt_play[0].ago}
+
+⌚ *Duracion:*
+${secondString(yt_play[0].duration.seconds)}
+
+👀 *Vistas:* 
+${`${MilesNumber(yt_play[0].views)}`}
+
+🏝 *Autor:* 
+${yt_play[0].author.name}
+
+🌤 *Tipo:*
+${yt_play[0].type}
+
+🔗 *Link:* 
+${yt_play[0].url}
+
 
 
 *_Enviando ${additionalText}, Aguarde Un Momento. . . ．．．_*
@@ -67,14 +62,14 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[ 🐶 ] 𝑫𝒆𝒔𝒄𝒂𝒓𝒈𝒖𝒆 𝒔𝒖 𝒂𝒖𝒅𝒊𝒐 𝒆𝒏 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: estilo});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
-    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
+    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: estilo});   
     return;
     } else {
-    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
+    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: estilo});   
     return    
     }} catch {
     try {      
@@ -85,10 +80,10 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
         buff.on('data', chunk => { bufs.push(chunk) })
         buff.on('end', async () => {
     let buff = Buffer.concat(bufs)
-    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
+    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: estilo});
     })} catch {
     await YTDL.mp3(yt_play[0].url).then(async (s) => {
-    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: m});
+    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: estilo});
     await fs.unlinkSync(s.path)});
     }
   }
@@ -109,7 +104,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `*[ 🐶 ] 𝑫𝒆𝒔𝒄𝒂𝒓𝒈𝒖𝒆 𝒔𝒖 𝒂𝒖𝒅𝒊𝒐 𝒆𝒏 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit1 && size <= limit2) {  
@@ -131,7 +126,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   }
 } catch (error) {
     console.log(error)
-    throw '*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗],\n\n 𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐';
+    throw '[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜';
   }
 };
 handler.help = ['play1.1', 'play2.2'].map((v) => v + ' < busqueda >');

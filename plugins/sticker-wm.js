@@ -46,4 +46,4 @@ handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
 handler.command = /^robar|wm$/i
 export default handler
-*/
+*/ 

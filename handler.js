@@ -1546,7 +1546,7 @@ global.dfail = (type, m, conn) => {
     owner: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por el propietario del bot*',
     mods: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por moderadores del bot y el propietario del bot',
     premium: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por premiums y el propietario del bot*',
-    group: '📌 Hola @${taguser} *este comando solo puede ser utilizado en grupos*',
+    group: '📌 Hola ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')} *este comando solo puede ser utilizado en grupos*',
     private: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por chat privado del bot*',
     admin: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por admins del grupo*',
     botAdmin: '📌 Hola @${participant.split`@`[0]} *para utilizar este comando es necesario que el bot sea admin del grupo*',

@@ -20,7 +20,7 @@ await conn.sendMessage(m.chat, {text: boost5, edit: key});
   
   
 //DATOS FALSOS | FALSE DATA
-let kill = `*${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras hiba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras hiba directo a la escuela','Le disparaste con un arma'])}*`  
+let kill = `*${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras iba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras iba directo a la escuela','Le disparaste con un arma'])}*`  
 
 
 

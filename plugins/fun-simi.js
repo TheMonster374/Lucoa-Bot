@@ -83,7 +83,7 @@ handler.help = ['simi', 'bot'].map((v) => v + ' <teks>');
 handler.tags = ['fun'];
 handler.command = /^((sim)?simi|bot|alexa)$/i;
 
-export default handler;*/
+export default handler;
 
 /*import translate from '@vitalets/google-translate-api'
 import fetch from "node-fetch"

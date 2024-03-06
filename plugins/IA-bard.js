@@ -15,7 +15,7 @@ await m.reply(res.result)
 
 } catch (error) {
 console.error(error)
-return conn.reply(m.chat, `𝐻𝑎 𝐻𝑎𝑏𝑖𝑑𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟`, m, fkontak, )
+return conn.reply(m.chat, `[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜`, m, fkontak, )
 }
 
 }

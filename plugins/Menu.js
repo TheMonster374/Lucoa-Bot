@@ -3,6 +3,12 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
+      const { key } = await conn.sendMessage(m.chat, {text: `${wait}`}, {quoted: m});
+
+    
+    await conn.sendMessage(m.chat, {text: `Enviado`, edit: key}, {quoted: m});
+
+
 let tags = {
   'main': '📄 `𝐼𝑁𝐹𝑂` 📄══════',
   'game': '🎮 `𝐽𝑈𝐸𝐺𝑂𝑆` 🎮═════',

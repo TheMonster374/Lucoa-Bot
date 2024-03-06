@@ -9,7 +9,7 @@ const openaiii = new OpenAIApi(configuration)
 var handler = async (m, {conn, text, usedPrefix, command}) => {
   
 if (usedPrefix == 'a' || usedPrefix == 'A') return
-if (!text) return conn.reply(m.chat, `🎌 *Ingrese una petición*\n\nEjemplo, !${command} Codigo en JS para un juego de cartas`, fakevoimg, ) 
+if (!text) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* !${command} Codigo en JS para un juego de cartas`, fakevoimg, ) 
   
 try {
 
@@ -47,7 +47,7 @@ conn.reply(m.chat, `${empireApijson1.resultado}`, m, fake, )
 
 }
 handler.help = ['openia', 'chatgpt', 'ia']
-handler.tags = ['ai']
+handler.tags = ['ia']
 handler.command = /^(openai|chatgpt|ia)$/i
 
 export default handler

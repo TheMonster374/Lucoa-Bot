@@ -12,7 +12,7 @@ await conn.groupSettingUpdate(m.chat, 'not_announcement')
 } else if (args[0] === 'cerrar') {
 m.reply('xd')
 await conn.groupSettingUpdate(m.chat, 'announcement')
-}}
-
+}
+  };
 handler.command = ['grupo'];
 export default handler;

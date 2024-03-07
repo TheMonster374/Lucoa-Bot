@@ -13,4 +13,4 @@ await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
 
 handler.command = /^(grupo)$/i;
-export default handler;
+module.exports = { s }

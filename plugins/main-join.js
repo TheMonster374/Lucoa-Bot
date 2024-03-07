@@ -21,7 +21,7 @@ const handler = async (m, {conn, text, isMods, isOwner, isPrems}) => {
     }
   } catch {
     enviando = false 
-    throw '*[❗] Lo sentimos, algo salio mal por favor reportelo o vuelva a intentarlo.*';
+    throw '*[❗] Link erroneo o faltante, ingrese el enlace de un grupo de WhatsApp.*\n\n*-> Ejemplo:*\n*-> #join https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np*'';
   }
 };
 handler.help = ['join [chat.whatsapp.com]'];

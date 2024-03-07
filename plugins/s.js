@@ -1,4 +1,6 @@
 require('../main')
+const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js'); 
+require('../main')
 
 if (command == 'grupo') {
 if (!m.isGroup) return m.reply(info.group);  

@@ -25,12 +25,7 @@ global.prems = [''];
 global.mods = [];
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
-// Español 👉 es           
-// English 👉 en
-global.lenguajeGB = es
-global.mid = esDefault
-global.version_language = '1.0 (MID-GB)'
+
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 

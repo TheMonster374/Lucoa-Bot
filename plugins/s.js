@@ -14,5 +14,5 @@ m.reply(lenguaje.grupos.text2)
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
 
-  handler.command = ['poll', 'encuesta'];
+  handler.command = ['Grupo', 'grupo'];
 export default handler;

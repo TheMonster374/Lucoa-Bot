@@ -14,5 +14,5 @@ m.reply('xd')
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
 
-handler.command = ['Grupo'];
+handler.command = ['grupo'];
 export default handler;

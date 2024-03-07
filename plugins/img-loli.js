@@ -1,10 +1,4 @@
-let handler = async(m, {
-	conn,
-	text,
-	command
-}) => {
-	let chat = global.db.data.chats[m.chat]
-	if (!chat.nsfw) throw `*Este grupo no permite NSFW*\nPermitir con *.enable nsfw*`
+let handler = async(m, {conn,text,command}) => {
 	let yh = global.loli
 	let url = yh[Math.floor(Math.random() * yh.length)]
 	conn.sendMessage(m.chat, {

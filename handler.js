@@ -82,7 +82,6 @@ export async function handler(chatUpdate) {
           if (!isNumber(user.bibitmangga)) user.bibitmangga = 0;
           if (!isNumber(user.bibitpisang)) user.bibitpisang = 0;
           if (!isNumber(user.emas)) user.emas = 0;
-	  if (!('language' in user)) user.language = 'es'
           if (!isNumber(user.jeruk)) user.jeruk = 0;
           if (!isNumber(user.kayu)) user.kayu = 0;
           if (!isNumber(user.makanan)) user.makanan = 0;
@@ -189,8 +188,7 @@ export async function handler(chatUpdate) {
 	        if (!isNumber(user.emasbatang)) user.emasbatang = 0;
 	        if (!isNumber(user.emasbiasa)) user.emasbiasa = 0;
 	        if (!isNumber(user.fideos)) user.fideos = 0;
-	        if (settings.sologp && !m.chat.endsWith('g.us') && !/jadibot|serbot|getcode|serbot|bots|stop|code|newcode/gim.test(m.text)) return 
-        if (!isNumber(user.fishingrod)) user.fishingrod = 0;
+	        if (!isNumber(user.fishingrod)) user.fishingrod = 0;
         if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0;
         if (!isNumber(user.fortress)) user.fortress = 0;
         if (!isNumber(user.fox)) user.fox = 0;

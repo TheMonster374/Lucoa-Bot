@@ -1,13 +1,11 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
-   await m.react('🕓')
    let res = await fetch('https://api.waifu.pics/nsfw/neko')
-   if (!res.ok) return m.react('❌')
+   if (!res.ok) return 
    let json = await res.json()
-   if (!json.url) return m.react('❌')
+   if (!json.url) return 
    await conn.sendFile(m.chat, json.url, 'xneko.png', '*RANDOM NEKO*', m)
-   await m.react('✅')
 }
 
 handler.help = ['xneko']

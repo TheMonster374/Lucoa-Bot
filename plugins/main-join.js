@@ -4,27 +4,26 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
 let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
 let [_, code] = link.match(linkRegex) || []
 
-if (!code) throw `🙌 𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀\n😼 *Ingrese el enlace de un grupo.*\n*Enter the link of a group.*\n\n*𝙀𝙅𝙀𝙈𝙋𝙇𝙊*\n*#join ${group}*`
+if (!code) throw `[📚] debes ingresar un enlace \n *Ingrese el enlace de un grupo.\n\n*[💡] ejemplo:*\n*#join ${group}*`
 
 if ( isMods || isOwner || m.fromMe) {
 m.reply(`*Jotchua-Mini se unio correctamente al grupo*
 
 *Jotchua-Mini se unio correctamente al grupo*
 
-‼️ 𝙎𝙄 𝘿𝙀 𝙇𝙊 𝘾𝙊𝙉𝙏𝙍𝘼𝙍𝙄𝙊 𝙉𝙊 𝙎𝙀 𝘼 𝙐𝙉𝙄𝘿𝙊 𝘼 𝙏𝙐 𝙂𝙍𝙐𝙋𝙊, 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙃𝘼𝙇𝙇𝘼 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙊 𝙎𝘼𝙇𝙄𝘿𝙊 𝙍𝙀𝘾𝙄𝙀𝙉𝙏𝙀𝙈𝙀𝙉𝙏𝙀 𝙀𝙇 𝘽𝙊𝙏
-`)
+‼️ si de lo contrario no se unio a tu grupo, verifica que no se haya eliminado o salido recientemente el bot `
 await delay(5 * 5000)
 let res = await conn.groupAcceptInvite(code)
 } else {
 const data = global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)
 
 await delay(5 * 5000)
-for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != conn.user.jid)) m.reply(`${iig}╭══•───────────────•══╮\n┃ 📧 *𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝙐𝘿 𝙋𝘼𝙍𝘼 𝙐𝙉 𝙂𝙍𝙐𝙋𝙊*\n┃ 📧 *𝙂𝙍𝙊𝙐𝙋 𝙍𝙀𝙌𝙐𝙀𝙎𝙏*\n╰══•───────────────•══╯\n\n*👤 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙉𝙏𝙀 | 𝘼𝙋𝙋𝙇𝙄𝘾𝘼𝙉𝙏*\n` + ' wa.me/' + m.sender.split('@')[0] + '\n\n*🔮 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 | 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆*\n ' + link, jid)
+for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != conn.user.jid)) m.reply(`${iig}╭══•───────────────•══╮\n┃ 📧 *𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝙐𝘿 𝙋𝘼𝙍𝘼 𝙐𝙉 𝙂𝙍𝙐𝙋𝙊*\n╰══•───────────────•══╯\n\n*👤 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝘼𝙉𝙏𝙀*\n` + ' wa.me/' + m.sender.split('@')[0] + '\n\n*🔮 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊*\n ' + link, jid)
 
-m.reply(`${ag}*✅ TU ENLACE SE ENVIO A MI PROPIETARIO*\n*✅ YOUR LINK WAS SENT TO MY OWNER*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n⚠️ *SU GRUPO SERÁ EVALUADO Y QUEDARÁ A DE MI PROPIETARIO SI ${gt} SE UNE A TU GRUPO*\n\n⚠️ *YOUR GROUP WILL BE EVALUATED AND OWNED BY MY OWNER IF ${gt} JOINS YOUR GROUP*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n *❕ES POSIBLE QUE SU SOLICITUD DE UNIR AL BOT A TU GRUPO SEA RECHAZADA POR LAS SIGUIENTES CAUSAS:*\n\n*❕IT IS POSSIBLE THAT YOUR REQUEST TO JOIN THE BOT INTO YOUR GROUP WILL BE REJECTED FOR THE FOLLOWING CAUSES:*\n*1️⃣ El Bot está Saturado.*\n*The Bot is Saturated.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n2️⃣ *El Bot fue eliminado del Grupo.*\n*The Bot was removed from the Group.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n3️⃣ *El Grupo no cumple con las Normativas de ${gt}*\n*The Group does not comply with the Regulations of ${gt}*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n4️⃣ *El enlace del grupo se restableció.*\n*The group link was restored.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n5️⃣ *No se agrega a Grupos según Mi Propietario(a).*\n*Not added to Groups by My Owner*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n💌 *La solicitud puede tardar Horas en ser Respondida. Por favor Tener Paciencia. Gracias*\n*The request may take hours to be answered. Please be patient. Thank you*`)}}
+m.reply(`${ag}*✅ TU ENLACE SE ENVIO A MI PROPIETARIO*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n⚠️ *SU GRUPO SERÁ EVALUADO Y QUEDARÁ A DE MI PROPIETARIO SI Jotchua-Mini SE UNE A TU GRUPO*\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n *❕ES POSIBLE QUE SU SOLICITUD DE UNIR AL BOT A TU GRUPO SEA RECHAZADA POR LAS SIGUIENTES CAUSAS:*\n*1️⃣ El Bot está Saturado.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n2️⃣ *El Bot fue eliminado del Grupo.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n3️⃣ *El Grupo no cumple con las Normativas de jotchua-Mini*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n4️⃣ *El enlace del grupo se restableció.*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n5️⃣ *No se agrega a Grupos según Mi Propietario(a).*\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n💌 *La solicitud puede tardar Horas en ser Respondida. Por favor Tener Paciencia. Gracias*`)}}
 
 handler.help = ['join [chat.whatsapp.com]']
-handler.tags = ['owner']
+handler.tags = ['main']
 handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i 
 handler.register = true
 export default handler

@@ -189,6 +189,7 @@ export async function handler(chatUpdate) {
 	        if (!isNumber(user.emasbatang)) user.emasbatang = 0;
 	        if (!isNumber(user.emasbiasa)) user.emasbiasa = 0;
 	        if (!isNumber(user.fideos)) user.fideos = 0;
+	        if (settings.sologp && !m.chat.endsWith('g.us') && !/jadibot|serbot|getcode|serbot|bots|stop|code|newcode/gim.test(m.text)) return 
         if (!isNumber(user.fishingrod)) user.fishingrod = 0;
         if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0;
         if (!isNumber(user.fortress)) user.fortress = 0;

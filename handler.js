@@ -82,6 +82,7 @@ export async function handler(chatUpdate) {
           if (!isNumber(user.bibitmangga)) user.bibitmangga = 0;
           if (!isNumber(user.bibitpisang)) user.bibitpisang = 0;
           if (!isNumber(user.emas)) user.emas = 0;
+	  if (!('language' in user)) user.language = 'es'
           if (!isNumber(user.jeruk)) user.jeruk = 0;
           if (!isNumber(user.kayu)) user.kayu = 0;
           if (!isNumber(user.makanan)) user.makanan = 0;

@@ -394,6 +394,7 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
         if (!isNumber(user.pancingan)) user.pancingan = 1;
         if (!isNumber(user.panda)) user.panda = 0;
         if (!isNumber(user.paus)) user.paus = 0;
+	if (!('Language' in user)) user.Language = m.Language
         if (!isNumber(user.pausbakar)) user.pausbakar = 0;
         if (!isNumber(user.pc)) user.pc = 0;
         if (!isNumber(user.pepesikan)) user.pepesikan = 0;

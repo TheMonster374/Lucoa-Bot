@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core';
 import axios from 'axios'
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 const handler = async (m, {text, conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw '[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒚𝒐𝒖𝒕𝒖𝒃𝒆';  
+  if (!args[0]) throw '[📚] ingresa un enlace de youtube';  
   let enviando;
   if (enviando) return  
       enviando = true      
@@ -27,10 +27,10 @@ const handler = async (m, {text, conn, args, usedPrefix, command}) => {
 No se encontro enlace para ese numero, intente del 1 al ${matchingItem.urls.length}`;
           }
         } else {
-          throw `𝑼𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆 𝒍𝒂 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒎𝒂𝒏𝒆𝒓𝒂 ${usedPrefix + command} <numero>, 𝒚 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓 𝒖𝒏𝒂 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒖𝒔𝒂 𝒆𝒍 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐: ${usedPrefix}playlist <texto>`;
+       throw `usa el comando de la siguiente manera ${usedPrefix + command} <numero>, y para buscar una playlist usa el siguiente comando: ${usedPrefix}playlist <texto>`;
         }
       } else {
-        throw `𝑼𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆 𝒍𝒂 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒎𝒂𝒏𝒆𝒓𝒂 ${usedPrefix + command} <numero>, 𝒚 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓 𝒖𝒏𝒂 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕 𝒖𝒔𝒂 𝒆𝒍 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐: ${usedPrefix}playlist <texto>`;
+        throw `usa el comando de la siguiente manera ${usedPrefix + command} <numero>, y para buscar una playlist usa el siguiente comando: ${usedPrefix}playlist <texto>`;
       }
     }
   }

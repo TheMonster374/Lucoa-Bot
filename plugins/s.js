@@ -9,7 +9,7 @@ await conn.groupSettingUpdate(m.chat, 'not_announcement')
 } else if (args[0] === 'cerrar') {
 m.reply('a')
 await conn.groupSettingUpdate(m.chat, 'announcement')
-}}
+}
 
 handler.help = ['encuesta question|option|option'];
 handler.tags = ['group'];

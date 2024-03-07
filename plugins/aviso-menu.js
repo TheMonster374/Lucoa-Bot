@@ -15,7 +15,6 @@ await conn.sendFile(m.chat, catalogo, 'gata.mp4', menu, fkontak)
 }
 handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
 handler.command = new RegExp
-handler.register = true
 handler.exp = 15
 export default handler
 

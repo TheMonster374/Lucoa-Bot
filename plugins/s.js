@@ -1,6 +1,4 @@
-require('../main')
-const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js'); 
-require('../main')
+const handler = async (m, {conn, text, args, usedPrefix, command}) => {
 
 if (command == 'grupo') {
 if (!m.isGroup) return m.reply(info.group);  
@@ -15,3 +13,6 @@ await conn.groupSettingUpdate(m.chat, 'not_announcement')
 m.reply(lenguaje.grupos.text2)
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
+
+  handler.command = ['poll', 'encuesta'];
+export default handler;

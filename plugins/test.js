@@ -25,8 +25,8 @@ export default handler;*/
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
-if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
-  conn.relayMessage(m.chat, sendPoll, {quoted: m});
+/*if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
+  conn.relayMessage(m.chat, sendPoll, {quoted: m});*/
 
 
 if (command == 'banear') { 
@@ -46,7 +46,7 @@ m.reply('mi creador es')
 else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
 } */
-handler.command = /^(test|XD|abrir||Abrir|banear)$/i;
+handler.command = /^(banear)$/i;
 
 handler.admin = true;
 handler.group = true;

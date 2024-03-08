@@ -8,4 +8,6 @@ m.reply = (text, chatId, options) => conn.sendMessage(chatId ? chatId : m.chat, 
 
 m.react = (text, key, options) => conn.sendMessage(m.chat, { react: {text, key: m.key }})
 
+export default handler
+
 

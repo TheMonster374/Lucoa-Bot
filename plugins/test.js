@@ -1,5 +1,5 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  let name = await conn.getName(m.sender);
+  /*  let name = await conn.getName(m.sender);
   if (name == 'undefined') name = 'Indefinido';
   const b = text.split('|');
   if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
@@ -21,8 +21,9 @@ const options = text.split("|").slice(1).map(option => ({ optionName: option.tri
 conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
 };
 handler.command = ['a', 'test'];
-export default handler;
-/*if (command == 'A') {
+export default handler;*/
+if (command == 'A') {
+  conn.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
 if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
@@ -37,4 +38,4 @@ await conn.groupSettingUpdate(m.chat, 'announcement')
 
 handler.command = /^(A)$/i;
 
-export default handler;*/
+export default handler;

@@ -32,6 +32,7 @@ const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return 
 if (command == 'banear') { 
 if (!text) return m.reply(`envia uno de los siguientes comandos\n*${prefix + command} on*\n*${prefix + command} off*`)
 if (!text) return conn.sendPoll(m.chat, `on*\n*off*`, ['banchat on','banchat off'])
+ conn.relayMessage(m.chat, sendPoll, {quoted: m});
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} on*\n*${prefix + command} off*`)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].isBanned = true

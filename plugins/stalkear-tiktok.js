@@ -1,27 +1,41 @@
-import fetch from 'node-fetch';
-
-const handler = async (m, {conn, text, usedPrefix, args, command}) => {
- if (!text) return conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙳𝙴 𝚃𝙸𝙺𝚃𝙾𝙺*', m);
-try {  	
-    const res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=${lolkeysapi}`);
-    const res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=${lolkeysapi}`;
-    const json = await res.json();
-    if (res.status !== 200) throw await res.text();
-    if (!json.status) throw json;
-    const thumb = await (await fetch(json.result.user_picture)).buffer();
-let txt = `┏━━≪ *TIKTOK STALK* ≫━•
-┃🔖 *Nombre* ${res.name}
-┃🔖 nombre de usuario ${res.username}
-┃👥 seguidores ${res.followers}
-┃🫂 siguiendo ${res.following}
-┃📌 biografia ${res.desc}
-┃━━━━━━━━━━━━━━
-┃ *🔗 Link* : https://tiktok.com/${res.username}
-┗━━━━━━━━━━━━━•`.trim();
-await conn.sendFile(m.chat, res.profile, 'tt.png', txt, m)
+import fetch from 'node-fetch'
+let handler = async(m, { conn, text, command, usedPrefix }) => {
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsTikTok6}\n*${usedPrefix + command} Gata_Dios*`
+try {
+let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=${lolkeysapi}`)
+let res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=${lolkeysapi}`
+let json = await res.json()
+if (res.status !== 200) throw await res.text()
+if (!json.status) throw json
+let thumb = await (await fetch(json.result.user_picture)).buffer()
+let gata = `👤 nombre
+${json.result.username}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✨ pronombre
+${json.result.nickname}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✅ seguidores
+${json.result.followers}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❇️ seguidos
+${json.result.followings}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❤️ total likes
+${json.result.likes}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🎁 xd
+${json.result.video}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👀 descripcion
+${json.result.bio}`.trim()
+await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
 } catch (e) {
-    throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙽𝙾 𝚂𝙴 𝙴𝙲𝙾𝙽𝚃𝚁𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝙳𝙾*';
-  }};
-handler.command = /^(tiktokstalk)$/i
+await conn.reply(m.chat, `Error ${usedPrefix + command}\n\n${wm}`, m)
+console.log(`ocurrio un error`)
+console.log(e)
+}}
+handler.help = ['tiktokstalk'].map(v => v + ' <username>')
+handler.tags = ['stalk']
+handler.command = /^(tiktokstalk|ttstalk)$/i
+export default handler
 
-export default handler;

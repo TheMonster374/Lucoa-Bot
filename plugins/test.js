@@ -2,9 +2,8 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
-if (!text) return conn.sendPoll(m.chat, `Selecione una de esta opción`, ['grupo abrir','grupo cerrar'])
-if (!text) return conn.sendPoll(m.chat, `Selecione una de esta opción`, ['grupo abrir','grupo cerrar'])
-//m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
+if (!text) return conn.sendPoll(m.chat, `${lenguaje.enable.text}\n*$*${prefix + command} on*\n*${prefix + command} off*`, ['banchat on','banchat off'])
+//m.reply(`${lenguaje.enable.text}\n*${prefix + command} on*\n*${prefix + command} off*`)
 if (args[0] === 'abrir') {
 m.reply(`a`)
 await conn.groupSettingUpdate(m.chat, 'not_announcement')

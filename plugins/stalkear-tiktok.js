@@ -22,7 +22,7 @@ let txt = `┏━━≪ *TIKTOK STALK* ≫━•
 ┗━━━━━━━━━━━━━•`
 await conn.sendFile(m.chat, res.profile, 'tt.png', txt, m)
 } catch (e) {
-m.reply(info.error)
+m.reply(`ha ocurrio un error`)
 console.log(e)}}
 
 handler.command = /^(tiktokstalk)$/i;

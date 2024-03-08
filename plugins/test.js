@@ -29,7 +29,7 @@ if (!text) return sendPoll(m.chat, `TEST`, ['owner','grupo cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
   if (command === 'owner') {
-m.reply('mi creador es')
+ await conn.sendMessage(m.chat,`mi creador es`, {quoted: m});
   }   
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')
@@ -41,4 +41,4 @@ m.reply('grupo cerrado')
 
 handler.command = /^(test)$/i;
 
-import default handler;
+export default handler;

@@ -1,4 +1,4 @@
-const handler = async (m, {conn, text, usedPrefix, command}) => {
+const handler = async (m, {conn, text, usedPrefix, args, command}) => {
 if (!args[0]) return m.reply(`*Ingrese el nombre del usuario*\n\n*Ejemplo:* ${prefix + command} EmiliaMermes`)
 try {  	
 let res = await fg.ttStalk(args[0])

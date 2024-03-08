@@ -20,8 +20,8 @@ let txt = `┏━━≪ *TIKTOK STALK* ≫━•
 ┗━━━━━━━━━━━━━•`.trim();
 await conn.sendFile(m.chat, res.profile, 'tt.png', txt, m)
 } catch (e) {
-  } catch (e) {
     throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙽𝙾 𝚂𝙴 𝙴𝙲𝙾𝙽𝚃𝚁𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝙳𝙾*';
-  };
-handler.command = /^(tiktokstalk)$/i;
+  }};
+handler.command = /^(tiktokstalk)$/i
+
 export default handler;

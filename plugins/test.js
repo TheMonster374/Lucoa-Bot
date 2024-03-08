@@ -31,7 +31,7 @@ if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-if (args[0] === 'abrir') {
+if (args[0] === '') {
 { conn.reply(m.chat, '✅ *Configurado correctamente*', m, ) }
 } else if (args[0] === 'cerrar') {
 { conn.reply(m.chat, '✅ *Configurado correctamente*', m,  ) }

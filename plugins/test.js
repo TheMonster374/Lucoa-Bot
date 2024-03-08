@@ -29,11 +29,11 @@ if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
 if (args[0] === 'abrir') {
-m.reply(`*GRUPO ABIERTO CON EXITO✅*`)
-await conn.groupSettingUpdate(m.chat, 'not_announcement')
+await conn.groupSettingUpdate(m.chat, isClose)
+{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, ) }
 } else if (args[0] === 'cerrar') {
-m.reply('`*GRUPO CERRADO CON EXITO✅*`')
-await conn.groupSettingUpdate(m.chat, 'announcement')
+await conn.groupSettingUpdate(m.chat, isClose)
+{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, ) }
 }}
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')

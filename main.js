@@ -439,18 +439,6 @@ await filesInit(pluginFolder).then(_ => Object.keys(global.plugins)).catch(conso
 
 */
 
-//idiomas 
-case 'idioma': case 'Language': case 'idiomas': { 
-let user = global.db.data.users[m.sender]
-if (!text) return m.reply(lenguaje.idioma() + lenguaje.idioma(prefix)) 
-if (budy.includes(`1`)) {  
-idioma = 'es' 
-idiomas = 'español'
-}
-user.Language = idioma
-m.reply(lenguaje.idioma2() + idiomas)}  
-break  
-
 
 const pluginFolder = global.__dirname(join(__dirname, './plugins/index'));
 const pluginFilter = (filename) => /\.js$/.test(filename);

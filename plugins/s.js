@@ -18,7 +18,7 @@ const options = text.split("|").slice(1).map(option => ({ optionName:  option.tr
     }
   };
 //conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
-if (!text) return conn.sendPoll(m.chat, `${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
+if (!text) return conn.sendPoll(m.chat, `xd\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
 };
 handler.help = ['encuesta question|option|option'];
 handler.tags = ['group'];

@@ -28,9 +28,9 @@ if (!text) return sendPoll(m.chat, `TEST`, ['owner','xd'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-    if (args[0] === 'owner') {
-m.reply('mi creador es')
-}
+    if (command === 'owner') {
+   m.reply('hola')
+    }
 }
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')

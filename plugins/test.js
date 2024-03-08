@@ -12,7 +12,7 @@ handler.all = async function(m, {conn}) {
     if (!db.data.chats[m.chat].audios) return;
     const vn = './src/+18.jpg';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {image: {url: vn}, fileName: 'error.png', mimetype: 'image/jpg', ptt: true}, {quoted: m});
+    mconn.conn.sendMessage(m.chat, {image: {url: vn}, fileName: 'error.png', mimetype: 'image/jpeg', ptt: true}, {quoted: m});
   }
   
 

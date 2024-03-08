@@ -28,16 +28,17 @@ let tags = {
 const defaultMenu = {
   before: `
 ──────────────────────
-Hola *%taguser*,
+Hola *%taguser*, Soy Jotchua-Mini
 
 🐢 *CREADOR*: +5491156673266
 👤 *TOTAL USUARIOS* : %totalreg
 
-🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
-💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
-🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
-🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
-
+┏━⊜「 *INFO USUARIO* 」
+┃🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
+┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
+┃🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
+┃🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
+┗━━━━━━━━━━━━━━━━━━⬣
 %readmore
 ──────────────────────
 \t\t\t𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺
@@ -163,7 +164,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 handler.customPrefix = /comandos|Comandos/i
 handler.help = ['menu']
 handler.command = new RegExp
-handler.command = ['comandos', 'Comandos', 'cmds'] 
 export default handler
 
 

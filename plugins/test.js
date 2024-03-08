@@ -30,7 +30,18 @@ if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
 
 if (command == 'abrir' || command == '' || command == 'Abrir') {  
 m.reply(`a`);
-    
+
+
+if (command == 'banear') { 
+if (!text) return m.reply(`envia uno de los siguientes comandos\n*${prefix + command} on*\n*${prefix + command} off*`)
+if (!text) return conn.sendPoll(m.chat, `on*\n*off*`, ['banchat on','banchat off'])
+//m.reply(`${lenguaje.enable.text}\n*${prefix + command} on*\n*${prefix + command} off*`)
+if (args[0] === "on") {
+global.db.data.chats[m.chat].isBanned = true
+m.reply(`chat vabeadi`)
+} else if (args[0] === "off") {  
+global.db.data.chats[m.chat].isBanned = false
+m.reply(`grupo baneado`)}}
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')
 }
@@ -38,7 +49,7 @@ m.reply('mi creador es')
 else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
 } */
-handler.command = /^(test|XD|abrir||Abrir)$/i;
+handler.command = /^(test|XD|abrir||Abrir|banear)$/i;
 
 handler.admin = true;
 handler.group = true;

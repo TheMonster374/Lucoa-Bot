@@ -1,24 +1,18 @@
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-	let isClose = {
-		'open': 'not_announcement',
-		'on': 'not_announcement',
-		'abrir': 'not_announcement',
-		'close': 'announcement',
-		'off': 'announcement',
-		'cerrar': 'announcement',
-	}[(args[0] || '')]
-	if (isClose === undefined)
-		throw `
-⚠️ *_Porfavor elija una opción:_*
-  ${usedPrefix + command} cerrar
-  ${usedPrefix + command} abrir
-`.trim()
-	await conn.groupSettingUpdate(m.chat, isClose)
-}
-handler.help = ['grupo <abrir/cerrar>']
-handler.tags = ['group']
-handler.command = /^(test)$/i
-handler.admin = true
-handler.botAdmin = true
 
-export default handler
+
+if (command == 'grupo') {
+if (!m.isGroup) return m.reply(info.group);  
+if (!isBotAdmins) return m.reply(info.botAdmin);  
+if (!isGroupAdmins) return m.reply(info.admin)
+if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
+//m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
+if (args[0] === 'abrir') {
+m.reply('grupo abierto')
+await conn.groupSettingUpdate(m.chat, 'not_announcement')
+} else if (args[0] === 'cerrar') {
+m.reply('grupo cerrado')
+await conn.groupSettingUpdate(m.chat, 'announcement')
+}}
+
+handler.command = /^(grupo)$/i;
+export default handler;

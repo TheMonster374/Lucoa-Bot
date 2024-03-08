@@ -29,10 +29,10 @@ if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
 if (args[0] === 'abrir') {
-m.reply('grupo abierto')
+m.reply(`*GRUPO ABIERTO CON EXITO✅*`)
 await conn.groupSettingUpdate(m.chat, 'not_announcement')
 } else if (args[0] === 'cerrar') {
-m.reply('xd')
+m.reply('`*GRUPO CERRADO CON EXITO✅*`')
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
     /*if (args[0] === 'owner') {

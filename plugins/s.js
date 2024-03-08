@@ -14,7 +14,7 @@ const options = text.split("|").slice(1).map(option => ({ optionName:  option.tr
     pollCreationMessage: {
         name: `bienvenido a mi menu`,
         options: options,
-        selectableOptionsCount: 3,
+        selectableOptionsCount: 1,
     }
   };
 conn.relayMessage(m.chat, sendPollMessage, {quoted: m});

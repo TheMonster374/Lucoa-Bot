@@ -26,7 +26,7 @@ const handler = async (m, {text}) => {
 };
 handler.help = ['githubsearch'];
 handler.tags = ['search'];
-handler.command = /^(ghs|githubs|githubsearch)?$/i;
+handler.command = ['githubsearch', 'ghsearch'];
 
 export default handler;
 

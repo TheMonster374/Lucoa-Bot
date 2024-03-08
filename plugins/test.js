@@ -32,11 +32,9 @@ if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
 if (args[0] === 'abrir') {
-await conn.groupSettingUpdate(m.chat, isClose)
-{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, ) }
+{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, ) }
 } else if (args[0] === 'cerrar') {
-await conn.groupSettingUpdate(m.chat, isClose)
-{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, ) }
+{ conn.reply(m.chat, '✅ *Configurado correctamente*', m,  ) }
 }}
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')

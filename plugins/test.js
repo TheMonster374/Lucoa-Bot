@@ -11,7 +11,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="
     },
     pollCreationMessage: {
-        name: captions,
+        name: caption,
         options: options,
         selectableOptionsCount: 1,
     }

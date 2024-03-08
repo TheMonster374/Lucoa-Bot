@@ -6,14 +6,14 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? x*`;
   const caption = `bienvenido a mi menu`.trim();
 //  const options = text.split("|").slice(1).map(option => ({ optionName: option.trim() }));  
-const options = text.split("|").slice(1).map(option => ({ optionName: option.trim() }));  
+const options = text.split("|").slice(1).map(option => ({ optionName: `a` option.trim() }));  
   const sendPollMessage = {
     messageContextInfo: {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="
     },
     pollCreationMessage: {
         name: `bienvenido a mi menu`,
-        options: `options`,
+        options: options,
         selectableOptionsCount: 1,
     }
   };

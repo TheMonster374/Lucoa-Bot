@@ -15,20 +15,20 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
   const i = ps.getRandom();
   const j = ps.getRandom();
   const k = Math.floor(Math.random() * 70);
-  const x = `${pickRandom(['🤓', '😅', '😂', '😳', '😎', '🥵', '😱', '🤑', '🙄', '💩', '🍑', '🤨', '🥴', '🔥', '👇🏻', '😔', '👀', '🌚'])}`;
+  const x = `${pickRandom(['🤓', '😅', '😂', '😳', '😎', '🥵', '😱', '🤑', '🙄', '🍑', '🤨', '🥴', '🔥', '👇🏻', '😔', '👀', '🌚'])}`;
   const l = Math.floor(Math.random() * x.length);
   const top = `*${x} Top ${text} ${x}*
     
-*1. ${user(a)}*
-*2. ${user(b)}*
-*3. ${user(c)}*
-*4. ${user(d)}*
-*5. ${user(e)}*
-*6. ${user(f)}*
-*7. ${user(g)}*
-*8. ${user(h)}*
-*9. ${user(i)}*
-*10. ${user(j)}*`;
+---> *1. ${user(a)}*
+---> *2. ${user(b)}*
+---> *3. ${user(c)}*
+---> *4. ${user(d)}*
+---> *5. ${user(e)}*
+---> *6. ${user(f)}*
+---> *7. ${user(g)}*
+---> *8. ${user(h)}*
+---> *9. ${user(i)}*
+---> *10. ${user(j)}*`;
   m.reply(top, null, {mentions: [a, b, c, d, e, f, g, h, i, j]});
 
 }

@@ -1,3 +1,12 @@
+const fs = require("fs")
+const path = require("path")
+const chalk = require("chalk");
+const axios = require('axios')
+const fetch = require('node-fetch')
+const cheerio = require('cheerio')
+const fg = require('api-dylux') 
+
+
 const handler = async (m, {conn, text, usedPrefix, args, command}) => {
 if (!args[0]) return m.reply(`*Ingrese el nombre del usuario*\n\n*Ejemplo:* ${prefix + command} EmiliaMermes`)
 try {  	

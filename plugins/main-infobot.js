@@ -16,6 +16,7 @@ let handler = async (m, { conn, usedPrefix }) => {
    let _uptime = process.uptime() * 1000
    let uptime = (_uptime).toTimeString()
    let totalreg = Object.keys(global.db.data.users).length
+   let totalcmd = Object.values(plugins).filter((v) => v.help && v.tags).length
    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
    const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) //groups.filter(v => !v.read_only)
    const used = process.memoryUsage()
@@ -64,7 +65,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  ✩  *Speed* : ${latensi.toFixed(4)} ms
 │  ✩  *Uptime* : ${uptime}
 │  ✩  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
-└  ✩  *Registrados* : ${totalreg} Usuarios
+│  ✩  *Registrados* : ${totalreg} Usuarios
+└  ◦  *Comandos* : ${totalcmd} total
 
 
  –  *I N F O  C H A T*

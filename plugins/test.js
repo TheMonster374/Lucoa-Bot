@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="
     },
     pollCreationMessage: { name: 'axd' ['grupo abrir','grupo cerrar']: 1,} };
-  
+  }
 /*if (command == 'A') {
 if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)

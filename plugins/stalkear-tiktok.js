@@ -1,10 +1,10 @@
-const fs = require("fs")
-const path = require("path")
-const chalk = require("chalk");
-const axios = require('axios')
-const fetch = require('node-fetch')
-const cheerio = require('cheerio')
-const fg = require('api-dylux') 
+import fs from ("fs")
+import path from ("path")
+import chalk from ("chalk");
+import axios from ('axios')
+import fetch from ('node-fetch')
+import cheerio from ('cheerio')
+import fg from ('api-dylux') 
 
 
 const handler = async (m, {conn, text, usedPrefix, args, command}) => {

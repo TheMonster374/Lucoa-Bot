@@ -3,10 +3,8 @@ if (!text) return conn.sendPoll(m.chat, `hola\n*${prefix + command} abrir*\n*${p
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
 if (args[0] === 'abrir') {
 m.reply('a')
-await conn.groupSettingUpdate(m.chat, 'not_announcement')
 } else if (args[0] === 'cerrar') {
 m.reply('xd')
-await conn.groupSettingUpdate(m.chat, 'announcement')
 }
   };
 handler.command = ['grupo'];

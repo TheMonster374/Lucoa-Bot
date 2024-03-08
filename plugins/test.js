@@ -29,10 +29,11 @@ if (!text) return sendPoll(m.chat, `TEST`, ['owner','grupo cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 if (args[0] === 'owner') {
 m.reply('mi creador es')
-} else if (args[0] === 'cerrar') {
+}}
+
+/*else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
-}
-}
+} */
 
 handler.command = /^(test)$/i;
 

@@ -11,7 +11,7 @@ await conn.groupSettingUpdate(m.chat, 'not_announcement')
 m.reply(`xd`)
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
-handler.command = /^(ban)$/i;
+handler.command = ['ban'];
 
 handler.admin = true;
 handler.group = true;

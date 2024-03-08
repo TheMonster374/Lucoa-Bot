@@ -45,7 +45,6 @@ m.reply('mi creador es')
 else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
 } */
-}
 handler.command = /^(test|XD)$/i;
 
 handler.admin = true;

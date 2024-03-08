@@ -58,6 +58,7 @@ global.miniurl = fs.readFileSync('./Menu.png')
 global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
+conn.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
 
 
 //fake

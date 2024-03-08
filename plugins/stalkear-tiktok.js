@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, command, usedPrefix }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsTikTok6}\n*${usedPrefix + command} Gata_Dios*`
+if (!text) throw `ejemplo\n*${usedPrefix + command} Gata_Dios*`
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=${lolkeysapi}`)
 let res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=${lolkeysapi}`

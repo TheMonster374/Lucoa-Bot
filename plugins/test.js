@@ -26,5 +26,5 @@ const handler = async (m, {text, command, args, usedPrefix}) => {
 };
 handler.help = ['simi', 'bot'].map((v) => v + ' <teks>');
 handler.tags = ['fun'];
-handler.command = /^((test)$/i;
+handler.command = ['test'];
 export default handler;

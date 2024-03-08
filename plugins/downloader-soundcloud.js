@@ -22,7 +22,7 @@ const handler = async (m, {conn, text}) => {
     throw 'ha ocurrido un error inesperado';
   }
 };
-handler.help = ['soundcloud']
-handler.tags = ['downloader']
+handler.help = ['soundcloud'];
+handler.tags = ['downloader'];
 handler.command = /^(soundcloud|cover)$/i;
 export default handler;

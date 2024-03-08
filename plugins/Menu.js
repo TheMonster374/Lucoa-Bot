@@ -30,18 +30,14 @@ const defaultMenu = {
 ──────────────────────
 Hola *%taguser*,
 
+🐢 *CREADOR*: +5491156673266
+👤 *TOTAL USUARIOS* : %totalreg
 
-┆🐢 *CREADOR*: +5491156673266
-┆👤 *TOTAL USUARIOS* : %totalreg
+🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
+💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
+🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
+🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
 
-
-
-╭─────────────────···
-│🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
-│💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
-│🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
-│🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
-╰──────────────────··· 
 %readmore
 ──────────────────────
 \t\t\t𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺

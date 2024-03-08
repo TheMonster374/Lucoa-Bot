@@ -2,9 +2,8 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   const res = await lolivid[Math.floor(Math.random() * lolivid.length)];
   conn.sendMessage(m.chat, {video: {url: res}, caption: `*xd*`}, {quoted: m});
 };
-handler.help = ['lolivid'];
-handler.tags = ['random'];
-handler.command = /^(lolivid|lolivideos|lolívid)$/i;
+
+handler.command = /^(lolivid|lolivideos|lolívid|asupanloli)$/i;
 export default handler;
 
 global.lolivid = [

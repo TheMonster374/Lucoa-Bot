@@ -15,3 +15,4 @@ await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
 
 handler.command = /^(A)$/i;
+}

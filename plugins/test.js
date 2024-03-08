@@ -28,8 +28,8 @@ if (!text) return sendPoll(m.chat, `TEST`, ['owner','xd'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-    if (command === 'owner') {
-   m.reply('hola')
+    if (command === 'XD') {
+ if (!text) return m.reply(m.chat, `TEST`)
     }
 }
     /*if (args[0] === 'owner') {
@@ -40,6 +40,6 @@ else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
 } */
 
-handler.command = /^(test)$/i;
+handler.command = /^(test|XD)$/i;
 
 export default handler;

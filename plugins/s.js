@@ -1,7 +1,7 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   let name = await conn.getName(m.sender);
   if (name == 'undefined') name = 'Indefinido';
-  const b = text.split('|');
+  const b = text.split('a|x');
   if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? x*`;
   if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? x*`;
   const caption = `bienvenido a mi menu`.trim();

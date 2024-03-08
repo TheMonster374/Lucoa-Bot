@@ -6,7 +6,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
   const caption = `Bienvenido a mi menu`.trim();
   //const options = text.split("|").slice(1).map(option => ({ optionName: option.trim() }));  
-const options = ['grupo abrir','grupo cerrar'].trim() }));  
+const options = 'hola'.trim() }));  
   const sendPollMessage = {
     messageContextInfo: {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="

@@ -13,7 +13,7 @@ global.db.data.chats[m.chat].isBanned = false
 m.reply('grupo desbandeado')}}}
 
 
-handler.command = /^(banear)$/i;
+handler.command = /^(ban)$/i;
 
 handler.admin = true;
 handler.group = true;

@@ -5,7 +5,6 @@ const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return 
 /*if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});*/
 if (command == 'banear') {  
-if (!text) return m.reply(`usa el siguiente comando*${prefix + command} on*\n*${prefix + command} off*`)
 if (!text) return conn.sendPoll(m.chat, `grupo\n*$*${prefix + command} on*\n*${prefix + command} off*`, ['banchat on','banchat off'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} on*\n*${prefix + command} off*`)
 if (args[0] === "on") {

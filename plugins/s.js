@@ -1,13 +1,18 @@
-/* Creditos a https://github.com/ALBERTO9883 */
+var handler = async (m, {conn, args, usedPrefix, command}) => {
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {	
-if (!args[0]) throw `⚠️️ _𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙩𝙚𝙭𝙩𝙤 𝙥𝙖𝙧𝙖 𝙞𝙣𝙞𝙘𝙞𝙖𝙧 𝙡𝙖 𝙚𝙣𝙘𝙪𝙚𝙨𝙩𝙖!_\n\n📌 𝙀𝙟𝙚𝙢𝙥𝙡𝙤 : \n*${usedPrefix + command}* texto|texto2...`
-if (!text.includes('|')) throw  `*⚠️️ 𝑺𝒆𝒑𝒂𝒓𝒆 𝒍𝒂 𝒆𝒏𝒄𝒖𝒆𝒔𝒕𝒂 𝒄𝒐𝒏* *|* \n\n📌 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 : \n*${usedPrefix + command}* texto|texto2...`
-let a = []
-let b = text.split('|')
-for (let c = 0; c < b.length; c++) { a.push([b[c]]) }
-return conn.sendPoll(m.chat, `📊 *𝑬𝒏𝒄𝒖𝒆𝒔𝒕𝒂 𝒑𝒂𝒓𝒂:*\n\n${text}`, a, m)}
-handler.help = ['encuesta <text|text2>']
-handler.tags = ['group'] 
-handler.command = ['poll', 'encuesta'] 
+const isClose = { 'open': 'not_announcement', 'close': 'announcement', 'abierto': 'not_announcement', 'cerrado': 'announcement', 'abrir': 'not_announcement', 'cerrar': 'announcement', 'desbloquear': 'unlocked', 'bloquear': 'locked' }[(args[0] || '')]
+
+if (isClose === undefined) { return conn.reply(m.chat, `*Elija una opción para configurar el grupo*\n\nEjemplo:\n*○ !${command} abrir*\n*○ !${command} cerrar*\n*○ !${command} bloquear*\n*○ !${command} desbloquear*`, m, fake, )
+
+}
+await conn.groupSettingUpdate(m.chat, isClose)
+{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, ) }
+
+}
+handler.help = ['group open / close', 'grupo abrir / cerrar']
+handler.tags = ['grupo']
+handler.command = /^(group|grupo)$/i
+handler.admin = true
+handler.botAdmin = true
+
 export default handler

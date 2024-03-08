@@ -3,10 +3,10 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   if (name == 'undefined') name = 'Indefinido';
   const b = text.split('|');
   if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
-  if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
+  if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*` ['grupo abrir','grupo cerrar'];
   const caption = `Bienvenido a mi menu`.trim();
   //const options = text.split("|").slice(1).map(option => ({ optionName: option.trim() }));  
-const options = 'hola'.trim() }));  
+const options = text.split("|").slice(1).map(option => ({ optionName: option.trim.trim() }));  
   const sendPollMessage = {
     messageContextInfo: {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="

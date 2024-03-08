@@ -31,7 +31,6 @@ if (args[0] === 'owner') {
 m.reply('mi creador es')
 } else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
-await conn.groupSettingUpdate(m.chat, 'announcement')
 }
 }
 

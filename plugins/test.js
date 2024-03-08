@@ -1,5 +1,5 @@
-const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  /*  let name = await conn.getName(m.sender);
+/*const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+    let name = await conn.getName(m.sender);
   if (name == 'undefined') name = 'Indefinido';
   const b = text.split('|');
   if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
@@ -22,6 +22,7 @@ conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
 };
 handler.command = ['a', 'test'];
 export default handler;*/
+const handler = async (m, {conn, text, args, usedPrefix, command}) => {
 if (command == 'A') {
   conn.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
 if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])

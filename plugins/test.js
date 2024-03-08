@@ -18,7 +18,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   };
 conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
 };
-andler.command = ['a', 'test'];
+handler.command = ['a', 'test'];
 export default handler;
 /*if (command == 'A') {
 if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])

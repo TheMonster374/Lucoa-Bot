@@ -1,24 +1,24 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   let name = await conn.getName(m.sender);
   if (name == 'undefined') name = 'Indefinido';
-  const b = text.split('|');
- // if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? x*`;
- // if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? x*`;
+//  const b = text.split('|');
+ // if (!b[1]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
+  //if (b[12]) throw `*[❗𝐈𝐍𝐅𝐎❗] ғᴏʀᴍᴀᴛᴏ ᴅᴇ ᴜsᴏ ${usedPrefix + command} Pregunta? |Opcion1|Opcion2...*`;
+const c = text.split('a');
+  
   const caption = `bienvenido a mi menu`.trim();
-//  const options = text.split("|").slice(1).map(option => ({ optionName: option.trim() }));  
-const options = text.split("|").slice(1).map(option => ({ optionName:  option.trim() }));  
+  const options = text.split("|").slice(1).map(option => ({ optionName: c.trim() }));  
   const sendPollMessage = {
     messageContextInfo: {
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="
     },
     pollCreationMessage: {
-        name: `bienvenido a mi menu`,
+        name: caption,
         options: options,
         selectableOptionsCount: 1,
     }
   };
-//conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
-if (!text) return conn.sendPoll(m.chat, `xd\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
+conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
 };
 handler.help = ['encuesta question|option|option'];
 handler.tags = ['group'];

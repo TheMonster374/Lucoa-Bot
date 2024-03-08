@@ -30,5 +30,7 @@ const handler = async (m, {conn, text, usedPrefix}) => {
     throw `Ha ocurrido un error inesperado`;
   }
 };
+handler.help = ['animeinfo'];
+handler.tags = ['search'];
 handler.command = /^(anime|animeinfo)$/i;
 export default handler;

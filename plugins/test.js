@@ -1,6 +1,6 @@
-
-
-if (command == 'grupo') {
+const handler = async (m, {conn, command, args, text, usedPrefix}) => {
+  
+if (command == 'test') {
 if (!m.isGroup) return m.reply(info.group);  
 if (!isBotAdmins) return m.reply(info.botAdmin);  
 if (!isGroupAdmins) return m.reply(info.admin)
@@ -14,5 +14,5 @@ m.reply('grupo cerrado')
 await conn.groupSettingUpdate(m.chat, 'announcement')
 }}
 
-handler.command = /^(grupo)$/i;
+handler.command = /^(test)$/i;
 export default handler;

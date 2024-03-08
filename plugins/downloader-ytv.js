@@ -26,11 +26,11 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
           }
         } else {
           enviando = false  
-          throw `𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒔𝒐 𝒅𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆 𝒆𝒔𝒕𝒂 𝒇𝒐𝒓𝒎𝒂 (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}Playlist <texto>*`;
+          throw `Para usar el comando hazlo de la siguiente manera: (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}Playlist <texto>*`;
         }
       } else {
         enviando = false  
-        throw `𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒔𝒐 𝒅𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆 𝒆𝒔𝒕𝒂 𝒇𝒐𝒓𝒎𝒂 (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}Playlist <texto>*`;
+        throw `Para usar el comando hazlo de la siguiente manera (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}Playlist <texto>*`;
       }
     }
   }

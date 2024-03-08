@@ -24,6 +24,9 @@ handler.command = ['a', 'test'];
 export default handler;*/
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
+    if (!m.isGroup) return m.reply(info.group);  
+if (!isBotAdmins) return m.reply(info.botAdmin);  
+if (!isGroupAdmins) return m.reply(info.admin)
 if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});

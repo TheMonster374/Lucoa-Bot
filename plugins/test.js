@@ -2,12 +2,9 @@
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
-/*if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
+if (!text) return sendPoll(m.chat, `TEST`, ['banear on','banear off'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});*/
-if (command == 'banear') {  
-if (!text) return conn.sendPoll(m.chat, `Selecione una de esta opción`, ['banear on','banear off'])    
-conn.relayMessage(m.chat, sendPoll, {quoted: m});
-//m.reply(`${lenguaje.enable.text}\n*${prefix + command} on*\n*${prefix + command} off*`)
+
 if (args[0] === "on") {
 global.db.data.chats[m.chat].isBanned = true
 m.reply('grupo baneado')

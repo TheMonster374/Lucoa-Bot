@@ -54,5 +54,5 @@ handler.command = /^(test|XD)$/i;
 handler.admin = true;
 handler.group = true;
 handler.botAdmin = true;
-
+}
 export default handler;

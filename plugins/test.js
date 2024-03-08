@@ -28,9 +28,6 @@ const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return 
 if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-if (command == 'abrir' || command == '' || command == 'Abrir') {  
-m.reply(`a`);
-
 
 if (command == 'banear') { 
 if (!text) return m.reply(`envia uno de los siguientes comandos\n*${prefix + command} on*\n*${prefix + command} off*`)
@@ -41,7 +38,7 @@ global.db.data.chats[m.chat].isBanned = true
 m.reply(`chat vabeadi`)
 } else if (args[0] === "off") {  
 global.db.data.chats[m.chat].isBanned = false
-m.reply(`grupo baneado`)}}
+m.reply(`grupo baneado`)}}}
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')
 }

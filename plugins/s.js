@@ -12,8 +12,8 @@ const options = text.split("|").slice(1).map(option => ({ optionName: option.tri
         messageSecret: "bT3tfZngfSMWK2zOEL8pSclPG+xldidYDX+ybB8vdEw="
     },
     pollCreationMessage: {
-        name: `caption`,
-        options: options,
+        name: `bienvenido a mi menu`,
+        options: `options`,
         selectableOptionsCount: 1,
     }
   };

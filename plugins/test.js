@@ -45,6 +45,8 @@ m.reply('grupo cerrado')
 
 handler.command = /^(test|XD)$/i;
 
-handler.admin = handler.group = handler.botAdmin = true;
+handler.admin = true;
+handler.group = true;
+handler.botAdmin = true;
 
 export default handler;

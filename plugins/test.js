@@ -24,13 +24,10 @@ handler.command = ['a', 'test'];
 export default handler;*/
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
-if (!text) return sendPoll(m.chat, `TEST`, ['owner',''])
+if (!text) return sendPoll(m.chat, `TEST`, ['owner','xd'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-  if (command === 'owner') {
-m.reply('hola')
-  }   
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')
 }

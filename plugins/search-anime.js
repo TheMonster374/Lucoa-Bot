@@ -1,37 +1,34 @@
-import fetch from 'node-fetch'
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-   if (!text) return m.reply('Ingrese el titulo de un Anime.')
-   let res = await fetch('https://api.jikan.moe/v4/anime?q=' + encodeURIComponent(text))
-   let json = (await res.json()).data
-   let txt = `*乂  A N I M E  -  I N F O*\n\n`
-      txt += `	◦  *Titulo* : ${json[0].title}\n`
-	  txt += `	◦  *Id* : ${json[0].mal_id}\n`
-	  txt += `	◦  *Tipo* : ${json[0].type}\n`
-	  txt += `	◦  *Episodios* : ${json[0].episodes}\n`
-	  txt += `	◦  *Estado* : ${json[0].status}\n`
-	  txt += `	◦  *Emitido* : ${json[0].aired.string}`
-	  txt += `	◦  *Clasificacion* : ${json[0].rating}\n`
-	  txt += `	◦  *Duracion* : ${json[0].duration}\n`
-	  txt += `	◦  *Puntaje* : ${json[0].score}\n`
-	  txt += `	◦  *Genero* : ${json[0].genres.map((val) => val.name).join(", ")}\n`
-	  txt += `	◦  *Sinopsis* : ${json[0].synopsis}\n\n`
-   let img = await (await fetch(json[0].images.jpg.large_image_url)).buffer()
-   await conn.sendUrl(m.chat, txt, m, {
-      externalAdReply: {
-         mediaType: 1,
-         renderLargerThumbnail: true,
-         thumbnail: img,
-         thumbnailUrl: img,
-         title: global.textbot.title,
-      }
-   })
-}
-
-handler.help = ['animeinfo']
-handler.tags = ['search']
-handler.command = ['anime-info', 'animeinfo', 'infonime']
-
-handler.react_error = true
-
-export default handler
+import translate from '@vitalets/google-translate-api';
+import {Anime} from '@shineiichijo/marika';
+const client = new Anime();
+const handler = async (m, {conn, text, usedPrefix}) => {
+  if (!text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] INGRESE EL NOMBRE DE ALGUN ANIME A BUSCAR*`);
+  try {
+    const anime = await client.searchAnime(text);
+    const result = anime.data[0];
+    const resultes = await translate(`${result.background}`, {to: 'es', autoCorrect: true});
+    const resultes2 = await translate(`${result.synopsis}`, {to: 'es', autoCorrect: true});
+    const AnimeInfo = `
+🎀 • *Título:* ${result.title}
+🎋 • *Formato:* ${result.type}
+📈 • *Estado:* ${result.status.toUpperCase().replace(/\_/g, ' ')}
+🍥 • *Episodios totales:* ${result.episodes}
+🎈 • *Duración: ${result.duration}*
+✨ • *Basado en:* ${result.source.toUpperCase()}
+💫 • *Estrenado:* ${result.aired.from}
+🎗 • *Finalizado:* ${result.aired.to}
+🎐 • *Popularidad:* ${result.popularity}
+🎏 • *Favoritos:* ${result.favorites}
+🎇 • *Clasificación:* ${result.rating}
+🏅 • *Rango:* ${result.rank}
+♦ • *Trailer:* ${result.trailer.url}
+🌐 • *URL:* ${result.url}
+🎆 • *Background:* ${resultes.text}
+❄ • *Ringkasan:* ${resultes2.text}`;
+    conn.sendFile(m.chat, result.images.jpg.image_url, 'error.jpg', AnimeInfo, m);
+  } catch {
+    throw `*[❗] ERROR, INTENTELO DE NUEVO*`;
+  }
+};
+handler.command = /^(anime|animeinfo)$/i;
+export default handler;

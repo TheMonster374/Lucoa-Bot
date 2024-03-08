@@ -10,9 +10,9 @@ handler.all = async function(m, {conn}) {
 
   if (!chat.isBanned && m.text.match(/(:v)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
-    const vn = './storage/img/catalogo.png';
+    const vn = 'https://file.io/8S49vfk29W9J';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
-    mconn.conn.sendMessage(m.chat, {image: {url: vn}, fileName: 'error.png', mimetype: 'image/jpeg', ptt: true}, {quoted: m});
+    mconn.conn.sendMessage(m.chat, {sticker: {url: vn}, fileName: 'sticker.webp', mimetype: 'image/webp', ptt: true}, {quoted: m});
   }
   
 

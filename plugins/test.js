@@ -41,4 +41,4 @@ m.reply('grupo cerrado')
 
 handler.command = /^(test)$/i;
 
-export default handler;
+import default handler;

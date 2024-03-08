@@ -8,6 +8,7 @@ conn.sendPoll = (jid, name = '', values = [], selectableOptionsCount: 1,) => { r
 if (command == 'A') {
 if (!text) return conn.sendPoll(m.chat, `\n*${prefix + command} abrir*\n*${prefix + command} cerrar*\nSelecione una de esta opción`, ['grupo abrir','grupo cerrar'])
 //m.reply(`${lenguaje.enable.text}\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`)
+  conn.relayMessage(m.chat, sendPoll, {quoted: m});
 if (args[0] === 'abrir') {
 m.reply('grupo abierto')
 await conn.groupSettingUpdate(m.chat, 'not_announcement')

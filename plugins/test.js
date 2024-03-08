@@ -26,14 +26,11 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   
 const sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return conn.sendMessage(jid, { poll: { name, values, selectableCount }}) }
 if (!text) return sendPoll(m.chat, `TEST`, ['abrir','cerrar'])
-m.reply(`xd abrir*\n* cerrar*`)
   conn.relayMessage(m.chat, sendPoll, {quoted: m});
 
-if (args[0] === '') {
-{ conn.reply(m.chat, '✅ *Configurado correctamente*', m, ) }
-} else if (args[0] === 'cerrar') {
-{ conn.reply(m.chat, '✅ *Configurado correctamente*', m,  ) }
-}}
+if (command == 'abrir' || command == '' || command == 'Abrir') {  
+m.reply(`a`);
+    
     /*if (args[0] === 'owner') {
 m.reply('mi creador es')
 }
@@ -41,7 +38,7 @@ m.reply('mi creador es')
 else if (args[0] === 'cerrar') {
 m.reply('grupo cerrado')
 } */
-handler.command = /^(test|XD)$/i;
+handler.command = /^(test|XD|abrir||Abrir)$/i;
 
 handler.admin = true;
 handler.group = true;

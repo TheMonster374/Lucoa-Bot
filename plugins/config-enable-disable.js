@@ -3,29 +3,30 @@ const optionsFull = `
 .enable (opcion)
 .disable (opcion)
 
- 
-    • welcome
-    • publico
-    • nsfw
-    • antilink
-    • detect
-    • restric
-    • autoread
-    • audios
-    • autosticker
-    • pconly
-    • gconly
-    • antiviewonce 
-    • anticall
-    • antitoxic 
-    • antitraba
-    • antiarabes
-    • modoadmin
-    • antidelete
-    • modoia
-    • antispam
-    • modejadibot
-    • antiprivado
+ ┏━⊜「 *=͟͟͞ENABLE|DISABLE* 」
+ ┃   • welcome
+ ┃   • publico
+ ┃   • nsfw
+ ┃   • antilink
+ ┃   • detect
+ ┃   • restric
+ ┃   • autoread
+ ┃   • audios
+ ┃   • autosticker
+ ┃   • pconly
+ ┃   • gconly
+ ┃   • antiviewonce 
+ ┃   • anticall
+ ┃   • antitoxic 
+ ┃   • antitraba
+ ┃   • antiarabes
+ ┃   • modoadmin
+ ┃   • antidelete
+ ┃   • modoia
+ ┃   • antispam
+ ┃   • modejadibot
+ ┃   • antiprivado
+ ┗━━━━━━━━━━━━━━━━━━⬣
 `.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);

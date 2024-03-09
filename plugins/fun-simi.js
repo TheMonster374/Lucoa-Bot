@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
-if (!text) throw `*Formato incorrecto*\n*Ejemplo:*\n${usedPrefix + command} Hola bot`
+if (!text) throw `*_Formato incorrecto_*\n\n*Ejemplo:*\n${usedPrefix + command} Hola bot`
 try {
 let url = `https://simsimi.fun/api/v2/?mode=talk&lang=es&message=${text}&filter=1`
 let res = await axios.get(url)

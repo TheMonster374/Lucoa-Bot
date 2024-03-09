@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   txt += `${album ? `\n*• Album:* ${album.name}` : ''}${genres ? `\n*• Genero:* ${genres.map(v => v.name).join(', ')}` : ''}\n`
   txt += `*• Fecha de lanzamiento:* ${release_date}`
   await conn.reply(m.chat, txt, m, adReply)
-  } else return conn.reply(m.chat, `*Responde a un audio o video.*`, m, adReply)
+  } else return conn.reply(m.chat, `*_Responde a un audio o video._*`, m, adReply)
 }
 handler.help = ['whatmusic <audio/video>']
 handler.tags = ['tools']

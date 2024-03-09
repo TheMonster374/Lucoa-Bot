@@ -1,7 +1,7 @@
 {
   "name": "Jotchua-Mini",
   "version": "1.0.0",
-  "description": "bot whatsapp",
+  "description": "bot de whatsapp",
   "main": "index.js",
   "type": "module",
   "directories": {

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `[📚] ingresa un texto de la imagen que quieres\n\n*[💡] ejemplo:* \n ${usedPrefix + command} Mono`
+if (!text) throw `*_ingresa un texto de la imagen que quieres_*\n\n*ejemplo:* \n ${usedPrefix + command} Mono`
 try {
 const tiores1 = await fetch(`https://vihangayt.me/tools/imagine?q=${text}`);
 const json1 = await tiores1.json();

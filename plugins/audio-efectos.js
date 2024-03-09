@@ -32,7 +32,7 @@ const handler = async (m, {conn, args, __dirname, usedPrefix, command}) => {
           ptt: true,
         });
       });
-    } else throw `*responde al audio o nota de voz que sera modificado usando el siguiente comando:* ${usedPrefix + command}*`;
+    } else throw `*_responde al audio o nota de voz que sera modificado usando el siguiente comando:_* ${usedPrefix + command}*`;
   } catch (e) {
     throw e;
   }

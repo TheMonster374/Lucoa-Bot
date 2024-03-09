@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="https://i.imgur.com/kd8sus3.jpeg" alt="Jotchua-Mini" width="800"/>
+<img src="https://telegra.ph/file/e63a31dca58e5e8856381.png" alt="Jotchua-Mini" width="800"/>
 
 
 

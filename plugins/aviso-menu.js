@@ -9,7 +9,7 @@ const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "stat
   
     await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
   
-let menu = `⚜ 𝐼𝑁𝐹𝑂 𝐷𝐸𝐿 𝑀𝐸𝑁𝑈 ⚜\n\n𝐸𝑙 𝑐𝑜𝑚𝑎𝑛𝑑𝑜 𝑚𝑒𝑛𝑢 𝑐𝑎𝑚𝑏𝑖𝑜 𝑎ℎ𝑜𝑟𝑎 𝑒𝑠\n --> .comandos 
+let menu = `⚜ *INFO DEL MENU* ⚜\n\nel comando menu cambio, ahora es\n --> .comandos 
 `.trim()
 await conn.sendFile(m.chat, catalogo, 'gata.mp4', menu, fkontak)
 }

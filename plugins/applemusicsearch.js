@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '*ingresa el nombre de la cancion que quieres buscar*\n\nejemplo: .applemusicsearch 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA)';
+    throw '*_ingresa el nombre de la cancion que quieres buscar_*\n\n*ejemplo:* .applemusicsearch 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA)';
   }
 
   try {
@@ -10,7 +10,7 @@ const handler = async (m, { conn, text }) => {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-      throw new Error(`[❌] Ocurrio un error al buscar la cancion en applemusic`);
+      throw new Error(`*[❌] Ocurrio un error al buscar la cancion en applemusic*`);
     }
 
     const json = await response.json();

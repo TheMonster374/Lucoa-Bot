@@ -9,12 +9,13 @@ const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "stat
   
     await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
   
-let menu = `⚜ *INFO DEL MENU* ⚜\n\nel comando menu cambio, ahora es\n --> .comandos 
+let menu = `⚜ *INFO DEL MENU* ⚜\n\n*_el comando menu cambio, ahora es_*\n --> .comandos 
 `.trim()
 await conn.sendFile(m.chat, catalogo, 'gata.mp4', menu, fkontak)
 }
-handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
-handler.command = new RegExp
+/*handler.customPrefix = /menu|menubot|menu|uso, usobot|uso del bot/i
+handler.command = new RegExp*/
+handler.command = ['menu', 'Menu', 'MENU', 'help']
 handler.exp = 15
 export default handler
 

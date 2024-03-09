@@ -10,7 +10,7 @@ let simi = data.success ? data.success : data.error
 if (simi) {
 m.reply(simi)
 } else {
-m.reply('Apoco si tilin')
+m.reply('x')
 }} catch (error) {
 //console.error(error)
 }}

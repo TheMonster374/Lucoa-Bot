@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (!lister.includes(feature)) return conn.reply(m.chat, `*🚩 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.*\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
     if (lister.includes(feature)) {
         if (feature == "mp3" || feature == "yta" || feature == "audio") {
-            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m)
+            if (!inputs) return conn.reply(m.chat, `*ingresa el titulo de un video o musica de youtube*`, m)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -89,7 +89,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     }}}
         
         if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
-            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `*ingresa el titulo de un video o musica de youtube*`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
@@ -149,7 +149,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
     }}}
     
     if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
-            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `*ingresa el titulo de un video o musica de youtube*`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '128kbps'
@@ -225,7 +225,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     }}}
     
     if (feature == "mp4doc" || feature == "ytvdoc" || feature == "videodoc" || feature == "videodoc") {
-            if (!inputs) return conn.reply(m.chat, `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑡𝑖𝑡𝑢𝑙𝑜 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑜 𝑚𝑢𝑠𝑖𝑐𝑎 𝑑𝑒 𝑌𝑜𝑢𝑇𝑢𝑏𝑒.`, m, adReply)
+            if (!inputs) return conn.reply(m.chat, `*ingresa el titulo de un video o musica de youtube*`, m, adReply)
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'

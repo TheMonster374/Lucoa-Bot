@@ -152,9 +152,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
      let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4 fresh-bot*/ /* https://telegra.ph/file/8f642ba80b8cf7e1d0487.mp4 ?̷͖̬͖̝̫̺̬̼͗?̷̬̎̆?̸̰̩͍̪̤́́̂͆́͘͜?̷̭͔̞̹̤͎̖͐͛͊͋̀̊͝-̷͇͕͓̼̝̠̖̫̗̤̂̒B̶̨̰̱̠̙̟͌̒̉̆̏̎̍̕o̸̲̳͇͋͑͊ṱ̸̗̤̗̄̊̎̐̒̉͝*/
-     let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
+     let pp2 = 'https://telegra.ph/file/e16f1b132adb7fc40044b.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
     conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
-    
+
   } catch (e) {
     conn.reply(m.chat, '[❌] El menu tiene un error', m)
     throw e

@@ -156,7 +156,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
     
   } catch (e) {
-    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
+    conn.reply(m.chat, '[❌] El menu tiene un error', m)
     throw e
   }
 }

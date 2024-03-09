@@ -10,7 +10,7 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {sticker: {url: vn}, fileName: 'sticker.webp', mimetype: 'image/webp', ptt: true}, {quoted: m});
   }
   
-
+ 
   return !0;
 };
 export default handler;

@@ -977,7 +977,7 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
           sPromote: '',
           sDemote: '',
           antidelete: false,
-          modohorny: true,
+          nsfw: true,
           autosticker: false,
           audios: true,
           antiLink: false,
@@ -1528,12 +1528,14 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 	if (!chat?.antidelete) return 
         if (!msg) return 
 	if (!msg?.isGroup) return 
-	const antideleteMessage = `_*< ANTI-DELETE />*_\n
+	const antideleteMessage = `
+ ╭⚊⚊⚊⚊⚊⚊  𝐀𝐍𝐓𝐈 𝐃𝐄𝐋𝐄𝐓𝐄  ⚊⚊⚊⚊⚊⚊
  ▢ *Usuario:* @${participant.split`@`[0]}
  ▢ *Hora:* ${time}
  ▢ *Fecha:* ${date}\n
  ▢ *Enviando el mensaje eliminado...*\n
- *Para desactivar la función* _antidelete_*, envia el siguiente comando:* _/disable antidelete_`.trim();
+ *Para desactivar la función* _antidelete_*, envia el siguiente comando:* _/disable antidelete_
+ ╰⚊⚊⚊⚊⚊⚊ 𝐀𝐍𝐓𝐈 𝐃𝐄𝐋𝐄𝐓𝐄  ⚊⚊⚊⚊⚊⚊`.trim();
         await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
         mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
@@ -1543,8 +1545,8 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '📌 Hola  %taguser *este comando solo puede ser utilizado por el propietario del bot*',
-    owner: '📌 Hola @${participant.split`@`[0]} *este comando solo puede ser utilizado por el propietario del bot*',
+    rowner: '📌 Hola  *este comando solo puede ser utilizado por el propietario del bot*',
+    owner: '📌 Hola  *este comando solo puede ser utilizado por el propietario del bot*',
     mods: '📌 Hola *este comando solo puede ser utilizado por moderadores del bot y el propietario del bot',
     premium: '📌 Hola *este comando solo puede ser utilizado por premiums y el propietario del bot*',
     group: '📌 Hola @user *este comando solo puede ser utilizado en grupos*',

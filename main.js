@@ -373,14 +373,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '𝑯𝒐𝒍𝒂 @user 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 𝒂   @subject';
-  conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ'; 
-  conn.spromote = '*@user ᴀʜᴏʀᴀ ᴇꜱ ᴀᴅᴍɪɴ*';
-  conn.sdemote = '*@user ʏᴀ ɴᴏ ᴇꜱ ᴀᴅᴍɪɴ😥*';
-  conn.sDesc = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ʟᴀ ᴅᴇꜱᴄʀɪᴘᴄɪᴏɴ*';
-  conn.sSubject = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇʟ ɢʀᴜᴘᴏ*';
-  conn.sIcon = '*ꜱᴇ ᴄᴀᴍʙɪᴏ ʟᴀ ꜰᴏᴛᴏ ᴅᴇʟ ɢʀᴜᴘᴏ.*';
-  conn.sRevoke = '*ᴇʟ ᴇɴʟᴀᴄᴇ ᴅᴇʟ ɢʀᴜᴘᴏ ꜰᴜᴇ ʀᴇꜱᴛᴀʙʟᴇᴄɪᴅᴏ*';
+  conn.welcome = '*hola @user Bienvenido a @subject*';
+  conn.bye = '*@user Salio del grupo*'; 
+  conn.spromote = '*@user Ahora es admin*';
+  conn.sdemote = '*@user Ya no es admin*';
+  conn.sDesc = '*Se modifico la descripcion*';
+  conn.sSubject = '*Se modifico el nombre del grupo*';
+  conn.sIcon = '*Se cambio la foto del grupo*';
+  conn.sRevoke = '*Se restablecio el enlace del grupo*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -535,7 +535,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊 | 𝑻𝒊𝒆𝒎𝒑𝒐 𝑨𝒄𝒕𝒊𝒗𝒐: ${uptime}`;
+  const bio = `🐶 𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊 |⌛ 𝑻𝒊𝒆𝒎𝒑𝒐 𝑨𝒄𝒕𝒊𝒗𝒐: ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {

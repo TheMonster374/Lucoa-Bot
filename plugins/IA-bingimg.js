@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw '*ingresa un texto de la imagen que quieres*\n\nejemplo: .bingimg mono en el espacio'
+    if (!text) throw '*_ingresa un texto de la imagen que quieres_*\n\n*ejemplo:* .bingimg mono en el espacio'
     let msg = encodeURIComponent(text)
     let res = await fetch(`https://aemt.me/bingimg?text=${msg}`)
     let data = await res.json()

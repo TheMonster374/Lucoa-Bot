@@ -1,9 +1,8 @@
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `𝑯𝒐𝒍𝒂 𝑼𝒔𝒖𝒂𝒓𝒊𝒐, 𝒕𝒆 𝒊𝒏𝒗𝒊𝒕𝒐 𝒂 𝒖𝒏𝒊𝒓𝒕𝒆 𝒂 𝒍𝒐𝒔 𝒈𝒓𝒖𝒑𝒐𝒔 𝒅𝒆 𝒋𝒐𝒕𝒄𝒉𝒖𝒂 - 𝒃𝒐𝒕 - 𝒎𝒊𝒏𝒊 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒗𝒊𝒗𝒊𝒓 𝒄𝒐𝒏 𝒍𝒂 𝒄𝒐𝒎𝒖𝒏𝒊𝒅𝒂𝒅
+  const text = `Hola, estos son los grupos de jotchua-Mini
 ┏━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┓
-𝑮𝒓𝒖𝒑𝒐𝒔 𝒅𝒆 𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊:
 
 𝐽𝑜𝑡𝑐ℎ𝑢𝑎 • 𝑀𝑖𝑛𝑖 | 𝑶𝑭𝑪
 https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np

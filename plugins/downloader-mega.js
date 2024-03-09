@@ -3,7 +3,7 @@ import path from "path";
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     try {
-        if (!text) return m.reply(`*ingresa un enlace de mega* \n\nejemplo: ${usedPrefix + command} https://mega.nz/file/ovJTHaQZ#yAbkrvQgykcH_NDKQ8eIc0zvsN7jonBbHZ_HTQL6lZ8`);
+        if (!text) return m.reply(`*_ingresa un enlace de mega_* \n\n*ejemplo:* ${usedPrefix + command} https://mega.nz/file/ovJTHaQZ#yAbkrvQgykcH_NDKQ8eIc0zvsN7jonBbHZ_HTQL6lZ8`);
 
         const file = File.fromURL(text);
         await file.loadAttributes();

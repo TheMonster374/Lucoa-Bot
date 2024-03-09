@@ -1,30 +1,30 @@
-/*import axios from 'axios'
+import axios from 'axios'
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
-if (!text) throw '*Formato incorrecto*\n*Ejemplo:*\n .bot Hola bot'
+if (!text) throw `*Formato incorrecto*\n*Ejemplo:*\n${usedPrefix + command} Hola bot`
 try {
-let url = 'https://simsimi.fun/api/v2/?mode=talk&lang=es&message=${text}&filter=1'
+let url = `https://simsimi.fun/api/v2/?mode=talk&lang=es&message=${text}&filter=1`
 let res = await axios.get(url)
 let data = res.data
 let simi = data.success ? data.success : data.error
 if (simi) {
 m.reply(simi)
 } else {
-m.reply('x')
+m.reply('Apoco si tilin')
 }} catch (error) {
 //console.error(error)
 }}
-handler.help = ['simi', 'bot'].map((v) => v + ' <texto>')
+handler.help = ['simi', 'bot'].map((v) => v + ' <teks>')
 handler.tags = ['fun']
 handler.command = /^((sim)?simi|bot|alexa)$/i;
 export default handler
 
 
-import translate from '@vitalets/google-translate-api';
+/*import translate from '@vitalets/google-translate-api';
 import fetch from 'node-fetch';
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
-  if (!text) throw '[📚] 𝐸𝑛𝑣𝑖𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜 𝑝𝑎𝑟𝑎 ℎ𝑎𝑏𝑙𝑎𝑟 𝑐𝑜𝑛 𝑒𝑙 𝑏𝑜𝑡\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*  *.bot* Hola bot';
+  if (!text) throw Formato incorrecto*\n*Ejemplo:\n${usedPrefix + command} Hola bot;
 
   try {
     let api = await fetch('https://api.simsimi.net/v2/?text=' + text + '&lc=es');
@@ -56,7 +56,7 @@ let handler = async (m, { text, command, usedPrefix, args }) => {
         );
         let resuuu = await reisss.json();
         let res222 = await fetch(
-          'https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}'
+          https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}
         );
         let json222 = await res222.json();
         let resulttt = json222.result;
@@ -67,10 +67,10 @@ let handler = async (m, { text, command, usedPrefix, args }) => {
           isValidJson = false;
         }
         if (isValidJson) {
-          let lolll = await translate('${resulttt}', { to: 'es', autoCorrect: true });
+          let lolll = await translate(`${resulttt}`, { to: 'es', autoCorrect: true });
           m.reply(lolll.text);
         } else {
-          m.reply('*Pero que dices gilipollas :v*');
+          m.reply(`*Pero que dices gilipollas :v*`);
         }
       } catch (error) {
         
@@ -79,16 +79,16 @@ let handler = async (m, { text, command, usedPrefix, args }) => {
   }
 };
 
-handler.help = ['bot'].map((v) => v + ' <teks>');
+handler.help = ['simi', 'bot'].map((v) => v + ' <teks>');
 handler.tags = ['fun'];
 handler.command = /^((sim)?simi|bot|alexa)$/i;
 
-export default handler
-*/
-import translate from '@vitalets/google-translate-api'
+export default handler;*/
+
+/*import translate from '@vitalets/google-translate-api'
 import fetch from "node-fetch"
 let handler = async (m, { text, command, usedPrefix, args }) => {
-  if (!text) throw '*Formato incorrecto*\n*Ejemplo:\n${usedPrefix + command} Hola bot*'
+  if (!text) throw Formato incorrecto*\n*Ejemplo:\n${usedPrefix + command} Hola bot
   try {
   let api = await fetch("https://api.simsimi.net/v2/?text=" + text + "&lc=es")
   let resSimi = await api.json()
@@ -109,14 +109,14 @@ let handler = async (m, { text, command, usedPrefix, args }) => {
   } catch {  
   let reisss = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=" + text)
   let resuuu = await reisss.json()      
-  let res222 = await fetch('https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}')  
+  let res222 = await fetch(`https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}`)  
   let json222 = await res222.json()
   let resulttt = json222.result
-  let lolll = await translate(${resulttt}, { to: 'es', autoCorrect: true })
+  let lolll = await translate(`${resulttt}`, { to: 'es', autoCorrect: true })
   m.reply(lolll.text)      
   }}
 }
 handler.help = ['simi', 'bot'].map(v => v + ' <teks>')
 handler.tags = ['fun']
 handler.command = /^((sim)?simi|bot|alexa)$/i
-export default handler
+export default handler*/

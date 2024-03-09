@@ -6,7 +6,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(`*hola, la funcion antiprivado esta activda por lo que se te bloqueara*`, false, {mentions: [m.sender]});
+    await m.reply(`*_hola, la funcion antiprivado esta activda por lo que se te bloqueara_*`, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;

@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;
 const handler = async (m, {args, usedPrefix, command}) => {
-  if (!args[0]) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑔𝑖𝑡ℎ𝑢𝑏.\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* _${usedPrefix + command} https://github.com/AleXD0009_`;
-  if (!regex.test(args[0])) throw '[ ❌ ] 𝐸𝑙 𝑒𝑛𝑙𝑎𝑐𝑒 𝑞𝑢𝑒 𝑝𝑟𝑜𝑝𝑜𝑟𝑐𝑖𝑜𝑛ó 𝑒𝑠 𝑖𝑛𝑐𝑜𝑟𝑟𝑒𝑐𝑡𝑜.';
+  if (!args[0]) throw `*ingresa un enlace de github.*\n\nejemplo: _${usedPrefix + command} https://github.com/AleXD0009_`;
+  if (!regex.test(args[0])) throw '[ ❌ ] el enlace es incorrecto';
   let [_, user, repo] = args[0].match(regex) || [];
   repo = repo.replace(/.git$/, '');
   const url = `https://api.github.com/repos/${user}/${repo}/zipball`;

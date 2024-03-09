@@ -4,34 +4,30 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': '📄 `𝐼𝑁𝐹𝑂` 📄══════',
-  'game': '🎮 `𝐽𝑈𝐸𝐺𝑂𝑆` 🎮═════',
-  'jadibot': '🤖 `𝑆𝑈𝐵𝐵𝑂𝑇𝑆` 🤖═════',
-  'rpg': ' `𝐸𝐶𝑂𝑁𝑂𝑀𝐼𝐴` 💸══════',
-  'rg': ' `𝑅𝐸𝐺𝐼𝑆𝑇𝑅𝑂` 📊═════',
-  'downloader': '📥 `𝐷𝐸𝑆𝐶𝐴𝑅𝐺𝐴𝑆` 📤════',
-  'stalkear' : ' `𝑆𝑇𝐴𝐿𝐾𝐸𝐴𝑅` 👤════' ,
-  'ia' : '🤖 `𝐼𝐴` 🤖═══════' ,
-  'efectos' : ' `𝐸𝐹𝐸𝐶𝑇𝑂𝑆 𝑌 𝐿𝑂𝐺𝑂𝑆` ══' ,
-  'nable': ' `𝐴𝐶𝑇𝐼𝑉𝐴𝐷𝑂𝑅𝐸𝑆` 📋══',
-  'grupo' : '🌱 `𝐺𝑅𝑈𝑃𝑂𝑆` 🌱════' ,
-  'search': '═ `𝐵𝑈𝑆𝐶𝐴𝐷𝑂𝑅`🔎════',
-  'img': '═🖼 `𝐼𝑀𝐴𝐺𝐸𝑁𝐸𝑆` 🖼═══',
-  'tools': ' `𝐻𝐸𝑅𝑅𝐴𝑀𝐼𝐸𝑁𝑇𝐴𝑆` ═══',
-  'fun': '═ `𝐷𝐼𝑉𝐸𝑅𝑆𝐼𝑂𝑁` 🎉════',
-  'audio': ' `𝐸𝐹𝐸𝐶𝑇𝑂𝑆 𝐷𝐸 𝐴𝑈𝐷𝐼𝑂` ════', 
-  'sticker': ' `𝑆𝑇𝐼𝐶𝐾𝐸𝑅𝑆` 🧸═════',
-  'nsfw': ' `𝑁𝑆𝐹𝑊` 🔞══════',
-  'owner': ' `𝐶𝑅𝐸𝐴𝐷𝑂𝑅` 🐕═════',
+  'main': '📄 `INFO` 📄══════',
+  'game': '🎮 `JUEGOS` 🎮═════',
+  'jadibot': '🤖 `SUBBOTS` 🤖═════',
+  'rpg': ' `ECONOMIA` 💸══════',
+  'rg': ' `REGISTRO` 📊═════',
+  'downloader': '📥 `DESCARGAS` 📤════',
+  'stalkear' : ' `STALKEAR` 👤════' ,
+  'ia' : '🤖 `IA` 🤖═══════' ,
+  'efectos' : ' `EFECTOS Y LOGOS` ══' ,
+  'nable': ' `ACTIVADORES` 📋══',
+  'grupo' : '🌱 `GRUPOS` 🌱════' ,
+  'search': '═ `BUSCADOR`🔎════',
+  'img': '═🖼 `IMAGENES` 🖼═══',
+  'tools': ' `HERRAMIENTAS` ═══',
+  'fun': '═ `DIVERSION` 🎉════',
+  'audio': ' `EFECTOS DE AUDIO` ════', 
+  'sticker': ' `STICKERS` 🧸═════',
+  'nsfw': ' `NSFW` 🔞══════',
+  'owner': ' `CREADOR` 🐕═════',
 }
 
 const defaultMenu = {
   before: `
-──────────────────────
 Hola *%taguser*, Soy Jotchua-Mini
-
-🐢 *CREADOR*: +5491156673266
-👤 *TOTAL USUARIOS* : %totalreg
 
 ┏━⊜「 *INFO USUARIO* 」
 ┃🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
@@ -40,8 +36,12 @@ Hola *%taguser*, Soy Jotchua-Mini
 ┃🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
 ┗━━━━━━━━━━━━━━━━━━⬣
 %readmore
-──────────────────────
-\t\t\t𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺
+┏━⊜「 *INFO BOT* 」
+┃🐢 *CREADOR*: +5491156673266
+┃👤 *TOTAL USUARIOS* : %totalreg
+┗━━━━━━━━━━━━━━━━━━⬣
+%readmore
+\t\t\t
 `.trimStart(),
   header: '╔════%category╗\n║╭───────────────···',
   body: '║│ %cmd\n',

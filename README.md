@@ -1,16 +1,16 @@
 #                                                    Jotchua-Bot
 
 
+<p align="center">
+<img src="https://i.imgur.com/kd8sus3.jpeg" alt="Jotchua-Mini" width="800"/>
+
+
+
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> grupo del Bot
 
 <a href="https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ" target="blank"><img src="https://img.shields.io/badge/grupo Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
-
-
- ### `BOT OFICIAL🐶`
-
-<a href="https://api.whatsapp.com/send/?phone=+54 9 11 4477-5561text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1_(ACTIVO)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### `AJUSTES`
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/AleXD0009/Jotchua-Bot/fork)

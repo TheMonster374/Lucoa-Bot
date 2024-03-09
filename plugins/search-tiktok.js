@@ -1,7 +1,7 @@
 import fetch from "node-fetch"
 
-let handler = async (m, { text, args }) => {
-  if (!args[0]) throw `[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒃𝒖𝒔𝒄𝒂𝒓 𝒆𝒏 𝑻𝒊𝒌𝑻𝒐𝒌`
+let handler = async (m, { text, args, command, usedPrefix }) => {
+  if (!args[0]) throw `*_ingresa un texto para buscar en tiktok_*\n\n*Ejemplo:* _${usedPrefix + command} vaca lechera`
   try {
     const res = await fetch(`${apikasu}/api/search/tiktoksearch?text=${encodeURIComponent(text)}&apikey=${apikeykasu}`);
     const api = await res.json();
@@ -31,9 +31,7 @@ let handler = async (m, { text, args }) => {
 
   } catch (error) {
     throw `
-> Sin respuesta
-
-Sin resultados`
+*[❌]Ocurrio un error inesperado*`
   }
 }
 handler.help = ['tiktoksearch']

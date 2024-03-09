@@ -5,16 +5,16 @@ import fbDownloader from 'fb-downloader-scrapper';
 import {facebook} from '@xct007/frieren-scraper'; 
 import axios from 'axios';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `[📚] 𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑓𝑎𝑐𝑒𝑏𝑜𝑜𝑘\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*: ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`;
-  if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `[📚] 𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑑𝑒 𝑓𝑎𝑐𝑒𝑏𝑜𝑜𝑘\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`;
+  if (!args[0]) throw `*ingresa un enlace de facebook*\n\nejemplo ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`;
+  if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `ingresa un enlace de facebook \n\nejemplo ${usedPrefix + command}* https://fb.watch/fOTpgn6UFQ/`;
   try {
-    await m.reply(`⌛ 𝑑𝑒𝑠𝑐𝑎𝑟𝑔𝑎𝑛𝑑𝑜 𝑣𝑖𝑑𝑒𝑜, 𝑒𝑠𝑡𝑜 𝑝𝑢𝑒𝑑𝑒 𝑡𝑎𝑟𝑑𝑎𝑟 𝑑𝑒𝑝𝑒𝑛𝑑𝑖𝑒𝑛𝑑𝑜 𝑙𝑎 𝑑𝑢𝑟𝑎𝑐𝑖𝑜𝑛 𝑑𝑒𝑙 𝑣𝑖𝑑𝑒𝑜`);
+    await m.reply(`⌛ Descargando video...`);
     const d2ata = await facebook.v1(args[0]);
     let r2es = '';
     if (d2ata.urls && d2ata.urls.length > 0) {
       r2es = `${d2ata.urls[0]?.hd || d2ata.urls[1]?.sd || ''}`;
     }
-    conn.sendFile(m.chat, r2es, 'error.mp4', `Aqui tienes 🐶`, m);
+    conn.sendFile(m.chat, r2es, 'error.mp4', `✅ Aqui tienes tu video`, m);
   } catch (err1) {
     try {
       const req = await igeh(args[0]);
@@ -25,31 +25,31 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
         const Jjson = await Rres.json();
         let VIDEO = Jjson.result[0];
         if (VIDEO == '' || !VIDEO || VIDEO == null) VIDEO = Jjson.result[1];
-        conn.sendFile(m.chat, VIDEO, 'error.mp4', `𝐴𝑞𝑢𝑖 𝑡𝑖𝑒𝑛𝑒𝑠 𝑡𝑢 𝑣𝑖𝑑𝑒𝑜 🐶`, m);
+        conn.sendFile(m.chat, VIDEO, 'error.mp4', `✅ Aqui tienes video`, m);
       } catch (err2) {
         try {
           const ress = await fg.fbdl(args[0]);
           const urll = await ress.data[0].url;
-          await conn.sendFile(m.chat, urll, 'error.mp4', '𝐴𝑞𝑢𝑖 𝑡𝑖𝑒𝑛𝑒𝑠 𝑡𝑢 𝑣𝑖𝑑𝑒𝑜 🐶', m);
+          await conn.sendFile(m.chat, urll, 'error.mp4', '✅ Aqui tienes tu video', m);
         } catch (err3) {
           try {
             const res = await fbDownloader(args[0]);
             for (const result of res.download) {
               const ur = result.url;
-              await conn.sendFile(m.chat, ur, 'error.mp4', '𝐴𝑞𝑢𝑖 𝑡𝑖𝑒𝑛𝑒𝑠 𝑡𝑢 𝑣𝑖𝑑𝑒𝑜 🐶', m);
+              await conn.sendFile(m.chat, ur, 'error.mp4', '✅ Aqui tienes tu video', m);
             }
           } catch (err4) {
             try {
               const res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=nekosmic&q=${args[0]}`);
               const json = await res3.json();
               const url3 = await json.video;
-              await conn.sendFile(m.chat, url3, 'error.mp4', '𝐴𝑞𝑢𝑖 𝑡𝑖𝑒𝑛𝑒𝑠 𝑡𝑢 𝑣𝑖𝑑𝑒𝑜 🐶', m);
+              await conn.sendFile(m.chat, url3, 'error.mp4', '✅ Aqui tienes tu video', m);
             } catch (err5) {
               try {
                 const {result} = await facebookdl(args[0]).catch(async (_) => await facebookdlv2(args[0])).catch(async (_) => await savefrom(args[0]));
-                for (const {url, isVideo} of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '𝐴𝑞𝑢𝑖 𝑡𝑖𝑒𝑛𝑒𝑠 𝑡𝑢 𝑣𝑖𝑑𝑒𝑜 🐶', m);
+                for (const {url, isVideo} of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '✅ Aqui tienes tu video', m);
               } catch (err6) {
-                throw `𝐻𝑎 𝐻𝑎𝑏𝑖𝑑𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟`;
+                throw `[❌] ha ocurrido un error inesperado`;
               }
             }
           }

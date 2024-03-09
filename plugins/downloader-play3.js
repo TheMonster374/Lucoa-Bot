@@ -3,7 +3,7 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 import axios from 'axios';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑢𝑛𝑎 𝑐𝑎𝑛𝑐𝑖𝑜𝑛\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*\n${usedPrefix + command} Die For You`;
+if (!text) throw `*_ingresa el nombre de una cancion_*\n\n*ejemplo:*\n${usedPrefix + command} 12 - YSY A - SER EL TRAP ( PROD. BAXIAN )`
 try {
 let limit = 70;
 let ytse = await yts(text);
@@ -55,7 +55,7 @@ conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: "audio/mpeg", fi
 }}
 handler.help = ["play3"].map(v => v + " <búsqueda>")
 handler.tags = ["downloader"]
-handler.command = /^play3?$/i
+handler.command = ["play3"]
 export default handler
 
 async function getTinyURL(text) {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import instagramGetUrl from 'instagram-url-direct';
 import {instagramdl} from '@bochilteam/scraper';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `*ingresa un enlace de instagram*\n\nejemplo: ${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link`;
+  if (!args[0]) throw `*_ingresa un enlace de instagram_*\n\n*ejemplo:* ${usedPrefix + command} https://www.instagram.com/reel/C4QftgYIYI_/?igsh=NDVjY2ZqdWU2d3dm`;
   m.reply(`⌛ descargando video...`);
   try {
     const apiUrll = `https://api.betabotz.org/api/download/igdowloader?url=${encodeURIComponent(args[0])}&apikey=bot-secx3`;
@@ -11,7 +11,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
     const resultl = responsel.data;
     for (const item of resultl.message) {
       const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${item.thumbnail}`)).text();
-      const tXXxt = `𝑨𝒒𝒖𝒊 𝒕𝒊𝒆𝒏𝒆𝒔 𝒕𝒖 𝒗𝒊𝒅𝒆𝒐`.trim();
+      const tXXxt = `✅ aqui tienes tu video`.trim();
       conn.sendFile(m.chat, item._url, null, tXXxt, m);
       await new Promise((resolve) => setTimeout(resolve, 10000));
     }

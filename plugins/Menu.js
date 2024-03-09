@@ -27,16 +27,16 @@ let tags = {
 
 const defaultMenu = {
   before: `
-Hola *%taguser*, Soy Jotchua-Mini
+Hola *%taguser*, Soy =͟͟͞Jotchua-Mini=͟͟
 
-┏━⊜「 *INFO USUARIO* 」
+┏━⊜「 *=͟͟͞INFO USUARIO* 」
 ┃🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
 ┃🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
 ┃🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
 ┗━━━━━━━━━━━━━━━━━━⬣
 %readmore
-┏━⊜「 *INFO BOT* 」
+┏━⊜「 *=͟͟͞INFO BOT* 」
 ┃🐢 *CREADOR*: +5491156673266
 ┃👤 *TOTAL USUARIOS* : %totalreg
 ┗━━━━━━━━━━━━━━━━━━⬣

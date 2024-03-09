@@ -1,4 +1,4 @@
-/*import axios from 'axios'
+import axios from 'axios'
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
 if (!text) throw '*Formato incorrecto*\n*Ejemplo:*\n .bot Hola bot'
@@ -17,11 +17,11 @@ m.reply('Apoco si tilin')
 handler.help = ['simi', 'bot'].map((v) => v + ' <texto>')
 handler.tags = ['fun']
 handler.command = /^((sim)?simi|bot|alexa)$/i;
-export default handler */
+export default handler
 
 
-import translate from '@vitalets/google-translate-api';
-import fetch from 'node-fetch';
+//import translate from '@vitalets/google-translate-api';
+/*import fetch from 'node-fetch';
 
 let handler = async (m, { text, command, usedPrefix, args }) => {
   if (!text) throw '[📚] 𝐸𝑛𝑣𝑖𝑎 𝑢𝑛 𝑡𝑒𝑥𝑡𝑜 𝑝𝑎𝑟𝑎 ℎ𝑎𝑏𝑙𝑎𝑟 𝑐𝑜𝑛 𝑒𝑙 𝑏𝑜𝑡\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:*  *.bot* Hola bot';
@@ -83,7 +83,7 @@ handler.help = ['bot'].map((v) => v + ' <teks>');
 handler.tags = ['fun'];
 handler.command = /^((sim)?simi|bot|alexa)$/i;
 
-export default handler;
+export default handler
 
 /*import translate from '@vitalets/google-translate-api'
 import fetch from "node-fetch"
@@ -119,4 +119,4 @@ let handler = async (m, { text, command, usedPrefix, args }) => {
 handler.help = ['simi', 'bot'].map(v => v + ' <teks>')
 handler.tags = ['fun']
 handler.command = /^((sim)?simi|bot|alexa)$/i
-export default handler*/
+export default handler */

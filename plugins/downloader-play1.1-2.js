@@ -11,13 +11,13 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑢𝑛𝑎 𝑐𝑎𝑛𝑐𝑖𝑜𝑛\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* ${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
+  if (!text) throw `*_ingresa el nombre de una cancion_*\n\n*ejemplo:* ${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
-    if (command === 'play1.1') {
+    if (command === 'play1') {
       additionalText = 'audio 🔊';
-    } else if (command === 'play2.2') {
+    } else if (command === 'play2') {
       additionalText = 'video 🎥';
     }
     const texto1 = `
@@ -62,7 +62,7 @@ ${yt_play[0].url}
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*descargue su audio en ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
@@ -88,7 +88,7 @@ ${yt_play[0].url}
     }
   }
 }
-    if (command == 'play2.2') {
+    if (command == 'play2') {
     try {  
     const qu = '360';
     const q = qu + 'p';
@@ -104,7 +104,7 @@ ${yt_play[0].url}
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `*[📚] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒  𝑠𝑢 𝑎𝑢𝑑𝑖𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*descargue su audio en ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit1 && size <= limit2) {  
@@ -126,12 +126,12 @@ ${yt_play[0].url}
   }
 } catch (error) {
     console.log(error)
-    throw '[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜';
+    throw '[❌] Ocurrio un error inesperado';
   }
 };
-handler.help = ['play1.1', 'play2.2'].map((v) => v + ' < busqueda >');
+handler.help = ['play1', 'play2'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
-handler.command = /^(play1.1|play2.2)$/i;
+handler.command = /^(play1|play2)$/i;
 
 
 export default handler;

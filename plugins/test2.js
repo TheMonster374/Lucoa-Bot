@@ -18,10 +18,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     }
     let name2 = conn.getName(m.sender);
     let apislap = await fetch(`
-        "https://api.waifu.pics/nsfw/blowjob",
-        "https://api.waifu.pics/nsfw/waifu",
-        "https://api.waifu.pics/nsfw/neko",
-        "https://nekobot.xyz/api/image?type=hentai"`);
+"https://api.waifu.pics/nsfw/waifu",`);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `${name2}  ${name}`, null);

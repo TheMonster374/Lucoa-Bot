@@ -25,7 +25,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   } catch {
     throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾*`;
   };
-};
+
 
 handler.command = /^(xd)$/i;
 export default handler;

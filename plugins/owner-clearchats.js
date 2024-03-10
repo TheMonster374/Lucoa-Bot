@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 			await chats.clearMessages()
 		}
 	} else {
-		await (await m.getChat()).clearMessages()
+		await (await conn.getChat()).clearMessages()
 	}
 }
 

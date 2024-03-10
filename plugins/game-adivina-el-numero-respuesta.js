@@ -12,7 +12,7 @@ handler.before = async function (m, { conn }) {
     if (m.text == this.advnro[id].number) {
       m.reply(`*Repuesta correcta!*
       
-+${this.advnro[id].bonus} Exp`)
++${this.advnro[id].bonus} Pesos`)
 
       user.exp += this.advnro[id].bonus * 1
       clearTimeout(this.advnro[id].time)

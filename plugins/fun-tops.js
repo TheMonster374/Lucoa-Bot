@@ -17,7 +17,7 @@ function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
   const k = Math.floor(Math.random() * 70);
   const x = `${pickRandom(['🤓', '😅', '😂', '😳', '😎', '🥵', '😱', '🤑', '🙄', '🍑', '🤨', '🥴', '🔥', '👇🏻', '😔', '👀', '🌚'])}`;
   const l = Math.floor(Math.random() * x.length);
-  const top = `*${x} Top ${text} ${x}*
+  const top = `*${x} Top 10 ${text} ${x}*
     
 ---> *1. ${user(a)}*
 ---> *2. ${user(b)}*

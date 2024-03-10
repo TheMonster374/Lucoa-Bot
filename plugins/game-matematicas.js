@@ -2,7 +2,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     conn.math = conn.math ? conn.math : {}
     
     if (args.length < 1) throw `
-  🧮 Dificultades disponibles : 
+   🧮 Dificultades disponibles : 
   
 ${Object.keys(modes).join(' | ')} 
 

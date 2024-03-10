@@ -3,7 +3,7 @@ let handler = async (m, { conn, text }) => {
 let user = global.db.data.users[m.sender]
 //let time = user.prue + 600000 //10 min
 //if (new Date - user.prue < 600000) return await conn.reply(m.chat, `🙌 HEY ALTO ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO NO HAGA SPAM`, m)
-let start = `𝑃𝑟𝑒𝑝𝑎𝑟𝑎𝑛𝑑𝑜 𝑎𝑟𝑚𝑎𝑠 𝑝𝑎𝑟𝑎 𝑚𝑎𝑡𝑎𝑟 𝑎 𝑠𝑛𝑖𝑝𝑒`
+let start = `Preparando armas para matar a snipe`
 let boost = `*${pickRandom(['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'])}%*`
 let boost2 = `*${pickRandom(['21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40'])}%*`
 let boost3 = `*${pickRandom(['41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60'])}%*`
@@ -20,7 +20,7 @@ await conn.sendMessage(m.chat, {text: boost5, edit: key});
   
   
 //DATOS FALSOS | FALSE DATA
-let kill = `_${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras iba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras iba directo a la escuela','Le disparaste con un arma','el pendejo se metio en una banda narco y lo violaron y mataron'])}_`  
+let kill = `_${pickRandom(['le cortaste el cuello a snipe con un cuchillo','Lo balaceaste mientras iba a la escuela','Pusiste una bomba en su casa mientras dormia','asesinaste a toda su familia incluido a el','lo quemaste vivo mientras iba directo a la escuela','Le disparaste con un arma','el pendejo se metio en una banda narco y lo violaron y mataron','el pendejo fumo marihuana hasta morir','Lo secuestraste y torturaste hasta matarlo'])}_`  
 
 
 

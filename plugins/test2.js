@@ -1,10 +1,7 @@
-var fetch = require('node-fetch')
-var { extractImageThumb } = require('@adiwajshing/baileys')
+import fetch from "node-fetch";
+import { extractImageThumb } from ('@adiwajshing/baileys')
 
-var handler = async (msg, { 
-client, 
-args 
-}) => {
+const handler = async (m, { conn, args, usedPrefix, command }) => {
 	let code = (args[0] || '').replace(/\D/g, '')
 	if (!code) throw 'Input code' 
 	await msg.reply('_🚩 In progress, please wait..._')

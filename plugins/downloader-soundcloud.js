@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, text}) => {
-  if (!text) throw `[📚] Ingresa el nombre de alguna cancion a buscar\n\n*[💡] Ejemplo:* .soundcloud Krushfunk`;
+  if (!text) throw `*_Ingresa el nombre de alguna cancion a buscar_*\n\n*Ejemplo:* .soundcloud Krushfunk`;
   try {
     const res = await fetch(`https://api-v2.soundcloud.com/search/tracks?q=${text}&client_id=iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX`);
     const json2 = await res.json();
@@ -19,7 +19,7 @@ const handler = async (m, {conn, text}) => {
     await conn.sendFile(m.chat, json.thumb, '', soundcloudt, m);
     await conn.sendMessage(m.chat, {audio: {url: json.link}, fileName: `${json.title}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch {
-    throw 'ha ocurrido un error inesperado';
+    throw '[❌] ocurrido un error inesperado';
   }
 };
 handler.help = ['soundcloud'];

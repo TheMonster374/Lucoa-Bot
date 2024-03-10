@@ -1,6 +1,6 @@
 import { search, download } from 'aptoide-scraper'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-if (!text) throw `*_Ingresa el nombre de la app_*\n*Ejemplo:* ${usedPrefix + command} Pokemon Go`
+if (!text) throw `*_Ingresa el nombre de la app_*\n\n*Ejemplo:* ${usedPrefix + command} Pokemon Go`
 try {
 const searchResult = await search(text)
 const data = await download(searchResult[0].id)

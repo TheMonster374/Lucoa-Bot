@@ -12,18 +12,22 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     let name;
     if (who === m.chat) {
-      name = "𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝";
+      name = "xd";
     } else {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://api.waifu.pics/nsfw/neko`);
+    let apislap = await fetch(`
+        "https://api.waifu.pics/nsfw/blowjob",
+        "https://api.waifu.pics/nsfw/waifu",
+        "https://api.waifu.pics/nsfw/neko",
+        "https://nekobot.xyz/api/image?type=hentai"`);
     let jkis = await apislap.json();
     let { url } = jkis;
-    let stiker = await sticker(null, url, `${name2} le dio una bofetada a ${name}`, null);
+    let stiker = await sticker(null, url, `${name2}  ${name}`, null);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
   } catch {
-    throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾*`;
+    throw `*xd*`;
   };
 };
 

@@ -4,7 +4,7 @@ import cheerio from 'cheerio';
 import {mediafiredl} from '@bochilteam/scraper';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `*ingresa un enlace de mediafire*\n\nejemplo: _${usedPrefix + command} https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file_`;
+  if (!args[0]) throw `*_ingresa un enlace de mediafire_*\n\n*ejemplo:* _${usedPrefix + command} https://www.mediafire.com/file/c8aod99ns240d4t/com.termux_118.apk/file_`;
   try {
     const resEX = await mediafiredl(args[0]);
     const captionES = `

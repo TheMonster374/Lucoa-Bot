@@ -17,13 +17,13 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`"https://api.waifu.pics/nsfw/waifu"`);
+    let apislap = await fetch(`https://api.waifu.pics/nsfw/waifu, https://api.waifu.pics/nsfw/neko`);
     let jkis = await apislap.json();
     let { url } = jkis;
-    let stiker = await sticker(null, url, `${name2}  ${name}`, null);
+    let stiker = await sticker(null, url, `${name2} le dio una bofetada a ${name}`, null);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
   } catch {
-    throw `*hijuesuputamadre llamen a dios*`;
+    throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾*`;
   };
 };
 

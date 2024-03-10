@@ -1,6 +1,7 @@
 import {sticker} from "../lib/sticker.js";
 import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
+    try {
 /*    let who;
     if (m.isGroup) {
       who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
@@ -25,7 +26,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   } catch {
     throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾*`;
   };
-
+};
 
 handler.command = /^(xd)$/i;
 export default handler;

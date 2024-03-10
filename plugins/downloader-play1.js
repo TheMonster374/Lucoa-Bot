@@ -30,7 +30,7 @@ let play = `*‣* *Nombre:* ${vid.title}
 
 *El audio se esta mandando espere*`.trim()
 conn.sendFile(m.chat, vid.thumbnail, '', play, m)
-let thumbnailBuffer = await axios.get("https://images.app.goo.gl/ctK9XYP1aK2Pnaw5A", { responseType: 'arraybuffer' })
+let thumbnailBuffer = await axios.get("https://telegra.ph/file/5ed61d8d2e268a1d67c0e.jpg", { responseType: 'arraybuffer' })
 let buffer = await getBuffer(dl_url)
 let bufferSize = buffer.byteLength
 let contextInfo = {

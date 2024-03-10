@@ -1,13 +1,13 @@
 import {sticker} from "../lib/sticker.js";
 import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
-    let who;
+/*    let who;
     if (m.isGroup) {
       who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
     } else { 
       who = m.chat;
     }
-/*      const textquien = `*[❗] 𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰 𝙾 𝙼𝙴𝙽𝙲𝙸𝙾𝙽𝙰 𝙰 𝙰𝙻𝙶𝚄𝙸𝙴𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n◉ ${usedPrefix + command} @${global.suittag}`;
+      const textquien = `*[❗] 𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰 𝙾 𝙼𝙴𝙽𝙲𝙸𝙾𝙽𝙰 𝙰 𝙰𝙻𝙶𝚄𝙸𝙴𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n◉ ${usedPrefix + command} @${global.suittag}`;
     if (who === m.chat && m.isGroup || !who && m.isGroup) return m.reply(textquien, m.chat, {mentions: conn.parseMention(textquien)});
   try {
     let name;

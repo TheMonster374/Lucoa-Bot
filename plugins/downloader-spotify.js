@@ -4,7 +4,7 @@ import fs from 'fs';
 import axios from 'axios';
 
 const handler = async (m, { conn, text, usedPrefix, command }) => {
- if (!text) throw `[📚] 𝐼𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑛𝑜𝑚𝑏𝑟𝑒 𝑑𝑒 𝑢𝑛𝑎 𝑐𝑎𝑛𝑐𝑖𝑜𝑛 𝑑𝑒 𝑠𝑝𝑜𝑡𝑖𝑓𝑦\n\n*[💡] 𝐸𝑗𝑒𝑚𝑝𝑙𝑜:* _${usedPrefix + command} Kanii, Riovaz, & Nimstarr - Heart Racing (Official Music Video)_`;
+ if (!text) throw `*_ingresa el nombre de alguna cancion de spotify_*\n\n*ejemplo:* _${usedPrefix + command} Kanii, Riovaz, & Nimstarr - Heart Racing (Official Music Video)_`;
   try {
     const res = await fetch(global.API('CFROSAPI', '/api/spotifysearch?text=' + text))
     const data = await res.json()
@@ -15,7 +15,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const info = await infos.json()
     const spty = info.spty.resultado
     const img = await (await fetch(`${spty.thumbnail}`)).buffer()  
-    let spotifyi = ` 𝑆𝑃𝑂𝑇𝐼𝐹𝑌\n\n`
+    let spotifyi = ``
         spotifyi += ` 📚 *Título:* ${spty.title}\n\n`
         spotifyi += ` 👻 *Artista:* ${spty.artist}\n\n`
         spotifyi += ` 💽 *Álbum:* ${spty.album}\n\n`                 
@@ -25,7 +25,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     await conn.sendMessage(m.chat, {audio: music.data, fileName: `${spty.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '[❌] 𝑂𝑐𝑢𝑟𝑟𝑖𝑜 𝑢𝑛 𝑒𝑟𝑟𝑜𝑟 𝑖𝑛𝑒𝑠𝑝𝑒𝑟𝑎𝑑𝑜';
+    throw '[❌] Ocurrio un error inesperado';
   }
 };
 handler.help = ['spotify <texto>']

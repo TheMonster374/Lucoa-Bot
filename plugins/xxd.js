@@ -22,75 +22,13 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-           > 𝐀𝐋𝐀𝐒𝐓𝐎𝐑 𝐁𝐎𝐓 𝐁𝐘 𝐀𝐒𝐓𝐑𝐀𝐋
-      𐂂𝚃𝙷𝙴 𝚁𝙰𝙳𝙸𝙾 𝙱𝙾𝚃𐂂
-    𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 𝐀𝐋 𝐒𝐇𝐎𝐖 ${taguser}
-> ╔> 𝐈𝐍𝐅𝐎 𝐃𝐄 𝐋𝐀 𝐓𝐑𝐀𝐍𝐒𝐌𝐈𝐒𝐈𝐎𝐍
-> ╠> 𐂂ғᴇᴄʜᴀ:${date}
-> ╠> 𐂂ᴅɪᴀ:${week}
-> ╠> 𐂂ᴏʏᴇɴᴛᴇs:${totalusr}
-> ╠> 𐂂ᴛɪᴇᴍᴘᴏ ᴀʟ ᴀɪʀᴇ:${uptime}
-> ╚> 𝐒𝐈𝐆𝐀𝐍 𝐒𝐈𝐍𝐓𝐎𝐍𝐈𝐙𝐀𝐃𝐎𝐒
-> ╔══════⬤▲•𐂂
-> ╠𝐎𝐖𝐍𝐄𝐑
-> ╠> ${usedPrefix}owner
-> ╠𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒
-> ╠> ${usedPrefix}readviewonce imagen
-> ╠> ${usedPrefix}encuesta
-> ╠> ${usedPrefix}document
-> ╠> ${usedPrefix}inspect
-> ╠> ${usedPrefix}hd
-> ╠> ${usedPrefix}calc
-> ╠> ${usedPrefix}morce code/decode
-> ╠> ${usedPrefix}chatvoz
-> ╠> ${usedPrefix}tamaño
-> ╠> ${usedPrefix}short link
-> ╠> ${usedPrefix}shazam
-> ╠> ${usedPrefix}ss
-> ╠> ${usedPrefix}readqr
-> ╠> ${usedPrefix}topdf
-> ╠> ${usedPrefix}fake
-> ╠> ${usedPrefix}tomp3
-> ╠> ${usedPrefix}tourl
-> ╠> ${usedPrefix}toptt
-> ╠> ${usedPrefix}togifaud
-> ╠> ${usedPrefix}igstalk
-> ╠> ${usedPrefix}tiktokstalk
-> ╠> ${usedPrefix}qr
-> ╠> ${usedPrefix}spotifydl
-> ╠> ${usedPrefix}whatsappstalk
-> ╠> ${usedPrefix}clima
-> ╠> ${usedPrefix}letra
-> ╠𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒
-> ╠> ${usedPrefix}s responde a una imagen
-> ╠> ${usedPrefix}sinfondo
-> ╠> ${usedPrefix}smeme
-> ╠𝐈𝐍𝐓𝐄𝐋𝐈𝐆𝐄𝐍𝐂𝐈𝐀 𝐀𝐑𝐓𝐈𝐅𝐈𝐂𝐈𝐀𝐋
-> ╠> ${usedPrefix}bard pregunta
-> ╠> ${usedPrefix}alastor texto
-> ╠> ${usedPrefix}bimg imagen
-> ╠> ${usedPrefix}crea
-> ╠𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒
-> ╠> ${usedPrefix}playdoc cancion
-> ╠> ${usedPrefix}tiktok enlace
-> ╠> ${usedPrefix}tiktokimagen
-> ╠𝐁𝐔𝐒𝐂𝐀𝐑
-> ╠> ${usedPrefix}google
-> ╠> ${usedPrefix}wikipedia
-> ╠> ${usedPrefix}ytsearch
-> ╠𝐁𝐎𝐓
-> ╠> ${usedPrefix}serbot
-> ╠> ${usedPrefix}radio
-> ╠𝐆𝐑𝐔𝐏𝐎𝐒
-> ╠> ${usedPrefix}invocar
-> ╠> ${usedPrefix}del
-> ╠> ${usedPrefix}chau
-> ╠> ${usedPrefix}join
-> ╠> ${usedPrefix}listanum/kicknum
-> ╠𝐉𝐔𝐄𝐆𝐎𝐒
-> ╠> ${usedPrefix}ttt
-> ╠> ${usedPrefix}acertijo
-> ╚𝐌𝐄𝐍𝐔 𝐄𝐍 𝐏𝐑𝐎𝐂𝐄𝐒𝐎...
+╭─────°.♡.°‧─────
+│⫷᭄
+│
+│
+│
+│
+╰─────°.♡.°‧─────
 
     `.trim();
     if (m.isGroup) {

@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core';
 import axios from 'axios'
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 const handler = async (m, {text, conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw '[📚] ingresa un enlace de youtube';  
+  if (!args[0]) throw '*_ingresa un enlace de youtube_*\n\n*ejemplo:* ${usedPrefix + command} https://youtu.be/fsdQDNQ0r3U?si=wNqaBKb5QhCrLZ97';  
   let enviando;
   if (enviando) return  
       enviando = true      
@@ -22,8 +22,6 @@ const handler = async (m, {text, conn, args, usedPrefix, command}) => {
             youtubeLink = matchingItem.urls[index];
           } else {
             throw `
-> ⚠️ 𝑬𝒓𝒓𝒐𝒓 ⚠️ 
-
 No se encontro enlace para ese numero, intente del 1 al ${matchingItem.urls.length}`;
           }
         } else {

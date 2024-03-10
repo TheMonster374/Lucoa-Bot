@@ -7,7 +7,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     let apislap = await fetch(`https://api.waifu.pics/nsfw/waifu`);
     let jkis = await apislap.json();
     let { url } = jkis;
-    let stiker = await sticker(null, url, `Waifu`, null);
+    let stiker = await sticker(null, url, `Waifu`, `Jotchua-Mini`);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
   } catch {
     throw `*ocurrio un error inesperado*`;
@@ -26,6 +26,32 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     throw `*ocurrio un error inesperado*`;
   };
 };
+
+    if (command == 'sblowjob') {
+    try {
+    let name2 = conn.getName(m.sender);
+    let apislap = await fetch(`https://api.waifu.pics/nsfw/blowjob`);
+    let jkis = await apislap.json();
+    let { url } = jkis;
+    let stiker = await sticker(null, url, `blowjob`, `Jotchua-Mini`);
+    conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
+  } catch {
+    throw `*ocurrio un error inesperado*`;
+  };
+};   
+
+    if (command == 'shentai') {
+    try {
+    let name2 = conn.getName(m.sender);
+    let apislap = await fetch(`https://nekobot.xyz/api/image?type=hentai`);
+    let jkis = await apislap.json();
+    let { url } = jkis;
+    let stiker = await sticker(null, url, `Hentai`, `Jotchua-Mini`);
+    conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
+  } catch {
+    throw `*ocurrio un error inesperado*`;
+  };
+};      
 };    
-handler.command = ['sneko', 'swaifu'];
+handler.command = ['sneko', 'swaifu', 'sblowjob', 'shentai'];
 export default handler;

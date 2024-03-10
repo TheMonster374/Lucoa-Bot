@@ -51,7 +51,7 @@ let fee = prems[Math.floor(Math.random() * prems.length)]
 let ramdon = premio[Math.floor(Math.random() * premio.length)]
 users.exp += parseInt(ramdon)
 users.limit += fee
-conn.reply(m.chat, `*• Has ganado:* \n- ${ramdon} XP \n- ${fee} Coins💰`, m)
+conn.reply(m.chat, `*• Has ganado:* \n- ${ramdon} Pesos \n- ${fee} diamantes`, m)
 gam.delete(m.sender);
 } else if (m.text.toLowerCase() === 'stop') {
 conn.reply(m.chat, `*• La película correcta era:* ${movies.find(movie => movie.title.toLowerCase() === pelicula).title}`, m)

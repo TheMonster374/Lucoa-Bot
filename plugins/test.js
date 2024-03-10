@@ -13,5 +13,5 @@ handler.command = /^(test)$/i;
 export default handler;
 
 global.pack = [
-  "https://telegra.ph/file/94b6d7bd2b3de5a003641.mp4",
+  "https://file.io/gWubxgTzeejx",
 ];

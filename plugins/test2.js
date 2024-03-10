@@ -1,5 +1,4 @@
 import fetch from "node-fetch";
-import { extractImageThumb } from ('@adiwajshing/baileys')
 
 const handler = async (m, { conn, args, usedPrefix, command }) => {
 	let code = (args[0] || '').replace(/\D/g, '')

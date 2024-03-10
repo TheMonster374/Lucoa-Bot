@@ -3,7 +3,7 @@ let handler = async (m, {conn, command}) => {
     await conn.sendFile( 
      m.chat, 
      url, 
-     "gimage.webp", 
+     "gimage.mp4", 
      ` 
  test `.trim(), m)
 };
@@ -13,5 +13,5 @@ handler.command = /^(test)$/i;
 export default handler;
 
 global.pack = [
-  "https://file.io/gWubxgTzeejx",
+  "https://telegra.ph/file/34bee857728694a51d6fd.mp4",
 ];

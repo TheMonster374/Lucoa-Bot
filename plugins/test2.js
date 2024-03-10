@@ -20,4 +20,4 @@ args
 handler.help = ['nhentaipdf']
 handler.tags = ['nsfw']
 handler.command = /^(nhentaipdf2)$/i
-module.exports = handler
+export default handler;

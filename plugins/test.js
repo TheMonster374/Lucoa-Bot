@@ -18,7 +18,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     }
     let name2 = conn.getName(m.sender);
   let url = pack[Math.floor(Math.random() * pack.length)];
-    await conn.sendFile(m.chat, url, "gimage.mp4", `HelloKitty `.trim(), m)
+    await conn.sendFile(m.chat, url, "gimage.mp4", `${name2} le dio una bofetada a ${name}`.trim(), m)
 
     let stiker = await sticker(null, url, `${name2} le dio una bofetada a ${name}`, null);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});

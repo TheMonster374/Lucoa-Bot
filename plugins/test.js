@@ -23,8 +23,8 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   };
 };
 
-handler.help = ["hellokitty"];
-handler.tags = ["img"];
+/*handler.help = ["hellokitty"];
+handler.tags = ["img"];*/
 handler.command = /^(test)$/i;
 export default handler;
 global.pack = [

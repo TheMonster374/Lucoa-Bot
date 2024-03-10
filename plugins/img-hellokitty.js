@@ -5,7 +5,7 @@ let handler = async (m, {conn, command}) => {
      url, 
      "gimage.jpg", 
      ` 
- HelloKitty`.trim(), m)
+ HelloKitty `.trim(), m)
 };
 handler.help = ["hellokitty"];
 handler.tags = ["img"];

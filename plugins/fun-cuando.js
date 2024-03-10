@@ -1,6 +1,6 @@
 let handler = async (m, { conn, command, text }) => {
   if (!text) {
-    return conn.reply(m.chat, `[📚] Por favor, proporciona un texto\n\n*[💡] Ejemplo:* .cuando morire`, m)
+    return conn.reply(m.chat, `*_proporciona un texto_*\n\n*ejemplo:* .cuando morire`, m)
 }
     conn.reply(m.chat, `
   *Pregunta:* ${command} ${text}?

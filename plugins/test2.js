@@ -17,14 +17,13 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`
-"https://api.waifu.pics/nsfw/waifu",`);
+    let apislap = await fetch(`"https://api.waifu.pics/nsfw/waifu",`);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `${name2}  ${name}`, null);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
   } catch {
-    throw `*xd*`;
+    throw `*hijuesuputamadre llamen a dios*`;
   };
 };
 

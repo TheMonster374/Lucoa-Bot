@@ -1,4 +1,3 @@
-import {sticker} from "../lib/sticker.js";
 import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
     let who;
@@ -12,7 +11,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     let name;
     if (who === m.chat) {
-      name = "XD";
+      name = " ";
     } else {
       name = conn.getName(who);
     }

@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core';
 import axios from 'axios';
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw '[📚] uso incorrecto del comando, ingresa un enlace de youtube';
+  if (!args[0]) throw '*_ingresa un enlace de youtube_*\n\n*ejemplo:* .ytv https://youtu.be/7MJvKW2KVJQ?si=eTO2-vo7YApC8zYC';
   let enviando;
   if (enviando) return  
       enviando = true    

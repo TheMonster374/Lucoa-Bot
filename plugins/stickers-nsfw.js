@@ -43,7 +43,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     if (command == 'shentai') {
     try {
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://nekobot.xyz/api/image?type=hentai`);
+    let apislap = await fetch(`https://nekobot.xyz/api/sticker?type=hentai`);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `Hentai`, `Jotchua-Mini`);

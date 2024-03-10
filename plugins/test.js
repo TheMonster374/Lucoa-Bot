@@ -18,7 +18,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     }
     let name2 = conn.getName(m.sender);
   let url = pack[Math.floor(Math.random() * pack.length)];
-    await conn.sendFile(m.chat, url, "gimage.jpg", `HelloKitty `.trim(), m)
+    await conn.sendFile(m.chat, url, "gimage.mp4", `HelloKitty `.trim(), m)
 
     let stiker = await sticker(null, url, `${name2} le dio una bofetada a ${name}`, null);
     conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
@@ -32,14 +32,5 @@ handler.tags = ["img"];
 handler.command = /^(test)$/i;
 export default handler;
 global.pack = [
-  "https://telegra.ph/file/f7caab6d527f9f05ee62c.jpg",
-  "https://telegra.ph/file/04f5e603c1f9e0e3d96dd.jpg",
-  "https://telegra.ph/file/7edec9dbf21fb338e1adb.jpg",
-  "https://telegra.ph/file/3086bd60dbdd808dc4789.jpg",
-  "https://telegra.ph/file/d80db2847746fdf8bbe16.jpg",  
-  "https://telegra.ph/file/15add9093b5e6d1361938.jpg",
-  "https://telegra.ph/file/b663a5a8b290c654367a6.jpg",
-  "https://telegra.ph/file/b22caad8cc369e8023190.jpg",
-  "https://telegra.ph/file/efafc0ff36449c86606a6.jpg",
-  "https://telegra.ph/file/187ce0e01813b1b719015.jpg",
+  "https://telegra.ph/file/39471b36b4a0b4f832dce.mp4",
 ];

@@ -18,7 +18,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     }
     let name2 = conn.getName(m.sender);
   let url = pack[Math.floor(Math.random() * pack.length)];
-    await conn.sendFile(m.chat, url, "gimage.mp4", `${name2} violo a ${name}`.trim(), m)
+    await conn.sendFile(m.chat, url, "gimage.mp4", `${name2}  ${name}`.trim(), m)
   } catch {
     throw `*ocurrio un error*`;
   };

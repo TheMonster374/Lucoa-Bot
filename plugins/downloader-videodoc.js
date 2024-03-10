@@ -1,18 +1,18 @@
 import ytdl from 'ytdl-core';
 import fs from 'fs';
 
-const handler = async (m, {conn, args, isPrems, isOwner, command}) => {
+const handler = async (m, {conn, args, isPrems, isOwner, usedPrefix, command,}) => {
   const getRandom = (ext) => {
     return `${Math.floor(Math.random() * 10000)}${ext}`;
   };
   if (args.length === 0) {
-    m.reply(`[📚] 𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑒𝑙 𝑐𝑜𝑚𝑎𝑛𝑑𝑜 𝑚𝑎𝑠 𝑒𝑙 𝑒𝑛𝑙𝑎𝑐𝑒/ 𝑙𝑖𝑛𝑘 𝑑𝑒 𝑢𝑛 𝑣𝑖𝑑𝑒𝑜 𝑑𝑒 𝑦𝑜𝑢𝑡𝑢𝑏𝑒`);
+    m.reply(`*_ingresa el enlace de un video de youtube_*\n\n*ejemplo:* ${usedPrefix + command} https://youtu.be/HOQqFXtFVxM?si=rmHmZ8GRpHnDIFaM`);
     return;
   }
   try {
     const urlYt = args[0];
     if (!urlYt.startsWith('http')) {
-      m.reply(`𝑖𝑛𝑔𝑟𝑒𝑠𝑎 𝑢𝑛 𝑒𝑛𝑙𝑎𝑐𝑒 𝑐𝑜𝑟𝑟𝑒𝑐𝑡𝑜 𝑑𝑒 𝑦𝑜𝑢𝑡𝑢𝑏𝑒 🤓👆`);
+      m.reply(`ingresa un enlace correcto de youtube 🤓👆`);
       return;
     }
     const infoYt = await ytdl.getInfo(urlYt);
@@ -36,7 +36,7 @@ const handler = async (m, {conn, args, isPrems, isOwner, command}) => {
         conn.sendMessage( m.chat, {document: fs.readFileSync(`./tmp/${randomName}`), fileName: `${titleYt}.mp4`, mimetype: 'video/mp4'}, {quoted: m});
       }
     } else {
-      m.reply(`*𝒆𝒍 𝒂𝒓𝒄𝒉𝒊𝒗𝒐 𝒆𝒔 𝒔𝒖𝒑𝒆𝒓𝒊𝒐𝒓 𝒂 𝟿𝟿𝟿 𝑴𝑩*`);
+      m.reply(`*el archivo es superior a 999MB*`);
     }
     fs.unlinkSync(`./tmp/${randomName}`);
   } catch (e) {

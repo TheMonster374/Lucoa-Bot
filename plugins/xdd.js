@@ -1,18 +1,13 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
-let handler = async (m, {conn, command}) => {
-  
-    const url = `https://api.cafirexos.com/api/nsfw/nsfwass`;
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-    const response = await fetch(url);
-    const json = await response.json();
-
-    if (!response.ok) {
-        throw `¡Oops! Parece que hubo un error al buscar el Pokémon. Por favor, inténtalo de nuevo más tarde.`;
-    }
-
-    await conn.sendFile(m.chat, url, "test.jpg", m)
+let res = await fetch(`https://api.cafirexos.com/api/nsfw/nsfwass`)
+if (!res.ok) throw await res.text()
+let json = await res.json()
+if (!json.url) throw '❎ Error'
+conn.sendFile(m.chat, json.url, 'img.jpg', `✅ Random ${command}`, m)
 }
-handler.command = ["ass"];
+handler.command = ['ass']
 
-export default handler;
+export default handler

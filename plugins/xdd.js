@@ -17,12 +17,27 @@ const options = {
 try {
 	const response = await fetch(url, options);
 	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
 
-      conn.sendMessage(m.chat, { text: result }, 'extendedTextMessage', { quoted: m });
+	    const message = `
+*Pokedex - Información de ${json.name}*
+
+*Nombre:* ${json.name}
+*ID:* ${json.id}
+*Tipo:* ${json.type}
+*Habilidades:* ${json.abilities}
+*Tamaño:* ${json.height}
+*Peso:* ${json.weight}
+
+📖 *Descripción:*
+${json.description}
+
+🔍 ¡Encuentra más detalles sobre este Pokémon en la Pokedex! 🔍
+
+🔗 [Pokedex](https://www.pokemon.com/es/pokedex/${json.name.toLowerCase()})
+    `;
+
+    conn.sendMessage(m.chat, { text: message }, 'extendedTextMessage', { quoted: m });
+};
 }
   
 handler.help = ['pokedex <pokemon>'];

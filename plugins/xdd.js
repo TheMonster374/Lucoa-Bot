@@ -14,5 +14,5 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 };
  
 };  
-handler.command = ['test'];
+handler.command = ['xdd'];
 export default handler;

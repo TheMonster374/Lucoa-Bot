@@ -2,7 +2,7 @@
 
 let handler = async (m, {conn, command}) => {
   
-    const url = `https://api.cafirexos.com/api/nsfw/nsfwass=${encodeURIComponent(text)}`;
+    const url = `https://api.cafirexos.com/api/nsfw/nsfwass=${encodeURIComponent}`;
 
     const response = await fetch(url);
     const json = await response.json();

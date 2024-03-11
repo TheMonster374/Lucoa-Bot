@@ -2,9 +2,6 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 
-
-  if (!args[0]) throw `test`;
-
   let res = await fetch(`https://api.cafirexos.com/api/nsfw/nsfwass`);
   if (!res.ok) throw await res.text();
 

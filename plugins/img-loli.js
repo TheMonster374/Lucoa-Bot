@@ -5,7 +5,7 @@ let handler = async(m, {conn,text,command}) => {
 		image: {
 			url: url
 		},
-		caption: "*loli*"
+		caption: "*_loli_*"
 	}, {
 		quoted: m
 	});

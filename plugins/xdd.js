@@ -12,7 +12,7 @@ const options = {
 		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
 		'X-RapidAPI-Host': 'pokemon-api3.p.rapidapi.com'
 	}
-};
+}
 
 try {
 	const response = await fetch(url, options);

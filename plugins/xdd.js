@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, text }) => {
+let handler = async (m, {conn, command}) => {
   
     const url = `https://api.cafirexos.com/api/nsfw/nsfwass=${encodeURIComponent(text)}`;
 

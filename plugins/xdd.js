@@ -11,8 +11,8 @@ let handler = async (m, { conn, text }) => {
         throw `¡Oops! Parece que hubo un error al buscar el Pokémon. Por favor, inténtalo de nuevo más tarde.`;
     }
 }
-    await conn.sendFile(m.chat, url, "gimage.jpg", `` .trim(), m)
+    await conn.sendFile(m.chat, url, "test.jpg", `` .trim(), m)
 
-handler.command = /^ass/i;
+handler.command = ["ass"];
 
 export default handler;

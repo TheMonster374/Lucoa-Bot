@@ -1,18 +1,18 @@
-import fetch from 'node-fetch'
-
-let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-
-  let res = await fetch(`https://api.cafirexos.com/api/nsfw/nsfwass`);
-  if (!res.ok) throw await res.text();
-
-  let json = await res.json();
-  if (!json.url) throw 'Error!';
-
-  conn.sendFile(m.chat, json.url, '', global.wm, m);
+import {sticker} from "../lib/sticker.js";
+import fetch from "node-fetch";
+const handler = async (m, { conn, args, usedPrefix, command }) => {
+    try {
+    let name2 = conn.getName(m.sender);
+    let apislap = await fetch(`https://api.cafirexos.com/api/nsfw/nsfwass`);
+    let jkis = await apislap.json();
+    let { url } = jkis;
+    let stiker = await sticker(null, url, `Waifu`, `Jotchua-Mini`);
+    conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
+  } catch {
+    throw `*ocurrio un error inesperado*`;
+  };
 };
-
-handler.command = /^(xdd)$/i
-handler.tags = ['nsfw']
-handler.help = ['xdd']
-
-export default handler
+ 
+};  
+handler.command = ['test'];
+export default handler;

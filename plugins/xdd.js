@@ -1,17 +1,18 @@
-import {sticker} from "../lib/sticker.js";
-import fetch from "node-fetch";
-const handler = async (m, { conn, args, usedPrefix, command }) => {
-    try {
-    let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://api.cafirexos.com/api/nsfw/text=${text}`);
-    let jkis = await apislap.json();
-    let { url } = jkis;
-    let stiker = await sticker(null, url, `Waifu`, `Jotchua-Mini`);
-    conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
-  } catch {
-    throw `*ocurrio un error inesperado*`;
-  };
-};
+import fetch from 'node-fetch';
+
+let handler = async (m, { conn, text }) => {
   
-handler.command = ['nsfwass'];
+    const url = `https://api.cafirexos.com/api/nsfw/nsfwass=${encodeURIComponent(text)}`;
+
+    const response = await fetch(url);
+    const json = await response.json();
+
+    if (!response.ok) {
+        throw `¡Oops! Parece que hubo un error al buscar el Pokémon. Por favor, inténtalo de nuevo más tarde.`;
+    }
+}
+    await conn.sendFile(m.chat, url, "gimage.jpg", `` .trim(), m)
+
+handler.command = /^ass/i;
+
 export default handler;

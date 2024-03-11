@@ -11,7 +11,7 @@ let handler = async (m, {conn, command}) => {
         throw `¡Oops! Parece que hubo un error al buscar el Pokémon. Por favor, inténtalo de nuevo más tarde.`;
     }
 }
-    await conn.sendFile(m.chat, url, "test.jpg", `` .trim(), )
+    await conn.sendFile(m.chat, url, "test.jpg", `` .trim(), m)
 
 handler.command = ["ass"];
 

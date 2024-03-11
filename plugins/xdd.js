@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
     try {
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://api.cafirexos.com/api/nsfw/?text=${text}`);
+    let apislap = await fetch(`https://api.cafirexos.com/api/nsfw?text=${text}`);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `Waifu`, `Jotchua-Mini`);

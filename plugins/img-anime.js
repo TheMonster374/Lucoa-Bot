@@ -7,3 +7,4 @@ const handler = async (m, {command, conn, usedPrefix}) => {
 handler.command = handler.help = ['akiyama', 'asuna', 'chiho', 'chitoge', 'erza', 'elaina', 'emilia', 'hestia', 'inori', 'isuzu', 'kagura', 'kotori', 'kurumi', 'miku', 'sagiri',];
 handler.tags = ['img'];
 export default handler;
+

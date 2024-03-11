@@ -8,17 +8,17 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     let colores = ['rojo', 'negro']
     let colour = colores[Math.floor(Math.random() * colores.length)];
     let user = global.db.data.users[m.sender]
-    if (isNaN(amount) || amount < 10) throw `Lo minimo para apostar son 10 dolares.`
+    if (isNaN(amount) || amount < 10) throw `Lo minimo para apostar son 10 Pesos.`
     if (!colores.includes(color)) throw 'Debes especificar un color válido: rojo o negro'
-    if (user.dolares < amount) throw '¡No tienes suficiente dinero!'
-    if (amount > 100000) throw `No puedes apostar mas de 100000 dolares.`
+    if (user.exp < amount) throw '¡No tienes suficiente dinero!'
+    if (amount > 100000) throw `No puedes apostar mas de 100000 Pesos.`
     let result = ''
     if (colour == color) {
-        result = `${colour == 'rojo' ? 'La pelota paro en el color: 🔴' : 'La pelota paro en el color: ⚫'} \n\nGanaste ${amount * 2} Dolares`
-        user.dolares += amount * 2
+        result = `${colour == 'rojo' ? 'La pelota paro en el color: 🔴' : 'La pelota paro en el color: ⚫'} \n\nGanaste ${amount * 2} Pesos`
+        user.exp += amount * 2
     } else {
-        result = `${colour == 'rojo' ? 'La pelota paro en el color: 🔴' : 'La pelota paro en el color: ⚫'} \n\nPerdiste ${amount} Dolares`
-        user.dolares -= amount
+        result = `${colour == 'rojo' ? 'La pelota paro en el color: 🔴' : 'La pelota paro en el color: ⚫'} \n\nPerdiste ${amount} Pesos`
+        user.exp -= amount
     }
     conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
 }

@@ -34,10 +34,10 @@ ${json.description}
 🔍 ¡Encuentra más detalles sobre este Pokémon en la Pokedex! 🔍
 
 🔗 [Pokedex](https://www.pokemon.com/es/pokedex/${json.name.toLowerCase()})
-    `;
+    `
 
     conn.sendMessage(m.chat, { text: message }, 'extendedTextMessage', { quoted: m });
-};
+}
 }
   
 handler.help = ['pokedex <pokemon>'];

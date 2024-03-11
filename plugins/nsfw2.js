@@ -37,7 +37,7 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 };
-handler.help = ['ahegao', 'manga', 'tentaculos'];
+handler.help = ['tentaculos', 'nsfwloli', 'nsfwcum', 'nsfwbdsm'];
 handler.command = ['ahegao', 'manga', 'tentaculos', 'nsfwloli', 'nsfwcum', 'nsfwbdsm'];
 handler.tags = ['nsfw'];
 export default handler;

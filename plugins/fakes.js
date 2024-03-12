@@ -113,7 +113,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 global.nombre = conn.getName(m.sender)
 global.taguser = '@' + m.sender.split("@s.whatsapp.net")
-global.fake = { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎by als╎˖ ⸙',body: false, previewType: 0, thumbnail: catalogo, sourceUrl: ''}}})
+global.fake = { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎by als╎˖ ⸙',body: false, previewType: 0, thumbnail: catalogo, sourceUrl: ''}}}
 
 //global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: saludo + ` ${m.name}`, body: wm, sourceUrl: null, thumbnailUrl: imagen1 }}}	
 }

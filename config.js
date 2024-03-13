@@ -27,12 +27,12 @@ global.mods = [];
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
-global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
+global.packname = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
 global.author = '𝑩𝒚 𝑨𝑳𝑺';
-global.wm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
-global.titulowm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
-global.titulowm2 = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰`
-global.igfg = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
+global.wm = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
+global.titulowm = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
+global.titulowm2 = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢`
+global.igfg = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
 //━━━━━ESPERAS━━━━━━━━ 
 global.wait = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐. ⏳*'; 
 global.waitt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.. ⏳*';
@@ -96,8 +96,8 @@ global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage':
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺`
-global.adimagen = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺` 
+global.addescargas = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢 𝑩𝒚 𝑨𝑳𝑺`
+global.adimagen = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢 𝑩𝒚 𝑨𝑳𝑺` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"
@@ -122,13 +122,13 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.gt = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
+global.gt = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 
 global.nomorown = '5491144775561';
-global.wm2 = `${dia} ${fecha}\n𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊`
+global.wm2 = `${dia} ${fecha}\n𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢`
 global.multiplier = 99;
 /* RPG */
 global.flaaa = [

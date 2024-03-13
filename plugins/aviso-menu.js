@@ -7,9 +7,22 @@ const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "stat
 }
 
   
-    await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
+//    await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
   
-let menu = `⚜ *INFO DEL MENU* ⚜\n\n*_el comando menu cambio, ahora es_*\n --> .comandos 
+let menu = `⚜ *INFO DE LOS MENU* ⚜
+
+!allmenu | !menucompleto
+> para ver todos los comandos
+
+!menujuegos 
+> para ver todods los juegos
+
+!menudescargas
+> para ver todas las descargas
+
+!menunsfw | !menuporn
+> para ver todos los comandos nsfw 
+
 `.trim()
 await conn.sendFile(m.chat, catalogo, 'gata.mp4', menu, fkontak)
 }

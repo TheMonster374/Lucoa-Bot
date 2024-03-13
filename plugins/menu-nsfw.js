@@ -56,26 +56,26 @@ ${usedPrefix}bondage
 ${usedPrefix}demon
 ${usedPrefix}wet
 ${usedPrefix}pantypull
-║│ .headdress
-║│ .headphone
-║│ .tie
-║│ .anusview
-║│ .shorts
-║│ .stokings
-║│ .topless
-║│ .beach
-║│ .bunnygirl
-║│ .bunnyear
-║│ .idol
-║│ .vampire
-║│ .gun
-║│ .maid
-║│ .bra
-║│ .nobra
-║│ .bikini
-║│ .whitehair
-║│ .blonde
-║│ .pinkhair
+${usedPrefix}headdress
+${usedPrefix}headphone
+${usedPrefix}tie
+${usedPrefix}anusview
+${usedPrefix}shorts
+${usedPrefix}stokings
+${usedPrefix}topless
+${usedPrefix}beach
+${usedPrefix}bunnygirl
+${usedPrefix}bunnyear
+${usedPrefix}idol
+${usedPrefix}vampire
+${usedPrefix}gun
+${usedPrefix}maid
+${usedPrefix}bra
+${usedPrefix}nobra
+${usedPrefix}bikini
+${usedPrefix}whitehair
+${usedPrefix}blonde
+${usedPrefix}pinkhair
 ║│ .bed
 ║│ .ponytail
 ║│ .nude
@@ -129,7 +129,7 @@ ${usedPrefix}pantypull
     conn.reply(m.chat, '*[ ℹ️ ] Este menu tiene un error interno, por lo cual no fue posible enviarlo.*', m);
   }
 };
-handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i;
+handler.command = /^(Menunsfw|menunsfw|menuporn|porn|porno|MENUNSFW|menuNSFW)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

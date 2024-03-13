@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 
 
-  if (!args[0]) throw `select tag:\nblowjob\nneko\ntrap\nwaifu`;
+  if (!args[0]) throw `seleciona un tag tag:\nblowjob\nneko\ntrap\nwaifu`;
 
   let res = await fetch(`https://api.waifu.pics/nsfw/${text}`);
   if (!res.ok) throw await res.text();
@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
   let json = await res.json();
   if (!json.url) throw 'Error!';
 
-  conn.sendFile(m.chat, json.url, '', global.wm, m);
+  conn.sendFile(m.chat, json.url, '', `${text}`, m);
 };
 
 handler.command = /^(nsfw)$/i

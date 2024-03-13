@@ -76,21 +76,21 @@ ${usedPrefix}bikini
 ${usedPrefix}whitehair
 ${usedPrefix}blonde
 ${usedPrefix}pinkhair
-║│ .bed
-║│ .ponytail
-║│ .nude
-║│ .dress
-║│ .underwear
-║│ .foxgirl
-║│ .uniform
-║│ .skirt
-║│ .sex
-║│ .sex2
-║│ .sex3
-║│ .breast
-║│ .twintail
-║│ .spreadpussy
-║│ .tears
+ bed
+ponytail
+nude
+dress
+underwear
+foxgirl
+uniform
+skirt
+sex
+sex2
+sex3
+breast
+twintail
+spreadpussy
+tears
 ║│ .seethrough
 ║│ .breasthold
 ║│ .drunk

@@ -11,7 +11,7 @@ export async function before(m, { conn }) {
 					mediaUrl: null,
 					description: null,
 					previewType: "PHOTO",
-					thumbnail: imagen3,
+					thumbnail: imagen2,
 					sourceUrl: null
 				}
 			}

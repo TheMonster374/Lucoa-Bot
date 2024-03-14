@@ -3,7 +3,6 @@ import PhoneNumber from 'awesome-phonenumber';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
   let pp = 'https://telegra.ph/file/06cc652844ea19e8aed1c.jpg';
-//  let bio = await conn.fetchStatus(num).catch(_ => { })
   const user = global.db.data.users[m.sender];
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, limit, level, role} = global.db.data.users[m.sender];
@@ -22,7 +21,6 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
 ✧ *diamantes*:  ${user.limit} 💎
 ✧ *Pesos*: ${user.exp} 🪙
 ✧ *​Nivel​*: ${user.level} 🔰
-*Bio :* ${bio?.status || '-'}
 ✧ *Numero de serie:* 
 ${sn}`;
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })

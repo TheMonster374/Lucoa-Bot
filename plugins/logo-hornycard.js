@@ -7,5 +7,5 @@ const handler = async (m, {conn}) => {
 handler.help = ['hornycard'];
 handler.tags = ['efectos'];
 handler.command = /^(horny(card|license))$/i;
-handler.limit = 1
+handler.money = 50
 export default handler;

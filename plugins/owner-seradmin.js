@@ -1,11 +1,11 @@
 
 const handler = async (m, {conn, isAdmin}) => {
   if (m.fromMe) return;
-  if (isAdmin) throw '*[❗] 𝑻𝒐𝒎𝒆 𝑪𝒓𝒆𝒂𝒅𝒐𝒓, 𝒖𝒔𝒕𝒆𝒅 𝒚𝒂 𝒆𝒔 𝒂𝒅𝒎𝒊𝒏*';
+  if (isAdmin) throw '*_Hola creador, ahora es admin_*';
   try {
     await conn.groupParticipantsUpdate(m.chat, [m.sender], 'promote');
   } catch {
-    await m.reply('*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗], 𝒏𝒐 𝒍𝒐𝒈𝒓𝒆 𝒅𝒂𝒓𝒍𝒆 𝒂𝒅𝒎𝒊𝒏 😖*');
+    await m.reply('*[❌] Ocurrio un error inesperado y no logre darle admin*');
   }
 };
 handler.help = ['seradmin'];

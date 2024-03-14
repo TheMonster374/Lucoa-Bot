@@ -3,7 +3,7 @@ import PhoneNumber from 'awesome-phonenumber';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
   let pp = 'https://telegra.ph/file/06cc652844ea19e8aed1c.jpg';
-  let bio = await conn.fetchStatus(num).catch(_ => { })
+//  let bio = await conn.fetchStatus(num).catch(_ => { })
   const user = global.db.data.users[m.sender];
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, limit, level, role} = global.db.data.users[m.sender];

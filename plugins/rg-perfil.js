@@ -21,6 +21,10 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
 ✧ *diamantes*:  ${user.limit} 💎
 ✧ *Pesos*: ${user.exp} 🪙
 ✧ *​Nivel​*: ${user.level} 🔰
+✧ *Exp nivel:* ${user.exp - min}/${xp}
+✧ *Ultimo claim:* ${lastdaily > 0 ? `${formatDate(lastdaily)}` : '×'}
+✧ *Registrado:* ${registered ? 'Si': 'No'}
+✧ *Edad:* ${registered ? `${age} años` : '×'}
 ✧ *Numero de serie:* 
 ${sn}`;
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })

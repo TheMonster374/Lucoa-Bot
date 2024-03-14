@@ -12,7 +12,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let user = global.db.data.users[who]
   let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
-  let { name, exp, star, lastdaily, registered, regTime, age, level } = global.db.data.users[who]
+  let { name, exp, limit, lastdaily, registered, regTime, age, level } = global.db.data.users[who]
   let { min, xp, max } = xpRange(user.level, global.multiplier)
   let username = conn.getName(who)
   let prem = global.prems.includes(who.split`@`[0])
@@ -20,17 +20,17 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let about = (await conn.fetchStatus(who).catch(console.error) || {}).status || '×'
   let str = ` –  *P E R F I L  -  U S E R*
 
-┌  ✩  *Nombre* : ${username}
-│  ✩  *Numero* : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-│  ✩  *Link:* wa.me/${who.split`@`[0]}
-│  ✩  *Estrellas:* ${star}
-│  ✩  *Nivel:* ${level}
-│  ✩  *Exp:* ${exp}
-│  ✩  *Exp nivel:* ${user.exp - min}/${xp}
-│  ✩  *Premium:* ${prem ? 'Si' : 'No'}
-│  ✩  *Ultimo claim:* ${lastdaily > 0 ? `${formatDate(lastdaily)}` : '×'}
-│  ✩  *Registrado:* ${registered ? 'Si': 'No'}
-└  ✩  *Edad:* ${registered ? `${age} años` : '×'}
+┌   *Nombre* : ${username}
+│   *Numero* : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+│   *Link:* wa.me/${who.split`@`[0]}
+│   *diamantes:* ${limit}
+│   *Nivel:* ${level}
+│   *Exp:* ${exp}
+│   *Exp nivel:* ${user.exp - min}/${xp}
+│   *Premium:* ${prem ? 'Si' : 'No'}
+│   *Ultimo claim:* ${lastdaily > 0 ? `${formatDate(lastdaily)}` : '×'}
+│   *Registrado:* ${registered ? 'Si': 'No'}
+└   *Edad:* ${registered ? `${age} años` : '×'}
 `
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: wm, body: desc, sourceUrl: null, mediaType: 1, thumbnail: catalogo }}}, { quoted: m })
  

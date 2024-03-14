@@ -5,11 +5,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    if (!res.ok) return 
    let json = await res.json()
    if (!json.url) return 
-   await conn.sendFile(m.chat, json.url, 'neko.png', '', m)
+   await conn.sendFile(m.chat, json.url, 'fucking.png', '', m)
 }
 
-handler.help = ['neko']
-handler.tags = ['img']
-handler.command = ['xd']
+handler.help = ['fucking']
+handler.tags = ['nsfw']
+handler.command = ['fucking']
 
 export default handler

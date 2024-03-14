@@ -1910,7 +1910,7 @@ def shell():
                         raise
         sys.exit(0)
 
-    printer('_*< INFO - SPEEDTEST />*_\n\n', quiet)
+    printer('_*INFO - SPEEDTEST*_\n\n', quiet)
 
 
     if not args.mini:
@@ -1967,7 +1967,7 @@ def shell():
                 ((results.upload / 1000.0 / 1000.0) / args.units[1],
                  args.units[0]),
                 quiet)
-        printer("\n▢ Modificado por *dftzippo*\n▢ Powered by *Ookla*")
+        printer("")
     else:
         printer('▢ *Omitiendo la prueba de subida.*', quiet)
 

@@ -9,9 +9,9 @@ const handler = async (m, {conn, command, args}) => {
     conn.reply(m.chat, `
 ┌─「 *𝗡𝗢𝗧𝗔 𝗗𝗘 𝗣𝗔𝗚𝗢* 」
 ‣ *𝗖𝗼𝗺𝗽𝗿𝗮 𝗻𝗼𝗺𝗶𝗻𝗮𝗹* : + ${count}💎 
-‣ *𝗚𝗮𝘀𝘁𝗮𝗱𝗼* : -${xpperlimit * count} Pesos 🪙
+‣ *𝗚𝗮𝘀𝘁𝗮𝗱𝗼* : -${xpperlimit * count} Coins 🪙
 └──────────────`, m);
-  } else conn.reply(m.chat, `no tienes suficientes *Pesos* para comprar *${count}* Diamantes💎`, m);
+  } else conn.reply(m.chat, `no tienes suficientes *Coins* para comprar *${count}* Diamantes💎`, m);
 };
 handler.help = ['Buy <cantidad>', 'Buyall'];
 handler.tags = ['rpg'];

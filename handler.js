@@ -49,7 +49,6 @@ export async function handler(chatUpdate) {
     m.exp = 0;
     m.money = false;
     m.limit = false;
-    m.money = false
     try {
       // TODO: use loop to insert data instead of this
       const user = global.db.data.users[m.sender];
@@ -1209,7 +1208,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             if (user.commandCount === 2) {
               const remainingTime = Math.ceil((user.lastCommandTime + 5000 - Date.now()) / 1000);
               if (remainingTime > 0) {
-                const messageText = `*Espera* _${remainingTime} segundos_ *antes de utilizar otro comando.*`;
+                const messageText = `*[ ℹ️ ] Espera* _${remainingTime} segundos_ *antes de utilizar otro comando.*`;
                 m.reply(messageText);
                 return;
               } else {
@@ -1275,11 +1274,11 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
           m.exp += xp;
         }
         if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-          mconn.conn.reply(m.chat, `*𝒕𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐, 𝒑𝒖𝒆𝒅𝒆 𝒂𝒅𝒒𝒖𝒊𝒓𝒊𝒓 𝒎á𝒔 𝒄𝒐𝒏 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:* _${usedPrefix}buyall_`, m);
+          mconn.conn.reply(m.chat, `*_Sus diamantes se han agotado, puede adquirir más con el comando:_* _${usedPrefix}buyall_`, m);
           continue; 
         }
         if (plugin.level > _user.level) {
-          mconn.conn.reply(m.chat, `*𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒓𝒆 𝒕𝒆𝒏𝒆𝒓 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍 ${plugin.level} 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐. 𝑻ú 𝒏𝒊𝒗𝒆𝒍 𝒂𝒄𝒕𝒖𝒂𝒍 𝒆𝒔 ${_user.level}, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 ${usedPrefix} 𝒍𝒗𝒍 𝒑𝒂𝒓𝒂 𝒔𝒖𝒃𝒊𝒓 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒄𝒐𝒏 𝑿𝑷.*`, m);
+          mconn.conn.reply(m.chat, `*[ ℹ️ ] Se require tener el nivel ${plugin.level} para poder utilizar el comando. Tú nivel actual es ${_user.level}, usa el comando ${usedPrefix}lvl para subir tu nivel con XP.*`, m);
           continue; 
         }
         const extra = {
@@ -1309,7 +1308,6 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
           await plugin.call(this, m, extra);
           if (!isPrems) {
             m.limit = m.limit || plugin.limit || false;
-	    m.money = m.money || plugin.money || false
           }
         } catch (e) {
           m.error = e;
@@ -1348,13 +1346,10 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
               console.error(e);
             }
           }
-          if (m.limit) { m.reply('*Utilizaste ' + +m.limit + ' [ 💎 ].*');
-	    }
-	if (m.money)  
-m.reply(+m.money + '  𝙪𝙨𝙖𝙙𝙤𝙨')
-break
-		}
-        
+          if (m.limit) {
+            m.reply('*utilizaste ' + +m.limit + ' diamante(s).*');
+          }
+        }
         break;
       }
     }
@@ -1372,8 +1367,8 @@ break
       if (m.sender && (user = global.db.data.users[m.sender])) {
         user.exp += m.exp;
         user.limit -= m.limit * 1;
-	user.money -= m.money * 1
       }
+
 
       let stat;
       if (m.plugin) {

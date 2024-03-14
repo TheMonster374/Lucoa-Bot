@@ -1,6 +1,6 @@
-let fetch = require("node-fetch")
-const { sticker } = require('../lib/sticker')
-const { MessageType } = require('@adiwajshing/baileys')
+import {sticker} from '../lib/sticker.js';
+import fetch from 'node-fetch';
+import MessageType from '@whiskeysockets/baileys';
 
 let handler = async (m, { conn}) => {
   try {
@@ -10,9 +10,8 @@ let handler = async (m, { conn}) => {
 result
 } = json
 let stiker = await sticker(null, result, 'Cry', '@SHIRAORI')
-  conn.sendMessage(m.chat, stiker, MessageType.sticker, {
-    quoted: m
-  })
+ conn.sendFile(m.chat, stiker, null, null, m, false, {asSticker: true});
+
  } catch (e) {
   }
 }

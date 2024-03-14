@@ -22,15 +22,15 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
+ ┏━⊜「 *=͟͟͞INFO USUARIO* 」
+┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
-┃🔰 *𝑵𝒊𝒗𝒆𝒍* : *${level}
-┃🪙 *𝑷𝒆𝒔𝒐𝒔* : *${money}
+┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
+┃🪙 *Coins* : *${money}
 ┗━━━━━━━━━━━━━━━━━━⬣
  ${readMore}
 ┏━⊜「 *=͟͟͞INFO BOT* 」
-┃🐢 *CREADOR*: +5491156673266
+┃◣w◢ *CREADOR*: +573017210155
 ┃👤 *TOTAL USUARIOS* : ${totalusr}
 ┗━━━━━━━━━━━━━━━━━━⬣
  ${readMore}

@@ -4,23 +4,16 @@ const handler = async (m, {conn, usedPrefix}) => {
   const text = `Hola, estos son los grupos de jotchua-Mini
 ┏━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┓
 
-𝐽𝑜𝑡𝑐ℎ𝑢𝑎 • 𝑀𝑖𝑛𝑖 | 𝑶𝑭𝑪
-https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np
+ꕥ》𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩《ꕥ | [𝙊𝙁𝘾
+https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS
 
- ⎯⎯  \\\ 𝕭𝖔𝖙𝖘🤖 /// ⎯⎯                 
-https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB 
-
+🤑\Latino Gang/😈                 
+https://chat.whatsapp.com/Jy7y9ceuHsS5KASLC6p5x2
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-𝑮𝒓𝒖𝒑𝒐𝒔 𝑪𝒐𝒍𝒂𝒃 𝒅𝒆 𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊:
+*Canal Oficial*:
+https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j
 
-
-𝑴𝒖𝒍𝒕𝒊 𝑩𝒐𝒕𝒔 | 𝑫𝒓𝒆𝒂𝒎 𝑻𝒆𝒂𝒎
-https://chat.whatsapp.com/H0ijohqwDcxJ9vbWx0lGiy
-
-
-
- 𝒔𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒒𝒖𝒆 𝒕𝒖 𝒈𝒓𝒖𝒑𝒐 𝒂𝒑𝒂𝒓𝒆𝒛𝒄𝒂 𝒐 𝒄𝒐𝒍𝒂𝒃𝒐𝒓𝒂𝒓 𝒄𝒐𝒏 𝒆𝒍 𝒃𝒐𝒕 𝒄𝒐𝒏𝒕𝒂𝒄𝒕𝒂 𝒄𝒐𝒏 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓
 ┗━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┛
 `.trim();
   const buttonMessage= {

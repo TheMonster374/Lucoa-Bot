@@ -1,5 +1,5 @@
 {
-  "name": "Jotchua-Mini",
+  "name": "INABAKUMORI-Bot",
   "version": "1.0.0",
   "description": "bot de whatsapp",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/AleXD0009/jotchua-mini",
+  "homepage": "https://github.com/TheMonster374/INABAKUMORI-Bot",
   "author": {
-    "name": "AleXD0009"
+    "name": "TheMonster374"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleXD0009/jotchua-mini.git"
+    "url": "git+https://github.com/TheMonster374/INABAKUMORI-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/AleXD0009/jotchua-mini/issues"
+    "url": "https://github.com/TheMonster374/INABAKUMORI-Bot/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

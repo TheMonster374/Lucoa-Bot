@@ -18,10 +18,10 @@ const {exp, limit, level, role} = global.db.data.users[m.sender];
     const sn = createHash('md5').update(who).digest('hex');
     const str = `✧ *Nombre:* ${username} ${registered ? '(' + name + ') ': ''}
 ✧ *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-✧ *diamantes*:  ${user.limit}
-✧ *Pesos*: ${user.exp}
-✧ *​Nivel​*: ${user.level}
-✧ *Premium:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
+✧ *diamantes*:  ${user.limit} 💎
+✧ *Pesos*: ${user.exp} 🪙
+✧ *​Nivel​*: ${user.level} 🔰
+*Bio :* ${bio?.status || '-'}\n*Bio Uptade:* ${bio?.setAt ? moment(bio.setAt.toDateString()).locale('id').format('LL') : '-'}
 ✧ *Numero de serie:* 
 ${sn}`;
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}, { quoted: m })

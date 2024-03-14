@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   const fetchImage = async (endpoint) => {
     try {
       const response = await fetch(baseUrl + endpoint);
-      if (!response.ok) throw `❎ Error fetching ${type} image`;
+      if (!response.ok) throw `❎ Error fetching kitsune image`;
       const imageBuffer = await response.buffer(); // Get the image data as a buffer
       conn.sendFile(m.chat, imageBuffer, 'img.jpg', `✅ Random kitsune`, m);
     } catch (error) {
@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   };
 };
 
-handler.command = ['test3'] 
+handler.command = ['ktisune'] 
 
 
 export default handler

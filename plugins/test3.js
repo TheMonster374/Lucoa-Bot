@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
-   let res = await fetch('https://nekos.best/api/v2/kitsune')
+   let res = await fetch('https://any-anime.p.rapidapi.com/v1/anime/gif/1')
    if (!res.ok) return 
    let json = await res.json()
    if (!json.url) return 

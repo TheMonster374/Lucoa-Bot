@@ -1,5 +1,5 @@
 const handler = async (m, {conn}) => {
-  conn.sendFile(m.chat, `https://nekos.pro/api/nsfw-neko`, 'error.webp', '', m, {asSticker: true});
+  conn.sendFile(m.chat, `https://api.waifu.im/fav`, 'error.webp', '', m, {asSticker: true});
 };
 handler.tags = [''];
 handler.command = ['test2'];

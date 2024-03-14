@@ -18,7 +18,7 @@ say('Jotchua Mini', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']});
-say(`by`, {
+say(`by als`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']});

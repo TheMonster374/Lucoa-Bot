@@ -5,7 +5,7 @@ const handler = async (m, {conn, text}) => {
   try {
     const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender;
     if (!who) throw "*[❗] Por favor, etiqueta o menciona a un participante del grupo.*";
-    const res = await fetch('https://nekos.life/api/catText');
+    const res = await fetch('https://nekos.life/api/kiss');
     const json = await res.json();
     const {url} = json;
     const name_1 = conn.getName(m.sender)
@@ -15,5 +15,5 @@ const handler = async (m, {conn, text}) => {
   } catch { }
 };
 handler.command = /^(test4)$/i;
-handler.group = true;
+//handler.group = true;
 export default handler;

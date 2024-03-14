@@ -1,7 +1,7 @@
 import fs from 'fs'
 let handler = async (m, { text, usedPrefix, command }) => {
-    if (!text) return conn.reply(m.chat, `Que nombre le pongo al plugin?`, m, adReply)
-    if (!m.quoted.text) return conn.reply(m.chat, `Responder al mensaje!`, m, adReply)
+    if (!text) return conn.reply(m.chat, `Que nombre le pongo al plugin?`, m)
+    if (!m.quoted.text) return conn.reply(m.chat, `Responder al mensaje!`, m)
     let path = `plugins/${text}.js`
     await fs.writeFileSync(path, m.quoted.text)
     await conn.reply(m.chat, `Guardado en ${path}`, m, adReply)

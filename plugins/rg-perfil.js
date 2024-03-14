@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 │  ✩  *Registrado:* ${registered ? 'Si': 'No'}
 └  ✩  *Edad:* ${registered ? `${age} años` : '×'}
 `
-conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: namebot, body: desc, sourceUrl: null, mediaType: 1, thumbnail: miniurl }}}, { quoted: m })
+conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: wm, body: desc, sourceUrl: null, mediaType: 1, thumbnail: catalogo }}}, { quoted: m })
  
 }
 

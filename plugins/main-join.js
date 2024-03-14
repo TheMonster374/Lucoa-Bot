@@ -7,9 +7,9 @@ let [_, code] = link.match(linkRegex) || []
 if (!code) throw `*_debes ingresar un enlace_* \n *Ingrese el enlace de un grupo.\n\n*ejemplo:*\n*#join ${group}*`
 
 if ( isMods || isOwner || m.fromMe) {
-m.reply(`*Jotchua-Mini se unio correctamente al grupo*
+m.reply(`*INABAKUMORI se unio correctamente al grupo*
 
-*Jotchua-Mini se unio correctamente al grupo*
+*INABAKUMORI se unio correctamente al grupo*
 
 ‼️ si de lo contrario no se unio a tu grupo, verifica que no se haya eliminado o salido recientemente el bot `
 await delay(5 * 5000)

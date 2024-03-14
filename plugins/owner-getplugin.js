@@ -5,7 +5,7 @@ const exec = promisify(_exec).bind(cp);
 const handler = async (m, {conn, isROwner, usedPrefix, command, text}) => {
   const ar = Object.keys(plugins);
   const ar1 = ar.map((v) => v.replace('.js', ''));
-  if (!text) throw `*[❗] ingresa el nombre de algun plugin (archivo) existente*\n\n*◦ ejemplo*\n*◦ ${usedPrefix + command}* info-infobot\n\n*◦ Lista de plugins (archivos) existentes:*\n*◦* ${ar1.map((v) => ' ' + v).join`\n*◦*`}`;
+  if (!text) throw `*_[❗] ingresa el nombre de algun plugin (archivo) existente_*\n\n*◦ ejemplo*\n*◦ ${usedPrefix + command}* info-infobot\n\n*◦ Lista de plugins (archivos) existentes:*\n*◦* ${ar1.map((v) => ' ' + v).join`\n*◦*`}`;
   if (!ar1.includes(text)) return m.reply(`*[❗] No se encontro el plugin (archivo) llamado "${text}", ingresa alguno existente*\n\n*==================================*\n\n*◦ Lista de plugins (archivos) existentes:*\n*◦* ${ar1.map((v) => ' ' + v).join`\n*◦*`}`);
   let o;
   try {

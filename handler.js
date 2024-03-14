@@ -1308,6 +1308,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
           await plugin.call(this, m, extra);
           if (!isPrems) {
             m.limit = m.limit || plugin.limit || false;
+	    m.money = m.money || plugin.money || false
           }
         } catch (e) {
           m.error = e;
@@ -1347,11 +1348,11 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             }
           }
           if (m.limit) { m.reply('*Utilizaste ' + +m.limit + ' [ 💎 ].*');
-          }
-	if (m.money)
-{ m.reply('*Utilizaste ' + +m.money + ' Pesos.*');
-          }
+	    }
+	if (m.money)  
+m.reply(+m.money + '  𝙪𝙨𝙖𝙙𝙤𝙨')
 break
+          }
         }
         break;
       }

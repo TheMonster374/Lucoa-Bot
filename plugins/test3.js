@@ -17,7 +17,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       name = conn.getName(who);
     }
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://nekos.best/bite`);
+    let apislap = await fetch(`https://nekos.best/kitsune`);
     let jkis = await apislap.json();
     let { url } = jkis;
     let stiker = await sticker(null, url, `${name2} le dio una bofetada a ${name}`, null);

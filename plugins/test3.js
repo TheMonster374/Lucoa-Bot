@@ -16,6 +16,6 @@ let stiker = await sticker(null, result, 'Cry', '@SHIRAORI')
  } catch (e) {
   }
 }
-handler.command = /^test/i
+handler.command = /^test3/i
 
 export default handler

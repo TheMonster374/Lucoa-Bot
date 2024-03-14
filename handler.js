@@ -73,7 +73,6 @@ export async function handler(chatUpdate) {
         if (!user.registered) {
           if (!('name' in user)) user.name = m.name;
           if (!isNumber(user.age)) user.age = -1;
-	  if (!('JTLanguage' in user)) user.JTLanguage = 0
           if (!isNumber(user.anggur)) user.anggur = 0;
           if (!isNumber(user.apel)) user.apel = 0;
           if (!isNumber(user.bibitanggur)) user.bibitanggur = 0;
@@ -93,7 +92,7 @@ export async function handler(chatUpdate) {
           if (!isNumber(user.stroberi)) user.stroberi = 0;
         }
         if (!isNumber(user.afk)) user.afk = -1;
-	        if (!('autolevelup' in user)) user.autolevelup = true;
+	        if (!('autolevelup' in user)) user.autolevelup = false;
 	        if (!('role' in user)) user.role = 'Novato';
         if (!isNumber(user.agility)) user.agility = 0;
         if (!isNumber(user.anakanjing)) user.anakanjing = 0;
@@ -392,9 +391,9 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
         if (!isNumber(user.orca)) user.orca = 0;
         if (!isNumber(user.pancing)) user.pancing = 0;
         if (!isNumber(user.pancingan)) user.pancingan = 1;
+	if (!isNumber(user.pc)) user.pc = 0;
         if (!isNumber(user.panda)) user.panda = 0;
         if (!isNumber(user.paus)) user.paus = 0;
-	if (!('Language' in user)) user.Language = m.Language
         if (!isNumber(user.pausbakar)) user.pausbakar = 0;
         if (!isNumber(user.pc)) user.pc = 0;
         if (!isNumber(user.pepesikan)) user.pepesikan = 0;
@@ -1347,9 +1346,12 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
               console.error(e);
             }
           }
-          if (m.limit) {
-            m.reply('*Utilizaste ' + +m.limit + ' [ 💎 ].*');
+          if (m.limit) { m.reply('*Utilizaste ' + +m.limit + ' [ 💎 ].*');
           }
+	if (m.money)
+{ m.reply('*Utilizaste ' + +m.money + ' Pesos.*');
+          }
+break
         }
         break;
       }
@@ -1368,6 +1370,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
       if (m.sender && (user = global.db.data.users[m.sender])) {
         user.exp += m.exp;
         user.limit -= m.limit * 1;
+	user.money -= m.money * 1
       }
 
       let stat;

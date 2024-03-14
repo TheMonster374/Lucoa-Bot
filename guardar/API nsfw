@@ -16,3 +16,5 @@ handler.command = ['test2'];
 export default handler;
 
 {"nekos": {"1": "neko", "2": "nsfw-neko"}, "hentai": {"1": "ai", "2": "ass", "3": "boobs", "4": "creampie", "5": "paizuri", "6": "pussy", "7": "random", "8": "vtuber", "9": "ecchi", "10": "fucking"}, "real": {"1": "irl-ass", "2": "irl-boobs", "3": "irl-creampie", "4": "irl-fucking", "5": "irl-pussy", "6": "irl-random"}}
+
+https://nekos.pro/api/neko

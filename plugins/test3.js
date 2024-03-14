@@ -1,16 +1,15 @@
-import {sticker} from '../lib/sticker.js';
-import fetch from 'node-fetch';
-import MessageType from '@whiskeysockets/baileys';
-const handler = async (m, {conn}) => {
-  try {
-    if (m.quoted?.sender) m.mentionedJid.push(m.quoted.sender);
-    if (!m.mentionedJid.length) m.mentionedJid.push(m.sender);
-    const res = await fetch('https://nekos.best/api/v2/kitsune');
-    const json = await res.json();
-    const {url} = json;
-    const stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio palmaditas a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`);
-    conn.sendFile(m.chat, stiker, null, {asSticker: true});
-  } catch (e) { }
-};
-handler.command = /^(test4)$/i;
-export default handler;
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, usedPrefix, command }) => {
+   let res = await fetch('https://nekos.best/api/v2/kitsune')
+   if (!res.ok) return 
+   let json = await res.json()
+   if (!json.url) return 
+   await conn.sendFile(m.chat, json.url, 'test.png', '*test*', m)
+}
+
+handler.help = ['neko']
+handler.tags = ['img']
+handler.command = ['xdd']
+
+export default handler

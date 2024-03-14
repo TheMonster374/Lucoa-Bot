@@ -22,23 +22,23 @@ let tags = {
   'audio': ' `EFECTOS DE AUDIO` ════', 
   'sticker': ' `STICKERS` 🧸═════',
   'nsfw': ' `NSFW` 🔞══════',
-  'owner': ' `CREADOR` 🐕═════',
+  'owner': ' `CREADOR` 🤍═════',
 }
 
 const defaultMenu = {
   before: `
-Hola *%taguser*, Soy =͟͟͞Jotchua-Mini=͟͟
+Hola *%taguser*, Soy INABAKUMORI
 
-┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🔰 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
-┃🔰 *𝑵𝒊𝒗𝒆𝒍* : *%level*
-┃🪙 *𝑷𝒆𝒔𝒐𝒔* : *%totalexp*
+ ┏━⊜「 *=͟͟͞INFO USUARIO* 」
+┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
+┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
+┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
+┃🪙 *Coins* : *${money}
 ┗━━━━━━━━━━━━━━━━━━⬣
-%readmore
+ ${readMore}
 ┏━⊜「 *=͟͟͞INFO BOT* 」
-┃🐢 *CREADOR*: +5491156673266
-┃👤 *TOTAL USUARIOS* : %totalreg
+┃◣w◢ *CREADOR*: +573017210155
+┃👤 *TOTAL USUARIOS* : ${totalusr}
 ┗━━━━━━━━━━━━━━━━━━⬣
 %readmore
 \t\t\t
@@ -46,7 +46,7 @@ Hola *%taguser*, Soy =͟͟͞Jotchua-Mini=͟͟
   header: '╔════%category╗\n║╭───────────────···',
   body: '║│ %cmd\n',
   footer: '║╰────────────────···\n╚══════════════════╝',
-  after: '> 𝑱 𝑶 𝑻 𝑪 𝑯 𝑼 𝑨 - 𝑴 𝑰 𝑵 𝑰\n> 𝑩𝒚 𝑨𝑳𝑺 \n © 2024 ALS | All rights reserved',
+  after: '> 𝙄 𝙉 𝘼 𝘽 𝘼 𝙆 𝙐 𝙈 𝙊 𝙍 𝙄\n> 𝑩𝒚 𝗠𝗢𝗡𝗦𝗧𝗘𝗥 \n © 2024 Monster | All rights reserved',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {

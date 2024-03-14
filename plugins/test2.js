@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
     try {
     let name2 = conn.getName(m.sender);
-    let apislap = await fetch(`https://nekos.pro/api/boobs`);
+    let apislap = await fetch(`https://api.waifu.im/maid`);
     let jkis = await apislap.json();
     let { url } = jkis;
     conn.sendFile(m.chat,  , {quoted: m});

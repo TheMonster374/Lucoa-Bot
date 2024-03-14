@@ -1,0 +1,18 @@
+import {sticker} from "../lib/sticker.js";
+import fetch from "node-fetch";
+const handler = async (m, { conn, args, usedPrefix, command }) => {
+    try {
+    let name2 = conn.getName(m.sender);
+    let apislap = await fetch(`https://nekos.pro/api/vtuber`);
+    let jkis = await apislap.json();
+    let { url } = jkis;
+    let stiker = await sticker(null, url, `Waifu`, `Jotchua-Mini`);
+    conn.sendFile(m.chat, stiker, null,  {quoted: m});
+  } catch {
+    throw `*ocurrio un error inesperado*`;
+  };
+};
+handler.command = ['test2'];
+export default handler;
+
+{"nekos": {"1": "neko", "2": "nsfw-neko"}, "hentai": {"1": "ai", "2": "ass", "3": "boobs", "4": "creampie", "5": "paizuri", "6": "pussy", "7": "random", "8": "vtuber", "9": "ecchi", "10": "fucking"}, "real": {"1": "irl-ass", "2": "irl-boobs", "3": "irl-creampie", "4": "irl-fucking", "5": "irl-pussy", "6": "irl-random"}}

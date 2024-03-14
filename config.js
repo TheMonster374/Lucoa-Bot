@@ -13,8 +13,8 @@ global.confirmCode = ""
 
 /*NUMERS OWNERS*/
 global.owner = [
- ['5491141493818', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
- ['5491156673266', '?', true],
+ ['573017210155', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
+ ['573178151662', '?', true],
 ];
 /*└────ׂ─ׂ─ׂ─ׂ───*/
 
@@ -27,12 +27,12 @@ global.mods = [];
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
-global.packname = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
-global.author = '𝑩𝒚 𝑨𝑳𝑺';
-global.wm = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
-global.titulowm = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
-global.titulowm2 = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢`
-global.igfg = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
+global.packname = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.author = '𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍';
+global.wm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.titulowm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.titulowm2 = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩`
+global.igfg = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
 //━━━━━ESPERAS━━━━━━━━ 
 global.wait = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐. ⏳*'; 
 global.waitt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.. ⏳*';
@@ -66,27 +66,28 @@ global.fpagedoc = '9999'
 
   
 //━━━━━━━MARCA━━━━━━━━ 
-global.desc = 'WhatsApp Bot Multi Device By ALS'
+global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY MONSTER'
 
 //Enlaces
-global.yt = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.ig = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.paypal = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
+global.yt = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.ig = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.paypal = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.md = 'https://atom.bio/als';
-global.git = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.linkwabot = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.email = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np'
-global.group = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Grupo ofc
-global.group2 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //enlace curiosity
-global.group3 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Curiosity global
-global.group4 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //colaboración multi bots
-global.group5 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - NovaBot
-global.group6 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración GataBot - CuriosityBot
-global.group7 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - Criwilop
-global.group8 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración CuriosityBot - SakuraBot
-global.group9 = 'https://chat.whatsapp.com/F4L8yH7CipS5RWp5LXT0np' //Colaboración OnyxBot - CuriosityBot
-global.channel = 'https://whatsapp.com/channel/F4L8yH7CipS5RWp5LXT0np'
-global.channel2 = 'https://whatsapp.com/channel/F4L8yH7CipS5RWp5LXT0np'
+global.git = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.linkwabot = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.email = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.group = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Grupo ofc
+global.group2 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //enlace curiosity
+global.group3 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Curiosity global
+global.group4 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //colaboración multi bots
+global.group5 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - NovaBot
+global.group6 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración GataBot - CuriosityBot
+global.group7 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - Criwilop
+global.group8 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - SakuraBot
+global.group9 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración OnyxBot - CuriosityBot
+global.channel = 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j'
+global.channel2 = 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j'
+
 global.linkSity = [yt, ig, md, paypal, git, channel, channel2]
 
 //━━━━━━━MARCA━━━━━━━━ 
@@ -122,7 +123,7 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.gt = '𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢';
+global.gt = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired

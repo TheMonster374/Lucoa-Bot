@@ -10,6 +10,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.help = ['neko']
 handler.tags = ['img']
-handler.command = ['TEST']
+handler.command = ['xd']
 
 export default handler

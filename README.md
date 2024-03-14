@@ -1,23 +1,23 @@
-#                                                    Jotchua-Bot
+#                                                    INABAKUMORI-Bot
 
 
 <p align="center">
-<img src="https://telegra.ph/file/e63a31dca58e5e8856381.png" alt="Jotchua-Mini" width="800"/>
+<img src="https://i.pinimg.com/originals/b4/a1/91/b4a191e1d7f4d288f3b1204b159a9ff8.gif" alt="INABAKUMORI" width="500"/>
 
 
 
-## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> grupo del Bot
+## 🤍 GRUPO OFICIAL DEL BOT
 
-<a href="https://chat.whatsapp.com/LpZl6HC1iD3KfoYfDkyjbJ" target="blank"><img src="https://img.shields.io/badge/grupo Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-
-
-
-### `AJUSTES`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/AleXD0009/Jotchua-Bot/fork)
-- CAMBIAR NÚMERO DEL PROPIETARIO(A) [Aqui](https://github.com/AleXD0009/Jotchua-Bot/blob/master/config.js)
+<a href="https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS" target="blank"><img src="https://img.shields.io/badge/GRUPO OFICIAL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
-## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Creator ⚡️" width="42" height="42"> ACTIVAR EN TERMUX
+
+### `⚙️ OPCIONES`
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/TheMonster374/INABAKUMORI-Bot/fork)
+- CAMBIAR NÚMERO DEL PROPIETARIO(A) [Aqui](https://github.com/TheMonster374/INABAKUMORI-Bot/blob/master/config.js)
+
+
+## 👨‍💻 ACTIVAR EN TERMUX
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 cd && termux-setup-storage
@@ -32,7 +32,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/AleXD0009/jotchua-mini.git && cd jotchua-mini
+git clone https://github.com/TheMonster374/INABAKUMORI-Bot.git && cd INABAKUMORI-Bot
 ```
 
 ```bash
@@ -51,20 +51,20 @@ npm update
 npm start
 ```
 
-### `🐶 ACTIVAR EN CASO DE DETENERSE EN TERMUX`
+### `🧏‍♂️ ACTIVAR EN CASO DE DETENERSE EN TERMUX`
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd jotchua-mini
+> cd INABAKUMORI-Bot
 > npm start
 ```
 
-###  OBTENER OTRO CODIGO QR EN TERMUX
-- DETEN EL BOT, HAZ CLICK EN EL SIMBOLO CTRL DE TERMUX MAS Z EN SU TECLADO MOVIL HASTA QUE SALGA ALGO EN VERDE SIMILAR A jotchua-mini $  
+###  ✅ OBTENER OTRO CODIGO QR EN TERMUX
+- DETEN EL BOT, HAZ CLICK EN EL SIMBOLO CTRL DE TERMUX + Z EN SU TECLADO MOVIL HASTA QUE SALGA ALGO EN VERDE SIMILAR A INABAKUMORI-Bot $  
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd jotchua-mini
+> cd INABAKUMORI-Bot
 > rm -rf JTSession
 > npm start
 ```
@@ -76,7 +76,10 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 <a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="150" height="150" alt="BrunoSobrino"/></a>
 
 
-## EDITOR & PROPIETARIO DEL BOT 
+## CREADOR DEL BOT ORIGINAL 
 <a href="https://github.com/AleXD0009"><img src="https://github.com/AleXD0009.png" width="250" height="250" alt="AleXD0009"/></a>
-  
-`Jotchua Bot by ALS`
+
+## EDITOR Y PROPIETARIO
+<a href="https://github.com/TheMonster374"><img src="https://github.com/TheMonster374.png" width="250" height="250" alt="Monster"/></a>
+
+`INABAKUMORI-Bot by MONSTER`

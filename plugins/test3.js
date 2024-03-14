@@ -1,15 +1,14 @@
-import fetch from 'node-fetch'
+let fetch = require('node-fetch')
 
-let handler = async (m, { conn, usedPrefix, command }) => {
-   let res = await fetch('https://any-anime.p.rapidapi.com/v1/anime/gif/1')
-   if (!res.ok) return 
-   let json = await res.json()
-   if (!json.url) return 
-   await conn.sendFile(m.chat, json.url, 'test.gif', '*test*', m)
+let handler = async (m, { conn, text }) => {
+let res = await fetch('https://api.lolhuman.xyz/api/random/nsfw/yaoi?apikey=HIRO')
+if (!res.ok) throw await `${res.status} ${res.statusText}`;
+let json = await res.json();
+let url = json[Math.floor(Math.random() * json.length)]
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'Lu pasti gay kntl', '© SHIRAORI BOT', 'Next', '.yaoi', m)
 }
-
-handler.help = ['neko']
-handler.tags = ['img']
-handler.command = ['xdd']
+handler.command = /^(yaoi)$/i
+handler.tags = ['nsfw']
+handler.help = ['yaoi']
 
 export default handler

@@ -22,20 +22,20 @@ let tags = {
   'audio': ' `EFECTOS DE AUDIO` ════', 
   'sticker': ' `STICKERS` 🧸═════',
   'nsfw': ' `NSFW` 🔞══════',
-  'owner': ' `CREADOR` 🤍═════',
+  'owner': ' `CREADOR` 🐕═════',
 }
 
 const defaultMenu = {
   before: `
-Hola *%taguser*, Soy INABAKUMORI
+Hola *%taguser*, Soy =͟͟͞Jotchua-Mini=͟͟
 
- ┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *%name*
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *%limit*
-┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *%level*
+┏━⊜「 *=͟͟͞INFO USUARIO* 」
+┃🤍 *Nombre* : *%name*
+┃💎 *Diamantes* : *%limit*
+┃🔰 *Nivel* : *%level*
 ┃🪙 *Coins* : *%totalexp*
 ┗━━━━━━━━━━━━━━━━━━⬣
- ${readMore}
+%readmore
 ┏━⊜「 *=͟͟͞INFO BOT* 」
 ┃◣w◢ *CREADOR*: +573017210155
 ┃👤 *TOTAL USUARIOS* : %totalreg
@@ -166,14 +166,3 @@ handler.help = ['menu'];
 handler.command = ['menu', 'Menu', 'comandos', 'Comandos'];
 //handler.command = new RegExp
 export default handler
-
-
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
-
-function clockString(ms) {
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}

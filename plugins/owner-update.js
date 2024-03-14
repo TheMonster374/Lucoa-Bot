@@ -7,8 +7,8 @@ const handler = async (m, { conn, text }) => {
   try {
           const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
           let messager = stdout.toString()
-          if (messager.includes('Already up to date.')) messager = '𝗨𝗣𝗗𝗔𝗧𝗘\n\n*[ ✅ ] 𝒏𝒐 𝒉𝒂𝒚 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏𝒆𝒔 𝒑𝒆𝒏𝒅𝒊𝒆𝒏𝒕𝒆𝒔*'
-          if (messager.includes('Updating')) messager = '𝗨𝗣𝗗𝗔𝗧𝗘\n\n*𝑨𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏 𝒆𝒙𝒊𝒕𝒐𝒔𝒂*\n\n' + stdout.toString()
+          if (messager.includes('Already up to date.')) messager = '[ ✅ ] no hay actualizaciones pendientes*'
+          if (messager.includes('Updating')) messager = '*_actualizacion exitosa_*\n\n' + stdout.toString()
           conn.reply(m.chat, messager, m);
   } catch {      
  try {    
@@ -32,7 +32,7 @@ const handler = async (m, { conn, text }) => {
       }
   } catch (error) {
     console.error(error);
-    let errorMessage2 = '_*[❗] 𝑬𝑹𝑹𝑶𝑹 [❗]*_\n\n*𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒆𝒓𝒓𝒐𝒓 𝒊𝒏𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒐*';
+    let errorMessage2 = '_*[❌] ocurrio un error inesperado_*';
     if (error.message) {
       errorMessage2 += '\n*- Mensaje de error:* ' + error.message;
     }

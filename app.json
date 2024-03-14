@@ -1,10 +1,10 @@
 {
-  "name": "Jotchua-bot",
-  "website": "https://github.com/AleXD0009",
+  "name": "INABAKUMORI-Bot",
+  "website": "https://github.com/TheMonster374",
   "description": "BY ALS",
-  "repository": "https://github.com/AleXD0009/jotchua-mini",
-  "logo": "https://raw.githubusercontent.com/AleXD0009/Jotchua/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/AleXD0009/jotchua-mini",
+  "repository": "https://github.com/TheMonster374/INABAKUMORI-Bot",
+  "logo": "https://github.com/TheMonster374/INABAKUMORI-Bot/master/src/pictures/heroku-icon.jpg",
+  "success_url": "https://github.com/TheMonster374/INABAKUMORI-Bot",
   "keywords": [
     "nodejs",
     "heroku",
@@ -21,8 +21,8 @@
     "oficial",
     "whatsapp-md",
     "bot",
-    "Jotchua-mini",
-    "Jotchua-bot-mini"],
+    "INABAKUMORI",
+    "INABAKUMORI-Bot"],
   "image": "heroku/nodejs",
   "buildpacks": [
     {

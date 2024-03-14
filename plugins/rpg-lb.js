@@ -15,7 +15,7 @@ const handler = async (m, {conn, args, participants}) => {
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
 ┏━━━━━━━━━━━━━━•
-┃-> *TOP ${len} PESOS 🪙*
+┃-> *TOP ${len} COINS 🪙*
 ┃*👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
 ┃
 ┃${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n┃`}

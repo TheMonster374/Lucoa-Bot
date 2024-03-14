@@ -56,26 +56,26 @@ let handler = async (m, { conn, usedPrefix }) => {
    let latensi = speed() - timestamp
    let teks = ` –  *I N F O  B O T*
 
-┌  ރ  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
-│  ރ  *Prefijo* : [  ${usedPrefix}  ]
-│  ރ  *Plataforma* : ${platform()}
-│  ރ  *Servidor* : ${hostname()}
-│  ރ  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
-│  ރ  *FreeRAM* : ${format(freemem())}
-│  ރ  *Speed* : ${latensi.toFixed(4)} ms
-│  ރ  *Uptime* : ${uptime}
-│  ރ  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
-│  ރ  *Registrados* : ${totalreg} Usuarios
-└  ރ  *Comandos* : ${totalcmd} total
+┌   *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
+│    *Prefijo* : [  ${usedPrefix}  ]
+│    *Plataforma* : ${platform()}
+│    *Servidor* : ${hostname()}
+│    *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
+│    *FreeRAM* : ${format(freemem())}
+│    *Speed* : ${latensi.toFixed(4)} ms
+│    *Uptime* : ${uptime}
+│    *Modo* : ${bot.public ? 'Privado' : 'Publico'}
+│    *Registrados* : ${totalreg} Usuarios
+└    *Comandos* : ${totalcmd} total
 
 
  –  *I N F O  C H A T*
 
-┌  ރ  *${groupsIn.length}* Chats en Grupos
-│  ރ  *${groupsIn.length}* Grupos Unidos
-│  ރ  *${groupsIn.length - groupsIn.length}* Grupos Salidos
-│  ރ  *${chats.length - groupsIn.length}* Chats Privados
-└  ރ  *${chats.length}* Chats Totales`
+┌   *${groupsIn.length}* Chats en Grupos
+│   *${groupsIn.length}* Grupos Unidos
+│   *${groupsIn.length - groupsIn.length}* Grupos Salidos
+│   *${chats.length - groupsIn.length}* Chats Privados
+└   *${chats.length}* Chats Totales`
 await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎⭐˖ ⸙',body: false, previewType: 0, thumbnail: catalogo, sourceUrl: ''}}})
 }
 

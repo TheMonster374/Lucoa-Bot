@@ -1,7 +1,7 @@
 import axios from 'axios'
 var handler = async(m, { conn, text }) => {
 
-  if (!text) return conn.reply(m.chat, '[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 𝒅𝒆 𝒖𝒏 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒅𝒆 𝒈𝒊𝒕𝒉𝒖𝒃\n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: githubstalk AleXD0009', m)
+  if (!text) return conn.reply(m.chat, '*_ingresa el nombre de alguin de github_*\n\n*ejemplo*: githubstalk AleXD0009', m)
 
   await m.reply('*B U S C A N D O ✅*')
   let request = await githubstalk(text) 

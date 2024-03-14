@@ -151,8 +151,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4' 
-     let pp2 = 'https://telegra.ph/file/e16f1b132adb7fc40044b.mp4' 
+     let pp = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
+     let pp2 = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
     conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
 
   } catch (e) {

@@ -1352,8 +1352,8 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
 	if (m.money)  
 m.reply(+m.money + '  𝙪𝙨𝙖𝙙𝙤𝙨')
 break
-          }
-        }
+		}
+        
         break;
       }
     }

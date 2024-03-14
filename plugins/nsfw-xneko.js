@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    if (!res.ok) return 
    let json = await res.json()
    if (!json.url) return 
-   await conn.sendFile(m.chat, json.url, 'xneko.png', '*RANDOM NEKO*', m)
+   await conn.sendFile(m.chat, json.url, 'xneko.png', '*nsfw neko*', m)
 }
 
 handler.help = ['xneko']

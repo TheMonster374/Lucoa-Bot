@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
 let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
 let [_, code] = link.match(linkRegex) || []
 
-if (!code) throw `[📚] debes ingresar un enlace \n *Ingrese el enlace de un grupo.\n\n*[💡] ejemplo:*\n*#join ${group}*`
+if (!code) throw `*_debes ingresar un enlace_* \n *Ingrese el enlace de un grupo.\n\n*ejemplo:*\n*#join ${group}*`
 
 if ( isMods || isOwner || m.fromMe) {
 m.reply(`*Jotchua-Mini se unio correctamente al grupo*
@@ -25,6 +25,6 @@ m.reply(`${ag}*✅ TU ENLACE SE ENVIO A MI PROPIETARIO*\n┈┈┈┈┈┈┈�
 handler.help = ['join [chat.whatsapp.com]']
 handler.tags = ['main']
 handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i 
-handler.register = true
+//handler.register = true
 export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

@@ -97,8 +97,8 @@ global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage':
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢 𝑩𝒚 𝑨𝑳𝑺`
-global.adimagen = `𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢 𝑩𝒚 𝑨𝑳𝑺` 
+global.addescargas = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍`
+global.adimagen = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"
@@ -129,7 +129,7 @@ global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 
 global.nomorown = '5491144775561';
-global.wm2 = `${dia} ${fecha}\n𝐉𝐨𝐭𝐜𝐡𝐮𝐚 - 𝐌𝐢𝐧𝐢`
+global.wm2 = `${dia} ${fecha}\n𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩`
 global.multiplier = 99;
 /* RPG */
 global.flaaa = [

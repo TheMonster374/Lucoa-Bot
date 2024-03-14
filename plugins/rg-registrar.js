@@ -4,7 +4,7 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   const user = global.db.data.users[m.sender];
   const name2 = conn.getName(m.sender);
   const pp = await conn.profilePictureUrl(m.chat, 'image').catch((_) => global.imagen1);
-  if (user.registered === true) throw `Ya estas registrado\n\n¿Quieres volver a registrate??\n\n 📌Usa este comando para eliminar tu registro del bot\n*${usedPrefix}unreg* <Número de serie>`;
+  if (user.registered === true) throw `Ya estas registrado\n\n¿Quieres volver a registrarte??\n\n 📌Usa este comando para eliminar tu registro del bot\n*${usedPrefix}unreg* <Número de serie>`;
   if (!Reg.test(text)) throw `uso incorrecto\n\n*ejemplo de uso de comando: ${usedPrefix + command} nombre.edad*\n*Ejemplo: ${usedPrefix + command} als.18*`;
   let [_, name, splitter, age] = text.match(Reg);
   if (!name) throw 'Debes poner un nombre';

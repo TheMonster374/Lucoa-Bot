@@ -493,6 +493,7 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
         if (!isNumber(user.wolf)) user.wolf = 0;
         if (!isNumber(user.wolfexp)) user.wolfexp = 0;
         if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0;
+	if (!isNumber(user.gay)) user.gay = 0; //editando
         if (!isNumber(user.wood)) user.wood = 0;
         if (!isNumber(user.wortel)) user.wortel = 0;
         if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]';
@@ -614,6 +615,7 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
           gamemines: false,
           ganja: 0,
           gardenboxs: 0,
+	  gay: 0, //editado
           gems: 0,
           glass: 0,
           gold: 0,

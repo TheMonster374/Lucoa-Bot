@@ -1,13 +1,13 @@
-/*import fetch from 'node-fetch'
+import fetch from 'node-fetch'
 let handler = async (m, { isPrems, conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
-global.img1 = fs.readFileSync('./src/daily.png');
-let grupos = [group, group2, group3]
-let img1 = (img1);
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'Bot', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
-let dos = [channel, channel2]    
+let grupos = [nna, nn, nnn, nnnt]
+let grupos = null
+let gata = [imagen1, imagen2]
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'bot' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: null, mediaType: 'VIDEO', description: '', title: wm, body: 'Bot', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: null }}}
+let dos = null  
 
 let user = global.db.data.users[m.sender]
 let premium = user.premium
@@ -58,13 +58,11 @@ let text = `╭━━🎁━🎁━🎁━━⬣
 🎟️ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
 let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
 await conn.sendFile(m.chat, img, 'gata.jpg', text, fkontak)
-//await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, img, [['⛰️ 𝘼𝙗𝙧𝙞𝙧 𝙘𝙤𝙛𝙧𝙚  ⛰️', '/cofre'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu'] ], fkontak, m)  
 user.lastclaim = new Date * 1
 }
 handler.help = ['daily']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.command = ['daily', 'reclamar', 'reclamo', 'regalo', 'claim'] 
-handler.register = true
 export default handler
 
 function pickRandom(list) {

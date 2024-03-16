@@ -4,6 +4,8 @@
 <p align="center">
 <img src="https://i.pinimg.com/originals/b4/a1/91/b4a191e1d7f4d288f3b1204b159a9ff8.gif" alt="INABAKUMORI" width="500"/>
 
+## ✨ PÁGINA OFICIAL 👇:
+[![Enlaces](https://img.shields.io/badge/INABAKUMORI_ACCOUNTS-000000%7D?style=for-the-badge&logo=biolink&logoColor=white)](https://www.atom.bio/tm/)
 
 
 ## 🤍 GRUPO OFICIAL DEL BOT

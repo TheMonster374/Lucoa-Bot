@@ -25,7 +25,7 @@ let cart = `╭━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━⬣
 ┃ ${name} 𝑬𝒏 𝒔𝒖 𝒄𝒂𝒓𝒕𝒆𝒓𝒂 𝒕𝒊𝒆𝒏𝒆...
 ┃ ${recursos}
 ╰━━━━〔 𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 〕━━━⬣`
-conn.sendMessage(m.chat, {image: {url: pp}, caption: cart, mentions: conn.parseMention(cart)}, {quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+conn.sendMessage(m.chat, {, caption: cart, mentions: conn.parseMention(cart)}, {quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 /*await conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `👝 ⇢ ${name}\n` + recursos + `\n\n*PARA VER MÁS RECURSOS VISITE EL INVENTARIO*\n*TO SEE MORE RESOURCES VISIT THE INVENTORY*`, img5, [
 ['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace) */ 

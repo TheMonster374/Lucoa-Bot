@@ -46,8 +46,8 @@ global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
 
-global.img1 = 'https://telegra.ph/file/b50345cd24be9cd30c5f8.jpg'
-global.gataMenu = [img1]
+global.img1 = fs.readFileSync('./src/daily.png');
+global.gataMenu = [img1] 
 
 //━━━━━━━IMAGENES1.2━━━━━━━━━━━━ 
 global.imgPerfil = fs.readFileSync('./storage/img/perfil.png')

@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
        txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += ``
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/TheMonster374` },
 'mimetype': `application/pdf`,
 'fileName': `Youtube play mp3`,
 'fileLength': 99999999999999,
@@ -102,7 +102,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += ``
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/TheMonster374` },
 'mimetype': `application/pdf`,
 'fileName': `Youtube Play mp4`,
 'fileLength': 99999999999999,
@@ -162,7 +162,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas 
        txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += ``
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/TheMonster374` },
 'mimetype': `application/pdf`,
 'fileName': `Youtube Play mp3doc`,
 'fileLength': 99999999999999,
@@ -238,7 +238,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        txt += `⛓ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`
        txt += ``
 let buttonMessage= {
-'document': { url: `https://github.com/AleXD0009` },
+'document': { url: `https://github.com/TheMonster374` },
 'mimetype': `application/pdf`,
 'fileName': `Youtube Play mp4doc`,
 'fileLength': 99999999999999,

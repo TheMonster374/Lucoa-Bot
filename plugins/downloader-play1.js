@@ -30,7 +30,7 @@ let play = `*‣* *Nombre:* ${vid.title}
 
 *El audio se esta mandando espere*`.trim()
 conn.sendFile(m.chat, vid.thumbnail, '', play, m)
-let thumbnailBuffer = await axios.get("https://telegra.ph/file/5ed61d8d2e268a1d67c0e.jpg", { responseType: 'arraybuffer' })
+let thumbnailBuffer = await axios.get("https://telegra.ph/file/935629ab669ad9db08726.mp4", { responseType: 'arraybuffer' })
 let buffer = await getBuffer(dl_url)
 let bufferSize = buffer.byteLength
 let contextInfo = {
@@ -41,7 +41,7 @@ showAdAttribution: true,
 title: vid.title,
 body: null,
 mediaType: 2,
-sourceUrl: 'https://atom.bio/als',
+sourceUrl: 'https://atom.bio/tm',
 thumbnail: Buffer.from(thumbnailBuffer.data),
 }}    
 if (bufferSize <= limit * 1024 * 1024) { 

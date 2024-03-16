@@ -45,7 +45,14 @@ ${usedPrefix}advpe
 ${usedPrefix}buscaminas
 ${usedPrefix}mates
 ${usedPrefix}ruleta <cantidad de la apuesta/color>
-
+${usedPrefix}gay <@tag user>
+${usedPrefix}top<texto>
+${usedPrefix}minar
+${usedPrefix}minarcoins
+${usedPrefix}minardiamantes
+${usedPrefix}follar
+${usedPrefix}work
+${usedPrefix}bal
 
 
 `.trim();

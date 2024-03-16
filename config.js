@@ -45,8 +45,9 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.img = fs.readFileSync('./src/daily.png')'
 
+global.img = fs.readFileSync('./src/daily.png')'
+global.gataMenu = [img]
 
 //━━━━━━━IMAGENES1.2━━━━━━━━━━━━ 
 global.imgPerfil = fs.readFileSync('./storage/img/perfil.png')

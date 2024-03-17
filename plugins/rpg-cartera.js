@@ -21,7 +21,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 *NOTA :* 
 Puedes comprar 💎 diamantes usando los comandos
 ❏ *${usedPrefix}buy <cantidad>*
-❏ *${usedPrefix}buyall*`, fkontak, { mentions: [who] })
+❏ *${usedPrefix}buyall*`, fkontak )
 }
 handler.help = ['balance']
 handler.tags = ['rpg']

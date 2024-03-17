@@ -18,6 +18,10 @@ say('INABAKUMORI-BOT', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']});
+say('Version 1.0.1', {
+  font: 'console',
+  align: 'center',
+  gradient: ['red', 'magenta']});
 say(`By Monster`, {
   font: 'console',
   align: 'center',

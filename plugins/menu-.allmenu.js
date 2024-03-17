@@ -22,7 +22,7 @@ let tags = {
   'audio': ' `EFECTOS DE AUDIO` ════', 
   'sticker': ' `STICKERS` 🧸═════',
   'nsfw': ' `NSFW` 🔞══════',
-  'owner': ' `CREADOR` 🐕═════',
+  'owner': ' `CREADOR` 🗿🚬═════',
 }
 
 const defaultMenu = {

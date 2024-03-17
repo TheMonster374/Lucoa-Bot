@@ -6,16 +6,17 @@ let handler = async (m, {conn, usedPrefix}) => {
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ El usuario no se encuentra en mi base de datos`
     conn.reply(m.chat, `
-┌───⊷ *BALANCE* ⊶
-▢ *📌Nombre* : _@${who.split('@')[0]}_
-▢ *💎Diamantes* : _${user.limit}_
-▢ *🪙coins* : _${user.money}_
-▢ *⬆️XP* : _${user.exp}_
-▢  *tokens*: ${user.joincount}
-▢ *📍rango* : ${user.role}
-▢ *📍nivel* : ${user.level}
-▢ *🎟️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
-└──────────────
+╭━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━⬣
+┃  𝑬𝒏 𝒔𝒖 𝒄𝒂𝒓𝒕𝒆𝒓𝒂 𝒕𝒊𝒆𝒏𝒆...
+┃ *📌Nombre* : _@${who.split('@')[0]}_
+┃ *💎Diamantes* : _${user.limit}_
+┃ *🪙coins* : _${user.money}_
+┃ *⬆️XP* : _${user.exp}_
+┃  *tokens*: ${user.joincount}
+┃ *📍rango* : ${user.role}
+┃ *📍nivel* : ${user.level}
+┃ *🎟️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+╰━━━━〔 𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 〕━━━⬣
 
 *NOTA :* 
 Puedes comprar 💎 diamantes usando los comandos

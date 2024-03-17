@@ -3,12 +3,13 @@ let handler = async (m, {conn, usedPrefix}) => {
 
     let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ El usuario no se encuentra en mi base de datos`
     conn.reply(m.chat, `
-╭━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━⬣
+╭━━━━━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━━━━⬣
 ┃  𝑬𝒏 𝒔𝒖 𝒄𝒂𝒓𝒕𝒆𝒓𝒂 𝒕𝒊𝒆𝒏𝒆...
-┃ *📌Nombre* : _@${who.split('@')[0]}_
+┃ *📌Nombre* : _${taguser}_
 ┃ *💎Diamantes* : _${user.limit}_
 ┃ *🪙coins* : _${user.money}_
 ┃ *⬆️XP* : _${user.exp}_

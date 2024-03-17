@@ -1,3 +1,35 @@
+
+let handler = async (m, {conn, usedPrefix}) => {
+
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    let user = global.db.data.users[who]
+    if (!(who in global.db.data.users)) throw `✳️ El usuario no se encuentra en mi base de datos`
+    conn.reply(m.chat, `
+┌───⊷ *BALANCE* ⊶
+▢ *📌Nombre* : _@${who.split('@')[0]}_
+▢ *💎Diamantes* : _${user.limit}_
+▢ *🪙coins* : _${user.money}_
+▢ *⬆️XP* : _${user.exp}_
+▢  *tokens*: ${user.joincount}
+▢ *📍rango* : ${user.role}
+▢ *📍nivel* : ${user.level}
+▢ *🎟️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
+└──────────────
+
+*NOTA :* 
+Puedes comprar 💎 diamantes usando los comandos
+❏ *${usedPrefix}buy <cantidad>*
+❏ *${usedPrefix}buyall*`, fkontak, { mentions: [who] })
+}
+handler.help = ['balance']
+handler.tags = ['rpg']
+handler.command = ['bal', 'diamantes', 'diamond', 'balance'] 
+
+export default handler
+
+
+
 /*import fetch from 'node-fetch'
 let handler = async (m, { usedPrefix, conn}) => {	
 let who

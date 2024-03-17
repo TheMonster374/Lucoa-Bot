@@ -24,7 +24,7 @@ Puedes comprar 💎 diamantes usando los comandos
 }
 handler.help = ['balance']
 handler.tags = ['rpg']
-handler.command = ['bal', 'diamantes', 'diamond', 'balance'] 
+handler.command = ['bal', 'diamantes', 'diamond', 'balance', 'cartera'] 
 
 export default handler
 

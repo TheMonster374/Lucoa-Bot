@@ -5,7 +5,7 @@ const handler = async (m, { conn, command, text }) => {
         if (!text) throw `*Por favor, menciona el usuario al que quieres mencionar.*`;
 
         // Obtiene el usuario mencionado en el texto del comando
-        let user = m.mentionedJid[0] : m.quoted.sender;
+        let user = m.mentionedJid[0];
 
         // URL de la API según el comando
         let apiUrl = 'https://nekos.life/api/v2/img/ngif';
@@ -19,7 +19,7 @@ const handler = async (m, { conn, command, text }) => {
         let { url } = jkis;
 
         // Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API   // Envía el texto mencionando al usuario con la imagen
+        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'ngif' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API   // Envía el texto mencionando al usuario con la imagen
         
         conn.reply(m.chat, `
 🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤

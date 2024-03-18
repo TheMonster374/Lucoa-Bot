@@ -19,7 +19,7 @@ const handler = async (m, { conn, command, text }) => {
         let { url } = jkis;
 
         // Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API   // Envía el texto mencionando al usuario con la imagen
+        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'video/mp4' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API   // Envía el texto mencionando al usuario con la imagen
         
         conn.reply(m.chat, `
 🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤

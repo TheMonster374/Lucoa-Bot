@@ -24,7 +24,7 @@ const handler = async (m, { conn, command, text }) => {
         conn.reply(m.chat, `
 🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤
 
-*¡${user}!* 
+*¡${user}!* TE MAMO EL MONSTRUO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤`, null, { mentions: [m.sender] });
 
         

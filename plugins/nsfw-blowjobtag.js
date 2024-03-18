@@ -32,8 +32,8 @@ const handler = async (m, { conn, command, text }) => {
     }
 };
 
-handler.help = ['sneko', 'swaifu', 'sblowjob', 'strap'].map((v) => v + ' <@usuario>');
-handler.tags = ['fun'];
-handler.command = /^(sneko|swaifu|sblowjob|strap)$/i;
+handler.help = ['blowjob'].map((v) => v + ' <@usuario>');
+handler.tags = ['nsfw'];
+handler.command = /^(blowjob)$/i;
 handler.register = true;
 export default handler;

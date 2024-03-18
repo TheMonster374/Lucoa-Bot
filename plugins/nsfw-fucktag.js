@@ -9,7 +9,7 @@ const handler = async (m, { conn, command, text }) => {
 
         // URL de la API según el comando
         let apiUrl = 'https://nekos.pro/api';
-        if (command == 'blowjob') {
+        if (command == 'fuck') {
             apiUrl = 'https://nekos.pro/api/fucking';
         } 
 

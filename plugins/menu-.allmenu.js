@@ -4,25 +4,25 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': '📄 `INFO` 📄══════',
-  'game': '🎮 `JUEGOS` 🎮═════',
-  'jadibot': '🤖 `SUBBOTS` 🤖═════',
-  'rpg': ' `ECONOMIA` 💸══════',
-  'rg': ' `REGISTRO` 📊═════',
-  'downloader': '📥 `DESCARGAS` 📤════',
-  'stalkear' : ' `STALKEAR` 👤════' ,
-  'ia' : '🤖 `IA` 🤖═══════' ,
-  'efectos' : ' `EFECTOS Y LOGOS` ══' ,
-  'nable': ' `ACTIVADORES` 📋══',
-  'grupo' : '🌱 `GRUPOS` 🌱════' ,
-  'search': '═ `BUSCADOR`🔎════',
-  'img': '═🖼 `IMAGENES` 🖼═══',
-  'tools': ' `HERRAMIENTAS` ═══',
-  'fun': '═ `DIVERSION` 🎉════',
-  'audio': ' `EFECTOS DE AUDIO` ════', 
-  'sticker': ' `STICKERS` 🧸═════',
-  'nsfw': ' `NSFW` 🔞══════',
-  'owner': ' `CREADOR` 🗿🚬═════',
+  'main': '📄 `INFO` 📄',
+  'game': '🎮 `JUEGOS` 🎮',
+  'jadibot': '🤖 `SUBBOTS` 🤖',
+  'rpg': ' `ECONOMIA` 💸',
+  'rg': ' `REGISTRO` 📊',
+  'downloader': '📥 `DESCARGAS` 📤',
+  'stalkear' : ' `STALKEAR` 👤' ,
+  'ia' : ' `IA` 🤖' ,
+  'efectos' : ' `EFECTOS Y LOGOS` ✨' ,
+  'nable': ' `ENABLE/DISABLE` ☑️',
+  'grupo' : '🤍 `GRUPOS` 🤍' ,
+  'search': ' `BUSCADOR`🔎',
+  'img': ' `IMAGENES` 🖼',
+  'tools': ' `HERRAMIENTAS` 🛠️',
+  'fun': '`DIVERSION` 👻',
+  'audio': ' `EFECTOS DE AUDIO` 🎙️', 
+  'sticker': ' `STICKERS` 🤑',
+  'nsfw': ' `NSFW` 🔞',
+  'owner': ' `CREADOR` 🗿🚬',
 }
 
 const defaultMenu = {
@@ -32,7 +32,7 @@ Hola *%taguser*, Soy INABAKUMORI
 ┏━⊜「 *=͟͟͞INFO USUARIO* 」
 ┃🤍 *Nombre* : *%name*
 ┃💎 *Diamantes* : *%limit*
-┃🔰 *Nivel* : *%level*
+┃🏆 *Nivel* : *%level*
 ┃🪙 *Coins* : *%totalexp*
 ┗━━━━━━━━━━━━━━━━━━⬣
 %readmore
@@ -43,9 +43,9 @@ Hola *%taguser*, Soy INABAKUMORI
 %readmore
 \t\t\t
 `.trimStart(),
-  header: '┏━⊜%category╗\n║╭───────────────···',
+  header: '┏━⊜%category╗\n╭─────────────···',
   body: '┃│ %cmd\n',
-  footer: '║╰────────────────···\n┗━━━━━━━━━━━━━━━━━━⬣',
+  footer: '╰──────────────···\n┗━━━━━━━━━━━━━━━━━━⬣',
   after: '> 𝙄 𝙉 𝘼 𝘽 𝘼 𝙆 𝙐 𝙈 𝙊 𝙍 𝙄\n> 𝑩𝒚 𝗠𝗢𝗡𝗦𝗧𝗘𝗥 \n © 2024 Monster | All rights reserved',
 }
 

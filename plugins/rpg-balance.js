@@ -14,7 +14,7 @@ m.reply(`
 ❏ *${usedPrefix}buyall*`)
 }
 handler.help = ['bal']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.command = ['bal', 'diamantes', 'diamond', 'balance'] 
 handler.register = true
 export default handler

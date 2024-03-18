@@ -70,7 +70,7 @@ m.reply(`*${minar} ${xp} XP*`)
 user.lastmiming = new Date * 1  
 }
 handler.help = ['minar']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.command = ['minar', 'miming', 'mine', 'minarxp', 'minarexp', 'minarexperiencia'] 
 handler.fail = null
 handler.exp = 0

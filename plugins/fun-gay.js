@@ -8,12 +8,13 @@ const handler = async (m, {conn}) => {
   }), 'error.png', '*🏳️‍🌈 𝑴𝒊𝒓𝒆n 𝒂 𝒆𝒔𝒕𝒆 𝒈𝒂𝒚 𝒍𝒆 𝒈𝒖𝒔𝒕𝒂 𝒍𝒂 𝒑𝒊𝒋𝒂! 🏳️‍🌈*', m);
   await conn.sendMessage(m.chat, {audio: {url: vn}, fileName: `error.mp3`, mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
 };
-handler.help = ['gay'];
-handler.tags = ['logo'];
-handler.command = /^(gay)$/i;
-export default handler;
 
-
+handler.help = ['gay'].map((v) => v + ' <@user>')
+handler.tags = ['fun']
+handler.command = /^(gay)$/i
+handler.fail = null
+handler.register = true
+export default handler
 
 
 /*

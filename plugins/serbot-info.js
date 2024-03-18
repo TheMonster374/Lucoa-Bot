@@ -11,8 +11,8 @@ async function handler(m, { usedPrefix }) {
 ${b}`) 
   
 }
-handler.help = ['bots']
-handler.tags = ['serbot']
+handler.help = ['serbot']
+handler.tags = ['jadibot']
 handler.command = ['listbot', 'listbots', 'bots', 'bebots', 'botlist'] 
 
 export default handler

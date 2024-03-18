@@ -8,9 +8,9 @@ const handler = async (m, { conn, command, text }) => {
         let user = text.trim();
 
         // URL de la API según el comando
-        let apiUrl = 'https://nekos.life/api/v2/img/ngif';
+        let apiUrl = 'https://api.waifu.pics/nsfw';
         if (command == 'sblowjob') {
-            apiUrl = 'https://nekos.life/api/v2/img/ngif/blowjob';
+            apiUrl = 'https://api.waifu.pics/nsfw/blowjob';
         } 
 
         // Obtiene la imagen de la API

@@ -18,8 +18,7 @@ const handler = async (m, { conn, command, text }) => {
         let jkis = await (await fetch(apiUrl)).json();
         let { url } = jkis;
 
-        // Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'gif' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
+        conn.sendFile(m.chat, gif, null, {asGif: true}, m, true, {contextInfo: {forwardingScore: 200, isForwarded: true}}, {quoted: m});
         // Envía el texto mencionando al usuario con la imagen
         conn.reply(m.chat, `
 🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤

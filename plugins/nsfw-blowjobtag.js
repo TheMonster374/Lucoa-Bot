@@ -9,7 +9,7 @@ const handler = async (m, { conn, command, text }) => {
 
         // URL de la API según el comando
         let apiUrl = 'https://api.waifu.pics/nsfw';
-        if (command == 'sblowjob') {
+        if (command == 'blowjob') {
             apiUrl = 'https://api.waifu.pics/nsfw/blowjob';
         } 
 

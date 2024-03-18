@@ -1,33 +1,40 @@
 import fetch from "node-fetch";
-let handler = async (m, { conn, command, text }) => {
-if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
-let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
-conn.reply(m.chat, 
-const handler = async (m, { conn, command }) => {
+
+const handler = async (m, { conn, command, text }) => {
     try {
-        let text = ''; // Aquí puedes definir el texto que quieras enviar junto con la imagen o GIF
-        let apiUrl = `https://api.waifu.pics/nsfw/${command}`;
+        if (!text) throw `*Por favor, menciona el usuario al que quieres mencionar.*`;
+
+        // Obtiene el usuario mencionado en el texto del comando
+        let user = text.trim();
+
+        // URL de la API según el comando
+        let apiUrl = 'https://api.waifu.pics/nsfw/';
+        
+        if (command == 'blowjob') {
+            apiUrl = 'https://api.waifu.pics/nsfw/blowjob';
+        } 
+
+        // Obtiene la imagen de la API
         let jkis = await (await fetch(apiUrl)).json();
         let { url } = jkis;
 
-        // Envío del texto mencionando al usuario con la imagen o GIF
+        // Envía el texto mencionando al usuario con la imagen
         conn.reply(m.chat, `
 🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤
 
-*LA PERRA DE* *${text}* ⁩ *TE HA HECHO LA MMDA DE TU VIDA, QUE PERRA, COMO GOZABA LA MALDITA SORRA!*
+*¡${user}!* 
+🤤🥵 *¡QUE PERRA ERES* 🥵🤤`, null, { mentions: [m.sender] });
 
-🤤🥵 *¡TREMENDA MMDA!* 🥵🤤`, null, { mentions: [m.sender] });
-
-        // Envío de la imagen o GIF
-        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'image/gif' }); // Puedes ajustar el mimetype según el tipo de archivo que estés recibiendo de la API
+        // Envía la imagen obtenida de la API
+        conn.sendFile(m.chat, url, '', '', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 
     } catch {
         throw `*Ocurrió un error inesperado*`;
     }
 };
 
-handler.help = [blowjob].map((v) => v + ' <@user>');
-handler.tags = ['fun'];
-handler.command = /^(blowjob|strap)$/i;
+handler.help = ['blowjob'].map((v) => v + ' <@usuario>');
+handler.tags = ['nsfw'];
+handler.command = /^(blowjob)$/i;
 handler.register = true;
 export default handler;

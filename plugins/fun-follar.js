@@ -10,8 +10,9 @@ conn.reply(m.chat, `
 🤤🥵 *¡𝐘𝐀 𝐓𝐄 𝐇𝐀𝐍 𝐅𝐎𝐋𝐋𝐀𝐃𝐎!* 🥵🤤`, null, { mentions: [user] })
 }
 
-handler.command = /^(Follar|violar)/i
+handler.help = ['follat', 'violar'].map((v) => v + ' <teks>')
+handler.tags = ['fun']
+handler.command =/^(Follar|violar)/i
 handler.fail = null
 handler.register = true
-handler.tag = ['fun']
 export default handler

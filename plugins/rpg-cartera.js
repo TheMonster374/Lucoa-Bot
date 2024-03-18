@@ -24,10 +24,9 @@ Puedes comprar 💎 diamantes usando los comandos
 ❏ *${usedPrefix}buy <cantidad>*
 ❏ *${usedPrefix}buyall*`, fkontak )
 }
-handler.help = ['balance']
+handler.help = ['cartera']
 handler.tags = ['rpg']
-handler.command = ['bal', 'diamantes', 'diamond', 'balance', 'cartera'] 
-
+handler.command = ['cartera']
 export default handler
 
 

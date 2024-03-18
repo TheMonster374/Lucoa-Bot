@@ -5,7 +5,7 @@ const handler = async (m, { conn, command, text }) => {
         if (!text) throw `*Por favor, menciona el usuario al que quieres mencionar.*`;
 
         // Obtiene el usuario mencionado en el texto del comando
-        let user = m.mentionedJid[0];
+        let user = text.trim();
 
         // URL de la API según el comando
         let apiUrl = 'https://nekos.life/api/v2/img/ngif';

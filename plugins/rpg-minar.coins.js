@@ -70,8 +70,8 @@ await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak)
 ], m,)*/
 user.lastcoins = new Date * 1  
 }
-handler.help = ['minar2']
-handler.tags = ['coins']
+handler.help = ['minarcoins']
+handler.tags = ['rpg']
 handler.command = ['minar2', 'miming2', 'mine2', 'minarcoins'] 
 handler.fail = null
 handler.exp = 0

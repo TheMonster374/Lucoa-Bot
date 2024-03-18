@@ -106,7 +106,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
             //m.reply(str)
 }}}
 handler.help = ['levelup']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
 handler.exp = 0
 export default handler

@@ -54,7 +54,7 @@ const handler = async (m, {isPrems, conn}) => {
   user.lastclaim = new Date * 1;
 };
 handler.help = ['daily'];
-handler.tags = ['xp'];
+handler.tags = ['rpg'];
 handler.command = ['daily', 'reclamar', 'reclamo', 'regalo', 'claim'];
 export default handler;
 

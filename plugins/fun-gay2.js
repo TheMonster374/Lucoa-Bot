@@ -4,7 +4,7 @@ const percentages = (500).getRandom();
   let emoji = '';
   let description = '';
   switch (command) {
-    case 'gay2':
+    case 'gay3':
       emoji = '🏳️‍🌈';
       if (percentages < 50) {
         description = `*Los calculos han arrojado que 😄*${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n Eso es bajo... ¡Tu eres Joto, no Gay!`;
@@ -15,7 +15,7 @@ const percentages = (500).getRandom();
       }
       break;
 
-handler.command = /^(gay2)$/i;
+handler.command = /^(gay3)$/i;
 export default handler
 
 

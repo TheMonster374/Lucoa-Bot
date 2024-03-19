@@ -78,45 +78,11 @@ ${usedPrefix}bikini
 ${usedPrefix}whitehair
 ${usedPrefix}blonde
 ${usedPrefix}pinkhair
- bed
-ponytail
-nude
-dress
-underwear
-foxgirl
-uniform
-skirt
-sex
-sex2
-sex3
-breast
-twintail
-spreadpussy
-tears
-║│ .seethrough
-║│ .breasthold
-║│ .drunk
-║│ .fateseries
-║│ .spreadlegs
-║│ .openshirt
-║│ .headband
-║│ .food
-║│ .close
-║│ .tree
-║│ .nipples
-║│ .erectnipples
-║│ .horns
-║│ .greenhair
-║│ .wolfgirl
-║│ .catgirl
-║│ .xneko
-║│ .nsfw
-║│ .tentaculos
-║│ .nsfwloli
-║│ .nsfwcum
-║│ .nsfwbdsm
-║│ .hentaipdf
-║│ .rule34
+${usedPrefix}xneko
+${usedPrefix}nsfw
+${usedPrefix}tentaculos
+${usedPrefix}nsfwloli
+${usedPrefix}rule34
 `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

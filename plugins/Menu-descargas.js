@@ -68,7 +68,7 @@ ${usedPrefix}videodoc
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
   }
 };
-handler.command = /^(menujuegos|MenuJuegos|MENUJUEGOS)$/i;
+handler.command = /^(menudescargas|MenuDescargas|MENUDESCARGAS)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

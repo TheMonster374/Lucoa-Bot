@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command }) => {
-    let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
+    let user = text.trim();
     let porcentaje = Math.floor(Math.random() * 501); // Generar un número aleatorio entre 0 y 500
     conn.reply(m.chat, `*${user} ES ${porcentaje}% PUTA, ESCRIBANLE AL PRIV*.`, null, { mentions: [user] })
 }

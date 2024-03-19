@@ -5,9 +5,9 @@ let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     conn.reply(m.chat, `*🏳️‍🌈🏳️‍🌈${user} ES ${porcentaje}% LESBIANA, QUE GAY🏳️‍🌈🏳️‍🌈*.`, null, { mentions: [user] })
 }
 
-handler.help = ['puta'].map((v) => v + ' <@user>')
+handler.help = ['lesbiana'].map((v) => v + ' <@user>')
 handler.tags = ['fun']
-handler.command =/^(puto|puta)/i
+handler.command =/^(lesbiana)/i
 handler.fail = null
 handler.register = true
 export default handler

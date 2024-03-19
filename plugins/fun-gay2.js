@@ -1,3 +1,5 @@
+const handler = async (m, { conn, command, text, usedPrefix }) => {
+  if (!text) throw `etiqueta a alguien para saber que tan gay es`;
 const percentages = (500).getRandom();
   let emoji = '';
   let description = '';

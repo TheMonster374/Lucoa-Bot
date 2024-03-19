@@ -35,6 +35,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┗━━━━━━━━━━━━━━━━━━⬣
  ${readMore}
 
+${usedPrefix}blowjob <@user>
+${usedPrefix}fuck <@user>
 ${usedPrefix}genshin
 ${usedPrefix}swimsuit
 ${usedPrefix}schoolswimsuit

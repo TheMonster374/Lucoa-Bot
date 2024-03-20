@@ -170,6 +170,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.cupon)) user.cupon = 0;
         if (!isNumber(user.diamond)) user.diamond = 3;
         if (!isNumber(user.dog)) user.dog = 0;
+	if (!isNumber(user.fantasy)) user.fantasy = 0
         if (!isNumber(user.dogexp)) user.dogexp = 0;
         if (!isNumber(user.doglastfeed)) user.doglastfeed = 0;
         if (!isNumber(user.dory)) user.dory = 0;
@@ -200,10 +201,12 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.ganja)) user.ganja = 0;
         if (!isNumber(user.gardenboxs)) user.gardenboxs = 0;
         if (!isNumber(user.gems)) user.gems = 0;
-	if (!isNumber(user.fantasy)) user.fantasy = []
+if (!isNumber(user.fantasy)) user.fantasy = []
 if (!isNumber(user.fantasy_character)) user.fantasy_character = 0
 if (!isNumber(user.fantasy_character2)) user.fantasy_character2 = 0
 if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
+if (!isNumber(user.fantasy_character4)) user.fantasy_character4 = 0
+if (!isNumber(user.fantasy_character5)) user.fantasy_character5 = 0
         if (!isNumber(user.glass)) user.glass = 0;
         if (!isNumber(user.glimit)) user.glimit = 20;
         if (!isNumber(user.glory)) user.glory = 0;
@@ -627,12 +630,15 @@ if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
           gurita: 0,
           harimau: 0,
           haus: 100,
+	fantasy: [],
+fantasy_character: 0,
+fantasy_character2: 0,
+fantasy_character3: 0,
+fantasy_character4: 0,
+fantasy_character5: 0,
           healt: 100,
           health: 100,
           healtmonster: 100,
-	  fantasy_character: 0,
-          fantasy_character2: 0,
-          fantasy_character3: 0,
           hero: 1,
           herolastclaim: 0,
           hiu: 0,

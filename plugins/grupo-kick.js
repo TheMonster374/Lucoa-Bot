@@ -3,7 +3,6 @@ try{
 let texto = `etiqueta a alguien para eliminar, ejemplo:${usedPrefix + command} @${global.owner[0][0]}*`
 const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}
 
-if (!global.db.data.settings[conn.user.jid].restrict) return conn.sendButton(m.chat, wm, `${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsSoloOwner']()}`, null, [[lenguajeGB.smsEncender(), `${usedPrefix}on restringir`]], fkontak, m)
 if (!m.mentionedJid[0] && !m.quoted) return m.reply(texto, m.chat, { mentions: conn.parseMention(texto)}) 
 let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
 let owr = m.chat.split`-`[0]
@@ -12,7 +11,7 @@ if (m.message.extendedTextMessage === undefined || m.message.extendedTextMessage
 if(m.message.extendedTextMessage.contextInfo.participant !== null && m.message.extendedTextMessage.contextInfo.participant != undefined && m.message.extendedTextMessage.contextInfo.participant !== "") {
 
 var mentioned = m.message.extendedTextMessage.contextInfo.mentionedJid[0] ? m.message.extendedTextMessage.contextInfo.mentionedJid[0] : m.message.extendedTextMessage.contextInfo.participant
-if(conn.user.jid.includes(mentioned)) return conn.reply(m.chat, `${lenguajeGB['smskick1']()}${usedPrefix + command} @${global.owner[0][0]}*`, fkontak, m)
+if(conn.user.jid.includes(mentioned)) return conn.reply(m.chat, `${usedPrefix + command} @${global.owner[0][0]}*`, fkontak, m)
 //let eliminar = await conn.groupParticipantsUpdate(m.chat, [mentioned], 'remove')
 let done = `*@${mentioned.split("@")[0]} ✅*`
 let err1 = `*@${mentioned.split("@")[0]}*`

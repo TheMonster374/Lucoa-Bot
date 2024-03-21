@@ -248,11 +248,11 @@ let str = `
 *_INABAKUMORI-BOT_*`.trim()
 conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
 
-} /*catch (e) {
+} catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(`❗❗ ['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
-}}*/
+}}*ñ
 
 handler.help = ['menuaudios']
 handler.tags = ['grupo', 'owner']

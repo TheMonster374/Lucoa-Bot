@@ -32,7 +32,7 @@ const handler = async (m, { conn, command, text }) => {
 
 }
         
-    } catch {
+    catch {
         throw `*Ocurrió un error inesperado*`;
     }
 };

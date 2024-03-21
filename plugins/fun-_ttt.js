@@ -84,18 +84,18 @@ await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, {
 if (isTie || isWin) {
 users[room.game.playerX].limit += dia //empate
 users[room.game.playerX].joincount += tok
-users[room.game.playerX].money += gata
+users[room.game.playerX].money += coins
 users[room.game.playerX].exp += expp
         
 users[room.game.playerO].limit += dia //empate
 users[room.game.playerO].joincount += tok
-users[room.game.playerO].money += gata
+users[room.game.playerO].money += coins
 users[room.game.playerO].exp += expp 
         
 if (isWin)
 users[winner].limit += dia2 //Ganador
 users[winner].joincount += tok2
-users[winner].money += gata2
+users[winner].money += coins2
 users[winner].exp += expp2
         
 if (debugMode)

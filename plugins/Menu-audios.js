@@ -244,7 +244,7 @@ let str = `
 𝒐 𝒄𝒐𝒔𝒂 𝒏𝒖𝒆𝒗𝒂 𝒉𝒂𝒃𝒍𝒂 𝒄𝒐𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇𝒄 𝒅𝒆𝒍 𝒃𝒐𝒕
 
 *_INABAKUMORI-BOT_*`.trim()
-conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
+conn.sendFile(m.chat, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
 
 } catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)

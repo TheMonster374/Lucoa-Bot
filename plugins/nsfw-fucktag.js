@@ -7,8 +7,13 @@ const handler = async (m, { conn, command, text }) => {
         let user = text.trim();
 
         // URL de la API según el comando
-        let apiUrl = 'https://api.waifu.pics/nsfw';
-    let jkis = await (await fetch(apiUrl)).json();
+        let apiUrl = 'https://nekos.pro/api';
+        if (command == 'fuck') {
+            apiUrl = 'https://nekos.pro/api/fucking';
+        } 
+
+        // Obtiene la imagen de la API
+        let jkis = await (await fetch(apiUrl)).json();
         let { url } = jkis;
 
         // Envía el texto mencionando al usuario con la imagen

@@ -18,8 +18,8 @@ const handler = async (m, { conn, command, text }) => {
 
         // Envía el texto mencionando al usuario con la imagen
         conn.reply(m.chat, `
-🤤👅🥵 *TE HAN HECHO UNA MMDA*🥵👅🤤
-*¡${user}!* TE MAMO EL MONSTRUO 😈
+🤤👅🥵 *TE HAS COGIDO A ${user}*🥵👅🤤
+*¡${user}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤`, null, { mentions: [m.sender] });
 
         // Envía la imagen obtenida de la API
@@ -29,7 +29,7 @@ const handler = async (m, { conn, command, text }) => {
         throw `*Ocurrió un error inesperado*`;
     }
 };
-handler.help = ['fuck'].map((v) => v + ' <@usuario>');
+handler.help = ['fuck'].map((v) => v + ' <@user>');
 handler.tags = ['nsfw'];
 handler.command = /^(fuck)$/i;
 handler.register = true;

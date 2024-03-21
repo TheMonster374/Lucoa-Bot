@@ -1,4 +1,4 @@
-let handler = async (m, { conn, command, text }) => {
+/*let handler = async (m, { conn, command, text }) => {
     if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
     let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     let mentionedUser = await conn.getName(m.sender) // Obtenemos el nombre del usuario que envió el mensaje original
@@ -17,7 +17,7 @@ handler.tags = ['fun']
 handler.command =/^(Follar|violar)/i
 handler.fail = null
 handler.register = true
-export default handler
+export default handler*/
     
     
     
@@ -25,8 +25,7 @@ export default handler
  
 
 
-
-/*let handler = async (m, { conn, command, text }) => {
+let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     let mentionedUser = await conn.getName(user) // Obtiene el nombre del usuario mencionado

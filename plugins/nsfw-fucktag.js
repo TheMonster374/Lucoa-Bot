@@ -29,8 +29,8 @@ const handler = async (m, { conn, command, text }) => {
         throw `*Ocurrió un error inesperado*`;
     }
 };
-handler.help = ['blowjob'].map((v) => v + ' <@usuario>');
+handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];
-handler.command = /^(blowjob)$/i;
+handler.command = /^(fuck)$/i;
 handler.register = true;
 export default handler;

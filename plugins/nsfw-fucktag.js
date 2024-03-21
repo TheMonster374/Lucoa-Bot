@@ -30,7 +30,7 @@ const handler = async (m, { conn, command, text }) => {
         conn.sendFile(m.chat, url, '', `🤤👅🥵 TE COGISTES A ${mentionedUser}`, m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 
 
-})
+}
         
     } catch {
         throw `*Ocurrió un error inesperado*`;

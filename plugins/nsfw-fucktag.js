@@ -22,12 +22,12 @@ const handler = async (m, { conn, command, text }) => {
 
        // Envía el texto mencionando al usuario con la imagen
         conn.reply(m.chat, `
-🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${mentionedUser}*🥵👅🤤
-*¡${mentionedUser}!* TE HAN VIOLADO 😈
+🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${user}*🥵👅🤤
+*¡${user}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤`, null, { mentions: [m.sender] });
 
         // Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', null, { mentions: [m.sender] });*', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
+        conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', null, { mentions: [m.sender] });, m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 
     } catch {
         throw `*Ocurrió un error inesperado*`;
@@ -36,6 +36,6 @@ const handler = async (m, { conn, command, text }) => {
 
 handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];
-handler.command = /^(blowjob)$/i;
+handler.command = /^(fuck)$/i;
 handler.register = true;
 export default handler;

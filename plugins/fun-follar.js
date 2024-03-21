@@ -1,7 +1,7 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
-    let mentionedUser = conn.getName(user) // Obtiene el nombre del usuario mencionado
+    let mentionedUser = await conn.getName(user) // Obtiene el nombre del usuario mencionado
     if (!mentionedUser) throw 'No se pudo obtener el nombre del usuario.'
  conn.reply(m.chat, `
 🤤👅🥵 *𝐀𝐂𝐀𝐁𝐀𝐒 𝐃𝐄 𝐅𝐎𝐋𝐋𝐀𝐑𝐓𝐄𝐋@!*🥵👅🤤

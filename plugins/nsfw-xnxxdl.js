@@ -35,7 +35,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
   }
 };
 handler.help = ['xnxx'] 
-handler.tags = ['nsfw', 'prem']
+handler.tags = ['nsfw']
 handler.command = ['xnxxsearch', 'xnxxdl', 'xnxx'] 
 handler.limit = 2
 handler.premium = false

@@ -1,8 +1,7 @@
 import fetch from "node-fetch";
 
 const handler = async (m, { conn, command, text }) => {
-    try {
-        if (!text) throw `*Por favor, menciona el usuario al que quieres enviar el mensaje.*`;
+    try {if (!text) throw `*Por favor, menciona el usuario al que quieres enviar el mensaje.*`;
     }
         // Obtiene el usuario mencionado en el texto del comando
         let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender

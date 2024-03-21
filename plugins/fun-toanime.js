@@ -62,4 +62,4 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
 handler.help = ['toanime'];
 handler.tags = ['fun'];
 handler.command = /^(jadianime|toanime)$/i;
-export default handler;
+export default handler;*/

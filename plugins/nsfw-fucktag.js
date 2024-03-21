@@ -19,20 +19,18 @@ const handler = async (m, { conn, command, text }) => {
         let jkis = await (await fetch(apiUrl)).json();
         let { url } = jkis;
 
-       /* // Envía el texto mencionando al usuario con la imagen
+        // Envía el texto mencionando al usuario con la imagen
         conn.reply(m.chat, `
-🤤👅🥵 *TE HAS FOLLADO A ${user}*🥵👅🤤
+🤤👅🥵 *TE HAS FOLLADO A ${mentionedUser}*🥵👅🤤
 
-*¡${user}!* HAS SIDO VIOLAD@ COMO TE ENCANTA LA PIJA😈
-🤤🥵 *TREMENDA SORRA* 🥵🤤`, null, { mentions: [m.sender] });*/
+*¡${mentionedUser}!* HAS SIDO VIOLAD@ COMO TE ENCANTA LA PIJA😈
+🤤🥵 *TREMENDA SORRA* 🥵🤤`, null, { mentions: [m.sender] });
 
         // Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', `🤤👅🥵 TE COGISTES A ${mentionedUser}`, m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
-
-
-}
+        conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', m, false, { mimetype: 'video/mp4' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
+})
         
-    catch {
+    } catch {
         throw `*Ocurrió un error inesperado*`;
     }
 };

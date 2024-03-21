@@ -28,7 +28,7 @@ const handler = async (m, { conn, command, text }) => {
 
         // Envía la imagen obtenida de la API
         conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', m, false, { mimetype: 'video/mp4' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
-})
+}
         
     } catch {
         throw `*Ocurrió un error inesperado*`;

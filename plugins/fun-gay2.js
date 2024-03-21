@@ -31,4 +31,4 @@ const percentages = (500).getRandom();
       break;
 
 handler.command = /^(gay3)$/i;
-export default handler/*
+export default handler*/

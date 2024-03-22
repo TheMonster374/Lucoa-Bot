@@ -55,7 +55,7 @@ ${readmore}
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────
-${readmore
+${readmore}
 ┌───⊷_*Mas tutoriales (pronto)*_
 ❏ *${usedPrefix}tutorpg*
 ❏ *${usedPrefix}tutoias*

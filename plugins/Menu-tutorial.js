@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const pp = imagen4;
+    const pp = 'https://telegra.ph/file/7ed719b782579f82c3cfa.jpg';
     const img = './Menu4.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';

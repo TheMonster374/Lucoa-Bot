@@ -22,7 +22,7 @@ m.reply(`
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────
-_*Mas tutoriales*_
+_*Mas tutoriales (pronto)*_
 ❏ *${usedPrefix}tutorpg*
 ❏ *${usedPrefix}tutoias*
 ❏ *${usedPrefix}tutosubbots*

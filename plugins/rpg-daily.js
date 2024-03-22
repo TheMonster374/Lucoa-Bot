@@ -48,7 +48,7 @@ const handler = async (m, {isPrems, conn}) => {
 ┃ ✨ 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝙐𝙉 𝙍𝙀𝙂𝘼𝙇𝙊!!
 ┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
 ┃ ${texto}
-╰━━🎁━🎁━🎁━━⬣\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`;
+╰━━🎁━🎁━🎁━━⬣\n\n`
   const img = './Menu.png';
   await conn.sendFile(m.chat, img, 'mystic.jpg', text, fkontak);
   user.lastclaim = new Date * 1;

@@ -66,8 +66,8 @@ ${readMore}
 ❏ *${usedPrefix}tutodescargas*
 ❏ *${usedPrefix}tutogrupos (solo admins)*
 ❏ *${usedPrefix}tutoenable (solo admins)*
-❏ *${usedPrefix}tutonsfw
-❏ *${usedPrefix}tutojuegos
+❏ *${usedPrefix}tutonsfw*
+❏ *${usedPrefix}tutojuegos*
 ❏ *${usedPrefix}tutofun*
 ❏ *${usedPrefix}tutotools*
 └──────────────

@@ -6,7 +6,7 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-/* © 2024 ALS | All rights reserved */
+/* © 2024 MONSTER | All rights reserved */
 
 global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""

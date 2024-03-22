@@ -8,12 +8,14 @@ m.reply(`
 ▢ ¡Hola! *${name}* bienvenido al grupo 
 ▢ Yo soy *Inabakumori*, un bot divertido de WhatsApp
 └──────────────
+%readmore
 ┌───⊷ *Pero.. ¿Que es un bot? 🤖* ⊶
 ▢  Es un robot que responde a ciertos comandos 
 ▢  y tiene múltiples funciones, como *descargar música/videos de cualquier plataforma*
 ▢  *tiene diferentes IAs y herramientas de moderación ee grupos*
 ▢  *¡y muchas mas cosas divertidas!*
 └──────────────
+%readmore
 ┌───⊷ *¿Como lo uso?*⊶
 ▢  Para usar el bot, primero te tienes que registrar 
 ▢  en su base de datos, tranquilo no es nada difícil,
@@ -22,6 +24,7 @@ m.reply(`
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────
+%readmore
 _*Mas tutoriales (pronto)*_
 ❏ *${usedPrefix}tutorpg*
 ❏ *${usedPrefix}tutoias*

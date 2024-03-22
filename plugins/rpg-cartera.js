@@ -16,7 +16,6 @@ let handler = async (m, {conn, usedPrefix}) => {
 ┃  *tokens*: ${user.joincount}
 ┃ *📍rango* : ${user.role}
 ┃ *📍nivel* : ${user.level}
-┃ *🎟️premium*:* ${user.premiumTime > 0 ? '✅' : (user.isPrems ? '✅' : '❌') || ''}
 ╰━━━━〔 𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 〕━━━⬣
 
 *NOTA :* 

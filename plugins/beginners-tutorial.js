@@ -9,7 +9,7 @@ let handler = async (m, {
 
 handler.command =/^(tutorial|tuto|new|nuevo)/i 
 handler.help = ['tutorial'] 
-handler.tags = ['Principiantes']  
+handler.tags = ['begin']  
 handler.group = true
 handler.fail = null
 handler.register = false

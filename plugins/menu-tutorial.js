@@ -38,7 +38,6 @@ m.reply(`
 ❏ *${usedPrefix}tutotools*
 └──────────────
 )`
-}
 
 handler.command =/^(tutorial|tuto|new|nuevo)/i 
 handler.help = ['tutorial'] 

@@ -27,6 +27,10 @@ _*Mas tutoriales*_
 ❏ *${usedPrefix}tutoias*
 ❏ *${usedPrefix}tutosubbots*
 ❏ *${usedPrefix}tutodescargas*
+❏ *${usedPrefix}tutogrupos (solo admins)*
+❏ *${usedPrefix}tutoenable (solo admins)*
+❏ *${usedPrefix}tutonsfw
+❏ *${usedPrefix}tutojuegos
 
 )`
 }

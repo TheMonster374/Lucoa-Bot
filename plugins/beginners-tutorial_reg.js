@@ -31,8 +31,8 @@ _*Mas tutoriales*_
 ❏ *${usedPrefix}tutoenable (solo admins)*
 ❏ *${usedPrefix}tutonsfw
 ❏ *${usedPrefix}tutojuegos
-
-)`
+❏ *${usedPrefix}tutofun*
+❏ *${usedPrefix}tutotools*)`
 }
 
 handler.command =/^(tutorial|tuto|new|nuevo)/i 

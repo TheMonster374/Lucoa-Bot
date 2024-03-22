@@ -39,7 +39,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▢ ¡Hola! *${taguser}* bienvenido al grupo 
 ▢ Yo soy *Inabakumori*, un bot divertido de WhatsApp
 └──────────────
-${readmore
+${readmore}
 ┌───⊷ *Pero.. ¿Que es un bot? 🤖* ⊶
 ▢  Es un robot que responde a ciertos comandos 
 ▢  y tiene múltiples funciones, como *descargar música/videos de cualquier plataforma*

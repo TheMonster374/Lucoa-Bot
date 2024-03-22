@@ -1,9 +1,9 @@
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber q tan puta es*`
-   const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const porcentaje = Math.floor(Math.random() * 501); // Generar un número aleatorio entre 0 y 500
-    const str = `*🏳️‍🌈🏳️‍🌈 ${taguser} ES ${porcentaje}% LESBIANA, QUE GAY🏳️‍🌈🏳️‍🌈*`.trim();
+   let taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+    let porcentaje = Math.floor(Math.random() * 501); // Generar un número aleatorio entre 0 y 500
+     `*🏳️‍🌈🏳️‍🌈 ${taguser} ES ${porcentaje}% LESBIANA, QUE GAY🏳️‍🌈🏳️‍🌈*`.trim();
 }
 
 handler.help = ['lesbiana'].map((v) => v + ' <@user>')

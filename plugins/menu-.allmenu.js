@@ -5,7 +5,6 @@ import { xpRange } from '../lib/levelling.js'
 
 let tags = {
   'main': ' `INFO` ℹ️',
-  'begin': '🤫 `NUEVOS MIEMBROS` (BETA)🧏',
   'game': ' `JUEGOS` 🎮',
   'jadibot': ' `SUBBOTS` 🌐',
   'rpg': ' `RPG` ⚔️',
@@ -35,6 +34,8 @@ Hola *%taguser*, Soy INABAKUMORI
 ┃💎 *Diamantes* : *%limit*
 ┃🏆 *Nivel* : *%level*
 ┃🪙 *Coins* : *%totalexp*
+┃ *Si eres un usuario nuevo escribe: #tutorial*
+┃escribe: #tutorial*
 ┗━━━━━━━━━━━━━⬣
 %readmore
 ┏━⊜「 *=͟͟͞INFO BOT* 」

@@ -14,7 +14,7 @@ global.confirmCode = ""
 /*NUMERS OWNERS*/
 global.owner = [
  ['573017210155', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
- ['573178151662', '?', true],
+ ['573178151662', 'Bot', true],
  ['5491156673266', 'als', true],
 ];
 /*└────ׂ─ׂ─ׂ─ׂ───*/
@@ -46,7 +46,10 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-
+global.imagen7 = "https://telegra.ph/file/f5773d1ef4d381c8ec3a1.jpg"
+global.imagen8 = "https://telegra.ph/file/72e9ce7d69eb8554722fc.jpg"
+global.imagen9 = "https://telegra.ph/file/a7bb5b8002a2e5e9804f0.jpg"
+ 
 global.img1 = fs.readFileSync('./src/daily.png');
 global.gataMenu = [img1] 
 

@@ -1,9 +1,3 @@
-/*let handler = async (m, { usedPrefix, conn, command, text }) => {	
-let who
-if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
-else who = m.sender
-let name = conn.getName(who) 
-m.reply(`*/
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
@@ -29,6 +23,18 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
+┏━⊜「 *=͟͟͞INFO USUARIO* 」
+┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
+┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
+┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
+┃🪙 *Coins* : *${money}
+┗━━━━━━━━━━━━━━━━━━⬣
+ ${readMore}
+┏━⊜「 *=͟͟͞INFO BOT* 」
+┃◣w◢ *CREADOR*: +573017210155
+┃👤 *TOTAL USUARIOS* : ${totalusr}
+┗━━━━━━━━━━━━━━━━━━⬣
+ ${readMore}
 ┌───⊷ _𝔹𝕀𝔼ℕ𝕍𝔼ℕ𝕀𝔻𝕆_ ⊶
 ▢ ¡Hola! *${taguser}* bienvenido al grupo 
 ▢ Yo soy *Inabakumori*, un bot divertido de WhatsApp
@@ -45,7 +51,7 @@ ${readmore}
 ▢  Para usar el bot, primero te tienes que registrar 
 ▢  en su base de datos, tranquilo no es nada difícil,
 ▢  tienes que escribir el siguiente comando:
-❏ *${usedPrefix}reg [TuNombre].[TuEdad]
+❏ *${usedPrefix}reg [TuNombre].[TuEdad]*
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────

@@ -39,10 +39,10 @@ m.reply(`
 └──────────────
 )`
 
-handler.command =/^(tutorial|tuto|new|nuevo)/i 
-handler.help = ['tutorial'] 
-handler.tags = ['begin']  
-handler.group = true
-handler.fail = null
-handler.register = false
+handler.command =/^(tutorial|tuto|new|nuevo)/i ;
+handler.help = ['tutorial'] ;
+handler.tags = ['begin']  ;
+handler.group = true;
+handler.fail = null;
+handler.register = false;
 export default handler 

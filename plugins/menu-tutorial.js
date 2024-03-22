@@ -89,6 +89,10 @@ handler.group = true;
 handler.fail = null;
 handler.register = false;
 export default handler 
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
 function clockString(ms) {
   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;

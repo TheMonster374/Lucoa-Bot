@@ -33,14 +33,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▢ ¡Hola! *${taguser}* bienvenido al grupo 
 ▢ Yo soy *Inabakumori*, un bot divertido de WhatsApp
 └──────────────
-%readmore
+${readmore
 ┌───⊷ *Pero.. ¿Que es un bot? 🤖* ⊶
 ▢  Es un robot que responde a ciertos comandos 
 ▢  y tiene múltiples funciones, como *descargar música/videos de cualquier plataforma*
 ▢  *tiene diferentes IAs y herramientas de moderación ee grupos*
 ▢  *¡y muchas mas cosas divertidas!*
 └──────────────
-%readmore
+${readmore}
 ┌───⊷ *¿Como lo uso?*⊶
 ▢  Para usar el bot, primero te tienes que registrar 
 ▢  en su base de datos, tranquilo no es nada difícil,
@@ -49,7 +49,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────
-%readmore
+${readmore
 ┌───⊷_*Mas tutoriales (pronto)*_
 ❏ *${usedPrefix}tutorpg*
 ❏ *${usedPrefix}tutoias*

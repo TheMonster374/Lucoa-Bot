@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+let readMore = more.repeat(850);
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen4;

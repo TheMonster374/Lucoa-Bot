@@ -1,4 +1,4 @@
-let handler = async (m, {usedPrefix}) => {	
+let handler = async (m, { usedPrefix, conn, command, text }) => {	
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
 else who = m.sender
@@ -40,8 +40,8 @@ m.reply(`
 )`
 
 handler.help = ['tutorial'];
-handler.tags = ['begin'];
 handler.command =/^(tutorial|tuto|new|nuevo)/i ;
+handler.tags = ['begin'];
 handler.group = true;
 handler.fail = null;
 handler.register = false;

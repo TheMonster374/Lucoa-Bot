@@ -54,7 +54,7 @@ ${readMore}
 ▢  Para usar el bot, primero te tienes que registrar 
 ▢  en su base de datos, tranquilo no es nada difícil,
 ▢  tienes que escribir el siguiente comando:
-❏ *${usedPrefix}reg [TuNombre].[TuEdad]*
+❏ *${usedPrefix}reg [TuNombre].[TuEdad]* sin las "[]"
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────

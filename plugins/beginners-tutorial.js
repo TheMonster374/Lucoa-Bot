@@ -8,7 +8,7 @@ let handler = async (m, {
 }
 
 handler.command =/^(tutorial|tuto|new|nuevo)/i 
-handler.help = ['tutorial', 'tuto', 'new', 'nuevo'] 
+handler.help = ['tutorial'] 
 handler.tags = ['Principiantes']  
 handler.group = true
 handler.fail = null

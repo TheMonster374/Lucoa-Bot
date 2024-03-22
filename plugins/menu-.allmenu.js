@@ -5,7 +5,7 @@ import { xpRange } from '../lib/levelling.js'
 
 let tags = {
   'main': ' `INFO` ℹ️',
-  'begin': '🤫 `NUEVOS MIEMBROS` 🧏',
+  'begin': '🤫 `NUEVOS MIEMBROS` (BETA)🧏',
   'game': ' `JUEGOS` 🎮',
   'jadibot': ' `SUBBOTS` 🌐',
   'rpg': ' `RPG` ⚔️',

@@ -38,13 +38,6 @@ m.reply(`
 ❏ *${usedPrefix}tutotools*
 └──────────────
 )`
-     let pp = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
-     let pp2 = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
-
-  } catch (e) {
-    conn.reply(m.chat, '[❌] El menu tiene un error', m)
-    throw e
 }
 
 handler.help = ['tutorial'];

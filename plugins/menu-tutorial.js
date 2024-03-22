@@ -38,7 +38,6 @@ m.reply(`
 ❏ *${usedPrefix}tutotools*
 └──────────────
 )`
-}
 
 handler.help = ['tutorial'];
 handler.tags = ['begin'];

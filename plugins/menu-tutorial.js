@@ -79,6 +79,7 @@ ${readmore}
     }
   } catch {
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
+    throw e
       }
 };
 handler.help = ['tutorial'];

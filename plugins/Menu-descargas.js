@@ -30,30 +30,37 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
 ┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
 ┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━⬣
  ${readMore}
 ┏━⊜「 *=͟͟͞INFO BOT* 」
 ┃◣w◢ *CREADOR*: +573017210155
 ┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━⬣
  ${readMore}
  
-> MENU DESCARGAS
-${usedPrefix}apk
-${usedPrefix}gitclone
-${usedPrefix}instagram
-${usedPrefix}tiktok
-${usedPrefix}mega
-${usedPrefix}spotify
-${usedPrefix}spotifydl
-${usedPrefix}x (twitter)
-${usedPrefix}play
-${usedPrefix}play1
-${usedPrefix}play2
-${usedPrefix}play3
-${usedPrefix}yta
-${usedPrefix}ytv
-${usedPrefix}videodoc
+┏━⊜ DESCARGAS 🔽╗
+╭─────────────···
+┃│ ${usedPrefix}apk
+┃│ ${usedPrefix}gitclone
+┃│ ${usedPrefix}igstory <username>
+┃│ ${usedPrefix}instagram
+┃│ ${usedPrefix}mediafire
+┃│ ${usedPrefix}mega
+┃│ ${usedPrefix}play <búsqueda>
+┃│ ${usedPrefix}play1 < busqueda >
+┃│ ${usedPrefix}play2 < busqueda >
+┃│ ${usedPrefix}play3 <formato> <búsqueda>
+┃│ ${usedPrefix}soundcloud
+┃│ ${usedPrefix}spotify <texto>
+┃│ ${usedPrefix}spotifydl *<texto>*
+┃│ ${usedPrefix}tiktok
+┃│ ${usedPrefix}x (twitter)
+┃│ ${usedPrefix}videodoc
+┃│ ${usedPrefix}yta <yt url>
+┃│ ${usedPrefix}ytv <yt url>
+╰─────────────···
+┗━━━━━━━━━━━━━⬣
+                                    
 
 
 `.trim();

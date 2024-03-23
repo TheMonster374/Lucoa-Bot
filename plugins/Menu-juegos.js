@@ -30,7 +30,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
 ┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
 ┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━⬣
  ${readMore}
 ┏━⊜「 *=͟͟͞INFO BOT* 」
 ┃◣w◢ *CREADOR*: +573017210155

@@ -7,7 +7,7 @@ const handler = async (m, {conn, usedPrefix}) => {
 ꕥ》𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩《ꕥ | [𝙊𝙁𝘾
 https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS
 
-🤑\Latino Gang/😈                 
+🤑/ Latino Gang /😈                 
 https://chat.whatsapp.com/Jy7y9ceuHsS5KASLC6p5x2
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 

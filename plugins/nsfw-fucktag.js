@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 
 const handler = async (m, { conn, command, text }) => {
+  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
     try {
         if (!text) throw `*Por favor, menciona el usuario al que quieres enviar el mensaje.*`;
 

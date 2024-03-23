@@ -53,7 +53,7 @@ global.imagen9 = fs.readFileSync('./Menu6.jpg');
 global.img1 = fs.readFileSync('./src/daily.png');
 global.gataMenu = [img1] 
 
-//━━━━━━━IMAGENES1.2━━━━━━━━━━━━ 
+//━━━━━━━IMAGENES1.5━━━━━━━━━━━━ 
 global.imgPerfil = fs.readFileSync('./storage/img/perfil.png')
 global.imgRegistro = fs.readFileSync('./storage/img/registro.png')
 global.imgEliminarRegistro = fs.readFileSync('./storage/img/eliminar_registro.png')

@@ -30,23 +30,25 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
 ┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
 ┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━━⬣
  ${readMore}
 ┏━⊜「 *=͟͟͞INFO BOT* 」
 ┃◣w◢ *CREADOR*: +573017210155
 ┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━⬣
  ${readMore}
  
-> MENU JUEGOS
-${usedPrefix}acertijo
-${usedPrefix}advn
-${usedPrefix}advpe
-${usedPrefix}buscaminas
-${usedPrefix}mates
-${usedPrefix}ruleta <cantidad de la apuesta/color>
 
-
+┏━⊜ JUEGOS 🎮╗
+╭─────────────···
+┃│ ${usedPrefix}acertijo
+┃│ ${usedPrefix}advn
+┃│ ${usedPrefix}advpe
+┃│ ${usedPrefix}buscaminas
+┃│ ${usedPrefix}mates
+┃│ ${usedPrefix}ruleta apuesta/color
+╰─────────────···
+┗━━━━━━━━━━━━━⬣
 
 `.trim();
     if (m.isGroup) {

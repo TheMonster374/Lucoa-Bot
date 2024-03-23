@@ -2,9 +2,8 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const pp = imagen4;
-    // let vn = './media/menu.mp3'
-    const img = './Menu2.jpg';
+    const pp = imagen7
+    const img = './Menu4.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -12,6 +11,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const user = global.db.data.users[m.sender];
+    const totalusrReg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
+    const totalusr = Object.keys(global.db.data.users).length;
     const {money, joincount} = global.db.data.users[m.sender];
     const {exp, limit, level, role} = global.db.data.users[m.sender];
     const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
@@ -22,6 +23,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
+  *Hola,* ${taguser}
+
  ┏━⊜「 *=͟͟͞INFO USUARIO* 」
 ┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
 ┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}

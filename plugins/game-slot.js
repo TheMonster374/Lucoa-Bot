@@ -75,6 +75,7 @@ handler.tags = ['game']
 handler.command = ['slot', 'apostar', 'slot1', 'slot2', 'slot3']
 handler.register = true
 export default handler
+    
 const delay = time => new Promise(res => setTimeout(res, time))
 
 function msToTime(duration) {

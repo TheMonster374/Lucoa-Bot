@@ -23,6 +23,9 @@ handler.command = ['bard']
 handler.help = ['bard']
 handler.tags = ['ia']
 
+
+handler.limit = 2
+
 handler.test = true
 
 export default handler

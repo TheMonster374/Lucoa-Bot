@@ -24,7 +24,7 @@ handler.help = ['bard']
 handler.tags = ['ia']
 
 
-handler.limit = 2
+handler.limit = true
 
 handler.test = true
 

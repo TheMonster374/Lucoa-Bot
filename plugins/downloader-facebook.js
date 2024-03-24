@@ -7,13 +7,13 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
   if (!args[0]) throw `*_Ingrese un enlace de Facebook._*\n\n*Ejemplo:* _${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/_`;
   if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `*_Ingrese un enlace de Facebook_*\n\n*Ejemplo:* _${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/_`;
   try {
-    await m.reply(`*_Se está enviando el video. espere..._*`);
+    await m.reply(`*_Se está enviando el video. espere..._*`,m , fake);
     const d2ata = await facebook.v1(args[0]);
     let r2es = '';
     if (d2ata.urls && d2ata.urls.length > 0) {
       r2es = `${d2ata.urls[0]?.hd || d2ata.urls[1]?.sd || ''}`;
     }
-    conn.sendFile(m.chat, r2es, 'error.mp4', ``, m);
+    conn.sendFile(m.chat, r2es, 'error.mp4', `${result.title}`, m);
   } catch (err1) {
     try {
       const req = await igeh(args[0]);

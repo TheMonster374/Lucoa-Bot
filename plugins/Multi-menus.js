@@ -37,7 +37,20 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃👤 *TOTAL USUARIOS* : ${totalusr}
 ┗━━━━━━━━━━━━━⬣
  ${readMore}
-
+┏━⊜ MENUS 🤍╗
+╭─────────────···
+┃│ ${usedPrefix}tutorial 
+┃│ ${usedPrefix}menudescargas 
+┃│ ${usedPrefix}menunsfw
+┃│ ${usedPrefix}menutools
+┃│ ${usedPrefix}menurpg
+┃│ ${usedPrefix}menuimg
+┃│ ${usedPrefix}menuaudio
+┃│ ${usedPrefix}menusearch
+┃│ ${usedPrefix}menufun
+┃│ ${usedPrefix}allmenu
+╰─────────────···
+┗━━━━━━━━━━━━━⬣
 
 
  `.trim();

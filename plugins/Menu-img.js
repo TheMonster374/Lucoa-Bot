@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+global.img3 = fs.readFileSync('./Menu10.jpg');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img3

@@ -39,14 +39,40 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  ${readMore}
 ┏━⊜ MENUS 🤍╗
 ╭─────────────···
+┃│
+┃│*MENU TUTORIAL ℹ️*
 ┃│ ${usedPrefix}tutorial 
-┃│ ${usedPrefix}menudescargas 
+┃│
+┃│*MENU DESCARGAS 🔽*
+┃│ ${usedPrefix}menudescargas
+┃│
+┃│*MENU NSFW 🔞*
 ┃│ ${usedPrefix}menunsfw
+┃│
+┃│*MENU TOOLS 🛠️*
 ┃│ ${usedPrefix}menutools
+┃│ 
+┃│*MENU RPG ⚔️*
 ┃│ ${usedPrefix}menurpg
+┃│
+┃│${readMore}
+┃│
+┃│*MENU IMG 🖼️*
 ┃│ ${usedPrefix}menuimg
+┃│
+┃│*MENU SEARCH 🔍*
 ┃│ ${usedPrefix}menusearch
+┃│
+┃│*MENU FUN 👻*
 ┃│ ${usedPrefix}menufun
+┃│
+┃│*MENU JUEGOS 🎮*
+┃│ ${usedPrefix}menujuegos
+┃│
+┃│*MENU SUBBOTS 🌐*
+┃│ ${usedPrefix}menusubbots
+┃│
+┃│*MENU COMPLETO ✨*
 ┃│ ${usedPrefix}allmenu
 ╰─────────────···
 ┗━━━━━━━━━━━━━⬣

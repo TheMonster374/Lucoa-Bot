@@ -38,7 +38,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┗━━━━━━━━━━━━━⬣
  ${readMore}
 
-┏━⊜`DIVERSION` 👻╗
+┏━⊜ DIVERSION 👻╗
 ╭─────────────···
 ┃│ ${usedPrefix}cuando <pregunta>
 ┃│ ${usedPrefix}follar <@user>

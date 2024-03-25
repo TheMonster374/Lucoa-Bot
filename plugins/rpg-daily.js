@@ -13,28 +13,10 @@ const handler = async (m, {isPrems, conn}) => {
   const money = `${pickRandom([300, 500, 700, 900, 500, 800, 900, 1100, 1350, 1500])}` * 1;
   const moneypremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000, 3300, 3500])}` * 1;
 
-  const potion = `${pickRandom([1, 2, 3, 4, 5])}` * 1;
-  const potionpremium = `${pickRandom([2, 4, 6, 9, 12])}` * 1;
-
-  const tiketcoin = `${pickRandom([1, 0, 0, 2, 0])}` * 1;
-  const tiketcoinpremium = `${pickRandom([2, 1, 1, 3, 4])}` * 1;
-
-  const eleksirb = `${pickRandom([1, 1, 1, 3, 1, 2, 2, 1, 5, 8])}` * 1;
-  const eleksirbpremium = `${pickRandom([3, 3, 5, 3, 8, 3, 4, 4, 10, 7])}` * 1;
-
-  const umpan = `${pickRandom([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])}` * 1;
-  const umpanpremium = `${pickRandom([30, 60, 90, 120, 150, 180, 210, 240, 270, 300])}` * 1;
-
-  // let gata = Math.floor(Math.random() * 2000)
-
   const recompensas = {
     exp: premium ? exppremium : exp,
     money: premium ? moneypremium : money,
-    potion: premium ? potionpremium : potion,
-    tiketcoin: premium ? tiketcoinpremium : tiketcoin,
-    eleksirb: premium ? eleksirbpremium : eleksirb,
-    umpan: premium ? umpanpremium : umpan,
-  };
+     };
 
   const time = user.lastclaim + 7200000; // 2 Horas 7200000
   if (new Date - user.lastclaim < 7200000) return await conn.reply(m.chat, `𝙔𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙏𝙐 𝙍𝙀𝙂𝘼𝙇𝙊 🎁\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝙑𝙊𝙇𝙑𝙀𝙍 𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙍`, fkontak, m);

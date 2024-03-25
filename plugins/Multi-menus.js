@@ -1,9 +1,10 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+global.img6 = "https://telegra.ph/file/a2c789b645611e19edbae.mp4";
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const pp = imagen9
-    const img = './Menu6.jpg';
+    const pp = img6
+    const img = "https://telegra.ph/file/a2c789b645611e19edbae.mp4";
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -40,39 +41,39 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┏━⊜ MENUS 🤍╗
 ╭─────────────···
 ┃│
-┃│*MENU TUTORIAL ℹ️*
+┃│*MENU TUTORIAL* ℹ️
 ┃│ ${usedPrefix}tutorial 
 ┃│
-┃│*MENU DESCARGAS 🔽*
+┃│*MENU DESCARGAS* 🔽
 ┃│ ${usedPrefix}menudescargas
 ┃│
-┃│*MENU NSFW 🔞*
+┃│*MENU NSFW* 🔞
 ┃│ ${usedPrefix}menunsfw
 ┃│
-┃│*MENU TOOLS 🛠️*
+┃│*MENU TOOLS* 🛠️
 ┃│ ${usedPrefix}menutools
 ┃│ 
-┃│*MENU RPG ⚔️*
+┃│*MENU RPG* ⚔️
 ┃│ ${usedPrefix}menurpg
 ┃│
-┃│${readMore}
+${readMore}
 ┃│
-┃│*MENU IMG 🖼️*
+┃│*MENU IMG* 🖼️
 ┃│ ${usedPrefix}menuimg
 ┃│
-┃│*MENU SEARCH 🔍*
+┃│*MENU SEARCH* 🔍
 ┃│ ${usedPrefix}menusearch
 ┃│
-┃│*MENU FUN 👻*
+┃│*MENU FUN* 👻
 ┃│ ${usedPrefix}menufun
 ┃│
-┃│*MENU JUEGOS 🎮*
+┃│*MENU JUEGOS* 🎮
 ┃│ ${usedPrefix}menujuegos
 ┃│
-┃│*MENU SUBBOTS 🌐*
+┃│*MENU SUBBOTS* 🌐
 ┃│ ${usedPrefix}menusubbots
 ┃│
-┃│*MENU COMPLETO ✨*
+┃│*MENU COMPLETO* ✨
 ┃│ ${usedPrefix}allmenu
 ╰─────────────···
 ┗━━━━━━━━━━━━━⬣

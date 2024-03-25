@@ -42,6 +42,7 @@ global.img6 = fs.readFileSync ('./Multimenu.mp4');
 ╭─────────────···
 ┃│
 ┃│━⊜ ℹ️ MENU TUTORIAL ℹ️╗
+┃│(en desarrollo...)
 ┃│ ${usedPrefix}tutorial 
 ┃│
 ┃│━⊜ 🔽 MENU DESCARGAS 🔽╗

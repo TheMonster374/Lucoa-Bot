@@ -1,6 +1,6 @@
 import fs from 'fs';
 const timeout = 60000;
-const poin = 1000;
+const poin = 250;
 const handler = async (m, {conn, usedPrefix}) => {
   conn.tekateki = conn.tekateki ? conn.tekateki : {};
   const id = m.chat;

@@ -164,8 +164,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 }
 
 //handler.customPrefix = /comandos|Comandos/i
-handler.help = ['menu'];
-handler.command = ['menu', 'Menu', 'comandos', 'Comandos'];
+handler.help = ['allmenu'];
+handler.command = ['allmenu', 'AllMenu'];
 //handler.command = new RegExp
 export default handler
 

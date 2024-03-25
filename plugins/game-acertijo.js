@@ -1,6 +1,6 @@
 import fs from 'fs';
 const timeout = 60000;
-const poin = 500;
+const poin = 1000;
 const handler = async (m, {conn, usedPrefix}) => {
   conn.tekateki = conn.tekateki ? conn.tekateki : {};
   const id = m.chat;
@@ -28,5 +28,5 @@ const handler = async (m, {conn, usedPrefix}) => {
 handler.help = ['acertijo'];
 handler.tags = ['game'];
 handler.command = /^(acertijo|acert|pregunta|adivinanza|tekateki)$/i;
-handler.limit = 2
+handler.limit = 3
 export default handler;

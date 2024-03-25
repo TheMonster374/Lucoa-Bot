@@ -42,11 +42,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┏━⊜ JUEGOS 🎮╗
 ╭─────────────···
 ┃│ ${usedPrefix}acertijo
-┃│ ${usedPrefix}advn
-┃│ ${usedPrefix}advpe
 ┃│ ${usedPrefix}buscaminas
 ┃│ ${usedPrefix}mates
-┃│ ${usedPrefix}ruleta apuesta/color
+┃│ ${usedPrefix}ruleta apuesta (coins)/color
+┃│ ${usedPrefix}slot apuesta (xp)
 ╰─────────────···
 ┗━━━━━━━━━━━━━⬣
 

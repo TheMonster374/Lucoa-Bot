@@ -51,13 +51,14 @@ global.imagen8 = fs.readFileSync('./Menu5.jpg');
 global.imagen9 = fs.readFileSync('./Menu6.jpg');
 global.imagen10 = fs.readFileSync('./Menu7.png');
 global.imagen11 = fs.readFileSync('./Menu8.jpg');
-global.imagen12 = fs.readFileSync('./Menu9.jpg');
-global.imagen13 = fs.readFileSync('./Menu10.jpg');
-global.imagen14 = fs.readFileSync('./Menu11.jpg');
-global.imagen15 = fs.readFileSync('./Menu11.jpg');
- 
+
 
 global.img1 = fs.readFileSync('./src/daily.png');
+global.img2 = fs.readFileSync('./Menu9.jpg');
+global.img3 = fs.readFileSync('./Menu10.jpg');
+global.img4 = fs.readFileSync('./Menu11.jpg');
+global.img5 = fs.readFileSync('./Menu11.jpg');
+ 
 global.gataMenu = [img1] 
 
 //━━━━━━━IMAGENES1.5━━━━━━━━━━━━ 

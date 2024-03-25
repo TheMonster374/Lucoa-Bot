@@ -34,20 +34,6 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 
 let pp = 'https://telegra.ph/file/ba9c040dfd3c6e6cf1034.jpg'
 
-let aqua = `${pickRandom([0, 2, 3, 1, 5])}` * 1
-let aquapremium = `${pickRandom([2, 4, 6, 7, 5, 9])}` * 1
-
-let rock = `${pickRandom([6, 9, 0, 12, 2])}` * 1
-let rockpremium = `${pickRandom([13, 9, 17, 20, 25])}` * 1
-
-let pancingan = `${pickRandom([1, 0, 2, 1, 0, 0, 0])}` * 1
-let pancinganpremium = `${pickRandom([1, 3, 4, 9, 2, 5, 8])}` * 1
-
-const recompensas = {	
-  aqua: premium ? aquapremium : aqua,
-  rock: premium ? rockpremium : rock,
-  pancingan: premium ? pancinganpremium : pancingan,
-}
 //let xp = Math.floor(Math.random() * 2000)
 let money = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640, 680, 704, 760, 800, 840, 880, 900, 1000, 1059, 1080, 1100, 1190, 1230, 1380, 1399, 1290, 1300, 1340, 1350, 1590, 1400, 1450, 1700, 1800, 1900, 2000, 0, 0, 10, 1, 99, 999, 1789, 1430])}` * 1
 let moneypremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1

@@ -39,7 +39,7 @@ global.img4 = fs.readFileSync('./Menu11.jpg');
 ┗━━━━━━━━━━━━━⬣
  ${readMore}
 
-┏━⊜ `BUSCADOR`🔎╗
+┏━⊜ BUSCADOR🔎╗
 ╭─────────────···
 ┃│ ${usedPrefix}applemusicsearch
 ┃│ ${usedPrefix}animeinfo

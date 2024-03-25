@@ -45,7 +45,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃│ ${usedPrefix}menutools
 ┃│ ${usedPrefix}menurpg
 ┃│ ${usedPrefix}menuimg
-┃│ ${usedPrefix}menuaudio
 ┃│ ${usedPrefix}menusearch
 ┃│ ${usedPrefix}menufun
 ┃│ ${usedPrefix}allmenu

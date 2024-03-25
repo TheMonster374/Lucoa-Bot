@@ -18,7 +18,7 @@ say('INABAKUMORI-BOT', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']});
-say('Version 1.0.1', {
+say('Version 1.0.3', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']});

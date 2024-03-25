@@ -20,7 +20,9 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
         result = `${colour == 'rojo' ? '*La pelota paro en el color:* 🔴' : 'La pelota paro en el color:* ⚫'} \n\n *- ${amount} Pesos 🪙*`
         user.exp -= amount
     }
-    conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
+    /*conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
+*/
+    conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, mentions: [m.sender] }, { quoted: m })
 }
 handler.help = ['ruleta apuesta/color']
 handler.tags = ['game']

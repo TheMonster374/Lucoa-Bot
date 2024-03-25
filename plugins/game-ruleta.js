@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     }
     /*conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
 */
-    conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, mentions: [m.sender] }, { quoted: m })
+    conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result}, mentions: [m.sender] , { quoted: m })
 }
 handler.help = ['ruleta apuesta/color']
 handler.tags = ['game']

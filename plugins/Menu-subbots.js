@@ -59,7 +59,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
   }
 };
-handler.command = /^(menujuegos|MenuJuegos|MENUJUEGOS)$/i;
+handler.command = /^(menusubbots|MenuSubbots|MENUSUBBOTS)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

@@ -2,13 +2,13 @@ import { execSync } from 'child_process';
 
 const handler = async (m, { conn, text }) => {
 
-    await conn.sendMessage(m.chat, { react: { text: '👑', key: m.key } })
+    await conn.sendMessage(m.chat, { react: { text: '🤍', key: m.key } })
   
   try {
           const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
           let messager = stdout.toString()
-          if (messager.includes('Already up to date.')) messager = '[ ✅ ] no hay actualizaciones pendientes*'
-          if (messager.includes('Updating')) messager = '*_actualizacion exitosa_*\n\n' + stdout.toString()
+          if (messager.includes('Already up to date.')) messager = '[ ✅ ] No hay actualizaciones pendientes*'
+          if (messager.includes('Updating')) messager = '*_¡SE ACTUALIZÓ CON ÉXITO!_*\n\n' + stdout.toString()
           conn.reply(m.chat, messager, m);
   } catch {      
  try {    

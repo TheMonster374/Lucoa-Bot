@@ -41,39 +41,39 @@ global.img6 = fs.readFileSync ('./Multimenu.mp4');
 ┏━⊜ MENUS 🤍╗
 ╭─────────────···
 ┃│
-┃│*MENU TUTORIAL* ℹ️
+┃│━⊜ MENU TUTORIAL ℹ️╗
 ┃│ ${usedPrefix}tutorial 
 ┃│
-┃│*MENU DESCARGAS* 🔽
+┃│━⊜ MENU DESCARGAS 🔽╗
 ┃│ ${usedPrefix}menudescargas
 ┃│
-┃│*MENU NSFW* 🔞
+┃│━⊜ MENU NSFW 🔞╗
 ┃│ ${usedPrefix}menunsfw
 ┃│
-┃│*MENU TOOLS* 🛠️
+┃│━⊜ MENU TOOLS 🛠️╗
 ┃│ ${usedPrefix}menutools
 ┃│ 
-┃│*MENU RPG* ⚔️
+┃│━⊜ MENU RPG ⚔️╗
 ┃│ ${usedPrefix}menurpg
 ┃│
+
 ${readMore}
-┃│
-┃│*MENU IMG* 🖼️
+┃│━⊜ MENU IMG 🖼️╗
 ┃│ ${usedPrefix}menuimg
 ┃│
-┃│*MENU SEARCH* 🔍
+┃│━⊜ MENU SEARCH 🔍╗
 ┃│ ${usedPrefix}menusearch
 ┃│
-┃│*MENU FUN* 👻
+┃│━⊜ MENU FUN 👻╗
 ┃│ ${usedPrefix}menufun
 ┃│
-┃│*MENU JUEGOS* 🎮
+┃│━⊜ MENU JUEGOS 🎮╗
 ┃│ ${usedPrefix}menujuegos
 ┃│
-┃│*MENU SUBBOTS* 🌐
+┃│━⊜ MENU SUBBOTS 🌐╗
 ┃│ ${usedPrefix}menusubbots
 ┃│
-┃│*MENU COMPLETO* ✨
+┃│━⊜ MENU COMPLETO ✨╗
 ┃│ ${usedPrefix}allmenu
 ╰─────────────···
 ┗━━━━━━━━━━━━━⬣

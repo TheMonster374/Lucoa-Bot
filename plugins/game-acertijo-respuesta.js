@@ -19,4 +19,5 @@ handler.before = async function(m) {
   return !0;
 };
 handler.exp = 0;
+handler.limit = 3
 export default handler;

@@ -41,7 +41,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┏━⊜ RPG ⚔️╗
 ╭─────────────···
 ┃│ ${usedPrefix}afk [razón]
-┃│ ${usedPrefix}rob
+┃│ ${usedPrefix}rob <@taguser>
 ┃│ ${usedPrefix}bal
 ┃│ ${usedPrefix}Buy <cantidad>
 ┃│ ${usedPrefix}Buyall

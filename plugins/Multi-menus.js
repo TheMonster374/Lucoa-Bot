@@ -72,7 +72,7 @@ global.img6 = fs.readFileSync ('./Multimenu.mp4');
 ┃│━⊜ 🌐 MENU SUBBOTS 🌐╗
 ┃│ ${usedPrefix}menusubbots
 ┃│
-┃│━⊜ ✨ MENU COMPLETO ✨╗
+┃│━⊜ ✨MENU COMPLETO✨╗
 ┃│ ${usedPrefix}allmenu
 ╰─────────────···
 ┗━━━━━━━━━━━━━⬣

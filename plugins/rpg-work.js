@@ -2,12 +2,12 @@
 let handler = async (m, { conn, isPrems}) => {
 //let hasil = Math.floor(Math.random() * 5000)
 let pp = 'https://c4.wallpaperflare.com/wallpaper/991/456/22/sketch-artist-anime-anime-girls-arknights-swire-arknights-hd-wallpaper-preview.jpg'
-let jotchua = Math.floor(Math.random() * 3000)
-global.db.data.users[m.sender].exp += jotchua * 1  
+let inabakumori = Math.floor(Math.random() * 3000)
+global.db.data.users[m.sender].exp += inabakumori * 1  
 let time = global.db.data.users[m.sender].lastwork + 600000
 if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Estas cansado debes esperar ${msToTime(time - new Date())} para volver a trabajar*`
 
-m.reply(`🏢 ${pickRandom(global.work)} *${jotchua}* Coins`)
+m.reply(`🤍 ${pickRandom(global.work)} *${inabakumori}* Coins`)
  
 global.db.data.users[m.sender].lastwork = new Date * 1
 }

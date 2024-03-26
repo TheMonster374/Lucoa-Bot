@@ -41,7 +41,7 @@ const recompensas = {
   diamond: premium ? diamondpremium : diamond,
 }
 //let xp = Math.floor(Math.random() * 2000)
-let limit = `${pickRandom([2, 3, 4, 5, 0, 1, 6, 7, 8, 9, 10])}` * 1
+let limit = `${pickRandom([90000, 800000, 100000])}` * 1
 let limitpremium = `${pickRandom([4, 7, 8, 9, 11, 13, 16, 17, 19, 22, 24, 26, 28, 30])}` * 1
 
 let time = user.lastdiamantes + 900000 //15 min

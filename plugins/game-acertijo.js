@@ -28,5 +28,4 @@ const handler = async (m, {conn, usedPrefix}) => {
 handler.help = ['acertijo'];
 handler.tags = ['game'];
 handler.command = /^(acertijo|acert|pregunta|adivinanza|tekateki)$/i;
-handler.limit = 3
 export default handler;

@@ -34,7 +34,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 
 let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
 
-let diamond = `${pickRandom([0, 1, 0, 0, 2])}` * 1
+let diamond = `${pickRandom([5000, 90000, 20000, 30000])}` * 1
 let diamondpremium = `${pickRandom([3, 4, 5, 5, 5])}` * 1
 
 const recompensas = {	

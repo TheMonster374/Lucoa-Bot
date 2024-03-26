@@ -34,14 +34,14 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 
 let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
 
-let diamond = `${pickRandom([5000, 90000, 20000, 30000])}` * 1
+let diamond = `${pickRandom([0, 1, 0, 0, 2])}` * 1
 let diamondpremium = `${pickRandom([3, 4, 5, 5, 5])}` * 1
 
 const recompensas = {	
   diamond: premium ? diamondpremium : diamond,
 }
 //let xp = Math.floor(Math.random() * 2000)
-let limit = `${pickRandom([90000, 800000, 100000])}` * 1
+let limit = `${pickRandom([2, 3, 4, 5, 0, 1, 6, 7, 8, 9, 10])}` * 1
 let limitpremium = `${pickRandom([4, 7, 8, 9, 11, 13, 16, 17, 19, 22, 24, 26, 28, 30])}` * 1
 
 let time = user.lastdiamantes + 900000 //15 min

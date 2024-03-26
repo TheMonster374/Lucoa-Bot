@@ -3,6 +3,7 @@ const handler = async (m, {conn, args, participants}) => {
     return {...value, jid: key};
   });
   const sortedCoins = users.map(toNumber('coins')).sort(sort('coins'));
+  const sortedExp = users.map(toNumber('exp')).sort(sort('exp'));
   const sortedLim = users.map(toNumber('limit')).sort(sort('limit'));
   const sortedLevel = users.map(toNumber('level')).sort(sort('level'));
   const usersExp = sortedExp.map(enumGetKey);
@@ -18,7 +19,7 @@ const handler = async (m, {conn, args, participants}) => {
 ┃-> *TOP ${len} COINS 🪙*
 ┃*👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
 ┃
-┃${sortedCoins.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n┃`}
+┃${sortedCoins.slice(0, len).map(({jid, coins}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${coins} coins*`).join`\n┃`}
 ┃
 ┃-> *TOP ${len} DIAMANTES 💎*
 ┃*👤 Tú posición:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}

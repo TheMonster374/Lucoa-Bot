@@ -29,7 +29,7 @@ let limit = `${pickRandom([4, 7, 8, 9, 11, 13, 16, 17, 19, 22, 24, 26, 28, 30])}
 let limitpremium = `${pickRandom([4, 7, 8, 9, 11, 13, 16, 17, 19, 22, 24, 26, 28, 30])}` * 1
 
 let time = user.lastdiamantes + 900000 //15 min
-if (new Date - user.lastdiamantes < 900000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('limit')}⛏️*`, fkontak,  m)
+if (new Date - user.lastdiamantes < 900000) return await conn.reply(m.chat, `*⏱️ Vuelva en ${msToTime(time - new Date())} para seguir ${global.rpgshopp.emoticon('limit')}😈*`, fkontak,  m)
 user.limit += premium ? limitpremium : limit  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {

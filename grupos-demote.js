@@ -25,7 +25,7 @@ conn.groupParticipantsUpdate(m.chat, [user], 'demote')
 conn.reply(m.chat, `✅ *_Ordenes realizadas._*`, m)
 }}
 handler.help = ['*quitaradmin*'].m
-handler.tags = ['group']
+handler.tags = ['grupo']
 handler.command = /^(demote|quitarpoder|quitaradmin)$/i
 handler.group = true
 handler.admin = true

@@ -46,18 +46,18 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/Menunsfw.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.imagen7 = fs.readFileSync('./Menu4.jpg');
-global.imagen8 = fs.readFileSync('./Menu5.jpg');
-global.imagen9 = fs.readFileSync('./Menu6.jpg');
-global.imagen10 = fs.readFileSync('./Menu7.png');
-global.imagen11 = fs.readFileSync('./Menu8.jpg');
+global.imagen7 = fs.readFileSync('./storage/img/menus/Menu4.jpg');
+global.imagen8 = fs.readFileSync('./storage/img/menus/Menu5.jpg');
+global.imagen9 = fs.readFileSync('./storage/img/menus/Menu6.jpg');
+global.imagen10 = fs.readFileSync('/storage/img/menus./Menu7.png');
+global.imagen11 = fs.readFileSync('./storage/img/menus/Menu8.jpg');
 
 
 global.img1 = fs.readFileSync('./src/daily.png');
-global.img2 = fs.readFileSync('./Menu9.jpg');
-global.img3 = fs.readFileSync('./Menu10.jpg');
-global.img4 = fs.readFileSync('./Menu11.jpg');
-global.img5 = fs.readFileSync('./Menu11.jpg');
+global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
+global.img3 = fs.readFileSync('./storage/img/menus/Menu10.jpg');
+global.img4 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
+global.img5 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
  
 global.gataMenu = [img1] 
 

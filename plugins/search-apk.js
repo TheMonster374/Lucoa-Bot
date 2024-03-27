@@ -4,7 +4,7 @@ import fs from 'fs'
 let handler  = async (m, { conn, usedPrefix: prefix, command, text }) => {
 //try {
 if (!text) throw `*⚠️ Ingrese el nombre de la apk o app que desea buscar.*\n_📌 Ejemplo:_ *${ prefix + command}* WhatsApp`
-let sfoto = fs.readFileSync('./storage/apksearch.png')
+let sfoto = fs.readFileSync('./storage/img/apksearch.png')
 
 let json = await fetch(`https://api.akuari.my.id/search/searchapk2?query=${text}`)
 let jsons = await json.json()

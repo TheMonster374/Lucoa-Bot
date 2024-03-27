@@ -29,7 +29,7 @@ let handler = async (m, { conn, text }) => {
   conn.fakeReply(m.chat, `⊜ *_Recibiste_*\n\n *_+${xp} XP✨._*`, who, m.text)
 }
 handler.help = ['payxp *@user <monto>*']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.command = ['payxp', 'transferxp', 'darxp'] 
 handler.rowner = false
 

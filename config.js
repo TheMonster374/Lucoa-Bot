@@ -49,7 +49,7 @@ global.imagen6 = fs.readFileSync('./Menu3.png');
 global.imagen7 = fs.readFileSync('./storage/img/menus/Menu4.jpg');
 global.imagen8 = fs.readFileSync('./storage/img/menus/Menu5.jpg');
 global.imagen9 = fs.readFileSync('./storage/img/menus/Menu6.jpg');
-global.imagen10 = fs.readFileSync('/storage/img/menus/Menu7.png');
+global.imagen10 = fs.readFileSync('./storage/img/menus/Menu7.png');
 global.imagen11 = fs.readFileSync('./storage/img/menus/Menu8.jpg');
 
 

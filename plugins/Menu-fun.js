@@ -4,7 +4,7 @@ global.img2 = fs.readFileSync('./Menu9.jpg');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img2;
-    const img = './Menu9.jpg';
+    const img = './storage/img/menus/Menu9.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});

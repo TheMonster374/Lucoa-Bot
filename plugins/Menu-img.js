@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-global.img3 = fs.readFileSync('./Menu10.jpg');
+global.img3 = fs.readFileSync('./storage/img/menus/Menu10.jpg');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img3
-    const img = './Menu10.jpg';
+    const img = './storage/img/menus/Menu10.jpg';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});

@@ -25,7 +25,7 @@ conn.groupParticipantsUpdate(m.chat, [user], 'promote')
 conn.reply(m.chat, `✅ *_Ordenes realizadas._*`, m)
 }}
 handler.help = ['daradmin', 'promote']
-handler.tags = ['group']
+handler.tags = ['grupo']
 handler.command = /^(promote|daradmin|darpoder)$/i
 handler.group = true
 handler.admin = true

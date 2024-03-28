@@ -476,7 +476,7 @@ thumbnailUrl: 'https://telegra.ph/file/2bc10639d4f5cf5685185.jpg'
 //await conn.reply(m.chat, mensaje.trim(), fkontak, { mentions: conn.parseMention(mensaje) })    
 }
 
-handler.help = ['fymy', 'fantasymy']
+handler.help = ['fymy']
 handler.tags = ['rpg']
 handler.command = /^(fantasymy|fymy|fyranking|fytendencia)$/i
 handler.register = true

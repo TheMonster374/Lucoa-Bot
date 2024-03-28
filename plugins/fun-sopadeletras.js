@@ -161,6 +161,7 @@ await m.reply(`😮‍💨 *INCORRECTO. TE QUEDAN _${intentos}_ INTENTOS!!*${int
 }}
 }}
 
+handler.help = ['sopa']
+handler.tags = ['game']
 handler.command = /^(buscarpalabra|sopa|soup|wordsearch|wordfind|spdeletras|spletras|sppalabras|spalabras|spdepalabras)$/i
-handler.tags ,= [fun]
 export default handler

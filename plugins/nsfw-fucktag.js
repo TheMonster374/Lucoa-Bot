@@ -13,12 +13,12 @@ const handler = async (m, {conn, command, text }) => {
         let jkis = await (await fetch(apiUrl)).json();
         let { url } = jkis;
 
-  let gay2 = `
+  let fuck = `
 🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${text}*🥵👅🤤
 *¡${text}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤
 `.trim();
- conn.sendFile(m.chat, global.API('https://nekos.pro/api.com',  m, false, { mimetype: 'image/jpeg' }), { mentions: conn.parseMention(fuck)});
+ conn.sendFile(m.chat, global.API('https://nekos.pro/api.com', fuck, m, false, { mimetype: 'image/jpeg' }), { mentions: conn.parseMention(fuck)});
 
 handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];

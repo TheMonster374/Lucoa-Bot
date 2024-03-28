@@ -2,9 +2,9 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  /*let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender*/
-try { 
- const user = global.db.data.users[m.sender];
-const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];};
+
+ let user = global.db.data.users[m.sender];
+let taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
  
  conn.reply(m.chat, `
 🤤👅🥵 *𝐀𝐂𝐀𝐁𝐀𝐒 𝐃𝐄 𝐅𝐎𝐋𝐋𝐀𝐑𝐓𝐄𝐋@!*🥵👅🤤

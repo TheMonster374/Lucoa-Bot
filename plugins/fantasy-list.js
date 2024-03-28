@@ -186,7 +186,10 @@ ${formatCharacterList(charactersByType)}
 `.trim()
 }}
 
+handler.help = ['fyl']
+handler.tags = ['rpg']
 handler.command = /^(fylista|fyl|fantasyl|fantasylista)$/i
+handler.register = true
 export default handler
 
 

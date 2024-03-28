@@ -17,10 +17,6 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 `.trim();
   conn.sendFile(m.chat, json.url, '', fuck, m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) });
 
-    } catch (e) {
-      throw e;
-    }
-};
 
 handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];

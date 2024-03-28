@@ -54,4 +54,4 @@ handler.tags = ['fun']
 handler.command =/^(Follar|violar)/i
 handler.fail = null
 handler.register = true
-export default handler
+export default handler*/

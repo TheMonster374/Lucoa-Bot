@@ -7,7 +7,6 @@ if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si t
 try {
   const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
  const pp = img6
- const img = './storage/img/18/follar.png';
  const user = global.db.data.users[m.sender];
 const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
  const str = `

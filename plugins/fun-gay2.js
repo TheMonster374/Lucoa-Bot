@@ -4,7 +4,7 @@ if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber q ta
     let gay2 = `*🏳️‍🌈🏳️‍🌈 ${text} ES ${Math.floor(Math.random() * 600)}% GAY, QUE GAY🏳️‍🌈🏳️‍🌈*.
     `.trim();
 m.reply(gay2, null, { mentions: conn.parseMention(gay2) })}
-}
+
 
 handler.help = ['gay2'].map((v) => v + ' <@user>')
 handler.tags = ['fun']

@@ -1,4 +1,30 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, usedPrefix, command, text, args }) => {
+
+
+  if (!args[0]) throw `@taguea a un usuario`;
+
+  let res = await fetch(`https://nekos.pro/api/fucking`);
+
+  let json = await res.json();
+  if (!json.url) throw 'Error!';
+
+  let fuck = `
+🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${text}*🥵👅🤤
+*¡${text}!* TE HAN VIOLADO 😈
+🤤🥵 *¡QUE PERRA ERES* 🥵🤤
+`.trim();
+  conn.sendFile(m.chat, json.url, '', fuck, m, { mentions: conn.parseMention(fuck) });
+
+handler.help = ['fuck'].map((v) => v + ' <@usuario>');
+handler.tags = ['nsfw'];
+handler.command = /^(fuck)$/i;
+handler.register = true;
+export default handler;']
+
+export default handler
+/*import fetch from "node-fetch";
 
 const handler = async (m, { conn, command, text }) => {
   if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
@@ -33,3 +59,4 @@ handler.command = /^(fuck)$/i;
 handler.register = true;
 export default handler;
 
+*/

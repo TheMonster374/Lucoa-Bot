@@ -19,12 +19,9 @@ let fuck = `
 🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${text}*🥵👅🤤
 *¡${text}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤
-`.trim();  conn.sendFile(fuck, url, '', '', m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) }); 
+`.trim(); // Envía la imagen obtenida de la API
+        conn.sendFile(m.chat, url, '', fuck, m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 
-
-        /*// Envía la imagen obtenida de la API
-        conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
-*/
     } catch (e) {
       throw e;
     }

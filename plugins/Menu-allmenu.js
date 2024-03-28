@@ -34,8 +34,6 @@ Hola *%taguser*, Soy INABAKUMORI
 ┃💎 *Diamantes* : *%limit*
 ┃🏆 *Nivel* : *%level*
 ┃🪙 *Coins* : *%totalexp*
-┃ *Si eres un usuario nuevo*
-┃ *escribe: #tutorial*
 ┗━━━━━━━━━━━━━⬣
 %readmore
 ┏━⊜「 *=͟͟͞INFO BOT* 」

@@ -1,7 +1,7 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  /*let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender*/
-
+try {
  const user = global.db.data.users[m.sender];
 const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
  const str = `
@@ -19,9 +19,8 @@ const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
-  } catch (e){
+  } catch{
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
-      throw e
   }
 };
 

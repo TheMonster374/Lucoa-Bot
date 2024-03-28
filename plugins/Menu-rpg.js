@@ -43,14 +43,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃│ ${usedPrefix}fantasy
 ┃│ ${usedPrefix}fymy
 ┃│ ${usedPrefix}fyinfo
-┃│ ${usedPrefix}fytr [fantasía] <@taguser>
+┃│ ${usedPrefix}fytr <@user> [personaje]
 ┃│ ${usedPrefix}fylista
 ┃│ ${usedPrefix}fyguia
-┃│ ${usedPrefix}payxp <@taguser>
+┃│ ${usedPrefix}payxp <@user>
 ┃│ ${usedPrefix}afk [razón]
-┃│ ${usedPrefix}rob <@taguser>
+┃│ ${usedPrefix}rob <@user>
 ┃│ ${usedPrefix}bal
-┃│ ${usedPrefix}uy <cantidad>
+┃│ ${usedPrefix}uy [cantidad]
 ┃│ ${usedPrefix}uyall
 ┃│ ${usedPrefix}cartera
 ┃│ ${usedPrefix}daily

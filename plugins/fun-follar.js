@@ -4,7 +4,7 @@ if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si t
  /*let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender*/
 try { 
  const user = global.db.data.users[m.sender];
-const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];}
  
  conn.reply(m.chat, `
 🤤👅🥵 *𝐀𝐂𝐀𝐁𝐀𝐒 𝐃𝐄 𝐅𝐎𝐋𝐋𝐀𝐑𝐓𝐄𝐋@!*🥵👅🤤
@@ -13,7 +13,7 @@ const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
 
 *${taguser}*
 🤤🥵 *¡𝐘𝐀 𝐓𝐄 𝐇𝐀𝐍 𝐅𝐎𝐋𝐋𝐀𝐃𝐎!* 🥵🤤`, null, { mentions: [user] })
-}}
+}
 
 handler.help = ['follar'].map((v) => v + ' <@user>')
 handler.tags = ['fun']

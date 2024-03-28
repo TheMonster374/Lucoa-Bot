@@ -134,7 +134,10 @@ thumbnailUrl: 'https://i.imgur.com/vIH5SKp.jpg'
 }}})
 }
 
+handler.help = ['fyinfo']
+handler.tags = ['rpg']
 handler.command = /^(fantasyinfo|fyinfo)$/i
+handler.register = true
 export default handler
 
 function getRandom(min, max) {

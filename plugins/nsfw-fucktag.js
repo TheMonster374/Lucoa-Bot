@@ -1,14 +1,9 @@
 import fetch from 'node-fetch'
+export default handler
 
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `@taguea a un usuario`
 
-handler.help = ['fuck'].map((v) => v + ' <@usuario>');
-handler.tags = ['nsfw'];
-handler.command = /^(fuck)$/i;
-handler.register = true;
-
-export default handler
 
   let res = await fetch(`https://nekos.pro/api/fucking`);
 
@@ -22,6 +17,10 @@ export default handler
 `.trim();
   conn.sendFile(m.chat, json.url, '', fuck, m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) });
 
+handler.help = ['fuck'].map((v) => v + ' <@usuario>');
+handler.tags = ['nsfw'];
+handler.command = /^(fuck)$/i;
+handler.register = true;
 
 
 /*import fetch from "node-fetch";

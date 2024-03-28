@@ -19,7 +19,7 @@ let fuck = `
 🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${text}*🥵👅🤤
 *¡${text}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤
-`.trim();  m.reply(fuck, url, '', '', m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) }); 
+`.trim();  conn.sendFile(fuck, url, '', '', m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) }); 
 
 
         /*// Envía la imagen obtenida de la API

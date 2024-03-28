@@ -40,7 +40,8 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
  ${readMore}
 
 ┏━⊜ DIVERSION 👻╗
-╭─────────────···
+╭─────────────··
+┃│ ${usedPrefix}doxear <@user>
 ┃│ ${usedPrefix}formarpareja
 ┃│ ${usedPrefix}love <@user>
 ┃│ ${usedPrefix}follar <@user>

@@ -20,7 +20,7 @@ let fuck = `
 *¡${text}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤
 `.trim(); // Envía la imagen obtenida de la API
-        conn.sendMessage(m.chat, { image : {url: apiUrl }, fuck, m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
+        conn.sendMessage(m.chat, global.API('https://nekos.pro/api/fucking'), fuck, m, false, { mimetype: 'image/jpeg' }, { mentions: conn.parseMention(fuck) }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 
     } catch (e) {
       throw e;

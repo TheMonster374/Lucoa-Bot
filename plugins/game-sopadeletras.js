@@ -10,7 +10,7 @@ await conn.reply(m.chat, `*@${m.sender.split("@")[0]} REGISTRADO EN EL JUEGO* âœ
 }
   
 async function generarSopaDeLetras() {
-const LADO = 12 // Si es alto o bajo, puede dar error, deja como esta
+const LADO = 11 // Si es alto o bajo, puede dar error, deja como esta
 let sopaDeLetras = new Array(LADO);
   
 for (let i = 0; i < LADO; i++) {

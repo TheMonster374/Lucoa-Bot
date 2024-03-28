@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
   diamonds += pjk
   if (diamonds < 1) throw '⚠️ Mínimo es  *1*'
   let users = global.db.data.users
-  users[who].exp += xp
+  users[who].diamonds += limit
 
   await m.reply(`⊜ *💎 DIAMANTES AÑADIDO*
 ┏━━━━━━━━━━━⬣

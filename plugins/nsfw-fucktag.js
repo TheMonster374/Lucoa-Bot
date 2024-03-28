@@ -19,7 +19,7 @@ let fuck = `
 🤤👅🥵 *🤤👅🥵 *TE HAS COGIDO A ${text}*🥵👅🤤
 *¡${text}!* TE HAN VIOLADO 😈
 🤤🥵 *¡QUE PERRA ERES* 🥵🤤
-`.trim();  conn.sendMessage(fuck, url, '', '', m, false, { mimetype: 'image/jpeg' },  { mentions: conn.parseMention(gay2) ); 
+`.trim();  conn.sendMessage(fuck, url, '', '', m, false, { mimetype: 'image/jpeg' },  { mentions: conn.parseMention(gay2) }); 
 
 
         /*// Envía la imagen obtenida de la API

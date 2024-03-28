@@ -128,5 +128,8 @@ return conn.reply(m.chat, `La transferencia de *"${senderData.fantasy[characterI
 return
 }
 
+handler.help = ['fytr']
+handler.tags = ['rpg']
 handler.command = /^(fantasytransfer|fytransfer|fyentregar|fytr)$/i
+handler.register = true
 export default handler

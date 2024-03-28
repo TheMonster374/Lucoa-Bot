@@ -1,8 +1,7 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber q tan puta es*`
 /*  let user = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;*/
-    let porcentaje = Math.floor(Math.random() * 501); // Generar un número aleatorio entre 0 y 500
-    let gay2 = `*🏳️‍🌈🏳️‍🌈 ${text} ES ${porcentaje}% GAY, QUE GAY🏳️‍🌈🏳️‍🌈*.
+    let gay2 = `*🏳️‍🌈🏳️‍🌈 ${text} ES ${Math.floor(Math.random() * 600)}% GAY, QUE GAY🏳️‍🌈🏳️‍🌈*.
     `.trim();
 m.reply(gay2, null, { mentions: conn.parseMention(gay2) })}
 }

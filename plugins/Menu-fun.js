@@ -43,16 +43,14 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
 ╭─────────────···
 ┃│ ${usedPrefix}formarpareja
 ┃│ ${usedPrefix}love <@user>
-┃│ ${usedPrefix}cuando <pregunta>
 ┃│ ${usedPrefix}follar <@user>
 ┃│ ${usedPrefix}gay <@user>
 ┃│ ${usedPrefix}gay2 <@user>
 ┃│ ${usedPrefix}lesbiana <@user>
-┃│ ${usedPrefix}nombrealreves
 ┃│ ${usedPrefix}pajero <@user>
 ┃│ ${usedPrefix}puta <@user>
-┃│ ${usedPrefix}simi <teks>
-┃│ ${usedPrefix}bot <teks>
+┃│ ${usedPrefix}simi <texto>
+┃│ ${usedPrefix}bot <texto>
 ┃│ ${usedPrefix}topgays
 ┃│ ${usedPrefix}topotakus
 ┃│ ${usedPrefix}topintegrantes

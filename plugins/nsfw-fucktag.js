@@ -1,9 +1,8 @@
 import fetch from 'node-fetch'
 
-let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-
-
-  if (!args[0]) throw `@taguea a un usuario`;
+let handler = async (m, { conn, command, text }) => {
+if (!text) throw `@taguea a un usuario`
+ 
 
   let res = await fetch(`https://nekos.pro/api/fucking`);
 

@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
   if (isNaN(txt)) throw ' 🔢 *_sólo números_*'
   let limit = parseInt(txt)
   let diamonds = limit
-  let pjk = Math.ceil(xp * impts)
+  let pjk = Math.ceil(limit * impts)
   diamonds += pjk
   if (diamonds < 1) throw '⚠️ Mínimo es  *1*'
   let users = global.db.data.users

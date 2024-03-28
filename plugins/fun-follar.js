@@ -5,7 +5,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  /*let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender*/
 try {
-  const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
+  const who = global.db.data.users[m.mentionedJid];
+  const tag = '@' + m.mentionedJid.split('@s.whatsapp.net')[0];
  const pp = img6
  const user = global.db.data.users[m.sender];
 const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];

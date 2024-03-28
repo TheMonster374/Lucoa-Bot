@@ -21,9 +21,8 @@ handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];
 handler.command = /^(fuck)$/i;
 handler.register = true;
-export default handler;']
 
-export default handler
+  export default handler
 /*import fetch from "node-fetch";
 
 const handler = async (m, { conn, command, text }) => {

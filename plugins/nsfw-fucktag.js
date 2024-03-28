@@ -56,6 +56,4 @@ handler.help = ['fuck'].map((v) => v + ' <@usuario>');
 handler.tags = ['nsfw'];
 handler.command = /^(fuck)$/i;
 handler.register = true;
-export default handler;
-
-*/
+export default handler;*/

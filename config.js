@@ -62,7 +62,8 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
 global.img3 = fs.readFileSync('./storage/img/menus/Menu10.jpg');
 global.img4 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
 global.img5 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
- 
+global.img6 = fs.readFileSync('./storage/18/follar.png');
+
 global.gataMenu = [img1] 
 
 //━━━━━━━IMAGENES1.5━━━━━━━━━━━━ 

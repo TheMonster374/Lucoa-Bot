@@ -40,12 +40,18 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ┏━⊜ RPG ⚔️╗
 ╭─────────────···
+┃│ ${usedPrefix}fantasy
+┃│ ${usedPrefix}fymy
+┃│ ${usedPrefix}fyinfo
+┃│ ${usedPrefix}fytr [fantasía] <@taguser>
+┃│ ${usedPrefix}fylista
+┃│ ${usedPrefix}fyguia
 ┃│ ${usedPrefix}payxp <@taguser>
 ┃│ ${usedPrefix}afk [razón]
 ┃│ ${usedPrefix}rob <@taguser>
 ┃│ ${usedPrefix}bal
-┃│ ${usedPrefix}Buy <cantidad>
-┃│ ${usedPrefix}Buyall
+┃│ ${usedPrefix}uy <cantidad>
+┃│ ${usedPrefix}uyall
 ┃│ ${usedPrefix}cartera
 ┃│ ${usedPrefix}daily
 ┃│ ${usedPrefix}lb

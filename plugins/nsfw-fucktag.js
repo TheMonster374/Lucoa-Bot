@@ -26,7 +26,6 @@ let fuck = `
         conn.sendFile(m.chat, url, '', '*MIREN A LA MUY PUTA*', m, false, { mimetype: 'image/jpeg' }); // Ajusta el mimetype según el tipo de archivo que obtienes de la API
 */
     } catch (e) {
-        throw `*Ocurrió un error inesperado*`;
       throw e;
     }
 };

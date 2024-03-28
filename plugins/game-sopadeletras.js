@@ -71,7 +71,7 @@ palabraAgregada = true;
 
 // Diseño 
 const LETRAS_POSIBLES = "ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓜⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ"
-const numerosUni = ["⓿", "❶", " ❷", " ❸", " ❹", " ❺", " ❻", " ❼", " ❽", " ❾", " ❿", " ⓫", "⓬", "⓭", "⓮", "⓯", "⓰", "⓱", "⓲", "⓳", "⓴"]
+const numerosUni = ["⓿", "❶", " ❷", " ❸", " ❹", "❺", "❻", "❼", "❽", "❾", "❿", "⓫", "⓬", "⓭", "⓮", "⓯", "⓰", "⓱", "⓲", "⓳", "⓴"]
 let sopaDeLetrasConBordes = ""
 sopaDeLetrasConBordes += "     " + [...Array(LADO).keys()].map(num => numerosUni[num]).join(" ") + "\n"
 //sopaDeLetrasConBordes += "   *╭" + "┄".repeat(LADO) + '┄┄' + "╮*\n"

@@ -26,7 +26,7 @@ let handler = async (m, { conn, text }) => {
 }
 
 handler.help = ['addxp *<@user>*']
-handler.tags = ['rpg']
+handler.tags = ['owner']
 handler.command = ['addxp'] 
 handler.rowner = true
 

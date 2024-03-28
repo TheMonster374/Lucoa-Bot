@@ -23,6 +23,9 @@ global.suittag = [''];
 global.prems = [''];
 global.mods = [];
 
+global.lenguajeGB = es
+global.mid = esDefault
+global.version_language = '1.0 (IBK-TM)'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •

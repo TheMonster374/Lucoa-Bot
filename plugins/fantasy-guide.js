@@ -119,5 +119,7 @@ thumbnailUrl: 'https://i.imgur.com/vIH5SKp.jpg'
 }}})
 }
 
+handler.help = ['fyguia']
+handler.tags = ['rpg']
 handler.command = /^(fantasyguia|fyguia|fyguía|fantasyguide|fyguide)$/i
 export default handler

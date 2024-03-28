@@ -13,7 +13,7 @@ const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
 
 *${taguser}*
 🤤🥵 *¡𝐘𝐀 𝐓𝐄 𝐇𝐀𝐍 𝐅𝐎𝐋𝐋𝐀𝐃𝐎!* 🥵🤤`, null, { mentions: [user] })
-}
+}}
 
 handler.help = ['follar'].map((v) => v + ' <@user>')
 handler.tags = ['fun']

@@ -1,8 +1,8 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber q tan puta es*`
-let gay2 = `
+let puta = `
  *${text} ES ${Math.floor(Math.random() * 600)}% PUTA, ESCRIBANLE AL PRIV*.
-    `.trim(); m.reply(gay2, null, { mentions: conn.parseMention(gay2) })}
+    `.trim(); m.reply(puta, null, { mentions: conn.parseMention(puta) })}
 
 
 handler.help = ['puta'].map((v) => v + ' <@user>')

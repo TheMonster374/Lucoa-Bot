@@ -65,7 +65,7 @@ let user = global.db.data.users[m.sender]
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 //user.registered = false
 
-let pp = gataVidMenu.getRandom()
+let pp = imagen4
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
@@ -245,17 +245,17 @@ let str = `
 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒈𝒓𝒆𝒈𝒂𝒓 𝒂𝒍𝒈𝒖𝒏 𝒂𝒖𝒅𝒊𝒐 𝒏𝒖𝒆𝒗𝒐,
 𝒐 𝒄𝒐𝒔𝒂 𝒏𝒖𝒆𝒗𝒂 𝒉𝒂𝒃𝒍𝒂 𝒄𝒐𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇𝒄 𝒅𝒆𝒍 𝒃𝒐𝒕
 
-*🅣🅗🅔-🅛🅞🅛🅘🅑🅞🅣-🅜🅓*`.trim()
+*INABAKUMORI-BOT*`.trim()
 conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
 
-} catch (e) {
+}/* catch (e) {
 //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
-
+*/
 handler.help = ['infomenu'].map(v => v + 'able <option>')
-handler.tags = ['group', 'owner']
+handler.tags = ['grupo']
 handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio)$/i
 handler.exp = 60
 //handler.register = true

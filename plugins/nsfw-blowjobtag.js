@@ -10,8 +10,8 @@ if (!text) throw `*Por favor, menciona el usuario*`;
  let pp2 = 'https://telegra.ph/file/995b9b523f2986582784f.mp4' 
  let pp3 = 'https://telegra.ph/file/daccf451c6c918cb399df.mp4'
  let pp4 = 'https://telegra.ph/file/2b4be684bc51cef39811d.mp4'
- let pp5 = 'https://telegra.ph/file/19dffe718c967dfe357f6.mp4'
- let pp6 = 'https://telegra.ph/file/729e99a050bfc0cebc737.mp4'
+ let pp5 = 'https://telegra.ph/file/982426e4ffcc93025817b.mp4'
+ let pp6 = 'https://telegra.ph/file/ad5cdfbb1e8fc6d81f7fe.mp4'
 
   try {
     const locale = 'es-ES';

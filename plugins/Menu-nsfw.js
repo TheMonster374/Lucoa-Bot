@@ -40,6 +40,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 ┏━⊜ NSFW 🔞╗
 ╭─────────────···
+┃│ ${usedPrefix}fuck <@usuario>
+┃│ ${usedPrefix}cum <@usuario>
+┃│ ${usedPrefix}blowjob <@usuario>
 ┃│ ${usedPrefix}genshin
 ┃│ ${usedPrefix}swimsuit
 ┃│ ${usedPrefix}schoolswimsuit
@@ -113,7 +116,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃│ ${usedPrefix}wolfgirl
 ┃│ ${usedPrefix}catgirl
 ┃│ ${usedPrefix}fucking
-┃│ ${usedPrefix}fuck <@usuario>
 ┃│ ${usedPrefix}vtuber
 ┃│ ${usedPrefix}xneko
 ┃│ ${usedPrefix}xnxx

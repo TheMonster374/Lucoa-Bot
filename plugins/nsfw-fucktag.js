@@ -1,9 +1,12 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
- let pp = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
-     let pp2 = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
-     
+ let pp = 'https://telegra.ph/file/e427bf7e1e28350ff4c62.mp4' 
+ let pp2 = 'https://telegra.ph/file/3cceebaf0fd97cbdcc074.mp4' 
+ let pp3 = 'https://telegra.ph/file/efa64471182ca6d775c16.mp4'
+ let pp4 = 'https://telegra.ph/file/0c442b3c3d9e14ca2d357.mp4'
+ let pp5 =
+ let pp6 =
   try {
     const locale = 'es-ES';
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];

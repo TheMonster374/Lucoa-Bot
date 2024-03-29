@@ -2,10 +2,10 @@ import fetch from 'node-fetch';
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
-    try {
-        if (!text) throw `*Por favor, menciona el usuario*`;
+    
+if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-    }
+    
  let pp = 'https://telegra.ph/file/e427bf7e1e28350ff4c62.mp4' 
  let pp2 = 'https://telegra.ph/file/3cceebaf0fd97cbdcc074.mp4' 
  let pp3 = 'https://telegra.ph/file/efa64471182ca6d775c16.mp4'

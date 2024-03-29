@@ -20,9 +20,9 @@ if (!text) throw `*Por favor, menciona el usuario*`;
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 
-     *🤤¡TE LA HA CHUPADO* *${text}*!🤤\n
-😈 *¡${text}!* *QUE SORRA ERES* 😈 \n
- *¡COMO TE ENCANTA LA VERGA!* 🥵
+     *🤤¡TE LA HA CHUPADO* ${text}!🤤\n
+😈¡${text}! *QUE SORRA ERES*😈 \n
+ *¡COMO TE ENCANTA LA VERGA!*🥵
   
     `.trim();
     if (m.isGroup) {

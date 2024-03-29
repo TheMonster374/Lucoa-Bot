@@ -6,7 +6,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
      
   try {
     const locale = 'es-ES';
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+    const taguser = '@' + m.mentionedJid.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `

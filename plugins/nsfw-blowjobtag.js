@@ -21,7 +21,7 @@ if (!text) throw `*Por favor, menciona el usuario*`;
     const str = `
 
     🤤👅🥵 *🤤👅🥵 TE LA HA CHUPADO* *${text}*🥵👅🤤
-*¡${text}!* *QUE PUTA ERES* 😈
+*¡${text}!* *QUE SORRA ERES* 😈
 🤤🥵 *¡COMO TE ENCANTA LA VERGA!* 🥵🤤
   
     `.trim();

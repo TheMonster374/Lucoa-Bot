@@ -6,12 +6,12 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = 'https://telegra.ph/file/c24af1bf00858a8e975ef.mp4' 
- let pp2 = 'https://telegra.ph/file/995b9b523f2986582784f.mp4' 
- let pp3 = 'https://telegra.ph/file/daccf451c6c918cb399df.mp4'
- let pp4 = 'https://telegra.ph/file/2b4be684bc51cef39811d.mp4'
- let pp5 = 'https://telegra.ph/file/982426e4ffcc93025817b.mp4'
- let pp6 = 'https://telegra.ph/file/ad5cdfbb1e8fc6d81f7fe.mp4'
+ let pp = 'https://telegra.ph/file/345231d7ae10203e8629b.mp4' 
+ let pp2 = 'https://telegra.ph/file/df0fc85e4d2eb5b813863.mp4' 
+ let pp3 = 'https://telegra.ph/file/c88daffdfd69700060b59.mp4'
+ let pp4 = 'https://telegra.ph/file/01107ffc57dd4ea81d8f8.mp4'
+ let pp5 = 'https://telegra.ph/file/7ee6ca2a178f64e5fa94c.mp4'
+ let pp6 = 'https://telegra.ph/file/53ad0e0c43568e309846a.mp4'
 
   try {
     const locale = 'es-ES';
@@ -20,7 +20,7 @@ if (!text) throw `*Por favor, menciona el usuario*`;
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 
-    🤤👅🥵 *🤤👅🥵 TE LA HAS CORRIDO EN* *${text}*🥵👅🤤
+    🤤👅🥵 *🤤👅🥵 TE HAS CORRIDO EN* *${text}*🥵👅🤤
 *¡${text}!* *TE HAN CUMEADO* 😈
 🤤🥵 *¡EL SEMEN TE FASCINA!* 🥵🤤
   

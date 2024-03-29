@@ -6,10 +6,10 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = 'https://telegra.ph/file/e427bf7e1e28350ff4c62.mp4' 
- let pp2 = 'https://telegra.ph/file/3cceebaf0fd97cbdcc074.mp4' 
- let pp3 = 'https://telegra.ph/file/efa64471182ca6d775c16.mp4'
- let pp4 = 'https://telegra.ph/file/0c442b3c3d9e14ca2d357.mp4'
+ let pp = 'https://telegra.ph/file/c24af1bf00858a8e975ef.mp4' 
+ let pp2 = 'https://telegra.ph/file/995b9b523f2986582784f.mp4' 
+ let pp3 = 'https://telegra.ph/file/daccf451c6c918cb399df.mp4'
+ let pp4 = 'https://telegra.ph/file/2b4be684bc51cef39811d.mp4'
  let pp5 = 'https://telegra.ph/file/19dffe718c967dfe357f6.mp4'
  let pp6 = 'https://telegra.ph/file/729e99a050bfc0cebc737.mp4'
 

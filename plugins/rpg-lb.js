@@ -8,7 +8,7 @@ const handler = async (m, {conn, args, participants}) => {
   const usersCoins = sortedCoins.map(enumGetKey);
   const usersLim = sortedLim.map(enumGetKey);
   const usersLevel = sortedLevel.map(enumGetKey);
-  const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
+  const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedCoins.length);
   const adventurePhrases = [
   "",
 ];

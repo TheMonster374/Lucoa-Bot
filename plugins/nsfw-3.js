@@ -1,7 +1,9 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-
+if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
+    
+  
 let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
 if (!res.ok) throw await res.text()
 let json = await res.json()

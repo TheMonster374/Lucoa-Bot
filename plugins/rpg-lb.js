@@ -2,10 +2,10 @@ const handler = async (m, {conn, args, participants}) => {
   const users = Object.entries(global.db.data.users).map(([key, value]) => {
     return {...value, jid: key};
   });
-  const sortedExp = users.map(toNumber('exp')).sort(sort('exp'));
+  const sortedCoins = users.map(toNumber('money')).sort(sort('money'));
   const sortedLim = users.map(toNumber('limit')).sort(sort('limit'));
   const sortedLevel = users.map(toNumber('level')).sort(sort('level'));
-  const usersExp = sortedExp.map(enumGetKey);
+  const usersCoins = sortedCoins.map(enumGetKey);
   const usersLim = sortedLim.map(enumGetKey);
   const usersLevel = sortedLevel.map(enumGetKey);
   const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
@@ -15,10 +15,10 @@ const handler = async (m, {conn, args, participants}) => {
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
 ┏━━━━━━━━━━━━━━•
-┃-> *TOP ${len} EXP 🥸*
-┃*👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
+┃-> *TOP ${len} COINS 🪙*
+┃*👤 Tú posición:* ${usersCoins.indexOf(m.sender) + 1} de ${usersCoins.length}
 ┃
-┃${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n┃`}
+┃${sortedCoins.slice(0, len).map(({jid, money}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} Coins*`).join`\n┃`}
 ┃
 ┃-> *TOP ${len} DIAMANTES 💎*
 ┃*👤 Tú posición:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}

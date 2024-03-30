@@ -1,7 +1,8 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-
+if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
+    
 
   if (!args[0]) throw `seleciona un tag:\nblowjob\nneko\ntrap\nwaifu`;
 

@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
   let limit = diamond
   let pjk = Math.ceil(diamond * impts)
   limit += pjk
-  if (exp < 1) throw '⚠️ Mínimo es  *1*'
+  if (limit < 1) throw '⚠️ Mínimo es  *1*'
   let users = global.db.data.users
   users[who].limit += diamond
 

@@ -1,13 +1,13 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 
-//import { xpRange } from '../lib/levelling.js'
+import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
 const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let d = new Date(new Date + 3600000)
@@ -55,14 +55,14 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-//let name = await conn.getName(m.sender)
+let name = await conn.getName(m.sender)
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
-//user.registered = false
-//let handler = async (m, { conn }) => {
-//let { role } = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
+user.registered = false
+let handler = async (m, { conn }) => {
+let { role } = global.db.data.users[m.sender]
 let name = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
@@ -97,13 +97,13 @@ _*te falta ${max - user.exp} de XP para subir de nivel*_
 
 _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
 `.trim()
-       /* try {
+       try {
             const img = await levelup(teks, user.level)
             conn.sendMessage(m.chat, {image: {url: img}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
-            //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)*/
+            conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
          catch (e) {
         conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": gataImg.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })
-            //m.reply(str)
+            m.reply(str)
 }}}
 handler.help = ['levelup']
 handler.tags = ['rpg']

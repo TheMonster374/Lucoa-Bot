@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
   limit += imt
   if (limit < 1) throw '⚠️️ *Mínimo es  1.*'
   let users = global.db.data.users
-  if (limit > users[m.sender].limi5) throw '⚠️️ *_Diamantes insuficiente para transferir._*'
+  if (limit > users[m.sender].limit) throw '⚠️️ *_Diamantes insuficiente para transferir._*'
   users[m.sender].limit -= limit
   users[who].limit += diamond
 
@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
 ┏━━━━━━━━━━━━━⬣
 ┃⋄  *${-diamond}* DIAMANTES 💎
 ┃⋄ Impuesto 2% : *${-imt}* DIAMANTES
-┃⋄ Total gastado: *${-exp} DIAMANTES*
+┃⋄ Total gastado: *${-limit} DIAMANTES*
 ┗━━━━━━━━━━━━━⬣`)
   conn.fakeReply(m.chat, `⊜ *_Recibiste_*\n\n *_+${diamond} DIAMANTES 💎._*`, who, m.text)
 }

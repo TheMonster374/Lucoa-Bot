@@ -18,11 +18,11 @@ let handler = async (m, { conn, text }) => {
   let users = global.db.data.users
   users[who].limit += diamond
 
-  await m.reply(`⊜ *✨ DIAMANTES AÑADIDOS*
+  await m.reply(`⊜ *💎 DIAMANTES AÑADIDOS*
 ┏━━━━━━━━━━━⬣
-┃⋄  *Total:* ${diamond}
+┃⋄  *Total:* ${diamond} 💎 
 ┗━━━━━━━━━━━⬣`)
- conn.fakeReply(m.chat, `⊜ *_Recibiste_* \n\n *_+${diamond} DIAMANTES ✨_*`, who, m.text)
+ conn.fakeReply(m.chat, `⊜ *_Recibiste_* \n\n *_+${diamond} DIAMANTES 💎_*`, who, m.text)
 }
 
 handler.help = ['adddi *<@user>*']

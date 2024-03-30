@@ -77,7 +77,7 @@ let user = global.db.data.users[m.sender]
 ┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑿𝑷:* *${user.exp - min}/${xp}*
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
+╰━⊰ 🤍 INABAKUMORI-BOT ⊱━დ
 
 _*te falta ${max - user.exp} de XP para subir de nivel*_
 `.trim()}

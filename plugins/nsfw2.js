@@ -1,6 +1,8 @@
 import axios from 'axios';
 import fetch from 'node-fetch';
 const handler = async (m, {command, conn}) => {
+  if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
+    
   if (command == 'ahegao') {
     const res = (await axios.get(`https://raw.githubusercontent.com/KazukoGans/database/main/nsfw/ahegao.json`)).data;
     const haha = await res[Math.floor(res.length * Math.random())];

@@ -93,7 +93,7 @@ _*te falta ${max - user.exp} de XP para subir de nivel*_
 ┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑭𝑬𝑪𝑯𝑨:* *${new Date().toLocaleString('id-ID')}*
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
+╰━⊰🤍 INABAKUMORI-BOT ⊱━დ
 
 _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
 `.trim()

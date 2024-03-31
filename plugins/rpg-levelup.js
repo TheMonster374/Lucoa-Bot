@@ -8,6 +8,7 @@ import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+let img = 'https://telegra.ph/file/779bf6edf4c8824299e0d.jpg'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let d = new Date(new Date + 3600000)
@@ -102,7 +103,9 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
             conn.sendMessage(m.chat, {text: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
-        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })
+       /* conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })*/
+        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+        
             //m.reply(str)
 }}}
 handler.help = ['levelup']

@@ -104,7 +104,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
        /*conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": gataImg.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })*/
-         conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true,  "thumbnail": img, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+         conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
         
             //m.reply(str)
 }}}

@@ -10,5 +10,5 @@ await conn.sendFile(m.chat, res, 'error.jpg', `*Resultado de ∙* ${text ? text.
 handler.help = ['rule34']
 handler.tags = ['search', 'nsfw']
 handler.command = ['rule34', 'r34']
-handler.limit = 5
+handler.limit = 3
 export default handler

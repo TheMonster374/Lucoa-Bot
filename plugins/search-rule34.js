@@ -1,4 +1,5 @@
 import { googleImage, pinterest } from '@bochilteam/scraper'
+import {limit} from './lib/database.js/'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `❎ En este grupo no esta permitido el contenido *+18*`, m, )
 

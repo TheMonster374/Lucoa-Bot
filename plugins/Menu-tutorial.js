@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const pp = './storage/img/menus/Tutorial.mp4';
+    const pp = img6
     const video = './storage/img/menus/Tutorial.mp4';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';

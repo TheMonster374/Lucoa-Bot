@@ -106,7 +106,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
         } catch (e) {
           /*conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: img, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
         */
-            conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply": {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}},{ quoted: m })  //m.reply(str)
+            conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply": {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}},{ quoted: m })  //m.reply(str)
 }}}
 handler.help = ['levelup']
 handler.tags = ['rpg']

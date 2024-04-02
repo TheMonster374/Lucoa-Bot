@@ -115,7 +115,7 @@ m.reply(`╭━━━━[ 𝙃𝘼 𝙋𝙀𝙍𝘿𝙄𝘿𝙊! 🤡 ]━━⬣
 global.db.data.users[m.sender].wait = new Date * 1
 }}
 handler.help = ['suerte']
-handler.tags = ['games']
+handler.tags = ['game']
 handler.command = /^(suerte)$/i
 export default handler
 

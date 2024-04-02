@@ -45,6 +45,8 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
 ┃│ ${usedPrefix}formarpareja
 ┃│ ${usedPrefix}love <@user>
 ┃│ ${usedPrefix}follar <@user>
+┃│ ${usedPrefix}cumear <@user>
+┃│ ${usedPrefix}mamada <@user>
 ┃│ ${usedPrefix}gay <@user>
 ┃│ ${usedPrefix}gay2 <@user>
 ┃│ ${usedPrefix}lesbiana <@user>

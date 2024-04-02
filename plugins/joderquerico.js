@@ -33,7 +33,7 @@ let handler = async (m, {
         code: conn.freegift[m.sender]?.code ? conn.freegift[m.sender].code.concat(giftCodes) : giftCodes,
     };
     user.money -= totalPrice;
-    conn.reply(m.chat, `🎁 Kamu telah membeli ${total} gift dengan total ${totalPrice} Uang.\n\nKode Gift mu dengan urutan angka:\n${giftCodes.map((code, index) => `${index + 1}. ${code}`).join('\n')}`, m);
+    conn.reply(m.chat, `🎁 Usted ha comprado ${total} gift con total ${totalPrice} Dinero.\n\nTu código de regalo en secuencia de números:\n${giftCodes.map((code, index) => `${index + 1}. ${code}`).join('\n')}`, m);
 };
 handler.help = ['buygift <total>'];
 handler.tags = ['rpg'];

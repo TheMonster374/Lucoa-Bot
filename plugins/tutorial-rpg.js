@@ -28,17 +28,21 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ▢ Yo soy *Inabakumori*, un bot divertido de WhatsApp
 └─────────────
 ${readMore}
-┌───⊷ *Tutorial RPG ⚔️* ⊶    |
-▢  *¿Que es RPG?
+┌───⊷ *Tutorial RPG ⚔️* ⊶    
+▢  *¿Que es RPG?* 
+▢   RPG es un género de 
+▢   videojuegos en el que el 
+▢   jugador asume el papel de 
+▢   uno o más personajes en un 
+▢   mundo ficticio (en este 
+▢   caso de un personaje, ¡TU!). 
 └─────────────
 ${readMore}
 ┌───⊷ *¿Como lo uso?*⊶
-▢  Para usar el bot, primero te tienes que registrar 
-▢  en su base de datos, tranquilo no es nada difícil,
-▢  tienes que escribir el siguiente comando:
-❏ *${usedPrefix}reg [TuNombre].[TuEdad]* sin las "[]"
-▢
-▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
+▢  EL bot tiene varios comandos
+▢  RPG, como el sistema economico
+▢  las coins, los diamantes y la
+▢  experiencia
 └─────────────
 ${readMore}
 ┌───⊷*Mas tutoriales*⊶

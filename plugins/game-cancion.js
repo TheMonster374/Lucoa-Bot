@@ -28,7 +28,7 @@ delete conn.tebaklagu[id]
 let aa = await conn.sendMessage(m.chat, { audio: { url: json.link_song }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
 if (!aa) return conn.sendFile(m.chat, json.link_song, 'coba-lagi.mp3', '', m)
 }
-handler.help = ['tebaklagu']
+handler.help = ['cancion']
 handler.tags = ['game']
 handler.command = /^cancion|canción$/i
 export default handler

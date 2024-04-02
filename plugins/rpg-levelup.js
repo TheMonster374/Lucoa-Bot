@@ -78,7 +78,7 @@ let user = global.db.data.users[m.sender]
 ┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑿𝑷:* *${user.exp - min}/${xp}*
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
+╰━⊰🤍 INABAKUMORI-Bot⊱━დ
 
 _*te falta ${max - user.exp} de XP para subir de nivel*_
 `.trim()}
@@ -94,7 +94,7 @@ _*te falta ${max - user.exp} de XP para subir de nivel*_
 ┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑭𝑬𝑪𝑯𝑨:* *${new Date().toLocaleString('id-ID')}*
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
+╰━⊰🤍 INABAKUMORI-Bot⊱━დ
 
 _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
 `.trim()

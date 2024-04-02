@@ -121,7 +121,7 @@ let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}    
 */ 
-import { canLevelUp, xpRange } from '../lib/levelling.js'
+/*import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 
 //import { xpRange } from '../lib/levelling.js'
@@ -360,7 +360,8 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')} 
-*//*import { canLevelUp, xpRange } from '../lib/levelling.js'
+*/
+import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 
 //import { xpRange } from '../lib/levelling.js'
@@ -468,7 +469,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
         } catch (e) {
           /*conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: img, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
         */
-           /* conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply": {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}},{ quoted: m })  //m.reply(str)
+           conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply": {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}},{ quoted: m })  //m.reply(str)
 }}}
 handler.help = ['levelup']
 handler.tags = ['rpg']
@@ -482,4 +483,4 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}    
-*/
+

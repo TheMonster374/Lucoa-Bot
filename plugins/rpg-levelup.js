@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dir
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
 let img = imagen4
-let img2 = imagen2
+let img2 = 'https://telegra.ph/file/f15171fac156ea7e55072.png'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let d = new Date(new Date + 3600000)

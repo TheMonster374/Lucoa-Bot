@@ -5,7 +5,8 @@ import { levelup } from '../lib/canvas.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let img = './src/Channel.jpg'
+let img = "https://telegra.ph/file/8042958aa9b57a309c12e.jpg"
+let img2 = './src/Channel.jpg'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
@@ -103,7 +104,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
             conn.sendMessage(m.chat, {image: {url: img}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
-        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2, "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
             //m.reply(str)
 }}}
 handler.help = ['levelup']

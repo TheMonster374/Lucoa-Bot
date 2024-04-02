@@ -4,7 +4,7 @@ import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   const fetch = (await import('node-fetch')).default;
   const text = args.join` `;
-  if (!text) return conn.reply(m.chat, '[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒕𝒆𝒙𝒕𝒐 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒃𝒖𝒔𝒄𝒂𝒓 \n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐:  jotchua', m);
+  if (!text) return conn.reply(m.chat, '[📚] 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒕𝒆𝒙𝒕𝒐 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒃𝒖𝒔𝒄𝒂𝒓 \n\n[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐:  𝑰𝒏𝒂𝒃𝒂𝒌𝒖𝒎𝒐𝒓𝒊', m);
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
 let teks = `𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐 𝒅𝒆: _${text}_*`

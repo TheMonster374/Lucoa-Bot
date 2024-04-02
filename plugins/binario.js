@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
       key: m.key,
     }
   });
-	conn.sendFile(m.chat, `https://api.betabotz.org/api/nsfw/ahegao?apikey='-'`, 'Kemii.jpg', '```Success...\nDont forget to donate```', m)
+	conn.sendFile(m.chat, `https://api.betabotz.org/api/nsfw/ahegao?apikey=-`, 'Kemii.jpg', '```Success...\nDont forget to donate```', m)
 }
 handler.help = ['ahegao']
 handler.tags = ['nsfw']

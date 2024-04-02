@@ -3,7 +3,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen7
-    const img = './storage/img/menus/Menu4.jpg';
+    const video = './storage/img/menus/Tutorial.gif';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -53,39 +53,30 @@ ${readMore}
 ┌───⊷ *¿Como lo uso?*⊶
 ▢  Para usar el bot, primero te tienes que registrar 
 ▢  en su base de datos, tranquilo no es nada difícil,
-▢  tienes que escribir el siguiente comando:
+▢  tienes que escribir el siguiente comando como el gif:
 ❏ *${usedPrefix}reg [TuNombre].[TuEdad]* sin las "[]"
 ▢
 ▢  ¡Y listo, ya puedes usar los diferentes comandos del bot!
 └──────────────
-${readMore}
-┌───⊷*Mas tutoriales (pronto)⊶
-❏ *${usedPrefix}tutorpg*
-❏ *${usedPrefix}tutoias*
-❏ *${usedPrefix}tutosubbots*
-❏ *${usedPrefix}tutodescargas*
-❏ *${usedPrefix}tutogrupos (solo admins)*
-❏ *${usedPrefix}tutoenable (solo admins)*
-❏ *${usedPrefix}tutonsfw*
-❏ *${usedPrefix}tutojuegos*
-❏ *${usedPrefix}tutofun*
-❏ *${usedPrefix}tutotools*
-└──────────────
 
 
-`.trim();
+ `.trim();
     if (m.isGroup) {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
-    } else {
+      /*conn.sendMessage(m.chat, {video: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
+    } */
+      conn.sendMessage(m.chat, { video: pp, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+        }else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+     /* conn.sendMessage(m.chat, {video: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+    */ conn.sendMessage(m.chat, { video: pp, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch (e) {
-    conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
+    conn.reply(m.chat, '*[❌] ocurrio un error inesperado*', m);
        throw (e)
   }
 };
+
 handler.command =/^(tutorial|tuto|new|nuevo)/i;
 handler.exp = 50;
 handler.register = false;

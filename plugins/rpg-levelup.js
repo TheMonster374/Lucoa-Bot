@@ -107,7 +107,7 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
        /*conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": gataImg.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })*/
         /* conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: img, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
         */
-            conn.sendMessage(m.chat, {image: img, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, "title": wm, "containsAutoReply": true, "mediaType": 1,/* "mediaUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j'*/ "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+            conn.sendMessage(m.chat, {image: img, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, "title": wm, "containsAutoReply": true, "mediaType": 1, "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', { quoted: m })
             //m.reply(str)
 }}}
 handler.help = ['levelup']

@@ -366,7 +366,7 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*hola @user Bienvenido a @subject, escribe #menu para ver las funciones que poseo*';
+  conn.welcome = '*hola @user Bienvenido a @subject, escribe .menu para ver las funciones que poseo*';
   conn.bye = '*Unculiaomenos @user, salió del grupo 🗿🚬*'; 
   conn.spromote = '*@user Ahora es admin*';
   conn.sdemote = '*@user Ya no es admin*';

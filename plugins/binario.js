@@ -1,16 +1,15 @@
-import fetch from 'node-fetch'
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-	if (!text) return conn.reply(m.chat, `• *Example :* ${usedPrefix + command} org.mc-complex.com`, m)
-	let kemii = await fetch(`https://api.lolhuman.xyz/api/minecraft/${text}?apikey=${global.lolkey}`)
-	let res = await kemii.json()
-	let hasil = `Version: ${res.result.version}\nPlayers: ${res.result.players.online} & ${res.result.players.max}\nLatency: ${res.result.latency}`
-	let thumb = `https://api.lolhuman.xyz/api/gimage?apikey=${global.lolkey}&query=${text}`
-	await conn.sendFile(m.chat, thumb, 'minecraft.jpg', `${dann}`, m)
+let handler = async (m, { conn }) => {
+  conn.sendMessage(m.chat, {
+    react: {
+      text: '🕒',
+      key: m.key,
+    }
+  });
+	conn.sendFile(m.chat, `https://api.betabotz.org/api/nsfw/ahegao?apikey='-'`, 'Kemii.jpg', '```Success...\nDont forget to donate```', m)
 }
+handler.help = ['ahegao']
+handler.tags = ['nsfw']
 
-handler.help = ['minecraft *<url>*']
-handler.tags = ['internet']
-handler.command = /^binario/i
+handler.command = /^(binario)$/i
 
 export default handler

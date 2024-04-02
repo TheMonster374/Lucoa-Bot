@@ -63,6 +63,6 @@ m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Tu: ${textm}*\n*👉🏻 El Bot:
 global.db.data.users[m.sender].wait = new Date * 1
 }
 handler.help = ['ppt']
-handler.tags = ['games']
+handler.tags = ['game']
 handler.command = /^(ppt)$/i
 export default handler

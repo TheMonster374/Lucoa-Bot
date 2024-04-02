@@ -149,8 +149,8 @@ ${htjava} A B I L I T Y ${htjava}
                 case 'cat':
                     if (user.cat > 0) return m.reply('Kamu sudah memilik ini')
                     if (user.pet < hcat) return m.reply(`Pet Token anda kurang`)
-                    global.db.data.users[m.sender].pet -= hcat
-                    global.db.data.users[m.sender].cat += 1
+                    global.db.data.users[m.sender].money -= hcat
+                    global.db.data.users[m.sender].money += 1
                     m.reply("Selamat anda mempunyai pet Baru ! 🎉")
                     break
                 case 'dog':

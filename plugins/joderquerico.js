@@ -5,7 +5,7 @@ let handler = async (m, {
 }) => {
     const user = global.db.data.users[m.sender];
     if (args.length !== 1 || isNaN(args[0])) {
-        return conn.reply(m.chat, `❓ Masukkan total jumlah gift yang ingin kamu beli.\nContoh: *${usedPrefix}buygift 2*`, m);
+        return conn.reply(m.chat, `❓ Ingresa el número total de regalos que deseas comprar.\nEjemplo: *${usedPrefix}buygift 2*`, m);
     }
 
     const total = parseInt(args[0]);
@@ -13,12 +13,12 @@ let handler = async (m, {
     const maxTotal = 10;
 
     if (total < 1 || total > maxTotal) {
-        return conn.reply(m.chat, `❌ Maaf, kamu hanya bisa membeli 1 hingga ${maxTotal} gift sekaligus.`, m);
+        return conn.reply(m.chat, `❌ Lo sentimos, sólo puedes comprar 1 a ${maxTotal} gift sekaligus.`, m);
     }
 
     const totalPrice = total * giftPrice;
     if (user.money < totalPrice) {
-        return conn.reply(m.chat, `❌ Maaf, uangmu tidak cukup untuk membeli ${total} gift.\nTotal biaya: ${totalPrice} Uang\nUang kamu saat ini: ${user.money} Uang`, m);
+        return conn.reply(m.chat, `❌Lo sentimos, no tienes suficiente dinero para comprar ${total} regalos.\nCoste total: ${totalPrice} Dinero\nTu dinero actual: ${user.money} Dinero`, m);
     }
 
     let giftCodes = [];

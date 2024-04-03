@@ -112,10 +112,10 @@ contextInfo: {
 externalAdReply: {
 showAdAttribution: false,
 title: `🌟 FANTASÍA RPG`,
-body: `😻 Una aventura nos espera...`,
+body: `🤍 Una aventura nos espera...`,
 mediaType: 1,
 sourceUrl: null,
-thumbnailUrl: 'https://i.imgur.com/vIH5SKp.jpg'
+thumbnailUrl: 'https://imgur.com/gallery/lYdHEVR'
 }}})
 }
 

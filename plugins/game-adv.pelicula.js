@@ -3,9 +3,9 @@ const timeout = 60000;
 const poin = 1000;
 const handler = async (m, {conn, usedPrefix}) => {
   conn.advpeli = conn.advpeli ? conn.advpeli : {};
-  const id2 = m.chat;
-  if (id2 in conn.advpeli) {
-    conn.reply(m.chat, '[⚠] Todavia hay adivinanzas sin responder en este chat', conn.advpeli[id2][0]);
+  const id = m.chat;
+  if (id in conn.advpeli) {
+    conn.reply(m.chat, '[⚠] Todavia hay adivinanzas sin responder en este chat', conn.advpeli[id][0]);
     throw false;
   }
   const advpeli = JSON.parse(fs.readFileSync(`./src/game/peliculas.json`));
@@ -17,12 +17,12 @@ const handler = async (m, {conn, usedPrefix}) => {
 *• Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
 *• Bono:* +${poin} Exp
 `.trim();
-  conn.advpeli[id2] = [
+  conn.advpeli[id] = [
     await conn.reply(m.chat, caption, m), json,
     poin,
     setTimeout(async () => {
-      if (conn.advpeli[id2]) await conn.reply(m.chat, `Se acabo el tiempo!\nla respuesta es: ${json.response}`, conn.advpeli[id2][0]);
-      delete conn.advpeli[id2];
+      if (conn.advpeli[id]) await conn.reply(m.chat, `Se acabo el tiempo!\nla respuesta es: ${json.response}`, conn.advpeli[id][0]);
+      delete conn.advpeli[id];
     }, timeout)];
 };
 handler.help = ['pelicula'];

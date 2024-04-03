@@ -104,7 +104,7 @@ Utiliza el comando \`${usedPrefix}fantasyinfo o ${usedPrefix}fyinfo\` seguido de
 *¿Cómo puedo transferir la propiedad de un personaje comprado a otro usuario?*
 
 Con el comando \`${usedPrefix}fyentregar o ${usedPrefix}fytr\`, y mencionando el nombre del personaje y etiquentando a alguien o respondiendo al mensaje de un usuario, podrás transferir la propiedad del personaje al usuario deseado.`.trim()
-let pp = 'https://telegra.ph/file/5413c3d098f748e7def77.jpg'
+let pp = 'https://telegra.ph/file/9eb537c835d143e26250b.jpg'
 await conn.sendFile(m.chat, pp, 'error.jpg', fantasy, fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,

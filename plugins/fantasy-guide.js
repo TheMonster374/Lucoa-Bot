@@ -115,7 +115,7 @@ title: `🌟 FANTASÍA RPG`,
 body: `🤍 Una aventura nos espera...`,
 mediaType: 1,
 sourceUrl: null,
-thumbnailUrl: 'https://imgur.com/gallery/lYdHEVR'
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}})
 }
 

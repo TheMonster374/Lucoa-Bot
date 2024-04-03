@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
     if ((user.warn * 1) < 3) {
         user.warn += 1
         m.reply('Fuiste advertido por mi creador')
-        await m.reply('O moderador, y ahora tienes *' + (user.warn + 1) + '* Advertencias. Has sido baneado por recibir 4 advertencias', mention)
+        await m.reply('O moderador, y ahora tienes *' + (user.warn + 1) + '* Advertencias. Seras baneado por recibir 4 advertencias', mention)
     } else if ((user.warn * 1) > 2) {
         let reason = (args.length > 0 || args[1] ? args.slice(1).join(' ') : '4 kali WARN') || '4 kali WARN'
         user.banned = true

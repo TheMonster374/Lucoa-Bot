@@ -129,8 +129,8 @@ renderLargerThumbnail: false,
 title: `🌟 FANTASÍA RPG`,
 body: `Usuario: » ${conn.getName(m.sender)}`,
 mediaType: 1,
-sourceUrl: null,
-thumbnailUrl: 'https://i.imgur.com/vIH5SKp.jpg'
+sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}})
 }
 

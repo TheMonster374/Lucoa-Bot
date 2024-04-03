@@ -1,5 +1,4 @@
 import { googleImage, pinterest } from '@bochilteam/scraper'
-import {limit} from './lib/database.js/'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `❎ En este grupo no esta permitido el contenido *+18*`, m, )
 
@@ -10,5 +9,4 @@ await conn.sendFile(m.chat, res, 'error.jpg', `*Resultado de ∙* ${text ? text.
 handler.help = ['rule34']
 handler.tags = ['search', 'nsfw']
 handler.command = ['rule34', 'r34']
-handler.limit = 3
 export default handler

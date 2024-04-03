@@ -1,3 +1,5 @@
+//NO EDITAR, PUEDE GENERAR BUGS EN EL BOT
+
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 global.img7 = fs.readFileSync ('./Donar.mp4');
@@ -63,7 +65,7 @@ https://github.com/TheMonster374/INABAKUMORI-Bot/tree/master
   }
 };
 handler.command = /^(donar)$/i;
-handler.tags = ['info']
+handler.tags = ['main']
 handler.help = ['donar']
 handler.exp = 50;
 handler.fail = null;

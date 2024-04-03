@@ -10,7 +10,7 @@ if (!who) throw m.reply(warntext, m.chat, { mentions: conn.parseMention(warntext
 if (m.mentionedJid.includes(conn.user.jid)) return
 if (user.warn == 0) throw '*El usuario no tiene advertencias*'  
 user.warn -= 1
-await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}`} Se le ha retirado una advertencia*\n*ADVERTENCIAS ${user.warn}/3*`, null, { mentions: [who]})}
+await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}`} Se le ha retirado una advertencia*\n*ADVERTENCIAS ${user.warn}/4*`, null, { mentions: [who]})}
 handler.command = /^(unwarn|delwarn|deladvertir|deladvertencia|delwarning)$/i
 handler.help = ['warn *@mención*']
 handler.tags = ['owner']

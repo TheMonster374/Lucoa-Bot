@@ -99,14 +99,16 @@ _*te falta ${max - user.exp} de XP para subir de nivel*_
 
 _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
 `.trim()
-        try {
+        /*try {
             const img = await levelup(teks, user.level)
             conn.sendMessage(m.chat, {image: {url: 'https://i.imgur.com/lMKaVHK.jpeg'}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
-            /*conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://i.imgur.com/lMKaVHK.jpeg', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+            conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://i.imgur.com/lMKaVHK.jpeg', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
             */
-            contextInfo: {
+let pp = 'https://telegra.ph/file/9eb537c835d143e26250b.jpg'
+await conn.sendFile(m.chat, pp, 'error.jpg', str, fkontak, true, {
+contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
 externalAdReply: {
@@ -116,9 +118,10 @@ body: `🤍 Una aventura nos espera...`,
 mediaType: 1,
 sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
-
+}}})
+    }
             //m.reply(str)
-}}}
+
 handler.help = ['levelup']
 handler.tags = ['rpg']
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 

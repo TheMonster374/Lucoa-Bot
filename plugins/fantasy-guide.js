@@ -114,7 +114,7 @@ showAdAttribution: false,
 title: `🌟 FANTASÍA RPG`,
 body: `🤍 Una aventura nos espera...`,
 mediaType: 1,
-sourceUrl: null,
+sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}})
 }

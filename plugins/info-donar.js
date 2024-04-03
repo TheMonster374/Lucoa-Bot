@@ -64,7 +64,7 @@ https://github.com/TheMonster374/INABAKUMORI-Bot/tree/master
 };
 handler.command = /^(donar)$/i;
 handler.tags = ['donar']
-handler.help = ['donar']
+handler.help = ['info']
 handler.exp = 50;
 handler.fail = null;
 export default handler;

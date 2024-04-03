@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 const fantasyDBPath = './fantasy.json'
-const jsonURL = 'https://raw.githubusercontent.com/GataNina-Li/module/main/imagen_json/anime.json'
+const jsonURL = 'https://gist.githubusercontent.com/TheMonster374/ffd2fdfa540cf4573f967163d36242b6/raw/94d55c0e06071ddd1bf6d841f531b22537d9bc43/anime.json'
 
 let handler = async (m, { command, usedPrefix, text, conn }) => {
 let user = global.db.data.users[m.sender]

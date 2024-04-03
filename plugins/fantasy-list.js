@@ -118,7 +118,7 @@ if (isNaN(currentPage) || currentPage < 1 || currentPage > totalPages) {
 return conn.reply(m.chat, `Número de página inválido. Utiliza un número entre 1 y ${totalPages}.`, m)
 }
   
-let pp = 'https://telegra.ph/file/9eb537c835d143e26250b.jpg'
+let pp = 'https://telegra.ph/file/23aadaec3f564f1f481bf.jpg'
 await conn.sendFile(m.chat, pp, 'error.jpg', getFormattedReply(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,

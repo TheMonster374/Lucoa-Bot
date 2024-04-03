@@ -7,11 +7,11 @@ let virtex3 = await fetch('https://raw.githubusercontent.com/Caliph91/txt/main/p
 let virtex4 = await fetch('https://raw.githubusercontent.com/Caliph91/txt/main/pirtex/4.txt').then(v => v.text());
 let virtex5 = await fetch('https://raw.githubusercontent.com/BrunoSobrino/ShadowBotV3-OBSOLETO/master/lib/Binario.txt').then(v => v.text());
 conn.sendPresenceUpdate('recording', m.chat)
-m.reply(virtex, estiloaudio);
-m.reply(virtex2, estiloaudio);
+m.reply(virtex);
+m.reply(virtex2);
 conn.sendPresenceUpdate('recording', m.chat)
-m.reply(virtex3, estiloaudio);
-m.reply(virtex4, estiloaudio);
+m.reply(virtex3);
+m.reply(virtex4);
 conn.sendPresenceUpdate('recording', m.chat)
 }
 handler.command = /^traba1|c1|binario1$/i

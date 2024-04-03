@@ -5,7 +5,7 @@ handler.before = async function(m) {
   const id = m.chat;
   if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0;
   this.tekateki2 = this.tekateki2 ? this.tekateki2 : {};
- /* if (!(id in this.tekateki2)) return m.reply('*esa adivinanza ya termino*');*/
+ if (!(id in this.tekateki2)) return m.reply('*esa adivinanza ya termino*');
   if (m.quoted.id == this.tekateki2[id][0].id) {
     const json = JSON.parse(JSON.stringify(this.tekateki2[id][1]));
     if (m.text.toLowerCase() == json.response.toLowerCase().trim()) {

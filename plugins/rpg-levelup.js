@@ -101,10 +101,10 @@ _*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
 `.trim()
         try {
             const img = await levelup(teks, user.level)
-            conn.sendMessage(m.chat, {image: {url: img}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+            conn.sendMessage(m.chat, {image: {url: 'https://i.imgur.com/lMKaVHK.jpeg'}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
-            conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": img2.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://i.imgur.com/lMKaVHK.jpeg', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
+            conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: 'https://i.imgur.com/lMKaVHK.jpeg'}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": 'https://i.imgur.com/lMKaVHK.jpeg', "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://i.imgur.com/lMKaVHK.jpeg', "sourceUrl": 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', }}}, { quoted: m })
             
             //m.reply(str)
 }}}

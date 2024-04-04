@@ -23,7 +23,17 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     /*conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
 */
    /* conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, { quoted: m })*/
-   conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, { quoted: m})
+   conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+externalAdReply: {
+showAdAttribution: false,
+title: `CANAL DE WHATSAPP`,
+body: `🤍 Unete al canal OFC`,
+mediaType: 1,
+sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
+}}}, { quoted: m})
    
 }
 handler.help = ['ruleta apuesta/color']

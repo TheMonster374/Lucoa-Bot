@@ -8,21 +8,33 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     let colores = ['rojo', 'negro']
     let colour = colores[Math.floor(Math.random() * colores.length)];
     let user = global.db.data.users[m.sender]
-    if (isNaN(amount) || amount < 10) throw `*_Lo minimo para apostar son 10 Pesos 🪙_*.`
+    if (isNaN(amount) || amount < 10) throw `*_Lo minimo para apostar son 10 Coins 🪙_*.`
     if (!colores.includes(color)) throw '*_Debes especificar un color válido: rojo o negro_*'
-    if (user.exp < amount) throw '*_¡No tienes suficiente pesos!_*'
-    if (amount > 100000) throw `*_No puedes apostar mas de 100000 Pesos 🪙_.*`
+    if (user.exp < amount) throw '*_¡No tienes suficiente Coins!_*'
+    if (amount > 100000) throw `*_No puedes apostar mas de 100000 Coins 🪙_.*`
     let result = ''
     if (colour == color) {
-        result = `${colour == 'rojo' ? '*La pelota paro en el color:* 🔴' : '*La pelota paro en el color:* ⚫'} \n\n *+ ${amount * 2} Pesos 🪙*`
+        result = `${colour == 'rojo' ? '*La pelota paro en el color:* 🔴' : '*La pelota paro en el color:* ⚫'} \n\n *+ ${amount * 2} Coins 🪙*`
         user.exp += amount * 2
     } else {
-        result = `${colour == 'rojo' ? '*La pelota paro en el color:* 🔴' : 'La pelota paro en el color:* ⚫'} \n\n *- ${amount} Pesos 🪙*`
+        result = `${colour == 'rojo' ? '*La pelota paro en el color:* 🔴' : 'La pelota paro en el color:* ⚫'} \n\n *- ${amount} Coins 🪙*`
         user.exp -= amount
     }
     /*conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
 */
-    conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, { quoted: m })
+   /* conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, { quoted: m })*/
+   conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result },  contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+externalAdReply: {
+showAdAttribution: false,
+title: `CANAL DE WHATSAPP`,
+body: `🤍 Unete al canal OFC`,
+mediaType: 1,
+sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
+}}})
+   
 }
 handler.help = ['ruleta apuesta/color']
 handler.tags = ['game']

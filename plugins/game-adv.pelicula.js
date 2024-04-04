@@ -27,7 +27,7 @@ if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo!\n*Respuest
 delete conn.tekateki[id]
 }, timeout)
 ]}
-handler.help = ['advpe', 'adv', 'película', 'películas']
-handler.tags = ['games']
+handler.help = ['advpe']
+handler.tags = ['game']
 handler.command = /^(advpe|adv|peliculas|pelicula)$/i
 export default handler

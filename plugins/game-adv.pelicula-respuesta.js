@@ -4,15 +4,15 @@ const handler = (m) => m;
 handler.before = async function(m) {
   const id = m.chat;
   if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0;
-  this.advpeli = this.advpeli ? this.advpeli : {};
-  if (!(id in this.advpeli)) return m.reply('*esa adivinanza ya termino*');
-  if (m.quoted.id == this.advpeli[id][0].id) {
-    const json = JSON.parse(JSON.stringify(this.advpeli[id][1]));
+  this.tekateki = this.tekateki ? this.tekateki : {};
+  if (!(id in this.tekateki)) return m.reply('*esa adivinanza ya termino*');
+  if (m.quoted.id == this.tekateki[id][0].id) {
+    const json = JSON.parse(JSON.stringify(this.tekateki[id][1]));
     if (m.text.toLowerCase() == json.response.toLowerCase().trim()) {
-      global.db.data.users[m.sender].exp += this.advpeli[id][2];
-      m.reply(`*Respuesta correcta!*\n+${this.advpeli[id][2]} Exp`);
+      global.db.data.users[m.sender].exp += this.tekateki[id][2];
+      m.reply(`*Respuesta correcta!*\n+${this.tekateki[id][2]} Exp`);
       clearTimeout(this.advpeli[id][3]);
-      delete this.advpeli[id];
+      delete this.tekateki[id];
     } else if (similarity(m.text.toLowerCase(), json.response.toLowerCase().trim()) >= threshold) m.reply(`Casi lo logras`);
     else m.reply('Respuesta incorrecta!');
   }

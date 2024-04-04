@@ -1,6 +1,6 @@
 import fs from 'fs'
 let timeout = 30000
-let poin = 600
+let poin = 1000
 let md2 = "https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j"
 
 let handler = async (m, { conn, usedPrefix }) => {

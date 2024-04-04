@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     /*conn.sendMessage(m.chat, { video: { url: ruletaresultado }, caption: result }, { quoted: m })
 */
    /* conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, { quoted: m })*/
-   conn.sendFile(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, {
+   conn.sendMessage(m.chat, { video: { url: ruletaresultado }, gifPlayback: true, caption: result }, {
 contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,

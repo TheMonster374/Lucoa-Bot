@@ -40,6 +40,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  
 ┏━⊜ DESCARGAS 🔽╗
 ╭─────────────···
+┃│ ${usedPrefix}fb <link>
 ┃│ ${usedPrefix}apk
 ┃│ ${usedPrefix}gitclone
 ┃│ ${usedPrefix}igstory <username>

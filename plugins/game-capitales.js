@@ -13,7 +13,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const _clue = json.response;
   const clue = _clue.replace(/[A-Za-z]/g, '_');
   const caption = `
-ⷮ *${json.question}*
+ⷮ *${json.pais}*
 *• Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
 *• Bono:* +${poin} Exp
 `.trim();

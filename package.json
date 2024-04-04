@@ -1,6 +1,6 @@
 {
   "name": "INABAKUMORI-Bot",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "bot de whatsapp",
   "main": "index.js",
   "type": "module",

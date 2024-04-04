@@ -214,5 +214,21 @@
     {
        "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
        "response": "El aire"
+     },
+    {
+        "question": "Estoy rodeado de pelos y estoy en el medio. Tengo una abertura que puedes ver que se abre y se cierra. ¿Qué soy?",
+        "response": "Un ojo"
+    },
+    {
+        "question": "Las mujeres no la tienen, pero los hombres sí. Los toros tienen dos, igual que un obispo. ¿Qué soy?",
+        "response": "La letra O"
+    },
+    {
+        "question": "Lo levanto cuando estoy contento, pero es más pequeño que el resto. ¿Qué es?",
+        "response": "El dedo pulgar"
+    },
+    {
+        "question": "Húmedo por dentro, con pelos por fuera. Comienza por la C. ¿De qué se trata?",
+        "response": "Un coco"
 }
 ]

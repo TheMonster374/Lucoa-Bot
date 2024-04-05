@@ -149,9 +149,9 @@
     "name": "Satoru Gojo",
     "desp": "Jujutsu Kaisen",
     "info": "Satoru Gojo es uno de los personajes más poderosos y carismáticos de 'Jujutsu Kaisen'. Es un hechicero extremadamente habilidoso y el maestro de la Escuela Jujutsu Tokyo. Gojo es conocido por su personalidad relajada y bromista, pero detrás de su actitud despreocupada se encuentra un luchador formidable y astuto. Posee una técnica única llamada 'Infinity', que le otorga un control absoluto sobre el espacio, haciéndolo prácticamente invencible en combate. Gojo es un mentor compasivo para los estudiantes de la escuela y está dispuesto a hacer lo que sea necesario para proteger a aquellos a quienes considera importantes.",
-    "class": "Épico",
+    "class": "Transcendental",
     "type": "Manga, Anime, Acción, Sobrenatural, Fantasía, Artes Marciales, Maestro, Poder",
-    "price": 1184,
+    "price": 93784,
     "code": "7Xl4%A"
   },
   {
@@ -296,6 +296,39 @@
     "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder, poderosos, demonios, villano, fantasía oscura",
     "price": 850960,
     "code": "B1#xo5"
+  },
+  {
+    "index": 28,
+    "url": "https://telegra.ph/file/77a470c938a5fdda08c96.jpg",
+    "name": "Toge Inumaki",
+    "desp": "Jujutsu Kaisen",
+    "info": "Toge Inumaki (狗巻棘, Inumaki Toge?) es uno de los personajes de la serie manga Tokyo Metropolitan Curse Technical School y su serie secuela, Jujutsu Kaisen. Es un estudiante de segundo año del Colegio Técnico de Magia Metropolitana de Tokio y miembro del Clan Inumaki.",
+    "class": "Épico",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
+    "price": 1017,
+    "code": "jE%0I3"
+  },
+  {
+    "index": 29,
+    "url": "https://telegra.ph/file/2a61ff45d947a150a2f25.jpg",
+    "name": "Aoi Todo",
+    "desp": "Jujutsu Kaisen",
+    "info": "Aoi Todo (東とう堂どう葵あ い, Todo Aoi ? ) es un personaje secundario de la serie Jujutsu Kaisen . Es un estudiante de tercer año en la escuela secundaria Kyoto Jujutsu y un hechicero de jujutsu de primer grado . Fue asesorado por Yuki Tsukumo en su juventud y considera a Yuji Itadori su mejor amigo.",
+    "class": "Legendario",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
+    "price": 1697,
+    "code": "vY_76P"
+  },
+  {
+    "index": 30,
+    "url": "https://telegra.ph/file/11d47126ea704753cdbd8.jpg",
+    "name": "Yuta Okkotsu",
+    "desp": "Jujutsu Kaisen",
+    "info": "Yuta Okkotsu (乙っっ骨こつ憂ゆう太た, Okkotsu Yuta ? ) es un personaje secundario importante en la serie Jujutsu Kaisen y el protagonista principal de su serie precuela, Jujutsu Kaisen 0: Jujutsu High . Inicialmente era un humano maldito de grado especial perseguido por su difunta amiga de la infancia, Rika Orimoto . Satoru Gojo fue el mentor de Yuta y lo inscribió en Tokyo Jujutsu High .",
+    "class": "Supremo",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder, demonios",
+    "price": 22156,
+    "code": "*ki0u8"
   }
   ]
 }

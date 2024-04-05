@@ -252,6 +252,17 @@
     "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
     "price": 1470,
     "code": "TH!f97"
-  }
+  },
+   {
+    "index": 24,
+    "url": "https://telegra.ph/file/c8442c8866844afbc3d7a.jpg",
+    "name": "Megumi Fushiguro",
+    "desp": "Jujutsu Kaisen",
+    "info": "Megumi Fushiguro es uno de los protagonistas de la serie manga Jujutsu Kaisen. Es un estudiante de primer año del Colegio Técnico de Magia Metropolitana de Tokio, y compañero de Yuji Itadori y Nobara Kugisaki.",
+    "class": "Legendario",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
+    "price": 2019,
+    "code": "^zZQ05"
+      }
   ]
 }

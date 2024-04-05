@@ -329,6 +329,128 @@
     "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder, demonios",
     "price": 22156,
     "code": "*ki0u8"
+  },
+  
+  {
+    "index": 31,
+    "url": "https://telegra.ph/file/022d82dd1fc13d4484748.jpg",
+    "name": "Sasuke Uchiha",
+    "desp": "Naruto Shippuden",
+    "info": "Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) es el deuteragonista de la serie y uno de los supervivientes del Clan Uchiha. Es hijo de Fugaku Uchiha y Mikoto Uchiha, hermano de Itachi Uchiha, así como la Reencarnación actual de Indra Ōtsutsuki.",
+    "class": "Legendario",
+    "type": "Anime, manga, poder, acción, fantasía, ninjas, superpoderes",
+    "price": 2294,
+    "code": "!8d2dZ"
+  },
+  {
+    "index": 32,
+    "url": "https://telegra.ph/file/ae4c1f274477dd8b8da90.jpg",
+    "name": "Rock Lee",
+    "desp": "Naruto",
+    "info": "Rock Lee (ロック・リー, Rokku Rī) es un ninja de rango Jōnin perteneciente a Konohagakure. Hace parte del Equipo Guy, junto a sus compañeros Neji Hyūga y Tenten, y fue uno de los miembros que formaron parte de la Tercera División durante la Cuarta Guerra Mundial Shinobi.",
+    "class": "Épico",
+    "type": "Ninjas, amistad, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 1343,
+    "code": "YjN85#"
+  },
+  {
+    "index": 33,
+    "url": "https://telegra.ph/file/7bcd82b00e7864cb416b1.jpg",
+    "name": "Kakashi Hatake",
+    "desp": "Naruto",
+    "info": "Kakashi Hatake (はたけカカシ, Hatake Kakashi) es un shinobi de Konohagakure. Fue un Jōnin, ex-ANBU y el líder del Equipo 7. Fue conocido mundialmente por su uso del Sharingan, lo que le valió el apodo de Kakashi el Ninja que Copia (コピー忍者のカカシ, Kopi Ninja no Kakashi) y Kakashi del Sharingan (写輪眼のカカシ, Sharingan no Kakashi).",
+    "class": "Sagrado",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 9469,
+    "code": "Yb6#9E"
+  },
+  {
+    "index": 34,
+    "url": "https://telegra.ph/file/29ab8d571dbec6aeaa277.jpg",
+    "name": "Sakura Haruno",
+    "desp": "Naruto",
+    "info": "Sakura Haruno (春野サクラ, Haruno Sakura) cuyo nombre actual es Sakura Uchiha (うちはサクラ, Uchiha Sakura) es la tritagonista de la serie. Es una kunoichi de nivel Jōnin, miembro del Equipo Kakashi y una gran amiga de Naruto Uzumaki. Después de su entrenamiento con Tsunade, se convirtió en una de las mejores Ninja Médico de la aldea y actualmente es la Jefa del Departamento Médico. Finalmente se convirtió en la esposa de Sasuke Uchiha y la madre de Sarada Uchiha.",
+    "class": "Raro",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 684,
+    "code": "A*HG80"
+  },
+  {
+    "index": 35,
+    "url": "https://telegra.ph/file/39003b5f18e886becf28c.jpg",
+    "name": "Orochimaru",
+    "desp": "Naruto",
+    "info": "Orochimaru (大蛇丸, Orochimaru) es un shinobi veterano de Konohagakure, miembro del Equipo Hiruzen y uno de los legendarios Sannin, junto con sus compañeros Jiraiya y Tsunade. Fue miembro de la organización Raíz bajo el liderazgo de Danzō y posteriormente desertó de la aldea por ser descubierto haciendo experimentos con los aldeanos, ademas de ser un ex miembro de Akatsuki.",
+    "class": "Legendario",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder, villano",
+    "price": 1686,
+    "code": "uA!z74"
+  },
+  {
+    "index": 36,
+    "url": "https://telegra.ph/file/636b48ce8ee1dbfeebb23.jpg",
+    "name": "Madara Uchiha",
+    "desp": "Naruto",
+    "info": "Madara Uchiha (うちはマダラ, Uchiha Madara) fue un legendario shinobi, co-fundador de Konoha y líder del Clan Uchiha durante su tiempo. Además, fue la pasada Reencarnación de Indra Ōtsutsuki. Luego, fue revivido en la Cuarta Guerra Mundial Shinobi para luchar contra la Gran Alianza Shinobi, revelando sus verdaderas intenciones, haciéndolo el antagonista principal de la serie. Madara logró capturar a las nueve Bestias con Cola, sellarlas en la Estatua Demoníaca del Camino Exterior y, de esa manera, convertirse en el tercer y último Jinchūriki del Diez Colas.",
+    "class": "Sagrado",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder, villano",
+    "price": 4365,
+    "code": "bM#8N4"
+  },
+  {
+    "index": 37,
+    "url": "https://telegra.ph/file/5a8b6855ae3d1ffed9ffa.jpg",
+    "name": "Kaguya Otsutsuki",
+    "desp": "Naruto",
+    "info": "Kaguya Ōtsutsuki (大筒木カグヤ, Ōtsutsuki Kaguya ) era miembro del clan Ōtsutsuki y matriarca de una rama familiar de su clan, incluidos sus hijos Hagoromo y Hamura . Mucho antes de la fundación de las aldeas ocultas, durante una era de guerra sin fin, Kaguya traicionó a su clan al consumir el fruto del Árbol de Dios y se convirtió en la primera portadora de chakra en la Tierra, antes de fusionarse con la forma de Bestia con Cola del árbol en una batalla. contra sus hijos.",
+    "class": "Transcendental",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder, villano",
+    "price": 136204,
+    "code": "9JYA#1"
+  },
+  {
+    "index": 38,
+    "url": "https://telegra.ph/file/4a88d5e3db359f1f2955a.jpg",
+    "name": "Gaara",
+    "desp": "Naruto",
+    "info": "Gaara (我愛羅, Gaara) es un shinobi de Sunagakure y el Quinto Kazekage (五代目風影, Godaime Kazekage), fue el Comandante General del ejército de la Gran Alianza Shinobi y Comandante de la Cuarta División. Formó parte del ex-equipo Baki. Es el hijo menor del Cuarto Kazekage, Rasa y Karura, hermano menor de Temari y Kankuro.",
+    "class": "Épico",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder, villano, demonios, fantasía oscura",
+    "price": 1470,
+    "code": "iB5@T5"
+  },
+  {
+    "index": 39,
+    "url": "https://telegra.ph/file/1ce730196cb3a6f8e480e.jpg",
+    "name": "Hinata Hyuga",
+    "desp": "Naruto",
+    "info": "Hinata Hyūga (日向ヒナタ, Hyūga Hinata) cuyo nombre actual es Hinata Uzumaki (うずまきヒナタ, Uzumaki Hinata) es una kunoichi de rango Chūnin de Konohagakure y antigua heredera de la rama principal del Clan Hyūga, además de ser hija de Hiashi Hyūga, prima de Neji Hyūga y hermana mayor de Hanabi Hyūga. Formó parte del Equipo Kurenai, siendo compañera de Kiba Inuzuka y Shino Aburame. Posteriormente, se convirtió en la esposa de Naruto, con quien tuvo dos hijos, Boruto Uzumaki y Himawari Uzumaki.",
+    "class": "Épico",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 1252,
+    "code": "%25kSe"
+  },
+  {
+    "index": 40,
+    "url": "https://telegra.ph/file/35368abeaf4e65cb9f355.jpg",
+    "name": "Jiraiya",
+    "desp": "Naruto",
+    "info": "Jiraiya (自来也, Jiraiya) fue uno de los legendarios Sannin junto con Tsunade y Orochimaru, quienes fueron entrenados por el Tercer Hokage. Escribió una popular serie de libros para adultos, llamada ICHA ICHA, por esto y entre otras muchas razones, Naruto lo llama Sabio Pervertido (エロ仙人, Ero-sennin). También fue conocido como el Sabio Sapo (虾蟇仙人, Gama Sennin), gracias a sus invocaciones de sapos y por la habilidad de entrar en el Modo Sabio.",
+    "class": "Supremo",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 19440,
+    "code": "7owG3%"
+  },
+  {
+    "index": 41,
+    "url": "https://telegra.ph/file/7172c36823e83205086c7.jpg",
+    "name": "Tsunade",
+    "desp": "Naruto",
+    "info": "Tsunade (綱手, Tsunade) es una de los legendarios Sannin junto con Orochimaru y Jiraiya, siendo también conocida por ser una de las kunoichis más fuertes y la mejor Ninja Médico del mundo. Se convirtió en la Quinta Hokage (五代目火影, Godaime Hokage, que significa Quinta Sombra del Fuego), después de que Hiruzen Sarutobi muriera en manos de Orochimaru. Además, fue mentora de Shizune, Sakura Haruno e Ino Yamanaka.",
+    "class": "Supremo",
+    "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
+    "price": 10369,
+    "code": "0Lz5%J"
   }
   ]
 }

@@ -335,7 +335,7 @@
     "index": 31,
     "url": "https://telegra.ph/file/022d82dd1fc13d4484748.jpg",
     "name": "Sasuke Uchiha",
-    "desp": "Naruto Shippuden",
+    "desp": "Naruto",
     "info": "Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) es el deuteragonista de la serie y uno de los supervivientes del Clan Uchiha. Es hijo de Fugaku Uchiha y Mikoto Uchiha, hermano de Itachi Uchiha, así como la Reencarnación actual de Indra Ōtsutsuki.",
     "class": "Legendario",
     "type": "Anime, manga, poder, acción, fantasía, ninjas, superpoderes",
@@ -462,6 +462,17 @@
     "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder,",
     "price": 1110,
     "code": "tu<3a2"
+  },
+    {
+    "index": 43,
+    "url": "https://telegra.ph/file/f42d39a361a313d4a25be.png",
+    "name": "Mashle Burnedead",
+    "desp": "Mashle: magic and muscles",
+    "info": "Mashle (マッシュル?), estilizado como MASHLE, es una serie de manga japonesa escrita e ilustrada por Hajime Kōmoto. Comenzó su serialización el 27 de enero de 2020 en la revista Shūkan Shōnen Jump de Shueisha. Una adaptación de la serie al anime de A-1 Pictures se estrenó el 8 de abril de 2023."
+    "class": "Transcendental",
+    "type": "Manga, anime, acción, Musculos, fantasía, artes marciales, poder, Magia",
+    "price": 130999,
+    "code": "qx<3a8"
   }
   ]
 }

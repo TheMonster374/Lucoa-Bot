@@ -6,8 +6,8 @@
       "name": "Son Goku",
       "desp": "Dragon Ball Super",
       "info": "Goku es un saiyajin que fue enviado a la Tierra cuando era un bebé con la misión de conquistar el planeta, pero debido a un golpe en la cabeza, perdió su instinto violento y se convirtió en un héroe. Es conocido por su insaciable apetito, su ingenuidad y su pasión por el combate. A lo largo de la serie, Goku se embarca en numerosas aventuras para proteger la Tierra y alcanzar nuevas metas, como convertirse en el luchador más fuerte del universo.",
-      "price": 200,
-      "class": "Común",
+      "price": 2500,
+      "class": "Épico",
       "type": "Anime",
       "code": "95iYY%"
     },
@@ -293,7 +293,7 @@
     "desp": "Jujutsu Kaisen",
     "info": "Ryomen Sukuna (両りょう面めん宿すく儺な¿ Ryōmen Sukuna ? ) , más a menudo denominado simplemente Sukuna (宿すく儺な, Sukuna ? ) , es el hechicero de jujutsu más fuerte de hace mil años. Considerado como el rey indiscutible de las maldiciones (呪のろいの王うう, Noroi no Ō ? ) , Sukuna es uno de los principales antagonistas de la serie Jujutsu Kaisen .",
     "class": "Transcendental",
-    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder, poderosos, demonios, villano, fantasía oscura",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder, demonios, villano, fantasía oscura",
     "price": 850960,
     "code": "B1#xo5"
   },
@@ -451,6 +451,17 @@
     "type": "Ninjas, superpoderes, manga, anime, acción, fantasía, artes marciales, poder",
     "price": 10369,
     "code": "0Lz5%J"
+  },
+  {
+    "index": 42,
+    "url": "https://telegra.ph/file/4494b77bccfa4480fa826.jpg",
+    "name": "Kugisaki Nobara",
+    "desp": "Jujutsu kaisen",
+    "info": "Nobara Kugisaki es un personaje ficticio de la franquicia de anime y manga Jujutsu Kaisen, creado por Gege Akutami. Siendo la tritagonista de la serie, Nobara es una estudiante de hechicería de la escuela de magia de Tokio, bajo la tutela de Satoru Gojō",
+    "class": "Épico",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder,",
+    "price": 1110,
+    "code": "tu<3a2"
   }
   ]
 }

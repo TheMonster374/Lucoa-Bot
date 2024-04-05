@@ -263,6 +263,17 @@
     "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
     "price": 2019,
     "code": "^zZQ05"
-      }
+  },
+   {
+    "index": 25,
+    "url": "https://telegra.ph/file/deaee5fb00064ab5f73b5.jpg",
+    "name": "Toji Fushiguro",
+    "desp": "Jujutsu Kaisen",
+    "info": "Toji Fushiguro (伏黒甚爾, Fushiguro Tōji?), nacido como Toji Zenin (禪院甚爾, Zen'in Tōji?), es un personaje secundario recurrente de Jujutsu Kaisen. Fue miembro del Clan Zenin y el padre de Megumi Fushiguro y Tsumiki Fushiguro.",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
+    "price": 7398,
+    "code": "oq68V<"
+   }
   ]
 }

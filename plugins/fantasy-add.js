@@ -59,7 +59,7 @@ return conn.reply(m.chat, `> *¡Clase no válida!* Sólo se aceptan las siguient
 
 const formattedType = typeInput.split(/[:;/]/).map((item) => item.trim().toLowerCase()).map((item) => item.replace(/^\w/, (c) => c.toUpperCase())).join(', ')
 
-const jsonURL = 'https://raw.githubusercontent.com/GataNina-Li/module/main/imagen_json/anime.json'
+const jsonURL = 'https://raw.githubusercontent.com/TheMonster374/INABAKUMORI-Bot/master/src/anime.json'
 const response = await fetch(jsonURL)
 const data = await response.json()
 const nextIndex = data.infoImg.length + 1

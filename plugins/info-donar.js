@@ -26,26 +26,22 @@ global.img7 = fs.readFileSync ('./Donar.mp4');
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
-  ┏━━━━━༺᯼༻━━━━━━
-┃ ᚛ *Hola ${taguser}*
-┃ ᚛ No pido nada pero si quieres 
-┃ hacerme una donación estaré 
-┃ muy agradecido contigo
-┃ ᚛ Aquí te dejaré los datos por
-┃ si quieres apoyarme
-┃ ᚛ *Paypal* 
-┃ ᚛ *Beneficiario: Carlos Rodriguez*   
-┃ ᚛ *link:*
-┃ ᚛ *https://www.paypal.com/paypalme/monster373505?country.x=CO&locale.x=es_XC*
-┃ ᚛ Escríbeme si tienes alguna 
-┃ duda o algo que decirme :) 
-┃ ᚛ wa.me/573017210155 
-┃ ᚛  *Estaría agradecido si me sigues*
-┃ *en GitHub y me dejas tu estrellita*
-┃
-https://github.com/TheMonster374/INABAKUMORI-Bot/tree/master
-┃ ᚛ Vamos que no cuesta nada:) 
-┗━━━━━༺᯼༻━━━━━━
+  *✨¡ℍ𝕠𝕝𝕒 ${taguser}!*
+>------------[🤍]-------------<
+
+𝒀𝒐 𝒕𝒆𝒏𝒈𝒐 𝒖𝒏 𝒔𝒆𝒓𝒗𝒊𝒅𝒐𝒓 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒒𝒖𝒆 me 𝒉𝒂𝒄𝒆 *𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒂𝒓 24/7* 𝒚 𝒏𝒐 𝒕𝒆𝒏𝒈𝒂 𝒍𝒂𝒈, 𝒑𝒆𝒓𝒐 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒏𝒐 𝒄𝒓𝒆𝒐 𝒒𝒖𝒆 𝒕𝒆𝒏𝒈𝒂 𝒆𝒍 𝒅𝒊𝒏𝒆𝒓𝒐 𝒔𝒖𝒇𝒊𝒄𝒊𝒆𝒏𝒕𝒆 𝒑𝒂𝒓𝒂 𝒎𝒂𝒏𝒕𝒆𝒏𝒆𝒓 𝒆𝒍 𝒔𝒆𝒓𝒗𝒊𝒅𝒐𝒓 𝒂𝒄𝒕𝒊𝒗𝒐,*¡𝒂𝒍𝒍í 𝒆𝒏𝒕𝒓𝒂𝒔 𝒕ú!*  🫵
+ 
+𝑺𝒊 𝒑𝒖𝒅𝒊𝒆𝒓𝒂𝒔 𝒄𝒐𝒍𝒂𝒃𝒐𝒓𝒂𝒓 𝒄𝒐𝒏 *1 𝒅ó𝒍𝒂𝒓* 𝒑𝒐𝒓 𝒍𝒐 𝒎𝒆𝒏𝒐𝒔, 𝒍𝒆 𝒂𝒚𝒖𝒅𝒂𝒓í𝒂𝒔 𝒃𝒂𝒔𝒕𝒂𝒏𝒕𝒆 𝒂 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓, 𝒂𝒍 𝒊𝒈𝒖𝒂𝒍 𝒒𝒖𝒆 𝒂 𝒎𝒊 𝒑𝒂𝒓𝒂 𝒔𝒆𝒈𝒖𝒊𝒓 𝒂𝒄𝒕𝒊𝒗𝒂,*¡𝑻𝑶𝑫𝑶𝑺 𝑳𝑶𝑺 𝑫Í𝑨𝑺!* 😱
+
+𝑱𝒖𝒏𝒕𝒐𝒔 𝒑𝒐𝒅𝒆𝒎𝒐𝒔 𝒉𝒂𝒄𝒆𝒓 𝒒𝒖𝒆 𝒚𝒐 𝒔𝒆𝒂 𝒆𝒕𝒆𝒓𝒏𝒂, (𝒚 𝒓𝒆𝒗𝒊𝒗𝒊𝒓 𝒍𝒂 𝑼𝑹𝑺𝑺 🤑)
+
+>------------[🫂]-------------<
+
+*👇𝑨𝒒𝒖í 𝒂𝒃𝒂𝒋𝒐 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒂𝒓á𝒔 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒗𝒊𝒂 𝑷𝒂𝒚𝒑𝒂𝒍:*
+
+https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
+
+> INABAKUMORI-BOT                           By Monster
 
 
 

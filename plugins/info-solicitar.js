@@ -57,4 +57,7 @@ conn.reply(m.chat, '¡Ocurrió un error al procesar la solicitud!', m)
 
 handler.command = /^(solicitar)$/i
 handler.tags = ['main']
+handler.help = ['solicitar']
+handler.exp = 50;
+handler.fail = null;
 export default handler

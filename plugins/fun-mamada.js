@@ -8,7 +8,7 @@ if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si t
 `.trim();
 m.reply(follar, null, { mentions: conn.parseMention(follar) })}
 
-handler.help = ['mamadq'].map((v) => v + ' <@user>')
+handler.help = ['mamada'].map((v) => v + ' <@user>')
 handler.tags = ['fun']
 handler.command =/^(Mamada|manada)/i
 handler.fail = null

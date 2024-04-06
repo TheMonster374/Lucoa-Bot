@@ -13,7 +13,6 @@ let handler = async (m, {conn, usedPrefix, text}) => {
 ┃ *💎Diamantes* : _${user.limit}_
 ┃ *🪙coins* : _${user.money}_
 ┃ *⬆️XP* : _${user.exp}_
-┃  *tokens*: ${user.joincount}
 ┃ *📍rango* : ${user.role}
 ┃ *📍nivel* : ${user.level}
 ╰━━〔 𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 〕━⬣

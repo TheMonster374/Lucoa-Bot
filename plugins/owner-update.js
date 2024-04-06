@@ -42,6 +42,6 @@ const handler = async (m, { conn, text }) => {
 };
 handler.help = ['update'];
 handler.tags = ['owner'];
-handler.command = /^(update|actualizar|gitpull)$/i;
+handler.command = /^(update|actualizar|gitpull|up)$/i;
 handler.rowner = true;
 export default handler;

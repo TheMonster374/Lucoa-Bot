@@ -155,4 +155,5 @@ codigo = codigo.split('').sort(() => Math.random() - 0.5).join('');
 return codigo
 }
 handler.command = /^(fantasyadd|fyadd|fyagregar)$/i
+handler.tags = ['rpg']
 export default handler

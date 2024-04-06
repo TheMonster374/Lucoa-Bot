@@ -2,8 +2,8 @@
 
 import fetch from 'node-fetch'
 import fs from 'fs'
-/*const fantasyAddPath = './fantasyAdd.json'
-let fantasyAddData = []*/
+/*const fantasyAddPath = './fantasyAdd.json'*/
+let commandAddData = []
 
 let handler = async (m, { command, usedPrefix, conn, text }) => {
 const helpMessage = `
@@ -41,7 +41,7 @@ const formattedInfo = info.replace(/"/g, "'")
 //return conn.reply(m.chat, '¡Solo puedes ingresar una clase a la vez!', m)
 //}
 
-const formattedType = typeInput.split(/[:;/]/).map((item) => item.trim().toLowerCase()).map((item) => item.replace(/^\w/, (c) => c.toUpperCase())).join(', ')
+//const formattedType = typeInput.split(/[:;/]/).map((item) => item.trim().toLowerCase()).map((item) => item.replace(/^\w/, (c) => c.toUpperCase())).join(', ')
 /*
 let price
 switch (formattedClass) {
@@ -87,7 +87,7 @@ break
 //})
 //}
 
-fantasyAddData.push({
+commandAddData.push({
 index: true,
 name: formattedName,
 info: formattedInfo,

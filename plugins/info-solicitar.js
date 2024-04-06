@@ -35,8 +35,7 @@ const formattedInfo = info.replace(/"/g, "'")
 
 //contenido del mensaje 
 commandAddData.push({
-index: true,
-name: formattedName,
+commandName: formattedName,
 info: formattedInfo,
 })
 

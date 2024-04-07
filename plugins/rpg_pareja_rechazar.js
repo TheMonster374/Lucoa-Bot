@@ -2,12 +2,14 @@ import fetch from 'node-fetch'
 let areJidsSameUser = (await import(global.baileys)).default
 let handler = async (m, { conn, text, participants, groupMetadata }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let grupos = [nna, nn, nnn, nnnt] 
-let gata = [img5, img6, img7, img8, img9]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 LoliBot ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
-let dos = [enlace, enlace2]
-
+let nna = "https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j"
+let nn = "https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu"
+let grupos = [nna, nn]
+let img = fs.readFilesSync('./src/X.png');
+let img2 = fs.reafFilesSync('./src/D.png');
+let IBKMR = [img, img2]
+let enlace = { contextInfo: { externalAdReply: {title: 'Inabakumori' + '🤍', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(IBKMR.getRandom())).buffer() }}}
+let dos = [enlace]
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 var number = text.split`@`[1]
@@ -52,7 +54,7 @@ return await conn.reply(m.chat, `*𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙍𝙀𝘾
 global.db.data.users[user].pasangan = ""
 return await conn.reply(m.chat, `😿 𝙇𝘼𝙈𝙀𝙉𝙏𝘼𝘽𝙇𝙀𝙈𝙀𝙉𝙏𝙀 *${yo}* 𝙎𝙀 𝙃𝘼 𝙉𝙀𝙂𝘼𝘿𝙊 🚫 𝙀𝙉 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉𝙏𝙄𝙂𝙊 *${tu}*\n𝙉𝙊 𝙀𝙎𝙏𝙀𝙎 𝙏𝙍𝙄𝙎𝙏𝙀, 𝘼𝙐𝙉 𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼𝙎 𝘾𝙊𝙎𝘼𝙎 𝙋𝙊𝙍 𝙃𝘼𝘾𝙀𝙍 🍃\n\n*${tu} 💔 ${yo}*\n\n${wm}`, fkontak,  m, 
 /*await conn.sendButton(m.chat, `😿 𝙇𝘼𝙈𝙀𝙉𝙏𝘼𝘽𝙇𝙀𝙈𝙀𝙉𝙏𝙀 *${yo}* 𝙎𝙀 𝙃𝘼 𝙉𝙀𝙂𝘼𝘿𝙊 🚫 𝙀𝙉 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉𝙏𝙄𝙂𝙊 *${tu}*\n𝙉𝙊 𝙀𝙎𝙏𝙀𝙎 𝙏𝙍𝙄𝙎𝙏𝙀, 𝘼𝙐𝙉 𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼𝙎 𝘾𝙊𝙎𝘼𝙎 𝙋𝙊𝙍 𝙃𝘼𝘾𝙀𝙍 🍃\n\n𝙏𝙃𝙀𝙍𝙀 𝘼𝙍𝙀 𝙉𝙊 𝙍𝙀𝘼𝙎𝙊𝙉𝙎 𝙁𝙊𝙍 𝙏𝙃𝙀𝙈 𝙏𝙊 𝘽𝙀 𝘼 𝘾𝙊𝙐𝙋𝙇𝙀, 𝘿𝙊𝙉'𝙏 𝘽𝙀 𝘿𝙄𝙎𝘾𝙊𝙐𝙍𝘼𝙂𝙀𝘿`, `*${tu} 💔 ${yo}*\n` + wm, img5, [
-['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, */ dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})	
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, */ dos, { contextInfo: { mentionedJid: [user, tu, yo]}})	
 }}}
 
 handler.command = /^(rechazar|cancelar|decline)$/i

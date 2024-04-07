@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {    
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {    
 
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;

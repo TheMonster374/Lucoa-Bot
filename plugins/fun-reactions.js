@@ -4,9 +4,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     if (!text) throw `*Por favor, menciona el usuario*`;
     if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
-let pp = ""
-let pp2 = ""
-let pp3 = ""
+let pp = "https://cdn.nekos.life/kiss/kiss_024.gif"
+let pp2 = "https://cdn.nekos.life/kiss/kiss_051.gif"
+let pp3 = "https://cdn.nekos.life/kiss/kiss_097.gif"
 let pp4 = ""
 let pp5 = ""
 let pp6 = ""

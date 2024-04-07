@@ -13,18 +13,8 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 let json = await res.json()
 let { url } = json
 let gif = await gif(null, url, `_${taguser} HA BESADO A ${text} 😳💋_`)
-conn.sendFile(m.chat, gif, null, { gifPlayback: true }, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: linkgc, thumbnail: miniurl}}}, { quoted: m })
-
-        if (m.isGroup) {
-            conn.sendMessage(m.chat, { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net') }, { quoted: m });
-        } else {
-            const fkontak2 = { 'key': { 'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo' }, 'message': { 'contactMessage': { 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` } }, 'participant': '0@s.whatsapp.net' };
-            conn.sendMessage(m.chat, { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net') }, { quoted: fkontak2 });
-        }
-    } catch {
-        conn.reply(m.chat, '*[❌] ocurrió un error inesperado*', m);
-    }
-};
+conn.sendFile(m.chat, gif, null, { gifPlayback: true }, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
+} catch (e) { }}
 
 handler.help = ['kiss'].map((v) => v + ' <@usuario>');
 handler.tags = ['fun'];

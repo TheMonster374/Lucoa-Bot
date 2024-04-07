@@ -1,10 +1,10 @@
-//By HaroldMendoza "LevelUp"
+//By Monster
 
 import fetch from "node-fetch"
 
 let handler = async (m, { conn, text}) => {
 
-await conn.sendNyanCat(m.chat, `*"${pickRandom(global.piropo)}"*\n\n\t- *_By LevelUp©_*`, await (await fetch('https://telegra.ph/file/3bcae57f89d9289f8e6d4.jpg')).buffer(), 'Fʀᴀsᴇs Bʏ NʏᴀɴCᴀᴛBᴏᴛ 🌺', '◍⃝߭۫ꯨ🐢۪〬.࠭⤿ Is Magic🐱', script, m)
+await conn.sendNyanCat(m.chat, `*"${pickRandom(global.piropo)}"*\n\n\t- *_By LevelUp©_*`, await (await fetch('https://telegra.ph/file/3bcae57f89d9289f8e6d4.jpg')).buffer(), 'Fʀᴀsᴇs Bʏ NʏᴀɴCᴀᴛBᴏᴛ 🌺', '◍⃝߭۫ꯨ🐢۪〬.࠭⤿ Is Magic🐱', m)
   
 }
 handler.tags = ['fun']

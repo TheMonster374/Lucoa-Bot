@@ -4,16 +4,22 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     if (!text) throw `*Por favor, menciona el usuario*`;
     if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
+let pp = ""
+let pp2 = ""
+let pp3 = ""
+let pp4 = ""
+let pp5 = ""
+let pp6 = ""
+
+let ppo = [pp, pp2, pp3, pp4 ,pp5, pp6]
+    
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
     let mentionedJid = [who];
     let username = conn.getName(who);
 
     let taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    let res = await fetch('https://nekos.life/api/kiss')
-let json = await res.json()
-let { url } = json
-let gif = await gif(null,  url, `_${taguser} HA BESADO A ${text} 😳💋_`)
-conn.sendFile(m.chat, {video: {url: gif}, null, { gifPlayback: true }, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
+let gif = await gif(null,  ppo, `_${taguser} HA BESADO A ${text} 😳💋_`)
+conn.sendFile(m.chat,  { video: { url: ppo.getRandom() }, gifPlayback: true,, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
 } catch (e) { }}
 
 handler.help = ['kiss'].map((v) => v + ' <@usuario>');

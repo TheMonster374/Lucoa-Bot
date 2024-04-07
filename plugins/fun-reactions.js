@@ -17,8 +17,8 @@ let pp6 = "https://cdn.nekos.life/kiss/kiss_137.gif"
     let username = conn.getName(who);
 
     let taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-let gif = await gif(null,  ppo, `_${taguser} HA BESADO A ${text} 😳💋_`)
-conn.sendFile(m.chat,  { video: { url: [pp, pp2, pp3, pp4 ,pp5, pp6].getRandom() }, gifPlayback: true,, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
+let gif = await gif(null,  { video: { url: [pp, pp2, pp3, pp4 ,pp5, pp6].getRandom(), `_${taguser} HA BESADO A ${text} 😳💋_`)
+conn.sendFile(m.chat,  gif, gifPlayback: true,, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
 } catch (e) { }}
 
 handler.help = ['kiss'].map((v) => v + ' <@usuario>');

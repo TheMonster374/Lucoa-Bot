@@ -5,11 +5,11 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let nna = "https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j"
 let nn = "https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu"
 let grupos = [nna, nn]
-let img = fs.readFilesSync = './src/X.png'
-let gata = [img5, img6, img7, img8, img9]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 Lolibot ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
-let dos = [enlace, enlace2]
+let img = fs.readFilesSync('./src/X.png');
+let img2 = fs.reafFilesSync('./src/D.png');
+let IBKMR = [img, img2]
+let enlace = { contextInfo: { externalAdReply: {title: 'Inabakumori' + '🤍', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(IBKMR.getRandom())).buffer() }}}
+let dos = [enlace]
 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
@@ -55,7 +55,7 @@ return await conn.reply(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝘼𝘾𝙀�
 global.db.data.users[m.sender].pasangan = user
 return await conn.reply(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼𝘾𝙄𝙊𝙉𝙀𝙎!!! *${tu}*\n✅ 𝘿𝙀 𝙈𝘼𝙉𝙀𝙍𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n\n𝙌𝙐𝙀 𝘿𝙐𝙍𝙀 𝙋𝙊𝙍 𝙎𝙄𝙀𝙈𝙋𝙍𝙀 𝙎𝙐 𝘼𝙈𝙊𝙍 𝙔 𝙁𝙀𝙇𝙄𝘾𝙄𝘿𝘼𝘿 💖😁\n\n*${tu} 💞 ${yo}\n${wm}`, fkontak,
 /*await conn.sendButton(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼𝘾𝙄𝙊𝙉𝙀𝙎!!! *${tu}*\n✅ 𝘿𝙀 𝙈𝘼𝙉𝙀𝙍𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n\n𝙌𝙐𝙀 𝘿𝙐𝙍𝙀 𝙋𝙊𝙍 𝙎𝙄𝙀𝙈𝙋𝙍𝙀 𝙎𝙐 𝘼𝙈𝙊𝙍 𝙔 𝙁𝙀𝙇𝙄𝘾𝙄𝘿𝘼𝘿 💖😁\n\n💝 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇𝙇𝙔 𝙏𝙃𝙀𝙔 𝘼𝙍𝙀 𝙄𝙉 𝘼 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋`, `*${tu} 💞 ${yo}*\n` + wm, img5, [
-['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']],*/m, dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})
+['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']],*/m, dos, { contextInfo: { mentionedJid: [user, tu, yo]}})
 }}}
 
 handler.command = /^(aceptar|acepto|accept)$/i

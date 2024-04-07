@@ -7,9 +7,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 let pp = "https://cdn.nekos.life/kiss/kiss_024.gif"
 let pp2 = "https://cdn.nekos.life/kiss/kiss_051.gif"
 let pp3 = "https://cdn.nekos.life/kiss/kiss_097.gif"
-let pp4 = ""
-let pp5 = ""
-let pp6 = ""
+let pp4 = "https://cdn.nekos.life/kiss/kiss_083.gif"
+let pp5 = "https://cdn.nekos.life/kiss/kiss_081.gif"
+let pp6 = "https://cdn.nekos.life/kiss/kiss_137.gif"
 
 let ppo = [pp, pp2, pp3, pp4 ,pp5, pp6]
     

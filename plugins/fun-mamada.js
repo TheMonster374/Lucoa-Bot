@@ -1,8 +1,8 @@
 let handler = async (m, { conn, command, text }) => {
 if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
  let follar = `
-🤤¡TE LA HA CHUPADO ${text}!🤤\n
-😈¡${text}! *QUE SORRA ERES*😈 \n
+🤤¡${text} TE LA HAN CHUPADO!🤤\n
+😈¡${taguser}! *TE LA HA MAMADO*😈 \n
  *¡COMO TE ENCANTA LA VERGA!*🥵
 
 `.trim();

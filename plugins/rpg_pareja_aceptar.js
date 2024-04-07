@@ -2,7 +2,10 @@ import fetch from 'node-fetch'
 let areJidsSameUser = (await import(global.baileys)).default
 let handler = async (m, { conn, text, participants, groupMetadata }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let grupos = [nna, nn, nnn, nnnt]
+let nna = "https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j"
+let nn = "https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu"
+let grupos = [nna, nn]
+let img = fs.readFilesSync = './src/X.png'
 let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
 let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 Lolibot ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}

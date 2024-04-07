@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     let username = conn.getName(who);
 
     let taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    let res = await fetch('https://api.otakugifs.xyz/gif?reaction=kiss&format=gif')
+    let res = await fetch('https://nekos.life/api/kiss')
 let json = await res.json()
 let { url } = json
 let gif = await gif(null, url, `_${taguser} HA BESADO A ${text} 😳💋_`)

@@ -6,12 +6,12 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = "https://cdn.nekos.life/kiss/kiss_024.gif"
-let pp2 = "https://cdn.nekos.life/kiss/kiss_051.gif"
-let pp3 = "https://cdn.nekos.life/kiss/kiss_097.gif"
-let pp4 = "https://cdn.nekos.life/kiss/kiss_083.gif"
-let pp5 = "https://cdn.nekos.life/kiss/kiss_081.gif"
-let pp6 = "https://cdn.nekos.life/kiss/kiss_137.gif"
+ let pp = "https://telegra.ph/file/2fa66eb61a800b0fc622b.mp4"
+let pp2 = "https://telegra.ph/file/07252543eeec9dfa7c8a4.mp4"
+let pp3 = "https://telegra.ph/file/fd2b06eacd36dff5bbba1.mp4"
+let pp4 = "https://telegra.ph/file/338a37f5214bfd59edf0c.mp4"
+let pp5 = "https://telegra.ph/file/b8811e1304623bb29f65a.mp4"
+let pp6 = "https://telegra.ph/file/4a9d8db2e609b1339789a.mp4"
 
   try {
     const locale = 'es-ES';

@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     let res = await fetch('https://nekos.life/api/kiss')
 let json = await res.json()
 let { url } = json
-let gif = await gif(null, url, `_${taguser} HA BESADO A ${text} 😳💋_`)
+let gif = await gif(null, {video: {url: url}, `_${taguser} HA BESADO A ${text} 😳💋_`)
 conn.sendFile(m.chat, gif, null, { gifPlayback: true }, m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: 'Inabakumori', body: `Bot`, mediaType: 2, sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j', thumbnail: 'https://i.imgur.com/yafZkFB.jpeg'}}}, { quoted: m })
 } catch (e) { }}
 

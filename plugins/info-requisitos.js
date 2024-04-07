@@ -1,4 +1,4 @@
-//NO EDITAR, PUEDE GENERAR BUGS EN EL BOT
+//Código By Monster
 
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
@@ -56,9 +56,9 @@ _Una vez cumplido los requisitos envía captura a mi creador para verificar (esc
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
   }
 };
-handler.command = /^(donar)$/i;
+handler.command = /^(requisitos)$/i;
 handler.tags = ['main']
-handler.help = ['donar']
+handler.help = ['requisitos']
 handler.exp = 50;
 handler.fail = null;
 export default handler;

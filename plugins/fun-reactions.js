@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     if (!text) throw `*Por favor, menciona el usuario*`;
@@ -32,8 +32,8 @@ handler.tags = ['fun'];
 handler.command = /^(kiss)$/i;
 handler.register = true;
 
-export default handler;
-/*import fetch from 'node-fetch';
+export default handler;*/
+import fetch from 'node-fetch';
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
 if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
@@ -75,4 +75,4 @@ handler.tags = ['fun'];
 handler.command = /^(kiss)$/i;
 handler.register = true;
 export default handler;
-*/
+

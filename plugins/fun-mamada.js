@@ -1,5 +1,6 @@
 let handler = async (m, { conn, command, text }) => {
-if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras saber si te puedes ${command.replace('how', '')}*`
+if (!text) throw `*Ingrese el @ o el nombre de la persona que quieras*`
+const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
  let follar = `
 🤤¡${text} TE LA HAN CHUPADO!🤤\n
 😈¡${taguser}! *TE LA HA MAMADO*😈 \n

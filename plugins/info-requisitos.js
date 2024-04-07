@@ -32,11 +32,11 @@ Para que *_INABAKUMORI-Bot [🤍]:_* se una a tu grupo debes cumplir con los sig
 
 1. Seguir el canal oficial de *_INABAKUMORI-Bot [🤍]:_* https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j
 
-2. Unirte al grupo oficial de *_INABAKUMORI-Bot [🤍]:_*https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu
+2. Unirte al grupo oficial de *_INABAKUMORI-Bot [🤍]:_* https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu
 
-3. (Opcional) Realizar una donación de 1 a mi Paypal: https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
+3. *(Opcional)* Realizar una donación de 1 a mi Paypal: https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
 
-_Una vez cumplido los requisitos envía captura a mi creador para verificar (escribe que quieres que me una a tu grupo y ".owner", el bot enviará el contacto de mi creador_
+_Una vez cumplido los requisitos *envía captura a mi creador para verificar* (escribe que quieres que me una a tu grupo y *".owner"*, el bot enviará el contacto de mi creador_
 
 > *_✨Nota:_*                                              _-Si te sales del grupo o dejas de seguir el canal, el BOT SE SALDRÁ DEL GRUPO_
 

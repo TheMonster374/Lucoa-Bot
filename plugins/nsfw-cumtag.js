@@ -21,8 +21,8 @@ if (!text) throw `*Por favor, menciona el usuario*`;
     const str = `
 
     🤤¡TE HAS CORRIDO EN ${text}!🤤 \n
-😈¡${text}! *TE HAN CUMEADO* 😈 \n
-*¡EL SEMEN TE FASCINA!* 🥵
+😈¡${taguser}! *TE HA CUMEADO* 😈 \n
+*¡${text} EL SEMEN TE FASCINA!* 🥵
   
     `.trim();
     if (m.isGroup) {

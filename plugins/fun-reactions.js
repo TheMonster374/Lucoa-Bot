@@ -12,10 +12,10 @@ let pp5 = "https://cdn.nekos.life/kiss/kiss_081.gif"
 let pp6 = "https://cdn.nekos.life/kiss/kiss_137.gif"
 
 try {
-    const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-    const mentionedJid = [who];
-    const username = conn.getName(who);
+    const locale = 'es-ES';
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
     _${taguser} HA BESADO A ${text} 😳💋_
    

@@ -20,8 +20,8 @@ if (!text) throw `*Por favor, menciona el usuario*`;
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `
 
-    🤤¡TE HAS COGIDO A ${text}!🤤\n
-😈¡${text}! *TE HAN VIOLADO*😈\n
+    🤤¡${text} SE HA COGIDO A ${text}!🤤\n
+😈¡${text}! *TE HA VIOLADO*😈\n
 *¡QUE PUTA ERES!* 🥵
   
     `.trim();

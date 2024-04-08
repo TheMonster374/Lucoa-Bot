@@ -156,7 +156,7 @@ return result
 
 function getFormattedReply() {
 return `
-${totalPages !== 1 ? `_Para ir a la siguiente página escriba *${usedPrefix +command} 2*_\n\n` : ''}
+${totalPages !== 1 ? `_Para ir a una página específica escriba *${usedPrefix +command} [Número página]*_\n\n` : ''}
 *❱❱ Número total de personajes:* ${totalCharacters}
 
 *❱❱ Personajes:*

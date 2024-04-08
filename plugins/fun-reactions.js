@@ -51,12 +51,12 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = "https://telegra.ph/file/2fa66eb61a800b0fc622b.mp4"
-let pp2 = "https://telegra.ph/file/07252543eeec9dfa7c8a4.mp4"
-let pp3 = "https://telegra.ph/file/fd2b06eacd36dff5bbba1.mp4"
-let pp4 = "https://telegra.ph/file/338a37f5214bfd59edf0c.mp4"
-let pp5 = "https://telegra.ph/file/b8811e1304623bb29f65a.mp4"
-let pp6 = "https://telegra.ph/file/4a9d8db2e609b1339789a.mp4"
+ let pp = "https://telegra.ph/file/808cef2574fefe25de2cd.mp4"
+let pp2 = "https://telegra.ph/file/7900b16e69af07edc3ef1.mp4"
+let pp3 = "https://telegra.ph/file/44455e653081edc80972a.mp4"
+let pp4 = "https://telegra.ph/file/e3434f922d670014f3c3e.mp4"
+let pp5 = "https://telegra.ph/file/e2e7e1872775398ebfc8d.mp4"
+let pp6 = "https://telegra.ph/file/7e4c0e58ba89deca79a34.mp4"
 
   try {
     const locale = 'es-ES';

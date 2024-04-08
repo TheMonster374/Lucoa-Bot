@@ -8,6 +8,7 @@ let tags = {
   'game': ' `JUEGOS` 🎮',
   'jadibot': ' `SUBBOTS` 🌐',
   'rpg': ' `RPG` ⚔️',
+  'react': ' `REACCIONES` 🥸',
   'rg': ' `REGISTRO` 🧾',
   'downloader': ' `DESCARGAS` 🔽',
   'stalkear' : ' `STALKEAR` 👤' ,

@@ -13,7 +13,7 @@ global.db.data.users[m.sender].lastwork = new Date * 1
 }
 handler.help = ['work']
 handler.tags = ['rpg']
-handler.command = ['work', 'trabajar']
+handler.command = ['work', 'trabajar', 'w']
 handler.fail = null
 export default handler
 

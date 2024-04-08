@@ -5,12 +5,12 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = "https://telegra.ph/file/808cef2574fefe25de2cd.mp4"
-let pp2 = "https://telegra.ph/file/7900b16e69af07edc3ef1.mp4"
-let pp3 = "https://telegra.ph/file/44455e653081edc80972a.mp4"
-let pp4 = "https://telegra.ph/file/e3434f922d670014f3c3e.mp4"
-let pp5 = "https://telegra.ph/file/e2e7e1872775398ebfc8d.mp4"
-let pp6 = "https://telegra.ph/file/7e4c0e58ba89deca79a34.mp4"
+ let pp = "https://telegra.ph/file/78a4b771365282e763d74.mp4"
+let pp2 = "https://telegra.ph/file/4ac56befb5c4952074d2b.mp4"
+let pp3 = "https://telegra.ph/file/1fc99615e40f26cdbf78c.mp4"
+let pp4 = "https://telegra.ph/file/15b4911558283cd155639.mp4"
+let pp5 = "https://telegra.ph/file/b8e5464f6fea11aba2916.mp4"
+let pp6 = "https://telegra.ph/file/c5f1e58c9d6580915970c.mp4"
 
   try {
     const locale = 'es-ES';

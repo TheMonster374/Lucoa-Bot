@@ -2,7 +2,6 @@
 import fetch from 'node-fetch';
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
     
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
@@ -43,10 +42,6 @@ handler.register = true;
 export default handler;
 
 //pat
-import fetch from 'node-fetch';
-
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-if (!db.data.chats[m.chat].nsfw && m.isGroup) throw `el nsfw esta desactivado`;
     
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;

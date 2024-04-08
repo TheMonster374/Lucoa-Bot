@@ -650,6 +650,116 @@
     "type": "Manga, anime, acción, Musculos, fantasía, artes marciales, poder, villano, Fantasia Oscura",
     "price": 506135,
     "code": "t1er50"
+  },
+    {
+    "index": 61,
+    "url": "https://telegra.ph/file/d07534025361ee13a9b35.jpg",
+    "name": "Denji (Chainsaw Man)",
+    "desp": "Chainsaw Man",
+    "info": "Denji (デンジ?) es el personaje principal de la serie de manga Chainsaw Man de Tatsuki Fujimoto. Después de la muerte de su padre, Denji hereda una enorme deuda con la yakuza. Su vida cambia radicalmente al conocer al demonio motosierra, Pochita, lo que lo impulsa a convertirse en cazador de demonios con la esperanza de saldar lo que debe. Sin embargo, la yakuza acaba con su vida, y Pochita se convierte en su corazón, sellando un pacto con Denji, quien anhela una existencia común y corriente. A partir de entonces, al jalar un cordón en su pecho, adquiere la forma del híbrido humano-demonio conocido como Hombre motosierra (チェンソーマン Chensō Man?). Como cazador de demonios de la División Especial de Seguridad Pública, se une a los miembros de la 4ª División Especial de Tokio en la lucha contra el demonio pistola, al tiempo que persigue sus propios intereses personales.",
+    "class": "Transcendental",
+    "type": "Manga, anime, acción, Demonio, fantasía, sangriento, poder, Cazador de demonios",
+    "price": 1967234,
+    "code": "e2e8tg"
+  },
+   {
+    "index": 62,
+    "url": "https://telegra.ph/file/5e02da5f6285e98e1e421.jpg",
+    "name": "Pochita",
+    "desp": "Chainsaw Man",
+    "info": "Pochita (ポチタ, Pochita) es el Demonio Motosierra (チェンソーの悪魔, Chensō no akuma) que encarna el miedo a las motosierras. Era el original Hombre Motosierra (チェンソーマン, Chensō Man) antes de convertirse en el corazón de Denji. Es considerado como el "El héroe del Infierno" una de las entidades más poderosas de la serie después de los Demonios Primigenios, pudiendo defenderse de las hordas de demonios en el Infierno, ileso.",
+    "class": "Transcendental",
+    "type": "Manga, anime, acción, Demonio, fantasía, sangriento, poder",
+    "price": 2432932,
+    "code": "4jd0th"
+  },
+   {
+    "index": 63,
+    "url": "https://telegra.ph/file/26b37d12187e4858f199e.jpg",
+    "name": "Aki hayakawa",
+    "desp": "Chainsaw Man",
+    "info": "Aki Hayakawa (早川はやかわ アキ, Hayakawa Aki) era un Cazador de Demonios de Seguridad Pública, que trabajaba en el escuadrón especial de Makima. Él poseía contratos con el Demonio Maldición, el Demonio del Futuro y, anteriormente, con el Demonio Zorro. ",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, fantasía, sangriento, poder, Cazador de demonios",
+    "price": 74329,
+    "code": "0hd7tp"
+  },  
+     {
+    "index": 64,
+    "url": "https://telegra.ph/file/92809933fa04f5c16e83e.png",
+    "name": "Makima",
+    "desp": "Chainsaw Man",
+    "info": "Makima (マキマ, Makima) era una Cazadora de Demonios de Seguridad Pública de alto rango y que tomó a Denji como su mascota humana. A medida que finaliza la primera parte del manga, se revela que ella era el Demonio del Control (支し配はいの悪あく魔ま, Shihai no Akuma), un demonio que encarna el miedo al control o dominación. Ella hizo el papel de antagonista principal de la Saga de Seguridad Pública.",
+    "class": "Transcendental",
+    "type": "Manga, anime, acción, fantasía, Demonio, sangriento, poder, Cazador de demonios",
+    "price": 2304122,
+    "code": "qxd2r9"
+  }, 
+  {
+    "index": 65,
+    "url": "https://telegra.ph/file/f620eb002ca528e038e1a.jpg",
+    "name": "Kobeni Higashiyama",
+    "desp": "Chainsaw Man",
+    "info": "Kobeni Higashiyama (東ひがし山やま コベニ, Higashiyama Kobeni) es una ex Cazadora de Demonios de Seguridad Pública que comenzó como nueva recluta trabajando para el escuadrón especial de Makima.",
+    "class": "Épico",
+    "type": "Manga, anime, acción, fantasía, sangriento, poder, Cazador de demonios",
+    "price": 404152,
+    "code": "qxd2r9"
+  }, 
+    {
+    "index": 66,
+    "url": "https://telegra.ph/file/50bdc6c95c7343d5ff539.jpg",
+    "name": "Kishibe",
+    "desp": "Chainsaw Man",
+    "info": "Kishibe (岸きし辺べ, Kishibe) es un Cazador de Demonios de Seguridad Pública de la División Especial 1, pero luego del asalto a las Divisiones Especiales, se convirtió en capitán de la División Especial 4.",
+    "class": "Supremo",
+    "type": "Manga, anime, acción, fantasía, sangriento, poder, Cazador de demonios",
+    "price": 756381,
+    "code": "3ay2rg"
+  },
+  {
+    "index": 67,
+    "url": "https://telegra.ph/file/77fcf19a5097147efe922.jpg",
+    "name": "Himeno",
+    "desp": "Chainsaw Man",
+    "info": "Himeno (姫野, Himeno) era una Cazadora de Demonios de Seguridad Pública, trabajando bajo el escuadrón especial de Makima, siendo la pareja laboral y figura superior de Aki Hayakawa.",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, fantasía, sangriento, artes marciales, poder, Cazador de demonios",
+    "price": 85327,
+    "code": "7t2ir0"
+  },
+  {
+    "index": 68,
+    "url": "https://telegra.ph/file/526ebffda7c01efaa51be.jpg",
+    "name": "Demonio Pistola",
+    "desp": "Chainsaw Man",
+    "info": "Himeno (姫野, Himeno) era una Cazadora de Demonios de Seguridad Pública, trabajando bajo el escuadrón especial de Makima, siendo la pareja laboral y figura superior de Aki Hayakawa.",
+    "class": "Transcendental",
+    "type": "Manga, anime, acción, fantasía, sangriento, Demonio, poder, Fantasia Oscura, villano",
+    "price": 5348923,
+    "code": "e4r9rv"
+  },
+  {
+    "index": 69,
+    "url": "https://telegra.ph/file/af5f1f0884d3179c06a9a.jpg",
+    "name": "Katana Man",
+    "desp": "Chainsaw Man",
+    "info": "Katana Man (nombre real desconocido), también conocido como Espada Samurai (サムライソード, Samurai sōdo) es un híbrido que se fusiono con el Demonio Katana. Su abuelo fue el jefe Yakuza asesinado por Denji, razón por la cual se asoció con Akane Sawatari para vengarse de Denji y robarle el corazón. Es el antagonista principal del Arco de Katana Man y un antagonista menor en el Arco del Demonio Control.",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, fantasía, sangriento, Demonio, poder, Fantasia Oscura, villano",
+    "price": 53893,
+    "code": "f2k4tb"
+  },
+  {
+    "index": 70,
+    "url": "https://telegra.ph/file/92b1ae7a3f146400aed65.jpg",
+    "name": "Akane Sawatari",
+    "desp": "Chainsaw Man",
+    "info": "Akane Sawatari (沢渡アカネ, Sawatari Akane) era una ex Cazadora de Demonios Privada que trabajaba con el Demonio Pistola y que también tenía un contrato con el Demonio Serpiente. Ella hizo de antagonista secundaria en el Arco de Katana Man.",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, fantasía, sangriento, poder, Fantasia Oscura, villano",
+    "price": 43893,
+    "code": "f8t4tc"
   }
 ]
 }

@@ -7,8 +7,8 @@ let handler = async (m, {conn, usedPrefix, text}) => {
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ El usuario no se encuentra en mi base de datos`
     conn.reply(m.chat, `
-╭━━━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━━⬣
-┃  𝑬𝒏 𝒔𝒖 𝒄𝒂𝒓𝒕𝒆𝒓𝒂 𝒕𝒊𝒆𝒏𝒆...
+╭━━━〔 *𝑩𝒂𝒍𝒂𝒏𝒄𝒆 👝* 〕━━⬣
+┃  𝑬𝒏 𝒔𝒖 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝒕𝒊𝒆𝒏𝒆...
 ┃ *📌Nombre* : _${taguser}_
 ┃ *💎Diamantes* : _${user.limit}_
 ┃ *🪙coins* : _${user.money}_
@@ -22,9 +22,9 @@ Puedes comprar 💎 diamantes usando los comandos
 ❏ *${usedPrefix}buy <cantidad>*
 ❏ *${usedPrefix}buyall*`, fkontak )
 }
-handler.help = ['cartera']
+handler.help = ['bal']
 handler.tags = ['rpg']
-handler.command = ['cartera']
+handler.command = ['bal']
 export default handler
 
 

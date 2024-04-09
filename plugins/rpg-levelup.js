@@ -64,7 +64,7 @@ let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
 //let handler = async (m, { conn }) => {
-let { role } = global.db.data.users[m.sender]
+//let { role } = global.db.data.users[m.sender]
 let name = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
@@ -76,7 +76,7 @@ let user = global.db.data.users[m.sender]
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑵𝑰𝑽𝑬𝑳:* *${user.level}*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
+┆ *𝑹𝑨𝑵𝑮𝑶:* ${user.role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑿𝑷:* *${user.exp - min}/${xp}*
 ╰━⊰🤍 INABAKUMORI-Bot⊱━დ

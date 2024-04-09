@@ -33,9 +33,9 @@ let pp6 = "https://telegra.ph/file/6c404e0ab3978d3779964.mp4"
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado*', m);
   }
 };
-handler.help = ['evilaugh']
+handler.help = ['evillaugh']
 handler.tags = ['react'];
-handler.command = /^(evilaugh)$/i;
+handler.command = /^(evillaugh)$/i;
 handler.register = true;
 export default handler;
 

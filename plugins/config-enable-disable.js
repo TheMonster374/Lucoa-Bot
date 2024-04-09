@@ -1,9 +1,9 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
 const optionsFull = `
-.enable (opcion)
-.disable (opcion)
+.on (opcion)
+.off (opcion)
 
- ┏━⊜「 *=͟͟͞ENABLE|DISABLE* 」
+ ┏━⊜「 *=͟͟͞ON|OFF* 」
  ┃   • welcome
  ┃   • publico
  ┃   • nsfw

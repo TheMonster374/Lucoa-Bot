@@ -64,7 +64,7 @@ let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
 //let handler = async (m, { conn }) => {
-//let { role } = global.db.data.users[m.sender]
+let { role } = global.db.data.users[m.sender]
 let name = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {

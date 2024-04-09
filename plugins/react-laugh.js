@@ -6,7 +6,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     
  let pp = "https://telegra.ph/file/e66a59520cd0580921094.mp4"
 let pp2 = "https://telegra.ph/file/e4be4630455cd70653087.mp4"
-let pp3 = "https://telegra.ph/file/32bb2e8d762b7e7de88b2.mp4"
+let pp3 = "https://telegra.ph/file/605bd475ee6be4cf2279f.mp4"
 let pp4 = "https://telegra.ph/file/7816502e8f1c38e4f0771.mp4"
 let pp5 = "https://telegra.ph/file/f8a868d15e7a5035237e7.mp4"
 let pp6 = "https://telegra.ph/file/864e6c9e0e1327ededab7.mp4"

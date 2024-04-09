@@ -5,9 +5,11 @@ const handler = async (m, {conn, args, participants}) => {
   const sortedCoins = users.map(toNumber('money')).sort(sort('money'));
   const sortedLim = users.map(toNumber('limit')).sort(sort('limit'));
   const sortedLevel = users.map(toNumber('level')).sort(sort('level'));
+  const sortedRole = users.map(toNumber('role')).sort(sort('role'));
   const usersCoins = sortedCoins.map(enumGetKey);
   const usersLim = sortedLim.map(enumGetKey);
   const usersLevel = sortedLevel.map(enumGetKey);
+  const usersRole = sortedRole.map(enumGetKey);
   const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedCoins.length);
   const adventurePhrases = [
   "",
@@ -23,12 +25,18 @@ const handler = async (m, {conn, args, participants}) => {
 ┃-> *TOP ${len} DIAMANTES 💎*
 ┃*👤 Tú posición:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}
 ┃
-┃${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} diamantes*`).join`\n┃`}
+┃${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} Diamantes*`).join`\n┃`}
 ┃
 ┃-> *TOP ${len} NIVEL ⏫*
 ┃*👤 Tú posición:* ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length}
 ┃
-┃${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *nivel ${level}*`).join`\n┃`}
+┃${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n┃`}
+┃
+┃-> *TOP ${len} RANGO 🤍*
+┃*👤 Tú posición:* ${usersLevel.indexOf(m.sender) + 1} de ${usersRole.length}
+┃
+┃${sortedRole.slice(0, len).map(({jid, role}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Rango ${role}*`).join`\n┃`}
+┗━━━━━━━━━━━━━━•
 ┗━━━━━━━━━━━━━━•
 `.trim();
   conn.sendMessage(m.chat, {text: texto, mentions: conn.parseMention(texto)}, {quoted: m})

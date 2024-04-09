@@ -459,7 +459,7 @@
     "desp": "Jujutsu kaisen",
     "info": "Nobara Kugisaki es un personaje ficticio de la franquicia de anime y manga Jujutsu Kaisen, creado por Gege Akutami. Siendo la tritagonista de la serie, Nobara es una estudiante de hechicería de la escuela de magia de Tokio, bajo la tutela de Satoru Gojō",
     "class": "Épico",
-    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder,",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
     "price": 1110,
     "code": "tu<3a2"
   },
@@ -760,6 +760,28 @@
     "type": "Manga, anime, acción, fantasía, sangriento, poder, Fantasia Oscura, villano",
     "price": 43893,
     "code": "f8t4tc"
+  },
+    {
+    "index": 71,
+    "url": "https://telegra.ph/file/92b1ae7a3f146400aed65.jpg",
+    "name": "Power",
+    "desp": "Chainsaw Man",
+    "info": "Power es un personaje ficticio de la serie de manga Chainsaw Man de Tatsuki Fujimoto. Ella es un demonio que trabaja junto al personaje principal, Denji, contra diferentes enemigos.",
+    "class": "Sagrado",
+    "type": "Manga, anime, acción, fantasía, sangriento, poder, Demonio, Cazador de demonios",
+    "price": 35843,
+    "code": "h2r4tk"
+  },  
+  {
+    "index": 72,
+    "url": "https://telegra.ph/file/f3f8d73142f7418911fb6.jpg",
+    "name": "Kiyotaka Ijichi",
+    "desp": "Jujutsu Kaisen",
+    "info": "Kiyotaka Ijichi (伊地知潔高 Ijichi Kiyotaka?) es uno de los personajes de la serie manga Jujutsu Kaisen. Fue antiguo estudiante del Colegio Técnico de Magia Metropolitana de Tokio y, actualmente, trabaja como asistente auxiliar e informante de las misiones para los estudiantes y chamanes que integran al Colegio. También es asistente directo del Director Masamichi Yaga.",
+    "class": "Poco Común",
+    "type": "Manga, anime, acción, sobrenatural, fantasía, artes marciales, poder",
+    "price": 223,
+    "code": "4ek4fb"
   }
 ]
 }

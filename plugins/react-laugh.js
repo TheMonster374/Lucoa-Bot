@@ -33,7 +33,7 @@ let pp6 = "https://telegra.ph/file/864e6c9e0e1327ededab7.mp4"
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado*', m);
   }
 };
-handler.help = ['laugj'].map((v) => v + ' <@usuario>');
+handler.help = ['laugh']
 handler.tags = ['react'];
 handler.command = /^(laugh)$/i;
 handler.register = true;

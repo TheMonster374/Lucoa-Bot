@@ -323,6 +323,6 @@ break;
   conn.sendMessage(m.chat, {text: `_*[⚙] 𝑭𝒖𝒏𝒄𝒊𝒐𝒏𝒆𝒔 𝒅𝒆𝒍 𝒃𝒐𝒕 [⚙]*_\n\n*𝑳𝒂 𝒐𝒑𝒄𝒊𝒐𝒏* _${type}_ *𝑭𝒖𝒆* ${isEnable ? '_𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒂_' : '_𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒂_'} *𝒆𝒙𝒊𝒕𝒐𝒔𝒂𝒎𝒆𝒏𝒕𝒆 𝒑𝒂𝒓𝒂 𝒆𝒔𝒕𝒆* ${isAll ? '_𝒃𝒐𝒕._' : isUser ? '' : '_𝒄𝒉𝒂𝒕._'}`}, {quoted: m});
 };
 handler.help = ['enable <opcion>', 'disable <opcion>']
-handler.tags = ['enable']
+handler.tags = ['nable']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01]|(on|off))$/i;
 export default handler;

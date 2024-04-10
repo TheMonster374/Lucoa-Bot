@@ -6,7 +6,7 @@ if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
  let pp = "https://telegra.ph/file/808cef2574fefe25de2cd.mp4"
-let pp2 = "https://telegra.ph/file/7900b16e69af07edc3ef1.mp4"
+let pp2 = "https://telegra.ph/file/be0458f52cf50d2b0ee31.mp4"
 
   try {
     const locale = 'es-ES';

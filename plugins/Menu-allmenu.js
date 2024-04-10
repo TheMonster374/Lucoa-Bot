@@ -14,7 +14,7 @@ let tags = {
   'stalkear' : ' `STALKEAR` 👤' ,
   'ia' : ' `IA` 🤖' ,
   'efectos' : ' `EFECTOS Y LOGOS` ✨' ,
-  'nable': ' `ENABLE/DISABLE` ☑️',
+  'on|off': ' `ON/OFF` ☑️',
   'grupo' : ' `GRUPOS` 🤍' ,
   'search': ' `BUSCADOR`🔎',
   'img': ' `IMAGENES` 🖼',

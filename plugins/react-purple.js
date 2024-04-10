@@ -5,7 +5,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = "https://telegra.ph/file/808cef2574fefe25de2cd.mp4"
+ let pp = "https://telegra.ph/file/a791e8a164c8a301b6238.mp4"
 let pp2 = "https://telegra.ph/file/be0458f52cf50d2b0ee31.mp4"
 
   try {

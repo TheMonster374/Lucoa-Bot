@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     
-if (!text) throw `*Por favor, menciona el usuario*`;
+if (!text) throw `*Por favor, escribe un número*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
  let pp = "https://telegra.ph/file/9c0fbc6b219e40cc3bd42.jpg"

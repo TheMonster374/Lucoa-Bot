@@ -26,7 +26,7 @@ _Notas de la versión:_
 https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
 *GRUPO SIN REGLAS 😈:*
-https://chat.whatsapp.com/Jy7y9ceuHsS5KASLC6p5x2
+https://chat.whatsapp.com/G7yw7ilDYm0JfUOerplf9V
 
 *🤍 DONACIONES 🤍:*
 https://paypal.me/monster373505?country.x=CO&locale.x=es_XC

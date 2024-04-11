@@ -47,7 +47,7 @@ https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
 handler.help = ['upt'].map((v) => v + ' [versión]');
 handler.tags = ['owner'];
 handler.command = /^(upt)$/i;
-handlet.owner = true;
+handler.owner = true;
 export default handler;
 
 

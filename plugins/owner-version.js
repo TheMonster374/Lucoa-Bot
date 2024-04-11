@@ -5,8 +5,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 if (!text) throw `*Por favor, menciona el usuario*`;
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
     
- let pp = "https://telegra.ph/file/808cef2574fefe25de2cd.mp4"
-let pp2 = "https://telegra.ph/file/7900b16e69af07edc3ef1.mp4"
+ let pp = "https://telegra.ph/file/9c0fbc6b219e40cc3bd42.jpg"
+let pp2 = "https://telegra.ph/file/5752996decc6b4301aec9.jpg"
 
   try {
     const locale = 'es-ES';
@@ -23,7 +23,7 @@ _Notas de la versión:_
  https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j
 
 *✨GRUPO OFICIAL✨:*
-https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS
+https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
 *GRUPO SIN REGLAS 😈:*
 https://chat.whatsapp.com/Jy7y9ceuHsS5KASLC6p5x2

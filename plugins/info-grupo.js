@@ -47,7 +47,7 @@ global.img9 = fs.readFileSync ('./src/Grupo.jpg');
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
   }
 };
-handler.command = /^(grupo)$/i;
+handler.command = /^(grupoofc)$/i;
 handler.tags = ['main']
 handler.help = ['grupoofc']
 handler.exp = 50;

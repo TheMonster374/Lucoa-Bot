@@ -52,7 +52,7 @@ global.img9 = fs.readFileSync ('./src/Grupo.jpg');
 };
 handler.command = /^(grupo)$/i;
 handler.tags = ['main']
-handler.help = ['grupo']
+handler.help = ['grupoofc']
 handler.exp = 50;
 handler.fail = null;
 export default handler;

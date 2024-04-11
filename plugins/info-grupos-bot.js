@@ -2,19 +2,19 @@ const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const text = `Hola, estos son los grupos de INABAKUMORI-BOT 
-┏━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┓
+┏━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━┓
 
 ꕥ》𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩《ꕥ | [𝙊𝙁𝘾
-https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS
+https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
 🤑/ Latino Gang /😈                 
-https://chat.whatsapp.com/Jy7y9ceuHsS5KASLC6p5x2
-━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://chat.whatsapp.com/G7yw7ilDYm0JfUOerplf9V
+━━━━━━━━━━━━━━━━━
 
 *Canal Oficial*:
 https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j
 
-┗━━━━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━━━━┛
+┗━❰ *𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙾𝚃* ❱━┛
 `.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/TheMonster374`},

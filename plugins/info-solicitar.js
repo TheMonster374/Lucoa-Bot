@@ -48,7 +48,7 @@ const jsonString = JSON.stringify(commandAddData, null, 2)
 await conn.reply('573017210155@s.whatsapp.net', `*Solicitud de @${m.sender.split("@")[0]} Para agregar comandos en Inabakumori-Bot*`, null, { mentions: [m.sender] })
 await conn.sendMessage('573017210155@s.whatsapp.net', { document: databaseCommandAdd, mimetype: 'application/json', fileName: `commandAdd_${m.sender}.json` }, { quoted: m })
 await conn.reply('573017210155@s.whatsapp.net', `${jsonString}`, m)
-await conn.reply(m.chat, `¡Archivo enviado a mis creadores! Sigue agregando más personajes que quieras que esten en Inabakumori-Bot`, m)
+await conn.reply(m.chat, `¡Archivo enviado a mis creadores! Sigue usando Inabakumori-Bot`, m)
 }}  
 } catch (error) {
 console.error('Error al procesar la solicitud: ', error)

@@ -127,9 +127,9 @@ handler.before = async function (m, { conn }) {
 if (m.quoted && m.quoted.id === reply.id && ['enviar', '👍'].includes(m.text.toLowerCase())) {
 const databaseFantasyAdd = Buffer.from(JSON.stringify(fantasyAddData, null, 2), 'utf-8')
 const jsonString = JSON.stringify(fantasyAddData, null, 2)
-await conn.reply('573017210155@s.whatsapp.net', `*Solicitud de @${m.sender.split("@")[0]} Para agregar personajes de Fantasy RPG en Inabakumori-Bot*`, null, { mentions: [m.sender] })
-await conn.sendMessage('573017210155@s.whatsapp.net', { document: databaseFantasyAdd, mimetype: 'application/json', fileName: `fantasyAdd_${m.sender}.json` }, { quoted: m })
-await conn.reply('573017210155@s.whatsapp.net', `${jsonString}`, m)
+await conn.reply('5493804170925@s.whatsapp.net', `*Solicitud de @${m.sender.split("@")[0]} Para agregar personajes de Fantasy RPG en Inabakumori-Bot*`, null, { mentions: [m.sender] })
+await conn.sendMessage('5493804170925@s.whatsapp.net', { document: databaseFantasyAdd, mimetype: 'application/json', fileName: `fantasyAdd_${m.sender}.json` }, { quoted: m })
+await conn.reply('5493804170925@s.whatsapp.net', `${jsonString}`, m)
 await conn.reply(m.chat, `¡Archivo enviado a mis creadores! Sigue agregando más personajes que quieras que esten en Inabakumori-Bot`, m)
 }}  
 } catch (error) {

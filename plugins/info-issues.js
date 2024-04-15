@@ -45,9 +45,9 @@ handler.before = async function (m, { conn }) {
 if (m.quoted && m.quoted.id === reply.id && ['enviar', '👍'].includes(m.text.toLowerCase())) {
 const databaseCommandAdd = Buffer.from(JSON.stringify(commandAddData, null, 2), 'utf-8')
 const jsonString = JSON.stringify(commandAddData, null, 2)
-await conn.reply('573017210155@s.whatsapp.net', `*Solicitud de @${m.sender.split("@")[0]} Para reparar comandos en Inabakumori-Bot*`, null, { mentions: [m.sender] })
-await conn.sendMessage('573017210155@s.whatsapp.net', { document: databaseCommandAdd, mimetype: 'application/json', fileName: `commandAdd_${m.sender}.json` }, { quoted: m })
-await conn.reply('573017210155@s.whatsapp.net', `${jsonString}`, m)
+await conn.reply('5493804170925@s.whatsapp.net', `*Solicitud de @${m.sender.split("@")[0]} Para reparar comandos en Inabakumori-Bot*`, null, { mentions: [m.sender] })
+await conn.sendMessage('5493804170925@s.whatsapp.net', { document: databaseCommandAdd, mimetype: 'application/json', fileName: `commandAdd_${m.sender}.json` }, { quoted: m })
+await conn.reply('5493804170925@s.whatsapp.net', `${jsonString}`, m)
 await conn.reply(m.chat, `¡Archivo enviado a mis creadores!`, m)
 }}  
 } catch (error) {

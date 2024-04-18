@@ -30,8 +30,7 @@ global.img10 = fs.readFileSync ('./src/Nsfw.jpg');
 >-----------[🤍]------------<
 ¡Unete al grupo nsfw oficial de *_INABAKUMORI-Bot [🤍]_*:
 
- https://chat.whatsapp.com/Gf5zQf5MssuJNGFQx5scL2
-
+ https://chat.whatsapp.com/BUtA7l9Hcuo9Qaj9OLkTMI
 
 > _INABAKUMORI -BOT                         By Monster_
 
@@ -47,9 +46,9 @@ global.img10 = fs.readFileSync ('./src/Nsfw.jpg');
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
   }
 };
-handler.command = /^(grupoofc2)$/i;
+handler.command = /^(gruponsfw)$/i;
 handler.tags = ['main']
-handler.help = ['grupoofc2']
+handler.help = ['gruponsfw']
 handler.exp = 50;
 handler.fail = null;
 export default handler;

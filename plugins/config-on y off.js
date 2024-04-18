@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import fs from 'fs' 
 import { es } from "./lib/Idiomas/total-idiomas.js"
-import { es } from "./lib/multi-language/_default.js"
+/*import { es } from "./lib/multi-language/_default.js"*/
 let lenguajeGB = es
 let mid = esDefault
 let version_language = '1.0 (MID-GB)'

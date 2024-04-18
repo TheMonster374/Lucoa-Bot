@@ -30,8 +30,7 @@ global.img9 = fs.readFileSync ('./src/Grupo.jpg');
 >-----------[🤍]------------<
 ¡Unete al grupo oficial de *_INABAKUMORI-Bot [🤍]_*:
 
- https://chat.whatsapp.com/Gf5zQf5MssuJNGFQx5scL2
-
+https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
 > _INABAKUMORI -BOT                         By Monster_
 

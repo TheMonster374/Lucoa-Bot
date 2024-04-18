@@ -1,7 +1,12 @@
 import fetch from 'node-fetch'
 import fs from 'fs' 
+import { es as esDefault } from "./lib/multi-language/_default.js"
+import { es } from "./lib/idiomas/total-idiomas.js"
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 //try{
+global.lenguajeGB = es
+global.mid = esDefault
+global.version_language = '1.0 (MID-GB)'
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}

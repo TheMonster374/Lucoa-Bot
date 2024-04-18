@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import fs from 'fs' 
-/*import { es } from "./lib/Idiomas/total-idiomas.js"*/
-import { es } from "./lib/multi-language/_default.js"
+import { es as esDefault } from "./lib/multi-language/spanish-es.js"
+import { es } from "./lib/idiomas/espanol.js"
 let lenguajeGB = es
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 //try{

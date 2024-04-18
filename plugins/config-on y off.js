@@ -3,8 +3,6 @@ import fs from 'fs'
 /*import { es } from "./lib/Idiomas/total-idiomas.js"*/
 import { es } from "./lib/multi-language/_default.js"
 let lenguajeGB = es
-let mid = esDefault
-let version_language = '1.0 (MID-GB)'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 //try{
 

@@ -224,12 +224,12 @@ const id = Object.keys(user)[0]
 const fantasy = user[id].fantasy
 return fantasy.some(personaje => personaje.id === codigoActual)
 })
-fake = { contextInfo: { externalAdReply: { title: `¡Ese Personaje ya fue comprado!`, body: `😅 Compra otro personaje`, sourceUrl: accountsgb, thumbnailUrl: gataMenu } } }        
+fake = { contextInfo: { externalAdReply: { title: `¡Ese Personaje ya fue comprado!`, body: `😅 Compra otro personaje`, sourceUrl: null, thumbnailUrl: imagen1 } } }        
 if (idUsuarioExistente) {
 let No_compra = `*${nombreImagen}* ya fue comprado por *${conn.getName(idUsuarioExistente)}*`
 if (usuarioExistente) return conn.reply(m.chat, No_compra, m, fake)
 }
-fake = { contextInfo: { externalAdReply: { title: `¡Insuficientes ${rpgshop.emoticon('money')}!`, body: `😼 Completa misiones del RPG`, sourceUrl: accountsgb, thumbnailUrl: gataMenu } } }
+fake = { contextInfo: { externalAdReply: { title: `¡Insuficientes ${rpgshop.emoticon('money')}!`, body: `😼 Completa misiones del RPG`, sourceUrl: channel, thumbnailUrl: imagen6 } } }
 conn.reply(m.chat, `Te falta *${cantidadFaltante} ${rpgshop.emoticon('money')}* para comprar a *${dato.name}*\n\n*Actualmente tienes ${user.money} ${rpgshop.emoticon('money')}*`, m, fake)
 } else {
 response = await fetch(jsonURL)
@@ -253,11 +253,11 @@ const nombrePersonaje = data.infoImg.find(personaje => personaje.code === dato.c
 
 if (nombrePersonaje) {
 if (m.sender == idUsuarioConCodigo) {
-fake = { contextInfo: { externalAdReply: { title: `😊 Ya fue comprado antes`, body: `🌟 ¡Compra más para llegar al top!`, sourceUrl: accountsgb, thumbnailUrl: gataMenu } } }
+fake = { contextInfo: { externalAdReply: { title: `😊 Ya fue comprado antes`, body: `🌟 ¡Compra más para llegar al top!`, sourceUrl: null, thumbnailUrl: imagen5 } } }
 const mensaje_ = `El personaje *${nombrePersonaje}* ya es tuyo!!`
 conn.reply(m.chat, mensaje_, m, fake)
 } else {
-fake = { contextInfo: { externalAdReply: { title: `❌ No puedes comprar esto: ${nombrePersonaje}`, body: `🙂 ¡Compra otro personaje!`, sourceUrl: accountsgb, thumbnailUrl: gataMenu } } }
+fake = { contextInfo: { externalAdReply: { title: `❌ No puedes comprar esto: ${nombrePersonaje}`, body: `🙂 ¡Compra otro personaje!`, sourceUrl: null, thumbnailUrl: imagen1 } } }
 const mensaje = `Este personaje *${nombrePersonaje}* está reclamado por *${nombreUsuario}*`
 conn.reply(m.chat, mensaje, m, fake)
         
@@ -302,7 +302,7 @@ fs.writeFileSync(fantasyDBPath, JSON.stringify(fantasyDB, null, 2), 'utf8')
 realizarCompra()
    
 user.money -= nuevoPrecio
-fake = { contextInfo: { externalAdReply: { title: `¡Disfruta de tú personaje!`, body: `${dato.desp}`, sourceUrl: accountsgb, thumbnailUrl: dato.url } } }
+fake = { contextInfo: { externalAdReply: { title: `¡Disfruta de tú personaje!`, body: `${dato.desp}`, sourceUrl: channel, thumbnailUrl: dato.url } } }
 conn.reply(m.chat, `El usuario *${conn.getName(m.sender)}* ha comprado a *${dato.name}*`, m, fake)
 let userInDB = fantasyDB.find(userEntry => userEntry[userId])
 if (userInDB) {
@@ -348,4 +348,4 @@ const avisos = [
 `> ⚠️ *Alerta* ⚠️ Calificar a *${personaje}* puede hacer que el precio suba o baje 😱 !Califica con sabiduría! 😸`
 ].getRandom()
 return avisos.trim()
-}
+    }

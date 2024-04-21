@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-global.img9 = fs.readFileSync ('./src/Grupo.jpg');
+let img9 = fs.readFileSync ('./src/Grupo.jpg');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img9
@@ -32,7 +32,7 @@ global.img9 = fs.readFileSync ('./src/Grupo.jpg');
 
 https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
-> _INABAKUMORI -BOT                         By Monster_
+> _🤍 ${wm}                         ${author}_
 
  `.trim();
     if (m.isGroup) {

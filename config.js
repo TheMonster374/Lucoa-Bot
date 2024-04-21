@@ -6,8 +6,8 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-import { es as esDefault } from "./lib/multi-language/_default.js"
-import { es } from "./lib/idiomas/total-idiomas.js"
+/*import { es as esDefault } from "./lib/multi-language/_default.js"
+import { es } from "./lib/idiomas/total-idiomas.js"*/
 // © 2024 MONSTER | All rights reserved 
 
 global.botnumber = "573178151662" //Ejemplo: +59309090909
@@ -24,9 +24,9 @@ global.suittag = [''];
 global.prems = [''];
 global.mods = [];
 
-global.lenguajeGB = es
+/*global.lenguajeGB = es
 global.mid = esDefault
-global.version_language = '1.0 (MID-GB)'
+global.version_language = '1.0 (MID-GB)'*/
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •

@@ -33,7 +33,7 @@ global.version_language = '1.0 (MID-GB)'*/
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
-global.author = '𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍';
+global.ow = '𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍';
 global.wm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
 global.titulowm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
 global.titulowm2 = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩`
@@ -91,13 +91,13 @@ global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY MONSTER'
 //Enlaces
 global.yt = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.ig = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
-global.paypal = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
-global.md = 'https://atom.bio/als';
-global.git = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
+global.paypal = 'https://paypal.me/monster373505?country.x=CO&locale.x=es_XC'
+global.md = 'https://atom.bio/tm';
+global.git = 'https://github.com/TheMonster374/INABAKUMORI-Bot'
 global.linkwabot = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.email = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
-global.group = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Grupo ofc
-global.group2 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //enlace curiosity
+global.group = 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t' //Grupo ofc
+global.group2 = 'https://chat.whatsapp.com/E01kuWrhqWHDfHO6P7LyIX' //enlace curiosity
 global.group3 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Curiosity global
 global.group4 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //colaboración multi bots
 global.group5 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - NovaBot
@@ -105,7 +105,7 @@ global.group6 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboraci�
 global.group7 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - Criwilop
 global.group8 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración CuriosityBot - SakuraBot
 global.group9 = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS' //Colaboración OnyxBot - CuriosityBot
-global.channel = 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j'
+global.channel = 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t'
 global.channel2 = 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j'
 
 global.linkSity = [yt, ig, md, paypal, git, channel, channel2]

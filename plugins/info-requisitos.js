@@ -34,7 +34,7 @@ Para que *_INABAKUMORI-Bot [🤍]:_* se una a tu grupo debes cumplir con los sig
 
 2. Unirte al grupo oficial de *_INABAKUMORI-Bot [🤍]:_* https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
-3. *(Opcional)* Realizar una donación de 1 a mi Paypal: https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
+3. Realizar una donación de 1 USD a mi Paypal: https://paypal.me/monster373505?country.x=CO&locale.x=es_XC
 
 _Una vez cumplido los requisitos *envía captura a mi creador para verificar* (escribe que quieres que me una a tu grupo y *".owner"*, el bot enviará el contacto de mi creador_
 

@@ -30,9 +30,10 @@ let img9 = fs.readFileSync ('./src/Grupo.jpg');
 >-----------[🤍]------------<
 ¡Unete al grupo oficial de *_INABAKUMORI-Bot [🤍]_*:
 
-${group}
+https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc
 
-> _🤍 ${wm}                         ${author}_
+
+> _INABAKUMORI -BOT                         By Monster_
 
  `.trim();
     if (m.isGroup) {

@@ -32,7 +32,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 '👾 Gracias a que has minado tus ingresos suman',
 'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 
-let pp = fs.readFileSync('./storage/img/coins.jpg');
+let pp = 'https://telegra.ph/file/ba9c040dfd3c6e6cf1034.jpg'
 
 
 //let xp = Math.floor(Math.random() * 2000)
@@ -44,17 +44,7 @@ if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️
 user.money += premium ? moneypremium : money  
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n${wm}`
-await conn.sendMessage(m.chat, pp, 'ibkmr.jpg', gat, fkontak, {contextInfo: {
-'forwardingScore': 200,
-'isForwarded': false,
-externalAdReply: {
-showAdAttribution: false,
-title: `GRUPO DE WHATSAPP`,
-body: `🤍 Unete al grupo OFC`,
-mediaType: 1,
-sourceUrl: 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc',
-thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
-}}}, { quoted: m })
+await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak)
             
 
                         

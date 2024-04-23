@@ -45,7 +45,7 @@ user.money += premium ? moneypremium : money
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n${wm}`
 await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak, {contextInfo: {
-'forwardingScore': 400,
+'forwardingScore': 200,
 'isForwarded': false,
 externalAdReply: {
 showAdAttribution: false,

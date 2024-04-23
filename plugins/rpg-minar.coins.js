@@ -44,7 +44,7 @@ if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️
 user.money += premium ? moneypremium : money  
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n${wm}`
-await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak, {contextInfo: {
+await conn.sendMessage(m.chat, pp, 'ibkmr.jpg', gat, fkontak, {contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
 externalAdReply: {

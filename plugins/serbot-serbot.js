@@ -23,8 +23,8 @@ import _0xb26b51 from 'pino';
 import 'util';
 import 'ws';
 import { makeWASocket } from '../lib/simple.js';
-let rtx = '' + ´🟢 *_FUNCIÓN SER SUB BOT_* 🟢\n\n*➡️ Con otro celular o en la PC escanea este QR para convertirte en Sub Bot*\n\n*1️⃣ Diríjase en los tres puntos en la esquina superior derecha*\n*2️⃣ Ir a la opción Dispositivos vinculados*\n*3️⃣ Escanee este codigo QR para iniciar sesión*\n\n📢 *¡Este código QR expira en 45 segundos!´
-let rtx2 = '' + ´🟢 *_NUEVA FUNCIÓN DE HACERTE UN SUB BOT_* 🟢\n\n*1️⃣ Diríjase en los tres puntos en la esquina superior derecha*\n*2️⃣ Ir a la opción Dispositivos vinculados*\n*3️⃣ da click en vincular con codigo de teléfono*\n*4️⃣ pega el codigo a continuación´
+let rtx = '' + `🟢 *_FUNCIÓN SER SUB BOT_* 🟢\n\n*➡️ Con otro celular o en la PC escanea este QR para convertirte en Sub Bot*\n\n*1️⃣ Diríjase en los tres puntos en la esquina superior derecha*\n*2️⃣ Ir a la opción Dispositivos vinculados*\n*3️⃣ Escanee este codigo QR para iniciar sesión*\n\n📢 *¡Este código QR expira en 45 segundos!`
+let rtx2 = '' + `🟢 *_NUEVA FUNCIÓN DE HACERTE UN SUB BOT_* 🟢\n\n*1️⃣ Diríjase en los tres puntos en la esquina superior derecha*\n*2️⃣ Ir a la opción Dispositivos vinculados*\n*3️⃣ da click en vincular con codigo de teléfono*\n*4️⃣ pega el codigo a continuacion`
 if (global.conns instanceof Array) {
   console.log();
 } else {
@@ -38,10 +38,10 @@ let handler = async (_0x1db94b, {
   isOwner: _0x51fda8
 }) => {
   if (!global.db.data.settings[_0x15d4c7.user.jid].jadibotmd) {
-    return _0x1db94b.reply('' + ´╰⊱⚠️⊱ *ADVERTENCIA* ⊱⚠️⊱╮\n\n *ESTE COMANDO ESTÁ DESACTIVADO POR MÍ PROPIETARIO(A)*´;
+    return _0x1db94b.reply('' + `╰⊱⚠️⊱ *ADVERTENCIA* ⊱⚠️⊱╮\n\n *ESTE COMANDO ESTÁ DESACTIVADO POR MÍ PROPIETARIO(A)*`;
   }
   if (_0x15d4c7.user.jid !== global.conn.user.jid) {
-    return _0x15d4c7.reply(_0x1db94b.chat, ´🔵 *PARA SER SUB BOT DIRÍJASE AL NÚMERO PRINCIPAL*\n*ღ Ingrese al siguiente enlace:*\n´ + " wa.me/" + 16395269227 + "&text=" + (_0x16e163 + _0x50429b), _0x1db94b);
+    return _0x15d4c7.reply(_0x1db94b.chat, `🔵 *PARA SER SUB BOT DIRÍJASE AL NÚMERO PRINCIPAL*\n*ღ Ingrese al siguiente enlace:*\n` + " wa.me/" + 16395269227 + "&text=" + (_0x16e163 + _0x50429b), _0x1db94b);
   }
   const _0x3c1bb8 = _0x41f9dd[0x0] && _0x41f9dd[0x0].includes("--code") ? true : !!(_0x41f9dd[0x1] && _0x41f9dd[0x1].includes("--code"));
   let _0x4c2db5 = _0x1db94b.mentionedJid && _0x1db94b.mentionedJid[0x0] ? _0x1db94b.mentionedJid[0x0] : _0x1db94b.fromMe ? _0x15d4c7.user.jid : _0x1db94b.sender;
@@ -174,15 +174,15 @@ let handler = async (_0x1db94b, {
           }
           if (_0x4981e1 === DisconnectReason.restartRequired) {
             _0x3f6051();
-            return console.log(´\n╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄ ✗\n┆ ⚠️ CONEXIÓN REEMPLAZADA, SE HA ABIERTO OTRA NUEVA SESION, POR FAVOR, CIERRA LA SESIÓN ACTUAL PRIMERO.\n╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄ ✗´);
+            return console.log(`\n╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄ ✗\n┆ ⚠️ CONEXIÓN REEMPLAZADA, SE HA ABIERTO OTRA NUEVA SESION, POR FAVOR, CIERRA LA SESIÓN ACTUAL PRIMERO.\n╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄ ✗`);
           } else {
             if (_0x4981e1 === DisconnectReason.loggedOut) {
               sleep(0xfa0);
-              return _0x1db94b.reply(´╰⊱❌⊱ *ERROR* ⊱❌⊱╮\n\n 🔴 *LA CONEXIÓN SE HA CERRADO, TENDRAS QUE VOLVER A CONECTARSE USANDO:*\n#deletesesion (Para borrar los datos y poder volver a solita el QR o el code)´);
+              return _0x1db94b.reply(`╰⊱❌⊱ *ERROR* ⊱❌⊱╮\n\n 🔴 *LA CONEXIÓN SE HA CERRADO, TENDRAS QUE VOLVER A CONECTARSE USANDO:*\n#deletesesion (Para borrar los datos y poder volver a solita el QR o el code)`);
             } else {
               if (_0x4981e1 == 0x1ac) {
                 await _0x480a7f(false);
-                return _0x1db94b.reply(´\n✨ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ 🟢 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✨\n│\n│★ 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 𝙀𝙓𝙄𝙏𝙊𝙎𝘼 𝘾𝙊𝙉 𝙀𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋  🤍\n│\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ ✅ ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✨´));
+                return _0x1db94b.reply(`\n✨ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ 🟢 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✨\n│\n│★ 𝘾𝙊𝙉𝙀𝙓𝙄𝙊𝙉 𝙀𝙓𝙄𝙏𝙊𝙎𝘼 𝘾𝙊𝙉 𝙀𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋  🤍\n│\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✦ ✅ ✦┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✨`));
               } else {
                 if (_0x4981e1 === DisconnectReason.connectionLost) {
                   await _0x3f6051();

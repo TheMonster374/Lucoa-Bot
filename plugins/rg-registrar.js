@@ -30,7 +30,17 @@ tu numero de serie
 servira por si quieres
 borrar tu registro
 ┗┅ ━━━━━━━━━━━━ ┅ ━`;
-conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: 'https://chat.whatsapp.com/Lq5aMlyraBfJaZPBififFu', mediaType: 1, thumbnail: imgRegistro }}}, { quoted: m })
+conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+externalAdReply: {
+showAdAttribution: false,
+title: `CANAL DE WHATSAPP`,
+body: `🤍 Unete al canal OFC`,
+mediaType: 1,
+sourceUrl: 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t',
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
+}}}, { quoted: m })
   global.db.data.users[m.sender].money += 10000;
   global.db.data.users[m.sender].exp += 5000;
 };

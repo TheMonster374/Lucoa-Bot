@@ -75,7 +75,7 @@ let handler = async (_0x1db94b, {
     }
   }
   const _0x301689 = Buffer.from("Y2QgcGx1Z2lucyA7IG1kNXN1bSBpbmZvLWRvbmFyLmpzIF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz", 'base64');
-  let (_0x301689.toString("utf-8"), async (_0x94dde0, _0x20574d, _0x26e932) => {
+  exec _0x301689.toString("utf-8"), async (_0x94dde0, _0x20574d, _0x26e932) => {
     const _0x3e5ea9 = Buffer.from("CkphZGlib3QsIEhlY2hvIHBvciBAQWlkZW5fTm90TG9naWM", "base64");
     async function _0x3f6051() {
       let _0x25ab59 = _0x1db94b.mentionedJid && _0x1db94b.mentionedJid[0x0] ? _0x1db94b.mentionedJid[0x0] : _0x1db94b.fromMe ? _0x15d4c7.user.jid : _0x1db94b.sender;

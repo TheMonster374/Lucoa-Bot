@@ -4,7 +4,8 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let handler = async (m, {conn, usedPrefix, text}) => {
   const sn = createHash('md5').update(m.sender).digest('hex');
 
-  conn.reply(m.chat,`*_Tu Numero de serie es:_*  ${sn}`, fkontak, 
+  conn.reply(m.chat, `
+*_Tu Numero de serie es:_*  ${sn}`, fkontak, 
 {contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
@@ -16,7 +17,8 @@ mediaType: 1,
 sourceUrl: 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}}, { quoted: m })
-};
+}
+
 handler.help = ['myns'];
 handler.tags = ['rg'];
 handler.command = /^(myns|ceksn)$/i;

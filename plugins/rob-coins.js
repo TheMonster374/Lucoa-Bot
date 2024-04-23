@@ -12,7 +12,19 @@ let rob = Math.floor(Math.random() * ro)
 if (users.money < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} coins*\nNo robes a un pobre v":`, null, { mentions: [who] })    
 global.db.data.users[m.sender].money += rob
 global.db.data.users[who].money -= rob 
-m.reply(`*‣ Robaste ${rob} COINS 🪙 a @${who.split`@`[0]}*`, null, { mentions: [who] })
+m.reply(`*‣ Robaste ${rob} COINS 🪙 a @${who.split`@`[0]}*`, null, { mentions: [who] }, {contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+externalAdReply: {
+showAdAttribution: false,
+title: `CANAL DE WHATSAPP`,
+body: `🤍 Unete al canal OFC`,
+mediaType: 1,
+sourceUrl: 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t',
+thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
+}}}, { quoted: m })
+            
+
 global.db.data.users[m.sender].lastrob = new Date * 1
 }
 handler.help = ['robcoins']

@@ -5,7 +5,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 const handler = async function(m, {conn, text, usedPrefix}) {
 const sn = createHash('md5').update(m.sender).digest('hex');
 
-  conn.reply(m.chat`
+  conn.reply(m.chat,`
 *_Tu Numero de serie es:_*  ${sn}`, fkontak, 
 {contextInfo: {
 'forwardingScore': 200,

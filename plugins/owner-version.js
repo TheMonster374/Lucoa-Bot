@@ -20,7 +20,7 @@ _Notas de la versión:_
 > ⓘ Canal de WhatsApp 
 
 ✨𝑷𝒂𝒓𝒂 𝒄𝒐𝒏𝒐𝒄𝒆𝒓 𝒍𝒂𝒔 𝒇𝒖𝒕𝒖𝒓𝒂𝒔 𝒚 𝒓𝒆𝒄𝒊𝒆𝒏𝒕𝒆𝒔 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒄𝒊𝒐𝒏𝒆𝒔, 𝑺𝒊𝒈𝒖𝒆 𝒆𝒍 𝒄𝒂𝒏𝒂𝒍 𝒐𝒇𝒊𝒄𝒊𝒂𝒍 𝒅𝒆 𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 [🤍]:
- https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j
+ https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t
 
 *✨GRUPO OFICIAL✨:*
 https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc

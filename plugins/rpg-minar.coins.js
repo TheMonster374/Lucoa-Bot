@@ -32,7 +32,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 '👾 Gracias a que has minado tus ingresos suman',
 'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 
-let pp = 'https://telegra.ph/file/ba9c040dfd3c6e6cf1034.jpg'
+let pp = fs.readFilesSync('./storage/img/coins.jpg');
 
 
 //let xp = Math.floor(Math.random() * 2000)

@@ -1565,7 +1565,7 @@ global.dfail = (type, m, conn) => {
     restrict: '📌 Hola  este comando fue desactivado por el propietario del bot',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩', body: '🤍 Unete al grupo OFC', thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg', sourceUrl: 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩', body: 'Whatsapp bot con multiples comandos by the monster', thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg', sourceUrl: 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
             

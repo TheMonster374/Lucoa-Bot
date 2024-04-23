@@ -24,7 +24,7 @@ const optionsFull = `
  ┃   • antidelete
  ┃   • modoia
  ┃   • antispam
- ┃   • modejadibot
+ ┃   • jadibotmd
  ┃   • antiprivado
  ┗━━━━━━━━━━━━━━━━━━⬣
 `.trim();
@@ -263,13 +263,13 @@ const optionsFull = `
       }
       bot.antiPrivate = isEnable;
       break;
-    case 'modejadibot':
+    case 'jadibotmd':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);
         throw false;
       }
-      bot.modejadibot = isEnable;
+      bot.jadibotmd = isEnable;
       break;
     case 'antispam':
       isAll = true;

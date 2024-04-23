@@ -37,7 +37,7 @@ thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}}, { quoted: m })
             
 
-}}
+}
    
 }
 handler.help = ['ruleta apuesta/color']

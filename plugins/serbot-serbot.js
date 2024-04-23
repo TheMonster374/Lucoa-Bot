@@ -37,9 +37,9 @@ let handler = async (_0x1db94b, {
   command: _0x50429b,
   isOwner: _0x51fda8
 }) => {
- /* if (!global.db.data.settings[_0x15d4c7.user.jid].jadibotmd) {
+ if (!global.db.data.settings[_0x15d4c7.user.jid].jadibotmd) {
     return _0x1db94b.reply('' + `╰⊱⚠️⊱ *ADVERTENCIA* ⊱⚠️⊱╮\n\n *ESTE COMANDO ESTÁ DESACTIVADO POR MÍ PROPIETARIO(A)*`);
-  }*/
+  }
   if (_0x15d4c7.user.jid !== global.conn.user.jid) {
     return _0x15d4c7.reply(_0x1db94b.chat, `🔵 *PARA SER SUB BOT DIRÍJASE AL NÚMERO PRINCIPAL*\n*ღ Ingrese al siguiente enlace:*\n` + " wa.me/" + 16395269227 + "&text=" + (_0x16e163 + _0x50429b), _0x1db94b);
   }

@@ -32,7 +32,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 '👾 Gracias a que has minado tus ingresos suman',
 'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 
-let pp = fs.readFilesSync('./storage/img/coins.jpg');
+let pp = fs.readFileSync('./storage/img/coins.jpg');
 
 
 //let xp = Math.floor(Math.random() * 2000)

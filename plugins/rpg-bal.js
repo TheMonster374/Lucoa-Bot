@@ -31,7 +31,7 @@ body: `🤍 Unete al canal OFC`,
 mediaType: 1,
 sourceUrl: 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
-}}}, { quoted: m }) )
+}}}, { quoted: m })
 }
 handler.help = ['bal']
 handler.tags = ['rpg']

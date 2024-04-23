@@ -38,8 +38,6 @@ thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
             
 
 }
-   
-}
 handler.help = ['ruleta apuesta/color']
 handler.tags = ['game']
 handler.command = ['ruleta', 'rt']

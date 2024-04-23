@@ -7,18 +7,8 @@ global.db.data.users[m.sender].exp += inabakumori * 1
 let time = global.db.data.users[m.sender].lastwork + 600000
 if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Estas cansado debes esperar ${msToTime(time - new Date())} para volver a trabajar*`
 
-//m.reply(`🤍 ${pickRandom(global.work)} *${inabakumori}* Coins`)
-m.reply(`🤍 ${pickRandom(global.work)} *${inabakumori}* Coins`,{contextInfo: {
-'forwardingScore': 200,
-'isForwarded': false,
-externalAdReply: {
-showAdAttribution: false,
-title: `CANAL DE WHATSAPP`,
-body: `🤍 Unete al canal OFC`,
-mediaType: 1,
-sourceUrl: 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t',
-thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
-}}}, { quoted: m })
+m.reply(`🤍 ${pickRandom(global.work)} *${inabakumori}* Coins`)
+})
             
  
 global.db.data.users[m.sender].lastwork = new Date * 1

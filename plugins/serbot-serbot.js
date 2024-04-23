@@ -574,8 +574,8 @@ handler.help = ["jadibot", "serbot", "getcode", "rentbot"];
 handler.tags = ["jadibot"];
 handler.command = /^(jadibot|serbot|rentbot)/i;
 handler.register = true;
-export default handler;*/
+export default handler;
 function sleep(_0x68f623) {
   return new Promise(_0x515ebc => setTimeout(_0x515ebc, _0x68f623));
-  }
+  }*/
     

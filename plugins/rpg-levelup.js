@@ -114,7 +114,7 @@ showAdAttribution: false,
 title: `CANAL DE WHATSAPP`,
 body: `🤍 Unete al canal OFC`,
 mediaType: 1,
-sourceUrl: 'https://whatsapp.com/channel/0029VaPhM3S3wtbBXOzf6t0j',
+sourceUrl: 'https://whatsapp.com/channel/0029VabyyaKGehEIyunTGo0t',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}}, { quoted: m })
             

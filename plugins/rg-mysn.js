@@ -13,7 +13,6 @@ mediaType: 1,
 sourceUrl: 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc',
 thumbnailUrl: 'https://i.imgur.com/yafZkFB.jpeg'
 }}}, { quoted: m })
-});
 };
 handler.help = ['myns'];
 handler.tags = ['rg'];

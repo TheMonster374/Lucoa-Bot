@@ -1570,8 +1570,6 @@ global.dfail = (type, m, conn) => {
 };
             
 
-}
-
 const file = global.__filename(import.meta.url, true);
 watchFile(file, async () => {
   unwatchFile(file);

@@ -31,7 +31,7 @@ global.version_language = '1.0 (MID-GB)'*/
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
 global.packname = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
-global.ow = '𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍';
+global.ow = '𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎';
 global.wm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.titulowm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.titulowm2 = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩`
@@ -114,8 +114,8 @@ global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage':
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍`
-global.adimagen = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍` 
+global.addescargas = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎`
+global.adimagen = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"

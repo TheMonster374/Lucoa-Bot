@@ -48,7 +48,6 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/Menunsfw.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.gif = fs.readFileSync('./storage/img/menus/Tutorial.mp4');
 global.imagen8 = fs.readFileSync('./storage/img/menus/Menu5.jpg');
 global.imagen9 = fs.readFileSync('./storage/img/menus/Menu6.jpg');
 global.imagen10 = fs.readFileSync('./storage/img/menus/Menu7.png');
@@ -60,7 +59,7 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
 global.img3 = fs.readFileSync('./storage/img/menus/Menu10.jpg');
 global.img4 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
 global.img5 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
-global.img6 = fs.readFileSync('./follar.png');
+
 
 global.gataMenu = [img1] 
 

@@ -6,7 +6,7 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-// © 2024 MONSTER | All rights reserved 
+// © 2024 YUNNYS | All rights reserved 
 
 global.botnumber = "573178151662" //Ejemplo: +59309090909
 global.confirmCode = ""
@@ -30,12 +30,12 @@ global.version_language = '1.0 (MID-GB)'*/
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
-global.packname = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.packname = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.ow = '𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍';
-global.wm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
-global.titulowm = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
-global.titulowm2 = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩`
-global.igfg = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.wm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
+global.titulowm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
+global.titulowm2 = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩`
+global.igfg = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 //━━━━━ESPERAS━━━━━━━━ 
 global.wait = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐. ⏳*'; 
 global.waitt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.. ⏳*';
@@ -83,14 +83,14 @@ global.fpagedoc = '9999'
 
   
 //━━━━━━━MARCA━━━━━━━━ 
-global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY MONSTER'
+global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY YUNNYS'
 
 //Enlaces
 global.yt = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.ig = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
-global.paypal = 'https://paypal.me/monster373505?country.x=CO&locale.x=es_XC'
-global.md = 'https://atom.bio/tm';
-global.git = 'https://github.com/TheMonster374/INABAKUMORI-Bot'
+//global.paypal = 'https://paypal.me/monster373505?country.x=CO&locale.x=es_XC'
+//global.md = 'https://atom.bio/tm';
+global.git = 'https://github.com/TheMonster374/Lucoa-Bot'
 global.linkwabot = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.email = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
 global.group = 'https://chat.whatsapp.com/Jql7XsV7V179fvOmKnEftc' //Grupo ofc
@@ -114,8 +114,8 @@ global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage':
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍`
-global.adimagen = `𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍` 
+global.addescargas = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍`
+global.adimagen = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝑩𝒚 𝙈𝙊𝙉𝙎𝙏𝙀𝙍` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"
@@ -140,13 +140,13 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.gt = '𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩';
+global.gt = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 
 global.nomorown = '5491144775561';
-global.wm2 = `${dia} ${fecha}\n𝙄𝙉𝘼𝘽𝘼𝙆𝙐𝙈𝙊𝙍𝙄-𝘽𝙤𝙩`
+global.wm2 = `${dia} ${fecha}\n𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩`
 global.multiplier = 99;
 /* RPG */
 global.flaaa = [

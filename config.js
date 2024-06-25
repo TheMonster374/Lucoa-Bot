@@ -6,8 +6,6 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
-/*import { es as esDefault } from "./lib/multi-language/_default.js"
-import { es } from "./lib/idiomas/total-idiomas.js"*/
 // © 2024 MONSTER | All rights reserved 
 
 global.botnumber = "573178151662" //Ejemplo: +59309090909
@@ -16,8 +14,7 @@ global.confirmCode = ""
 /*NUMERS OWNERS*/
 global.owner = [
  ['573136737414', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
- ['573178151662', 'Bot', true],
-  ['5491156673266', 'als', true],
+ ['573178151662', 'Bot', true]
 ];
 /*└────ׂ─ׂ─ׂ─ׂ───*/
 

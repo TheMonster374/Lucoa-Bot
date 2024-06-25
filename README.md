@@ -1,8 +1,8 @@
-#                                                    INABAKUMORI-Bot
+#                                                    [🐲] 𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩
 
 
 <p align="center">
-<img src="https://i.pinimg.com/originals/b4/a1/91/b4a191e1d7f4d288f3b1204b159a9ff8.gif" alt="Lucoa" width="500"/>
+<img src="https://i.makeagif.com/media/3-27-2017/dj_6zT.gif" alt="Lucoa" width="500"/>
 
 
 ## 🐲 GRUPO OFICIAL DEL BOT

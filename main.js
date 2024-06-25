@@ -128,7 +128,7 @@ opcion = '1'
 if (!methodCodeQR && !methodCode && !fs.existsSync(`./${authFile}/creds.json`)) {
 do {
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
-opcion = await question('[ 🤍 ] Seleccione una opción:\n1. Con código QR\n2. Con código de texto de 8 dígitos\n---> ')
+opcion = await question('[ 🐲 ] Seleccione una opción:\n1. Con código QR\n2. Con código de texto de 8 dígitos\n---> ')
 //if (fs.existsSync(`./${authFile}/creds.json`)) {
 //console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
 //process.exit()
@@ -141,7 +141,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['INABAKUMORI-BOT', 'Safari', '2.0.0'] : methodCodeQR ? ['INABAKUMORI-BOT', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
+browser: opcion == '1' ? ['Lucoa-Bot', 'Safari', '2.0.0'] : methodCodeQR ? ['Lucoa-Bot', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -201,7 +201,7 @@ rl.close()
 
 conn.isInit = false;
 conn.well = false;
-conn.logger.info(`[ 🤍 ] Cargando...\n`);
+conn.logger.info(`[ 🐲 ] Cargando...\n`);
 
 if (!opts['test']) {
   if (global.db) {
@@ -295,7 +295,7 @@ if (opcion == '1' || methodCodeQR) {
     console.log(chalk.yellow('Escanea el código QR.'));
  }}
    if (connection == 'open') {
-console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🤍 ≫─━─━━─━━─━╮\n│\n│INABAKUMORI-BOT Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
+console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🐲 ≫─━─━━─━━─━╮\n│\n│Lucoa-Bot Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
  await conn.groupAcceptInvite('GR9pMnqYI8DB9HoJnl2HkB');
    }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
@@ -366,8 +366,8 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*hola @user Bienvenido a @subject, escribe ".menu" con el punto y sin tilde para ver las funciones que poseo*';
-  conn.bye = '*Unculiaomenos @user, salió del grupo 🗿🚬*'; 
+  conn.welcome = '*hola @user Bienvenido a @subject, escribe .menu para ver mis comandos*';
+  conn.bye = '*@user, salió del grupo*'; 
   conn.spromote = '*@user Ahora es admin*';
   conn.sdemote = '*@user Ya no es admin*';
   conn.sDesc = '*Se modifico la descripcion*';

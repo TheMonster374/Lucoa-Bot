@@ -8,7 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 // © 2024 YUNNYS | All rights reserved 
 
-global.botnumber = "573178151662" //Ejemplo: +59309090909
+global.botnumber = "59161313574" //Ejemplo: +59309090909
 global.confirmCode = ""
 
 /*NUMERS OWNERS*/

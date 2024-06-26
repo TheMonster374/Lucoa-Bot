@@ -4,50 +4,50 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': ' `INFO` ℹ️',
-  'game': ' `JUEGOS` 🎮',
-  'jadibot': ' `SUBBOTS` 🌐',
-  'rpg': ' `RPG` ⚔️',
-  'react': ' `REACCIONES` 🥸',
-  'rg': ' `REGISTRO` 🧾',
-  'downloader': ' `DESCARGAS` 🔽',
-  'stalkear' : ' `STALKEAR` 👤' ,
-  'ia' : ' `IA` 🤖' ,
-  'efectos' : ' `EFECTOS Y LOGOS` ✨' ,
-  'on|off': ' `ON/OFF` ☑️',
-  'grupo' : ' `GRUPOS` 🤍' ,
-  'search': ' `BUSCADOR`🔎',
-  'img': ' `IMAGENES` 🖼',
-  'tools': ' `HERRAMIENTAS` 🛠️',
-  'fun': '`DIVERSION` 👻',
-  'audio': ' `EFECTOS DE AUDIO` 🎙️', 
-  'sticker': ' `STICKERS` 🤑',
-  'nsfw': ' `NSFW` 🔞',
-  'owner': ' `CREADOR` 🗿🚬',
+  'main': ' `《ɪɴꜰᴏ》` ℹ️',
+  'game': ' `《ᴊᴜᴇɢᴏꜱ》` 🎮',
+  'rpg': ' `《ʀᴘɢ》` ⚔️',
+  'nsfw': ' `《ɴꜱꜰᴡ》` 🔞',
+  'jadibot': ' `《ꜱᴜʙʙᴏᴛꜱ》` 🌐',
+  'react': ' `《ʀᴇᴀᴄᴄɪᴏɴᴇꜱ》` 🥸',
+  'downloader': ' `《ᴅᴇꜱᴄᴀʀɢᴀꜱ》` 🔽',
+  'stalkear' : ' `《ꜱᴛᴀʟᴋᴇᴀʀ》` 👤' ,
+  'ia' : ' `《ɪᴀ》` 🤖' ,
+  'efectos' : ' `《ᴇꜰᴇᴄᴛᴏꜱ ʏ ʟᴏɢᴏꜱ》` ✨' ,
+  'on|off': ' `《ᴏɴ/ᴏꜰꜰ》` ☑️',
+  'grupo' : ' `《ɢʀᴜᴘᴏꜱ》` 🐲' ,
+  'rg': ' `《ʀᴇɢɪꜱᴛʀᴏ》` 🧾',
+  'search': ' `《ʙᴜꜱᴄᴀᴅᴏʀ》`🔎',
+  'img': ' `《ɪᴍᴀɢᴇɴᴇꜱ》` 🖼',
+  'tools': ' `《ʜᴇʀʀᴀᴍɪᴇɴᴛᴀꜱ》` 🛠️',
+  'fun': '`《ᴅɪᴠᴇʀꜱɪᴏɴ》` 🎉',
+  'audio': ' `《ᴇꜰᴇᴄᴛᴏꜱ ᴅᴇ ᴀᴜᴅɪᴏ》` 🎙️', 
+  'sticker': ' `《ꜱᴛɪᴄᴋᴇʀꜱ》` 💚',
+  'owner': ' `《ᴄʀᴇᴀᴅᴏʀᴀ》` 🧁',
 }
 
 const defaultMenu = {
   before: `
-Hola *%taguser*, Soy INABAKUMORI
-
-┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *Nombre* : *%name*
-┃💎 *Diamantes* : *%limit*
-┃🏆 *Nivel* : *%level*
-┃🪙 *Coins* : *%totalexp*
-┗━━━━━━━━━━━━━⬣
+> ℍ𝕠𝕝𝕒 *%taguser*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+  
+┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
+┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : *%name*
+┃➥💎 *𝘋𝘪𝘢𝘮𝘢𝘯𝘵𝘦𝘴* : *%limit*
+┃➥🏆 *𝘕𝘪𝘷𝘦𝘭* : *%level*
+┃➥🧿 *𝘌𝘹𝘱𝘦𝘳𝘪𝘦𝘯𝘤𝘪𝘢* : *%totalexp*
+┗━━━━━━━━━━━━━☊
 %readmore
-┏━⊜「 *=͟͟͞INFO BOT* 」
-┃◣w◢ *CREADOR*: +573017210155
-┃👤 *TOTAL USUARIOS* : %totalreg
-┗━━━━━━━━━━━━━⬣
+┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: Yunnys
+┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : %totalreg
+┗━━━━━━━━━━━━━☊
 %readmore
 \t\t\t
 `.trimStart(),
-  header: '┏━⊜%category╗\n╭─────────────···',
-  body: '┃│ %cmd\n',
-  footer: '╰─────────────···\n┗━━━━━━━━━━━━━⬣',
-  after: '> 𝙄 𝙉 𝘼 𝘽 𝘼 𝙆 𝙐 𝙈 𝙊 𝙍 𝙄\n> 𝑩𝒚 𝗠𝗢𝗡𝗦𝗧𝗘𝗥 \n © 2024 Monster | All rights reserved',
+  header: '❥━☋ %category 》\n╭─────────────···',
+  body: '┃│ *_%cmd_*\n',
+  footer: '╰─────────────···\n❥━━━━━━━━━━━━━☊',
+  after: '> 𝙇𝙐𝘾𝙊𝘼\n> 𝑩𝒚 𝙔𝙐𝙉𝙉𝙔𝙎 \n © 2024 Yunnis | All rights reserved',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -152,12 +152,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-     let pp = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
-     let pp2 = 'https://telegra.ph/file/539d69f4262a13021ae3e.mp4' 
+     let pp = 'https://telegra.ph/file/345ddd00b2854bdd4ba63.mp4' 
+     let pp2 = 'https://telegra.ph/file/345ddd00b2854bdd4ba63.mp4' 
     conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
 
   } catch (e) {
-    conn.reply(m.chat, '[❌] El menu tiene un error', m)
+    conn.reply(m.chat, '[❌] ERROR \n\n El menu tiene un error', m)
     throw e
   }
 }

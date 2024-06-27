@@ -82,7 +82,7 @@ let uptime = `${clockString(process.uptime())}`
       conn.sendMessage(m.chat,  { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
+    conn.reply(m.chat, '[❌] ERROR \n\n El menu tiene un error', m);
   }
 };
 handler.command = /^(menusearch|MenuSearch|MENUSEARCH)$/i;

@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-global.img4 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
+global.img4 = fs.readFileSync('./storage/img/menus/Menu11.mp4');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img4
-    const img = './storage/img/menus/Menu11.jpg';
+    const img = './storage/img/menus/Menu11.mp4';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -23,54 +23,63 @@ global.img4 = fs.readFileSync('./storage/img/menus/Menu11.jpg');
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
+    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
+
+
+
+let uptime = `${clockString(process.uptime())}`
     const str = `
-  *Hola,* ${taguser}
-
- ┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
-┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
-┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━⬣
+ > ℍ𝕠𝕝𝕒 *%taguser*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+  
+┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
+┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : ${taguser}
+┃➥💎 *𝘋𝘪𝘢𝘮𝘢𝘯𝘵𝘦𝘴* : ${limit}
+┃➥🏆 *𝘕𝘪𝘷𝘦𝘭* : ${level}
+┃➥💴 *𝘠𝘦𝘯𝘦𝘴* : ${money}
+┗━━━━━━━━━━━━━☊
  ${readMore}
-┏━⊜「 *=͟͟͞INFO BOT* 」
-┃◣w◢ *CREADOR*: +573017210155
-┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━⬣
+┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: 𝒀𝒖𝒏𝒏𝒚𝒔
+┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : ${totalusr}
+┃➥🕘 *𝘈𝘤𝘵𝘪𝘷𝘢* : ${uptime}
+┃➥✨ *𝘛𝘰𝘵𝘢𝘭 𝘨𝘳𝘶𝘱𝘰𝘴* : ${groupsIn.length}
+┗━━━━━━━━━━━━━☊
+
  ${readMore}
 
-┏━⊜ BUSCADOR🔎╗
+❥━☋《ʙᴜꜱᴄᴀᴅᴏʀ》🔎
 ╭─────────────···
-┃│ ${usedPrefix}applemusicsearch
-┃│ ${usedPrefix}animeinfo
-┃│ ${usedPrefix}mangainfo <manga>
-┃│ ${usedPrefix}githubsearch
-┃│ ${usedPrefix}google <texto>
-┃│ ${usedPrefix}hentaipdf
-┃│ ${usedPrefix}imagen
-┃│ ${usedPrefix}letra <nombre de la cancion>
-┃│ ${usedPrefix}mercadolibre
-┃│ ${usedPrefix}npmsearch
-┃│ ${usedPrefix}playlist
-┃│ ${usedPrefix}playstore <aplicacion>
-┃│ ${usedPrefix}phsearch
-┃│ ${usedPrefix}phsearch2
-┃│ ${usedPrefix}rule34
-┃│ ${usedPrefix}spotifysearch <texto>
-┃│ ${usedPrefix}tiktoksearch
-┃│ ${usedPrefix}wikipedia <texto>
-┃│ ${usedPrefix}ytsearch *<texto>*
-┃│ ${usedPrefix}stickersearch
+┃➽ _${usedPrefix}applemusicsearch_
+┃➽ _${usedPrefix}animeinfo_
+┃➽ _${usedPrefix}mangainfo <manga>_
+┃➽ _${usedPrefix}githubsearch_
+┃➽ _${usedPrefix}google <texto>_
+┃➽ _${usedPrefix}hentaipdf_
+┃➽ _${usedPrefix}imagen_
+┃➽ _${usedPrefix}letra <nombre de la cancion>_
+┃➽ _${usedPrefix}mercadolibre_
+┃➽ _${usedPrefix}npmsearch_
+┃➽ _${usedPrefix}playlist_
+┃➽ _${usedPrefix}playstore <aplicacion>_
+┃➽ _${usedPrefix}phsearch_
+┃➽ _${usedPrefix}phsearch2_
+┃➽ _${usedPrefix}rule34_
+┃➽ _${usedPrefix}spotifysearch <texto>_
+┃➽ _${usedPrefix}tiktoksearch_
+┃➽ _${usedPrefix}wikipedia <texto>_
+┃➽ _${usedPrefix}ytsearch *<texto>*_
+┃➽ _${usedPrefix}stickersearch_
 ╰─────────────···
-┗━━━━━━━━━━━━━⬣
+❥━━━━━━━━━━━━━☊
 
 `.trim();
     if (m.isGroup) {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
+     conn.sendMessage(m.chat, { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
     } else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+      conn.sendMessage(m.chat,  { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
     conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);

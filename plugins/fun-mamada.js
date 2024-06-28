@@ -4,7 +4,7 @@ const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
  let follar = `
 🤤¡${text} TE LA HAN CHUPADO!🤤\n
 😈¡${taguser}! *TE LA HA MAMADO*😈 \n
- *¡COMO TE ENCANTA LA VERGA!*🥵
+ *¡COMO LE ENCANTA LA VERGA!*🥵
 
 `.trim();
 m.reply(follar, null, { mentions: conn.parseMention(follar) })}

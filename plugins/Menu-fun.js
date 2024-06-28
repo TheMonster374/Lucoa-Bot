@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
+global.img2 = fs.readFileSync('./storage/img/menus/Menu9.mp4');
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = img2;
-    const img = './storage/img/menus/Menu9.jpg';
+    const img = './storage/img/menus/Menu9.mp4';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -23,73 +23,81 @@ global.img2 = fs.readFileSync('./storage/img/menus/Menu9.jpg');
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
-  *Hola,* ${taguser}
+const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
 
- ┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
-┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
-┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━⬣
+
+
+let uptime = `${clockString(process.uptime())}`
+const str = `
+    > ℍ𝕠𝕝𝕒 *${taguser}*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+  
+┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
+┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : ${taguser}
+┃➥💎 *𝘋𝘪𝘢𝘮𝘢𝘯𝘵𝘦𝘴* : ${limit}
+┃➥🏆 *𝘕𝘪𝘷𝘦𝘭* : ${level}
+┃➥💴 *𝘠𝘦𝘯𝘦𝘴* : ${money}
+┗━━━━━━━━━━━━━☊
  ${readMore}
-┏━⊜「 *=͟͟͞INFO BOT* 」
-┃◣w◢ *CREADOR*: +573017210155
-┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━⬣
+┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: 𝒀𝒖𝒏𝒏𝒚𝒔
+┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : ${totalusr}
+┃➥🕘 *𝘈𝘤𝘵𝘪𝘷𝘢* : ${uptime}
+┃➥✨ *𝘛𝘰𝘵𝘢𝘭 𝘨𝘳𝘶𝘱𝘰𝘴* : ${groupsIn.length}
+┗━━━━━━━━━━━━━☊
  ${readMore}
 
-┏━⊜ DIVERSION 👻╗
+❥━☋《ᴅɪᴠᴇʀꜱɪᴏɴ》👻
 ╭─────────────··
-┃│ ${usedPrefix}piropo
-┃│ ${usedPrefix}doxear <@user>
-┃│ ${usedPrefix}formarpareja
-┃│ ${usedPrefix}love <@user>
-┃│ ${usedPrefix}follar <@user>
-┃│ ${usedPrefix}cumear <@user>
-┃│ ${usedPrefix}mamada <@user>
-┃│ ${usedPrefix}gay <@user>
-┃│ ${usedPrefix}gay2 <@user>
-┃│ ${usedPrefix}lesbiana <@user>
-┃│ ${usedPrefix}pajero <@user>
-┃│ ${usedPrefix}puta <@user>
-┃│ ${usedPrefix}simi <texto>
-┃│ ${usedPrefix}bot <texto>
-┃│ ${usedPrefix}topgays
-┃│ ${usedPrefix}topotakus
-┃│ ${usedPrefix}topintegrantes
-┃│ ${usedPrefix}topintegrante
-┃│ ${usedPrefix}toplagrasa
-┃│ ${usedPrefix}topgrasa
-┃│ ${usedPrefix}toppanafrescos
-┃│ ${usedPrefix}toppanafresco
-┃│ ${usedPrefix}topshiposters
-┃│ ${usedPrefix}topshipost
-┃│ ${usedPrefix}toppajeros
-┃│ ${usedPrefix}toppajer@s
-┃│ ${usedPrefix}toplindos
-┃│ ${usedPrefix}toplind@s
-┃│ ${usedPrefix}topputos
-┃│ ${usedPrefix}topput@s
-┃│ ${usedPrefix}topfamosos
-┃│ ${usedPrefix}topfamos@s
-┃│ ${usedPrefix}topparejas
-┃│ ${usedPrefix}top5parejas
-┃│ ${usedPrefix}tomp3
+┃➽ _${usedPrefix}piropo_
+┃➽ _${usedPrefix}doxear <@user>_
+┃➽ _${usedPrefix}formarpareja_
+┃➽ _${usedPrefix}love <@user>_
+┃➽ _${usedPrefix}follar <@user>_
+┃➽ _${usedPrefix}cumear <@user>_
+┃➽ _${usedPrefix}mamada <@user>_
+┃➽ _${usedPrefix}gay <@user>_
+┃➽ _${usedPrefix}gay2 <@user>_
+┃➽ _${usedPrefix}lesbiana <@user>_
+┃➽ _${usedPrefix}pajero <@user>_
+┃➽ _${usedPrefix}puta <@user>_
+┃➽ _${usedPrefix}simi <texto>_
+┃➽ _${usedPrefix}bot <texto>_
+┃➽ _${usedPrefix}topgays_
+┃➽ _${usedPrefix}topotakus_
+┃➽ _${usedPrefix}topintegrantes_
+┃➽ _${usedPrefix}topintegrante_
+┃➽ _${usedPrefix}toplagrasa_
+┃➽ _${usedPrefix}topgrasa_
+┃➽ _${usedPrefix}toppanafrescos_
+┃➽ _${usedPrefix}toppanafresco_
+┃➽ _${usedPrefix}topshiposters_
+┃➽ _${usedPrefix}topshipost_
+┃➽ _${usedPrefix}toppajeros_
+┃➽ _${usedPrefix}toppajer@s_
+┃➽ _${usedPrefix}toplindos_
+┃➽ _${usedPrefix}toplind@s_
+┃➽ _${usedPrefix}topputos_
+┃➽ _${usedPrefix}topput@s_
+┃➽ _${usedPrefix}topfamosos_
+┃➽ _${usedPrefix}topfamos@s_
+┃➽ _${usedPrefix}topparejas_
+┃➽ _${usedPrefix}top5parejas_
+┃➽ _${usedPrefix}tomp3_
 ╰─────────────···
-┗━━━━━━━━━━━━━⬣
+❥━━━━━━━━━━━━━☊
 `.trim();
     if (m.isGroup) {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
+     conn.sendMessage(m.chat, { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
     } else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+      conn.sendMessage(m.chat,  { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
-  } catch (e) {
-    conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
-    throw e
+  } catch {
+    conn.reply(m.chat, '[❌] ERROR \n\n El menu tiene un error', m);
   }
+
 };
 handler.command = /^(menufun|MenuFun|MENUFUN)$/i;
 handler.exp = 50;

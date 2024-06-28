@@ -23,58 +23,64 @@ global.img6 = fs.readFileSync ('./Multimenu.mp4');
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
-  *Hola,* ${taguser}
+const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
 
- ┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
-┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
-┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━⬣
+
+
+let uptime = `${clockString(process.uptime())}`
+const str = `
+    > ℍ𝕠𝕝𝕒 *${taguser}*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+  
+┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
+┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : ${taguser}
+┃➥💎 *𝘋𝘪𝘢𝘮𝘢𝘯𝘵𝘦𝘴* : ${limit}
+┃➥🏆 *𝘕𝘪𝘷𝘦𝘭* : ${level}
+┃➥💴 *𝘠𝘦𝘯𝘦𝘴* : ${money}
+┗━━━━━━━━━━━━━☊
  ${readMore}
-┏━⊜「 *=͟͟͞INFO BOT* 」
-┃◣w◢ *CREADOR*: +573017210155
-┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━⬣
+┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: 𝒀𝒖𝒏𝒏𝒚𝒔
+┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : ${totalusr}
+┃➥🕘 *𝘈𝘤𝘵𝘪𝘷𝘢* : ${uptime}
+┃➥✨ *𝘛𝘰𝘵𝘢𝘭 𝘨𝘳𝘶𝘱𝘰𝘴* : ${groupsIn.length}
+┗━━━━━━━━━━━━━☊
+
  ${readMore}
-┏━⊜ 🤍 MENUS 🤍╗
+❥━☋ 🐲《ᴍᴇɴᴜꜱ🐲》
 ╭─────────────···
 ┃│
-┃│━⊜ ℹ️ TUTORIAL ℹ️╗
-┃│ ${usedPrefix}tutorial 
+┃❥━✿🔽《ᴅᴇꜱᴄᴀʀɢᴀꜱ》🔽
+┃➽ _${usedPrefix}menudescargas_
 ┃│
-┃│━⊜ 🔽MENU DESCARGAS🔽╗
-┃│ ${usedPrefix}menudescargas
+┃❥━✿🔞《ɴꜱꜰᴡ》🔞
+┃➽ _${usedPrefix}menunsfw_
 ┃│
-┃│━⊜ 🔞 MENU NSFW 🔞╗
-┃│ ${usedPrefix}menunsfw
-┃│
-┃│━⊜ 🛠️ MENU TOOLS 🛠️╗
-┃│ ${usedPrefix}menutools
+┃❥━✿🛠️《ʜᴇʀʀᴀᴍɪᴇɴᴛᴀꜱ》🛠️
+┃➽ _${usedPrefix}menutools_
 ┃│ 
-┃│━⊜ ⚔️ MENU RPG ⚔️╗
-┃│ ${usedPrefix}menurpg
+┃❥━✿⚔️《ʀᴘɢ》⚔️
+┃➽ _${usedPrefix}menurpg_
 ┃│
-┃│━⊜ 🖼️ MENU IMG 🖼️╗
-┃│ ${usedPrefix}menuimg
+┃❥━✿🖼️《ɪᴍᴀɢᴇɴᴇꜱ》🖼️
+┃➽ _${usedPrefix}menuimg_
 ┃│
-┃│━⊜ 🔎 MENU SEARCH 🔍╗
-┃│ ${usedPrefix}menusearch
+┃❥━✿🔎《ʙᴜꜱᴄᴀᴅᴏʀ》🔍
+┃➽ _${usedPrefix}menusearch_
 ┃│
-┃│━⊜ 👻 MENU FUN 👻╗
-┃│ ${usedPrefix}menufun
+┃❥━✿🎉《ᴅɪᴠᴇʀꜱɪᴏɴ》🎉
+┃➽ _${usedPrefix}menufun_
 ┃│
-┃│━⊜ 🎮 MENU JUEGOS 🎮╗
-┃│ ${usedPrefix}menujuegos
+┃❥━✿🎮《ᴊᴜᴇɢᴏꜱ》🎮
+┃➽ _${usedPrefix}menujuegos_
 ┃│
-┃│━⊜ 🌐 MENU SUBBOTS 🌐╗
-┃│ ${usedPrefix}menusubbots
+┃❥━✿🤖《ꜱᴜʙʙᴏᴛꜱ》🤖
+┃➽ _${usedPrefix}menusubbots_
 ┃│
-┃│━⊜ ✨MENU COMPLETO✨╗
-┃│ ${usedPrefix}allmenu
+┃❥━✿✨《ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ》✨
+┃➽ _${usedPrefix}allmenu_
 ╰─────────────···
-┗━━━━━━━━━━━━━⬣
+❥━━━━━━━━━━━━━☊
 
 
  `.trim();
@@ -89,7 +95,7 @@ global.img6 = fs.readFileSync ('./Multimenu.mp4');
     */ conn.sendMessage(m.chat, { video: pp, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
+    conn.reply(m.chat, '[❌] ERROR \n\n El menu tiene un error', m);
   }
 };
 handler.command = /^(menu|Menu|MENU|Multimenu|MultiMenu|MULTIMENU)$/i;

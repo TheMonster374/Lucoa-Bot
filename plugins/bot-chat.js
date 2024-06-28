@@ -8,12 +8,12 @@ let user = global.db.data.users[m.sender]
 
 if (new Date() - user.pc < 21600000) return
 await m.reply(`Hola ${username}¡!
-¡Hola!, Soy Inabakumori, un bot muy divertido de whatsapp
+¡Hola!, Soy Lucoa, un bot muy divertido de whatsapp
 
-`Escribe` !comandos `y veras mis multiples funciones :D`
+Escribe #menu y veras mis multiples funciones :D
 
 
-*Escribe !grupos para ver mis grupos oficiales ;D*
+*Escribe #grupos para ver mis grupos oficiales ;D*
 
 `) 
 user.pc = new Date * 1

@@ -30,7 +30,7 @@ const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
 
 let uptime = `${clockString(process.uptime())}`
 const str = `
-    > ℍ𝕠𝕝𝕒 *%taguser*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+    > ℍ𝕠𝕝𝕒 *${taguser}*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
   
 ┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
 ┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : ${taguser}

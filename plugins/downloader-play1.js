@@ -41,7 +41,7 @@ showAdAttribution: true,
 title: vid.title,
 body: null,
 mediaType: 2,
-sourceUrl: 'https://atom.bio/tm',
+sourceUrl: ${shortURL},
 thumbnail: Buffer.from(thumbnailBuffer.data),
 }}    
 if (bufferSize <= limit * 1024 * 1024) { 

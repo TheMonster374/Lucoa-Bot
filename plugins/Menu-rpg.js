@@ -3,7 +3,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen11
-    const img = './storage/img/menus/Menu8.jpg';
+    const img = './storage/img/menus/Menu8.mp4';
     const d = new Date(new Date + 3600000);
     const locale = 'es-ES';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -22,59 +22,68 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `
-  *Hola,* ${taguser}
+    const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
 
- ┏━⊜「 *=͟͟͞INFO USUARIO* 」
-┃🤍 *𝑵𝒐𝒎𝒃𝒓𝒆* : *${taguser}
-┃💎 *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* : *${limit}
-┃⬆️ *𝑵𝒊𝒗𝒆𝒍* : *${level}
-┃🪙 *Coins* : *${money}
-┗━━━━━━━━━━━━━⬣
+
+
+let uptime = `${clockString(process.uptime())}`
+const str = `
+    > ℍ𝕠𝕝𝕒 *${taguser}*, 𝕊𝕠𝕪 𝕃𝕦𝕔𝕠𝕒
+  
+┏━☋ ꕥ *👤 𝗨𝗦𝗨𝗔𝗥𝗜𝗢* ꕥ
+┃➥🐲 *𝘕𝘰𝘮𝘣𝘳𝘦* : ${taguser}
+┃➥💎 *𝘋𝘪𝘢𝘮𝘢𝘯𝘵𝘦𝘴* : ${limit}
+┃➥🏆 *𝘕𝘪𝘷𝘦𝘭* : ${level}
+┃➥💴 *𝘠𝘦𝘯𝘦𝘴* : ${money}
+┗━━━━━━━━━━━━━☊
  ${readMore}
-┏━⊜「 *=͟͟͞INFO BOT* 」
-┃◣w◢ *CREADOR*: +573017210155
-┃👤 *TOTAL USUARIOS* : ${totalusr}
-┗━━━━━━━━━━━━━⬣
+┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: 𝒀𝒖𝒏𝒏𝒚𝒔
+┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : ${totalusr}
+┃➥🕘 *𝘈𝘤𝘵𝘪𝘷𝘢* : ${uptime}
+┃➥✨ *𝘛𝘰𝘵𝘢𝘭 𝘨𝘳𝘶𝘱𝘰𝘴* : ${groupsIn.length}
+┗━━━━━━━━━━━━━☊
+
  ${readMore}
 
-┏━⊜ RPG ⚔️╗
+❥━☋《ʀᴘɢ》⚔️
 ╭─────────────···
-┃│ ${usedPrefix}fantasy
-┃│ ${usedPrefix}fymy
-┃│ ${usedPrefix}fyinfo
-┃│ ${usedPrefix}fytr <@user> [personaje]
-┃│ ${usedPrefix}fylista
-┃│ ${usedPrefix}fyguia
-┃│ ${usedPrefix}payxp <@user>
-┃│ ${usedPrefix}paydiamonds <@user>
-┃│ ${usedPrefix}paycoins <@user>
-┃│ ${usedPrefix}afk [razón]
-┃│ ${usedPrefix}crime
-┃│ ${usedPrefix}rob <@user>
-┃│ ${usedPrefix}bal
-┃│ ${usedPrefix}buy [cantidad]
-┃│ ${usedPrefix}buyall
-┃│ ${usedPrefix}daily
-┃│ ${usedPrefix}lb
-┃│ ${usedPrefix}levelup
-┃│ ${usedPrefix}minarcoins
-┃│ ${usedPrefix}minardiamantes
-┃│ ${usedPrefix}minar
-┃│ ${usedPrefix}work
+┃➽ _${usedPrefix}fantasy_
+┃➽ _${usedPrefix}fymy_
+┃➽ _${usedPrefix}fyinfo_
+┃➽ _${usedPrefix}fytr <@user> [personaje]_
+┃➽ _${usedPrefix}fylista_
+┃➽ _${usedPrefix}fyguia_
+┃➽ _${usedPrefix}payxp <@user>_
+┃➽ _${usedPrefix}paydiamonds <@user>_
+┃➽ _${usedPrefix}paycoins <@user>_
+┃➽ _${usedPrefix}afk [razón]_
+┃➽ _${usedPrefix}crime_
+┃➽ _${usedPrefix}rob <@user>_
+┃➽ _${usedPrefix}bal_
+┃➽ _${usedPrefix}buy [cantidad]_
+┃➽ _${usedPrefix}buyall_
+┃➽ _${usedPrefix}daily_
+┃➽ _${usedPrefix}lb_
+┃➽ _${usedPrefix}levelup_
+┃➽ _${usedPrefix}minarcoins_
+┃➽ _${usedPrefix}minardiamantes_
+┃➽ _${usedPrefix}minar_
+┃➽ _${usedPrefix}work_
 ╰─────────────···
-┗━━━━━━━━━━━━━⬣
+❥━━━━━━━━━━━━━☊
 
 `.trim();
     if (m.isGroup) {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
+     conn.sendMessage(m.chat, { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
     } else {
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
+      conn.sendMessage(m.chat,  { video: { url: pp }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2});
     }
   } catch {
-    conn.reply(m.chat, '*[❌] ocurrio un error inesperado al enviar el menu*', m);
+    conn.reply(m.chat, '[❌] ERROR \n\n El menu tiene un error', m);
   }
 };
 handler.command = /^(menurpg|MenuRpg|MENURPG)$/i;

@@ -8,7 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 // © 2024 YUNNYS | All rights reserved 
 
-global.botnumber = "59161313574" //Ejemplo: +59309090909
+global.botnumber = "51974621100" //Ejemplo: +59309090909
 global.confirmCode = ""
 
 /*NUMERS OWNERS*/
@@ -84,7 +84,7 @@ global.fpagedoc = '9999'
 
   
 //━━━━━━━MARCA━━━━━━━━ 
-global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY YUNNYS'
+global.desc = 'BOT PARA WHATSAPP CON MULTIPLES COMANDOS, BY MONSTER'
 
 //Enlaces
 global.yt = 'https://chat.whatsapp.com/L2uawSeQhM2I2oe0C3K1sS'
@@ -115,8 +115,8 @@ global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage':
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎`
-global.adimagen = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎` 
+global.addescargas = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙈𝙤𝙣𝙨𝙩𝙚𝙧`
+global.adimagen = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩 𝘽𝙮 𝙈𝙤𝙣𝙨𝙩𝙚𝙧` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"

@@ -13,8 +13,8 @@ global.confirmCode = ""
 
 /*NUMERS OWNERS*/
 global.owner = [
- ['59160951402', '👑 Creadora 👑', true],
- ['59161313574', 'Bot', true]
+ ['573017210155', '👑 Creador 👑', true],
+ ['51974621100', 'Bot', true]
 ];
 /*└────ׂ─ׂ─ׂ─ׂ───*/
 

@@ -33,6 +33,7 @@ global.version_language = '1.0 (MID-GB)'*/
 global.packname = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.ow = '𝘽𝙮 𝙈𝙤𝙣𝙨𝙩𝙚𝙧'; //'𝘽𝙮 𝙔𝙐𝙉𝙉𝙔𝙎';
 global.ow2 = '𝙈𝙤𝙣𝙨𝙩𝙚𝙧';
+global.own = 'wa.me/573017210155';
 global.wm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.titulowm = '𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩';
 global.titulowm2 = `𝙇𝙪𝙘𝙤𝙖-𝘽𝙤𝙩`

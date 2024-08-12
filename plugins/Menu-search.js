@@ -40,7 +40,7 @@ let uptime = `${clockString(process.uptime())}`
 ┗━━━━━━━━━━━━━☊
  ${readMore}
 ┏━☋ ꕥ *🐲 𝗟𝗨𝗖𝗢𝗔-𝗕𝗢𝗧* ꕥ
-┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳𝘢*: 𝒀𝒖𝒏𝒏𝒚𝒔
+┃➥🧁 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳*: ${ow2}
 ┃➥👤 *𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴* : ${totalusr}
 ┃➥🕘 *𝘈𝘤𝘵𝘪𝘷𝘢* : ${uptime}
 ┃➥✨ *𝘛𝘰𝘵𝘢𝘭 𝘨𝘳𝘶𝘱𝘰𝘴* : ${groupsIn.length}
